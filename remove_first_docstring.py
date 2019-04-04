@@ -9,10 +9,14 @@ for dir_name, sub_dir_list, file_list in os.walk(root_dir):
             # Only consider python files
             continue
 
-        data = open(os.join(dir_name, file_name)).read()
+        print(f'{dir_name} - {file_name}')
+        data = open(os.path.join(dir_name, file_name), 'r').read()
         if data.count('\n"""') < 2:
             # Not enough instances of docstring quotes
             continue
         start_index = data.find('\n"""')
         end_index = data.find('\n"""', start_index+1)
-        print(f'{dir_name} - {file_name}')
+        with open(os.path.join(dir_name, file_name), 'w') as fh:
+            fh.write(data[:start_index])
+            fh.write('\n')
+            fh.write(data[end_index+4:])
