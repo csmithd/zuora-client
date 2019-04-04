@@ -16,8 +16,8 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.post_sc_create_type import POSTScCreateType  # noqa: F401,E501
-from swagger_client.models.rate_plan_object_custom_fields import RatePlanObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.post_sc_create_type import POSTScCreateType  # noqa: F401,E501
+from zuora_client.models.rate_plan_object_custom_fields import RatePlanObjectCustomFields  # noqa: F401,E501
 
 
 class POSTSrpCreateType(object):

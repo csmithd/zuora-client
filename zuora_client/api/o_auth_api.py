@@ -18,7 +18,7 @@ import re  # noqa: F401
 # python 2 and python 3 compatibility library
 import six
 
-from swagger_client.api_client import ApiClient
+from zuora_client.api_client import ApiClient
 
 
 class OAuthApi(object):
@@ -46,7 +46,7 @@ class OAuthApi(object):
         :param str client_id: The Client ID of the OAuth client.  (required)
         :param str client_secret: The Client Secret that was displayed when the OAuth client was created.  (required)
         :param str grant_type: The OAuth grant type that will be used to generate the token. The value of this parameter must be `client_credentials`.  (required)
-        :param str zuora_track_id: A custom identifier for tracing the API call. If you set a value for this header, Zuora returns the same value in the response headers. This header enables you to associate your system process identifiers with Zuora API calls, to assist with troubleshooting in the event of an issue.  The value of this field must use the US-ASCII character set and must not include any of the following characters: colon (`:`), semicolon (`;`), double quote (`\"`), and quote (`'`). 
+        :param str zuora_track_id: A custom identifier for tracing the API call. If you set a value for this header, Zuora returns the same value in the response headers. This header enables you to associate your system process identifiers with Zuora API calls, to assist with troubleshooting in the event of an issue.  The value of this field must use the US-ASCII character set and must not include any of the following characters: colon (`:`), semicolon (`;`), double quote (`\"`), and quote (`'`).
         :return: TokenResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -71,7 +71,7 @@ class OAuthApi(object):
         :param str client_id: The Client ID of the OAuth client.  (required)
         :param str client_secret: The Client Secret that was displayed when the OAuth client was created.  (required)
         :param str grant_type: The OAuth grant type that will be used to generate the token. The value of this parameter must be `client_credentials`.  (required)
-        :param str zuora_track_id: A custom identifier for tracing the API call. If you set a value for this header, Zuora returns the same value in the response headers. This header enables you to associate your system process identifiers with Zuora API calls, to assist with troubleshooting in the event of an issue.  The value of this field must use the US-ASCII character set and must not include any of the following characters: colon (`:`), semicolon (`;`), double quote (`\"`), and quote (`'`). 
+        :param str zuora_track_id: A custom identifier for tracing the API call. If you set a value for this header, Zuora returns the same value in the response headers. This header enables you to associate your system process identifiers with Zuora API calls, to assist with troubleshooting in the event of an issue.  The value of this field must use the US-ASCII character set and must not include any of the following characters: colon (`:`), semicolon (`;`), double quote (`\"`), and quote (`'`).
         :return: TokenResponse
                  If the method is called asynchronously,
                  returns the request thread.

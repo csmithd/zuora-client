@@ -16,19 +16,19 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.cancel_subscription import CancelSubscription  # noqa: F401,E501
-from swagger_client.models.create_subscription import CreateSubscription  # noqa: F401,E501
-from swagger_client.models.get_order_resume import GetOrderResume  # noqa: F401,E501
-from swagger_client.models.get_order_suspend import GetOrderSuspend  # noqa: F401,E501
-from swagger_client.models.order_action_object_custom_fields import OrderActionObjectCustomFields  # noqa: F401,E501
-from swagger_client.models.order_item import OrderItem  # noqa: F401,E501
-from swagger_client.models.order_metric import OrderMetric  # noqa: F401,E501
-from swagger_client.models.owner_transfer import OwnerTransfer  # noqa: F401,E501
-from swagger_client.models.rate_plan_override import RatePlanOverride  # noqa: F401,E501
-from swagger_client.models.rate_plan_update import RatePlanUpdate  # noqa: F401,E501
-from swagger_client.models.remove_product import RemoveProduct  # noqa: F401,E501
-from swagger_client.models.terms_and_conditions import TermsAndConditions  # noqa: F401,E501
-from swagger_client.models.trigger_date import TriggerDate  # noqa: F401,E501
+from zuora_client.models.cancel_subscription import CancelSubscription  # noqa: F401,E501
+from zuora_client.models.create_subscription import CreateSubscription  # noqa: F401,E501
+from zuora_client.models.get_order_resume import GetOrderResume  # noqa: F401,E501
+from zuora_client.models.get_order_suspend import GetOrderSuspend  # noqa: F401,E501
+from zuora_client.models.order_action_object_custom_fields import OrderActionObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.order_item import OrderItem  # noqa: F401,E501
+from zuora_client.models.order_metric import OrderMetric  # noqa: F401,E501
+from zuora_client.models.owner_transfer import OwnerTransfer  # noqa: F401,E501
+from zuora_client.models.rate_plan_override import RatePlanOverride  # noqa: F401,E501
+from zuora_client.models.rate_plan_update import RatePlanUpdate  # noqa: F401,E501
+from zuora_client.models.remove_product import RemoveProduct  # noqa: F401,E501
+from zuora_client.models.terms_and_conditions import TermsAndConditions  # noqa: F401,E501
+from zuora_client.models.trigger_date import TriggerDate  # noqa: F401,E501
 
 
 class OrderAction(object):

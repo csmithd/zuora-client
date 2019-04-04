@@ -16,12 +16,12 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.get_account_summary_type_tax_info import GETAccountSummaryTypeTaxInfo  # noqa: F401,E501
-from swagger_client.models.get_account_type_basic_info import GETAccountTypeBasicInfo  # noqa: F401,E501
-from swagger_client.models.get_account_type_bill_to_contact import GETAccountTypeBillToContact  # noqa: F401,E501
-from swagger_client.models.get_account_type_billing_and_payment import GETAccountTypeBillingAndPayment  # noqa: F401,E501
-from swagger_client.models.get_account_type_metrics import GETAccountTypeMetrics  # noqa: F401,E501
-from swagger_client.models.get_account_type_sold_to_contact import GETAccountTypeSoldToContact  # noqa: F401,E501
+from zuora_client.models.get_account_summary_type_tax_info import GETAccountSummaryTypeTaxInfo  # noqa: F401,E501
+from zuora_client.models.get_account_type_basic_info import GETAccountTypeBasicInfo  # noqa: F401,E501
+from zuora_client.models.get_account_type_bill_to_contact import GETAccountTypeBillToContact  # noqa: F401,E501
+from zuora_client.models.get_account_type_billing_and_payment import GETAccountTypeBillingAndPayment  # noqa: F401,E501
+from zuora_client.models.get_account_type_metrics import GETAccountTypeMetrics  # noqa: F401,E501
+from zuora_client.models.get_account_type_sold_to_contact import GETAccountTypeSoldToContact  # noqa: F401,E501
 
 
 class GETAccountType(object):

@@ -16,10 +16,10 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.proxy_create_payment_gateway_option_data import ProxyCreatePaymentGatewayOptionData  # noqa: F401,E501
-from swagger_client.models.proxy_create_refund_refund_invoice_payment_data import ProxyCreateRefundRefundInvoicePaymentData  # noqa: F401,E501
-from swagger_client.models.refund_object_custom_fields import RefundObjectCustomFields  # noqa: F401,E501
-from swagger_client.models.refund_object_ns_fields import RefundObjectNSFields  # noqa: F401,E501
+from zuora_client.models.proxy_create_payment_gateway_option_data import ProxyCreatePaymentGatewayOptionData  # noqa: F401,E501
+from zuora_client.models.proxy_create_refund_refund_invoice_payment_data import ProxyCreateRefundRefundInvoicePaymentData  # noqa: F401,E501
+from zuora_client.models.refund_object_custom_fields import RefundObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.refund_object_ns_fields import RefundObjectNSFields  # noqa: F401,E501
 
 
 class ProxyCreateRefund(object):

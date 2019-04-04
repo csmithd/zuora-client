@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.post_refund_type import PostRefundType  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.post_refund_type import PostRefundType  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestPostRefundType(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestPostRefundType(unittest.TestCase):
     def testPostRefundType(self):
         """Test PostRefundType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.post_refund_type.PostRefundType()  # noqa: E501
+        # model = zuora_client.models.post_refund_type.PostRefundType()  # noqa: E501
         pass
 
 

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.get_public_notification_definition_response_filter_rule import GETPublicNotificationDefinitionResponseFilterRule  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.get_public_notification_definition_response_filter_rule import GETPublicNotificationDefinitionResponseFilterRule  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestGETPublicNotificationDefinitionResponseFilterRule(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGETPublicNotificationDefinitionResponseFilterRule(unittest.TestCase):
     def testGETPublicNotificationDefinitionResponseFilterRule(self):
         """Test GETPublicNotificationDefinitionResponseFilterRule"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.get_public_notification_definition_response_filter_rule.GETPublicNotificationDefinitionResponseFilterRule()  # noqa: E501
+        # model = zuora_client.models.get_public_notification_definition_response_filter_rule.GETPublicNotificationDefinitionResponseFilterRule()  # noqa: E501
         pass
 
 

@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.get_entities_type import GETEntitiesType  # noqa: F401,E501
+from zuora_client.models.get_entities_type import GETEntitiesType  # noqa: F401,E501
 
 
 class GETEntitiesResponseType(object):

@@ -16,13 +16,13 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.account_object_custom_fields import AccountObjectCustomFields  # noqa: F401,E501
-from swagger_client.models.account_object_ns_fields import AccountObjectNSFields  # noqa: F401,E501
-from swagger_client.models.post_account_type_bill_to_contact import POSTAccountTypeBillToContact  # noqa: F401,E501
-from swagger_client.models.post_account_type_credit_card import POSTAccountTypeCreditCard  # noqa: F401,E501
-from swagger_client.models.post_account_type_sold_to_contact import POSTAccountTypeSoldToContact  # noqa: F401,E501
-from swagger_client.models.post_account_type_subscription import POSTAccountTypeSubscription  # noqa: F401,E501
-from swagger_client.models.post_account_type_tax_info import POSTAccountTypeTaxInfo  # noqa: F401,E501
+from zuora_client.models.account_object_custom_fields import AccountObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.account_object_ns_fields import AccountObjectNSFields  # noqa: F401,E501
+from zuora_client.models.post_account_type_bill_to_contact import POSTAccountTypeBillToContact  # noqa: F401,E501
+from zuora_client.models.post_account_type_credit_card import POSTAccountTypeCreditCard  # noqa: F401,E501
+from zuora_client.models.post_account_type_sold_to_contact import POSTAccountTypeSoldToContact  # noqa: F401,E501
+from zuora_client.models.post_account_type_subscription import POSTAccountTypeSubscription  # noqa: F401,E501
+from zuora_client.models.post_account_type_tax_info import POSTAccountTypeTaxInfo  # noqa: F401,E501
 
 
 class POSTAccountType(object):

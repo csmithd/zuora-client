@@ -15,16 +15,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.invoice_item_adjustments_api import InvoiceItemAdjustmentsApi  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.api.invoice_item_adjustments_api import InvoiceItemAdjustmentsApi  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestInvoiceItemAdjustmentsApi(unittest.TestCase):
     """InvoiceItemAdjustmentsApi unit test stubs"""
 
     def setUp(self):
-        self.api = swagger_client.api.invoice_item_adjustments_api.InvoiceItemAdjustmentsApi()  # noqa: E501
+        self.api = zuora_client.api.invoice_item_adjustments_api.InvoiceItemAdjustmentsApi()  # noqa: E501
 
     def tearDown(self):
         pass

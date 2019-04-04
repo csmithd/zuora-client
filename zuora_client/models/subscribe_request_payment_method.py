@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.subscribe_request_payment_method_gateway_option_data import SubscribeRequestPaymentMethodGatewayOptionData  # noqa: F401,E501
+from zuora_client.models.subscribe_request_payment_method_gateway_option_data import SubscribeRequestPaymentMethodGatewayOptionData  # noqa: F401,E501
 
 
 class SubscribeRequestPaymentMethod(object):

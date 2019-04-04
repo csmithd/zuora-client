@@ -15,16 +15,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.payment_gateways_api import PaymentGatewaysApi  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.api.payment_gateways_api import PaymentGatewaysApi  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestPaymentGatewaysApi(unittest.TestCase):
     """PaymentGatewaysApi unit test stubs"""
 
     def setUp(self):
-        self.api = swagger_client.api.payment_gateways_api.PaymentGatewaysApi()  # noqa: E501
+        self.api = zuora_client.api.payment_gateways_api.PaymentGatewaysApi()  # noqa: E501
 
     def tearDown(self):
         pass

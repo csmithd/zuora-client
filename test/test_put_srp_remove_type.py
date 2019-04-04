@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.put_srp_remove_type import PUTSrpRemoveType  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.put_srp_remove_type import PUTSrpRemoveType  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestPUTSrpRemoveType(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestPUTSrpRemoveType(unittest.TestCase):
     def testPUTSrpRemoveType(self):
         """Test PUTSrpRemoveType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.put_srp_remove_type.PUTSrpRemoveType()  # noqa: E501
+        # model = zuora_client.models.put_srp_remove_type.PUTSrpRemoveType()  # noqa: E501
         pass
 
 

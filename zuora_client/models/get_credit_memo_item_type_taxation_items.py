@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.getcm_tax_item_type_new import GETCMTaxItemTypeNew  # noqa: F401,E501
+from zuora_client.models.getcm_tax_item_type_new import GETCMTaxItemTypeNew  # noqa: F401,E501
 
 
 class GETCreditMemoItemTypeTaxationItems(object):

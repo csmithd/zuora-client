@@ -16,8 +16,8 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.getcm_tax_item_type_finance_information import GETCMTaxItemTypeFinanceInformation  # noqa: F401,E501
-from swagger_client.models.taxation_item_object_custom_fields import TaxationItemObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.getcm_tax_item_type_finance_information import GETCMTaxItemTypeFinanceInformation  # noqa: F401,E501
+from zuora_client.models.taxation_item_object_custom_fields import TaxationItemObjectCustomFields  # noqa: F401,E501
 
 
 class GETTaxationItemTypewithSuccess(object):

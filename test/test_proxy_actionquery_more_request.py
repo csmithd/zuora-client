@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.proxy_actionquery_more_request import ProxyActionqueryMoreRequest  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.proxy_actionquery_more_request import ProxyActionqueryMoreRequest  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestProxyActionqueryMoreRequest(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestProxyActionqueryMoreRequest(unittest.TestCase):
     def testProxyActionqueryMoreRequest(self):
         """Test ProxyActionqueryMoreRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.proxy_actionquery_more_request.ProxyActionqueryMoreRequest()  # noqa: E501
+        # model = zuora_client.models.proxy_actionquery_more_request.ProxyActionqueryMoreRequest()  # noqa: E501
         pass
 
 

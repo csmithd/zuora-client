@@ -16,11 +16,11 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.create_payment_type_finance_information import CreatePaymentTypeFinanceInformation  # noqa: F401,E501
-from swagger_client.models.payment_debit_memo_application_create_request_type import PaymentDebitMemoApplicationCreateRequestType  # noqa: F401,E501
-from swagger_client.models.payment_invoice_application_create_request_type import PaymentInvoiceApplicationCreateRequestType  # noqa: F401,E501
-from swagger_client.models.payment_object_custom_fields import PaymentObjectCustomFields  # noqa: F401,E501
-from swagger_client.models.payment_object_ns_fields import PaymentObjectNSFields  # noqa: F401,E501
+from zuora_client.models.create_payment_type_finance_information import CreatePaymentTypeFinanceInformation  # noqa: F401,E501
+from zuora_client.models.payment_debit_memo_application_create_request_type import PaymentDebitMemoApplicationCreateRequestType  # noqa: F401,E501
+from zuora_client.models.payment_invoice_application_create_request_type import PaymentInvoiceApplicationCreateRequestType  # noqa: F401,E501
+from zuora_client.models.payment_object_custom_fields import PaymentObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.payment_object_ns_fields import PaymentObjectNSFields  # noqa: F401,E501
 
 
 class CreatePaymentType(object):

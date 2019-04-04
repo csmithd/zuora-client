@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.revenue_event_object_custom_fields import RevenueEventObjectCustomFields  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.revenue_event_object_custom_fields import RevenueEventObjectCustomFields  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestRevenueEventObjectCustomFields(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestRevenueEventObjectCustomFields(unittest.TestCase):
     def testRevenueEventObjectCustomFields(self):
         """Test RevenueEventObjectCustomFields"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.revenue_event_object_custom_fields.RevenueEventObjectCustomFields()  # noqa: E501
+        # model = zuora_client.models.revenue_event_object_custom_fields.RevenueEventObjectCustomFields()  # noqa: E501
         pass
 
 

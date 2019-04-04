@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.get_public_email_template_response import GETPublicEmailTemplateResponse  # noqa: F401,E501
+from zuora_client.models.get_public_email_template_response import GETPublicEmailTemplateResponse  # noqa: F401,E501
 
 
 class InlineResponse2003(object):

@@ -16,9 +16,9 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.subscribe_request_subscribe_options_electronic_payment_options import SubscribeRequestSubscribeOptionsElectronicPaymentOptions  # noqa: F401,E501
-from swagger_client.models.subscribe_request_subscribe_options_external_payment_options import SubscribeRequestSubscribeOptionsExternalPaymentOptions  # noqa: F401,E501
-from swagger_client.models.subscribe_request_subscribe_options_subscribe_invoice_processing_options import SubscribeRequestSubscribeOptionsSubscribeInvoiceProcessingOptions  # noqa: F401,E501
+from zuora_client.models.subscribe_request_subscribe_options_electronic_payment_options import SubscribeRequestSubscribeOptionsElectronicPaymentOptions  # noqa: F401,E501
+from zuora_client.models.subscribe_request_subscribe_options_external_payment_options import SubscribeRequestSubscribeOptionsExternalPaymentOptions  # noqa: F401,E501
+from zuora_client.models.subscribe_request_subscribe_options_subscribe_invoice_processing_options import SubscribeRequestSubscribeOptionsSubscribeInvoiceProcessingOptions  # noqa: F401,E501
 
 
 class SubscribeRequestSubscribeOptions(object):

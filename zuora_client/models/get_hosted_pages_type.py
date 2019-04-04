@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.get_hosted_page_type import GetHostedPageType  # noqa: F401,E501
+from zuora_client.models.get_hosted_page_type import GetHostedPageType  # noqa: F401,E501
 
 
 class GetHostedPagesType(object):

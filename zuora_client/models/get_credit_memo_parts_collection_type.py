@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.get_credit_memo_part_typewith_success import GETCreditMemoPartTypewithSuccess  # noqa: F401,E501
+from zuora_client.models.get_credit_memo_part_typewith_success import GETCreditMemoPartTypewithSuccess  # noqa: F401,E501
 
 
 class GETCreditMemoPartsCollectionType(object):

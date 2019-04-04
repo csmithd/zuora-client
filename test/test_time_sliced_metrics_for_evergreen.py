@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.time_sliced_metrics_for_evergreen import TimeSlicedMetricsForEvergreen  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.time_sliced_metrics_for_evergreen import TimeSlicedMetricsForEvergreen  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestTimeSlicedMetricsForEvergreen(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestTimeSlicedMetricsForEvergreen(unittest.TestCase):
     def testTimeSlicedMetricsForEvergreen(self):
         """Test TimeSlicedMetricsForEvergreen"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.time_sliced_metrics_for_evergreen.TimeSlicedMetricsForEvergreen()  # noqa: E501
+        # model = zuora_client.models.time_sliced_metrics_for_evergreen.TimeSlicedMetricsForEvergreen()  # noqa: E501
         pass
 
 

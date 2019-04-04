@@ -16,17 +16,17 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.discount_pricing_update import DiscountPricingUpdate  # noqa: F401,E501
-from swagger_client.models.recurring_flat_fee_pricing_update import RecurringFlatFeePricingUpdate  # noqa: F401,E501
-from swagger_client.models.recurring_per_unit_pricing_update import RecurringPerUnitPricingUpdate  # noqa: F401,E501
-from swagger_client.models.recurring_tiered_pricing_update import RecurringTieredPricingUpdate  # noqa: F401,E501
-from swagger_client.models.recurring_volume_pricing_update import RecurringVolumePricingUpdate  # noqa: F401,E501
-from swagger_client.models.usage_flat_fee_pricing_update import UsageFlatFeePricingUpdate  # noqa: F401,E501
-from swagger_client.models.usage_overage_pricing_update import UsageOveragePricingUpdate  # noqa: F401,E501
-from swagger_client.models.usage_per_unit_pricing_update import UsagePerUnitPricingUpdate  # noqa: F401,E501
-from swagger_client.models.usage_tiered_pricing_update import UsageTieredPricingUpdate  # noqa: F401,E501
-from swagger_client.models.usage_tiered_with_overage_pricing_update import UsageTieredWithOveragePricingUpdate  # noqa: F401,E501
-from swagger_client.models.usage_volume_pricing_update import UsageVolumePricingUpdate  # noqa: F401,E501
+from zuora_client.models.discount_pricing_update import DiscountPricingUpdate  # noqa: F401,E501
+from zuora_client.models.recurring_flat_fee_pricing_update import RecurringFlatFeePricingUpdate  # noqa: F401,E501
+from zuora_client.models.recurring_per_unit_pricing_update import RecurringPerUnitPricingUpdate  # noqa: F401,E501
+from zuora_client.models.recurring_tiered_pricing_update import RecurringTieredPricingUpdate  # noqa: F401,E501
+from zuora_client.models.recurring_volume_pricing_update import RecurringVolumePricingUpdate  # noqa: F401,E501
+from zuora_client.models.usage_flat_fee_pricing_update import UsageFlatFeePricingUpdate  # noqa: F401,E501
+from zuora_client.models.usage_overage_pricing_update import UsageOveragePricingUpdate  # noqa: F401,E501
+from zuora_client.models.usage_per_unit_pricing_update import UsagePerUnitPricingUpdate  # noqa: F401,E501
+from zuora_client.models.usage_tiered_pricing_update import UsageTieredPricingUpdate  # noqa: F401,E501
+from zuora_client.models.usage_tiered_with_overage_pricing_update import UsageTieredWithOveragePricingUpdate  # noqa: F401,E501
+from zuora_client.models.usage_volume_pricing_update import UsageVolumePricingUpdate  # noqa: F401,E501
 
 
 class PricingUpdateForEvergreen(object):

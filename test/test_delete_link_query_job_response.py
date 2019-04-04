@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.delete_link_query_job_response import DeleteLinkQueryJobResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.delete_link_query_job_response import DeleteLinkQueryJobResponse  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestDeleteLinkQueryJobResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestDeleteLinkQueryJobResponse(unittest.TestCase):
     def testDeleteLinkQueryJobResponse(self):
         """Test DeleteLinkQueryJobResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.delete_link_query_job_response.DeleteLinkQueryJobResponse()  # noqa: E501
+        # model = zuora_client.models.delete_link_query_job_response.DeleteLinkQueryJobResponse()  # noqa: E501
         pass
 
 

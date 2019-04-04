@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.refund_invoice_payment import RefundInvoicePayment  # noqa: F401,E501
+from zuora_client.models.refund_invoice_payment import RefundInvoicePayment  # noqa: F401,E501
 
 
 class ProxyCreateRefundRefundInvoicePaymentData(object):

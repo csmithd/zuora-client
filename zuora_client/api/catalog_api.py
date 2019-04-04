@@ -18,7 +18,7 @@ import re  # noqa: F401
 # python 2 and python 3 compatibility library
 import six
 
-from swagger_client.api_client import ApiClient
+from zuora_client.api_client import ApiClient
 
 
 class CatalogApi(object):
@@ -43,9 +43,9 @@ class CatalogApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param int page_size: Number of rows returned per page. 
-        :param str zuora_version: The minor version of the Zuora REST API.   You only need to set this parameter if you use the `productRatePlans` field. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param int page_size: Number of rows returned per page.
+        :param str zuora_version: The minor version of the Zuora REST API.   You only need to set this parameter if you use the `productRatePlans` field.
         :return: GETCatalogType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -67,9 +67,9 @@ class CatalogApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param int page_size: Number of rows returned per page. 
-        :param str zuora_version: The minor version of the Zuora REST API.   You only need to set this parameter if you use the `productRatePlans` field. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param int page_size: Number of rows returned per page.
+        :param str zuora_version: The minor version of the Zuora REST API.   You only need to set this parameter if you use the `productRatePlans` field.
         :return: GETCatalogType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -149,8 +149,8 @@ class CatalogApi(object):
 
         :param async_req bool
         :param str product_id: The unique ID of the product you want to retrieve. For example, 8a808255575bdae4015774e9602e16fe. (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param str zuora_version: The minor version of the Zuora REST API.   You only need to set this parameter if you use the `productRatePlans` field. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param str zuora_version: The minor version of the Zuora REST API.   You only need to set this parameter if you use the `productRatePlans` field.
         :return: GETProductType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -173,8 +173,8 @@ class CatalogApi(object):
 
         :param async_req bool
         :param str product_id: The unique ID of the product you want to retrieve. For example, 8a808255575bdae4015774e9602e16fe. (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param str zuora_version: The minor version of the Zuora REST API.   You only need to set this parameter if you use the `productRatePlans` field. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param str zuora_version: The minor version of the Zuora REST API.   You only need to set this parameter if you use the `productRatePlans` field.
         :return: GETProductType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -257,7 +257,7 @@ class CatalogApi(object):
         :param async_req bool
         :param str product_id: The unique ID of the product you want to share. For example, 8a808255575bdae4015774e9602e16fe. (required)
         :param POSTCatalogType request:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: CommonResponseType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -281,7 +281,7 @@ class CatalogApi(object):
         :param async_req bool
         :param str product_id: The unique ID of the product you want to share. For example, 8a808255575bdae4015774e9602e16fe. (required)
         :param POSTCatalogType request:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: CommonResponseType
                  If the method is called asynchronously,
                  returns the request thread.

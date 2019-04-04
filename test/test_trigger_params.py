@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.trigger_params import TriggerParams  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.trigger_params import TriggerParams  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestTriggerParams(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestTriggerParams(unittest.TestCase):
     def testTriggerParams(self):
         """Test TriggerParams"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.trigger_params.TriggerParams()  # noqa: E501
+        # model = zuora_client.models.trigger_params.TriggerParams()  # noqa: E501
         pass
 
 

@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.put_order_action_trigger_dates_request_type_order_actions import PUTOrderActionTriggerDatesRequestTypeOrderActions  # noqa: F401,E501
+from zuora_client.models.put_order_action_trigger_dates_request_type_order_actions import PUTOrderActionTriggerDatesRequestTypeOrderActions  # noqa: F401,E501
 
 
 class PUTOrderActionTriggerDatesRequestTypeSubscriptions(object):

@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.subscription_rated_result import SubscriptionRatedResult  # noqa: F401,E501
+from zuora_client.models.subscription_rated_result import SubscriptionRatedResult  # noqa: F401,E501
 
 
 class OrderRatedResult(object):

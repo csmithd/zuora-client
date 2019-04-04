@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.proxy_create_product_rate_plan import ProxyCreateProductRatePlan  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.proxy_create_product_rate_plan import ProxyCreateProductRatePlan  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestProxyCreateProductRatePlan(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestProxyCreateProductRatePlan(unittest.TestCase):
     def testProxyCreateProductRatePlan(self):
         """Test ProxyCreateProductRatePlan"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.proxy_create_product_rate_plan.ProxyCreateProductRatePlan()  # noqa: E501
+        # model = zuora_client.models.proxy_create_product_rate_plan.ProxyCreateProductRatePlan()  # noqa: E501
         pass
 
 

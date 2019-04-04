@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.amend_result import AmendResult  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.amend_result import AmendResult  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestAmendResult(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestAmendResult(unittest.TestCase):
     def testAmendResult(self):
         """Test AmendResult"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.amend_result.AmendResult()  # noqa: E501
+        # model = zuora_client.models.amend_result.AmendResult()  # noqa: E501
         pass
 
 

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.post_quote_doc_response_type import POSTQuoteDocResponseType  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.post_quote_doc_response_type import POSTQuoteDocResponseType  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestPOSTQuoteDocResponseType(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestPOSTQuoteDocResponseType(unittest.TestCase):
     def testPOSTQuoteDocResponseType(self):
         """Test POSTQuoteDocResponseType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.post_quote_doc_response_type.POSTQuoteDocResponseType()  # noqa: E501
+        # model = zuora_client.models.post_quote_doc_response_type.POSTQuoteDocResponseType()  # noqa: E501
         pass
 
 

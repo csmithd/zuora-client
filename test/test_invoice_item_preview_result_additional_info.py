@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.invoice_item_preview_result_additional_info import InvoiceItemPreviewResultAdditionalInfo  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.invoice_item_preview_result_additional_info import InvoiceItemPreviewResultAdditionalInfo  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestInvoiceItemPreviewResultAdditionalInfo(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestInvoiceItemPreviewResultAdditionalInfo(unittest.TestCase):
     def testInvoiceItemPreviewResultAdditionalInfo(self):
         """Test InvoiceItemPreviewResultAdditionalInfo"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.invoice_item_preview_result_additional_info.InvoiceItemPreviewResultAdditionalInfo()  # noqa: E501
+        # model = zuora_client.models.invoice_item_preview_result_additional_info.InvoiceItemPreviewResultAdditionalInfo()  # noqa: E501
         pass
 
 

@@ -16,8 +16,8 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.rate_plan_data import RatePlanData  # noqa: F401,E501
-from swagger_client.models.subscribe_request_subscription_data_subscription import SubscribeRequestSubscriptionDataSubscription  # noqa: F401,E501
+from zuora_client.models.rate_plan_data import RatePlanData  # noqa: F401,E501
+from zuora_client.models.subscribe_request_subscription_data_subscription import SubscribeRequestSubscriptionDataSubscription  # noqa: F401,E501
 
 
 class SubscribeRequestSubscriptionData(object):

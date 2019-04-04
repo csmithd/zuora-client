@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.get_billing_document_files_deletion_job_response import GETBillingDocumentFilesDeletionJobResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.get_billing_document_files_deletion_job_response import GETBillingDocumentFilesDeletionJobResponse  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestGETBillingDocumentFilesDeletionJobResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGETBillingDocumentFilesDeletionJobResponse(unittest.TestCase):
     def testGETBillingDocumentFilesDeletionJobResponse(self):
         """Test GETBillingDocumentFilesDeletionJobResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.get_billing_document_files_deletion_job_response.GETBillingDocumentFilesDeletionJobResponse()  # noqa: E501
+        # model = zuora_client.models.get_billing_document_files_deletion_job_response.GETBillingDocumentFilesDeletionJobResponse()  # noqa: E501
         pass
 
 

@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.get_attachment_response_without_success_type import GETAttachmentResponseWithoutSuccessType  # noqa: F401,E501
+from zuora_client.models.get_attachment_response_without_success_type import GETAttachmentResponseWithoutSuccessType  # noqa: F401,E501
 
 
 class GETAttachmentsResponseType(object):

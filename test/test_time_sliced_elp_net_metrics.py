@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.time_sliced_elp_net_metrics import TimeSlicedElpNetMetrics  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.time_sliced_elp_net_metrics import TimeSlicedElpNetMetrics  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestTimeSlicedElpNetMetrics(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestTimeSlicedElpNetMetrics(unittest.TestCase):
     def testTimeSlicedElpNetMetrics(self):
         """Test TimeSlicedElpNetMetrics"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.time_sliced_elp_net_metrics.TimeSlicedElpNetMetrics()  # noqa: E501
+        # model = zuora_client.models.time_sliced_elp_net_metrics.TimeSlicedElpNetMetrics()  # noqa: E501
         pass
 
 

@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.get_accounting_code_item_without_success_type import GETAccountingCodeItemWithoutSuccessType  # noqa: F401,E501
+from zuora_client.models.get_accounting_code_item_without_success_type import GETAccountingCodeItemWithoutSuccessType  # noqa: F401,E501
 
 
 class GETAccountingCodesType(object):

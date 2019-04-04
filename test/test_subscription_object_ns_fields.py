@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.subscription_object_ns_fields import SubscriptionObjectNSFields  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.subscription_object_ns_fields import SubscriptionObjectNSFields  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestSubscriptionObjectNSFields(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestSubscriptionObjectNSFields(unittest.TestCase):
     def testSubscriptionObjectNSFields(self):
         """Test SubscriptionObjectNSFields"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.subscription_object_ns_fields.SubscriptionObjectNSFields()  # noqa: E501
+        # model = zuora_client.models.subscription_object_ns_fields.SubscriptionObjectNSFields()  # noqa: E501
         pass
 
 

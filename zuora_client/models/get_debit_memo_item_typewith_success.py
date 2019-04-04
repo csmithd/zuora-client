@@ -16,10 +16,10 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.debit_memo_item_object_custom_fields import DebitMemoItemObjectCustomFields  # noqa: F401,E501
-from swagger_client.models.get_debit_memo_item_type_finance_information import GETDebitMemoItemTypeFinanceInformation  # noqa: F401,E501
-from swagger_client.models.get_debit_memo_item_typewith_success_taxation_items import GETDebitMemoItemTypewithSuccessTaxationItems  # noqa: F401,E501
-from swagger_client.models.getdm_tax_item_type import GETDMTaxItemType  # noqa: F401,E501
+from zuora_client.models.debit_memo_item_object_custom_fields import DebitMemoItemObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.get_debit_memo_item_type_finance_information import GETDebitMemoItemTypeFinanceInformation  # noqa: F401,E501
+from zuora_client.models.get_debit_memo_item_typewith_success_taxation_items import GETDebitMemoItemTypewithSuccessTaxationItems  # noqa: F401,E501
+from zuora_client.models.getdm_tax_item_type import GETDMTaxItemType  # noqa: F401,E501
 
 
 class GETDebitMemoItemTypewithSuccess(object):

@@ -16,10 +16,10 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.get_subscription_rate_plan_type import GETSubscriptionRatePlanType  # noqa: F401,E501
-from swagger_client.models.subscription_object_custom_fields import SubscriptionObjectCustomFields  # noqa: F401,E501
-from swagger_client.models.subscription_object_ns_fields import SubscriptionObjectNSFields  # noqa: F401,E501
-from swagger_client.models.subscription_object_qt_fields import SubscriptionObjectQTFields  # noqa: F401,E501
+from zuora_client.models.get_subscription_rate_plan_type import GETSubscriptionRatePlanType  # noqa: F401,E501
+from zuora_client.models.subscription_object_custom_fields import SubscriptionObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.subscription_object_ns_fields import SubscriptionObjectNSFields  # noqa: F401,E501
+from zuora_client.models.subscription_object_qt_fields import SubscriptionObjectQTFields  # noqa: F401,E501
 
 
 class GETSubscriptionTypeWithSuccess(object):

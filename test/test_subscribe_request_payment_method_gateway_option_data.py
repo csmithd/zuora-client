@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.subscribe_request_payment_method_gateway_option_data import SubscribeRequestPaymentMethodGatewayOptionData  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.subscribe_request_payment_method_gateway_option_data import SubscribeRequestPaymentMethodGatewayOptionData  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestSubscribeRequestPaymentMethodGatewayOptionData(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestSubscribeRequestPaymentMethodGatewayOptionData(unittest.TestCase):
     def testSubscribeRequestPaymentMethodGatewayOptionData(self):
         """Test SubscribeRequestPaymentMethodGatewayOptionData"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.subscribe_request_payment_method_gateway_option_data.SubscribeRequestPaymentMethodGatewayOptionData()  # noqa: E501
+        # model = zuora_client.models.subscribe_request_payment_method_gateway_option_data.SubscribeRequestPaymentMethodGatewayOptionData()  # noqa: E501
         pass
 
 

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.sold_to_contact_post_order import SoldToContactPostOrder  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.sold_to_contact_post_order import SoldToContactPostOrder  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestSoldToContactPostOrder(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestSoldToContactPostOrder(unittest.TestCase):
     def testSoldToContactPostOrder(self):
         """Test SoldToContactPostOrder"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.sold_to_contact_post_order.SoldToContactPostOrder()  # noqa: E501
+        # model = zuora_client.models.sold_to_contact_post_order.SoldToContactPostOrder()  # noqa: E501
         pass
 
 

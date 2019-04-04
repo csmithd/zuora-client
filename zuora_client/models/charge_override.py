@@ -16,11 +16,11 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.charge_override_billing import ChargeOverrideBilling  # noqa: F401,E501
-from swagger_client.models.charge_override_pricing import ChargeOverridePricing  # noqa: F401,E501
-from swagger_client.models.end_conditions import EndConditions  # noqa: F401,E501
-from swagger_client.models.rate_plan_charge_object_custom_fields import RatePlanChargeObjectCustomFields  # noqa: F401,E501
-from swagger_client.models.trigger_params import TriggerParams  # noqa: F401,E501
+from zuora_client.models.charge_override_billing import ChargeOverrideBilling  # noqa: F401,E501
+from zuora_client.models.charge_override_pricing import ChargeOverridePricing  # noqa: F401,E501
+from zuora_client.models.end_conditions import EndConditions  # noqa: F401,E501
+from zuora_client.models.rate_plan_charge_object_custom_fields import RatePlanChargeObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.trigger_params import TriggerParams  # noqa: F401,E501
 
 
 class ChargeOverride(object):

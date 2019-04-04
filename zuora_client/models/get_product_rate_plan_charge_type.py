@@ -16,11 +16,11 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.finance_information import FinanceInformation  # noqa: F401,E501
-from swagger_client.models.get_product_discount_apply_details_type import GETProductDiscountApplyDetailsType  # noqa: F401,E501
-from swagger_client.models.get_product_rate_plan_charge_pricing_type import GETProductRatePlanChargePricingType  # noqa: F401,E501
-from swagger_client.models.product_rate_plan_charge_object_custom_fields import ProductRatePlanChargeObjectCustomFields  # noqa: F401,E501
-from swagger_client.models.product_rate_plan_charge_object_ns_fields import ProductRatePlanChargeObjectNSFields  # noqa: F401,E501
+from zuora_client.models.finance_information import FinanceInformation  # noqa: F401,E501
+from zuora_client.models.get_product_discount_apply_details_type import GETProductDiscountApplyDetailsType  # noqa: F401,E501
+from zuora_client.models.get_product_rate_plan_charge_pricing_type import GETProductRatePlanChargePricingType  # noqa: F401,E501
+from zuora_client.models.product_rate_plan_charge_object_custom_fields import ProductRatePlanChargeObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.product_rate_plan_charge_object_ns_fields import ProductRatePlanChargeObjectNSFields  # noqa: F401,E501
 
 
 class GETProductRatePlanChargeType(object):

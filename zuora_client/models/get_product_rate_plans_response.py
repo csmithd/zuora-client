@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.get_product_rate_plan_type import GETProductRatePlanType  # noqa: F401,E501
+from zuora_client.models.get_product_rate_plan_type import GETProductRatePlanType  # noqa: F401,E501
 
 
 class GETProductRatePlansResponse(object):

@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.usage_object_custom_fields import UsageObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.usage_object_custom_fields import UsageObjectCustomFields  # noqa: F401,E501
 
 
 class GETUsageType(object):

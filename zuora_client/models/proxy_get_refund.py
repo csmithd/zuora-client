@@ -16,8 +16,8 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.refund_object_custom_fields import RefundObjectCustomFields  # noqa: F401,E501
-from swagger_client.models.refund_object_ns_fields import RefundObjectNSFields  # noqa: F401,E501
+from zuora_client.models.refund_object_custom_fields import RefundObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.refund_object_ns_fields import RefundObjectNSFields  # noqa: F401,E501
 
 
 class ProxyGetRefund(object):

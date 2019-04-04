@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.recurring_per_unit_pricing_override import RecurringPerUnitPricingOverride  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.recurring_per_unit_pricing_override import RecurringPerUnitPricingOverride  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestRecurringPerUnitPricingOverride(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestRecurringPerUnitPricingOverride(unittest.TestCase):
     def testRecurringPerUnitPricingOverride(self):
         """Test RecurringPerUnitPricingOverride"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.recurring_per_unit_pricing_override.RecurringPerUnitPricingOverride()  # noqa: E501
+        # model = zuora_client.models.recurring_per_unit_pricing_override.RecurringPerUnitPricingOverride()  # noqa: E501
         pass
 
 

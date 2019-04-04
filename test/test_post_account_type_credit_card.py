@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.post_account_type_credit_card import POSTAccountTypeCreditCard  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.post_account_type_credit_card import POSTAccountTypeCreditCard  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestPOSTAccountTypeCreditCard(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestPOSTAccountTypeCreditCard(unittest.TestCase):
     def testPOSTAccountTypeCreditCard(self):
         """Test POSTAccountTypeCreditCard"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.post_account_type_credit_card.POSTAccountTypeCreditCard()  # noqa: E501
+        # model = zuora_client.models.post_account_type_credit_card.POSTAccountTypeCreditCard()  # noqa: E501
         pass
 
 

@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.get_billing_documents_response_type import GETBillingDocumentsResponseType  # noqa: F401,E501
+from zuora_client.models.get_billing_documents_response_type import GETBillingDocumentsResponseType  # noqa: F401,E501
 
 
 class BillingDocumentQueryResponseElementType(object):

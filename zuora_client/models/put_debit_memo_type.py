@@ -16,9 +16,9 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.debit_memo_object_custom_fields import DebitMemoObjectCustomFields  # noqa: F401,E501
-from swagger_client.models.debit_memo_object_ns_fields import DebitMemoObjectNSFields  # noqa: F401,E501
-from swagger_client.models.put_debit_memo_item_type import PUTDebitMemoItemType  # noqa: F401,E501
+from zuora_client.models.debit_memo_object_custom_fields import DebitMemoObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.debit_memo_object_ns_fields import DebitMemoObjectNSFields  # noqa: F401,E501
+from zuora_client.models.put_debit_memo_item_type import PUTDebitMemoItemType  # noqa: F401,E501
 
 
 class PUTDebitMemoType(object):

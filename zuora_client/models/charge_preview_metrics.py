@@ -16,10 +16,10 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.charge_preview_metrics_cmrr import ChargePreviewMetricsCmrr  # noqa: F401,E501
-from swagger_client.models.charge_preview_metrics_tax import ChargePreviewMetricsTax  # noqa: F401,E501
-from swagger_client.models.charge_preview_metrics_tcb import ChargePreviewMetricsTcb  # noqa: F401,E501
-from swagger_client.models.charge_preview_metrics_tcv import ChargePreviewMetricsTcv  # noqa: F401,E501
+from zuora_client.models.charge_preview_metrics_cmrr import ChargePreviewMetricsCmrr  # noqa: F401,E501
+from zuora_client.models.charge_preview_metrics_tax import ChargePreviewMetricsTax  # noqa: F401,E501
+from zuora_client.models.charge_preview_metrics_tcb import ChargePreviewMetricsTcb  # noqa: F401,E501
+from zuora_client.models.charge_preview_metrics_tcv import ChargePreviewMetricsTcv  # noqa: F401,E501
 
 
 class ChargePreviewMetrics(object):

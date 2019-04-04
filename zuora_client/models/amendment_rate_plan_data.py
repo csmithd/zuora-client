@@ -16,9 +16,9 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.rate_plan import RatePlan  # noqa: F401,E501
-from swagger_client.models.rate_plan_charge_data_in_rate_plan_data import RatePlanChargeDataInRatePlanData  # noqa: F401,E501
-from swagger_client.models.subscription_product_feature_list import SubscriptionProductFeatureList  # noqa: F401,E501
+from zuora_client.models.rate_plan import RatePlan  # noqa: F401,E501
+from zuora_client.models.rate_plan_charge_data_in_rate_plan_data import RatePlanChargeDataInRatePlanData  # noqa: F401,E501
+from zuora_client.models.subscription_product_feature_list import SubscriptionProductFeatureList  # noqa: F401,E501
 
 
 class AmendmentRatePlanData(object):

@@ -16,8 +16,8 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.last_term import LastTerm  # noqa: F401,E501
-from swagger_client.models.renewal_term import RenewalTerm  # noqa: F401,E501
+from zuora_client.models.last_term import LastTerm  # noqa: F401,E501
+from zuora_client.models.renewal_term import RenewalTerm  # noqa: F401,E501
 
 
 class TermsAndConditions(object):

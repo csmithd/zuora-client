@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.journal_entry_item_object_custom_fields import JournalEntryItemObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.journal_entry_item_object_custom_fields import JournalEntryItemObjectCustomFields  # noqa: F401,E501
 
 
 class PUTJournalEntryItemType(object):

@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.filter_rule_parameter_definitions import FilterRuleParameterDefinitions  # noqa: F401,E501
+from zuora_client.models.filter_rule_parameter_definitions import FilterRuleParameterDefinitions  # noqa: F401,E501
 
 
 class POSTPublicNotificationDefinitionRequestFilterRule(object):

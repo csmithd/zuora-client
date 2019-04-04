@@ -16,10 +16,10 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.account import Account  # noqa: F401,E501
-from swagger_client.models.order_object_custom_fields import OrderObjectCustomFields  # noqa: F401,E501
-from swagger_client.models.post_order_request_type_subscriptions import POSTOrderRequestTypeSubscriptions  # noqa: F401,E501
-from swagger_client.models.processing_options import ProcessingOptions  # noqa: F401,E501
+from zuora_client.models.account import Account  # noqa: F401,E501
+from zuora_client.models.order_object_custom_fields import OrderObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.post_order_request_type_subscriptions import POSTOrderRequestTypeSubscriptions  # noqa: F401,E501
+from zuora_client.models.processing_options import ProcessingOptions  # noqa: F401,E501
 
 
 class POSTOrderRequestType(object):

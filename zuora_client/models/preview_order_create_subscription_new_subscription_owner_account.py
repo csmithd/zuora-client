@@ -16,11 +16,11 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.account_object_custom_fields import AccountObjectCustomFields  # noqa: F401,E501
-from swagger_client.models.bill_to_contact_post_order import BillToContactPostOrder  # noqa: F401,E501
-from swagger_client.models.credit_card import CreditCard  # noqa: F401,E501
-from swagger_client.models.sold_to_contact_post_order import SoldToContactPostOrder  # noqa: F401,E501
-from swagger_client.models.tax_info import TaxInfo  # noqa: F401,E501
+from zuora_client.models.account_object_custom_fields import AccountObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.bill_to_contact_post_order import BillToContactPostOrder  # noqa: F401,E501
+from zuora_client.models.credit_card import CreditCard  # noqa: F401,E501
+from zuora_client.models.sold_to_contact_post_order import SoldToContactPostOrder  # noqa: F401,E501
+from zuora_client.models.tax_info import TaxInfo  # noqa: F401,E501
 
 
 class PreviewOrderCreateSubscriptionNewSubscriptionOwnerAccount(object):

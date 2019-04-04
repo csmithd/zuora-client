@@ -16,10 +16,10 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.actions_error_response import ActionsErrorResponse  # noqa: F401,E501
-from swagger_client.models.invoice_data import InvoiceData  # noqa: F401,E501
-from swagger_client.models.subscribe_result_charge_metrics_data import SubscribeResultChargeMetricsData  # noqa: F401,E501
-from swagger_client.models.subscribe_result_invoice_result import SubscribeResultInvoiceResult  # noqa: F401,E501
+from zuora_client.models.actions_error_response import ActionsErrorResponse  # noqa: F401,E501
+from zuora_client.models.invoice_data import InvoiceData  # noqa: F401,E501
+from zuora_client.models.subscribe_result_charge_metrics_data import SubscribeResultChargeMetricsData  # noqa: F401,E501
+from zuora_client.models.subscribe_result_invoice_result import SubscribeResultInvoiceResult  # noqa: F401,E501
 
 
 class SubscribeResult(object):

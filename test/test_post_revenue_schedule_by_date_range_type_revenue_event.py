@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.post_revenue_schedule_by_date_range_type_revenue_event import POSTRevenueScheduleByDateRangeTypeRevenueEvent  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.post_revenue_schedule_by_date_range_type_revenue_event import POSTRevenueScheduleByDateRangeTypeRevenueEvent  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestPOSTRevenueScheduleByDateRangeTypeRevenueEvent(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestPOSTRevenueScheduleByDateRangeTypeRevenueEvent(unittest.TestCase):
     def testPOSTRevenueScheduleByDateRangeTypeRevenueEvent(self):
         """Test POSTRevenueScheduleByDateRangeTypeRevenueEvent"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.post_revenue_schedule_by_date_range_type_revenue_event.POSTRevenueScheduleByDateRangeTypeRevenueEvent()  # noqa: E501
+        # model = zuora_client.models.post_revenue_schedule_by_date_range_type_revenue_event.POSTRevenueScheduleByDateRangeTypeRevenueEvent()  # noqa: E501
         pass
 
 

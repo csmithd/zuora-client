@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.get_billing_documents_response_type import GETBillingDocumentsResponseType  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.get_billing_documents_response_type import GETBillingDocumentsResponseType  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestGETBillingDocumentsResponseType(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGETBillingDocumentsResponseType(unittest.TestCase):
     def testGETBillingDocumentsResponseType(self):
         """Test GETBillingDocumentsResponseType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.get_billing_documents_response_type.GETBillingDocumentsResponseType()  # noqa: E501
+        # model = zuora_client.models.get_billing_documents_response_type.GETBillingDocumentsResponseType()  # noqa: E501
         pass
 
 

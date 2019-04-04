@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.post_public_notification_definition_request_callout import POSTPublicNotificationDefinitionRequestCallout  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.post_public_notification_definition_request_callout import POSTPublicNotificationDefinitionRequestCallout  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestPOSTPublicNotificationDefinitionRequestCallout(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestPOSTPublicNotificationDefinitionRequestCallout(unittest.TestCase):
     def testPOSTPublicNotificationDefinitionRequestCallout(self):
         """Test POSTPublicNotificationDefinitionRequestCallout"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.post_public_notification_definition_request_callout.POSTPublicNotificationDefinitionRequestCallout()  # noqa: E501
+        # model = zuora_client.models.post_public_notification_definition_request_callout.POSTPublicNotificationDefinitionRequestCallout()  # noqa: E501
         pass
 
 

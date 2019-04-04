@@ -16,8 +16,8 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.credit_memo_item_from_write_off_invoice_finance_information import CreditMemoItemFromWriteOffInvoiceFinanceInformation  # noqa: F401,E501
-from swagger_client.models.credit_memo_item_object_custom_fields import CreditMemoItemObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.credit_memo_item_from_write_off_invoice_finance_information import CreditMemoItemFromWriteOffInvoiceFinanceInformation  # noqa: F401,E501
+from zuora_client.models.credit_memo_item_object_custom_fields import CreditMemoItemObjectCustomFields  # noqa: F401,E501
 
 
 class CreditMemoItemFromWriteOffInvoice(object):

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.get_account_summary_type_basic_info_default_payment_method import GETAccountSummaryTypeBasicInfoDefaultPaymentMethod  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.get_account_summary_type_basic_info_default_payment_method import GETAccountSummaryTypeBasicInfoDefaultPaymentMethod  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestGETAccountSummaryTypeBasicInfoDefaultPaymentMethod(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGETAccountSummaryTypeBasicInfoDefaultPaymentMethod(unittest.TestCase):
     def testGETAccountSummaryTypeBasicInfoDefaultPaymentMethod(self):
         """Test GETAccountSummaryTypeBasicInfoDefaultPaymentMethod"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.get_account_summary_type_basic_info_default_payment_method.GETAccountSummaryTypeBasicInfoDefaultPaymentMethod()  # noqa: E501
+        # model = zuora_client.models.get_account_summary_type_basic_info_default_payment_method.GETAccountSummaryTypeBasicInfoDefaultPaymentMethod()  # noqa: E501
         pass
 
 

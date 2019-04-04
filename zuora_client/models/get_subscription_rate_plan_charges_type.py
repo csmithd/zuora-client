@@ -16,9 +16,9 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.get_discount_apply_details_type import GETDiscountApplyDetailsType  # noqa: F401,E501
-from swagger_client.models.get_tier_type import GETTierType  # noqa: F401,E501
-from swagger_client.models.rate_plan_charge_object_custom_fields import RatePlanChargeObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.get_discount_apply_details_type import GETDiscountApplyDetailsType  # noqa: F401,E501
+from zuora_client.models.get_tier_type import GETTierType  # noqa: F401,E501
+from zuora_client.models.rate_plan_charge_object_custom_fields import RatePlanChargeObjectCustomFields  # noqa: F401,E501
 
 
 class GETSubscriptionRatePlanChargesType(object):

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.get_account_summary_type import GETAccountSummaryType  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.get_account_summary_type import GETAccountSummaryType  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestGETAccountSummaryType(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGETAccountSummaryType(unittest.TestCase):
     def testGETAccountSummaryType(self):
         """Test GETAccountSummaryType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.get_account_summary_type.GETAccountSummaryType()  # noqa: E501
+        # model = zuora_client.models.get_account_summary_type.GETAccountSummaryType()  # noqa: E501
         pass
 
 

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.create_stored_credential_profile_request import CreateStoredCredentialProfileRequest  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.create_stored_credential_profile_request import CreateStoredCredentialProfileRequest  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestCreateStoredCredentialProfileRequest(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestCreateStoredCredentialProfileRequest(unittest.TestCase):
     def testCreateStoredCredentialProfileRequest(self):
         """Test CreateStoredCredentialProfileRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.create_stored_credential_profile_request.CreateStoredCredentialProfileRequest()  # noqa: E501
+        # model = zuora_client.models.create_stored_credential_profile_request.CreateStoredCredentialProfileRequest()  # noqa: E501
         pass
 
 

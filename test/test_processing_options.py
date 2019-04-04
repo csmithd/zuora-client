@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.processing_options import ProcessingOptions  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.processing_options import ProcessingOptions  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestProcessingOptions(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestProcessingOptions(unittest.TestCase):
     def testProcessingOptions(self):
         """Test ProcessingOptions"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.processing_options.ProcessingOptions()  # noqa: E501
+        # model = zuora_client.models.processing_options.ProcessingOptions()  # noqa: E501
         pass
 
 

@@ -16,9 +16,9 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.account_object_custom_fields import AccountObjectCustomFields  # noqa: F401,E501
-from swagger_client.models.preview_contact_info import PreviewContactInfo  # noqa: F401,E501
-from swagger_client.models.tax_info import TaxInfo  # noqa: F401,E501
+from zuora_client.models.account_object_custom_fields import AccountObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.preview_contact_info import PreviewContactInfo  # noqa: F401,E501
+from zuora_client.models.tax_info import TaxInfo  # noqa: F401,E501
 
 
 class PreviewAccountInfo(object):

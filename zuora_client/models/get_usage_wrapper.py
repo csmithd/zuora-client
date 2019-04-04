@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.get_usage_type import GETUsageType  # noqa: F401,E501
+from zuora_client.models.get_usage_type import GETUsageType  # noqa: F401,E501
 
 
 class GETUsageWrapper(object):

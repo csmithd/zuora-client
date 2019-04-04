@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.breakdown_detail import BreakdownDetail  # noqa: F401,E501
+from zuora_client.models.breakdown_detail import BreakdownDetail  # noqa: F401,E501
 
 
 class CreditMemoItemBreakdown(object):

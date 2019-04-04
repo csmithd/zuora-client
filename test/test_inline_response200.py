@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.inline_response200 import InlineResponse200  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.inline_response200 import InlineResponse200  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestInlineResponse200(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestInlineResponse200(unittest.TestCase):
     def testInlineResponse200(self):
         """Test InlineResponse200"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.inline_response200.InlineResponse200()  # noqa: E501
+        # model = zuora_client.models.inline_response200.InlineResponse200()  # noqa: E501
         pass
 
 

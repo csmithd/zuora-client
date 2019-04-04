@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.get_journal_entry_detail_type_without_success import GETJournalEntryDetailTypeWithoutSuccess  # noqa: F401,E501
+from zuora_client.models.get_journal_entry_detail_type_without_success import GETJournalEntryDetailTypeWithoutSuccess  # noqa: F401,E501
 
 
 class GETJournalEntriesInJournalRunType(object):

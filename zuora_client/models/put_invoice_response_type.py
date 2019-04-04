@@ -16,8 +16,8 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.invoice_object_custom_fields import InvoiceObjectCustomFields  # noqa: F401,E501
-from swagger_client.models.invoice_object_ns_fields import InvoiceObjectNSFields  # noqa: F401,E501
+from zuora_client.models.invoice_object_custom_fields import InvoiceObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.invoice_object_ns_fields import InvoiceObjectNSFields  # noqa: F401,E501
 
 
 class PutInvoiceResponseType(object):

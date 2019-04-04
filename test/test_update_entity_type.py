@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.update_entity_type import UpdateEntityType  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.update_entity_type import UpdateEntityType  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestUpdateEntityType(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestUpdateEntityType(unittest.TestCase):
     def testUpdateEntityType(self):
         """Test UpdateEntityType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.update_entity_type.UpdateEntityType()  # noqa: E501
+        # model = zuora_client.models.update_entity_type.UpdateEntityType()  # noqa: E501
         pass
 
 

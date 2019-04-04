@@ -16,10 +16,10 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.post_non_ref_refund_type_finance_information import PostNonRefRefundTypeFinanceInformation  # noqa: F401,E501
-from swagger_client.models.refund_credit_memo_item_type import RefundCreditMemoItemType  # noqa: F401,E501
-from swagger_client.models.refund_object_custom_fields import RefundObjectCustomFields  # noqa: F401,E501
-from swagger_client.models.refund_object_ns_fields import RefundObjectNSFields  # noqa: F401,E501
+from zuora_client.models.post_non_ref_refund_type_finance_information import PostNonRefRefundTypeFinanceInformation  # noqa: F401,E501
+from zuora_client.models.refund_credit_memo_item_type import RefundCreditMemoItemType  # noqa: F401,E501
+from zuora_client.models.refund_object_custom_fields import RefundObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.refund_object_ns_fields import RefundObjectNSFields  # noqa: F401,E501
 
 
 class PostNonRefRefundType(object):

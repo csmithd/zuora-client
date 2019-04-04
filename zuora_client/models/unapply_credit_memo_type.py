@@ -16,8 +16,8 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.credit_memo_unapply_debit_memo_request_type import CreditMemoUnapplyDebitMemoRequestType  # noqa: F401,E501
-from swagger_client.models.credit_memo_unapply_invoice_request_type import CreditMemoUnapplyInvoiceRequestType  # noqa: F401,E501
+from zuora_client.models.credit_memo_unapply_debit_memo_request_type import CreditMemoUnapplyDebitMemoRequestType  # noqa: F401,E501
+from zuora_client.models.credit_memo_unapply_invoice_request_type import CreditMemoUnapplyInvoiceRequestType  # noqa: F401,E501
 
 
 class UnapplyCreditMemoType(object):

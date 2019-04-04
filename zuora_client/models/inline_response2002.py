@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.get_public_notification_definition_response import GETPublicNotificationDefinitionResponse  # noqa: F401,E501
+from zuora_client.models.get_public_notification_definition_response import GETPublicNotificationDefinitionResponse  # noqa: F401,E501
 
 
 class InlineResponse2002(object):

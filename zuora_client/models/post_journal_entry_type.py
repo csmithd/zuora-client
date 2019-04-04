@@ -16,9 +16,9 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.journal_entry_object_custom_fields import JournalEntryObjectCustomFields  # noqa: F401,E501
-from swagger_client.models.post_journal_entry_item_type import POSTJournalEntryItemType  # noqa: F401,E501
-from swagger_client.models.post_journal_entry_segment_type import POSTJournalEntrySegmentType  # noqa: F401,E501
+from zuora_client.models.journal_entry_object_custom_fields import JournalEntryObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.post_journal_entry_item_type import POSTJournalEntryItemType  # noqa: F401,E501
+from zuora_client.models.post_journal_entry_segment_type import POSTJournalEntrySegmentType  # noqa: F401,E501
 
 
 class POSTJournalEntryType(object):

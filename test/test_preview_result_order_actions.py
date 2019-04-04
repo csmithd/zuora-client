@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.preview_result_order_actions import PreviewResultOrderActions  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.preview_result_order_actions import PreviewResultOrderActions  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestPreviewResultOrderActions(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestPreviewResultOrderActions(unittest.TestCase):
     def testPreviewResultOrderActions(self):
         """Test PreviewResultOrderActions"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.preview_result_order_actions.PreviewResultOrderActions()  # noqa: E501
+        # model = zuora_client.models.preview_result_order_actions.PreviewResultOrderActions()  # noqa: E501
         pass
 
 

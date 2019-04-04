@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.get_payment_item_part_typewith_success import GETPaymentItemPartTypewithSuccess  # noqa: F401,E501
+from zuora_client.models.get_payment_item_part_typewith_success import GETPaymentItemPartTypewithSuccess  # noqa: F401,E501
 
 
 class GETPaymentItemPartCollectionType(object):

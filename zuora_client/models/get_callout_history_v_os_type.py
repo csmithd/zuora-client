@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.get_callout_history_vo_type import GETCalloutHistoryVOType  # noqa: F401,E501
+from zuora_client.models.get_callout_history_vo_type import GETCalloutHistoryVOType  # noqa: F401,E501
 
 
 class GETCalloutHistoryVOsType(object):

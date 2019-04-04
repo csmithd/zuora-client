@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.new_charge_metrics import NewChargeMetrics  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.new_charge_metrics import NewChargeMetrics  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestNewChargeMetrics(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestNewChargeMetrics(unittest.TestCase):
     def testNewChargeMetrics(self):
         """Test NewChargeMetrics"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.new_charge_metrics.NewChargeMetrics()  # noqa: E501
+        # model = zuora_client.models.new_charge_metrics.NewChargeMetrics()  # noqa: E501
         pass
 
 

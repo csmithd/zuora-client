@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.credit_memo_object_ns_fields import CreditMemoObjectNSFields  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.credit_memo_object_ns_fields import CreditMemoObjectNSFields  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestCreditMemoObjectNSFields(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestCreditMemoObjectNSFields(unittest.TestCase):
     def testCreditMemoObjectNSFields(self):
         """Test CreditMemoObjectNSFields"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.credit_memo_object_ns_fields.CreditMemoObjectNSFields()  # noqa: E501
+        # model = zuora_client.models.credit_memo_object_ns_fields.CreditMemoObjectNSFields()  # noqa: E501
         pass
 
 

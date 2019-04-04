@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.subscribe_request_subscribe_options_subscribe_invoice_processing_options import SubscribeRequestSubscribeOptionsSubscribeInvoiceProcessingOptions  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.subscribe_request_subscribe_options_subscribe_invoice_processing_options import SubscribeRequestSubscribeOptionsSubscribeInvoiceProcessingOptions  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestSubscribeRequestSubscribeOptionsSubscribeInvoiceProcessingOptions(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestSubscribeRequestSubscribeOptionsSubscribeInvoiceProcessingOptions(unit
     def testSubscribeRequestSubscribeOptionsSubscribeInvoiceProcessingOptions(self):
         """Test SubscribeRequestSubscribeOptionsSubscribeInvoiceProcessingOptions"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.subscribe_request_subscribe_options_subscribe_invoice_processing_options.SubscribeRequestSubscribeOptionsSubscribeInvoiceProcessingOptions()  # noqa: E501
+        # model = zuora_client.models.subscribe_request_subscribe_options_subscribe_invoice_processing_options.SubscribeRequestSubscribeOptionsSubscribeInvoiceProcessingOptions()  # noqa: E501
         pass
 
 

@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.proxy_bad_request_response_errors import ProxyBadRequestResponseErrors  # noqa: F401,E501
+from zuora_client.models.proxy_bad_request_response_errors import ProxyBadRequestResponseErrors  # noqa: F401,E501
 
 
 class ProxyBadRequestResponse(object):

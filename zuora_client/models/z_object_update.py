@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.z_object import ZObject  # noqa: F401,E501
+from zuora_client.models.z_object import ZObject  # noqa: F401,E501
 
 
 class ZObjectUpdate(object):

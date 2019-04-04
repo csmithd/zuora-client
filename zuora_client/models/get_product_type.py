@@ -16,9 +16,9 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.get_product_feature_type import GetProductFeatureType  # noqa: F401,E501
-from swagger_client.models.product_object_custom_fields import ProductObjectCustomFields  # noqa: F401,E501
-from swagger_client.models.product_object_ns_fields import ProductObjectNSFields  # noqa: F401,E501
+from zuora_client.models.get_product_feature_type import GetProductFeatureType  # noqa: F401,E501
+from zuora_client.models.product_object_custom_fields import ProductObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.product_object_ns_fields import ProductObjectNSFields  # noqa: F401,E501
 
 
 class GETProductType(object):

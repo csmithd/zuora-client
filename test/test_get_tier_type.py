@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.get_tier_type import GETTierType  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.get_tier_type import GETTierType  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestGETTierType(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGETTierType(unittest.TestCase):
     def testGETTierType(self):
         """Test GETTierType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.get_tier_type.GETTierType()  # noqa: E501
+        # model = zuora_client.models.get_tier_type.GETTierType()  # noqa: E501
         pass
 
 

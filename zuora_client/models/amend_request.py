@@ -16,9 +16,9 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.amend_request_amend_options import AmendRequestAmendOptions  # noqa: F401,E501
-from swagger_client.models.amend_request_preview_options import AmendRequestPreviewOptions  # noqa: F401,E501
-from swagger_client.models.amendment import Amendment  # noqa: F401,E501
+from zuora_client.models.amend_request_amend_options import AmendRequestAmendOptions  # noqa: F401,E501
+from zuora_client.models.amend_request_preview_options import AmendRequestPreviewOptions  # noqa: F401,E501
+from zuora_client.models.amendment import Amendment  # noqa: F401,E501
 
 
 class AmendRequest(object):

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.post_payment_method_type import POSTPaymentMethodType  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.post_payment_method_type import POSTPaymentMethodType  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestPOSTPaymentMethodType(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestPOSTPaymentMethodType(unittest.TestCase):
     def testPOSTPaymentMethodType(self):
         """Test POSTPaymentMethodType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.post_payment_method_type.POSTPaymentMethodType()  # noqa: E501
+        # model = zuora_client.models.post_payment_method_type.POSTPaymentMethodType()  # noqa: E501
         pass
 
 

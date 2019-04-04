@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.posthmac_signature_response_type import POSTHMACSignatureResponseType  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.posthmac_signature_response_type import POSTHMACSignatureResponseType  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestPOSTHMACSignatureResponseType(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestPOSTHMACSignatureResponseType(unittest.TestCase):
     def testPOSTHMACSignatureResponseType(self):
         """Test POSTHMACSignatureResponseType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.posthmac_signature_response_type.POSTHMACSignatureResponseType()  # noqa: E501
+        # model = zuora_client.models.posthmac_signature_response_type.POSTHMACSignatureResponseType()  # noqa: E501
         pass
 
 

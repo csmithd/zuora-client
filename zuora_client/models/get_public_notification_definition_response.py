@@ -16,9 +16,9 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.filter_rule_parameter_values import FilterRuleParameterValues  # noqa: F401,E501
-from swagger_client.models.get_public_notification_definition_response_callout import GETPublicNotificationDefinitionResponseCallout  # noqa: F401,E501
-from swagger_client.models.get_public_notification_definition_response_filter_rule import GETPublicNotificationDefinitionResponseFilterRule  # noqa: F401,E501
+from zuora_client.models.filter_rule_parameter_values import FilterRuleParameterValues  # noqa: F401,E501
+from zuora_client.models.get_public_notification_definition_response_callout import GETPublicNotificationDefinitionResponseCallout  # noqa: F401,E501
+from zuora_client.models.get_public_notification_definition_response_filter_rule import GETPublicNotificationDefinitionResponseFilterRule  # noqa: F401,E501
 
 
 class GETPublicNotificationDefinitionResponse(object):

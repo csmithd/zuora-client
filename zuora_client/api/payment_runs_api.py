@@ -18,7 +18,7 @@ import re  # noqa: F401
 # python 2 and python 3 compatibility library
 import six
 
-from swagger_client.api_client import ApiClient
+from zuora_client.api_client import ApiClient
 
 
 class PaymentRunsApi(object):
@@ -143,7 +143,7 @@ class PaymentRunsApi(object):
 
         :param async_req bool
         :param str payment_run_id: The unique ID of a payment run. For example, 402890245f097f39015f0f074a2e0566.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETPaymentRunType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -166,7 +166,7 @@ class PaymentRunsApi(object):
 
         :param async_req bool
         :param str payment_run_id: The unique ID of a payment run. For example, 402890245f097f39015f0f074a2e0566.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETPaymentRunType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -344,15 +344,15 @@ class PaymentRunsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param int page_size: Number of rows returned per page. 
-        :param str created_by_id: This parameter filters the response based on the `createdById` field. 
-        :param datetime created_date: This parameter filters the response based on the `createdDate` field. 
-        :param str status: This parameter filters the response based on the `status` field. 
-        :param date target_date: This parameter filters the response based on the `targetDate` field. 
-        :param str updated_by_id: This parameter filters the response based on the `updatedById` field. 
-        :param datetime updated_date: This parameter filters the response based on the `updatedDate` field. 
-        :param str sort: This parameter restricts the order of the data returned in the response. You can use this parameter to supply a dimension you want to sort on.  A sortable field uses the following form:   *operator* *field_name*  You can use at most two sortable fields in one URL path. Use a comma to separate sortable fields. For example:  *operator* *field_name*, *operator* *field_name*    *operator* is used to mark the order of sequencing. The operator is optional. If you only specify the sortable field without any operator, the response data is sorted in descending order by this field.    - The `-` operator indicates an ascending order.   - The `+` operator indicates a descending order.  By default, the response data is displayed in descending order by payment run number.  *field_name* indicates the name of a sortable field. The supported sortable fields of this operation are as below:    - targetDate   - status   - createdDate   - createdById   - updatedDate   - updatedById  Examples:  - /v1/payment-runs?sort=+createdDate  - /v1/payment-runs?status=Processing&sort=-createdById,+targetDate 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param int page_size: Number of rows returned per page.
+        :param str created_by_id: This parameter filters the response based on the `createdById` field.
+        :param datetime created_date: This parameter filters the response based on the `createdDate` field.
+        :param str status: This parameter filters the response based on the `status` field.
+        :param date target_date: This parameter filters the response based on the `targetDate` field.
+        :param str updated_by_id: This parameter filters the response based on the `updatedById` field.
+        :param datetime updated_date: This parameter filters the response based on the `updatedDate` field.
+        :param str sort: This parameter restricts the order of the data returned in the response. You can use this parameter to supply a dimension you want to sort on.  A sortable field uses the following form:   *operator* *field_name*  You can use at most two sortable fields in one URL path. Use a comma to separate sortable fields. For example:  *operator* *field_name*, *operator* *field_name*    *operator* is used to mark the order of sequencing. The operator is optional. If you only specify the sortable field without any operator, the response data is sorted in descending order by this field.    - The `-` operator indicates an ascending order.   - The `+` operator indicates a descending order.  By default, the response data is displayed in descending order by payment run number.  *field_name* indicates the name of a sortable field. The supported sortable fields of this operation are as below:    - targetDate   - status   - createdDate   - createdById   - updatedDate   - updatedById  Examples:  - /v1/payment-runs?sort=+createdDate  - /v1/payment-runs?status=Processing&sort=-createdById,+targetDate
         :return: GETPaymentRunCollectionType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -374,15 +374,15 @@ class PaymentRunsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param int page_size: Number of rows returned per page. 
-        :param str created_by_id: This parameter filters the response based on the `createdById` field. 
-        :param datetime created_date: This parameter filters the response based on the `createdDate` field. 
-        :param str status: This parameter filters the response based on the `status` field. 
-        :param date target_date: This parameter filters the response based on the `targetDate` field. 
-        :param str updated_by_id: This parameter filters the response based on the `updatedById` field. 
-        :param datetime updated_date: This parameter filters the response based on the `updatedDate` field. 
-        :param str sort: This parameter restricts the order of the data returned in the response. You can use this parameter to supply a dimension you want to sort on.  A sortable field uses the following form:   *operator* *field_name*  You can use at most two sortable fields in one URL path. Use a comma to separate sortable fields. For example:  *operator* *field_name*, *operator* *field_name*    *operator* is used to mark the order of sequencing. The operator is optional. If you only specify the sortable field without any operator, the response data is sorted in descending order by this field.    - The `-` operator indicates an ascending order.   - The `+` operator indicates a descending order.  By default, the response data is displayed in descending order by payment run number.  *field_name* indicates the name of a sortable field. The supported sortable fields of this operation are as below:    - targetDate   - status   - createdDate   - createdById   - updatedDate   - updatedById  Examples:  - /v1/payment-runs?sort=+createdDate  - /v1/payment-runs?status=Processing&sort=-createdById,+targetDate 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param int page_size: Number of rows returned per page.
+        :param str created_by_id: This parameter filters the response based on the `createdById` field.
+        :param datetime created_date: This parameter filters the response based on the `createdDate` field.
+        :param str status: This parameter filters the response based on the `status` field.
+        :param date target_date: This parameter filters the response based on the `targetDate` field.
+        :param str updated_by_id: This parameter filters the response based on the `updatedById` field.
+        :param datetime updated_date: This parameter filters the response based on the `updatedDate` field.
+        :param str sort: This parameter restricts the order of the data returned in the response. You can use this parameter to supply a dimension you want to sort on.  A sortable field uses the following form:   *operator* *field_name*  You can use at most two sortable fields in one URL path. Use a comma to separate sortable fields. For example:  *operator* *field_name*, *operator* *field_name*    *operator* is used to mark the order of sequencing. The operator is optional. If you only specify the sortable field without any operator, the response data is sorted in descending order by this field.    - The `-` operator indicates an ascending order.   - The `+` operator indicates a descending order.  By default, the response data is displayed in descending order by payment run number.  *field_name* indicates the name of a sortable field. The supported sortable fields of this operation are as below:    - targetDate   - status   - createdDate   - createdById   - updatedDate   - updatedById  Examples:  - /v1/payment-runs?sort=+createdDate  - /v1/payment-runs?status=Processing&sort=-createdById,+targetDate
         :return: GETPaymentRunCollectionType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -474,7 +474,7 @@ class PaymentRunsApi(object):
 
         :param async_req bool
         :param POSTPaymentRunRequest body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETPaymentRunType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -497,7 +497,7 @@ class PaymentRunsApi(object):
 
         :param async_req bool
         :param POSTPaymentRunRequest body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETPaymentRunType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -578,7 +578,7 @@ class PaymentRunsApi(object):
         :param async_req bool
         :param str payment_run_id: The unique ID of a payment run. For example, 402890245f097f39015f0f074a2e0566.  (required)
         :param PUTPaymentRunRequest body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETPaymentRunType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -602,7 +602,7 @@ class PaymentRunsApi(object):
         :param async_req bool
         :param str payment_run_id: The unique ID of a payment run. For example, 402890245f097f39015f0f074a2e0566.  (required)
         :param PUTPaymentRunRequest body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETPaymentRunType
                  If the method is called asynchronously,
                  returns the request thread.

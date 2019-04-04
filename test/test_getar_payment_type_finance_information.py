@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.getar_payment_type_finance_information import GETARPaymentTypeFinanceInformation  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.getar_payment_type_finance_information import GETARPaymentTypeFinanceInformation  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestGETARPaymentTypeFinanceInformation(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGETARPaymentTypeFinanceInformation(unittest.TestCase):
     def testGETARPaymentTypeFinanceInformation(self):
         """Test GETARPaymentTypeFinanceInformation"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.getar_payment_type_finance_information.GETARPaymentTypeFinanceInformation()  # noqa: E501
+        # model = zuora_client.models.getar_payment_type_finance_information.GETARPaymentTypeFinanceInformation()  # noqa: E501
         pass
 
 

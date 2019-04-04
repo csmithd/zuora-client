@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.credit_memo_apply_debit_memo_item_request_type import CreditMemoApplyDebitMemoItemRequestType  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.credit_memo_apply_debit_memo_item_request_type import CreditMemoApplyDebitMemoItemRequestType  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestCreditMemoApplyDebitMemoItemRequestType(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestCreditMemoApplyDebitMemoItemRequestType(unittest.TestCase):
     def testCreditMemoApplyDebitMemoItemRequestType(self):
         """Test CreditMemoApplyDebitMemoItemRequestType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.credit_memo_apply_debit_memo_item_request_type.CreditMemoApplyDebitMemoItemRequestType()  # noqa: E501
+        # model = zuora_client.models.credit_memo_apply_debit_memo_item_request_type.CreditMemoApplyDebitMemoItemRequestType()  # noqa: E501
         pass
 
 

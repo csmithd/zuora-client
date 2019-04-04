@@ -18,7 +18,7 @@ import re  # noqa: F401
 # python 2 and python 3 compatibility library
 import six
 
-from swagger_client.api_client import ApiClient
+from zuora_client.api_client import ApiClient
 
 
 class CreditMemosApi(object):
@@ -44,7 +44,7 @@ class CreditMemosApi(object):
 
         :param async_req bool
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: CommonResponseType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -67,7 +67,7 @@ class CreditMemosApi(object):
 
         :param async_req bool
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: CommonResponseType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -147,7 +147,7 @@ class CreditMemosApi(object):
 
         :param async_req bool
         :param str credit_memo_number: Number of credit memo to be broken down. (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GetCreditMemoAmountBreakdownByOrderResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -170,7 +170,7 @@ class CreditMemosApi(object):
 
         :param async_req bool
         :param str credit_memo_number: Number of credit memo to be broken down. (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GetCreditMemoAmountBreakdownByOrderResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -250,7 +250,7 @@ class CreditMemosApi(object):
 
         :param async_req bool
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETCreditMemoType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -273,7 +273,7 @@ class CreditMemosApi(object):
 
         :param async_req bool
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETCreditMemoType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -354,8 +354,8 @@ class CreditMemosApi(object):
         :param async_req bool
         :param str cmitemid: The unique ID of a credit memo item. You can get the credit memo item ID from the response of [Get credit memo items](https://www.zuora.com/developer/api-reference/#operation/GET_CreditMemoItems).  (required)
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param str zuora_version:  The minor version of the Zuora REST API. See [Minor Version](https://www.zuora.com/developer/api-reference/#section/API-Versions/Minor-Version) for information about REST API version control.   This header affects the availability of the following fields: * creditTaxItems * taxationItems 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param str zuora_version:  The minor version of the Zuora REST API. See [Minor Version](https://www.zuora.com/developer/api-reference/#section/API-Versions/Minor-Version) for information about REST API version control.   This header affects the availability of the following fields: * creditTaxItems * taxationItems
         :return: GETCreditMemoItemType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -379,8 +379,8 @@ class CreditMemosApi(object):
         :param async_req bool
         :param str cmitemid: The unique ID of a credit memo item. You can get the credit memo item ID from the response of [Get credit memo items](https://www.zuora.com/developer/api-reference/#operation/GET_CreditMemoItems).  (required)
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param str zuora_version:  The minor version of the Zuora REST API. See [Minor Version](https://www.zuora.com/developer/api-reference/#section/API-Versions/Minor-Version) for information about REST API version control.   This header affects the availability of the following fields: * creditTaxItems * taxationItems 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param str zuora_version:  The minor version of the Zuora REST API. See [Minor Version](https://www.zuora.com/developer/api-reference/#section/API-Versions/Minor-Version) for information about REST API version control.   This header affects the availability of the following fields: * creditTaxItems * taxationItems
         :return: GETCreditMemoItemType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -470,7 +470,7 @@ class CreditMemosApi(object):
         :param str partid: The unique ID of a specific credit memo part. You can get the credit memo part ID from the response of [Get credit memo parts](https://www.zuora.com/developer/api-reference/#operation/GET_CreditMemoParts).  (required)
         :param str itempartid: The unique ID of a specific credit memo part item. You can get the credit memo part item ID from the response of [Get credit memo part items](https://www.zuora.com/developer/api-reference/#operation/GET_CreditMemoItemParts).  (required)
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETCreditMemoItemPartType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -495,7 +495,7 @@ class CreditMemosApi(object):
         :param str partid: The unique ID of a specific credit memo part. You can get the credit memo part ID from the response of [Get credit memo parts](https://www.zuora.com/developer/api-reference/#operation/GET_CreditMemoParts).  (required)
         :param str itempartid: The unique ID of a specific credit memo part item. You can get the credit memo part item ID from the response of [Get credit memo part items](https://www.zuora.com/developer/api-reference/#operation/GET_CreditMemoItemParts).  (required)
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETCreditMemoItemPartType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -588,8 +588,8 @@ class CreditMemosApi(object):
         :param async_req bool
         :param str partid: The unique ID of a specific credit memo part. You can get the credit memo part ID from the response of [Get credit memo parts](https://www.zuora.com/developer/api-reference/#operation/GET_CreditMemoParts). .  (required)
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param int page_size: Number of rows returned per page. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param int page_size: Number of rows returned per page.
         :return: GETCreditMemoItemPartsCollectionType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -613,8 +613,8 @@ class CreditMemosApi(object):
         :param async_req bool
         :param str partid: The unique ID of a specific credit memo part. You can get the credit memo part ID from the response of [Get credit memo parts](https://www.zuora.com/developer/api-reference/#operation/GET_CreditMemoParts). .  (required)
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param int page_size: Number of rows returned per page. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param int page_size: Number of rows returned per page.
         :return: GETCreditMemoItemPartsCollectionType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -704,24 +704,24 @@ class CreditMemosApi(object):
 
         :param async_req bool
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param int page_size: Number of rows returned per page. 
-        :param str zuora_version:  The minor version of the Zuora REST API. See [Minor Version](https://www.zuora.com/developer/api-reference/#section/API-Versions/Minor-Version) for information about REST API version control.   This header affects the availability of the following fields: * creditTaxItems * taxationItems 
-        :param float amount: This parameter filters the response based on the `amount` field.  
-        :param float applied_amount: This parameter filters the response based on the `appliedAmount` field.  
-        :param str created_by_id: This parameter filters the response based on the `createdById` field.  
-        :param datetime created_date: This parameter filters the response based on the `createdDate` field.  
-        :param str id: This parameter filters the response based on the `id` field.  
-        :param float refund_amount: This parameter filters the response based on the `refundAmount` field.  
-        :param date service_end_date: This parameter filters the response based on the `serviceEndDate` field.  
-        :param date service_start_date: This parameter filters the response based on the `serviceStartDate` field.  
-        :param str sku: This parameter filters the response based on the `sku` field.  
-        :param str sku_name: This parameter filters the response based on the `skuName` field.  
-        :param str source_item_id: This parameter filters the response based on the `sourceItemId` field.  
-        :param str subscription_id: This parameter filters the response based on the `subscriptionId` field. 
-        :param str updated_by_id: This parameter filters the response based on the `updatedById` field.  
-        :param datetime updated_date: This parameter filters the response based on the `updatedDate` field. 
-        :param str sort: This parameter restricts the order of the data returned in the response. You can use this parameter to supply a dimension you want to sort on.  A sortable field uses the following form:   *operator* *field_name*  You can use at most two sortable fields in one URL path. Use a comma to separate sortable fields. For example:  *operator* *field_name*, *operator* *field_name*    *operator* is used to mark the order of sequencing. The operator is optional. If you only specify the sortable field without any operator, the response data is sorted in descending order by this field.    - The `-` operator indicates an ascending order.   - The `+` operator indicates a descending order.  By default, the response data is displayed in descending order by updated date.  *field_name* indicates the name of a sortable field. The supported sortable fields of this operation are as below:    - amount   - appliedAmount   - createdById   - createdDate   - id   - refundAmount   - serviceEndDate   - serviceStartDate   - sku   - skuName   - sourceItemId   - subscriptionId   - updatedById   - updatedDate    Examples:  - /v1/creditmemos/402890245c7ca371015c7cb40ac30015/items?sort=createdDate  - /v1/creditmemos/402890245c7ca371015c7cb40ac30015/items?amount=100&sort=createdDate 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param int page_size: Number of rows returned per page.
+        :param str zuora_version:  The minor version of the Zuora REST API. See [Minor Version](https://www.zuora.com/developer/api-reference/#section/API-Versions/Minor-Version) for information about REST API version control.   This header affects the availability of the following fields: * creditTaxItems * taxationItems
+        :param float amount: This parameter filters the response based on the `amount` field.
+        :param float applied_amount: This parameter filters the response based on the `appliedAmount` field.
+        :param str created_by_id: This parameter filters the response based on the `createdById` field.
+        :param datetime created_date: This parameter filters the response based on the `createdDate` field.
+        :param str id: This parameter filters the response based on the `id` field.
+        :param float refund_amount: This parameter filters the response based on the `refundAmount` field.
+        :param date service_end_date: This parameter filters the response based on the `serviceEndDate` field.
+        :param date service_start_date: This parameter filters the response based on the `serviceStartDate` field.
+        :param str sku: This parameter filters the response based on the `sku` field.
+        :param str sku_name: This parameter filters the response based on the `skuName` field.
+        :param str source_item_id: This parameter filters the response based on the `sourceItemId` field.
+        :param str subscription_id: This parameter filters the response based on the `subscriptionId` field.
+        :param str updated_by_id: This parameter filters the response based on the `updatedById` field.
+        :param datetime updated_date: This parameter filters the response based on the `updatedDate` field.
+        :param str sort: This parameter restricts the order of the data returned in the response. You can use this parameter to supply a dimension you want to sort on.  A sortable field uses the following form:   *operator* *field_name*  You can use at most two sortable fields in one URL path. Use a comma to separate sortable fields. For example:  *operator* *field_name*, *operator* *field_name*    *operator* is used to mark the order of sequencing. The operator is optional. If you only specify the sortable field without any operator, the response data is sorted in descending order by this field.    - The `-` operator indicates an ascending order.   - The `+` operator indicates a descending order.  By default, the response data is displayed in descending order by updated date.  *field_name* indicates the name of a sortable field. The supported sortable fields of this operation are as below:    - amount   - appliedAmount   - createdById   - createdDate   - id   - refundAmount   - serviceEndDate   - serviceStartDate   - sku   - skuName   - sourceItemId   - subscriptionId   - updatedById   - updatedDate    Examples:  - /v1/creditmemos/402890245c7ca371015c7cb40ac30015/items?sort=createdDate  - /v1/creditmemos/402890245c7ca371015c7cb40ac30015/items?amount=100&sort=createdDate
         :return: GETCreditMemoItemsListType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -744,24 +744,24 @@ class CreditMemosApi(object):
 
         :param async_req bool
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param int page_size: Number of rows returned per page. 
-        :param str zuora_version:  The minor version of the Zuora REST API. See [Minor Version](https://www.zuora.com/developer/api-reference/#section/API-Versions/Minor-Version) for information about REST API version control.   This header affects the availability of the following fields: * creditTaxItems * taxationItems 
-        :param float amount: This parameter filters the response based on the `amount` field.  
-        :param float applied_amount: This parameter filters the response based on the `appliedAmount` field.  
-        :param str created_by_id: This parameter filters the response based on the `createdById` field.  
-        :param datetime created_date: This parameter filters the response based on the `createdDate` field.  
-        :param str id: This parameter filters the response based on the `id` field.  
-        :param float refund_amount: This parameter filters the response based on the `refundAmount` field.  
-        :param date service_end_date: This parameter filters the response based on the `serviceEndDate` field.  
-        :param date service_start_date: This parameter filters the response based on the `serviceStartDate` field.  
-        :param str sku: This parameter filters the response based on the `sku` field.  
-        :param str sku_name: This parameter filters the response based on the `skuName` field.  
-        :param str source_item_id: This parameter filters the response based on the `sourceItemId` field.  
-        :param str subscription_id: This parameter filters the response based on the `subscriptionId` field. 
-        :param str updated_by_id: This parameter filters the response based on the `updatedById` field.  
-        :param datetime updated_date: This parameter filters the response based on the `updatedDate` field. 
-        :param str sort: This parameter restricts the order of the data returned in the response. You can use this parameter to supply a dimension you want to sort on.  A sortable field uses the following form:   *operator* *field_name*  You can use at most two sortable fields in one URL path. Use a comma to separate sortable fields. For example:  *operator* *field_name*, *operator* *field_name*    *operator* is used to mark the order of sequencing. The operator is optional. If you only specify the sortable field without any operator, the response data is sorted in descending order by this field.    - The `-` operator indicates an ascending order.   - The `+` operator indicates a descending order.  By default, the response data is displayed in descending order by updated date.  *field_name* indicates the name of a sortable field. The supported sortable fields of this operation are as below:    - amount   - appliedAmount   - createdById   - createdDate   - id   - refundAmount   - serviceEndDate   - serviceStartDate   - sku   - skuName   - sourceItemId   - subscriptionId   - updatedById   - updatedDate    Examples:  - /v1/creditmemos/402890245c7ca371015c7cb40ac30015/items?sort=createdDate  - /v1/creditmemos/402890245c7ca371015c7cb40ac30015/items?amount=100&sort=createdDate 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param int page_size: Number of rows returned per page.
+        :param str zuora_version:  The minor version of the Zuora REST API. See [Minor Version](https://www.zuora.com/developer/api-reference/#section/API-Versions/Minor-Version) for information about REST API version control.   This header affects the availability of the following fields: * creditTaxItems * taxationItems
+        :param float amount: This parameter filters the response based on the `amount` field.
+        :param float applied_amount: This parameter filters the response based on the `appliedAmount` field.
+        :param str created_by_id: This parameter filters the response based on the `createdById` field.
+        :param datetime created_date: This parameter filters the response based on the `createdDate` field.
+        :param str id: This parameter filters the response based on the `id` field.
+        :param float refund_amount: This parameter filters the response based on the `refundAmount` field.
+        :param date service_end_date: This parameter filters the response based on the `serviceEndDate` field.
+        :param date service_start_date: This parameter filters the response based on the `serviceStartDate` field.
+        :param str sku: This parameter filters the response based on the `sku` field.
+        :param str sku_name: This parameter filters the response based on the `skuName` field.
+        :param str source_item_id: This parameter filters the response based on the `sourceItemId` field.
+        :param str subscription_id: This parameter filters the response based on the `subscriptionId` field.
+        :param str updated_by_id: This parameter filters the response based on the `updatedById` field.
+        :param datetime updated_date: This parameter filters the response based on the `updatedDate` field.
+        :param str sort: This parameter restricts the order of the data returned in the response. You can use this parameter to supply a dimension you want to sort on.  A sortable field uses the following form:   *operator* *field_name*  You can use at most two sortable fields in one URL path. Use a comma to separate sortable fields. For example:  *operator* *field_name*, *operator* *field_name*    *operator* is used to mark the order of sequencing. The operator is optional. If you only specify the sortable field without any operator, the response data is sorted in descending order by this field.    - The `-` operator indicates an ascending order.   - The `+` operator indicates a descending order.  By default, the response data is displayed in descending order by updated date.  *field_name* indicates the name of a sortable field. The supported sortable fields of this operation are as below:    - amount   - appliedAmount   - createdById   - createdDate   - id   - refundAmount   - serviceEndDate   - serviceStartDate   - sku   - skuName   - sourceItemId   - subscriptionId   - updatedById   - updatedDate    Examples:  - /v1/creditmemos/402890245c7ca371015c7cb40ac30015/items?sort=createdDate  - /v1/creditmemos/402890245c7ca371015c7cb40ac30015/items?amount=100&sort=createdDate
         :return: GETCreditMemoItemsListType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -878,7 +878,7 @@ class CreditMemosApi(object):
         :param async_req bool
         :param str partid: The unique ID of a specific credit memo part. You can get the credit memo part ID from the response of [Get credit memo parts](https://www.zuora.com/developer/api-reference/#operation/GET_CreditMemoParts).  (required)
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETCreditMemoPartType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -902,7 +902,7 @@ class CreditMemosApi(object):
         :param async_req bool
         :param str partid: The unique ID of a specific credit memo part. You can get the credit memo part ID from the response of [Get credit memo parts](https://www.zuora.com/developer/api-reference/#operation/GET_CreditMemoParts).  (required)
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETCreditMemoPartType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -988,8 +988,8 @@ class CreditMemosApi(object):
 
         :param async_req bool
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param int page_size: Number of rows returned per page. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param int page_size: Number of rows returned per page.
         :return: GETCreditMemoPartsCollectionType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1012,8 +1012,8 @@ class CreditMemosApi(object):
 
         :param async_req bool
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param int page_size: Number of rows returned per page. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param int page_size: Number of rows returned per page.
         :return: GETCreditMemoPartsCollectionType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1096,29 +1096,29 @@ class CreditMemosApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param int page_size: Number of rows returned per page. 
-        :param str account_id: This parameter filters the response based on the `accountId` field.  
-        :param float amount: This parameter filters the response based on the `amount` field.  
-        :param float applied_amount: This parameter filters the response based on the `appliedAmount` field.  
-        :param bool auto_apply_upon_posting: This parameter filters the response based on the `autoApplyUponPosting` field.  
-        :param str created_by_id: This parameter filters the response based on the `createdById` field.  
-        :param datetime created_date: This parameter filters the response based on the `createdDate` field.  
-        :param date credit_memo_date: This parameter filters the response based on the `creditMemoDate` field.  
-        :param str currency: This parameter filters the response based on the `currency` field.  
-        :param bool exclude_from_auto_apply_rules: This parameter filters the response based on the `excludeFromAutoApplyRules` field.  
-        :param str number: This parameter filters the response based on the `number` field.  
-        :param str referred_invoice_id: This parameter filters the response based on the `referredInvoiceId` field.  
-        :param float refund_amount: This parameter filters the response based on the `refundAmount` field.  
-        :param str status: This parameter filters the response based on the `status` field.  
-        :param date target_date: This parameter filters the response based on the `targetDate` field.  
-        :param float tax_amount: This parameter filters the response based on the `taxAmount` field.  
-        :param float total_tax_exempt_amount: This parameter filters the response based on the `totalTaxExemptAmount` field. 
-        :param str transferred_to_accounting: This parameter filters the response based on the `transferredToAccounting` field.  
-        :param float unapplied_amount: This parameter filters the response based on the `unappliedAmount` field.  
-        :param str updated_by_id: This parameter filters the response based on the `updatedById` field.  
-        :param datetime updated_date: This parameter filters the response based on the `updatedDate` field. 
-        :param str sort: This parameter restricts the order of the data returned in the response. You can use this parameter to supply a dimension you want to sort on.  A sortable field uses the following form:   *operator* *field_name*  You can use at most two sortable fields in one URL path. Use a comma to separate sortable fields. For example:  *operator* *field_name*, *operator* *field_name*    *operator* is used to mark the order of sequencing. The operator is optional. If you only specify the sortable field without any operator, the response data is sorted in descending order by this field.    - The `-` operator indicates an ascending order.   - The `+` operator indicates a descending order.  By default, the response data is displayed in descending order by credit memo number.  *field_name* indicates the name of a sortable field. The supported sortable fields of this operation are as below:    - accountId   - amount   - appliedAmount   - createdById   - createdDate   - creditMemoDate   - number   - referredInvoiceId   - refundAmount   - status   - targetDate   - taxAmount   - totalTaxExemptAmount   - transferredToAccounting   - unappliedAmount   - updatedDate     Examples:  - /v1/creditmemos?sort=+number  - /v1/creditmemos?status=Processed&sort=-number,+amount 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param int page_size: Number of rows returned per page.
+        :param str account_id: This parameter filters the response based on the `accountId` field.
+        :param float amount: This parameter filters the response based on the `amount` field.
+        :param float applied_amount: This parameter filters the response based on the `appliedAmount` field.
+        :param bool auto_apply_upon_posting: This parameter filters the response based on the `autoApplyUponPosting` field.
+        :param str created_by_id: This parameter filters the response based on the `createdById` field.
+        :param datetime created_date: This parameter filters the response based on the `createdDate` field.
+        :param date credit_memo_date: This parameter filters the response based on the `creditMemoDate` field.
+        :param str currency: This parameter filters the response based on the `currency` field.
+        :param bool exclude_from_auto_apply_rules: This parameter filters the response based on the `excludeFromAutoApplyRules` field.
+        :param str number: This parameter filters the response based on the `number` field.
+        :param str referred_invoice_id: This parameter filters the response based on the `referredInvoiceId` field.
+        :param float refund_amount: This parameter filters the response based on the `refundAmount` field.
+        :param str status: This parameter filters the response based on the `status` field.
+        :param date target_date: This parameter filters the response based on the `targetDate` field.
+        :param float tax_amount: This parameter filters the response based on the `taxAmount` field.
+        :param float total_tax_exempt_amount: This parameter filters the response based on the `totalTaxExemptAmount` field.
+        :param str transferred_to_accounting: This parameter filters the response based on the `transferredToAccounting` field.
+        :param float unapplied_amount: This parameter filters the response based on the `unappliedAmount` field.
+        :param str updated_by_id: This parameter filters the response based on the `updatedById` field.
+        :param datetime updated_date: This parameter filters the response based on the `updatedDate` field.
+        :param str sort: This parameter restricts the order of the data returned in the response. You can use this parameter to supply a dimension you want to sort on.  A sortable field uses the following form:   *operator* *field_name*  You can use at most two sortable fields in one URL path. Use a comma to separate sortable fields. For example:  *operator* *field_name*, *operator* *field_name*    *operator* is used to mark the order of sequencing. The operator is optional. If you only specify the sortable field without any operator, the response data is sorted in descending order by this field.    - The `-` operator indicates an ascending order.   - The `+` operator indicates a descending order.  By default, the response data is displayed in descending order by credit memo number.  *field_name* indicates the name of a sortable field. The supported sortable fields of this operation are as below:    - accountId   - amount   - appliedAmount   - createdById   - createdDate   - creditMemoDate   - number   - referredInvoiceId   - refundAmount   - status   - targetDate   - taxAmount   - totalTaxExemptAmount   - transferredToAccounting   - unappliedAmount   - updatedDate     Examples:  - /v1/creditmemos?sort=+number  - /v1/creditmemos?status=Processed&sort=-number,+amount
         :return: GETCreditMemoCollectionType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1140,29 +1140,29 @@ class CreditMemosApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param int page_size: Number of rows returned per page. 
-        :param str account_id: This parameter filters the response based on the `accountId` field.  
-        :param float amount: This parameter filters the response based on the `amount` field.  
-        :param float applied_amount: This parameter filters the response based on the `appliedAmount` field.  
-        :param bool auto_apply_upon_posting: This parameter filters the response based on the `autoApplyUponPosting` field.  
-        :param str created_by_id: This parameter filters the response based on the `createdById` field.  
-        :param datetime created_date: This parameter filters the response based on the `createdDate` field.  
-        :param date credit_memo_date: This parameter filters the response based on the `creditMemoDate` field.  
-        :param str currency: This parameter filters the response based on the `currency` field.  
-        :param bool exclude_from_auto_apply_rules: This parameter filters the response based on the `excludeFromAutoApplyRules` field.  
-        :param str number: This parameter filters the response based on the `number` field.  
-        :param str referred_invoice_id: This parameter filters the response based on the `referredInvoiceId` field.  
-        :param float refund_amount: This parameter filters the response based on the `refundAmount` field.  
-        :param str status: This parameter filters the response based on the `status` field.  
-        :param date target_date: This parameter filters the response based on the `targetDate` field.  
-        :param float tax_amount: This parameter filters the response based on the `taxAmount` field.  
-        :param float total_tax_exempt_amount: This parameter filters the response based on the `totalTaxExemptAmount` field. 
-        :param str transferred_to_accounting: This parameter filters the response based on the `transferredToAccounting` field.  
-        :param float unapplied_amount: This parameter filters the response based on the `unappliedAmount` field.  
-        :param str updated_by_id: This parameter filters the response based on the `updatedById` field.  
-        :param datetime updated_date: This parameter filters the response based on the `updatedDate` field. 
-        :param str sort: This parameter restricts the order of the data returned in the response. You can use this parameter to supply a dimension you want to sort on.  A sortable field uses the following form:   *operator* *field_name*  You can use at most two sortable fields in one URL path. Use a comma to separate sortable fields. For example:  *operator* *field_name*, *operator* *field_name*    *operator* is used to mark the order of sequencing. The operator is optional. If you only specify the sortable field without any operator, the response data is sorted in descending order by this field.    - The `-` operator indicates an ascending order.   - The `+` operator indicates a descending order.  By default, the response data is displayed in descending order by credit memo number.  *field_name* indicates the name of a sortable field. The supported sortable fields of this operation are as below:    - accountId   - amount   - appliedAmount   - createdById   - createdDate   - creditMemoDate   - number   - referredInvoiceId   - refundAmount   - status   - targetDate   - taxAmount   - totalTaxExemptAmount   - transferredToAccounting   - unappliedAmount   - updatedDate     Examples:  - /v1/creditmemos?sort=+number  - /v1/creditmemos?status=Processed&sort=-number,+amount 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param int page_size: Number of rows returned per page.
+        :param str account_id: This parameter filters the response based on the `accountId` field.
+        :param float amount: This parameter filters the response based on the `amount` field.
+        :param float applied_amount: This parameter filters the response based on the `appliedAmount` field.
+        :param bool auto_apply_upon_posting: This parameter filters the response based on the `autoApplyUponPosting` field.
+        :param str created_by_id: This parameter filters the response based on the `createdById` field.
+        :param datetime created_date: This parameter filters the response based on the `createdDate` field.
+        :param date credit_memo_date: This parameter filters the response based on the `creditMemoDate` field.
+        :param str currency: This parameter filters the response based on the `currency` field.
+        :param bool exclude_from_auto_apply_rules: This parameter filters the response based on the `excludeFromAutoApplyRules` field.
+        :param str number: This parameter filters the response based on the `number` field.
+        :param str referred_invoice_id: This parameter filters the response based on the `referredInvoiceId` field.
+        :param float refund_amount: This parameter filters the response based on the `refundAmount` field.
+        :param str status: This parameter filters the response based on the `status` field.
+        :param date target_date: This parameter filters the response based on the `targetDate` field.
+        :param float tax_amount: This parameter filters the response based on the `taxAmount` field.
+        :param float total_tax_exempt_amount: This parameter filters the response based on the `totalTaxExemptAmount` field.
+        :param str transferred_to_accounting: This parameter filters the response based on the `transferredToAccounting` field.
+        :param float unapplied_amount: This parameter filters the response based on the `unappliedAmount` field.
+        :param str updated_by_id: This parameter filters the response based on the `updatedById` field.
+        :param datetime updated_date: This parameter filters the response based on the `updatedDate` field.
+        :param str sort: This parameter restricts the order of the data returned in the response. You can use this parameter to supply a dimension you want to sort on.  A sortable field uses the following form:   *operator* *field_name*  You can use at most two sortable fields in one URL path. Use a comma to separate sortable fields. For example:  *operator* *field_name*, *operator* *field_name*    *operator* is used to mark the order of sequencing. The operator is optional. If you only specify the sortable field without any operator, the response data is sorted in descending order by this field.    - The `-` operator indicates an ascending order.   - The `+` operator indicates a descending order.  By default, the response data is displayed in descending order by credit memo number.  *field_name* indicates the name of a sortable field. The supported sortable fields of this operation are as below:    - accountId   - amount   - appliedAmount   - createdById   - createdDate   - creditMemoDate   - number   - referredInvoiceId   - refundAmount   - status   - targetDate   - taxAmount   - totalTaxExemptAmount   - transferredToAccounting   - unappliedAmount   - updatedDate     Examples:  - /v1/creditmemos?sort=+number  - /v1/creditmemos?status=Processed&sort=-number,+amount
         :return: GETCreditMemoCollectionType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1283,9 +1283,9 @@ class CreditMemosApi(object):
         :param async_req bool
         :param str cmitemid: The unique ID of a credit memo item. You can get the credit memo item ID from the response of [Get credit memo items](https://www.zuora.com/developer/api-reference/#operation/GET_CreditMemoItems).  (required)
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param int page_size: Number of rows returned per page. 
-        :param int page: Page number. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param int page_size: Number of rows returned per page.
+        :param int page: Page number.
         :return: GETTaxationItemsOfCreditMemoItemType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1309,9 +1309,9 @@ class CreditMemosApi(object):
         :param async_req bool
         :param str cmitemid: The unique ID of a credit memo item. You can get the credit memo item ID from the response of [Get credit memo items](https://www.zuora.com/developer/api-reference/#operation/GET_CreditMemoItems).  (required)
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param int page_size: Number of rows returned per page. 
-        :param int page: Page number. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param int page_size: Number of rows returned per page.
+        :param int page: Page number.
         :return: GETTaxationItemsOfCreditMemoItemType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1405,8 +1405,8 @@ class CreditMemosApi(object):
 
         :param async_req bool
         :param CreditMemoFromChargeType body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param str zuora_version:  The minor version of the Zuora REST API. See [Minor Version](https://www.zuora.com/developer/api-reference/#section/API-Versions/Minor-Version) for information about REST API version control.   This header affects the availability of the following fields: * amount * memoItemAmount 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param str zuora_version:  The minor version of the Zuora REST API. See [Minor Version](https://www.zuora.com/developer/api-reference/#section/API-Versions/Minor-Version) for information about REST API version control.   This header affects the availability of the following fields: * amount * memoItemAmount
         :return: GETCreditMemoType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1429,8 +1429,8 @@ class CreditMemosApi(object):
 
         :param async_req bool
         :param CreditMemoFromChargeType body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param str zuora_version:  The minor version of the Zuora REST API. See [Minor Version](https://www.zuora.com/developer/api-reference/#section/API-Versions/Minor-Version) for information about REST API version control.   This header affects the availability of the following fields: * amount * memoItemAmount 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param str zuora_version:  The minor version of the Zuora REST API. See [Minor Version](https://www.zuora.com/developer/api-reference/#section/API-Versions/Minor-Version) for information about REST API version control.   This header affects the availability of the following fields: * amount * memoItemAmount
         :return: GETCreditMemoType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1512,7 +1512,7 @@ class CreditMemosApi(object):
 
         :param async_req bool
         :param str credit_memo_id: The unique ID of the credit memo that you want to create a PDF file for. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: POSTMemoPdfResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1535,7 +1535,7 @@ class CreditMemosApi(object):
 
         :param async_req bool
         :param str credit_memo_id: The unique ID of the credit memo that you want to create a PDF file for. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: POSTMemoPdfResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1616,7 +1616,7 @@ class CreditMemosApi(object):
         :param async_req bool
         :param PostCreditMemoEmailRequestType request:  (required)
         :param str credit_memo_id: The ID of a posted credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: CommonResponseType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1640,7 +1640,7 @@ class CreditMemosApi(object):
         :param async_req bool
         :param PostCreditMemoEmailRequestType request:  (required)
         :param str credit_memo_id: The ID of a posted credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: CommonResponseType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1727,7 +1727,7 @@ class CreditMemosApi(object):
         :param async_req bool
         :param PostNonRefRefundType body: (required)
         :param str creditmemo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETRefundCreditMemoType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1751,7 +1751,7 @@ class CreditMemosApi(object):
         :param async_req bool
         :param PostNonRefRefundType body: (required)
         :param str creditmemo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETRefundCreditMemoType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1837,7 +1837,7 @@ class CreditMemosApi(object):
 
         :param async_req bool
         :param POSTCreditMemoItemsForOrderBreakdown body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GetCreditMemoAmountBreakdownByOrderResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1860,7 +1860,7 @@ class CreditMemosApi(object):
 
         :param async_req bool
         :param POSTCreditMemoItemsForOrderBreakdown body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GetCreditMemoAmountBreakdownByOrderResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1941,7 +1941,7 @@ class CreditMemosApi(object):
         :param async_req bool
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
         :param POSTTaxationItemListForCMType body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETTaxationItemListType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1965,7 +1965,7 @@ class CreditMemosApi(object):
         :param async_req bool
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
         :param POSTTaxationItemListForCMType body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETTaxationItemListType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -2052,7 +2052,7 @@ class CreditMemosApi(object):
         :param async_req bool
         :param ApplyCreditMemoType body: (required)
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETCreditMemoType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -2076,7 +2076,7 @@ class CreditMemosApi(object):
         :param async_req bool
         :param ApplyCreditMemoType body: (required)
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETCreditMemoType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -2162,7 +2162,7 @@ class CreditMemosApi(object):
 
         :param async_req bool
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETCreditMemoType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -2185,7 +2185,7 @@ class CreditMemosApi(object):
 
         :param async_req bool
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETCreditMemoType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -2265,7 +2265,7 @@ class CreditMemosApi(object):
 
         :param async_req bool
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETCreditMemoType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -2288,7 +2288,7 @@ class CreditMemosApi(object):
 
         :param async_req bool
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETCreditMemoType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -2369,7 +2369,7 @@ class CreditMemosApi(object):
         :param async_req bool
         :param UnapplyCreditMemoType body: (required)
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETCreditMemoType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -2393,7 +2393,7 @@ class CreditMemosApi(object):
         :param async_req bool
         :param UnapplyCreditMemoType body: (required)
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETCreditMemoType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -2479,7 +2479,7 @@ class CreditMemosApi(object):
 
         :param async_req bool
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETCreditMemoType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -2502,7 +2502,7 @@ class CreditMemosApi(object):
 
         :param async_req bool
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETCreditMemoType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -2583,7 +2583,7 @@ class CreditMemosApi(object):
         :param async_req bool
         :param PUTCreditMemoType body:  (required)
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.   (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETCreditMemoType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -2607,7 +2607,7 @@ class CreditMemosApi(object):
         :param async_req bool
         :param PUTCreditMemoType body:  (required)
         :param str credit_memo_id: The unique ID of a credit memo. For example, 8a8082e65b27f6c3015ba45ff82c7172.   (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETCreditMemoType
                  If the method is called asynchronously,
                  returns the request thread.

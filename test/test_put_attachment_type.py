@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.put_attachment_type import PUTAttachmentType  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.put_attachment_type import PUTAttachmentType  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestPUTAttachmentType(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestPUTAttachmentType(unittest.TestCase):
     def testPUTAttachmentType(self):
         """Test PUTAttachmentType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.put_attachment_type.PUTAttachmentType()  # noqa: E501
+        # model = zuora_client.models.put_attachment_type.PUTAttachmentType()  # noqa: E501
         pass
 
 

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.get_payment_item_part_collection_type import GETPaymentItemPartCollectionType  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.get_payment_item_part_collection_type import GETPaymentItemPartCollectionType  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestGETPaymentItemPartCollectionType(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGETPaymentItemPartCollectionType(unittest.TestCase):
     def testGETPaymentItemPartCollectionType(self):
         """Test GETPaymentItemPartCollectionType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.get_payment_item_part_collection_type.GETPaymentItemPartCollectionType()  # noqa: E501
+        # model = zuora_client.models.get_payment_item_part_collection_type.GETPaymentItemPartCollectionType()  # noqa: E501
         pass
 
 

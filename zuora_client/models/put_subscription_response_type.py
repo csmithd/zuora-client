@@ -16,9 +16,9 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.put_subscription_preview_invoice_items_type import PUTSubscriptionPreviewInvoiceItemsType  # noqa: F401,E501
-from swagger_client.models.put_subscription_response_type_charge_metrics import PUTSubscriptionResponseTypeChargeMetrics  # noqa: F401,E501
-from swagger_client.models.put_subscription_response_type_credit_memo import PUTSubscriptionResponseTypeCreditMemo  # noqa: F401,E501
+from zuora_client.models.put_subscription_preview_invoice_items_type import PUTSubscriptionPreviewInvoiceItemsType  # noqa: F401,E501
+from zuora_client.models.put_subscription_response_type_charge_metrics import PUTSubscriptionResponseTypeChargeMetrics  # noqa: F401,E501
+from zuora_client.models.put_subscription_response_type_credit_memo import PUTSubscriptionResponseTypeCreditMemo  # noqa: F401,E501
 
 
 class PUTSubscriptionResponseType(object):

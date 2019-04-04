@@ -16,10 +16,10 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.billing_update import BillingUpdate  # noqa: F401,E501
-from swagger_client.models.pricing_update import PricingUpdate  # noqa: F401,E501
-from swagger_client.models.rate_plan_charge_object_custom_fields import RatePlanChargeObjectCustomFields  # noqa: F401,E501
-from swagger_client.models.trigger_params import TriggerParams  # noqa: F401,E501
+from zuora_client.models.billing_update import BillingUpdate  # noqa: F401,E501
+from zuora_client.models.pricing_update import PricingUpdate  # noqa: F401,E501
+from zuora_client.models.rate_plan_charge_object_custom_fields import RatePlanChargeObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.trigger_params import TriggerParams  # noqa: F401,E501
 
 
 class ChargeUpdate(object):

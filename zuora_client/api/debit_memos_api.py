@@ -18,7 +18,7 @@ import re  # noqa: F401
 # python 2 and python 3 compatibility library
 import six
 
-from swagger_client.api_client import ApiClient
+from zuora_client.api_client import ApiClient
 
 
 class DebitMemosApi(object):
@@ -44,7 +44,7 @@ class DebitMemosApi(object):
 
         :param async_req bool
         :param str debit_memo_id: The unique ID of a debit memo. For example, 8a8082e65b27f6c3015ba419f3c2644e.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: CommonResponseType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -67,7 +67,7 @@ class DebitMemosApi(object):
 
         :param async_req bool
         :param str debit_memo_id: The unique ID of a debit memo. For example, 8a8082e65b27f6c3015ba419f3c2644e.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: CommonResponseType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -147,7 +147,7 @@ class DebitMemosApi(object):
 
         :param async_req bool
         :param str debit_memo_id: The unique ID of a debit memo. For example, 8a8082e65b27f6c3015ba419f3c2644e.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETDebitMemoType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -170,7 +170,7 @@ class DebitMemosApi(object):
 
         :param async_req bool
         :param str debit_memo_id: The unique ID of a debit memo. For example, 8a8082e65b27f6c3015ba419f3c2644e.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETDebitMemoType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -250,7 +250,7 @@ class DebitMemosApi(object):
 
         :param async_req bool
         :param str debit_memo_id: The unique ID of a debit memo. For example, 8a8082e65b27f6c3015ba419f3c2644e.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GetDebitMemoApplicationPartCollectionType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -273,7 +273,7 @@ class DebitMemosApi(object):
 
         :param async_req bool
         :param str debit_memo_id: The unique ID of a debit memo. For example, 8a8082e65b27f6c3015ba419f3c2644e.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GetDebitMemoApplicationPartCollectionType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -354,8 +354,8 @@ class DebitMemosApi(object):
         :param async_req bool
         :param str dmitemid: The unique ID of a debit memo item. You can get the debit memo item ID from the response of [Get debit memo items](https://www.zuora.com/developer/api-reference/#operation/GET_DebitMemoItems).  (required)
         :param str debit_memo_id: The unique ID of a debit memo. For example, 8a8082e65b27f6c3015ba419f3c2644e.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param str zuora_version:  The minor version of the Zuora REST API. See [Minor Version](https://www.zuora.com/developer/api-reference/#section/API-Versions/Minor-Version) for information about REST API version control.   This header affects the availability of the following fields: * taxItems * taxationItems 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param str zuora_version:  The minor version of the Zuora REST API. See [Minor Version](https://www.zuora.com/developer/api-reference/#section/API-Versions/Minor-Version) for information about REST API version control.   This header affects the availability of the following fields: * taxItems * taxationItems
         :return: GETDebitMemoItemType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -379,8 +379,8 @@ class DebitMemosApi(object):
         :param async_req bool
         :param str dmitemid: The unique ID of a debit memo item. You can get the debit memo item ID from the response of [Get debit memo items](https://www.zuora.com/developer/api-reference/#operation/GET_DebitMemoItems).  (required)
         :param str debit_memo_id: The unique ID of a debit memo. For example, 8a8082e65b27f6c3015ba419f3c2644e.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param str zuora_version:  The minor version of the Zuora REST API. See [Minor Version](https://www.zuora.com/developer/api-reference/#section/API-Versions/Minor-Version) for information about REST API version control.   This header affects the availability of the following fields: * taxItems * taxationItems 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param str zuora_version:  The minor version of the Zuora REST API. See [Minor Version](https://www.zuora.com/developer/api-reference/#section/API-Versions/Minor-Version) for information about REST API version control.   This header affects the availability of the following fields: * taxItems * taxationItems
         :return: GETDebitMemoItemType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -468,23 +468,23 @@ class DebitMemosApi(object):
 
         :param async_req bool
         :param str debit_memo_id: The unique ID of a debit memo. For example, 8a8082e65b27f6c3015ba419f3c2644e.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param int page_size: Number of rows returned per page. 
-        :param str zuora_version:  The minor version of the Zuora REST API. See [Minor Version](https://www.zuora.com/developer/api-reference/#section/API-Versions/Minor-Version) for information about REST API version control.   This header affects the availability of the following fields: * taxItems * taxationItems 
-        :param float amount: This parameter filters the response based on the `amount` field. 
-        :param float be_applied_amount: This parameter filters the response based on the `beAppliedAmount` field. 
-        :param str created_by_id: This parameter filters the response based on the `createdById` field. 
-        :param datetime created_date: This parameter filters the response based on the `createdDate` field. 
-        :param str id: This parameter filters the response based on the `id` field. 
-        :param date service_end_date: This parameter filters the response based on the `serviceEndDate` field. 
-        :param date service_start_date: This parameter filters the response based on the `serviceStartDate` field. 
-        :param str sku: This parameter filters the response based on the `sku` field. 
-        :param str sku_name: This parameter filters the response based on the `skuName` field. 
-        :param str source_item_id: This parameter filters the response based on the `sourceItemId` field. 
-        :param str subscription_id: This parameter filters the response based on the `subscriptionId` field. 
-        :param str updated_by_id: This parameter filters the response based on the `updatedById` field. 
-        :param datetime updated_date: This parameter filters the response based on the `updatedDate` field. 
-        :param str sort: This parameter restricts the order of the data returned in the response. You can use this parameter to supply a dimension you want to sort on.  A sortable field uses the following form:   *operator* *field_name*  You can use at most two sortable fields in one URL path. Use a comma to separate sortable fields. For example:  *operator* *field_name*, *operator* *field_name*    *operator* is used to mark the order of sequencing. The operator is optional. If you only specify the sortable field without any operator, the response data is sorted in descending order by this field.    - The `-` operator indicates an ascending order.   - The `+` operator indicates a descending order.  By default, the response data is displayed in descending order by updated date.  *field_name* indicates the name of a sortable field. The supported sortable fields of this operation are as below:    - id   - amount   - beAppliedAmount   - sku   - skuName   - serviceStartDate   - serviceEndDate   - sourceItemId   - createdDate   - createdById   - updatedDate   - updatedById   - subscriptionId    Examples:  - /v1/debitmemos/402890245c7ca371015c7cb40b28001f/items?sort=createdDate  - /v1/debitmemos/402890245c7ca371015c7cb40b28001f/items?amount=100&sort=createdDate 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param int page_size: Number of rows returned per page.
+        :param str zuora_version:  The minor version of the Zuora REST API. See [Minor Version](https://www.zuora.com/developer/api-reference/#section/API-Versions/Minor-Version) for information about REST API version control.   This header affects the availability of the following fields: * taxItems * taxationItems
+        :param float amount: This parameter filters the response based on the `amount` field.
+        :param float be_applied_amount: This parameter filters the response based on the `beAppliedAmount` field.
+        :param str created_by_id: This parameter filters the response based on the `createdById` field.
+        :param datetime created_date: This parameter filters the response based on the `createdDate` field.
+        :param str id: This parameter filters the response based on the `id` field.
+        :param date service_end_date: This parameter filters the response based on the `serviceEndDate` field.
+        :param date service_start_date: This parameter filters the response based on the `serviceStartDate` field.
+        :param str sku: This parameter filters the response based on the `sku` field.
+        :param str sku_name: This parameter filters the response based on the `skuName` field.
+        :param str source_item_id: This parameter filters the response based on the `sourceItemId` field.
+        :param str subscription_id: This parameter filters the response based on the `subscriptionId` field.
+        :param str updated_by_id: This parameter filters the response based on the `updatedById` field.
+        :param datetime updated_date: This parameter filters the response based on the `updatedDate` field.
+        :param str sort: This parameter restricts the order of the data returned in the response. You can use this parameter to supply a dimension you want to sort on.  A sortable field uses the following form:   *operator* *field_name*  You can use at most two sortable fields in one URL path. Use a comma to separate sortable fields. For example:  *operator* *field_name*, *operator* *field_name*    *operator* is used to mark the order of sequencing. The operator is optional. If you only specify the sortable field without any operator, the response data is sorted in descending order by this field.    - The `-` operator indicates an ascending order.   - The `+` operator indicates a descending order.  By default, the response data is displayed in descending order by updated date.  *field_name* indicates the name of a sortable field. The supported sortable fields of this operation are as below:    - id   - amount   - beAppliedAmount   - sku   - skuName   - serviceStartDate   - serviceEndDate   - sourceItemId   - createdDate   - createdById   - updatedDate   - updatedById   - subscriptionId    Examples:  - /v1/debitmemos/402890245c7ca371015c7cb40b28001f/items?sort=createdDate  - /v1/debitmemos/402890245c7ca371015c7cb40b28001f/items?amount=100&sort=createdDate
         :return: GETDebitMemoItemCollectionType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -507,23 +507,23 @@ class DebitMemosApi(object):
 
         :param async_req bool
         :param str debit_memo_id: The unique ID of a debit memo. For example, 8a8082e65b27f6c3015ba419f3c2644e.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param int page_size: Number of rows returned per page. 
-        :param str zuora_version:  The minor version of the Zuora REST API. See [Minor Version](https://www.zuora.com/developer/api-reference/#section/API-Versions/Minor-Version) for information about REST API version control.   This header affects the availability of the following fields: * taxItems * taxationItems 
-        :param float amount: This parameter filters the response based on the `amount` field. 
-        :param float be_applied_amount: This parameter filters the response based on the `beAppliedAmount` field. 
-        :param str created_by_id: This parameter filters the response based on the `createdById` field. 
-        :param datetime created_date: This parameter filters the response based on the `createdDate` field. 
-        :param str id: This parameter filters the response based on the `id` field. 
-        :param date service_end_date: This parameter filters the response based on the `serviceEndDate` field. 
-        :param date service_start_date: This parameter filters the response based on the `serviceStartDate` field. 
-        :param str sku: This parameter filters the response based on the `sku` field. 
-        :param str sku_name: This parameter filters the response based on the `skuName` field. 
-        :param str source_item_id: This parameter filters the response based on the `sourceItemId` field. 
-        :param str subscription_id: This parameter filters the response based on the `subscriptionId` field. 
-        :param str updated_by_id: This parameter filters the response based on the `updatedById` field. 
-        :param datetime updated_date: This parameter filters the response based on the `updatedDate` field. 
-        :param str sort: This parameter restricts the order of the data returned in the response. You can use this parameter to supply a dimension you want to sort on.  A sortable field uses the following form:   *operator* *field_name*  You can use at most two sortable fields in one URL path. Use a comma to separate sortable fields. For example:  *operator* *field_name*, *operator* *field_name*    *operator* is used to mark the order of sequencing. The operator is optional. If you only specify the sortable field without any operator, the response data is sorted in descending order by this field.    - The `-` operator indicates an ascending order.   - The `+` operator indicates a descending order.  By default, the response data is displayed in descending order by updated date.  *field_name* indicates the name of a sortable field. The supported sortable fields of this operation are as below:    - id   - amount   - beAppliedAmount   - sku   - skuName   - serviceStartDate   - serviceEndDate   - sourceItemId   - createdDate   - createdById   - updatedDate   - updatedById   - subscriptionId    Examples:  - /v1/debitmemos/402890245c7ca371015c7cb40b28001f/items?sort=createdDate  - /v1/debitmemos/402890245c7ca371015c7cb40b28001f/items?amount=100&sort=createdDate 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param int page_size: Number of rows returned per page.
+        :param str zuora_version:  The minor version of the Zuora REST API. See [Minor Version](https://www.zuora.com/developer/api-reference/#section/API-Versions/Minor-Version) for information about REST API version control.   This header affects the availability of the following fields: * taxItems * taxationItems
+        :param float amount: This parameter filters the response based on the `amount` field.
+        :param float be_applied_amount: This parameter filters the response based on the `beAppliedAmount` field.
+        :param str created_by_id: This parameter filters the response based on the `createdById` field.
+        :param datetime created_date: This parameter filters the response based on the `createdDate` field.
+        :param str id: This parameter filters the response based on the `id` field.
+        :param date service_end_date: This parameter filters the response based on the `serviceEndDate` field.
+        :param date service_start_date: This parameter filters the response based on the `serviceStartDate` field.
+        :param str sku: This parameter filters the response based on the `sku` field.
+        :param str sku_name: This parameter filters the response based on the `skuName` field.
+        :param str source_item_id: This parameter filters the response based on the `sourceItemId` field.
+        :param str subscription_id: This parameter filters the response based on the `subscriptionId` field.
+        :param str updated_by_id: This parameter filters the response based on the `updatedById` field.
+        :param datetime updated_date: This parameter filters the response based on the `updatedDate` field.
+        :param str sort: This parameter restricts the order of the data returned in the response. You can use this parameter to supply a dimension you want to sort on.  A sortable field uses the following form:   *operator* *field_name*  You can use at most two sortable fields in one URL path. Use a comma to separate sortable fields. For example:  *operator* *field_name*, *operator* *field_name*    *operator* is used to mark the order of sequencing. The operator is optional. If you only specify the sortable field without any operator, the response data is sorted in descending order by this field.    - The `-` operator indicates an ascending order.   - The `+` operator indicates a descending order.  By default, the response data is displayed in descending order by updated date.  *field_name* indicates the name of a sortable field. The supported sortable fields of this operation are as below:    - id   - amount   - beAppliedAmount   - sku   - skuName   - serviceStartDate   - serviceEndDate   - sourceItemId   - createdDate   - createdById   - updatedDate   - updatedById   - subscriptionId    Examples:  - /v1/debitmemos/402890245c7ca371015c7cb40b28001f/items?sort=createdDate  - /v1/debitmemos/402890245c7ca371015c7cb40b28001f/items?amount=100&sort=createdDate
         :return: GETDebitMemoItemCollectionType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -636,26 +636,26 @@ class DebitMemosApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param int page_size: Number of rows returned per page. 
-        :param str account_id: This parameter filters the response based on the `accountId` field. 
-        :param float amount: This parameter filters the response based on the `amount` field. 
-        :param float balance: This parameter filters the response based on the `balance` field. 
-        :param float be_applied_amount: This parameter filters the response based on the `beAppliedAmount` field. 
-        :param str created_by_id: This parameter filters the response based on the `createdById` field. 
-        :param datetime created_date: This parameter filters the response based on the `createdDate` field. 
-        :param str currency: This parameter filters the response based on the `currency` field. 
-        :param date debit_memo_date: This parameter filters the response based on the `debitMemoDate` field. 
-        :param date due_date: This parameter filters the response based on the `dueDate` field. 
-        :param str number: This parameter filters the response based on the `number` field. 
-        :param str referred_invoice_id: This parameter filters the response based on the `referredInvoiceId` field. 
-        :param str status: This parameter filters the response based on the `status` field. 
-        :param date target_date: This parameter filters the response based on the `targetDate` field. 
-        :param float tax_amount: This parameter filters the response based on the `taxAmount` field. 
-        :param float total_tax_exempt_amount: This parameter filters the response based on the `totalTaxExemptAmount` field. 
-        :param str updated_by_id: This parameter filters the response based on the `updatedById` field. 
-        :param datetime updated_date: This parameter filters the response based on the `updatedDate` field. 
-        :param str sort: This parameter restricts the order of the data returned in the response. You can use this parameter to supply a dimension you want to sort on.  A sortable field uses the following form:   *operator* *field_name*  You can use at most two sortable fields in one URL path. Use a comma to separate sortable fields. For example:  *operator* *field_name*, *operator* *field_name*    *operator* is used to mark the order of sequencing. The operator is optional. If you only specify the sortable field without any operator, the response data is sorted in descending order by this field.    - The `-` operator indicates an ascending order.   - The `+` operator indicates a descending order.  By default, the response data is displayed in descending order by debit memo number.  *field_name* indicates the name of a sortable field. The supported sortable fields of this operation are as below:    - number   - accountId   - debitMemoDate   - targetDate   - dueDate   - amount   - taxAmount   - totalTaxExemptAmount   - balance   - beAppliedAmount   - referredInvoiceId   - createdDate   - createdById   - updatedDate   - updatedById    Examples:  - /v1/debitmemos?sort=+number  - /v1/debitmemos?status=Processed&sort=-number,+amount 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param int page_size: Number of rows returned per page.
+        :param str account_id: This parameter filters the response based on the `accountId` field.
+        :param float amount: This parameter filters the response based on the `amount` field.
+        :param float balance: This parameter filters the response based on the `balance` field.
+        :param float be_applied_amount: This parameter filters the response based on the `beAppliedAmount` field.
+        :param str created_by_id: This parameter filters the response based on the `createdById` field.
+        :param datetime created_date: This parameter filters the response based on the `createdDate` field.
+        :param str currency: This parameter filters the response based on the `currency` field.
+        :param date debit_memo_date: This parameter filters the response based on the `debitMemoDate` field.
+        :param date due_date: This parameter filters the response based on the `dueDate` field.
+        :param str number: This parameter filters the response based on the `number` field.
+        :param str referred_invoice_id: This parameter filters the response based on the `referredInvoiceId` field.
+        :param str status: This parameter filters the response based on the `status` field.
+        :param date target_date: This parameter filters the response based on the `targetDate` field.
+        :param float tax_amount: This parameter filters the response based on the `taxAmount` field.
+        :param float total_tax_exempt_amount: This parameter filters the response based on the `totalTaxExemptAmount` field.
+        :param str updated_by_id: This parameter filters the response based on the `updatedById` field.
+        :param datetime updated_date: This parameter filters the response based on the `updatedDate` field.
+        :param str sort: This parameter restricts the order of the data returned in the response. You can use this parameter to supply a dimension you want to sort on.  A sortable field uses the following form:   *operator* *field_name*  You can use at most two sortable fields in one URL path. Use a comma to separate sortable fields. For example:  *operator* *field_name*, *operator* *field_name*    *operator* is used to mark the order of sequencing. The operator is optional. If you only specify the sortable field without any operator, the response data is sorted in descending order by this field.    - The `-` operator indicates an ascending order.   - The `+` operator indicates a descending order.  By default, the response data is displayed in descending order by debit memo number.  *field_name* indicates the name of a sortable field. The supported sortable fields of this operation are as below:    - number   - accountId   - debitMemoDate   - targetDate   - dueDate   - amount   - taxAmount   - totalTaxExemptAmount   - balance   - beAppliedAmount   - referredInvoiceId   - createdDate   - createdById   - updatedDate   - updatedById    Examples:  - /v1/debitmemos?sort=+number  - /v1/debitmemos?status=Processed&sort=-number,+amount
         :return: GETDebitMemoCollectionType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -677,26 +677,26 @@ class DebitMemosApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param int page_size: Number of rows returned per page. 
-        :param str account_id: This parameter filters the response based on the `accountId` field. 
-        :param float amount: This parameter filters the response based on the `amount` field. 
-        :param float balance: This parameter filters the response based on the `balance` field. 
-        :param float be_applied_amount: This parameter filters the response based on the `beAppliedAmount` field. 
-        :param str created_by_id: This parameter filters the response based on the `createdById` field. 
-        :param datetime created_date: This parameter filters the response based on the `createdDate` field. 
-        :param str currency: This parameter filters the response based on the `currency` field. 
-        :param date debit_memo_date: This parameter filters the response based on the `debitMemoDate` field. 
-        :param date due_date: This parameter filters the response based on the `dueDate` field. 
-        :param str number: This parameter filters the response based on the `number` field. 
-        :param str referred_invoice_id: This parameter filters the response based on the `referredInvoiceId` field. 
-        :param str status: This parameter filters the response based on the `status` field. 
-        :param date target_date: This parameter filters the response based on the `targetDate` field. 
-        :param float tax_amount: This parameter filters the response based on the `taxAmount` field. 
-        :param float total_tax_exempt_amount: This parameter filters the response based on the `totalTaxExemptAmount` field. 
-        :param str updated_by_id: This parameter filters the response based on the `updatedById` field. 
-        :param datetime updated_date: This parameter filters the response based on the `updatedDate` field. 
-        :param str sort: This parameter restricts the order of the data returned in the response. You can use this parameter to supply a dimension you want to sort on.  A sortable field uses the following form:   *operator* *field_name*  You can use at most two sortable fields in one URL path. Use a comma to separate sortable fields. For example:  *operator* *field_name*, *operator* *field_name*    *operator* is used to mark the order of sequencing. The operator is optional. If you only specify the sortable field without any operator, the response data is sorted in descending order by this field.    - The `-` operator indicates an ascending order.   - The `+` operator indicates a descending order.  By default, the response data is displayed in descending order by debit memo number.  *field_name* indicates the name of a sortable field. The supported sortable fields of this operation are as below:    - number   - accountId   - debitMemoDate   - targetDate   - dueDate   - amount   - taxAmount   - totalTaxExemptAmount   - balance   - beAppliedAmount   - referredInvoiceId   - createdDate   - createdById   - updatedDate   - updatedById    Examples:  - /v1/debitmemos?sort=+number  - /v1/debitmemos?status=Processed&sort=-number,+amount 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param int page_size: Number of rows returned per page.
+        :param str account_id: This parameter filters the response based on the `accountId` field.
+        :param float amount: This parameter filters the response based on the `amount` field.
+        :param float balance: This parameter filters the response based on the `balance` field.
+        :param float be_applied_amount: This parameter filters the response based on the `beAppliedAmount` field.
+        :param str created_by_id: This parameter filters the response based on the `createdById` field.
+        :param datetime created_date: This parameter filters the response based on the `createdDate` field.
+        :param str currency: This parameter filters the response based on the `currency` field.
+        :param date debit_memo_date: This parameter filters the response based on the `debitMemoDate` field.
+        :param date due_date: This parameter filters the response based on the `dueDate` field.
+        :param str number: This parameter filters the response based on the `number` field.
+        :param str referred_invoice_id: This parameter filters the response based on the `referredInvoiceId` field.
+        :param str status: This parameter filters the response based on the `status` field.
+        :param date target_date: This parameter filters the response based on the `targetDate` field.
+        :param float tax_amount: This parameter filters the response based on the `taxAmount` field.
+        :param float total_tax_exempt_amount: This parameter filters the response based on the `totalTaxExemptAmount` field.
+        :param str updated_by_id: This parameter filters the response based on the `updatedById` field.
+        :param datetime updated_date: This parameter filters the response based on the `updatedDate` field.
+        :param str sort: This parameter restricts the order of the data returned in the response. You can use this parameter to supply a dimension you want to sort on.  A sortable field uses the following form:   *operator* *field_name*  You can use at most two sortable fields in one URL path. Use a comma to separate sortable fields. For example:  *operator* *field_name*, *operator* *field_name*    *operator* is used to mark the order of sequencing. The operator is optional. If you only specify the sortable field without any operator, the response data is sorted in descending order by this field.    - The `-` operator indicates an ascending order.   - The `+` operator indicates a descending order.  By default, the response data is displayed in descending order by debit memo number.  *field_name* indicates the name of a sortable field. The supported sortable fields of this operation are as below:    - number   - accountId   - debitMemoDate   - targetDate   - dueDate   - amount   - taxAmount   - totalTaxExemptAmount   - balance   - beAppliedAmount   - referredInvoiceId   - createdDate   - createdById   - updatedDate   - updatedById    Examples:  - /v1/debitmemos?sort=+number  - /v1/debitmemos?status=Processed&sort=-number,+amount
         :return: GETDebitMemoCollectionType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -811,9 +811,9 @@ class DebitMemosApi(object):
         :param async_req bool
         :param str dmitemid: The unique ID of a debit memo item. You can get the debit memo item ID from the response of [Get debit memo items](https://www.zuora.com/developer/api-reference/#operation/GET_DebitMemoItems).  (required)
         :param str debit_memo_id: The unique ID of a debit memo. For example, 8a8082e65b27f6c3015ba419f3c2644e.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param int page_size: Number of rows returned per page. 
-        :param int page: Page number. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param int page_size: Number of rows returned per page.
+        :param int page: Page number.
         :return: GETTaxationItemsOfDebitMemoItemType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -837,9 +837,9 @@ class DebitMemosApi(object):
         :param async_req bool
         :param str dmitemid: The unique ID of a debit memo item. You can get the debit memo item ID from the response of [Get debit memo items](https://www.zuora.com/developer/api-reference/#operation/GET_DebitMemoItems).  (required)
         :param str debit_memo_id: The unique ID of a debit memo. For example, 8a8082e65b27f6c3015ba419f3c2644e.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param int page_size: Number of rows returned per page. 
-        :param int page: Page number. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param int page_size: Number of rows returned per page.
+        :param int page: Page number.
         :return: GETTaxationItemsOfDebitMemoItemType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -933,8 +933,8 @@ class DebitMemosApi(object):
 
         :param async_req bool
         :param DebitMemoFromChargeType body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param str zuora_version:  The minor version of the Zuora REST API. See [Minor Version](https://www.zuora.com/developer/api-reference/#section/API-Versions/Minor-Version) for information about REST API version control.   This header affects the availability of the following fields: * amount * memoItemAmount 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param str zuora_version:  The minor version of the Zuora REST API. See [Minor Version](https://www.zuora.com/developer/api-reference/#section/API-Versions/Minor-Version) for information about REST API version control.   This header affects the availability of the following fields: * amount * memoItemAmount
         :return: GETDebitMemoType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -957,8 +957,8 @@ class DebitMemosApi(object):
 
         :param async_req bool
         :param DebitMemoFromChargeType body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param str zuora_version:  The minor version of the Zuora REST API. See [Minor Version](https://www.zuora.com/developer/api-reference/#section/API-Versions/Minor-Version) for information about REST API version control.   This header affects the availability of the following fields: * amount * memoItemAmount 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param str zuora_version:  The minor version of the Zuora REST API. See [Minor Version](https://www.zuora.com/developer/api-reference/#section/API-Versions/Minor-Version) for information about REST API version control.   This header affects the availability of the following fields: * amount * memoItemAmount
         :return: GETDebitMemoType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1040,7 +1040,7 @@ class DebitMemosApi(object):
 
         :param async_req bool
         :param str debit_memo_id: The unique ID of the debit memo that you want to create a PDF file for. For example, 8a8082e65b27f6c3015ba419f3c2644e.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: POSTMemoPdfResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1063,7 +1063,7 @@ class DebitMemosApi(object):
 
         :param async_req bool
         :param str debit_memo_id: The unique ID of the debit memo that you want to create a PDF file for. For example, 8a8082e65b27f6c3015ba419f3c2644e.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: POSTMemoPdfResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1144,7 +1144,7 @@ class DebitMemosApi(object):
         :param async_req bool
         :param PostDebitMemoEmailType request:  (required)
         :param str debit_memo_id: The ID of a posted debit memo. For example, 8a8082e65b27f6c3015ba419f3c2644e.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: CommonResponseType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1168,7 +1168,7 @@ class DebitMemosApi(object):
         :param async_req bool
         :param PostDebitMemoEmailType request:  (required)
         :param str debit_memo_id: The ID of a posted debit memo. For example, 8a8082e65b27f6c3015ba419f3c2644e.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: CommonResponseType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1255,7 +1255,7 @@ class DebitMemosApi(object):
         :param async_req bool
         :param str debit_memo_id: The unique ID of a debit memo. For example, 8a8082e65b27f6c3015ba419f3c2644e.  (required)
         :param POSTTaxationItemListForDMType body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETTaxationItemListType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1279,7 +1279,7 @@ class DebitMemosApi(object):
         :param async_req bool
         :param str debit_memo_id: The unique ID of a debit memo. For example, 8a8082e65b27f6c3015ba419f3c2644e.  (required)
         :param POSTTaxationItemListForDMType body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETTaxationItemListType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1365,7 +1365,7 @@ class DebitMemosApi(object):
 
         :param async_req bool
         :param PUTBatchDebitMemosRequest body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: CommonResponseType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1388,7 +1388,7 @@ class DebitMemosApi(object):
 
         :param async_req bool
         :param PUTBatchDebitMemosRequest body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: CommonResponseType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1468,7 +1468,7 @@ class DebitMemosApi(object):
 
         :param async_req bool
         :param str debit_memo_id: The unique ID of a debit memo. For example, 8a8082e65b27f6c3015ba419f3c2644e.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETDebitMemoType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1491,7 +1491,7 @@ class DebitMemosApi(object):
 
         :param async_req bool
         :param str debit_memo_id: The unique ID of a debit memo. For example, 8a8082e65b27f6c3015ba419f3c2644e.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETDebitMemoType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1572,7 +1572,7 @@ class DebitMemosApi(object):
         :param async_req bool
         :param PUTDebitMemoType body: (required)
         :param str debit_memo_id: The unique ID of a debit memo. For example, 8a8082e65b27f6c3015ba419f3c2644e.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETDebitMemoType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1596,7 +1596,7 @@ class DebitMemosApi(object):
         :param async_req bool
         :param PUTDebitMemoType body: (required)
         :param str debit_memo_id: The unique ID of a debit memo. For example, 8a8082e65b27f6c3015ba419f3c2644e.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETDebitMemoType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1682,7 +1682,7 @@ class DebitMemosApi(object):
 
         :param async_req bool
         :param str debit_memo_id: The unique ID of a debit memo. For example, 8a8082e65b27f6c3015ba419f3c2644e.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETDebitMemoType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1705,7 +1705,7 @@ class DebitMemosApi(object):
 
         :param async_req bool
         :param str debit_memo_id: The unique ID of a debit memo. For example, 8a8082e65b27f6c3015ba419f3c2644e.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETDebitMemoType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1785,7 +1785,7 @@ class DebitMemosApi(object):
 
         :param async_req bool
         :param str debit_memo_id: The unique ID of a debit memo. For example, 8a8082e65b27f6c3015ba419f3c2644e.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETDebitMemoType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1808,7 +1808,7 @@ class DebitMemosApi(object):
 
         :param async_req bool
         :param str debit_memo_id: The unique ID of a debit memo. For example, 8a8082e65b27f6c3015ba419f3c2644e.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GETDebitMemoType
                  If the method is called asynchronously,
                  returns the request thread.

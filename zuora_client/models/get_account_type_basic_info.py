@@ -16,8 +16,8 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.account_object_custom_fields import AccountObjectCustomFields  # noqa: F401,E501
-from swagger_client.models.account_object_ns_fields import AccountObjectNSFields  # noqa: F401,E501
+from zuora_client.models.account_object_custom_fields import AccountObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.account_object_ns_fields import AccountObjectNSFields  # noqa: F401,E501
 
 
 class GETAccountTypeBasicInfo(object):

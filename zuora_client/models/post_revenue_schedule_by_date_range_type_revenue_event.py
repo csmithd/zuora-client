@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.revenue_event_object_custom_fields import RevenueEventObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.revenue_event_object_custom_fields import RevenueEventObjectCustomFields  # noqa: F401,E501
 
 
 class POSTRevenueScheduleByDateRangeTypeRevenueEvent(object):

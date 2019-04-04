@@ -16,17 +16,17 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.cancel_subscription import CancelSubscription  # noqa: F401,E501
-from swagger_client.models.create_order_resume import CreateOrderResume  # noqa: F401,E501
-from swagger_client.models.create_order_suspend import CreateOrderSuspend  # noqa: F401,E501
-from swagger_client.models.order_action_object_custom_fields import OrderActionObjectCustomFields  # noqa: F401,E501
-from swagger_client.models.owner_transfer import OwnerTransfer  # noqa: F401,E501
-from swagger_client.models.preview_order_create_subscription import PreviewOrderCreateSubscription  # noqa: F401,E501
-from swagger_client.models.preview_order_rate_plan_override import PreviewOrderRatePlanOverride  # noqa: F401,E501
-from swagger_client.models.preview_order_rate_plan_update import PreviewOrderRatePlanUpdate  # noqa: F401,E501
-from swagger_client.models.remove_product import RemoveProduct  # noqa: F401,E501
-from swagger_client.models.terms_and_conditions import TermsAndConditions  # noqa: F401,E501
-from swagger_client.models.trigger_date import TriggerDate  # noqa: F401,E501
+from zuora_client.models.cancel_subscription import CancelSubscription  # noqa: F401,E501
+from zuora_client.models.create_order_resume import CreateOrderResume  # noqa: F401,E501
+from zuora_client.models.create_order_suspend import CreateOrderSuspend  # noqa: F401,E501
+from zuora_client.models.order_action_object_custom_fields import OrderActionObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.owner_transfer import OwnerTransfer  # noqa: F401,E501
+from zuora_client.models.preview_order_create_subscription import PreviewOrderCreateSubscription  # noqa: F401,E501
+from zuora_client.models.preview_order_rate_plan_override import PreviewOrderRatePlanOverride  # noqa: F401,E501
+from zuora_client.models.preview_order_rate_plan_update import PreviewOrderRatePlanUpdate  # noqa: F401,E501
+from zuora_client.models.remove_product import RemoveProduct  # noqa: F401,E501
+from zuora_client.models.terms_and_conditions import TermsAndConditions  # noqa: F401,E501
+from zuora_client.models.trigger_date import TriggerDate  # noqa: F401,E501
 
 
 class PreviewOrderOrderAction(object):

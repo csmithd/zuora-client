@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.get_email_history_v_os_type import GETEmailHistoryVOsType  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.get_email_history_v_os_type import GETEmailHistoryVOsType  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestGETEmailHistoryVOsType(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGETEmailHistoryVOsType(unittest.TestCase):
     def testGETEmailHistoryVOsType(self):
         """Test GETEmailHistoryVOsType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.get_email_history_v_os_type.GETEmailHistoryVOsType()  # noqa: E501
+        # model = zuora_client.models.get_email_history_v_os_type.GETEmailHistoryVOsType()  # noqa: E501
         pass
 
 

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.credit_memo_item_from_write_off_invoice import CreditMemoItemFromWriteOffInvoice  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.credit_memo_item_from_write_off_invoice import CreditMemoItemFromWriteOffInvoice  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestCreditMemoItemFromWriteOffInvoice(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestCreditMemoItemFromWriteOffInvoice(unittest.TestCase):
     def testCreditMemoItemFromWriteOffInvoice(self):
         """Test CreditMemoItemFromWriteOffInvoice"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.credit_memo_item_from_write_off_invoice.CreditMemoItemFromWriteOffInvoice()  # noqa: E501
+        # model = zuora_client.models.credit_memo_item_from_write_off_invoice.CreditMemoItemFromWriteOffInvoice()  # noqa: E501
         pass
 
 

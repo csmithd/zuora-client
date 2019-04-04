@@ -16,8 +16,8 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.post_invoice_collect_credit_memos_type import POSTInvoiceCollectCreditMemosType  # noqa: F401,E501
-from swagger_client.models.post_invoice_collect_invoices_type import POSTInvoiceCollectInvoicesType  # noqa: F401,E501
+from zuora_client.models.post_invoice_collect_credit_memos_type import POSTInvoiceCollectCreditMemosType  # noqa: F401,E501
+from zuora_client.models.post_invoice_collect_invoices_type import POSTInvoiceCollectInvoicesType  # noqa: F401,E501
 
 
 class POSTInvoiceCollectResponseType(object):

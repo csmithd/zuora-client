@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.order import Order  # noqa: F401,E501
+from zuora_client.models.order import Order  # noqa: F401,E501
 
 
 class GetAllOrdersResponseType(object):

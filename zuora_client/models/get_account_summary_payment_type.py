@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.get_account_summary_payment_invoice_type import GETAccountSummaryPaymentInvoiceType  # noqa: F401,E501
+from zuora_client.models.get_account_summary_payment_invoice_type import GETAccountSummaryPaymentInvoiceType  # noqa: F401,E501
 
 
 class GETAccountSummaryPaymentType(object):

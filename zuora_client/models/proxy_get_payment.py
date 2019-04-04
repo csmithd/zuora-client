@@ -16,8 +16,8 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.payment_object_custom_fields import PaymentObjectCustomFields  # noqa: F401,E501
-from swagger_client.models.payment_object_ns_fields import PaymentObjectNSFields  # noqa: F401,E501
+from zuora_client.models.payment_object_custom_fields import PaymentObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.payment_object_ns_fields import PaymentObjectNSFields  # noqa: F401,E501
 
 
 class ProxyGetPayment(object):

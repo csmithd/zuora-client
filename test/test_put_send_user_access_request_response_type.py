@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.put_send_user_access_request_response_type import PUTSendUserAccessRequestResponseType  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.put_send_user_access_request_response_type import PUTSendUserAccessRequestResponseType  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestPUTSendUserAccessRequestResponseType(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestPUTSendUserAccessRequestResponseType(unittest.TestCase):
     def testPUTSendUserAccessRequestResponseType(self):
         """Test PUTSendUserAccessRequestResponseType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.put_send_user_access_request_response_type.PUTSendUserAccessRequestResponseType()  # noqa: E501
+        # model = zuora_client.models.put_send_user_access_request_response_type.PUTSendUserAccessRequestResponseType()  # noqa: E501
         pass
 
 

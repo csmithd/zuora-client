@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.proxy_actionquery_request_conf import ProxyActionqueryRequestConf  # noqa: F401,E501
+from zuora_client.models.proxy_actionquery_request_conf import ProxyActionqueryRequestConf  # noqa: F401,E501
 
 
 class ProxyActionqueryRequest(object):

@@ -16,8 +16,8 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.credit_memo_object_custom_fields import CreditMemoObjectCustomFields  # noqa: F401,E501
-from swagger_client.models.credit_memo_object_ns_fields import CreditMemoObjectNSFields  # noqa: F401,E501
+from zuora_client.models.credit_memo_object_custom_fields import CreditMemoObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.credit_memo_object_ns_fields import CreditMemoObjectNSFields  # noqa: F401,E501
 
 
 class GETCreditMemoTypewithSuccess(object):

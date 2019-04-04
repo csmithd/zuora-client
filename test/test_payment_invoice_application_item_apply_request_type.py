@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.payment_invoice_application_item_apply_request_type import PaymentInvoiceApplicationItemApplyRequestType  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.payment_invoice_application_item_apply_request_type import PaymentInvoiceApplicationItemApplyRequestType  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestPaymentInvoiceApplicationItemApplyRequestType(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestPaymentInvoiceApplicationItemApplyRequestType(unittest.TestCase):
     def testPaymentInvoiceApplicationItemApplyRequestType(self):
         """Test PaymentInvoiceApplicationItemApplyRequestType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.payment_invoice_application_item_apply_request_type.PaymentInvoiceApplicationItemApplyRequestType()  # noqa: E501
+        # model = zuora_client.models.payment_invoice_application_item_apply_request_type.PaymentInvoiceApplicationItemApplyRequestType()  # noqa: E501
         pass
 
 

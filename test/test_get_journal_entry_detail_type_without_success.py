@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.get_journal_entry_detail_type_without_success import GETJournalEntryDetailTypeWithoutSuccess  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.get_journal_entry_detail_type_without_success import GETJournalEntryDetailTypeWithoutSuccess  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestGETJournalEntryDetailTypeWithoutSuccess(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGETJournalEntryDetailTypeWithoutSuccess(unittest.TestCase):
     def testGETJournalEntryDetailTypeWithoutSuccess(self):
         """Test GETJournalEntryDetailTypeWithoutSuccess"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.get_journal_entry_detail_type_without_success.GETJournalEntryDetailTypeWithoutSuccess()  # noqa: E501
+        # model = zuora_client.models.get_journal_entry_detail_type_without_success.GETJournalEntryDetailTypeWithoutSuccess()  # noqa: E501
         pass
 
 

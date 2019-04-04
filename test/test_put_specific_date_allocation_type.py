@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.put_specific_date_allocation_type import PUTSpecificDateAllocationType  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.put_specific_date_allocation_type import PUTSpecificDateAllocationType  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestPUTSpecificDateAllocationType(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestPUTSpecificDateAllocationType(unittest.TestCase):
     def testPUTSpecificDateAllocationType(self):
         """Test PUTSpecificDateAllocationType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.put_specific_date_allocation_type.PUTSpecificDateAllocationType()  # noqa: E501
+        # model = zuora_client.models.put_specific_date_allocation_type.PUTSpecificDateAllocationType()  # noqa: E501
         pass
 
 

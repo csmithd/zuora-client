@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.getcm_tax_item_type_new import GETCMTaxItemTypeNew  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.getcm_tax_item_type_new import GETCMTaxItemTypeNew  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestGETCMTaxItemTypeNew(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGETCMTaxItemTypeNew(unittest.TestCase):
     def testGETCMTaxItemTypeNew(self):
         """Test GETCMTaxItemTypeNew"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.getcm_tax_item_type_new.GETCMTaxItemTypeNew()  # noqa: E501
+        # model = zuora_client.models.getcm_tax_item_type_new.GETCMTaxItemTypeNew()  # noqa: E501
         pass
 
 

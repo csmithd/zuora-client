@@ -16,21 +16,21 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.discount_pricing_override import DiscountPricingOverride  # noqa: F401,E501
-from swagger_client.models.one_time_flat_fee_pricing_override import OneTimeFlatFeePricingOverride  # noqa: F401,E501
-from swagger_client.models.one_time_per_unit_pricing_override import OneTimePerUnitPricingOverride  # noqa: F401,E501
-from swagger_client.models.one_time_tiered_pricing_override import OneTimeTieredPricingOverride  # noqa: F401,E501
-from swagger_client.models.one_time_volume_pricing_override import OneTimeVolumePricingOverride  # noqa: F401,E501
-from swagger_client.models.recurring_flat_fee_pricing_override import RecurringFlatFeePricingOverride  # noqa: F401,E501
-from swagger_client.models.recurring_per_unit_pricing_override import RecurringPerUnitPricingOverride  # noqa: F401,E501
-from swagger_client.models.recurring_tiered_pricing_override import RecurringTieredPricingOverride  # noqa: F401,E501
-from swagger_client.models.recurring_volume_pricing_override import RecurringVolumePricingOverride  # noqa: F401,E501
-from swagger_client.models.usage_flat_fee_pricing_override import UsageFlatFeePricingOverride  # noqa: F401,E501
-from swagger_client.models.usage_overage_pricing_override import UsageOveragePricingOverride  # noqa: F401,E501
-from swagger_client.models.usage_per_unit_pricing_override import UsagePerUnitPricingOverride  # noqa: F401,E501
-from swagger_client.models.usage_tiered_pricing_override import UsageTieredPricingOverride  # noqa: F401,E501
-from swagger_client.models.usage_tiered_with_overage_pricing_override import UsageTieredWithOveragePricingOverride  # noqa: F401,E501
-from swagger_client.models.usage_volume_pricing_override import UsageVolumePricingOverride  # noqa: F401,E501
+from zuora_client.models.discount_pricing_override import DiscountPricingOverride  # noqa: F401,E501
+from zuora_client.models.one_time_flat_fee_pricing_override import OneTimeFlatFeePricingOverride  # noqa: F401,E501
+from zuora_client.models.one_time_per_unit_pricing_override import OneTimePerUnitPricingOverride  # noqa: F401,E501
+from zuora_client.models.one_time_tiered_pricing_override import OneTimeTieredPricingOverride  # noqa: F401,E501
+from zuora_client.models.one_time_volume_pricing_override import OneTimeVolumePricingOverride  # noqa: F401,E501
+from zuora_client.models.recurring_flat_fee_pricing_override import RecurringFlatFeePricingOverride  # noqa: F401,E501
+from zuora_client.models.recurring_per_unit_pricing_override import RecurringPerUnitPricingOverride  # noqa: F401,E501
+from zuora_client.models.recurring_tiered_pricing_override import RecurringTieredPricingOverride  # noqa: F401,E501
+from zuora_client.models.recurring_volume_pricing_override import RecurringVolumePricingOverride  # noqa: F401,E501
+from zuora_client.models.usage_flat_fee_pricing_override import UsageFlatFeePricingOverride  # noqa: F401,E501
+from zuora_client.models.usage_overage_pricing_override import UsageOveragePricingOverride  # noqa: F401,E501
+from zuora_client.models.usage_per_unit_pricing_override import UsagePerUnitPricingOverride  # noqa: F401,E501
+from zuora_client.models.usage_tiered_pricing_override import UsageTieredPricingOverride  # noqa: F401,E501
+from zuora_client.models.usage_tiered_with_overage_pricing_override import UsageTieredWithOveragePricingOverride  # noqa: F401,E501
+from zuora_client.models.usage_volume_pricing_override import UsageVolumePricingOverride  # noqa: F401,E501
 
 
 class ChargeOverridePricing(object):

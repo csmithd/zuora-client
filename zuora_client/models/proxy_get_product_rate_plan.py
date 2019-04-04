@@ -16,8 +16,8 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.product_rate_plan_object_custom_fields import ProductRatePlanObjectCustomFields  # noqa: F401,E501
-from swagger_client.models.product_rate_plan_object_ns_fields import ProductRatePlanObjectNSFields  # noqa: F401,E501
+from zuora_client.models.product_rate_plan_object_custom_fields import ProductRatePlanObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.product_rate_plan_object_ns_fields import ProductRatePlanObjectNSFields  # noqa: F401,E501
 
 
 class ProxyGetProductRatePlan(object):

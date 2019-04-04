@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.get_custom_exchange_rates_data_type import GETCustomExchangeRatesDataType  # noqa: F401,E501
+from zuora_client.models.get_custom_exchange_rates_data_type import GETCustomExchangeRatesDataType  # noqa: F401,E501
 
 
 class GETCustomExchangeRatesType(object):

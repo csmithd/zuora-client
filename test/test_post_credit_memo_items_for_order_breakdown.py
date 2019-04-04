@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.post_credit_memo_items_for_order_breakdown import POSTCreditMemoItemsForOrderBreakdown  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.post_credit_memo_items_for_order_breakdown import POSTCreditMemoItemsForOrderBreakdown  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestPOSTCreditMemoItemsForOrderBreakdown(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestPOSTCreditMemoItemsForOrderBreakdown(unittest.TestCase):
     def testPOSTCreditMemoItemsForOrderBreakdown(self):
         """Test POSTCreditMemoItemsForOrderBreakdown"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.post_credit_memo_items_for_order_breakdown.POSTCreditMemoItemsForOrderBreakdown()  # noqa: E501
+        # model = zuora_client.models.post_credit_memo_items_for_order_breakdown.POSTCreditMemoItemsForOrderBreakdown()  # noqa: E501
         pass
 
 

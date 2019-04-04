@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.preview_result_order_actions import PreviewResultOrderActions  # noqa: F401,E501
+from zuora_client.models.preview_result_order_actions import PreviewResultOrderActions  # noqa: F401,E501
 
 
 class PreviewResultOrderMetrics(object):

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.put_verify_payment_method_response_type import PUTVerifyPaymentMethodResponseType  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.put_verify_payment_method_response_type import PUTVerifyPaymentMethodResponseType  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestPUTVerifyPaymentMethodResponseType(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestPUTVerifyPaymentMethodResponseType(unittest.TestCase):
     def testPUTVerifyPaymentMethodResponseType(self):
         """Test PUTVerifyPaymentMethodResponseType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.put_verify_payment_method_response_type.PUTVerifyPaymentMethodResponseType()  # noqa: E501
+        # model = zuora_client.models.put_verify_payment_method_response_type.PUTVerifyPaymentMethodResponseType()  # noqa: E501
         pass
 
 

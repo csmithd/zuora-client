@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.get_taxation_items_of_credit_memo_item_type import GETTaxationItemsOfCreditMemoItemType  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.get_taxation_items_of_credit_memo_item_type import GETTaxationItemsOfCreditMemoItemType  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestGETTaxationItemsOfCreditMemoItemType(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGETTaxationItemsOfCreditMemoItemType(unittest.TestCase):
     def testGETTaxationItemsOfCreditMemoItemType(self):
         """Test GETTaxationItemsOfCreditMemoItemType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.get_taxation_items_of_credit_memo_item_type.GETTaxationItemsOfCreditMemoItemType()  # noqa: E501
+        # model = zuora_client.models.get_taxation_items_of_credit_memo_item_type.GETTaxationItemsOfCreditMemoItemType()  # noqa: E501
         pass
 
 

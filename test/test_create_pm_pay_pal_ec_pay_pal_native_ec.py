@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.create_pm_pay_pal_ec_pay_pal_native_ec import CreatePMPayPalECPayPalNativeEC  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.create_pm_pay_pal_ec_pay_pal_native_ec import CreatePMPayPalECPayPalNativeEC  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestCreatePMPayPalECPayPalNativeEC(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestCreatePMPayPalECPayPalNativeEC(unittest.TestCase):
     def testCreatePMPayPalECPayPalNativeEC(self):
         """Test CreatePMPayPalECPayPalNativeEC"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.create_pm_pay_pal_ec_pay_pal_native_ec.CreatePMPayPalECPayPalNativeEC()  # noqa: E501
+        # model = zuora_client.models.create_pm_pay_pal_ec_pay_pal_native_ec.CreatePMPayPalECPayPalNativeEC()  # noqa: E501
         pass
 
 

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.put_deny_user_access_response_type import PUTDenyUserAccessResponseType  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.put_deny_user_access_response_type import PUTDenyUserAccessResponseType  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestPUTDenyUserAccessResponseType(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestPUTDenyUserAccessResponseType(unittest.TestCase):
     def testPUTDenyUserAccessResponseType(self):
         """Test PUTDenyUserAccessResponseType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.put_deny_user_access_response_type.PUTDenyUserAccessResponseType()  # noqa: E501
+        # model = zuora_client.models.put_deny_user_access_response_type.PUTDenyUserAccessResponseType()  # noqa: E501
         pass
 
 

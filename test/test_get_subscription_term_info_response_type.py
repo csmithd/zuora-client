@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.get_subscription_term_info_response_type import GetSubscriptionTermInfoResponseType  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.get_subscription_term_info_response_type import GetSubscriptionTermInfoResponseType  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestGetSubscriptionTermInfoResponseType(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGetSubscriptionTermInfoResponseType(unittest.TestCase):
     def testGetSubscriptionTermInfoResponseType(self):
         """Test GetSubscriptionTermInfoResponseType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.get_subscription_term_info_response_type.GetSubscriptionTermInfoResponseType()  # noqa: E501
+        # model = zuora_client.models.get_subscription_term_info_response_type.GetSubscriptionTermInfoResponseType()  # noqa: E501
         pass
 
 

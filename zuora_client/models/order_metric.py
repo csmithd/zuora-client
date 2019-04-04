@@ -16,10 +16,10 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.time_sliced_elp_net_metrics import TimeSlicedElpNetMetrics  # noqa: F401,E501
-from swagger_client.models.time_sliced_metrics import TimeSlicedMetrics  # noqa: F401,E501
-from swagger_client.models.time_sliced_net_metrics import TimeSlicedNetMetrics  # noqa: F401,E501
-from swagger_client.models.time_sliced_tcb_net_metrics import TimeSlicedTcbNetMetrics  # noqa: F401,E501
+from zuora_client.models.time_sliced_elp_net_metrics import TimeSlicedElpNetMetrics  # noqa: F401,E501
+from zuora_client.models.time_sliced_metrics import TimeSlicedMetrics  # noqa: F401,E501
+from zuora_client.models.time_sliced_net_metrics import TimeSlicedNetMetrics  # noqa: F401,E501
+from zuora_client.models.time_sliced_tcb_net_metrics import TimeSlicedTcbNetMetrics  # noqa: F401,E501
 
 
 class OrderMetric(object):

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.get_revenue_recognition_rule_association_type import GETRevenueRecognitionRuleAssociationType  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.get_revenue_recognition_rule_association_type import GETRevenueRecognitionRuleAssociationType  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestGETRevenueRecognitionRuleAssociationType(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGETRevenueRecognitionRuleAssociationType(unittest.TestCase):
     def testGETRevenueRecognitionRuleAssociationType(self):
         """Test GETRevenueRecognitionRuleAssociationType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.get_revenue_recognition_rule_association_type.GETRevenueRecognitionRuleAssociationType()  # noqa: E501
+        # model = zuora_client.models.get_revenue_recognition_rule_association_type.GETRevenueRecognitionRuleAssociationType()  # noqa: E501
         pass
 
 

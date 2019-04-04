@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.getrs_detail_for_product_charge_type import GETRSDetailForProductChargeType  # noqa: F401,E501
+from zuora_client.models.getrs_detail_for_product_charge_type import GETRSDetailForProductChargeType  # noqa: F401,E501
 
 
 class GETRSDetailsByProductChargeType(object):

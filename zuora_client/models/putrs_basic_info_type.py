@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.revenue_schedule_object_custom_fields import RevenueScheduleObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.revenue_schedule_object_custom_fields import RevenueScheduleObjectCustomFields  # noqa: F401,E501
 
 
 class PUTRSBasicInfoType(object):

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.put_public_email_template_request import PUTPublicEmailTemplateRequest  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.put_public_email_template_request import PUTPublicEmailTemplateRequest  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestPUTPublicEmailTemplateRequest(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestPUTPublicEmailTemplateRequest(unittest.TestCase):
     def testPUTPublicEmailTemplateRequest(self):
         """Test PUTPublicEmailTemplateRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.put_public_email_template_request.PUTPublicEmailTemplateRequest()  # noqa: E501
+        # model = zuora_client.models.put_public_email_template_request.PUTPublicEmailTemplateRequest()  # noqa: E501
         pass
 
 

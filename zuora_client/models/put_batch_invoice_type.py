@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.batch_invoice_type import BatchInvoiceType  # noqa: F401,E501
+from zuora_client.models.batch_invoice_type import BatchInvoiceType  # noqa: F401,E501
 
 
 class PutBatchInvoiceType(object):

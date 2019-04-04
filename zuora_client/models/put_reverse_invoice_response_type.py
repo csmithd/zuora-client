@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.put_reverse_invoice_response_type_credit_memo import PutReverseInvoiceResponseTypeCreditMemo  # noqa: F401,E501
+from zuora_client.models.put_reverse_invoice_response_type_credit_memo import PutReverseInvoiceResponseTypeCreditMemo  # noqa: F401,E501
 
 
 class PutReverseInvoiceResponseType(object):

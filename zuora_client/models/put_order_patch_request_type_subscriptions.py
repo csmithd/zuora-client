@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.put_order_patch_request_type_order_actions import PUTOrderPatchRequestTypeOrderActions  # noqa: F401,E501
+from zuora_client.models.put_order_patch_request_type_order_actions import PUTOrderPatchRequestTypeOrderActions  # noqa: F401,E501
 
 
 class PUTOrderPatchRequestTypeSubscriptions(object):

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.put_order_action_trigger_dates_request_type_charges import PUTOrderActionTriggerDatesRequestTypeCharges  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.put_order_action_trigger_dates_request_type_charges import PUTOrderActionTriggerDatesRequestTypeCharges  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestPUTOrderActionTriggerDatesRequestTypeCharges(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestPUTOrderActionTriggerDatesRequestTypeCharges(unittest.TestCase):
     def testPUTOrderActionTriggerDatesRequestTypeCharges(self):
         """Test PUTOrderActionTriggerDatesRequestTypeCharges"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.put_order_action_trigger_dates_request_type_charges.PUTOrderActionTriggerDatesRequestTypeCharges()  # noqa: E501
+        # model = zuora_client.models.put_order_action_trigger_dates_request_type_charges.PUTOrderActionTriggerDatesRequestTypeCharges()  # noqa: E501
         pass
 
 

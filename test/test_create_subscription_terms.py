@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.create_subscription_terms import CreateSubscriptionTerms  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.create_subscription_terms import CreateSubscriptionTerms  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestCreateSubscriptionTerms(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestCreateSubscriptionTerms(unittest.TestCase):
     def testCreateSubscriptionTerms(self):
         """Test CreateSubscriptionTerms"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.create_subscription_terms.CreateSubscriptionTerms()  # noqa: E501
+        # model = zuora_client.models.create_subscription_terms.CreateSubscriptionTerms()  # noqa: E501
         pass
 
 

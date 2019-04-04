@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.payment_invoice_application_item_apply_request_type import PaymentInvoiceApplicationItemApplyRequestType  # noqa: F401,E501
+from zuora_client.models.payment_invoice_application_item_apply_request_type import PaymentInvoiceApplicationItemApplyRequestType  # noqa: F401,E501
 
 
 class PaymentInvoiceApplicationApplyRequestType(object):

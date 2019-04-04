@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.submit_link_query_response import SubmitLinkQueryResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.submit_link_query_response import SubmitLinkQueryResponse  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestSubmitLinkQueryResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestSubmitLinkQueryResponse(unittest.TestCase):
     def testSubmitLinkQueryResponse(self):
         """Test SubmitLinkQueryResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.submit_link_query_response.SubmitLinkQueryResponse()  # noqa: E501
+        # model = zuora_client.models.submit_link_query_response.SubmitLinkQueryResponse()  # noqa: E501
         pass
 
 

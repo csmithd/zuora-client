@@ -16,8 +16,8 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.accounting_period_object_custom_fields import AccountingPeriodObjectCustomFields  # noqa: F401,E501
-from swagger_client.models.get_accounting_period_type_file_ids import GETAccountingPeriodTypeFileIds  # noqa: F401,E501
+from zuora_client.models.accounting_period_object_custom_fields import AccountingPeriodObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.get_accounting_period_type_file_ids import GETAccountingPeriodTypeFileIds  # noqa: F401,E501
 
 
 class GETAccountingPeriodType(object):

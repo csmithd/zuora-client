@@ -16,8 +16,8 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.billing_options import BillingOptions  # noqa: F401,E501
-from swagger_client.models.processing_options_electronic_payment_options import ProcessingOptionsElectronicPaymentOptions  # noqa: F401,E501
+from zuora_client.models.billing_options import BillingOptions  # noqa: F401,E501
+from zuora_client.models.processing_options_electronic_payment_options import ProcessingOptionsElectronicPaymentOptions  # noqa: F401,E501
 
 
 class ProcessingOptions(object):

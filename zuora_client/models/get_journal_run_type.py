@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.get_journal_run_transaction_type import GETJournalRunTransactionType  # noqa: F401,E501
+from zuora_client.models.get_journal_run_transaction_type import GETJournalRunTransactionType  # noqa: F401,E501
 
 
 class GETJournalRunType(object):

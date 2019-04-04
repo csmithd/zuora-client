@@ -16,8 +16,8 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.common_response_type import CommonResponseType  # noqa: F401,E501
-from swagger_client.models.put_order_trigger_dates_response_type_subscriptions import PUTOrderTriggerDatesResponseTypeSubscriptions  # noqa: F401,E501
+from zuora_client.models.common_response_type import CommonResponseType  # noqa: F401,E501
+from zuora_client.models.put_order_trigger_dates_response_type_subscriptions import PUTOrderTriggerDatesResponseTypeSubscriptions  # noqa: F401,E501
 
 
 class PUTOrderTriggerDatesResponseType(object):

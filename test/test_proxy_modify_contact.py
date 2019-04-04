@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.proxy_modify_contact import ProxyModifyContact  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.proxy_modify_contact import ProxyModifyContact  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestProxyModifyContact(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestProxyModifyContact(unittest.TestCase):
     def testProxyModifyContact(self):
         """Test ProxyModifyContact"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.proxy_modify_contact.ProxyModifyContact()  # noqa: E501
+        # model = zuora_client.models.proxy_modify_contact.ProxyModifyContact()  # noqa: E501
         pass
 
 

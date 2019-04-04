@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.get_credit_memo_item_part_typewith_success import GETCreditMemoItemPartTypewithSuccess  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.get_credit_memo_item_part_typewith_success import GETCreditMemoItemPartTypewithSuccess  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestGETCreditMemoItemPartTypewithSuccess(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGETCreditMemoItemPartTypewithSuccess(unittest.TestCase):
     def testGETCreditMemoItemPartTypewithSuccess(self):
         """Test GETCreditMemoItemPartTypewithSuccess"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.get_credit_memo_item_part_typewith_success.GETCreditMemoItemPartTypewithSuccess()  # noqa: E501
+        # model = zuora_client.models.get_credit_memo_item_part_typewith_success.GETCreditMemoItemPartTypewithSuccess()  # noqa: E501
         pass
 
 

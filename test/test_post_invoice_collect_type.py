@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.post_invoice_collect_type import POSTInvoiceCollectType  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.post_invoice_collect_type import POSTInvoiceCollectType  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestPOSTInvoiceCollectType(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestPOSTInvoiceCollectType(unittest.TestCase):
     def testPOSTInvoiceCollectType(self):
         """Test POSTInvoiceCollectType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.post_invoice_collect_type.POSTInvoiceCollectType()  # noqa: E501
+        # model = zuora_client.models.post_invoice_collect_type.POSTInvoiceCollectType()  # noqa: E501
         pass
 
 

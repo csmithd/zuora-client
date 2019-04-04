@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.payment_debit_memo_application_item_apply_request_type import PaymentDebitMemoApplicationItemApplyRequestType  # noqa: F401,E501
+from zuora_client.models.payment_debit_memo_application_item_apply_request_type import PaymentDebitMemoApplicationItemApplyRequestType  # noqa: F401,E501
 
 
 class PaymentDebitMemoApplicationApplyRequestType(object):

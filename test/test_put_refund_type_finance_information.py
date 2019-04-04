@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.put_refund_type_finance_information import PUTRefundTypeFinanceInformation  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.put_refund_type_finance_information import PUTRefundTypeFinanceInformation  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestPUTRefundTypeFinanceInformation(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestPUTRefundTypeFinanceInformation(unittest.TestCase):
     def testPUTRefundTypeFinanceInformation(self):
         """Test PUTRefundTypeFinanceInformation"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.put_refund_type_finance_information.PUTRefundTypeFinanceInformation()  # noqa: E501
+        # model = zuora_client.models.put_refund_type_finance_information.PUTRefundTypeFinanceInformation()  # noqa: E501
         pass
 
 

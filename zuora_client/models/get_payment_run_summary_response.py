@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.get_payment_run_summary_total_values import GETPaymentRunSummaryTotalValues  # noqa: F401,E501
+from zuora_client.models.get_payment_run_summary_total_values import GETPaymentRunSummaryTotalValues  # noqa: F401,E501
 
 
 class GETPaymentRunSummaryResponse(object):

@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.debit_memo_tax_item_from_invoice_tax_item_type_finance_information import DebitMemoTaxItemFromInvoiceTaxItemTypeFinanceInformation  # noqa: F401,E501
+from zuora_client.models.debit_memo_tax_item_from_invoice_tax_item_type_finance_information import DebitMemoTaxItemFromInvoiceTaxItemTypeFinanceInformation  # noqa: F401,E501
 
 
 class DebitMemoTaxItemFromInvoiceTaxItemType(object):

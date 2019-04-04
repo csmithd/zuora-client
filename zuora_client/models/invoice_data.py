@@ -16,8 +16,8 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.invoice_data_invoice import InvoiceDataInvoice  # noqa: F401,E501
-from swagger_client.models.invoice_item import InvoiceItem  # noqa: F401,E501
+from zuora_client.models.invoice_data_invoice import InvoiceDataInvoice  # noqa: F401,E501
+from zuora_client.models.invoice_item import InvoiceItem  # noqa: F401,E501
 
 
 class InvoiceData(object):

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.get_journal_entries_in_journal_run_type import GETJournalEntriesInJournalRunType  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.get_journal_entries_in_journal_run_type import GETJournalEntriesInJournalRunType  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestGETJournalEntriesInJournalRunType(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGETJournalEntriesInJournalRunType(unittest.TestCase):
     def testGETJournalEntriesInJournalRunType(self):
         """Test GETJournalEntriesInJournalRunType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.get_journal_entries_in_journal_run_type.GETJournalEntriesInJournalRunType()  # noqa: E501
+        # model = zuora_client.models.get_journal_entries_in_journal_run_type.GETJournalEntriesInJournalRunType()  # noqa: E501
         pass
 
 

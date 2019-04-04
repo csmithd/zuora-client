@@ -16,8 +16,8 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.put_sc_add_type import PUTScAddType  # noqa: F401,E501
-from swagger_client.models.rate_plan_object_custom_fields import RatePlanObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.put_sc_add_type import PUTScAddType  # noqa: F401,E501
+from zuora_client.models.rate_plan_object_custom_fields import RatePlanObjectCustomFields  # noqa: F401,E501
 
 
 class PUTSrpAddType(object):

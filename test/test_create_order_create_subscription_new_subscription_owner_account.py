@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.create_order_create_subscription_new_subscription_owner_account import CreateOrderCreateSubscriptionNewSubscriptionOwnerAccount  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.create_order_create_subscription_new_subscription_owner_account import CreateOrderCreateSubscriptionNewSubscriptionOwnerAccount  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestCreateOrderCreateSubscriptionNewSubscriptionOwnerAccount(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestCreateOrderCreateSubscriptionNewSubscriptionOwnerAccount(unittest.Test
     def testCreateOrderCreateSubscriptionNewSubscriptionOwnerAccount(self):
         """Test CreateOrderCreateSubscriptionNewSubscriptionOwnerAccount"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.create_order_create_subscription_new_subscription_owner_account.CreateOrderCreateSubscriptionNewSubscriptionOwnerAccount()  # noqa: E501
+        # model = zuora_client.models.create_order_create_subscription_new_subscription_owner_account.CreateOrderCreateSubscriptionNewSubscriptionOwnerAccount()  # noqa: E501
         pass
 
 

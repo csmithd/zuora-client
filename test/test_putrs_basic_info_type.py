@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.putrs_basic_info_type import PUTRSBasicInfoType  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.putrs_basic_info_type import PUTRSBasicInfoType  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestPUTRSBasicInfoType(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestPUTRSBasicInfoType(unittest.TestCase):
     def testPUTRSBasicInfoType(self):
         """Test PUTRSBasicInfoType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.putrs_basic_info_type.PUTRSBasicInfoType()  # noqa: E501
+        # model = zuora_client.models.putrs_basic_info_type.PUTRSBasicInfoType()  # noqa: E501
         pass
 
 

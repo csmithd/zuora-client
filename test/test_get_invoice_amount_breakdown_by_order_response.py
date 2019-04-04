@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.get_invoice_amount_breakdown_by_order_response import GetInvoiceAmountBreakdownByOrderResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.get_invoice_amount_breakdown_by_order_response import GetInvoiceAmountBreakdownByOrderResponse  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestGetInvoiceAmountBreakdownByOrderResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGetInvoiceAmountBreakdownByOrderResponse(unittest.TestCase):
     def testGetInvoiceAmountBreakdownByOrderResponse(self):
         """Test GetInvoiceAmountBreakdownByOrderResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.get_invoice_amount_breakdown_by_order_response.GetInvoiceAmountBreakdownByOrderResponse()  # noqa: E501
+        # model = zuora_client.models.get_invoice_amount_breakdown_by_order_response.GetInvoiceAmountBreakdownByOrderResponse()  # noqa: E501
         pass
 
 

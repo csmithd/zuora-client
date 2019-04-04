@@ -16,9 +16,9 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.actions_error_response import ActionsErrorResponse  # noqa: F401,E501
-from swagger_client.models.charge_metrics_data import ChargeMetricsData  # noqa: F401,E501
-from swagger_client.models.invoice_data import InvoiceData  # noqa: F401,E501
+from zuora_client.models.actions_error_response import ActionsErrorResponse  # noqa: F401,E501
+from zuora_client.models.charge_metrics_data import ChargeMetricsData  # noqa: F401,E501
+from zuora_client.models.invoice_data import InvoiceData  # noqa: F401,E501
 
 
 class AmendResult(object):

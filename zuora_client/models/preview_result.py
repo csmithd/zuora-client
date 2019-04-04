@@ -16,10 +16,10 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.preview_result_charge_metrics import PreviewResultChargeMetrics  # noqa: F401,E501
-from swagger_client.models.preview_result_credit_memos import PreviewResultCreditMemos  # noqa: F401,E501
-from swagger_client.models.preview_result_invoices import PreviewResultInvoices  # noqa: F401,E501
-from swagger_client.models.preview_result_order_metrics import PreviewResultOrderMetrics  # noqa: F401,E501
+from zuora_client.models.preview_result_charge_metrics import PreviewResultChargeMetrics  # noqa: F401,E501
+from zuora_client.models.preview_result_credit_memos import PreviewResultCreditMemos  # noqa: F401,E501
+from zuora_client.models.preview_result_invoices import PreviewResultInvoices  # noqa: F401,E501
+from zuora_client.models.preview_result_order_metrics import PreviewResultOrderMetrics  # noqa: F401,E501
 
 
 class PreviewResult(object):

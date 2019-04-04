@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.journal_entry_object_custom_fields import JournalEntryObjectCustomFields  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.journal_entry_object_custom_fields import JournalEntryObjectCustomFields  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestJournalEntryObjectCustomFields(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestJournalEntryObjectCustomFields(unittest.TestCase):
     def testJournalEntryObjectCustomFields(self):
         """Test JournalEntryObjectCustomFields"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.journal_entry_object_custom_fields.JournalEntryObjectCustomFields()  # noqa: E501
+        # model = zuora_client.models.journal_entry_object_custom_fields.JournalEntryObjectCustomFields()  # noqa: E501
         pass
 
 

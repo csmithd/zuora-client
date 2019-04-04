@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.terms_and_conditions import TermsAndConditions  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.terms_and_conditions import TermsAndConditions  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestTermsAndConditions(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestTermsAndConditions(unittest.TestCase):
     def testTermsAndConditions(self):
         """Test TermsAndConditions"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.terms_and_conditions.TermsAndConditions()  # noqa: E501
+        # model = zuora_client.models.terms_and_conditions.TermsAndConditions()  # noqa: E501
         pass
 
 

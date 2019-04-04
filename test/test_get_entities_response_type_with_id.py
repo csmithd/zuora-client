@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.get_entities_response_type_with_id import GETEntitiesResponseTypeWithId  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.get_entities_response_type_with_id import GETEntitiesResponseTypeWithId  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestGETEntitiesResponseTypeWithId(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGETEntitiesResponseTypeWithId(unittest.TestCase):
     def testGETEntitiesResponseTypeWithId(self):
         """Test GETEntitiesResponseTypeWithId"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.get_entities_response_type_with_id.GETEntitiesResponseTypeWithId()  # noqa: E501
+        # model = zuora_client.models.get_entities_response_type_with_id.GETEntitiesResponseTypeWithId()  # noqa: E501
         pass
 
 

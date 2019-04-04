@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.refund_part_response_typewith_success import RefundPartResponseTypewithSuccess  # noqa: F401,E501
+from zuora_client.models.refund_part_response_typewith_success import RefundPartResponseTypewithSuccess  # noqa: F401,E501
 
 
 class GETRefundPartCollectionType(object):

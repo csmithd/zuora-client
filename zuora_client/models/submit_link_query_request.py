@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.submit_link_query_request_output import SubmitLinkQueryRequestOutput  # noqa: F401,E501
+from zuora_client.models.submit_link_query_request_output import SubmitLinkQueryRequestOutput  # noqa: F401,E501
 
 
 class SubmitLinkQueryRequest(object):

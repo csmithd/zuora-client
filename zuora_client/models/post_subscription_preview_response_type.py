@@ -16,9 +16,9 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.post_subscription_preview_invoice_items_type import POSTSubscriptionPreviewInvoiceItemsType  # noqa: F401,E501
-from swagger_client.models.post_subscription_preview_response_type_charge_metrics import POSTSubscriptionPreviewResponseTypeChargeMetrics  # noqa: F401,E501
-from swagger_client.models.post_subscription_preview_response_type_credit_memo import POSTSubscriptionPreviewResponseTypeCreditMemo  # noqa: F401,E501
+from zuora_client.models.post_subscription_preview_invoice_items_type import POSTSubscriptionPreviewInvoiceItemsType  # noqa: F401,E501
+from zuora_client.models.post_subscription_preview_response_type_charge_metrics import POSTSubscriptionPreviewResponseTypeChargeMetrics  # noqa: F401,E501
+from zuora_client.models.post_subscription_preview_response_type_credit_memo import POSTSubscriptionPreviewResponseTypeCreditMemo  # noqa: F401,E501
 
 
 class POSTSubscriptionPreviewResponseType(object):

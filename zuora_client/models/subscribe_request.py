@@ -16,13 +16,13 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.subscribe_request_account import SubscribeRequestAccount  # noqa: F401,E501
-from swagger_client.models.subscribe_request_bill_to_contact import SubscribeRequestBillToContact  # noqa: F401,E501
-from swagger_client.models.subscribe_request_payment_method import SubscribeRequestPaymentMethod  # noqa: F401,E501
-from swagger_client.models.subscribe_request_preview_options import SubscribeRequestPreviewOptions  # noqa: F401,E501
-from swagger_client.models.subscribe_request_sold_to_contact import SubscribeRequestSoldToContact  # noqa: F401,E501
-from swagger_client.models.subscribe_request_subscribe_options import SubscribeRequestSubscribeOptions  # noqa: F401,E501
-from swagger_client.models.subscribe_request_subscription_data import SubscribeRequestSubscriptionData  # noqa: F401,E501
+from zuora_client.models.subscribe_request_account import SubscribeRequestAccount  # noqa: F401,E501
+from zuora_client.models.subscribe_request_bill_to_contact import SubscribeRequestBillToContact  # noqa: F401,E501
+from zuora_client.models.subscribe_request_payment_method import SubscribeRequestPaymentMethod  # noqa: F401,E501
+from zuora_client.models.subscribe_request_preview_options import SubscribeRequestPreviewOptions  # noqa: F401,E501
+from zuora_client.models.subscribe_request_sold_to_contact import SubscribeRequestSoldToContact  # noqa: F401,E501
+from zuora_client.models.subscribe_request_subscribe_options import SubscribeRequestSubscribeOptions  # noqa: F401,E501
+from zuora_client.models.subscribe_request_subscription_data import SubscribeRequestSubscriptionData  # noqa: F401,E501
 
 
 class SubscribeRequest(object):

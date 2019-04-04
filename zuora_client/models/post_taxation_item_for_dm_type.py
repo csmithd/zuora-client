@@ -16,8 +16,8 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.post_taxation_item_for_dm_type_finance_information import POSTTaxationItemForDMTypeFinanceInformation  # noqa: F401,E501
-from swagger_client.models.taxation_item_object_custom_fields import TaxationItemObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.post_taxation_item_for_dm_type_finance_information import POSTTaxationItemForDMTypeFinanceInformation  # noqa: F401,E501
+from zuora_client.models.taxation_item_object_custom_fields import TaxationItemObjectCustomFields  # noqa: F401,E501
 
 
 class POSTTaxationItemForDMType(object):

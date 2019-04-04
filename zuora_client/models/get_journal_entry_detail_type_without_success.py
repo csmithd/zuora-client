@@ -16,9 +16,9 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.get_journal_entry_item_type import GETJournalEntryItemType  # noqa: F401,E501
-from swagger_client.models.get_journal_entry_segment_type import GETJournalEntrySegmentType  # noqa: F401,E501
-from swagger_client.models.journal_entry_object_custom_fields import JournalEntryObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.get_journal_entry_item_type import GETJournalEntryItemType  # noqa: F401,E501
+from zuora_client.models.get_journal_entry_segment_type import GETJournalEntrySegmentType  # noqa: F401,E501
+from zuora_client.models.journal_entry_object_custom_fields import JournalEntryObjectCustomFields  # noqa: F401,E501
 
 
 class GETJournalEntryDetailTypeWithoutSuccess(object):

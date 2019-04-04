@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.invoice_item_preview_result_additional_info import InvoiceItemPreviewResultAdditionalInfo  # noqa: F401,E501
+from zuora_client.models.invoice_item_preview_result_additional_info import InvoiceItemPreviewResultAdditionalInfo  # noqa: F401,E501
 
 
 class InvoiceItemPreviewResult(object):

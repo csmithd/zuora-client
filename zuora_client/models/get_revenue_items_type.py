@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.get_revenue_item_type import GETRevenueItemType  # noqa: F401,E501
+from zuora_client.models.get_revenue_item_type import GETRevenueItemType  # noqa: F401,E501
 
 
 class GETRevenueItemsType(object):

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.post_entity_connections_type import POSTEntityConnectionsType  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.post_entity_connections_type import POSTEntityConnectionsType  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestPOSTEntityConnectionsType(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestPOSTEntityConnectionsType(unittest.TestCase):
     def testPOSTEntityConnectionsType(self):
         """Test POSTEntityConnectionsType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.post_entity_connections_type.POSTEntityConnectionsType()  # noqa: E501
+        # model = zuora_client.models.post_entity_connections_type.POSTEntityConnectionsType()  # noqa: E501
         pass
 
 

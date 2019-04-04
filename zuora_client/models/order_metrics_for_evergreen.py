@@ -16,9 +16,9 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.time_sliced_metrics_for_evergreen import TimeSlicedMetricsForEvergreen  # noqa: F401,E501
-from swagger_client.models.time_sliced_net_metrics_for_evergreen import TimeSlicedNetMetricsForEvergreen  # noqa: F401,E501
-from swagger_client.models.time_sliced_tcb_net_metrics_for_evergreen import TimeSlicedTcbNetMetricsForEvergreen  # noqa: F401,E501
+from zuora_client.models.time_sliced_metrics_for_evergreen import TimeSlicedMetricsForEvergreen  # noqa: F401,E501
+from zuora_client.models.time_sliced_net_metrics_for_evergreen import TimeSlicedNetMetricsForEvergreen  # noqa: F401,E501
+from zuora_client.models.time_sliced_tcb_net_metrics_for_evergreen import TimeSlicedTcbNetMetricsForEvergreen  # noqa: F401,E501
 
 
 class OrderMetricsForEvergreen(object):

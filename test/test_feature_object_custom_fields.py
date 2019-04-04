@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.feature_object_custom_fields import FeatureObjectCustomFields  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.feature_object_custom_fields import FeatureObjectCustomFields  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestFeatureObjectCustomFields(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestFeatureObjectCustomFields(unittest.TestCase):
     def testFeatureObjectCustomFields(self):
         """Test FeatureObjectCustomFields"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.feature_object_custom_fields.FeatureObjectCustomFields()  # noqa: E501
+        # model = zuora_client.models.feature_object_custom_fields.FeatureObjectCustomFields()  # noqa: E501
         pass
 
 

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.invoice_item_adjustment_object_ns_fields import InvoiceItemAdjustmentObjectNSFields  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.invoice_item_adjustment_object_ns_fields import InvoiceItemAdjustmentObjectNSFields  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestInvoiceItemAdjustmentObjectNSFields(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestInvoiceItemAdjustmentObjectNSFields(unittest.TestCase):
     def testInvoiceItemAdjustmentObjectNSFields(self):
         """Test InvoiceItemAdjustmentObjectNSFields"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.invoice_item_adjustment_object_ns_fields.InvoiceItemAdjustmentObjectNSFields()  # noqa: E501
+        # model = zuora_client.models.invoice_item_adjustment_object_ns_fields.InvoiceItemAdjustmentObjectNSFields()  # noqa: E501
         pass
 
 

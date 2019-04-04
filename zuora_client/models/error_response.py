@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.error_response_reasons import ErrorResponseReasons  # noqa: F401,E501
+from zuora_client.models.error_response_reasons import ErrorResponseReasons  # noqa: F401,E501
 
 
 class ErrorResponse(object):

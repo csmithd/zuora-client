@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.get_entities_user_accessible_response_type import GETEntitiesUserAccessibleResponseType  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.get_entities_user_accessible_response_type import GETEntitiesUserAccessibleResponseType  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestGETEntitiesUserAccessibleResponseType(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGETEntitiesUserAccessibleResponseType(unittest.TestCase):
     def testGETEntitiesUserAccessibleResponseType(self):
         """Test GETEntitiesUserAccessibleResponseType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.get_entities_user_accessible_response_type.GETEntitiesUserAccessibleResponseType()  # noqa: E501
+        # model = zuora_client.models.get_entities_user_accessible_response_type.GETEntitiesUserAccessibleResponseType()  # noqa: E501
         pass
 
 

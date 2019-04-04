@@ -16,8 +16,8 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.invoice_item_object_custom_fields import InvoiceItemObjectCustomFields  # noqa: F401,E501
-from swagger_client.models.invoice_item_object_ns_fields import InvoiceItemObjectNSFields  # noqa: F401,E501
+from zuora_client.models.invoice_item_object_custom_fields import InvoiceItemObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.invoice_item_object_ns_fields import InvoiceItemObjectNSFields  # noqa: F401,E501
 
 
 class ProxyGetInvoiceItem(object):

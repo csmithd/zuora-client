@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.put_event_ri_detail_type import PUTEventRIDetailType  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.put_event_ri_detail_type import PUTEventRIDetailType  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestPUTEventRIDetailType(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestPUTEventRIDetailType(unittest.TestCase):
     def testPUTEventRIDetailType(self):
         """Test PUTEventRIDetailType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.put_event_ri_detail_type.PUTEventRIDetailType()  # noqa: E501
+        # model = zuora_client.models.put_event_ri_detail_type.PUTEventRIDetailType()  # noqa: E501
         pass
 
 

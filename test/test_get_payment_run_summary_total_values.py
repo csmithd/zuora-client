@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.get_payment_run_summary_total_values import GETPaymentRunSummaryTotalValues  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.get_payment_run_summary_total_values import GETPaymentRunSummaryTotalValues  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestGETPaymentRunSummaryTotalValues(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGETPaymentRunSummaryTotalValues(unittest.TestCase):
     def testGETPaymentRunSummaryTotalValues(self):
         """Test GETPaymentRunSummaryTotalValues"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.get_payment_run_summary_total_values.GETPaymentRunSummaryTotalValues()  # noqa: E501
+        # model = zuora_client.models.get_payment_run_summary_total_values.GETPaymentRunSummaryTotalValues()  # noqa: E501
         pass
 
 

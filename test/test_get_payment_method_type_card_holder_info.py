@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.get_payment_method_type_card_holder_info import GETPaymentMethodTypeCardHolderInfo  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.get_payment_method_type_card_holder_info import GETPaymentMethodTypeCardHolderInfo  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestGETPaymentMethodTypeCardHolderInfo(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGETPaymentMethodTypeCardHolderInfo(unittest.TestCase):
     def testGETPaymentMethodTypeCardHolderInfo(self):
         """Test GETPaymentMethodTypeCardHolderInfo"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.get_payment_method_type_card_holder_info.GETPaymentMethodTypeCardHolderInfo()  # noqa: E501
+        # model = zuora_client.models.get_payment_method_type_card_holder_info.GETPaymentMethodTypeCardHolderInfo()  # noqa: E501
         pass
 
 

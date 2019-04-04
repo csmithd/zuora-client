@@ -18,7 +18,7 @@ import re  # noqa: F401
 # python 2 and python 3 compatibility library
 import six
 
-from swagger_client.api_client import ApiClient
+from zuora_client.api_client import ApiClient
 
 
 class OrdersApi(object):
@@ -44,7 +44,7 @@ class OrdersApi(object):
 
         :param async_req bool
         :param str order_number: The number of the order to be deleted. (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: CommonResponseType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -67,7 +67,7 @@ class OrdersApi(object):
 
         :param async_req bool
         :param str order_number: The number of the order to be deleted. (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: CommonResponseType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -146,12 +146,12 @@ class OrdersApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param int page: The page number of the orders retrieved.  
-        :param int page_size: Number of rows returned per page. 
-        :param str date_filter_option: The date type to filter on. This field value can be orderDate or updatedDate. Default is orderDate. 
-        :param date start_date: The result will only contain the orders with the date of dateFilterOption later than or equal to this date. 
-        :param date end_date: The result will only contains orders with the date of dateFilterOption earlier than or equal to this date. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param int page: The page number of the orders retrieved.
+        :param int page_size: Number of rows returned per page.
+        :param str date_filter_option: The date type to filter on. This field value can be orderDate or updatedDate. Default is orderDate.
+        :param date start_date: The result will only contain the orders with the date of dateFilterOption later than or equal to this date.
+        :param date end_date: The result will only contains orders with the date of dateFilterOption earlier than or equal to this date.
         :return: GetAllOrdersResponseType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -173,12 +173,12 @@ class OrdersApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param int page: The page number of the orders retrieved.  
-        :param int page_size: Number of rows returned per page. 
-        :param str date_filter_option: The date type to filter on. This field value can be orderDate or updatedDate. Default is orderDate. 
-        :param date start_date: The result will only contain the orders with the date of dateFilterOption later than or equal to this date. 
-        :param date end_date: The result will only contains orders with the date of dateFilterOption earlier than or equal to this date. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param int page: The page number of the orders retrieved.
+        :param int page_size: Number of rows returned per page.
+        :param str date_filter_option: The date type to filter on. This field value can be orderDate or updatedDate. Default is orderDate.
+        :param date start_date: The result will only contain the orders with the date of dateFilterOption later than or equal to this date.
+        :param date end_date: The result will only contains orders with the date of dateFilterOption earlier than or equal to this date.
         :return: GetAllOrdersResponseType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -264,7 +264,7 @@ class OrdersApi(object):
 
         :param async_req bool
         :param str invoice_number: Number of invoice to be broken down. (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GetInvoiceAmountBreakdownByOrderResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -287,7 +287,7 @@ class OrdersApi(object):
 
         :param async_req bool
         :param str invoice_number: Number of invoice to be broken down. (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GetInvoiceAmountBreakdownByOrderResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -466,7 +466,7 @@ class OrdersApi(object):
 
         :param async_req bool
         :param str order_number: The order number to be retrieved. (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GetOrderResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -489,7 +489,7 @@ class OrdersApi(object):
 
         :param async_req bool
         :param str order_number: The order number to be retrieved. (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GetOrderResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -569,7 +569,7 @@ class OrdersApi(object):
 
         :param async_req bool
         :param str order_number: The order number. (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :param date as_of_date: Billing states of the order will be calculated as of this date. Invoices with the invoice date later than this date will not be counted into the billed amount. The default value is today.
         :return: GetOrderBillingInfoResponseType
                  If the method is called asynchronously,
@@ -593,7 +593,7 @@ class OrdersApi(object):
 
         :param async_req bool
         :param str order_number: The order number. (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :param date as_of_date: Billing states of the order will be calculated as of this date. Invoices with the invoice date later than this date will not be counted into the billed amount. The default value is today.
         :return: GetOrderBillingInfoResponseType
                  If the method is called asynchronously,
@@ -679,7 +679,7 @@ class OrdersApi(object):
         :param str subscription_number: The subscription number you want to get the metrics for.  (required)
         :param date start_date: The start date of the date range for which you want to get the metrics. The date must be in yyyy-mm-dd format. For example, 2017-12-03.  (required)
         :param date end_date: The end date of the date range for which you want to get the metrics. The date must be in yyyy-mm-dd format. For example, 2017-12-03.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GetOrderResponseForEvergreen
                  If the method is called asynchronously,
                  returns the request thread.
@@ -705,7 +705,7 @@ class OrdersApi(object):
         :param str subscription_number: The subscription number you want to get the metrics for.  (required)
         :param date start_date: The start date of the date range for which you want to get the metrics. The date must be in yyyy-mm-dd format. For example, 2017-12-03.  (required)
         :param date end_date: The end date of the date range for which you want to get the metrics. The date must be in yyyy-mm-dd format. For example, 2017-12-03.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GetOrderResponseForEvergreen
                  If the method is called asynchronously,
                  returns the request thread.
@@ -803,7 +803,7 @@ class OrdersApi(object):
 
         :param async_req bool
         :param str order_number: The order number. (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GetOrderRatedResultResponseType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -826,7 +826,7 @@ class OrdersApi(object):
 
         :param async_req bool
         :param str order_number: The order number. (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GetOrderRatedResultResponseType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -906,12 +906,12 @@ class OrdersApi(object):
 
         :param async_req bool
         :param str account_number: The invoice owner account number. (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param int page: The page number of the orders retrieved. The default is 1. 
-        :param int page_size: Number of rows returned per page. 
-        :param str date_filter_option: The date type to filter on. This field value can be orderDate or updatedDate. Default is orderDate. 
-        :param date start_date: The result will only contain the orders with the date of dateFilterOption later than or equal to this date. 
-        :param date end_date: The result will only contain the orders with the date of dateFilterOption earlier than or equal to this date. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param int page: The page number of the orders retrieved. The default is 1.
+        :param int page_size: Number of rows returned per page.
+        :param str date_filter_option: The date type to filter on. This field value can be orderDate or updatedDate. Default is orderDate.
+        :param date start_date: The result will only contain the orders with the date of dateFilterOption later than or equal to this date.
+        :param date end_date: The result will only contain the orders with the date of dateFilterOption earlier than or equal to this date.
         :return: GetOrdersResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -934,12 +934,12 @@ class OrdersApi(object):
 
         :param async_req bool
         :param str account_number: The invoice owner account number. (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param int page: The page number of the orders retrieved. The default is 1. 
-        :param int page_size: Number of rows returned per page. 
-        :param str date_filter_option: The date type to filter on. This field value can be orderDate or updatedDate. Default is orderDate. 
-        :param date start_date: The result will only contain the orders with the date of dateFilterOption later than or equal to this date. 
-        :param date end_date: The result will only contain the orders with the date of dateFilterOption earlier than or equal to this date. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param int page: The page number of the orders retrieved. The default is 1.
+        :param int page_size: Number of rows returned per page.
+        :param str date_filter_option: The date type to filter on. This field value can be orderDate or updatedDate. Default is orderDate.
+        :param date start_date: The result will only contain the orders with the date of dateFilterOption later than or equal to this date.
+        :param date end_date: The result will only contain the orders with the date of dateFilterOption earlier than or equal to this date.
         :return: GetOrdersResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1031,12 +1031,12 @@ class OrdersApi(object):
 
         :param async_req bool
         :param str subscription_number: The subscription number. (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param int page: The page number of the orders retrieved. The default is '1'. 
-        :param int page_size: Number of rows returned per page. 
-        :param str date_filter_option: The date type to filter on. This field value can be 'orderDate' or 'updatedDate'. Default is orderDate. 
-        :param date start_date: The result will only contain the orders with the date of 'dateFilterOption' later than or equal to this date. 
-        :param date end_date: The result will only contain the orders with the date of 'dateFilterOption' earlier than or equal to this date. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param int page: The page number of the orders retrieved. The default is '1'.
+        :param int page_size: Number of rows returned per page.
+        :param str date_filter_option: The date type to filter on. This field value can be 'orderDate' or 'updatedDate'. Default is orderDate.
+        :param date start_date: The result will only contain the orders with the date of 'dateFilterOption' later than or equal to this date.
+        :param date end_date: The result will only contain the orders with the date of 'dateFilterOption' earlier than or equal to this date.
         :return: GetOrdersResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1059,12 +1059,12 @@ class OrdersApi(object):
 
         :param async_req bool
         :param str subscription_number: The subscription number. (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param int page: The page number of the orders retrieved. The default is '1'. 
-        :param int page_size: Number of rows returned per page. 
-        :param str date_filter_option: The date type to filter on. This field value can be 'orderDate' or 'updatedDate'. Default is orderDate. 
-        :param date start_date: The result will only contain the orders with the date of 'dateFilterOption' later than or equal to this date. 
-        :param date end_date: The result will only contain the orders with the date of 'dateFilterOption' earlier than or equal to this date. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param int page: The page number of the orders retrieved. The default is '1'.
+        :param int page_size: Number of rows returned per page.
+        :param str date_filter_option: The date type to filter on. This field value can be 'orderDate' or 'updatedDate'. Default is orderDate.
+        :param date start_date: The result will only contain the orders with the date of 'dateFilterOption' later than or equal to this date.
+        :param date end_date: The result will only contain the orders with the date of 'dateFilterOption' earlier than or equal to this date.
         :return: GetOrdersResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1156,12 +1156,12 @@ class OrdersApi(object):
 
         :param async_req bool
         :param str account_number: The subscription owner account number. (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param int page: The page number of the orders retrieved. The default is 1. 
-        :param int page_size: Number of rows returned per page. 
-        :param str date_filter_option: The date type to filter on. This field value can be 'orderDate' or 'updatedDate'. Default is orderDate. 
-        :param date start_date: The result will only contain the orders with the date of 'dateFilterOption' later than or equal to this date. 
-        :param date end_date: The result will only contain the orders with the date of 'dateFilterOption' earlier than or equal to this date. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param int page: The page number of the orders retrieved. The default is 1.
+        :param int page_size: Number of rows returned per page.
+        :param str date_filter_option: The date type to filter on. This field value can be 'orderDate' or 'updatedDate'. Default is orderDate.
+        :param date start_date: The result will only contain the orders with the date of 'dateFilterOption' later than or equal to this date.
+        :param date end_date: The result will only contain the orders with the date of 'dateFilterOption' earlier than or equal to this date.
         :return: GetOrdersResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1184,12 +1184,12 @@ class OrdersApi(object):
 
         :param async_req bool
         :param str account_number: The subscription owner account number. (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param int page: The page number of the orders retrieved. The default is 1. 
-        :param int page_size: Number of rows returned per page. 
-        :param str date_filter_option: The date type to filter on. This field value can be 'orderDate' or 'updatedDate'. Default is orderDate. 
-        :param date start_date: The result will only contain the orders with the date of 'dateFilterOption' later than or equal to this date. 
-        :param date end_date: The result will only contain the orders with the date of 'dateFilterOption' earlier than or equal to this date. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param int page: The page number of the orders retrieved. The default is 1.
+        :param int page_size: Number of rows returned per page.
+        :param str date_filter_option: The date type to filter on. This field value can be 'orderDate' or 'updatedDate'. Default is orderDate.
+        :param date start_date: The result will only contain the orders with the date of 'dateFilterOption' later than or equal to this date.
+        :param date end_date: The result will only contain the orders with the date of 'dateFilterOption' earlier than or equal to this date.
         :return: GetOrdersResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1281,10 +1281,10 @@ class OrdersApi(object):
 
         :param async_req bool
         :param str subscription_number: The number of the subscription to retrieve terms for. For example, A-S00000001.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param int version: The version of the subscription to retrieve terms for. If you do not specify this parameter, Zuora returns the terms for the latest version of the subscription. 
-        :param int page: The page number of the terms retrieved. 
-        :param int page_size: Number of rows returned per page. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param int version: The version of the subscription to retrieve terms for. If you do not specify this parameter, Zuora returns the terms for the latest version of the subscription.
+        :param int page: The page number of the terms retrieved.
+        :param int page_size: Number of rows returned per page.
         :return: GetSubscriptionTermInfoResponseType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1307,10 +1307,10 @@ class OrdersApi(object):
 
         :param async_req bool
         :param str subscription_number: The number of the subscription to retrieve terms for. For example, A-S00000001.  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param int version: The version of the subscription to retrieve terms for. If you do not specify this parameter, Zuora returns the terms for the latest version of the subscription. 
-        :param int page: The page number of the terms retrieved. 
-        :param int page_size: Number of rows returned per page. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param int version: The version of the subscription to retrieve terms for. If you do not specify this parameter, Zuora returns the terms for the latest version of the subscription.
+        :param int page: The page number of the terms retrieved.
+        :param int page_size: Number of rows returned per page.
         :return: GetSubscriptionTermInfoResponseType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1398,8 +1398,8 @@ class OrdersApi(object):
 
         :param async_req bool
         :param POSTOrderRequestType body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param str zuora_version:  The minor version of the Zuora REST API.   You need to set this parameter if you use the following fields: * subscriptions * subscriptionNumbers 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param str zuora_version:  The minor version of the Zuora REST API.   You need to set this parameter if you use the following fields: * subscriptions * subscriptionNumbers
         :return: InlineResponse202
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1422,8 +1422,8 @@ class OrdersApi(object):
 
         :param async_req bool
         :param POSTOrderRequestType body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param str zuora_version:  The minor version of the Zuora REST API.   You need to set this parameter if you use the following fields: * subscriptions * subscriptionNumbers 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param str zuora_version:  The minor version of the Zuora REST API.   You need to set this parameter if you use the following fields: * subscriptions * subscriptionNumbers
         :return: InlineResponse202
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1505,8 +1505,8 @@ class OrdersApi(object):
 
         :param async_req bool
         :param POSTOrderRequestType body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param str zuora_version:  The minor version of the Zuora REST API.   You need to set this parameter if you use the following fields: * subscriptions * subscriptionNumbers 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param str zuora_version:  The minor version of the Zuora REST API.   You need to set this parameter if you use the following fields: * subscriptions * subscriptionNumbers
         :return: PostOrderResponseType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1529,8 +1529,8 @@ class OrdersApi(object):
 
         :param async_req bool
         :param POSTOrderRequestType body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
-        :param str zuora_version:  The minor version of the Zuora REST API.   You need to set this parameter if you use the following fields: * subscriptions * subscriptionNumbers 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
+        :param str zuora_version:  The minor version of the Zuora REST API.   You need to set this parameter if you use the following fields: * subscriptions * subscriptionNumbers
         :return: PostOrderResponseType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1612,7 +1612,7 @@ class OrdersApi(object):
 
         :param async_req bool
         :param POSTOrderPreviewRequestType body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: PostOrderPreviewResponseType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1635,7 +1635,7 @@ class OrdersApi(object):
 
         :param async_req bool
         :param POSTOrderPreviewRequestType body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: PostOrderPreviewResponseType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1715,7 +1715,7 @@ class OrdersApi(object):
 
         :param async_req bool
         :param POSTOrderPreviewRequestType body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: InlineResponse202
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1738,7 +1738,7 @@ class OrdersApi(object):
 
         :param async_req bool
         :param POSTOrderPreviewRequestType body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: InlineResponse202
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1818,7 +1818,7 @@ class OrdersApi(object):
 
         :param async_req bool
         :param POSTInvoiceItemsForOrderBreakdown body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GetInvoiceAmountBreakdownByOrderResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1841,7 +1841,7 @@ class OrdersApi(object):
 
         :param async_req bool
         :param POSTInvoiceItemsForOrderBreakdown body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: GetInvoiceAmountBreakdownByOrderResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1922,7 +1922,7 @@ class OrdersApi(object):
         :param async_req bool
         :param str order_number: Order number of a pending order in which you are to update a `CreateSubscription` order action's triggering dates. (required)
         :param PUTOrderActionTriggerDatesRequestType body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: PUTOrderTriggerDatesResponseType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1946,7 +1946,7 @@ class OrdersApi(object):
         :param async_req bool
         :param str order_number: Order number of a pending order in which you are to update a `CreateSubscription` order action's triggering dates. (required)
         :param PUTOrderActionTriggerDatesRequestType body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: PUTOrderTriggerDatesResponseType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -2033,7 +2033,7 @@ class OrdersApi(object):
         :param async_req bool
         :param str order_number: The order number. (required)
         :param PUTOrderPatchRequestType body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: CommonResponseType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -2057,7 +2057,7 @@ class OrdersApi(object):
         :param async_req bool
         :param str order_number: The order number. (required)
         :param PUTOrderPatchRequestType body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: CommonResponseType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -2144,7 +2144,7 @@ class OrdersApi(object):
         :param async_req bool
         :param str subscription_number: The subscription number to be updated. (required)
         :param PUTSubscriptionPatchRequestType body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: CommonResponseType
                  If the method is called asynchronously,
                  returns the request thread.
@@ -2168,7 +2168,7 @@ class OrdersApi(object):
         :param async_req bool
         :param str subscription_number: The subscription number to be updated. (required)
         :param PUTSubscriptionPatchRequestType body:  (required)
-        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header. 
+        :param str zuora_entity_ids: An entity ID. If you have [Zuora Multi-entity](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity) enabled and the OAuth token is valid for more than one entity, you must use this header to specify which entity to perform the operation in. If the OAuth token is only valid for a single entity, or you do not have Zuora Multi-entity enabled, you do not need to set this header.
         :return: CommonResponseType
                  If the method is called asynchronously,
                  returns the request thread.

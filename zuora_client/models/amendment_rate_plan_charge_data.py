@@ -16,8 +16,8 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.amendment_rate_plan_charge_data_rate_plan_charge import AmendmentRatePlanChargeDataRatePlanCharge  # noqa: F401,E501
-from swagger_client.models.amendment_rate_plan_charge_tier import AmendmentRatePlanChargeTier  # noqa: F401,E501
+from zuora_client.models.amendment_rate_plan_charge_data_rate_plan_charge import AmendmentRatePlanChargeDataRatePlanCharge  # noqa: F401,E501
+from zuora_client.models.amendment_rate_plan_charge_tier import AmendmentRatePlanChargeTier  # noqa: F401,E501
 
 
 class AmendmentRatePlanChargeData(object):

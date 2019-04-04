@@ -16,8 +16,8 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.common_response_type import CommonResponseType  # noqa: F401,E501
-from swagger_client.models.invoice_item_breakdown import InvoiceItemBreakdown  # noqa: F401,E501
+from zuora_client.models.common_response_type import CommonResponseType  # noqa: F401,E501
+from zuora_client.models.invoice_item_breakdown import InvoiceItemBreakdown  # noqa: F401,E501
 
 
 class GetInvoiceAmountBreakdownByOrderResponse(object):

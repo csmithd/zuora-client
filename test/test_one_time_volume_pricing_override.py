@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.one_time_volume_pricing_override import OneTimeVolumePricingOverride  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.one_time_volume_pricing_override import OneTimeVolumePricingOverride  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestOneTimeVolumePricingOverride(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestOneTimeVolumePricingOverride(unittest.TestCase):
     def testOneTimeVolumePricingOverride(self):
         """Test OneTimeVolumePricingOverride"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.one_time_volume_pricing_override.OneTimeVolumePricingOverride()  # noqa: E501
+        # model = zuora_client.models.one_time_volume_pricing_override.OneTimeVolumePricingOverride()  # noqa: E501
         pass
 
 

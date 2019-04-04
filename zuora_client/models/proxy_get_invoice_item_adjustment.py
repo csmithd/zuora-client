@@ -16,8 +16,8 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.invoice_item_adjustment_object_custom_fields import InvoiceItemAdjustmentObjectCustomFields  # noqa: F401,E501
-from swagger_client.models.invoice_item_adjustment_object_ns_fields import InvoiceItemAdjustmentObjectNSFields  # noqa: F401,E501
+from zuora_client.models.invoice_item_adjustment_object_custom_fields import InvoiceItemAdjustmentObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.invoice_item_adjustment_object_ns_fields import InvoiceItemAdjustmentObjectNSFields  # noqa: F401,E501
 
 
 class ProxyGetInvoiceItemAdjustment(object):

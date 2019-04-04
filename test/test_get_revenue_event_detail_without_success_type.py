@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.get_revenue_event_detail_without_success_type import GETRevenueEventDetailWithoutSuccessType  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.get_revenue_event_detail_without_success_type import GETRevenueEventDetailWithoutSuccessType  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestGETRevenueEventDetailWithoutSuccessType(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGETRevenueEventDetailWithoutSuccessType(unittest.TestCase):
     def testGETRevenueEventDetailWithoutSuccessType(self):
         """Test GETRevenueEventDetailWithoutSuccessType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.get_revenue_event_detail_without_success_type.GETRevenueEventDetailWithoutSuccessType()  # noqa: E501
+        # model = zuora_client.models.get_revenue_event_detail_without_success_type.GETRevenueEventDetailWithoutSuccessType()  # noqa: E501
         pass
 
 

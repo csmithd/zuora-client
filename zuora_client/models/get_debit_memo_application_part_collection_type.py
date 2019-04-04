@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.get_debit_memo_application_part_type import GetDebitMemoApplicationPartType  # noqa: F401,E501
+from zuora_client.models.get_debit_memo_application_part_type import GetDebitMemoApplicationPartType  # noqa: F401,E501
 
 
 class GetDebitMemoApplicationPartCollectionType(object):

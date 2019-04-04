@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.post_taxation_item_for_cm_type_finance_information import POSTTaxationItemForCMTypeFinanceInformation  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.post_taxation_item_for_cm_type_finance_information import POSTTaxationItemForCMTypeFinanceInformation  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestPOSTTaxationItemForCMTypeFinanceInformation(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestPOSTTaxationItemForCMTypeFinanceInformation(unittest.TestCase):
     def testPOSTTaxationItemForCMTypeFinanceInformation(self):
         """Test POSTTaxationItemForCMTypeFinanceInformation"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.post_taxation_item_for_cm_type_finance_information.POSTTaxationItemForCMTypeFinanceInformation()  # noqa: E501
+        # model = zuora_client.models.post_taxation_item_for_cm_type_finance_information.POSTTaxationItemForCMTypeFinanceInformation()  # noqa: E501
         pass
 
 

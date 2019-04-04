@@ -16,9 +16,9 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.create_order_create_subscription_new_subscription_owner_account import CreateOrderCreateSubscriptionNewSubscriptionOwnerAccount  # noqa: F401,E501
-from swagger_client.models.create_order_create_subscription_terms import CreateOrderCreateSubscriptionTerms  # noqa: F401,E501
-from swagger_client.models.create_order_rate_plan_override import CreateOrderRatePlanOverride  # noqa: F401,E501
+from zuora_client.models.create_order_create_subscription_new_subscription_owner_account import CreateOrderCreateSubscriptionNewSubscriptionOwnerAccount  # noqa: F401,E501
+from zuora_client.models.create_order_create_subscription_terms import CreateOrderCreateSubscriptionTerms  # noqa: F401,E501
+from zuora_client.models.create_order_rate_plan_override import CreateOrderRatePlanOverride  # noqa: F401,E501
 
 
 class CreateOrderCreateSubscription(object):

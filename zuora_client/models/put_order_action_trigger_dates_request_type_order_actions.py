@@ -16,8 +16,8 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.put_order_action_trigger_dates_request_type_charges import PUTOrderActionTriggerDatesRequestTypeCharges  # noqa: F401,E501
-from swagger_client.models.put_order_action_trigger_dates_request_type_trigger_dates import PUTOrderActionTriggerDatesRequestTypeTriggerDates  # noqa: F401,E501
+from zuora_client.models.put_order_action_trigger_dates_request_type_charges import PUTOrderActionTriggerDatesRequestTypeCharges  # noqa: F401,E501
+from zuora_client.models.put_order_action_trigger_dates_request_type_trigger_dates import PUTOrderActionTriggerDatesRequestTypeTriggerDates  # noqa: F401,E501
 
 
 class PUTOrderActionTriggerDatesRequestTypeOrderActions(object):

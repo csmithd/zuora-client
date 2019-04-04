@@ -16,8 +16,8 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.order_object_custom_fields import OrderObjectCustomFields  # noqa: F401,E501
-from swagger_client.models.put_order_patch_request_type_subscriptions import PUTOrderPatchRequestTypeSubscriptions  # noqa: F401,E501
+from zuora_client.models.order_object_custom_fields import OrderObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.put_order_patch_request_type_subscriptions import PUTOrderPatchRequestTypeSubscriptions  # noqa: F401,E501
 
 
 class PUTOrderPatchRequestType(object):

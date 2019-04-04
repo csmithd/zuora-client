@@ -16,8 +16,8 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.put_subscription_patch_request_type_rate_plans import PUTSubscriptionPatchRequestTypeRatePlans  # noqa: F401,E501
-from swagger_client.models.subscription_object_custom_fields import SubscriptionObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.put_subscription_patch_request_type_rate_plans import PUTSubscriptionPatchRequestTypeRatePlans  # noqa: F401,E501
+from zuora_client.models.subscription_object_custom_fields import SubscriptionObjectCustomFields  # noqa: F401,E501
 
 
 class PUTSubscriptionPatchRequestType(object):

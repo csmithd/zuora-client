@@ -16,8 +16,8 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.payment_method_object_custom_fields import PaymentMethodObjectCustomFields  # noqa: F401,E501
-from swagger_client.models.post_account_type_credit_card_card_holder_info import POSTAccountTypeCreditCardCardHolderInfo  # noqa: F401,E501
+from zuora_client.models.payment_method_object_custom_fields import PaymentMethodObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.post_account_type_credit_card_card_holder_info import POSTAccountTypeCreditCardCardHolderInfo  # noqa: F401,E501
 
 
 class POSTAccountTypeCreditCard(object):

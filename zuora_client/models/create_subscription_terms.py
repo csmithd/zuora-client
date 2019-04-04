@@ -16,8 +16,8 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.create_order_create_subscription_terms_initial_term import CreateOrderCreateSubscriptionTermsInitialTerm  # noqa: F401,E501
-from swagger_client.models.renewal_term import RenewalTerm  # noqa: F401,E501
+from zuora_client.models.create_order_create_subscription_terms_initial_term import CreateOrderCreateSubscriptionTermsInitialTerm  # noqa: F401,E501
+from zuora_client.models.renewal_term import RenewalTerm  # noqa: F401,E501
 
 
 class CreateSubscriptionTerms(object):

@@ -16,9 +16,9 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.account_object_custom_fields import AccountObjectCustomFields  # noqa: F401,E501
-from swagger_client.models.account_object_ns_fields import AccountObjectNSFields  # noqa: F401,E501
-from swagger_client.models.post_subscription_preview_type_preview_account_info_bill_to_contact import POSTSubscriptionPreviewTypePreviewAccountInfoBillToContact  # noqa: F401,E501
+from zuora_client.models.account_object_custom_fields import AccountObjectCustomFields  # noqa: F401,E501
+from zuora_client.models.account_object_ns_fields import AccountObjectNSFields  # noqa: F401,E501
+from zuora_client.models.post_subscription_preview_type_preview_account_info_bill_to_contact import POSTSubscriptionPreviewTypePreviewAccountInfoBillToContact  # noqa: F401,E501
 
 
 class POSTSubscriptionPreviewTypePreviewAccountInfo(object):

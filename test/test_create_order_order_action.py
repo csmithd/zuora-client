@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.create_order_order_action import CreateOrderOrderAction  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.create_order_order_action import CreateOrderOrderAction  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestCreateOrderOrderAction(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestCreateOrderOrderAction(unittest.TestCase):
     def testCreateOrderOrderAction(self):
         """Test CreateOrderOrderAction"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.create_order_order_action.CreateOrderOrderAction()  # noqa: E501
+        # model = zuora_client.models.create_order_order_action.CreateOrderOrderAction()  # noqa: E501
         pass
 
 

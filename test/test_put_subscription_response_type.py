@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.put_subscription_response_type import PUTSubscriptionResponseType  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.put_subscription_response_type import PUTSubscriptionResponseType  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestPUTSubscriptionResponseType(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestPUTSubscriptionResponseType(unittest.TestCase):
     def testPUTSubscriptionResponseType(self):
         """Test PUTSubscriptionResponseType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.put_subscription_response_type.PUTSubscriptionResponseType()  # noqa: E501
+        # model = zuora_client.models.put_subscription_response_type.PUTSubscriptionResponseType()  # noqa: E501
         pass
 
 

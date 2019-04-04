@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from swagger_client.models.put_write_off_invoice_response_credit_memo import PUTWriteOffInvoiceResponseCreditMemo  # noqa: F401,E501
+from zuora_client.models.put_write_off_invoice_response_credit_memo import PUTWriteOffInvoiceResponseCreditMemo  # noqa: F401,E501
 
 
 class PUTWriteOffInvoiceResponse(object):

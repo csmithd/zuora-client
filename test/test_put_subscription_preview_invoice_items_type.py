@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.put_subscription_preview_invoice_items_type import PUTSubscriptionPreviewInvoiceItemsType  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.put_subscription_preview_invoice_items_type import PUTSubscriptionPreviewInvoiceItemsType  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestPUTSubscriptionPreviewInvoiceItemsType(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestPUTSubscriptionPreviewInvoiceItemsType(unittest.TestCase):
     def testPUTSubscriptionPreviewInvoiceItemsType(self):
         """Test PUTSubscriptionPreviewInvoiceItemsType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.put_subscription_preview_invoice_items_type.PUTSubscriptionPreviewInvoiceItemsType()  # noqa: E501
+        # model = zuora_client.models.put_subscription_preview_invoice_items_type.PUTSubscriptionPreviewInvoiceItemsType()  # noqa: E501
         pass
 
 

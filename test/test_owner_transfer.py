@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.owner_transfer import OwnerTransfer  # noqa: E501
-from swagger_client.rest import ApiException
+import zuora_client
+from zuora_client.models.owner_transfer import OwnerTransfer  # noqa: E501
+from zuora_client.rest import ApiException
 
 
 class TestOwnerTransfer(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestOwnerTransfer(unittest.TestCase):
     def testOwnerTransfer(self):
         """Test OwnerTransfer"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.owner_transfer.OwnerTransfer()  # noqa: E501
+        # model = zuora_client.models.owner_transfer.OwnerTransfer()  # noqa: E501
         pass
 
 
