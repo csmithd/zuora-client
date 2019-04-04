@@ -25,13 +25,13 @@ class OrdersApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def d_elete_order(self, order_number, **kwargs):  # noqa: E501
+    def delete_order(self, order_number, **kwargs):  # noqa: E501
         """Delete order  # noqa: E501
 
         **Note:** This operation is only available if you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Orders) feature enabled. The migration to Orders is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available.    Deletes a specified order. All the subscriptions changed by this order are deleted. After the deletion, the subscriptions are rolled back to the previous version.   You are not allowed to delete an order if the charges that are affected by this order are invoiced.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_order(order_number, async_req=True)
+        >>> thread = api.delete_order(order_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -43,18 +43,18 @@ class OrdersApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.d_elete_order_with_http_info(order_number, **kwargs)  # noqa: E501
+            return self.delete_order_with_http_info(order_number, **kwargs)  # noqa: E501
         else:
-            (data) = self.d_elete_order_with_http_info(order_number, **kwargs)  # noqa: E501
+            (data) = self.delete_order_with_http_info(order_number, **kwargs)  # noqa: E501
             return data
 
-    def d_elete_order_with_http_info(self, order_number, **kwargs):  # noqa: E501
+    def delete_order_with_http_info(self, order_number, **kwargs):  # noqa: E501
         """Delete order  # noqa: E501
 
         **Note:** This operation is only available if you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Orders) feature enabled. The migration to Orders is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available.    Deletes a specified order. All the subscriptions changed by this order are deleted. After the deletion, the subscriptions are rolled back to the previous version.   You are not allowed to delete an order if the charges that are affected by this order are invoiced.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_order_with_http_info(order_number, async_req=True)
+        >>> thread = api.delete_order_with_http_info(order_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -76,14 +76,14 @@ class OrdersApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method d_elete_order" % key
+                    " to method delete_order" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'order_number' is set
         if ('order_number' not in params or
                 params['order_number'] is None):
-            raise ValueError("Missing the required parameter `order_number` when calling `d_elete_order`")  # noqa: E501
+            raise ValueError("Missing the required parameter `order_number` when calling `delete_order`")  # noqa: E501
 
         collection_formats = {}
 
@@ -128,13 +128,13 @@ class OrdersApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_all_orders(self, **kwargs):  # noqa: E501
+    def get_all_orders(self, **kwargs):  # noqa: E501
         """Get all orders  # noqa: E501
 
         **Note:** This feature is only available if you have the [Order Metrics](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Order_Metrics) feature enabled. The migration to Order Metrics is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available. If you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders) feature enabled, you already have the Order Metrics feature enabled.   Retrieves information about all orders in your tenant. By default, it returns the first page of the orders.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_all_orders(async_req=True)
+        >>> thread = api.get_all_orders(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -150,18 +150,18 @@ class OrdersApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_all_orders_with_http_info(**kwargs)  # noqa: E501
+            return self.get_all_orders_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_all_orders_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.get_all_orders_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def g_et_all_orders_with_http_info(self, **kwargs):  # noqa: E501
+    def get_all_orders_with_http_info(self, **kwargs):  # noqa: E501
         """Get all orders  # noqa: E501
 
         **Note:** This feature is only available if you have the [Order Metrics](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Order_Metrics) feature enabled. The migration to Order Metrics is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available. If you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders) feature enabled, you already have the Order Metrics feature enabled.   Retrieves information about all orders in your tenant. By default, it returns the first page of the orders.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_all_orders_with_http_info(async_req=True)
+        >>> thread = api.get_all_orders_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -187,13 +187,13 @@ class OrdersApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_all_orders" % key
+                    " to method get_all_orders" % key
                 )
             params[key] = val
         del params['kwargs']
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_all_orders`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_all_orders`, must be a value less than or equal to `40`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -245,13 +245,13 @@ class OrdersApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_breakdown_invoice_by_order(self, invoice_number, **kwargs):  # noqa: E501
+    def get_breakdown_invoice_by_order(self, invoice_number, **kwargs):  # noqa: E501
         """Get breakdown of invoice by order  # noqa: E501
 
         **Note:** This feature is only available if you have the [Order Metrics](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Order_Metrics) feature enabled. The migration to Order Metrics is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available. If you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders) feature enabled, you already have the Order Metrics feature enabled.   Retrieves a specified invoice that is broken down by orders. One invoice item might be broken down into a list of order related items.  ### Phantom Invoice Item  Phantom invoice items are generated via this API operation if an invoice item has a credit back scenario and the action you are making is prior to the end of a previous action.  Phantom invoice items are not real invoice items and have no impact to billing. They are generated in parallel with the real invoice item and are used to properly allocate invoice items to the relevant orders. They share the same invoice item id with the real invoice item but with a prefix of \"Phantom-\". Also, the amount of a phantom invoice item is always zero.  Below is an example phantom invoice item, which reflects in the period of 2017-10-01 to 2017-12-31: * Order 1 creates the initial subscription with an invoice breakdown amount of \"3000\". * Order 2 decreases the product quantity and so reduces the amount by \"1500\". * Order 3 cancels the subscription and so reduces the remaining amount by \"1500\".  ``` {   \"invoiceItemId\": \"Phantom-2c98903063f6d7b1016416df98c721b6\",   \"subscriptionNumber\": \"55073a2fc6eb462aac0422aad7657f3c\",   \"chargeNumber\": \"d-000001\",   \"applyToChargeNumber\": null,   \"startDate\": \"2017-10-01\",   \"endDate\": \"2017-12-31\",   \"amount\": 0,   \"isCredit\": true,   \"breakdownDetails\": [     {       \"orderNumber\": \"980c4a4d414644339c113c7919a49fc2\",       \"amount\": -1500,       \"termNumber\": 1,       \"startDate\": \"2017-10-01\",       \"endDate\": \"2017-12-31\",       \"orderItemId\": \"2c98903063f6d7b1016416df8c512147\",       \"generatedReason\": \"Contraction\",       \"orderActionId\": \"2c98903063f6d7b1016416df9738219b\"     },     {       \"orderNumber\": \"e0a839e8b33d476b9a86ca50e71ccbb4\",       \"amount\": -1500,       \"termNumber\": 1,       \"startDate\": \"2017-10-01\",       \"endDate\": \"2017-12-31\",       \"orderItemId\": \"2c98903063f6d7b1016416df8c512147\",       \"generatedReason\": \"DecreaseQuantity\",       \"orderActionId\": \"2c98903063f6d7b1016416df92242167\"     },     {       \"orderNumber\": \"fd0e377b1bca4cc4805fc4cf1be72e05\",       \"amount\": 3000,       \"termNumber\": 1,       \"startDate\": \"2017-10-01\",       \"endDate\": \"2017-12-31\",       \"orderItemId\": \"2c98903063f6d7b1016416df8c512147\",       \"generatedReason\": \"Extension\",       \"orderActionId\": \"2c98903063f6d7b1016416df8bb12136\"     }   ] } ```   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_breakdown_invoice_by_order(invoice_number, async_req=True)
+        >>> thread = api.get_breakdown_invoice_by_order(invoice_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -263,18 +263,18 @@ class OrdersApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_breakdown_invoice_by_order_with_http_info(invoice_number, **kwargs)  # noqa: E501
+            return self.get_breakdown_invoice_by_order_with_http_info(invoice_number, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_breakdown_invoice_by_order_with_http_info(invoice_number, **kwargs)  # noqa: E501
+            (data) = self.get_breakdown_invoice_by_order_with_http_info(invoice_number, **kwargs)  # noqa: E501
             return data
 
-    def g_et_breakdown_invoice_by_order_with_http_info(self, invoice_number, **kwargs):  # noqa: E501
+    def get_breakdown_invoice_by_order_with_http_info(self, invoice_number, **kwargs):  # noqa: E501
         """Get breakdown of invoice by order  # noqa: E501
 
         **Note:** This feature is only available if you have the [Order Metrics](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Order_Metrics) feature enabled. The migration to Order Metrics is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available. If you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders) feature enabled, you already have the Order Metrics feature enabled.   Retrieves a specified invoice that is broken down by orders. One invoice item might be broken down into a list of order related items.  ### Phantom Invoice Item  Phantom invoice items are generated via this API operation if an invoice item has a credit back scenario and the action you are making is prior to the end of a previous action.  Phantom invoice items are not real invoice items and have no impact to billing. They are generated in parallel with the real invoice item and are used to properly allocate invoice items to the relevant orders. They share the same invoice item id with the real invoice item but with a prefix of \"Phantom-\". Also, the amount of a phantom invoice item is always zero.  Below is an example phantom invoice item, which reflects in the period of 2017-10-01 to 2017-12-31: * Order 1 creates the initial subscription with an invoice breakdown amount of \"3000\". * Order 2 decreases the product quantity and so reduces the amount by \"1500\". * Order 3 cancels the subscription and so reduces the remaining amount by \"1500\".  ``` {   \"invoiceItemId\": \"Phantom-2c98903063f6d7b1016416df98c721b6\",   \"subscriptionNumber\": \"55073a2fc6eb462aac0422aad7657f3c\",   \"chargeNumber\": \"d-000001\",   \"applyToChargeNumber\": null,   \"startDate\": \"2017-10-01\",   \"endDate\": \"2017-12-31\",   \"amount\": 0,   \"isCredit\": true,   \"breakdownDetails\": [     {       \"orderNumber\": \"980c4a4d414644339c113c7919a49fc2\",       \"amount\": -1500,       \"termNumber\": 1,       \"startDate\": \"2017-10-01\",       \"endDate\": \"2017-12-31\",       \"orderItemId\": \"2c98903063f6d7b1016416df8c512147\",       \"generatedReason\": \"Contraction\",       \"orderActionId\": \"2c98903063f6d7b1016416df9738219b\"     },     {       \"orderNumber\": \"e0a839e8b33d476b9a86ca50e71ccbb4\",       \"amount\": -1500,       \"termNumber\": 1,       \"startDate\": \"2017-10-01\",       \"endDate\": \"2017-12-31\",       \"orderItemId\": \"2c98903063f6d7b1016416df8c512147\",       \"generatedReason\": \"DecreaseQuantity\",       \"orderActionId\": \"2c98903063f6d7b1016416df92242167\"     },     {       \"orderNumber\": \"fd0e377b1bca4cc4805fc4cf1be72e05\",       \"amount\": 3000,       \"termNumber\": 1,       \"startDate\": \"2017-10-01\",       \"endDate\": \"2017-12-31\",       \"orderItemId\": \"2c98903063f6d7b1016416df8c512147\",       \"generatedReason\": \"Extension\",       \"orderActionId\": \"2c98903063f6d7b1016416df8bb12136\"     }   ] } ```   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_breakdown_invoice_by_order_with_http_info(invoice_number, async_req=True)
+        >>> thread = api.get_breakdown_invoice_by_order_with_http_info(invoice_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -296,14 +296,14 @@ class OrdersApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_breakdown_invoice_by_order" % key
+                    " to method get_breakdown_invoice_by_order" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'invoice_number' is set
         if ('invoice_number' not in params or
                 params['invoice_number'] is None):
-            raise ValueError("Missing the required parameter `invoice_number` when calling `g_et_breakdown_invoice_by_order`")  # noqa: E501
+            raise ValueError("Missing the required parameter `invoice_number` when calling `get_breakdown_invoice_by_order`")  # noqa: E501
 
         collection_formats = {}
 
@@ -348,13 +348,13 @@ class OrdersApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_job_status_and_response(self, job_id, **kwargs):  # noqa: E501
+    def get_job_status_and_response(self, job_id, **kwargs):  # noqa: E501
         """Get job status and response  # noqa: E501
 
         **Note:** This operation is only available if you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Orders) feature enabled. This operation is in **Limited Availability**.   Get the status and response of an asynchronous job. Currently, an asynchronous job created by \"Create order asynchronously\" or \"Preview order asynchronously\" is supported.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_job_status_and_response(job_id, async_req=True)
+        >>> thread = api.get_job_status_and_response(job_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -365,18 +365,18 @@ class OrdersApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_job_status_and_response_with_http_info(job_id, **kwargs)  # noqa: E501
+            return self.get_job_status_and_response_with_http_info(job_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_job_status_and_response_with_http_info(job_id, **kwargs)  # noqa: E501
+            (data) = self.get_job_status_and_response_with_http_info(job_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_job_status_and_response_with_http_info(self, job_id, **kwargs):  # noqa: E501
+    def get_job_status_and_response_with_http_info(self, job_id, **kwargs):  # noqa: E501
         """Get job status and response  # noqa: E501
 
         **Note:** This operation is only available if you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Orders) feature enabled. This operation is in **Limited Availability**.   Get the status and response of an asynchronous job. Currently, an asynchronous job created by \"Create order asynchronously\" or \"Preview order asynchronously\" is supported.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_job_status_and_response_with_http_info(job_id, async_req=True)
+        >>> thread = api.get_job_status_and_response_with_http_info(job_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -397,14 +397,14 @@ class OrdersApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_job_status_and_response" % key
+                    " to method get_job_status_and_response" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'job_id' is set
         if ('job_id' not in params or
                 params['job_id'] is None):
-            raise ValueError("Missing the required parameter `job_id` when calling `g_et_job_status_and_response`")  # noqa: E501
+            raise ValueError("Missing the required parameter `job_id` when calling `get_job_status_and_response`")  # noqa: E501
 
         collection_formats = {}
 
@@ -447,13 +447,13 @@ class OrdersApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_order(self, order_number, **kwargs):  # noqa: E501
+    def get_order(self, order_number, **kwargs):  # noqa: E501
         """Get an order  # noqa: E501
 
         **Note:** This feature is only available if you have the [Order Metrics](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Order_Metrics) feature enabled. The migration to Order Metrics is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available. If you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders) feature enabled, you already have the Order Metrics feature enabled.   Retrieves the detailed information about a specified order.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_order(order_number, async_req=True)
+        >>> thread = api.get_order(order_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -465,18 +465,18 @@ class OrdersApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_order_with_http_info(order_number, **kwargs)  # noqa: E501
+            return self.get_order_with_http_info(order_number, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_order_with_http_info(order_number, **kwargs)  # noqa: E501
+            (data) = self.get_order_with_http_info(order_number, **kwargs)  # noqa: E501
             return data
 
-    def g_et_order_with_http_info(self, order_number, **kwargs):  # noqa: E501
+    def get_order_with_http_info(self, order_number, **kwargs):  # noqa: E501
         """Get an order  # noqa: E501
 
         **Note:** This feature is only available if you have the [Order Metrics](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Order_Metrics) feature enabled. The migration to Order Metrics is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available. If you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders) feature enabled, you already have the Order Metrics feature enabled.   Retrieves the detailed information about a specified order.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_order_with_http_info(order_number, async_req=True)
+        >>> thread = api.get_order_with_http_info(order_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -498,14 +498,14 @@ class OrdersApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_order" % key
+                    " to method get_order" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'order_number' is set
         if ('order_number' not in params or
                 params['order_number'] is None):
-            raise ValueError("Missing the required parameter `order_number` when calling `g_et_order`")  # noqa: E501
+            raise ValueError("Missing the required parameter `order_number` when calling `get_order`")  # noqa: E501
 
         collection_formats = {}
 
@@ -550,13 +550,13 @@ class OrdersApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_order_billing_info(self, order_number, **kwargs):  # noqa: E501
+    def get_order_billing_info(self, order_number, **kwargs):  # noqa: E501
         """Get billing information for order  # noqa: E501
 
         **Note:** This feature is only available if you have the [Order Metrics](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Order_Metrics) feature enabled. The migration to Order Metrics is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available. If you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders) feature enabled, you already have the Order Metrics feature enabled.  Retrieves the billing information about a specified order. The information includes the billed and unbilled amount of the order.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_order_billing_info(order_number, async_req=True)
+        >>> thread = api.get_order_billing_info(order_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -569,18 +569,18 @@ class OrdersApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_order_billing_info_with_http_info(order_number, **kwargs)  # noqa: E501
+            return self.get_order_billing_info_with_http_info(order_number, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_order_billing_info_with_http_info(order_number, **kwargs)  # noqa: E501
+            (data) = self.get_order_billing_info_with_http_info(order_number, **kwargs)  # noqa: E501
             return data
 
-    def g_et_order_billing_info_with_http_info(self, order_number, **kwargs):  # noqa: E501
+    def get_order_billing_info_with_http_info(self, order_number, **kwargs):  # noqa: E501
         """Get billing information for order  # noqa: E501
 
         **Note:** This feature is only available if you have the [Order Metrics](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Order_Metrics) feature enabled. The migration to Order Metrics is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available. If you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders) feature enabled, you already have the Order Metrics feature enabled.  Retrieves the billing information about a specified order. The information includes the billed and unbilled amount of the order.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_order_billing_info_with_http_info(order_number, async_req=True)
+        >>> thread = api.get_order_billing_info_with_http_info(order_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -603,14 +603,14 @@ class OrdersApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_order_billing_info" % key
+                    " to method get_order_billing_info" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'order_number' is set
         if ('order_number' not in params or
                 params['order_number'] is None):
-            raise ValueError("Missing the required parameter `order_number` when calling `g_et_order_billing_info`")  # noqa: E501
+            raise ValueError("Missing the required parameter `order_number` when calling `get_order_billing_info`")  # noqa: E501
 
         collection_formats = {}
 
@@ -657,13 +657,13 @@ class OrdersApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_order_metricsfor_evergreen_subscription(self, order_number, subscription_number, start_date, end_date, **kwargs):  # noqa: E501
+    def get_order_metricsfor_evergreen_subscription(self, order_number, subscription_number, start_date, end_date, **kwargs):  # noqa: E501
         """Get order metrics for evergreen subscription  # noqa: E501
 
         **Note:** This feature is only available if you have the [Order Metrics](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Order_Metrics) feature enabled. The migration to Order Metrics is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available. If you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders) feature enabled, you already have the Order Metrics feature enabled.   Retrieves the metrics of an evergreen subscription in a specified order.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_order_metricsfor_evergreen_subscription(order_number, subscription_number, start_date, end_date, async_req=True)
+        >>> thread = api.get_order_metricsfor_evergreen_subscription(order_number, subscription_number, start_date, end_date, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -678,18 +678,18 @@ class OrdersApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_order_metricsfor_evergreen_subscription_with_http_info(order_number, subscription_number, start_date, end_date, **kwargs)  # noqa: E501
+            return self.get_order_metricsfor_evergreen_subscription_with_http_info(order_number, subscription_number, start_date, end_date, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_order_metricsfor_evergreen_subscription_with_http_info(order_number, subscription_number, start_date, end_date, **kwargs)  # noqa: E501
+            (data) = self.get_order_metricsfor_evergreen_subscription_with_http_info(order_number, subscription_number, start_date, end_date, **kwargs)  # noqa: E501
             return data
 
-    def g_et_order_metricsfor_evergreen_subscription_with_http_info(self, order_number, subscription_number, start_date, end_date, **kwargs):  # noqa: E501
+    def get_order_metricsfor_evergreen_subscription_with_http_info(self, order_number, subscription_number, start_date, end_date, **kwargs):  # noqa: E501
         """Get order metrics for evergreen subscription  # noqa: E501
 
         **Note:** This feature is only available if you have the [Order Metrics](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Order_Metrics) feature enabled. The migration to Order Metrics is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available. If you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders) feature enabled, you already have the Order Metrics feature enabled.   Retrieves the metrics of an evergreen subscription in a specified order.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_order_metricsfor_evergreen_subscription_with_http_info(order_number, subscription_number, start_date, end_date, async_req=True)
+        >>> thread = api.get_order_metricsfor_evergreen_subscription_with_http_info(order_number, subscription_number, start_date, end_date, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -714,26 +714,26 @@ class OrdersApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_order_metricsfor_evergreen_subscription" % key
+                    " to method get_order_metricsfor_evergreen_subscription" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'order_number' is set
         if ('order_number' not in params or
                 params['order_number'] is None):
-            raise ValueError("Missing the required parameter `order_number` when calling `g_et_order_metricsfor_evergreen_subscription`")  # noqa: E501
+            raise ValueError("Missing the required parameter `order_number` when calling `get_order_metricsfor_evergreen_subscription`")  # noqa: E501
         # verify the required parameter 'subscription_number' is set
         if ('subscription_number' not in params or
                 params['subscription_number'] is None):
-            raise ValueError("Missing the required parameter `subscription_number` when calling `g_et_order_metricsfor_evergreen_subscription`")  # noqa: E501
+            raise ValueError("Missing the required parameter `subscription_number` when calling `get_order_metricsfor_evergreen_subscription`")  # noqa: E501
         # verify the required parameter 'start_date' is set
         if ('start_date' not in params or
                 params['start_date'] is None):
-            raise ValueError("Missing the required parameter `start_date` when calling `g_et_order_metricsfor_evergreen_subscription`")  # noqa: E501
+            raise ValueError("Missing the required parameter `start_date` when calling `get_order_metricsfor_evergreen_subscription`")  # noqa: E501
         # verify the required parameter 'end_date' is set
         if ('end_date' not in params or
                 params['end_date'] is None):
-            raise ValueError("Missing the required parameter `end_date` when calling `g_et_order_metricsfor_evergreen_subscription`")  # noqa: E501
+            raise ValueError("Missing the required parameter `end_date` when calling `get_order_metricsfor_evergreen_subscription`")  # noqa: E501
 
         collection_formats = {}
 
@@ -784,13 +784,13 @@ class OrdersApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_order_rated_result(self, order_number, **kwargs):  # noqa: E501
+    def get_order_rated_result(self, order_number, **kwargs):  # noqa: E501
         """Get rated result for order  # noqa: E501
 
         **Note:** This feature is only available if you have the [Order Metrics](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Order_Metrics) feature enabled. The migration to Order Metrics is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available. If you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders) feature enabled, you already have the Order Metrics feature enabled.  Retrieves the rated results of all the subscriptions in the specified order.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_order_rated_result(order_number, async_req=True)
+        >>> thread = api.get_order_rated_result(order_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -802,18 +802,18 @@ class OrdersApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_order_rated_result_with_http_info(order_number, **kwargs)  # noqa: E501
+            return self.get_order_rated_result_with_http_info(order_number, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_order_rated_result_with_http_info(order_number, **kwargs)  # noqa: E501
+            (data) = self.get_order_rated_result_with_http_info(order_number, **kwargs)  # noqa: E501
             return data
 
-    def g_et_order_rated_result_with_http_info(self, order_number, **kwargs):  # noqa: E501
+    def get_order_rated_result_with_http_info(self, order_number, **kwargs):  # noqa: E501
         """Get rated result for order  # noqa: E501
 
         **Note:** This feature is only available if you have the [Order Metrics](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Order_Metrics) feature enabled. The migration to Order Metrics is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available. If you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders) feature enabled, you already have the Order Metrics feature enabled.  Retrieves the rated results of all the subscriptions in the specified order.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_order_rated_result_with_http_info(order_number, async_req=True)
+        >>> thread = api.get_order_rated_result_with_http_info(order_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -835,14 +835,14 @@ class OrdersApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_order_rated_result" % key
+                    " to method get_order_rated_result" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'order_number' is set
         if ('order_number' not in params or
                 params['order_number'] is None):
-            raise ValueError("Missing the required parameter `order_number` when calling `g_et_order_rated_result`")  # noqa: E501
+            raise ValueError("Missing the required parameter `order_number` when calling `get_order_rated_result`")  # noqa: E501
 
         collection_formats = {}
 
@@ -887,13 +887,13 @@ class OrdersApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_orders_by_invoice_owner(self, account_number, **kwargs):  # noqa: E501
+    def get_orders_by_invoice_owner(self, account_number, **kwargs):  # noqa: E501
         """Get orders by invoice owner  # noqa: E501
 
         **Note:** This feature is only available if you have the [Order Metrics](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Order_Metrics) feature enabled. The migration to Order Metrics is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available. If you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders) feature enabled, you already have the Order Metrics feature enabled.  Retrieves the detailed information about all orders for a specified invoice owner.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_orders_by_invoice_owner(account_number, async_req=True)
+        >>> thread = api.get_orders_by_invoice_owner(account_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -910,18 +910,18 @@ class OrdersApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_orders_by_invoice_owner_with_http_info(account_number, **kwargs)  # noqa: E501
+            return self.get_orders_by_invoice_owner_with_http_info(account_number, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_orders_by_invoice_owner_with_http_info(account_number, **kwargs)  # noqa: E501
+            (data) = self.get_orders_by_invoice_owner_with_http_info(account_number, **kwargs)  # noqa: E501
             return data
 
-    def g_et_orders_by_invoice_owner_with_http_info(self, account_number, **kwargs):  # noqa: E501
+    def get_orders_by_invoice_owner_with_http_info(self, account_number, **kwargs):  # noqa: E501
         """Get orders by invoice owner  # noqa: E501
 
         **Note:** This feature is only available if you have the [Order Metrics](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Order_Metrics) feature enabled. The migration to Order Metrics is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available. If you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders) feature enabled, you already have the Order Metrics feature enabled.  Retrieves the detailed information about all orders for a specified invoice owner.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_orders_by_invoice_owner_with_http_info(account_number, async_req=True)
+        >>> thread = api.get_orders_by_invoice_owner_with_http_info(account_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -948,17 +948,17 @@ class OrdersApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_orders_by_invoice_owner" % key
+                    " to method get_orders_by_invoice_owner" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'account_number' is set
         if ('account_number' not in params or
                 params['account_number'] is None):
-            raise ValueError("Missing the required parameter `account_number` when calling `g_et_orders_by_invoice_owner`")  # noqa: E501
+            raise ValueError("Missing the required parameter `account_number` when calling `get_orders_by_invoice_owner`")  # noqa: E501
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_orders_by_invoice_owner`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_orders_by_invoice_owner`, must be a value less than or equal to `40`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -1012,13 +1012,13 @@ class OrdersApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_orders_by_subscription_number(self, subscription_number, **kwargs):  # noqa: E501
+    def get_orders_by_subscription_number(self, subscription_number, **kwargs):  # noqa: E501
         """Get orders by subscription number  # noqa: E501
 
         **Note:** This feature is only available if you have the [Order Metrics](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Order_Metrics) feature enabled. The migration to Order Metrics is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available. If you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders) feature enabled, you already have the Order Metrics feature enabled.  Retrieves the detailed information about all orders for a specified subscription. Any orders containing the changes on the specified subscription are returned.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_orders_by_subscription_number(subscription_number, async_req=True)
+        >>> thread = api.get_orders_by_subscription_number(subscription_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1035,18 +1035,18 @@ class OrdersApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_orders_by_subscription_number_with_http_info(subscription_number, **kwargs)  # noqa: E501
+            return self.get_orders_by_subscription_number_with_http_info(subscription_number, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_orders_by_subscription_number_with_http_info(subscription_number, **kwargs)  # noqa: E501
+            (data) = self.get_orders_by_subscription_number_with_http_info(subscription_number, **kwargs)  # noqa: E501
             return data
 
-    def g_et_orders_by_subscription_number_with_http_info(self, subscription_number, **kwargs):  # noqa: E501
+    def get_orders_by_subscription_number_with_http_info(self, subscription_number, **kwargs):  # noqa: E501
         """Get orders by subscription number  # noqa: E501
 
         **Note:** This feature is only available if you have the [Order Metrics](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Order_Metrics) feature enabled. The migration to Order Metrics is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available. If you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders) feature enabled, you already have the Order Metrics feature enabled.  Retrieves the detailed information about all orders for a specified subscription. Any orders containing the changes on the specified subscription are returned.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_orders_by_subscription_number_with_http_info(subscription_number, async_req=True)
+        >>> thread = api.get_orders_by_subscription_number_with_http_info(subscription_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1073,17 +1073,17 @@ class OrdersApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_orders_by_subscription_number" % key
+                    " to method get_orders_by_subscription_number" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'subscription_number' is set
         if ('subscription_number' not in params or
                 params['subscription_number'] is None):
-            raise ValueError("Missing the required parameter `subscription_number` when calling `g_et_orders_by_subscription_number`")  # noqa: E501
+            raise ValueError("Missing the required parameter `subscription_number` when calling `get_orders_by_subscription_number`")  # noqa: E501
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_orders_by_subscription_number`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_orders_by_subscription_number`, must be a value less than or equal to `40`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -1137,13 +1137,13 @@ class OrdersApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_orders_by_subscription_owner(self, account_number, **kwargs):  # noqa: E501
+    def get_orders_by_subscription_owner(self, account_number, **kwargs):  # noqa: E501
         """Get orders by subscription owner  # noqa: E501
 
         **Note:** This feature is only available if you have the [Order Metrics](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Order_Metrics) feature enabled. The migration to Order Metrics is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available. If you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders) feature enabled, you already have the Order Metrics feature enabled.  Retrieves the detailed information about all orders for a specified subscription owner. Any orders containing the changes on the subscriptions owned by this account are returned.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_orders_by_subscription_owner(account_number, async_req=True)
+        >>> thread = api.get_orders_by_subscription_owner(account_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1160,18 +1160,18 @@ class OrdersApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_orders_by_subscription_owner_with_http_info(account_number, **kwargs)  # noqa: E501
+            return self.get_orders_by_subscription_owner_with_http_info(account_number, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_orders_by_subscription_owner_with_http_info(account_number, **kwargs)  # noqa: E501
+            (data) = self.get_orders_by_subscription_owner_with_http_info(account_number, **kwargs)  # noqa: E501
             return data
 
-    def g_et_orders_by_subscription_owner_with_http_info(self, account_number, **kwargs):  # noqa: E501
+    def get_orders_by_subscription_owner_with_http_info(self, account_number, **kwargs):  # noqa: E501
         """Get orders by subscription owner  # noqa: E501
 
         **Note:** This feature is only available if you have the [Order Metrics](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Order_Metrics) feature enabled. The migration to Order Metrics is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available. If you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders) feature enabled, you already have the Order Metrics feature enabled.  Retrieves the detailed information about all orders for a specified subscription owner. Any orders containing the changes on the subscriptions owned by this account are returned.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_orders_by_subscription_owner_with_http_info(account_number, async_req=True)
+        >>> thread = api.get_orders_by_subscription_owner_with_http_info(account_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1198,17 +1198,17 @@ class OrdersApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_orders_by_subscription_owner" % key
+                    " to method get_orders_by_subscription_owner" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'account_number' is set
         if ('account_number' not in params or
                 params['account_number'] is None):
-            raise ValueError("Missing the required parameter `account_number` when calling `g_et_orders_by_subscription_owner`")  # noqa: E501
+            raise ValueError("Missing the required parameter `account_number` when calling `get_orders_by_subscription_owner`")  # noqa: E501
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_orders_by_subscription_owner`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_orders_by_subscription_owner`, must be a value less than or equal to `40`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -1262,13 +1262,13 @@ class OrdersApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_subscription_term_info(self, subscription_number, **kwargs):  # noqa: E501
+    def get_subscription_term_info(self, subscription_number, **kwargs):  # noqa: E501
         """Get term information for subscription  # noqa: E501
 
         **Note:** This feature is only available if you have the [Order Metrics](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Order_Metrics) feature enabled. The migration to Order Metrics is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available. If you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders) feature enabled, you already have the Order Metrics feature enabled.  Retrieves the terms of the specified subscription.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_subscription_term_info(subscription_number, async_req=True)
+        >>> thread = api.get_subscription_term_info(subscription_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1283,18 +1283,18 @@ class OrdersApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_subscription_term_info_with_http_info(subscription_number, **kwargs)  # noqa: E501
+            return self.get_subscription_term_info_with_http_info(subscription_number, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_subscription_term_info_with_http_info(subscription_number, **kwargs)  # noqa: E501
+            (data) = self.get_subscription_term_info_with_http_info(subscription_number, **kwargs)  # noqa: E501
             return data
 
-    def g_et_subscription_term_info_with_http_info(self, subscription_number, **kwargs):  # noqa: E501
+    def get_subscription_term_info_with_http_info(self, subscription_number, **kwargs):  # noqa: E501
         """Get term information for subscription  # noqa: E501
 
         **Note:** This feature is only available if you have the [Order Metrics](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Order_Metrics) feature enabled. The migration to Order Metrics is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available. If you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders) feature enabled, you already have the Order Metrics feature enabled.  Retrieves the terms of the specified subscription.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_subscription_term_info_with_http_info(subscription_number, async_req=True)
+        >>> thread = api.get_subscription_term_info_with_http_info(subscription_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1319,17 +1319,17 @@ class OrdersApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_subscription_term_info" % key
+                    " to method get_subscription_term_info" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'subscription_number' is set
         if ('subscription_number' not in params or
                 params['subscription_number'] is None):
-            raise ValueError("Missing the required parameter `subscription_number` when calling `g_et_subscription_term_info`")  # noqa: E501
+            raise ValueError("Missing the required parameter `subscription_number` when calling `get_subscription_term_info`")  # noqa: E501
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_subscription_term_info`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_subscription_term_info`, must be a value less than or equal to `40`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -1379,13 +1379,13 @@ class OrdersApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_create_order_asynchronously(self, body, **kwargs):  # noqa: E501
+    def post_create_order_asynchronously(self, body, **kwargs):  # noqa: E501
         """Create order asynchronously  # noqa: E501
 
         **Note:** This operation is only available if you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Orders) feature enabled. This operation is in **Limited Availability**.   In the case where a normal \"Create order\" operation call will time out, use this operation instead to create an order asynchronously. A job will be creating the order in the back end; the job ID will be returned for tracking the job status and result.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_create_order_asynchronously(body, async_req=True)
+        >>> thread = api.post_create_order_asynchronously(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1398,18 +1398,18 @@ class OrdersApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_create_order_asynchronously_with_http_info(body, **kwargs)  # noqa: E501
+            return self.post_create_order_asynchronously_with_http_info(body, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_create_order_asynchronously_with_http_info(body, **kwargs)  # noqa: E501
+            (data) = self.post_create_order_asynchronously_with_http_info(body, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_create_order_asynchronously_with_http_info(self, body, **kwargs):  # noqa: E501
+    def post_create_order_asynchronously_with_http_info(self, body, **kwargs):  # noqa: E501
         """Create order asynchronously  # noqa: E501
 
         **Note:** This operation is only available if you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Orders) feature enabled. This operation is in **Limited Availability**.   In the case where a normal \"Create order\" operation call will time out, use this operation instead to create an order asynchronously. A job will be creating the order in the back end; the job ID will be returned for tracking the job status and result.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_create_order_asynchronously_with_http_info(body, async_req=True)
+        >>> thread = api.post_create_order_asynchronously_with_http_info(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1432,14 +1432,14 @@ class OrdersApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_create_order_asynchronously" % key
+                    " to method post_create_order_asynchronously" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ost_create_order_asynchronously`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `post_create_order_asynchronously`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1486,13 +1486,13 @@ class OrdersApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_order(self, body, **kwargs):  # noqa: E501
+    def post_order(self, body, **kwargs):  # noqa: E501
         """Create order  # noqa: E501
 
         **Note:** This operation is only available if you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Orders) feature enabled. The migration to Orders is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available.   You can use this operation to create subscriptions and make changes to subscriptions by creating orders. The following tutorials demonstrate how to use this operation:   * [Add a Product to a Subscription](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AC_Orders_Tutorials/A_Add_a_Product_to_a_Subscription)  * [Create a Ramp Deal](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AC_Orders_Tutorials/A_Create_a_Ramp_Deal)  * [Create a Subscription](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AC_Orders_Tutorials/A_Create_a_Subscription)  * [Change the Owner of a Subscription](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AC_Orders_Tutorials/C_Change_the_Owner_of_a_Subscription)  * [Change the Terms and Conditions of a Subscription](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AC_Orders_Tutorials/C_Change_the_Terms_and_Conditions_of_a_Subscription)  * [Renew a Subscription](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AC_Orders_Tutorials/C_Renew_a_Subscription)  * [Renew a Subscription and Upgrade a Product](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AC_Orders_Tutorials/C_Renew_a_Subscription_and_Upgrade_a_Product)  * [Replace a Product in a Subscription](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AC_Orders_Tutorials/C_Replace_a_Product_in_a_Subscription)  * [Update a Product in a Subscription](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AC_Orders_Tutorials/C_Update_a_Product_in_a_Subscription)  * [Cancel a Subscription](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AC_Orders_Tutorials/D_Cancel_a_Subscription)  * [Remove a Product from a Subscription](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AC_Orders_Tutorials/D_Remove_a_Product_from_a_Subscription)  To return the IDs associated with the numbers returned in the Create Order operation, use `?returnIds=true` at the end of the operation's endpoint.  Creating a draft order is currently not supported. See [Known Limitations in Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/C_Known_Limitations_in_Orders) for additional limitations.  **Note:** When you are to suspend a subcription (via the `suspend` order action), if in the same \"Create order\" call you are to perform other subsequent order actions on the supscription to suspend, you must first resume the subscription (via a `resume` order action).   **Note:** When using this operation to create an account, create a subscription, run billing, and collect payment in a single call, if the payment processing fails then all the other steps will be rolled back. This means that the invoice will not be generated, the subscription will not be created, and the account will not be created.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_order(body, async_req=True)
+        >>> thread = api.post_order(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1505,18 +1505,18 @@ class OrdersApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_order_with_http_info(body, **kwargs)  # noqa: E501
+            return self.post_order_with_http_info(body, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_order_with_http_info(body, **kwargs)  # noqa: E501
+            (data) = self.post_order_with_http_info(body, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_order_with_http_info(self, body, **kwargs):  # noqa: E501
+    def post_order_with_http_info(self, body, **kwargs):  # noqa: E501
         """Create order  # noqa: E501
 
         **Note:** This operation is only available if you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Orders) feature enabled. The migration to Orders is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available.   You can use this operation to create subscriptions and make changes to subscriptions by creating orders. The following tutorials demonstrate how to use this operation:   * [Add a Product to a Subscription](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AC_Orders_Tutorials/A_Add_a_Product_to_a_Subscription)  * [Create a Ramp Deal](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AC_Orders_Tutorials/A_Create_a_Ramp_Deal)  * [Create a Subscription](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AC_Orders_Tutorials/A_Create_a_Subscription)  * [Change the Owner of a Subscription](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AC_Orders_Tutorials/C_Change_the_Owner_of_a_Subscription)  * [Change the Terms and Conditions of a Subscription](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AC_Orders_Tutorials/C_Change_the_Terms_and_Conditions_of_a_Subscription)  * [Renew a Subscription](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AC_Orders_Tutorials/C_Renew_a_Subscription)  * [Renew a Subscription and Upgrade a Product](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AC_Orders_Tutorials/C_Renew_a_Subscription_and_Upgrade_a_Product)  * [Replace a Product in a Subscription](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AC_Orders_Tutorials/C_Replace_a_Product_in_a_Subscription)  * [Update a Product in a Subscription](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AC_Orders_Tutorials/C_Update_a_Product_in_a_Subscription)  * [Cancel a Subscription](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AC_Orders_Tutorials/D_Cancel_a_Subscription)  * [Remove a Product from a Subscription](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AC_Orders_Tutorials/D_Remove_a_Product_from_a_Subscription)  To return the IDs associated with the numbers returned in the Create Order operation, use `?returnIds=true` at the end of the operation's endpoint.  Creating a draft order is currently not supported. See [Known Limitations in Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/C_Known_Limitations_in_Orders) for additional limitations.  **Note:** When you are to suspend a subcription (via the `suspend` order action), if in the same \"Create order\" call you are to perform other subsequent order actions on the supscription to suspend, you must first resume the subscription (via a `resume` order action).   **Note:** When using this operation to create an account, create a subscription, run billing, and collect payment in a single call, if the payment processing fails then all the other steps will be rolled back. This means that the invoice will not be generated, the subscription will not be created, and the account will not be created.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_order_with_http_info(body, async_req=True)
+        >>> thread = api.post_order_with_http_info(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1539,14 +1539,14 @@ class OrdersApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_order" % key
+                    " to method post_order" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ost_order`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `post_order`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1593,13 +1593,13 @@ class OrdersApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_preview_order(self, body, **kwargs):  # noqa: E501
+    def post_preview_order(self, body, **kwargs):  # noqa: E501
         """Preview order  # noqa: E501
 
         **Note:** This operation is only available if you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Orders) feature enabled. The migration to Orders is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available.    Retrieves the preview of the charge metrics and invoice items of a specified order. This operation is only an order preview and no order is created.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_preview_order(body, async_req=True)
+        >>> thread = api.post_preview_order(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1611,18 +1611,18 @@ class OrdersApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_preview_order_with_http_info(body, **kwargs)  # noqa: E501
+            return self.post_preview_order_with_http_info(body, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_preview_order_with_http_info(body, **kwargs)  # noqa: E501
+            (data) = self.post_preview_order_with_http_info(body, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_preview_order_with_http_info(self, body, **kwargs):  # noqa: E501
+    def post_preview_order_with_http_info(self, body, **kwargs):  # noqa: E501
         """Preview order  # noqa: E501
 
         **Note:** This operation is only available if you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Orders) feature enabled. The migration to Orders is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available.    Retrieves the preview of the charge metrics and invoice items of a specified order. This operation is only an order preview and no order is created.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_preview_order_with_http_info(body, async_req=True)
+        >>> thread = api.post_preview_order_with_http_info(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1644,14 +1644,14 @@ class OrdersApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_preview_order" % key
+                    " to method post_preview_order" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ost_preview_order`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `post_preview_order`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1696,13 +1696,13 @@ class OrdersApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_preview_order_asynchronously(self, body, **kwargs):  # noqa: E501
+    def post_preview_order_asynchronously(self, body, **kwargs):  # noqa: E501
         """Preview order asynchronously  # noqa: E501
 
         **Note:** This operation is only available if you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Orders) feature enabled. This operation is in **Limited Availability**.    In the case where a normal \"Preview order\" operation call will time out, use this operation instead to preview an order asynchronously. A job will be previewing the order in the back end; the job ID will be returned for tracking the job status and result.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_preview_order_asynchronously(body, async_req=True)
+        >>> thread = api.post_preview_order_asynchronously(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1714,18 +1714,18 @@ class OrdersApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_preview_order_asynchronously_with_http_info(body, **kwargs)  # noqa: E501
+            return self.post_preview_order_asynchronously_with_http_info(body, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_preview_order_asynchronously_with_http_info(body, **kwargs)  # noqa: E501
+            (data) = self.post_preview_order_asynchronously_with_http_info(body, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_preview_order_asynchronously_with_http_info(self, body, **kwargs):  # noqa: E501
+    def post_preview_order_asynchronously_with_http_info(self, body, **kwargs):  # noqa: E501
         """Preview order asynchronously  # noqa: E501
 
         **Note:** This operation is only available if you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Orders) feature enabled. This operation is in **Limited Availability**.    In the case where a normal \"Preview order\" operation call will time out, use this operation instead to preview an order asynchronously. A job will be previewing the order in the back end; the job ID will be returned for tracking the job status and result.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_preview_order_asynchronously_with_http_info(body, async_req=True)
+        >>> thread = api.post_preview_order_asynchronously_with_http_info(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1747,14 +1747,14 @@ class OrdersApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_preview_order_asynchronously" % key
+                    " to method post_preview_order_asynchronously" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ost_preview_order_asynchronously`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `post_preview_order_asynchronously`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1799,13 +1799,13 @@ class OrdersApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_request_breakdown_invoice_items_by_order(self, body, **kwargs):  # noqa: E501
+    def post_request_breakdown_invoice_items_by_order(self, body, **kwargs):  # noqa: E501
         """Request breakdown of invoice items by order  # noqa: E501
 
         **Note:** This feature is only available if you have the [Order Metrics](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Order_Metrics) feature enabled. The migration to Order Metrics is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available. If you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders) feature enabled, you already have the Order Metrics feature enabled.  Retrieves the specified invoice items which are broken down by orders. One invoice item might be broken down into a list of order related items.  The maximum number of invoice items to retrieve is 1000.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_request_breakdown_invoice_items_by_order(body, async_req=True)
+        >>> thread = api.post_request_breakdown_invoice_items_by_order(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1817,18 +1817,18 @@ class OrdersApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_request_breakdown_invoice_items_by_order_with_http_info(body, **kwargs)  # noqa: E501
+            return self.post_request_breakdown_invoice_items_by_order_with_http_info(body, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_request_breakdown_invoice_items_by_order_with_http_info(body, **kwargs)  # noqa: E501
+            (data) = self.post_request_breakdown_invoice_items_by_order_with_http_info(body, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_request_breakdown_invoice_items_by_order_with_http_info(self, body, **kwargs):  # noqa: E501
+    def post_request_breakdown_invoice_items_by_order_with_http_info(self, body, **kwargs):  # noqa: E501
         """Request breakdown of invoice items by order  # noqa: E501
 
         **Note:** This feature is only available if you have the [Order Metrics](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Order_Metrics) feature enabled. The migration to Order Metrics is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available. If you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders) feature enabled, you already have the Order Metrics feature enabled.  Retrieves the specified invoice items which are broken down by orders. One invoice item might be broken down into a list of order related items.  The maximum number of invoice items to retrieve is 1000.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_request_breakdown_invoice_items_by_order_with_http_info(body, async_req=True)
+        >>> thread = api.post_request_breakdown_invoice_items_by_order_with_http_info(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1850,14 +1850,14 @@ class OrdersApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_request_breakdown_invoice_items_by_order" % key
+                    " to method post_request_breakdown_invoice_items_by_order" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ost_request_breakdown_invoice_items_by_order`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `post_request_breakdown_invoice_items_by_order`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1902,13 +1902,13 @@ class OrdersApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_order_trigger_dates(self, order_number, body, **kwargs):  # noqa: E501
+    def put_order_trigger_dates(self, order_number, body, **kwargs):  # noqa: E501
         """Update order action trigger dates  # noqa: E501
 
         **Note:**  This operation is only available if you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Orders) feature enabled. The migration to Orders is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available.  Updates a `CreateSubscription` order action's triggering dates.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_order_trigger_dates(order_number, body, async_req=True)
+        >>> thread = api.put_order_trigger_dates(order_number, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1921,18 +1921,18 @@ class OrdersApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_order_trigger_dates_with_http_info(order_number, body, **kwargs)  # noqa: E501
+            return self.put_order_trigger_dates_with_http_info(order_number, body, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_order_trigger_dates_with_http_info(order_number, body, **kwargs)  # noqa: E501
+            (data) = self.put_order_trigger_dates_with_http_info(order_number, body, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_order_trigger_dates_with_http_info(self, order_number, body, **kwargs):  # noqa: E501
+    def put_order_trigger_dates_with_http_info(self, order_number, body, **kwargs):  # noqa: E501
         """Update order action trigger dates  # noqa: E501
 
         **Note:**  This operation is only available if you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Orders) feature enabled. The migration to Orders is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available.  Updates a `CreateSubscription` order action's triggering dates.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_order_trigger_dates_with_http_info(order_number, body, async_req=True)
+        >>> thread = api.put_order_trigger_dates_with_http_info(order_number, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1955,18 +1955,18 @@ class OrdersApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_order_trigger_dates" % key
+                    " to method put_order_trigger_dates" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'order_number' is set
         if ('order_number' not in params or
                 params['order_number'] is None):
-            raise ValueError("Missing the required parameter `order_number` when calling `p_ut_order_trigger_dates`")  # noqa: E501
+            raise ValueError("Missing the required parameter `order_number` when calling `put_order_trigger_dates`")  # noqa: E501
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ut_order_trigger_dates`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `put_order_trigger_dates`")  # noqa: E501
 
         collection_formats = {}
 
@@ -2013,13 +2013,13 @@ class OrdersApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_update_order_custom_fields(self, order_number, body, **kwargs):  # noqa: E501
+    def put_update_order_custom_fields(self, order_number, body, **kwargs):  # noqa: E501
         """Update order custom fields  # noqa: E501
 
         **Note:** This feature is only available if you have the [Order Metrics](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Order_Metrics) feature enabled. The migration to Order Metrics is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available. If you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders) feature enabled, you already have the Order Metrics feature enabled.   Updates the custom fields of a specified order.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_update_order_custom_fields(order_number, body, async_req=True)
+        >>> thread = api.put_update_order_custom_fields(order_number, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2032,18 +2032,18 @@ class OrdersApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_update_order_custom_fields_with_http_info(order_number, body, **kwargs)  # noqa: E501
+            return self.put_update_order_custom_fields_with_http_info(order_number, body, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_update_order_custom_fields_with_http_info(order_number, body, **kwargs)  # noqa: E501
+            (data) = self.put_update_order_custom_fields_with_http_info(order_number, body, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_update_order_custom_fields_with_http_info(self, order_number, body, **kwargs):  # noqa: E501
+    def put_update_order_custom_fields_with_http_info(self, order_number, body, **kwargs):  # noqa: E501
         """Update order custom fields  # noqa: E501
 
         **Note:** This feature is only available if you have the [Order Metrics](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Order_Metrics) feature enabled. The migration to Order Metrics is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available. If you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders) feature enabled, you already have the Order Metrics feature enabled.   Updates the custom fields of a specified order.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_update_order_custom_fields_with_http_info(order_number, body, async_req=True)
+        >>> thread = api.put_update_order_custom_fields_with_http_info(order_number, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2066,18 +2066,18 @@ class OrdersApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_update_order_custom_fields" % key
+                    " to method put_update_order_custom_fields" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'order_number' is set
         if ('order_number' not in params or
                 params['order_number'] is None):
-            raise ValueError("Missing the required parameter `order_number` when calling `p_ut_update_order_custom_fields`")  # noqa: E501
+            raise ValueError("Missing the required parameter `order_number` when calling `put_update_order_custom_fields`")  # noqa: E501
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ut_update_order_custom_fields`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `put_update_order_custom_fields`")  # noqa: E501
 
         collection_formats = {}
 
@@ -2124,13 +2124,13 @@ class OrdersApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_update_subscription_custom_fields(self, subscription_number, body, **kwargs):  # noqa: E501
+    def put_update_subscription_custom_fields(self, subscription_number, body, **kwargs):  # noqa: E501
         """Update subscription custom fields  # noqa: E501
 
         **Note:**  This operation is only available if you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Orders) feature enabled. The migration to Orders is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available.   Updates the custom fields of a specified subscription.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_update_subscription_custom_fields(subscription_number, body, async_req=True)
+        >>> thread = api.put_update_subscription_custom_fields(subscription_number, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2143,18 +2143,18 @@ class OrdersApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_update_subscription_custom_fields_with_http_info(subscription_number, body, **kwargs)  # noqa: E501
+            return self.put_update_subscription_custom_fields_with_http_info(subscription_number, body, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_update_subscription_custom_fields_with_http_info(subscription_number, body, **kwargs)  # noqa: E501
+            (data) = self.put_update_subscription_custom_fields_with_http_info(subscription_number, body, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_update_subscription_custom_fields_with_http_info(self, subscription_number, body, **kwargs):  # noqa: E501
+    def put_update_subscription_custom_fields_with_http_info(self, subscription_number, body, **kwargs):  # noqa: E501
         """Update subscription custom fields  # noqa: E501
 
         **Note:**  This operation is only available if you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Orders) feature enabled. The migration to Orders is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available.   Updates the custom fields of a specified subscription.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_update_subscription_custom_fields_with_http_info(subscription_number, body, async_req=True)
+        >>> thread = api.put_update_subscription_custom_fields_with_http_info(subscription_number, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2177,18 +2177,18 @@ class OrdersApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_update_subscription_custom_fields" % key
+                    " to method put_update_subscription_custom_fields" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'subscription_number' is set
         if ('subscription_number' not in params or
                 params['subscription_number'] is None):
-            raise ValueError("Missing the required parameter `subscription_number` when calling `p_ut_update_subscription_custom_fields`")  # noqa: E501
+            raise ValueError("Missing the required parameter `subscription_number` when calling `put_update_subscription_custom_fields`")  # noqa: E501
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ut_update_subscription_custom_fields`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `put_update_subscription_custom_fields`")  # noqa: E501
 
         collection_formats = {}
 

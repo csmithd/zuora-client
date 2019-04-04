@@ -25,13 +25,13 @@ class EntityConnectionsApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def g_et_entity_connections(self, **kwargs):  # noqa: E501
+    def get_entity_connections(self, **kwargs):  # noqa: E501
         """Multi-entity: Get connections  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Retrieves information about certain connections for a specified entity. You can specify the entity to retrieve in the `Zuora-Entity-Ids` request header.  You can retrieve:  - Inbound connections  - Outbound connections  - Both inbound and outbound connections  ## User Access Permission You can make the call as any entity user.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_entity_connections(async_req=True)
+        >>> thread = api.get_entity_connections(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -44,18 +44,18 @@ class EntityConnectionsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_entity_connections_with_http_info(**kwargs)  # noqa: E501
+            return self.get_entity_connections_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_entity_connections_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.get_entity_connections_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def g_et_entity_connections_with_http_info(self, **kwargs):  # noqa: E501
+    def get_entity_connections_with_http_info(self, **kwargs):  # noqa: E501
         """Multi-entity: Get connections  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Retrieves information about certain connections for a specified entity. You can specify the entity to retrieve in the `Zuora-Entity-Ids` request header.  You can retrieve:  - Inbound connections  - Outbound connections  - Both inbound and outbound connections  ## User Access Permission You can make the call as any entity user.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_entity_connections_with_http_info(async_req=True)
+        >>> thread = api.get_entity_connections_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -78,13 +78,13 @@ class EntityConnectionsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_entity_connections" % key
+                    " to method get_entity_connections" % key
                 )
             params[key] = val
         del params['kwargs']
 
         if 'page_size' in params and params['page_size'] > 300:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_entity_connections`, must be a value less than or equal to `300`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_entity_connections`, must be a value less than or equal to `300`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -130,13 +130,13 @@ class EntityConnectionsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_entity_connections(self, **kwargs):  # noqa: E501
+    def post_entity_connections(self, **kwargs):  # noqa: E501
         """Multi-entity: Initiate connection  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Initiates a connection request from a source entity to a target entity.  ## User Access Permission You must make the call as a source entity administrator. Also, this administrator must have permission to access to the target entity.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_entity_connections(async_req=True)
+        >>> thread = api.post_entity_connections(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -148,18 +148,18 @@ class EntityConnectionsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_entity_connections_with_http_info(**kwargs)  # noqa: E501
+            return self.post_entity_connections_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_entity_connections_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.post_entity_connections_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def p_ost_entity_connections_with_http_info(self, **kwargs):  # noqa: E501
+    def post_entity_connections_with_http_info(self, **kwargs):  # noqa: E501
         """Multi-entity: Initiate connection  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Initiates a connection request from a source entity to a target entity.  ## User Access Permission You must make the call as a source entity administrator. Also, this administrator must have permission to access to the target entity.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_entity_connections_with_http_info(async_req=True)
+        >>> thread = api.post_entity_connections_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -181,7 +181,7 @@ class EntityConnectionsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_entity_connections" % key
+                    " to method post_entity_connections" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -229,13 +229,13 @@ class EntityConnectionsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_entity_connections_accept(self, connection_id, **kwargs):  # noqa: E501
+    def put_entity_connections_accept(self, connection_id, **kwargs):  # noqa: E501
         """Multi-entity: Accept connection  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Accepts a connection request.  ## User Access Permission You must make the call as an entity administrator to accept a connection request.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_entity_connections_accept(connection_id, async_req=True)
+        >>> thread = api.put_entity_connections_accept(connection_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -247,18 +247,18 @@ class EntityConnectionsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_entity_connections_accept_with_http_info(connection_id, **kwargs)  # noqa: E501
+            return self.put_entity_connections_accept_with_http_info(connection_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_entity_connections_accept_with_http_info(connection_id, **kwargs)  # noqa: E501
+            (data) = self.put_entity_connections_accept_with_http_info(connection_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_entity_connections_accept_with_http_info(self, connection_id, **kwargs):  # noqa: E501
+    def put_entity_connections_accept_with_http_info(self, connection_id, **kwargs):  # noqa: E501
         """Multi-entity: Accept connection  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Accepts a connection request.  ## User Access Permission You must make the call as an entity administrator to accept a connection request.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_entity_connections_accept_with_http_info(connection_id, async_req=True)
+        >>> thread = api.put_entity_connections_accept_with_http_info(connection_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -280,14 +280,14 @@ class EntityConnectionsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_entity_connections_accept" % key
+                    " to method put_entity_connections_accept" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'connection_id' is set
         if ('connection_id' not in params or
                 params['connection_id'] is None):
-            raise ValueError("Missing the required parameter `connection_id` when calling `p_ut_entity_connections_accept`")  # noqa: E501
+            raise ValueError("Missing the required parameter `connection_id` when calling `put_entity_connections_accept`")  # noqa: E501
 
         collection_formats = {}
 
@@ -332,13 +332,13 @@ class EntityConnectionsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_entity_connections_deny(self, connection_id, **kwargs):  # noqa: E501
+    def put_entity_connections_deny(self, connection_id, **kwargs):  # noqa: E501
         """Multi-entity: Deny connection  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Denies a connection request.  ## User Access Permission You must make the call as an entity administrator to deny a connection request.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_entity_connections_deny(connection_id, async_req=True)
+        >>> thread = api.put_entity_connections_deny(connection_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -350,18 +350,18 @@ class EntityConnectionsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_entity_connections_deny_with_http_info(connection_id, **kwargs)  # noqa: E501
+            return self.put_entity_connections_deny_with_http_info(connection_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_entity_connections_deny_with_http_info(connection_id, **kwargs)  # noqa: E501
+            (data) = self.put_entity_connections_deny_with_http_info(connection_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_entity_connections_deny_with_http_info(self, connection_id, **kwargs):  # noqa: E501
+    def put_entity_connections_deny_with_http_info(self, connection_id, **kwargs):  # noqa: E501
         """Multi-entity: Deny connection  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Denies a connection request.  ## User Access Permission You must make the call as an entity administrator to deny a connection request.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_entity_connections_deny_with_http_info(connection_id, async_req=True)
+        >>> thread = api.put_entity_connections_deny_with_http_info(connection_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -383,14 +383,14 @@ class EntityConnectionsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_entity_connections_deny" % key
+                    " to method put_entity_connections_deny" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'connection_id' is set
         if ('connection_id' not in params or
                 params['connection_id'] is None):
-            raise ValueError("Missing the required parameter `connection_id` when calling `p_ut_entity_connections_deny`")  # noqa: E501
+            raise ValueError("Missing the required parameter `connection_id` when calling `put_entity_connections_deny`")  # noqa: E501
 
         collection_formats = {}
 
@@ -435,13 +435,13 @@ class EntityConnectionsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_entity_connections_disconnect(self, connection_id, **kwargs):  # noqa: E501
+    def put_entity_connections_disconnect(self, connection_id, **kwargs):  # noqa: E501
         """Multi-entity: Disconnect connection  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Disconnects an established connection. If you have shared objects from a global entity to a target entity, disconnecting the connection will break the mapping relationship between these entities and cannot be recovered later.  ## User Access Permission You must make the call as an administrator of the target entity or source entity.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_entity_connections_disconnect(connection_id, async_req=True)
+        >>> thread = api.put_entity_connections_disconnect(connection_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -453,18 +453,18 @@ class EntityConnectionsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_entity_connections_disconnect_with_http_info(connection_id, **kwargs)  # noqa: E501
+            return self.put_entity_connections_disconnect_with_http_info(connection_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_entity_connections_disconnect_with_http_info(connection_id, **kwargs)  # noqa: E501
+            (data) = self.put_entity_connections_disconnect_with_http_info(connection_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_entity_connections_disconnect_with_http_info(self, connection_id, **kwargs):  # noqa: E501
+    def put_entity_connections_disconnect_with_http_info(self, connection_id, **kwargs):  # noqa: E501
         """Multi-entity: Disconnect connection  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Disconnects an established connection. If you have shared objects from a global entity to a target entity, disconnecting the connection will break the mapping relationship between these entities and cannot be recovered later.  ## User Access Permission You must make the call as an administrator of the target entity or source entity.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_entity_connections_disconnect_with_http_info(connection_id, async_req=True)
+        >>> thread = api.put_entity_connections_disconnect_with_http_info(connection_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -486,14 +486,14 @@ class EntityConnectionsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_entity_connections_disconnect" % key
+                    " to method put_entity_connections_disconnect" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'connection_id' is set
         if ('connection_id' not in params or
                 params['connection_id'] is None):
-            raise ValueError("Missing the required parameter `connection_id` when calling `p_ut_entity_connections_disconnect`")  # noqa: E501
+            raise ValueError("Missing the required parameter `connection_id` when calling `put_entity_connections_disconnect`")  # noqa: E501
 
         collection_formats = {}
 

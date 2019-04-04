@@ -29,15 +29,15 @@ class TestRSASignaturesApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_p_ost_decrypt_rsa_signatures(self):
-        """Test case for p_ost_decrypt_rsa_signatures
+    def test_post_decrypt_rsa_signatures(self):
+        """Test case for post_decrypt_rsa_signatures
 
         Decrypt RSA signature  # noqa: E501
         """
         pass
 
-    def test_p_ostrsa_signatures(self):
-        """Test case for p_ostrsa_signatures
+    def test_postrsa_signatures(self):
+        """Test case for postrsa_signatures
 
         Generate RSA signature  # noqa: E501
         """

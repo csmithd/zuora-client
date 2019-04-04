@@ -25,13 +25,13 @@ class AccountsApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def g_et_account(self, account_key, **kwargs):  # noqa: E501
+    def get_account(self, account_key, **kwargs):  # noqa: E501
         """Get account  # noqa: E501
 
         Retrieves basic information about a customer account.  This operation is a quick retrieval that doesn't include the account's subscriptions, invoices, payments, or usage details. Use Get account summary to get more detailed information about an account.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_account(account_key, async_req=True)
+        >>> thread = api.get_account(account_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -43,18 +43,18 @@ class AccountsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_account_with_http_info(account_key, **kwargs)  # noqa: E501
+            return self.get_account_with_http_info(account_key, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_account_with_http_info(account_key, **kwargs)  # noqa: E501
+            (data) = self.get_account_with_http_info(account_key, **kwargs)  # noqa: E501
             return data
 
-    def g_et_account_with_http_info(self, account_key, **kwargs):  # noqa: E501
+    def get_account_with_http_info(self, account_key, **kwargs):  # noqa: E501
         """Get account  # noqa: E501
 
         Retrieves basic information about a customer account.  This operation is a quick retrieval that doesn't include the account's subscriptions, invoices, payments, or usage details. Use Get account summary to get more detailed information about an account.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_account_with_http_info(account_key, async_req=True)
+        >>> thread = api.get_account_with_http_info(account_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -76,14 +76,14 @@ class AccountsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_account" % key
+                    " to method get_account" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'account_key' is set
         if ('account_key' not in params or
                 params['account_key'] is None):
-            raise ValueError("Missing the required parameter `account_key` when calling `g_et_account`")  # noqa: E501
+            raise ValueError("Missing the required parameter `account_key` when calling `get_account`")  # noqa: E501
 
         collection_formats = {}
 
@@ -128,13 +128,13 @@ class AccountsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_account_summary(self, account_key, **kwargs):  # noqa: E501
+    def get_account_summary(self, account_key, **kwargs):  # noqa: E501
         """Get account summary  # noqa: E501
 
         Retrieves detailed information about the specified customer account.  The response includes the account information and a summary of the account’s subscriptions, invoices, payments, and usages for the last six recently updated subscriptions.  ## Notes  Returns only the six most recent subscriptions based on the subscription updatedDate. Within those subscriptions, there may be many rate plans and many rate plan charges. These items are subject to the maximum limit on the array size.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_account_summary(account_key, async_req=True)
+        >>> thread = api.get_account_summary(account_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -146,18 +146,18 @@ class AccountsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_account_summary_with_http_info(account_key, **kwargs)  # noqa: E501
+            return self.get_account_summary_with_http_info(account_key, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_account_summary_with_http_info(account_key, **kwargs)  # noqa: E501
+            (data) = self.get_account_summary_with_http_info(account_key, **kwargs)  # noqa: E501
             return data
 
-    def g_et_account_summary_with_http_info(self, account_key, **kwargs):  # noqa: E501
+    def get_account_summary_with_http_info(self, account_key, **kwargs):  # noqa: E501
         """Get account summary  # noqa: E501
 
         Retrieves detailed information about the specified customer account.  The response includes the account information and a summary of the account’s subscriptions, invoices, payments, and usages for the last six recently updated subscriptions.  ## Notes  Returns only the six most recent subscriptions based on the subscription updatedDate. Within those subscriptions, there may be many rate plans and many rate plan charges. These items are subject to the maximum limit on the array size.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_account_summary_with_http_info(account_key, async_req=True)
+        >>> thread = api.get_account_summary_with_http_info(account_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -179,14 +179,14 @@ class AccountsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_account_summary" % key
+                    " to method get_account_summary" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'account_key' is set
         if ('account_key' not in params or
                 params['account_key'] is None):
-            raise ValueError("Missing the required parameter `account_key` when calling `g_et_account_summary`")  # noqa: E501
+            raise ValueError("Missing the required parameter `account_key` when calling `get_account_summary`")  # noqa: E501
 
         collection_formats = {}
 
@@ -231,13 +231,13 @@ class AccountsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_billing_document_files_deletion_job(self, job_id, **kwargs):  # noqa: E501
+    def get_billing_document_files_deletion_job(self, job_id, **kwargs):  # noqa: E501
         """Get job of hard deleting billing document files  # noqa: E501
 
         Retrieves information about an asynchronous job of permanently deleting all billing document PDF files for specific accounts.  **Note**: This operation can be used only if you have the Billing user permission \"Hard Delete Billing Document Files\" enabled.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_billing_document_files_deletion_job(job_id, async_req=True)
+        >>> thread = api.get_billing_document_files_deletion_job(job_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -249,18 +249,18 @@ class AccountsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_billing_document_files_deletion_job_with_http_info(job_id, **kwargs)  # noqa: E501
+            return self.get_billing_document_files_deletion_job_with_http_info(job_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_billing_document_files_deletion_job_with_http_info(job_id, **kwargs)  # noqa: E501
+            (data) = self.get_billing_document_files_deletion_job_with_http_info(job_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_billing_document_files_deletion_job_with_http_info(self, job_id, **kwargs):  # noqa: E501
+    def get_billing_document_files_deletion_job_with_http_info(self, job_id, **kwargs):  # noqa: E501
         """Get job of hard deleting billing document files  # noqa: E501
 
         Retrieves information about an asynchronous job of permanently deleting all billing document PDF files for specific accounts.  **Note**: This operation can be used only if you have the Billing user permission \"Hard Delete Billing Document Files\" enabled.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_billing_document_files_deletion_job_with_http_info(job_id, async_req=True)
+        >>> thread = api.get_billing_document_files_deletion_job_with_http_info(job_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -282,14 +282,14 @@ class AccountsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_billing_document_files_deletion_job" % key
+                    " to method get_billing_document_files_deletion_job" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'job_id' is set
         if ('job_id' not in params or
                 params['job_id'] is None):
-            raise ValueError("Missing the required parameter `job_id` when calling `g_et_billing_document_files_deletion_job`")  # noqa: E501
+            raise ValueError("Missing the required parameter `job_id` when calling `get_billing_document_files_deletion_job`")  # noqa: E501
 
         collection_formats = {}
 
@@ -786,13 +786,13 @@ class AccountsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_account(self, request, **kwargs):  # noqa: E501
+    def post_account(self, request, **kwargs):  # noqa: E501
         """Create account  # noqa: E501
 
         Creates a customer account with a credit card payment method, a bill-to contact, and an optional sold-to contact. Request and response field descriptions and sample code are provided. Use this operation to optionally create a subscription, invoice for that subscription, and collect payment through the default payment method. The transaction is atomic; if any part fails for any reason, the entire transaction is rolled back.  This operation is CORS Enabled, so you can use client-side Javascript to invoke the call.   ## Notes 1. The account is created in active status.   2. If the `autoPay` field is set to `true` in the request, you must provide either the `creditCard` field or the `hpmCreditCardPaymentMethodId` field, but not both. The one provided becomes the default payment method for this account. If the credit card information is declined or cannot be verified, no account is created. 3. Customer accounts created with this call are automatically be set to Auto Pay. 4. If either the `workEmail` or `personalEmail` field is specified, then the account's email delivery preference is automatically set to `true`. (In that case, emails go to the `workEmail` address, if it exists, or else the `personalEmail`.) If neither field is specified, the email delivery preference is automatically set to `false`. 5. You cannot use this operation to create subscriptions if you have the Orders feature enabled. See [Orders Migration Guidance](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AB_Orders_Migration_Guidance) for more information.  ## Defaults for customerAcceptanceDate and serviceActivationDate Default values for **customerAcceptanceDate** and **serviceActivationDate** are set as follows.  |        | serviceActivationDate(SA) specified          | serviceActivationDate (SA) NOT specified  | | ------------- |:-------------:| -----:| | customerAcceptanceDate (CA) specified      | SA uses value in the request call; CA uses value in the request call| CA uses value in the request call;SA uses CE as default | | customerAcceptanceDate (CA) NOT specified      | SA uses value in the request call; CA uses SA as default |   SA and CA use CE as default |   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_account(request, async_req=True)
+        >>> thread = api.post_account(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -805,18 +805,18 @@ class AccountsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_account_with_http_info(request, **kwargs)  # noqa: E501
+            return self.post_account_with_http_info(request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_account_with_http_info(request, **kwargs)  # noqa: E501
+            (data) = self.post_account_with_http_info(request, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_account_with_http_info(self, request, **kwargs):  # noqa: E501
+    def post_account_with_http_info(self, request, **kwargs):  # noqa: E501
         """Create account  # noqa: E501
 
         Creates a customer account with a credit card payment method, a bill-to contact, and an optional sold-to contact. Request and response field descriptions and sample code are provided. Use this operation to optionally create a subscription, invoice for that subscription, and collect payment through the default payment method. The transaction is atomic; if any part fails for any reason, the entire transaction is rolled back.  This operation is CORS Enabled, so you can use client-side Javascript to invoke the call.   ## Notes 1. The account is created in active status.   2. If the `autoPay` field is set to `true` in the request, you must provide either the `creditCard` field or the `hpmCreditCardPaymentMethodId` field, but not both. The one provided becomes the default payment method for this account. If the credit card information is declined or cannot be verified, no account is created. 3. Customer accounts created with this call are automatically be set to Auto Pay. 4. If either the `workEmail` or `personalEmail` field is specified, then the account's email delivery preference is automatically set to `true`. (In that case, emails go to the `workEmail` address, if it exists, or else the `personalEmail`.) If neither field is specified, the email delivery preference is automatically set to `false`. 5. You cannot use this operation to create subscriptions if you have the Orders feature enabled. See [Orders Migration Guidance](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AB_Orders_Migration_Guidance) for more information.  ## Defaults for customerAcceptanceDate and serviceActivationDate Default values for **customerAcceptanceDate** and **serviceActivationDate** are set as follows.  |        | serviceActivationDate(SA) specified          | serviceActivationDate (SA) NOT specified  | | ------------- |:-------------:| -----:| | customerAcceptanceDate (CA) specified      | SA uses value in the request call; CA uses value in the request call| CA uses value in the request call;SA uses CE as default | | customerAcceptanceDate (CA) NOT specified      | SA uses value in the request call; CA uses SA as default |   SA and CA use CE as default |   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_account_with_http_info(request, async_req=True)
+        >>> thread = api.post_account_with_http_info(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -839,14 +839,14 @@ class AccountsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_account" % key
+                    " to method post_account" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ost_account`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `post_account`")  # noqa: E501
 
         collection_formats = {}
 
@@ -893,13 +893,13 @@ class AccountsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_billing_document_files_deletion_job(self, body, **kwargs):  # noqa: E501
+    def post_billing_document_files_deletion_job(self, body, **kwargs):  # noqa: E501
         """Create job to hard delete billing document files  # noqa: E501
 
         Creates an asynchronous job to permanently delete all billing document PDF files for specific accounts.   After the deletion job is completed, all billing document PDF files are permanently deleted. To retrieve the status of a deletion job, call [Get job of hard deleting billing document files](https://www.zuora.com/developer/api-reference/#operation/GET_BillingDocumentFilesDeletionJob).  **Note**: This operation can be used only if you have the Billing user permission \"Hard Delete Billing Document Files\" enabled.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_billing_document_files_deletion_job(body, async_req=True)
+        >>> thread = api.post_billing_document_files_deletion_job(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -911,18 +911,18 @@ class AccountsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_billing_document_files_deletion_job_with_http_info(body, **kwargs)  # noqa: E501
+            return self.post_billing_document_files_deletion_job_with_http_info(body, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_billing_document_files_deletion_job_with_http_info(body, **kwargs)  # noqa: E501
+            (data) = self.post_billing_document_files_deletion_job_with_http_info(body, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_billing_document_files_deletion_job_with_http_info(self, body, **kwargs):  # noqa: E501
+    def post_billing_document_files_deletion_job_with_http_info(self, body, **kwargs):  # noqa: E501
         """Create job to hard delete billing document files  # noqa: E501
 
         Creates an asynchronous job to permanently delete all billing document PDF files for specific accounts.   After the deletion job is completed, all billing document PDF files are permanently deleted. To retrieve the status of a deletion job, call [Get job of hard deleting billing document files](https://www.zuora.com/developer/api-reference/#operation/GET_BillingDocumentFilesDeletionJob).  **Note**: This operation can be used only if you have the Billing user permission \"Hard Delete Billing Document Files\" enabled.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_billing_document_files_deletion_job_with_http_info(body, async_req=True)
+        >>> thread = api.post_billing_document_files_deletion_job_with_http_info(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -944,14 +944,14 @@ class AccountsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_billing_document_files_deletion_job" % key
+                    " to method post_billing_document_files_deletion_job" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ost_billing_document_files_deletion_job`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `post_billing_document_files_deletion_job`")  # noqa: E501
 
         collection_formats = {}
 
@@ -996,13 +996,13 @@ class AccountsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_generate_billing_documents(self, body, id, **kwargs):  # noqa: E501
+    def post_generate_billing_documents(self, body, id, **kwargs):  # noqa: E501
         """Generate billing documents by account  # noqa: E501
 
         Generates draft or posted billing documents for a specified account. You can also generate billing documents for specified subscriptions of a specified account. The billing documents contain invoices and credit memos. To generate credit memos, you must have the Invoice Settlement feature enabled.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_generate_billing_documents(body, id, async_req=True)
+        >>> thread = api.post_generate_billing_documents(body, id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1015,18 +1015,18 @@ class AccountsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_generate_billing_documents_with_http_info(body, id, **kwargs)  # noqa: E501
+            return self.post_generate_billing_documents_with_http_info(body, id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_generate_billing_documents_with_http_info(body, id, **kwargs)  # noqa: E501
+            (data) = self.post_generate_billing_documents_with_http_info(body, id, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_generate_billing_documents_with_http_info(self, body, id, **kwargs):  # noqa: E501
+    def post_generate_billing_documents_with_http_info(self, body, id, **kwargs):  # noqa: E501
         """Generate billing documents by account  # noqa: E501
 
         Generates draft or posted billing documents for a specified account. You can also generate billing documents for specified subscriptions of a specified account. The billing documents contain invoices and credit memos. To generate credit memos, you must have the Invoice Settlement feature enabled.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_generate_billing_documents_with_http_info(body, id, async_req=True)
+        >>> thread = api.post_generate_billing_documents_with_http_info(body, id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1049,18 +1049,18 @@ class AccountsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_generate_billing_documents" % key
+                    " to method post_generate_billing_documents" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ost_generate_billing_documents`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `post_generate_billing_documents`")  # noqa: E501
         # verify the required parameter 'id' is set
         if ('id' not in params or
                 params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `p_ost_generate_billing_documents`")  # noqa: E501
+            raise ValueError("Missing the required parameter `id` when calling `post_generate_billing_documents`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1107,13 +1107,13 @@ class AccountsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_account(self, account_key, request, **kwargs):  # noqa: E501
+    def put_account(self, account_key, request, **kwargs):  # noqa: E501
         """Update account  # noqa: E501
 
         Updates a customer account by specifying the account-key.  ## Notes 1. Only the fields to be changed should be specified.  Any field that is not included in the request body will not be changed. 2. If an empty field is submitted with this operation, the corresponding field in the account is emptied. 3. Email addresses: If no email addresses are specified, no change is made to the email addresses on file or to the email delivery preference. If either the **personalEmail** or **workEmail** is specified (or both), the system updates the corresponding email address(es) on file and the email delivery preference is set to `true`. (In that case, emails go to the **workEmail** address, if it exists, or else the **personalEmail**.) On the other hand, if as a result of this call both of the email addresses for the account are empty, the email delivery preference is set to `false`. 4. The bill-to and sold-to contacts are separate data entities; updating either one does not update the other.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_account(account_key, request, async_req=True)
+        >>> thread = api.put_account(account_key, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1126,18 +1126,18 @@ class AccountsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_account_with_http_info(account_key, request, **kwargs)  # noqa: E501
+            return self.put_account_with_http_info(account_key, request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_account_with_http_info(account_key, request, **kwargs)  # noqa: E501
+            (data) = self.put_account_with_http_info(account_key, request, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_account_with_http_info(self, account_key, request, **kwargs):  # noqa: E501
+    def put_account_with_http_info(self, account_key, request, **kwargs):  # noqa: E501
         """Update account  # noqa: E501
 
         Updates a customer account by specifying the account-key.  ## Notes 1. Only the fields to be changed should be specified.  Any field that is not included in the request body will not be changed. 2. If an empty field is submitted with this operation, the corresponding field in the account is emptied. 3. Email addresses: If no email addresses are specified, no change is made to the email addresses on file or to the email delivery preference. If either the **personalEmail** or **workEmail** is specified (or both), the system updates the corresponding email address(es) on file and the email delivery preference is set to `true`. (In that case, emails go to the **workEmail** address, if it exists, or else the **personalEmail**.) On the other hand, if as a result of this call both of the email addresses for the account are empty, the email delivery preference is set to `false`. 4. The bill-to and sold-to contacts are separate data entities; updating either one does not update the other.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_account_with_http_info(account_key, request, async_req=True)
+        >>> thread = api.put_account_with_http_info(account_key, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1160,18 +1160,18 @@ class AccountsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_account" % key
+                    " to method put_account" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'account_key' is set
         if ('account_key' not in params or
                 params['account_key'] is None):
-            raise ValueError("Missing the required parameter `account_key` when calling `p_ut_account`")  # noqa: E501
+            raise ValueError("Missing the required parameter `account_key` when calling `put_account`")  # noqa: E501
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ut_account`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `put_account`")  # noqa: E501
 
         collection_formats = {}
 

@@ -25,13 +25,13 @@ class CustomExchangeRatesApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def g_et_custom_exchange_rates(self, currency, start_date, end_date, **kwargs):  # noqa: E501
+    def get_custom_exchange_rates(self, currency, start_date, end_date, **kwargs):  # noqa: E501
         """Get custom foreign currency exchange rates  # noqa: E501
 
         This feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   This reference describes how to query custom foreign exchange rates from Zuora. You can use this API method to query exchange rates only if you use a custom exchange rate provider and upload rates with the Import Foreign Exchange Rates mass action.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_custom_exchange_rates(currency, start_date, end_date, async_req=True)
+        >>> thread = api.get_custom_exchange_rates(currency, start_date, end_date, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -45,18 +45,18 @@ class CustomExchangeRatesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_custom_exchange_rates_with_http_info(currency, start_date, end_date, **kwargs)  # noqa: E501
+            return self.get_custom_exchange_rates_with_http_info(currency, start_date, end_date, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_custom_exchange_rates_with_http_info(currency, start_date, end_date, **kwargs)  # noqa: E501
+            (data) = self.get_custom_exchange_rates_with_http_info(currency, start_date, end_date, **kwargs)  # noqa: E501
             return data
 
-    def g_et_custom_exchange_rates_with_http_info(self, currency, start_date, end_date, **kwargs):  # noqa: E501
+    def get_custom_exchange_rates_with_http_info(self, currency, start_date, end_date, **kwargs):  # noqa: E501
         """Get custom foreign currency exchange rates  # noqa: E501
 
         This feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   This reference describes how to query custom foreign exchange rates from Zuora. You can use this API method to query exchange rates only if you use a custom exchange rate provider and upload rates with the Import Foreign Exchange Rates mass action.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_custom_exchange_rates_with_http_info(currency, start_date, end_date, async_req=True)
+        >>> thread = api.get_custom_exchange_rates_with_http_info(currency, start_date, end_date, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -80,22 +80,22 @@ class CustomExchangeRatesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_custom_exchange_rates" % key
+                    " to method get_custom_exchange_rates" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'currency' is set
         if ('currency' not in params or
                 params['currency'] is None):
-            raise ValueError("Missing the required parameter `currency` when calling `g_et_custom_exchange_rates`")  # noqa: E501
+            raise ValueError("Missing the required parameter `currency` when calling `get_custom_exchange_rates`")  # noqa: E501
         # verify the required parameter 'start_date' is set
         if ('start_date' not in params or
                 params['start_date'] is None):
-            raise ValueError("Missing the required parameter `start_date` when calling `g_et_custom_exchange_rates`")  # noqa: E501
+            raise ValueError("Missing the required parameter `start_date` when calling `get_custom_exchange_rates`")  # noqa: E501
         # verify the required parameter 'end_date' is set
         if ('end_date' not in params or
                 params['end_date'] is None):
-            raise ValueError("Missing the required parameter `end_date` when calling `g_et_custom_exchange_rates`")  # noqa: E501
+            raise ValueError("Missing the required parameter `end_date` when calling `get_custom_exchange_rates`")  # noqa: E501
 
         collection_formats = {}
 

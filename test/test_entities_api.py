@@ -29,43 +29,43 @@ class TestEntitiesApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_d_elete_entities(self):
-        """Test case for d_elete_entities
+    def test_delete_entities(self):
+        """Test case for delete_entities
 
         Multi-entity: Delete entity  # noqa: E501
         """
         pass
 
-    def test_g_et_entities(self):
-        """Test case for g_et_entities
+    def test_get_entities(self):
+        """Test case for get_entities
 
         Multi-entity: Get entities  # noqa: E501
         """
         pass
 
-    def test_g_et_entity_by_id(self):
-        """Test case for g_et_entity_by_id
+    def test_get_entity_by_id(self):
+        """Test case for get_entity_by_id
 
         Multi-entity: Get entity by Id  # noqa: E501
         """
         pass
 
-    def test_p_ost_entities(self):
-        """Test case for p_ost_entities
+    def test_post_entities(self):
+        """Test case for post_entities
 
         Multi-entity: Create entity  # noqa: E501
         """
         pass
 
-    def test_p_ut_entities(self):
-        """Test case for p_ut_entities
+    def test_put_entities(self):
+        """Test case for put_entities
 
         Multi-entity: Update entity  # noqa: E501
         """
         pass
 
-    def test_p_ut_provision_entity(self):
-        """Test case for p_ut_provision_entity
+    def test_put_provision_entity(self):
+        """Test case for put_provision_entity
 
         Multi-entity: Provision entity  # noqa: E501
         """

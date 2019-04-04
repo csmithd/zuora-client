@@ -25,13 +25,13 @@ class PaymentGatewaysApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def g_et_paymentgateways(self, **kwargs):  # noqa: E501
+    def get_paymentgateways(self, **kwargs):  # noqa: E501
         """Get payment gateways  # noqa: E501
 
         Retrieves the basic information about all the payment gateways.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_paymentgateways(async_req=True)
+        >>> thread = api.get_paymentgateways(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -42,18 +42,18 @@ class PaymentGatewaysApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_paymentgateways_with_http_info(**kwargs)  # noqa: E501
+            return self.get_paymentgateways_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_paymentgateways_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.get_paymentgateways_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def g_et_paymentgateways_with_http_info(self, **kwargs):  # noqa: E501
+    def get_paymentgateways_with_http_info(self, **kwargs):  # noqa: E501
         """Get payment gateways  # noqa: E501
 
         Retrieves the basic information about all the payment gateways.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_paymentgateways_with_http_info(async_req=True)
+        >>> thread = api.get_paymentgateways_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -74,7 +74,7 @@ class PaymentGatewaysApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_paymentgateways" % key
+                    " to method get_paymentgateways" % key
                 )
             params[key] = val
         del params['kwargs']

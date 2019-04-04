@@ -25,13 +25,13 @@ class LinkQueriesApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def d_elete_link_query_job(self, authorization, job_id, **kwargs):  # noqa: E501
+    def delete_link_query_job(self, authorization, job_id, **kwargs):  # noqa: E501
         """Cancel Link query job  # noqa: E501
 
         Cancels a [Zuora Link](https://knowledgecenter.zuora.com/DC_Developers/BA_Zuora_Link) query job, which prevents Zuora from performing the query. This operation is only applicable if the status of the query job is `accepted` or `in_progress`.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_link_query_job(authorization, job_id, async_req=True)
+        >>> thread = api.delete_link_query_job(authorization, job_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -45,18 +45,18 @@ class LinkQueriesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.d_elete_link_query_job_with_http_info(authorization, job_id, **kwargs)  # noqa: E501
+            return self.delete_link_query_job_with_http_info(authorization, job_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.d_elete_link_query_job_with_http_info(authorization, job_id, **kwargs)  # noqa: E501
+            (data) = self.delete_link_query_job_with_http_info(authorization, job_id, **kwargs)  # noqa: E501
             return data
 
-    def d_elete_link_query_job_with_http_info(self, authorization, job_id, **kwargs):  # noqa: E501
+    def delete_link_query_job_with_http_info(self, authorization, job_id, **kwargs):  # noqa: E501
         """Cancel Link query job  # noqa: E501
 
         Cancels a [Zuora Link](https://knowledgecenter.zuora.com/DC_Developers/BA_Zuora_Link) query job, which prevents Zuora from performing the query. This operation is only applicable if the status of the query job is `accepted` or `in_progress`.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_link_query_job_with_http_info(authorization, job_id, async_req=True)
+        >>> thread = api.delete_link_query_job_with_http_info(authorization, job_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -80,28 +80,28 @@ class LinkQueriesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method d_elete_link_query_job" % key
+                    " to method delete_link_query_job" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'authorization' is set
         if ('authorization' not in params or
                 params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `d_elete_link_query_job`")  # noqa: E501
+            raise ValueError("Missing the required parameter `authorization` when calling `delete_link_query_job`")  # noqa: E501
         # verify the required parameter 'job_id' is set
         if ('job_id' not in params or
                 params['job_id'] is None):
-            raise ValueError("Missing the required parameter `job_id` when calling `d_elete_link_query_job`")  # noqa: E501
+            raise ValueError("Missing the required parameter `job_id` when calling `delete_link_query_job`")  # noqa: E501
 
         if ('job_id' in params and
                 len(params['job_id']) > 64):
-            raise ValueError("Invalid value for parameter `job_id` when calling `d_elete_link_query_job`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `job_id` when calling `delete_link_query_job`, length must be less than or equal to `64`")  # noqa: E501
         if ('job_id' in params and
                 len(params['job_id']) < 64):
-            raise ValueError("Invalid value for parameter `job_id` when calling `d_elete_link_query_job`, length must be greater than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `job_id` when calling `delete_link_query_job`, length must be greater than or equal to `64`")  # noqa: E501
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `d_elete_link_query_job`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `delete_link_query_job`, length must be less than or equal to `64`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -149,13 +149,13 @@ class LinkQueriesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_link_query_job(self, authorization, job_id, **kwargs):  # noqa: E501
+    def get_link_query_job(self, authorization, job_id, **kwargs):  # noqa: E501
         """Get Link query job  # noqa: E501
 
         Retrieves a [Zuora Link](https://knowledgecenter.zuora.com/DC_Developers/BA_Zuora_Link) query job. You can use this operation to track the status of the query job and obtain the URL of the query results.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_link_query_job(authorization, job_id, async_req=True)
+        >>> thread = api.get_link_query_job(authorization, job_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -169,18 +169,18 @@ class LinkQueriesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_link_query_job_with_http_info(authorization, job_id, **kwargs)  # noqa: E501
+            return self.get_link_query_job_with_http_info(authorization, job_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_link_query_job_with_http_info(authorization, job_id, **kwargs)  # noqa: E501
+            (data) = self.get_link_query_job_with_http_info(authorization, job_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_link_query_job_with_http_info(self, authorization, job_id, **kwargs):  # noqa: E501
+    def get_link_query_job_with_http_info(self, authorization, job_id, **kwargs):  # noqa: E501
         """Get Link query job  # noqa: E501
 
         Retrieves a [Zuora Link](https://knowledgecenter.zuora.com/DC_Developers/BA_Zuora_Link) query job. You can use this operation to track the status of the query job and obtain the URL of the query results.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_link_query_job_with_http_info(authorization, job_id, async_req=True)
+        >>> thread = api.get_link_query_job_with_http_info(authorization, job_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -204,28 +204,28 @@ class LinkQueriesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_link_query_job" % key
+                    " to method get_link_query_job" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'authorization' is set
         if ('authorization' not in params or
                 params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `g_et_link_query_job`")  # noqa: E501
+            raise ValueError("Missing the required parameter `authorization` when calling `get_link_query_job`")  # noqa: E501
         # verify the required parameter 'job_id' is set
         if ('job_id' not in params or
                 params['job_id'] is None):
-            raise ValueError("Missing the required parameter `job_id` when calling `g_et_link_query_job`")  # noqa: E501
+            raise ValueError("Missing the required parameter `job_id` when calling `get_link_query_job`")  # noqa: E501
 
         if ('job_id' in params and
                 len(params['job_id']) > 36):
-            raise ValueError("Invalid value for parameter `job_id` when calling `g_et_link_query_job`, length must be less than or equal to `36`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `job_id` when calling `get_link_query_job`, length must be less than or equal to `36`")  # noqa: E501
         if ('job_id' in params and
                 len(params['job_id']) < 36):
-            raise ValueError("Invalid value for parameter `job_id` when calling `g_et_link_query_job`, length must be greater than or equal to `36`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `job_id` when calling `get_link_query_job`, length must be greater than or equal to `36`")  # noqa: E501
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `g_et_link_query_job`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `get_link_query_job`, length must be less than or equal to `64`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -273,13 +273,13 @@ class LinkQueriesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_link_query_jobs(self, authorization, **kwargs):  # noqa: E501
+    def get_link_query_jobs(self, authorization, **kwargs):  # noqa: E501
         """Get Link query jobs  # noqa: E501
 
         Returns a list of [Zuora Link](https://knowledgecenter.zuora.com/DC_Developers/BA_Zuora_Link) query jobs that have been created in your Zuora tenant. You can filter the list by status.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_link_query_jobs(authorization, async_req=True)
+        >>> thread = api.get_link_query_jobs(authorization, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -294,18 +294,18 @@ class LinkQueriesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_link_query_jobs_with_http_info(authorization, **kwargs)  # noqa: E501
+            return self.get_link_query_jobs_with_http_info(authorization, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_link_query_jobs_with_http_info(authorization, **kwargs)  # noqa: E501
+            (data) = self.get_link_query_jobs_with_http_info(authorization, **kwargs)  # noqa: E501
             return data
 
-    def g_et_link_query_jobs_with_http_info(self, authorization, **kwargs):  # noqa: E501
+    def get_link_query_jobs_with_http_info(self, authorization, **kwargs):  # noqa: E501
         """Get Link query jobs  # noqa: E501
 
         Returns a list of [Zuora Link](https://knowledgecenter.zuora.com/DC_Developers/BA_Zuora_Link) query jobs that have been created in your Zuora tenant. You can filter the list by status.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_link_query_jobs_with_http_info(authorization, async_req=True)
+        >>> thread = api.get_link_query_jobs_with_http_info(authorization, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -330,20 +330,20 @@ class LinkQueriesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_link_query_jobs" % key
+                    " to method get_link_query_jobs" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'authorization' is set
         if ('authorization' not in params or
                 params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `g_et_link_query_jobs`")  # noqa: E501
+            raise ValueError("Missing the required parameter `authorization` when calling `get_link_query_jobs`")  # noqa: E501
 
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `g_et_link_query_jobs`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `get_link_query_jobs`, length must be less than or equal to `64`")  # noqa: E501
         if 'page_size' in params and params['page_size'] > 100:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_link_query_jobs`, must be a value less than or equal to `100`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_link_query_jobs`, must be a value less than or equal to `100`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -393,13 +393,13 @@ class LinkQueriesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_link_query_job(self, authorization, body, **kwargs):  # noqa: E501
+    def post_link_query_job(self, authorization, body, **kwargs):  # noqa: E501
         """Submit Link query  # noqa: E501
 
         Submits a [Zuora Link](https://knowledgecenter.zuora.com/DC_Developers/BA_Zuora_Link) query to be performed by Zuora and creates a query job. You can use [Get Link query job](#operation/GET_LinkQueryJob) to track the status of the query job and obtain the URL of the query results.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_link_query_job(authorization, body, async_req=True)
+        >>> thread = api.post_link_query_job(authorization, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -413,18 +413,18 @@ class LinkQueriesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_link_query_job_with_http_info(authorization, body, **kwargs)  # noqa: E501
+            return self.post_link_query_job_with_http_info(authorization, body, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_link_query_job_with_http_info(authorization, body, **kwargs)  # noqa: E501
+            (data) = self.post_link_query_job_with_http_info(authorization, body, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_link_query_job_with_http_info(self, authorization, body, **kwargs):  # noqa: E501
+    def post_link_query_job_with_http_info(self, authorization, body, **kwargs):  # noqa: E501
         """Submit Link query  # noqa: E501
 
         Submits a [Zuora Link](https://knowledgecenter.zuora.com/DC_Developers/BA_Zuora_Link) query to be performed by Zuora and creates a query job. You can use [Get Link query job](#operation/GET_LinkQueryJob) to track the status of the query job and obtain the URL of the query results.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_link_query_job_with_http_info(authorization, body, async_req=True)
+        >>> thread = api.post_link_query_job_with_http_info(authorization, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -448,22 +448,22 @@ class LinkQueriesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_link_query_job" % key
+                    " to method post_link_query_job" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'authorization' is set
         if ('authorization' not in params or
                 params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `p_ost_link_query_job`")  # noqa: E501
+            raise ValueError("Missing the required parameter `authorization` when calling `post_link_query_job`")  # noqa: E501
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ost_link_query_job`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `post_link_query_job`")  # noqa: E501
 
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `p_ost_link_query_job`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `post_link_query_job`, length must be less than or equal to `64`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}

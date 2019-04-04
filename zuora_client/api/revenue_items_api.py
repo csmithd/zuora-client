@@ -25,13 +25,13 @@ class RevenueItemsApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def g_et_revenue_items_by_charge_revenue_event_number(self, event_number, **kwargs):  # noqa: E501
+    def get_revenue_items_by_charge_revenue_event_number(self, event_number, **kwargs):  # noqa: E501
         """Get revenue items by revenue event number  # noqa: E501
 
         This REST API reference describes how to get the details of each revenue item in a revenue event by specifying the revenue event number. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_revenue_items_by_charge_revenue_event_number(event_number, async_req=True)
+        >>> thread = api.get_revenue_items_by_charge_revenue_event_number(event_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -44,18 +44,18 @@ class RevenueItemsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_revenue_items_by_charge_revenue_event_number_with_http_info(event_number, **kwargs)  # noqa: E501
+            return self.get_revenue_items_by_charge_revenue_event_number_with_http_info(event_number, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_revenue_items_by_charge_revenue_event_number_with_http_info(event_number, **kwargs)  # noqa: E501
+            (data) = self.get_revenue_items_by_charge_revenue_event_number_with_http_info(event_number, **kwargs)  # noqa: E501
             return data
 
-    def g_et_revenue_items_by_charge_revenue_event_number_with_http_info(self, event_number, **kwargs):  # noqa: E501
+    def get_revenue_items_by_charge_revenue_event_number_with_http_info(self, event_number, **kwargs):  # noqa: E501
         """Get revenue items by revenue event number  # noqa: E501
 
         This REST API reference describes how to get the details of each revenue item in a revenue event by specifying the revenue event number. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_revenue_items_by_charge_revenue_event_number_with_http_info(event_number, async_req=True)
+        >>> thread = api.get_revenue_items_by_charge_revenue_event_number_with_http_info(event_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -78,17 +78,17 @@ class RevenueItemsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_revenue_items_by_charge_revenue_event_number" % key
+                    " to method get_revenue_items_by_charge_revenue_event_number" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'event_number' is set
         if ('event_number' not in params or
                 params['event_number'] is None):
-            raise ValueError("Missing the required parameter `event_number` when calling `g_et_revenue_items_by_charge_revenue_event_number`")  # noqa: E501
+            raise ValueError("Missing the required parameter `event_number` when calling `get_revenue_items_by_charge_revenue_event_number`")  # noqa: E501
 
         if 'page_size' in params and params['page_size'] > 300:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_revenue_items_by_charge_revenue_event_number`, must be a value less than or equal to `300`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_revenue_items_by_charge_revenue_event_number`, must be a value less than or equal to `300`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -134,13 +134,13 @@ class RevenueItemsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_revenue_items_by_charge_revenue_summary_number(self, crs_number, **kwargs):  # noqa: E501
+    def get_revenue_items_by_charge_revenue_summary_number(self, crs_number, **kwargs):  # noqa: E501
         """Get revenue items by charge revenue summary number  # noqa: E501
 
         This REST API reference describes how to get the details for each revenue item in a charge revenue summary by specifying the charge revenue summary number. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_revenue_items_by_charge_revenue_summary_number(crs_number, async_req=True)
+        >>> thread = api.get_revenue_items_by_charge_revenue_summary_number(crs_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -153,18 +153,18 @@ class RevenueItemsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_revenue_items_by_charge_revenue_summary_number_with_http_info(crs_number, **kwargs)  # noqa: E501
+            return self.get_revenue_items_by_charge_revenue_summary_number_with_http_info(crs_number, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_revenue_items_by_charge_revenue_summary_number_with_http_info(crs_number, **kwargs)  # noqa: E501
+            (data) = self.get_revenue_items_by_charge_revenue_summary_number_with_http_info(crs_number, **kwargs)  # noqa: E501
             return data
 
-    def g_et_revenue_items_by_charge_revenue_summary_number_with_http_info(self, crs_number, **kwargs):  # noqa: E501
+    def get_revenue_items_by_charge_revenue_summary_number_with_http_info(self, crs_number, **kwargs):  # noqa: E501
         """Get revenue items by charge revenue summary number  # noqa: E501
 
         This REST API reference describes how to get the details for each revenue item in a charge revenue summary by specifying the charge revenue summary number. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_revenue_items_by_charge_revenue_summary_number_with_http_info(crs_number, async_req=True)
+        >>> thread = api.get_revenue_items_by_charge_revenue_summary_number_with_http_info(crs_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -187,17 +187,17 @@ class RevenueItemsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_revenue_items_by_charge_revenue_summary_number" % key
+                    " to method get_revenue_items_by_charge_revenue_summary_number" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'crs_number' is set
         if ('crs_number' not in params or
                 params['crs_number'] is None):
-            raise ValueError("Missing the required parameter `crs_number` when calling `g_et_revenue_items_by_charge_revenue_summary_number`")  # noqa: E501
+            raise ValueError("Missing the required parameter `crs_number` when calling `get_revenue_items_by_charge_revenue_summary_number`")  # noqa: E501
 
         if 'page_size' in params and params['page_size'] > 300:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_revenue_items_by_charge_revenue_summary_number`, must be a value less than or equal to `300`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_revenue_items_by_charge_revenue_summary_number`, must be a value less than or equal to `300`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -243,13 +243,13 @@ class RevenueItemsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_revenue_items_by_revenue_schedule(self, rs_number, **kwargs):  # noqa: E501
+    def get_revenue_items_by_revenue_schedule(self, rs_number, **kwargs):  # noqa: E501
         """Get revenue items by revenue schedule  # noqa: E501
 
         This REST API reference describes how to get the details for each revenue items in a revenue schedule by specifying the revenue schedule number. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_revenue_items_by_revenue_schedule(rs_number, async_req=True)
+        >>> thread = api.get_revenue_items_by_revenue_schedule(rs_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -262,18 +262,18 @@ class RevenueItemsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_revenue_items_by_revenue_schedule_with_http_info(rs_number, **kwargs)  # noqa: E501
+            return self.get_revenue_items_by_revenue_schedule_with_http_info(rs_number, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_revenue_items_by_revenue_schedule_with_http_info(rs_number, **kwargs)  # noqa: E501
+            (data) = self.get_revenue_items_by_revenue_schedule_with_http_info(rs_number, **kwargs)  # noqa: E501
             return data
 
-    def g_et_revenue_items_by_revenue_schedule_with_http_info(self, rs_number, **kwargs):  # noqa: E501
+    def get_revenue_items_by_revenue_schedule_with_http_info(self, rs_number, **kwargs):  # noqa: E501
         """Get revenue items by revenue schedule  # noqa: E501
 
         This REST API reference describes how to get the details for each revenue items in a revenue schedule by specifying the revenue schedule number. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_revenue_items_by_revenue_schedule_with_http_info(rs_number, async_req=True)
+        >>> thread = api.get_revenue_items_by_revenue_schedule_with_http_info(rs_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -296,17 +296,17 @@ class RevenueItemsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_revenue_items_by_revenue_schedule" % key
+                    " to method get_revenue_items_by_revenue_schedule" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'rs_number' is set
         if ('rs_number' not in params or
                 params['rs_number'] is None):
-            raise ValueError("Missing the required parameter `rs_number` when calling `g_et_revenue_items_by_revenue_schedule`")  # noqa: E501
+            raise ValueError("Missing the required parameter `rs_number` when calling `get_revenue_items_by_revenue_schedule`")  # noqa: E501
 
         if 'page_size' in params and params['page_size'] > 300:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_revenue_items_by_revenue_schedule`, must be a value less than or equal to `300`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_revenue_items_by_revenue_schedule`, must be a value less than or equal to `300`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -352,13 +352,13 @@ class RevenueItemsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_custom_fieldson_revenue_items_by_revenue_event(self, event_number, request, **kwargs):  # noqa: E501
+    def put_custom_fieldson_revenue_items_by_revenue_event(self, event_number, request, **kwargs):  # noqa: E501
         """Update custom fields on revenue items by revenue event number  # noqa: E501
 
         This REST API reference describes how to update custom fields on revenue items by specifying the revenue event number. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_custom_fieldson_revenue_items_by_revenue_event(event_number, request, async_req=True)
+        >>> thread = api.put_custom_fieldson_revenue_items_by_revenue_event(event_number, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -371,18 +371,18 @@ class RevenueItemsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_custom_fieldson_revenue_items_by_revenue_event_with_http_info(event_number, request, **kwargs)  # noqa: E501
+            return self.put_custom_fieldson_revenue_items_by_revenue_event_with_http_info(event_number, request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_custom_fieldson_revenue_items_by_revenue_event_with_http_info(event_number, request, **kwargs)  # noqa: E501
+            (data) = self.put_custom_fieldson_revenue_items_by_revenue_event_with_http_info(event_number, request, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_custom_fieldson_revenue_items_by_revenue_event_with_http_info(self, event_number, request, **kwargs):  # noqa: E501
+    def put_custom_fieldson_revenue_items_by_revenue_event_with_http_info(self, event_number, request, **kwargs):  # noqa: E501
         """Update custom fields on revenue items by revenue event number  # noqa: E501
 
         This REST API reference describes how to update custom fields on revenue items by specifying the revenue event number. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_custom_fieldson_revenue_items_by_revenue_event_with_http_info(event_number, request, async_req=True)
+        >>> thread = api.put_custom_fieldson_revenue_items_by_revenue_event_with_http_info(event_number, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -405,18 +405,18 @@ class RevenueItemsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_custom_fieldson_revenue_items_by_revenue_event" % key
+                    " to method put_custom_fieldson_revenue_items_by_revenue_event" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'event_number' is set
         if ('event_number' not in params or
                 params['event_number'] is None):
-            raise ValueError("Missing the required parameter `event_number` when calling `p_ut_custom_fieldson_revenue_items_by_revenue_event`")  # noqa: E501
+            raise ValueError("Missing the required parameter `event_number` when calling `put_custom_fieldson_revenue_items_by_revenue_event`")  # noqa: E501
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ut_custom_fieldson_revenue_items_by_revenue_event`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `put_custom_fieldson_revenue_items_by_revenue_event`")  # noqa: E501
 
         collection_formats = {}
 
@@ -463,13 +463,13 @@ class RevenueItemsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_custom_fieldson_revenue_items_by_revenue_schedule(self, rs_number, request, **kwargs):  # noqa: E501
+    def put_custom_fieldson_revenue_items_by_revenue_schedule(self, rs_number, request, **kwargs):  # noqa: E501
         """Update custom fields on revenue items by revenue schedule number  # noqa: E501
 
         This REST API reference describes how to update custom fields on revenue Items by specifying the revenue schedule number. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_custom_fieldson_revenue_items_by_revenue_schedule(rs_number, request, async_req=True)
+        >>> thread = api.put_custom_fieldson_revenue_items_by_revenue_schedule(rs_number, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -482,18 +482,18 @@ class RevenueItemsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_custom_fieldson_revenue_items_by_revenue_schedule_with_http_info(rs_number, request, **kwargs)  # noqa: E501
+            return self.put_custom_fieldson_revenue_items_by_revenue_schedule_with_http_info(rs_number, request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_custom_fieldson_revenue_items_by_revenue_schedule_with_http_info(rs_number, request, **kwargs)  # noqa: E501
+            (data) = self.put_custom_fieldson_revenue_items_by_revenue_schedule_with_http_info(rs_number, request, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_custom_fieldson_revenue_items_by_revenue_schedule_with_http_info(self, rs_number, request, **kwargs):  # noqa: E501
+    def put_custom_fieldson_revenue_items_by_revenue_schedule_with_http_info(self, rs_number, request, **kwargs):  # noqa: E501
         """Update custom fields on revenue items by revenue schedule number  # noqa: E501
 
         This REST API reference describes how to update custom fields on revenue Items by specifying the revenue schedule number. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_custom_fieldson_revenue_items_by_revenue_schedule_with_http_info(rs_number, request, async_req=True)
+        >>> thread = api.put_custom_fieldson_revenue_items_by_revenue_schedule_with_http_info(rs_number, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -516,18 +516,18 @@ class RevenueItemsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_custom_fieldson_revenue_items_by_revenue_schedule" % key
+                    " to method put_custom_fieldson_revenue_items_by_revenue_schedule" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'rs_number' is set
         if ('rs_number' not in params or
                 params['rs_number'] is None):
-            raise ValueError("Missing the required parameter `rs_number` when calling `p_ut_custom_fieldson_revenue_items_by_revenue_schedule`")  # noqa: E501
+            raise ValueError("Missing the required parameter `rs_number` when calling `put_custom_fieldson_revenue_items_by_revenue_schedule`")  # noqa: E501
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ut_custom_fieldson_revenue_items_by_revenue_schedule`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `put_custom_fieldson_revenue_items_by_revenue_schedule`")  # noqa: E501
 
         collection_formats = {}
 

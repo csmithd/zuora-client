@@ -25,13 +25,13 @@ class RSASignaturesApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def p_ost_decrypt_rsa_signatures(self, request, **kwargs):  # noqa: E501
+    def post_decrypt_rsa_signatures(self, request, **kwargs):  # noqa: E501
         """Decrypt RSA signature  # noqa: E501
 
          The REST API used in Payment Pages 2.0 are CORS (Cross-Origin Resource Sharing) enabled and therefore requires a digital signature. You use rsa_signatures to generate the required digital signature and token for a Payment Pages 2.0 form, and then you use the decrypt REST service to decrypt the signature to validate the signature and key.  This REST service should be used only when you implement Payment Pages 2.0.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_decrypt_rsa_signatures(request, async_req=True)
+        >>> thread = api.post_decrypt_rsa_signatures(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -43,18 +43,18 @@ class RSASignaturesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_decrypt_rsa_signatures_with_http_info(request, **kwargs)  # noqa: E501
+            return self.post_decrypt_rsa_signatures_with_http_info(request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_decrypt_rsa_signatures_with_http_info(request, **kwargs)  # noqa: E501
+            (data) = self.post_decrypt_rsa_signatures_with_http_info(request, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_decrypt_rsa_signatures_with_http_info(self, request, **kwargs):  # noqa: E501
+    def post_decrypt_rsa_signatures_with_http_info(self, request, **kwargs):  # noqa: E501
         """Decrypt RSA signature  # noqa: E501
 
          The REST API used in Payment Pages 2.0 are CORS (Cross-Origin Resource Sharing) enabled and therefore requires a digital signature. You use rsa_signatures to generate the required digital signature and token for a Payment Pages 2.0 form, and then you use the decrypt REST service to decrypt the signature to validate the signature and key.  This REST service should be used only when you implement Payment Pages 2.0.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_decrypt_rsa_signatures_with_http_info(request, async_req=True)
+        >>> thread = api.post_decrypt_rsa_signatures_with_http_info(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -76,14 +76,14 @@ class RSASignaturesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_decrypt_rsa_signatures" % key
+                    " to method post_decrypt_rsa_signatures" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ost_decrypt_rsa_signatures`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `post_decrypt_rsa_signatures`")  # noqa: E501
 
         collection_formats = {}
 
@@ -128,13 +128,13 @@ class RSASignaturesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ostrsa_signatures(self, request, **kwargs):  # noqa: E501
+    def postrsa_signatures(self, request, **kwargs):  # noqa: E501
         """Generate RSA signature  # noqa: E501
 
          The REST API used in Payment Pages 2.0 are CORS (Cross-Origin Resource Sharing) enabled and therefore requires a digital signature. The POST rsa_signatures call generates and returns the required digital signature and token for a Payment Pages 2.0 form. You need to pass the generated signature to your client for it to access Payment Pages 2.0.     This REST service should be used only when you implement Payment Pages 2.0.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ostrsa_signatures(request, async_req=True)
+        >>> thread = api.postrsa_signatures(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -146,18 +146,18 @@ class RSASignaturesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ostrsa_signatures_with_http_info(request, **kwargs)  # noqa: E501
+            return self.postrsa_signatures_with_http_info(request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ostrsa_signatures_with_http_info(request, **kwargs)  # noqa: E501
+            (data) = self.postrsa_signatures_with_http_info(request, **kwargs)  # noqa: E501
             return data
 
-    def p_ostrsa_signatures_with_http_info(self, request, **kwargs):  # noqa: E501
+    def postrsa_signatures_with_http_info(self, request, **kwargs):  # noqa: E501
         """Generate RSA signature  # noqa: E501
 
          The REST API used in Payment Pages 2.0 are CORS (Cross-Origin Resource Sharing) enabled and therefore requires a digital signature. The POST rsa_signatures call generates and returns the required digital signature and token for a Payment Pages 2.0 form. You need to pass the generated signature to your client for it to access Payment Pages 2.0.     This REST service should be used only when you implement Payment Pages 2.0.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ostrsa_signatures_with_http_info(request, async_req=True)
+        >>> thread = api.postrsa_signatures_with_http_info(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -179,14 +179,14 @@ class RSASignaturesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ostrsa_signatures" % key
+                    " to method postrsa_signatures" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ostrsa_signatures`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `postrsa_signatures`")  # noqa: E501
 
         collection_formats = {}
 

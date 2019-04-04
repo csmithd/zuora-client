@@ -29,22 +29,22 @@ class TestSubscriptionsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_g_et_subscriptions_by_account(self):
-        """Test case for g_et_subscriptions_by_account
+    def test_get_subscriptions_by_account(self):
+        """Test case for get_subscriptions_by_account
 
         Get subscriptions by account  # noqa: E501
         """
         pass
 
-    def test_g_et_subscriptions_by_key(self):
-        """Test case for g_et_subscriptions_by_key
+    def test_get_subscriptions_by_key(self):
+        """Test case for get_subscriptions_by_key
 
         Get subscriptions by key  # noqa: E501
         """
         pass
 
-    def test_g_et_subscriptions_by_key_and_version(self):
-        """Test case for g_et_subscriptions_by_key_and_version
+    def test_get_subscriptions_by_key_and_version(self):
+        """Test case for get_subscriptions_by_key_and_version
 
         Get subscriptions by key and version  # noqa: E501
         """
@@ -71,50 +71,50 @@ class TestSubscriptionsApi(unittest.TestCase):
         """
         pass
 
-    def test_p_ost_preview_subscription(self):
-        """Test case for p_ost_preview_subscription
+    def test_post_preview_subscription(self):
+        """Test case for post_preview_subscription
 
         Preview subscription  # noqa: E501
         """
         pass
 
-    def test_p_ost_subscription(self):
-        """Test case for p_ost_subscription
+    def test_post_subscription(self):
+        """Test case for post_subscription
 
         Create subscription  # noqa: E501
         """
         pass
 
-    def test_p_ut_cancel_subscription(self):
-        """Test case for p_ut_cancel_subscription
+    def test_put_cancel_subscription(self):
+        """Test case for put_cancel_subscription
 
         Cancel subscription  # noqa: E501
         """
         pass
 
-    def test_p_ut_renew_subscription(self):
-        """Test case for p_ut_renew_subscription
+    def test_put_renew_subscription(self):
+        """Test case for put_renew_subscription
 
         Renew subscription  # noqa: E501
         """
         pass
 
-    def test_p_ut_resume_subscription(self):
-        """Test case for p_ut_resume_subscription
+    def test_put_resume_subscription(self):
+        """Test case for put_resume_subscription
 
         Resume subscription  # noqa: E501
         """
         pass
 
-    def test_p_ut_subscription(self):
-        """Test case for p_ut_subscription
+    def test_put_subscription(self):
+        """Test case for put_subscription
 
         Update subscription  # noqa: E501
         """
         pass
 
-    def test_p_ut_suspend_subscription(self):
-        """Test case for p_ut_suspend_subscription
+    def test_put_suspend_subscription(self):
+        """Test case for put_suspend_subscription
 
         Suspend subscription  # noqa: E501
         """

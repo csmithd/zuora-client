@@ -29,15 +29,15 @@ class TestAmendmentsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_g_et_amendments_by_key(self):
-        """Test case for g_et_amendments_by_key
+    def test_get_amendments_by_key(self):
+        """Test case for get_amendments_by_key
 
         Get amendments by key  # noqa: E501
         """
         pass
 
-    def test_g_et_amendments_by_subscription_id(self):
-        """Test case for g_et_amendments_by_subscription_id
+    def test_get_amendments_by_subscription_id(self):
+        """Test case for get_amendments_by_subscription_id
 
         Get amendments by subscription ID  # noqa: E501
         """

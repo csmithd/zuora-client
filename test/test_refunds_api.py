@@ -29,50 +29,50 @@ class TestRefundsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_d_elete_refund(self):
-        """Test case for d_elete_refund
+    def test_delete_refund(self):
+        """Test case for delete_refund
 
         Delete refund  # noqa: E501
         """
         pass
 
-    def test_g_et_refund(self):
-        """Test case for g_et_refund
+    def test_get_refund(self):
+        """Test case for get_refund
 
         Get refund  # noqa: E501
         """
         pass
 
-    def test_g_et_refund_item_part(self):
-        """Test case for g_et_refund_item_part
+    def test_get_refund_item_part(self):
+        """Test case for get_refund_item_part
 
         Get refund part item  # noqa: E501
         """
         pass
 
-    def test_g_et_refund_item_parts(self):
-        """Test case for g_et_refund_item_parts
+    def test_get_refund_item_parts(self):
+        """Test case for get_refund_item_parts
 
         Get refund part items  # noqa: E501
         """
         pass
 
-    def test_g_et_refund_part(self):
-        """Test case for g_et_refund_part
+    def test_get_refund_part(self):
+        """Test case for get_refund_part
 
         Get refund part  # noqa: E501
         """
         pass
 
-    def test_g_et_refund_parts(self):
-        """Test case for g_et_refund_parts
+    def test_get_refund_parts(self):
+        """Test case for get_refund_parts
 
         Get refund parts  # noqa: E501
         """
         pass
 
-    def test_g_et_refunds(self):
-        """Test case for g_et_refunds
+    def test_get_refunds(self):
+        """Test case for get_refunds
 
         Get all refunds  # noqa: E501
         """
@@ -106,15 +106,15 @@ class TestRefundsApi(unittest.TestCase):
         """
         pass
 
-    def test_p_ut_cancel_refund(self):
-        """Test case for p_ut_cancel_refund
+    def test_put_cancel_refund(self):
+        """Test case for put_cancel_refund
 
         Cancel refund  # noqa: E501
         """
         pass
 
-    def test_p_ut_update_refund(self):
-        """Test case for p_ut_update_refund
+    def test_put_update_refund(self):
+        """Test case for put_update_refund
 
         Update refund  # noqa: E501
         """

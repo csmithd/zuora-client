@@ -29,8 +29,8 @@ class TestDescribeApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_g_et_describe(self):
-        """Test case for g_et_describe
+    def test_get_describe(self):
+        """Test case for get_describe
 
         Describe object  # noqa: E501
         """

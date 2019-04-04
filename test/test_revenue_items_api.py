@@ -29,36 +29,36 @@ class TestRevenueItemsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_g_et_revenue_items_by_charge_revenue_event_number(self):
-        """Test case for g_et_revenue_items_by_charge_revenue_event_number
+    def test_get_revenue_items_by_charge_revenue_event_number(self):
+        """Test case for get_revenue_items_by_charge_revenue_event_number
 
         Get revenue items by revenue event number  # noqa: E501
         """
         pass
 
-    def test_g_et_revenue_items_by_charge_revenue_summary_number(self):
-        """Test case for g_et_revenue_items_by_charge_revenue_summary_number
+    def test_get_revenue_items_by_charge_revenue_summary_number(self):
+        """Test case for get_revenue_items_by_charge_revenue_summary_number
 
         Get revenue items by charge revenue summary number  # noqa: E501
         """
         pass
 
-    def test_g_et_revenue_items_by_revenue_schedule(self):
-        """Test case for g_et_revenue_items_by_revenue_schedule
+    def test_get_revenue_items_by_revenue_schedule(self):
+        """Test case for get_revenue_items_by_revenue_schedule
 
         Get revenue items by revenue schedule  # noqa: E501
         """
         pass
 
-    def test_p_ut_custom_fieldson_revenue_items_by_revenue_event(self):
-        """Test case for p_ut_custom_fieldson_revenue_items_by_revenue_event
+    def test_put_custom_fieldson_revenue_items_by_revenue_event(self):
+        """Test case for put_custom_fieldson_revenue_items_by_revenue_event
 
         Update custom fields on revenue items by revenue event number  # noqa: E501
         """
         pass
 
-    def test_p_ut_custom_fieldson_revenue_items_by_revenue_schedule(self):
-        """Test case for p_ut_custom_fieldson_revenue_items_by_revenue_schedule
+    def test_put_custom_fieldson_revenue_items_by_revenue_schedule(self):
+        """Test case for put_custom_fieldson_revenue_items_by_revenue_schedule
 
         Update custom fields on revenue items by revenue schedule number  # noqa: E501
         """

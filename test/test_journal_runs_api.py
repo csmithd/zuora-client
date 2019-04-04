@@ -29,29 +29,29 @@ class TestJournalRunsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_d_elete_journal_run(self):
-        """Test case for d_elete_journal_run
+    def test_delete_journal_run(self):
+        """Test case for delete_journal_run
 
         Delete journal run  # noqa: E501
         """
         pass
 
-    def test_g_et_journal_run(self):
-        """Test case for g_et_journal_run
+    def test_get_journal_run(self):
+        """Test case for get_journal_run
 
         Get journal run  # noqa: E501
         """
         pass
 
-    def test_p_ost_journal_run(self):
-        """Test case for p_ost_journal_run
+    def test_post_journal_run(self):
+        """Test case for post_journal_run
 
         Create journal run  # noqa: E501
         """
         pass
 
-    def test_p_ut_journal_run(self):
-        """Test case for p_ut_journal_run
+    def test_put_journal_run(self):
+        """Test case for put_journal_run
 
         Cancel journal run  # noqa: E501
         """

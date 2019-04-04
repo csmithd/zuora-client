@@ -29,162 +29,162 @@ class TestCreditMemosApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_d_elete_credit_memo(self):
-        """Test case for d_elete_credit_memo
+    def test_delete_credit_memo(self):
+        """Test case for delete_credit_memo
 
         Delete credit memo  # noqa: E501
         """
         pass
 
-    def test_g_et_breakdown_credit_memo_by_order(self):
-        """Test case for g_et_breakdown_credit_memo_by_order
+    def test_get_breakdown_credit_memo_by_order(self):
+        """Test case for get_breakdown_credit_memo_by_order
 
         Get breakdown of credit memo by order  # noqa: E501
         """
         pass
 
-    def test_g_et_credit_memo(self):
-        """Test case for g_et_credit_memo
+    def test_get_credit_memo(self):
+        """Test case for get_credit_memo
 
         Get credit memo  # noqa: E501
         """
         pass
 
-    def test_g_et_credit_memo_item(self):
-        """Test case for g_et_credit_memo_item
+    def test_get_credit_memo_item(self):
+        """Test case for get_credit_memo_item
 
         Get credit memo item  # noqa: E501
         """
         pass
 
-    def test_g_et_credit_memo_item_part(self):
-        """Test case for g_et_credit_memo_item_part
+    def test_get_credit_memo_item_part(self):
+        """Test case for get_credit_memo_item_part
 
         Get credit memo part item  # noqa: E501
         """
         pass
 
-    def test_g_et_credit_memo_item_parts(self):
-        """Test case for g_et_credit_memo_item_parts
+    def test_get_credit_memo_item_parts(self):
+        """Test case for get_credit_memo_item_parts
 
         Get credit memo part items  # noqa: E501
         """
         pass
 
-    def test_g_et_credit_memo_items(self):
-        """Test case for g_et_credit_memo_items
+    def test_get_credit_memo_items(self):
+        """Test case for get_credit_memo_items
 
         Get credit memo items  # noqa: E501
         """
         pass
 
-    def test_g_et_credit_memo_part(self):
-        """Test case for g_et_credit_memo_part
+    def test_get_credit_memo_part(self):
+        """Test case for get_credit_memo_part
 
         Get credit memo part  # noqa: E501
         """
         pass
 
-    def test_g_et_credit_memo_parts(self):
-        """Test case for g_et_credit_memo_parts
+    def test_get_credit_memo_parts(self):
+        """Test case for get_credit_memo_parts
 
         Get credit memo parts  # noqa: E501
         """
         pass
 
-    def test_g_et_credit_memos(self):
-        """Test case for g_et_credit_memos
+    def test_get_credit_memos(self):
+        """Test case for get_credit_memos
 
         Get credit memos  # noqa: E501
         """
         pass
 
-    def test_g_et_taxation_items_of_credit_memo_item(self):
-        """Test case for g_et_taxation_items_of_credit_memo_item
+    def test_get_taxation_items_of_credit_memo_item(self):
+        """Test case for get_taxation_items_of_credit_memo_item
 
         Get taxation items of credit memo item  # noqa: E501
         """
         pass
 
-    def test_p_ost_credit_memo_from_prpc(self):
-        """Test case for p_ost_credit_memo_from_prpc
+    def test_post_credit_memo_from_prpc(self):
+        """Test case for post_credit_memo_from_prpc
 
         Create credit memo from charge  # noqa: E501
         """
         pass
 
-    def test_p_ost_credit_memo_pdf(self):
-        """Test case for p_ost_credit_memo_pdf
+    def test_post_credit_memo_pdf(self):
+        """Test case for post_credit_memo_pdf
 
         Create credit memo PDF  # noqa: E501
         """
         pass
 
-    def test_p_ost_email_credit_memo(self):
-        """Test case for p_ost_email_credit_memo
+    def test_post_email_credit_memo(self):
+        """Test case for post_email_credit_memo
 
         Email credit memo  # noqa: E501
         """
         pass
 
-    def test_p_ost_refund_credit_memo(self):
-        """Test case for p_ost_refund_credit_memo
+    def test_post_refund_credit_memo(self):
+        """Test case for post_refund_credit_memo
 
         Refund credit memo  # noqa: E501
         """
         pass
 
-    def test_p_ost_request_breakdown_credit_memo_items_by_order(self):
-        """Test case for p_ost_request_breakdown_credit_memo_items_by_order
+    def test_post_request_breakdown_credit_memo_items_by_order(self):
+        """Test case for post_request_breakdown_credit_memo_items_by_order
 
         Request breakdown of credit memo items by order  # noqa: E501
         """
         pass
 
-    def test_p_ostcm_taxation_items(self):
-        """Test case for p_ostcm_taxation_items
+    def test_postcm_taxation_items(self):
+        """Test case for postcm_taxation_items
 
         Create taxation items for credit memo  # noqa: E501
         """
         pass
 
-    def test_p_ut_apply_credit_memo(self):
-        """Test case for p_ut_apply_credit_memo
+    def test_put_apply_credit_memo(self):
+        """Test case for put_apply_credit_memo
 
         Apply credit memo  # noqa: E501
         """
         pass
 
-    def test_p_ut_cancel_credit_memo(self):
-        """Test case for p_ut_cancel_credit_memo
+    def test_put_cancel_credit_memo(self):
+        """Test case for put_cancel_credit_memo
 
         Cancel credit memo  # noqa: E501
         """
         pass
 
-    def test_p_ut_post_credit_memo(self):
-        """Test case for p_ut_post_credit_memo
+    def test_put_post_credit_memo(self):
+        """Test case for put_post_credit_memo
 
         Post credit memo  # noqa: E501
         """
         pass
 
-    def test_p_ut_unapply_credit_memo(self):
-        """Test case for p_ut_unapply_credit_memo
+    def test_put_unapply_credit_memo(self):
+        """Test case for put_unapply_credit_memo
 
         Unapply credit memo  # noqa: E501
         """
         pass
 
-    def test_p_ut_unpost_credit_memo(self):
-        """Test case for p_ut_unpost_credit_memo
+    def test_put_unpost_credit_memo(self):
+        """Test case for put_unpost_credit_memo
 
         Unpost credit memo  # noqa: E501
         """
         pass
 
-    def test_p_ut_update_credit_memo(self):
-        """Test case for p_ut_update_credit_memo
+    def test_put_update_credit_memo(self):
+        """Test case for put_update_credit_memo
 
         Update credit memo  # noqa: E501
         """

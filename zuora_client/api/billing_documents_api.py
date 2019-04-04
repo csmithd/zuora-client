@@ -25,13 +25,13 @@ class BillingDocumentsApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def g_et_billing_documents(self, account_id, **kwargs):  # noqa: E501
+    def get_billing_documents(self, account_id, **kwargs):  # noqa: E501
         """Get billing documents  # noqa: E501
 
         Retrieves the information about all billing documents associated with a specified account. The billing documents contain invoices, credit memos, and debit memos.   To retrieve information about credit memos and debit memos, you must have the Invoice Settlement feature enabled.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_billing_documents(account_id, async_req=True)
+        >>> thread = api.get_billing_documents(account_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -47,18 +47,18 @@ class BillingDocumentsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_billing_documents_with_http_info(account_id, **kwargs)  # noqa: E501
+            return self.get_billing_documents_with_http_info(account_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_billing_documents_with_http_info(account_id, **kwargs)  # noqa: E501
+            (data) = self.get_billing_documents_with_http_info(account_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_billing_documents_with_http_info(self, account_id, **kwargs):  # noqa: E501
+    def get_billing_documents_with_http_info(self, account_id, **kwargs):  # noqa: E501
         """Get billing documents  # noqa: E501
 
         Retrieves the information about all billing documents associated with a specified account. The billing documents contain invoices, credit memos, and debit memos.   To retrieve information about credit memos and debit memos, you must have the Invoice Settlement feature enabled.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_billing_documents_with_http_info(account_id, async_req=True)
+        >>> thread = api.get_billing_documents_with_http_info(account_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -84,17 +84,17 @@ class BillingDocumentsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_billing_documents" % key
+                    " to method get_billing_documents" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'account_id' is set
         if ('account_id' not in params or
                 params['account_id'] is None):
-            raise ValueError("Missing the required parameter `account_id` when calling `g_et_billing_documents`")  # noqa: E501
+            raise ValueError("Missing the required parameter `account_id` when calling `get_billing_documents`")  # noqa: E501
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_billing_documents`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_billing_documents`, must be a value less than or equal to `40`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}

@@ -25,13 +25,13 @@ class NotificationsApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def d_elete_delete_email_template(self, authorization, id, **kwargs):  # noqa: E501
+    def delete_delete_email_template(self, authorization, id, **kwargs):  # noqa: E501
         """Delete an email template  # noqa: E501
 
         Deletes an email template.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_delete_email_template(authorization, id, async_req=True)
+        >>> thread = api.delete_delete_email_template(authorization, id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -45,18 +45,18 @@ class NotificationsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.d_elete_delete_email_template_with_http_info(authorization, id, **kwargs)  # noqa: E501
+            return self.delete_delete_email_template_with_http_info(authorization, id, **kwargs)  # noqa: E501
         else:
-            (data) = self.d_elete_delete_email_template_with_http_info(authorization, id, **kwargs)  # noqa: E501
+            (data) = self.delete_delete_email_template_with_http_info(authorization, id, **kwargs)  # noqa: E501
             return data
 
-    def d_elete_delete_email_template_with_http_info(self, authorization, id, **kwargs):  # noqa: E501
+    def delete_delete_email_template_with_http_info(self, authorization, id, **kwargs):  # noqa: E501
         """Delete an email template  # noqa: E501
 
         Deletes an email template.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_delete_email_template_with_http_info(authorization, id, async_req=True)
+        >>> thread = api.delete_delete_email_template_with_http_info(authorization, id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -80,22 +80,22 @@ class NotificationsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method d_elete_delete_email_template" % key
+                    " to method delete_delete_email_template" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'authorization' is set
         if ('authorization' not in params or
                 params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `d_elete_delete_email_template`")  # noqa: E501
+            raise ValueError("Missing the required parameter `authorization` when calling `delete_delete_email_template`")  # noqa: E501
         # verify the required parameter 'id' is set
         if ('id' not in params or
                 params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `d_elete_delete_email_template`")  # noqa: E501
+            raise ValueError("Missing the required parameter `id` when calling `delete_delete_email_template`")  # noqa: E501
 
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `d_elete_delete_email_template`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `delete_delete_email_template`, length must be less than or equal to `64`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -143,13 +143,13 @@ class NotificationsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def d_elete_delete_notification_definition(self, authorization, id, **kwargs):  # noqa: E501
+    def delete_delete_notification_definition(self, authorization, id, **kwargs):  # noqa: E501
         """Delete a notification definition  # noqa: E501
 
         Deletes a notification definition.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_delete_notification_definition(authorization, id, async_req=True)
+        >>> thread = api.delete_delete_notification_definition(authorization, id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -163,18 +163,18 @@ class NotificationsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.d_elete_delete_notification_definition_with_http_info(authorization, id, **kwargs)  # noqa: E501
+            return self.delete_delete_notification_definition_with_http_info(authorization, id, **kwargs)  # noqa: E501
         else:
-            (data) = self.d_elete_delete_notification_definition_with_http_info(authorization, id, **kwargs)  # noqa: E501
+            (data) = self.delete_delete_notification_definition_with_http_info(authorization, id, **kwargs)  # noqa: E501
             return data
 
-    def d_elete_delete_notification_definition_with_http_info(self, authorization, id, **kwargs):  # noqa: E501
+    def delete_delete_notification_definition_with_http_info(self, authorization, id, **kwargs):  # noqa: E501
         """Delete a notification definition  # noqa: E501
 
         Deletes a notification definition.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_delete_notification_definition_with_http_info(authorization, id, async_req=True)
+        >>> thread = api.delete_delete_notification_definition_with_http_info(authorization, id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -198,22 +198,22 @@ class NotificationsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method d_elete_delete_notification_definition" % key
+                    " to method delete_delete_notification_definition" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'authorization' is set
         if ('authorization' not in params or
                 params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `d_elete_delete_notification_definition`")  # noqa: E501
+            raise ValueError("Missing the required parameter `authorization` when calling `delete_delete_notification_definition`")  # noqa: E501
         # verify the required parameter 'id' is set
         if ('id' not in params or
                 params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `d_elete_delete_notification_definition`")  # noqa: E501
+            raise ValueError("Missing the required parameter `id` when calling `delete_delete_notification_definition`")  # noqa: E501
 
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `d_elete_delete_notification_definition`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `delete_delete_notification_definition`, length must be less than or equal to `64`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -261,13 +261,13 @@ class NotificationsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_callout_history(self, **kwargs):  # noqa: E501
+    def get_callout_history(self, **kwargs):  # noqa: E501
         """Get callout notification histories  # noqa: E501
 
         This REST API reference describes how to get a notification history for callouts.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_callout_history(async_req=True)
+        >>> thread = api.get_callout_history(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -285,18 +285,18 @@ class NotificationsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_callout_history_with_http_info(**kwargs)  # noqa: E501
+            return self.get_callout_history_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_callout_history_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.get_callout_history_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def g_et_callout_history_with_http_info(self, **kwargs):  # noqa: E501
+    def get_callout_history_with_http_info(self, **kwargs):  # noqa: E501
         """Get callout notification histories  # noqa: E501
 
         This REST API reference describes how to get a notification history for callouts.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_callout_history_with_http_info(async_req=True)
+        >>> thread = api.get_callout_history_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -324,13 +324,13 @@ class NotificationsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_callout_history" % key
+                    " to method get_callout_history" % key
                 )
             params[key] = val
         del params['kwargs']
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_callout_history`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_callout_history`, must be a value less than or equal to `40`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -386,13 +386,13 @@ class NotificationsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_email_history(self, **kwargs):  # noqa: E501
+    def get_email_history(self, **kwargs):  # noqa: E501
         """Get email notification histories  # noqa: E501
 
         This REST API reference describes how to get a notification history for notification emails.   ## Notes Request parameters and their values may be appended with a \"?\" following the HTTPS GET request.  Additional request parameter are separated by \"&\".   For example:  `GET https://rest.zuora.com/v1/notification-history/email?startTime=2015-01-12T00:00:00&endTime=2015-01-15T00:00:00&failedOnly=false&eventCategory=1000&pageSize=1`   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_email_history(async_req=True)
+        >>> thread = api.get_email_history(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -409,18 +409,18 @@ class NotificationsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_email_history_with_http_info(**kwargs)  # noqa: E501
+            return self.get_email_history_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_email_history_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.get_email_history_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def g_et_email_history_with_http_info(self, **kwargs):  # noqa: E501
+    def get_email_history_with_http_info(self, **kwargs):  # noqa: E501
         """Get email notification histories  # noqa: E501
 
         This REST API reference describes how to get a notification history for notification emails.   ## Notes Request parameters and their values may be appended with a \"?\" following the HTTPS GET request.  Additional request parameter are separated by \"&\".   For example:  `GET https://rest.zuora.com/v1/notification-history/email?startTime=2015-01-12T00:00:00&endTime=2015-01-15T00:00:00&failedOnly=false&eventCategory=1000&pageSize=1`   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_email_history_with_http_info(async_req=True)
+        >>> thread = api.get_email_history_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -447,13 +447,13 @@ class NotificationsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_email_history" % key
+                    " to method get_email_history" % key
                 )
             params[key] = val
         del params['kwargs']
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_email_history`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_email_history`, must be a value less than or equal to `40`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -507,13 +507,13 @@ class NotificationsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_get_email_template(self, authorization, id, **kwargs):  # noqa: E501
+    def get_get_email_template(self, authorization, id, **kwargs):  # noqa: E501
         """Get an email template  # noqa: E501
 
         Queries the email template of the specified ID.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_get_email_template(authorization, id, async_req=True)
+        >>> thread = api.get_get_email_template(authorization, id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -527,18 +527,18 @@ class NotificationsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_get_email_template_with_http_info(authorization, id, **kwargs)  # noqa: E501
+            return self.get_get_email_template_with_http_info(authorization, id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_get_email_template_with_http_info(authorization, id, **kwargs)  # noqa: E501
+            (data) = self.get_get_email_template_with_http_info(authorization, id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_get_email_template_with_http_info(self, authorization, id, **kwargs):  # noqa: E501
+    def get_get_email_template_with_http_info(self, authorization, id, **kwargs):  # noqa: E501
         """Get an email template  # noqa: E501
 
         Queries the email template of the specified ID.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_get_email_template_with_http_info(authorization, id, async_req=True)
+        >>> thread = api.get_get_email_template_with_http_info(authorization, id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -562,22 +562,22 @@ class NotificationsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_get_email_template" % key
+                    " to method get_get_email_template" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'authorization' is set
         if ('authorization' not in params or
                 params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `g_et_get_email_template`")  # noqa: E501
+            raise ValueError("Missing the required parameter `authorization` when calling `get_get_email_template`")  # noqa: E501
         # verify the required parameter 'id' is set
         if ('id' not in params or
                 params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `g_et_get_email_template`")  # noqa: E501
+            raise ValueError("Missing the required parameter `id` when calling `get_get_email_template`")  # noqa: E501
 
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `g_et_get_email_template`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `get_get_email_template`, length must be less than or equal to `64`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -625,13 +625,13 @@ class NotificationsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_get_notification_definition(self, authorization, id, **kwargs):  # noqa: E501
+    def get_get_notification_definition(self, authorization, id, **kwargs):  # noqa: E501
         """Get a notification definition  # noqa: E501
 
         Queries the notification definition of the given ID.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_get_notification_definition(authorization, id, async_req=True)
+        >>> thread = api.get_get_notification_definition(authorization, id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -645,18 +645,18 @@ class NotificationsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_get_notification_definition_with_http_info(authorization, id, **kwargs)  # noqa: E501
+            return self.get_get_notification_definition_with_http_info(authorization, id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_get_notification_definition_with_http_info(authorization, id, **kwargs)  # noqa: E501
+            (data) = self.get_get_notification_definition_with_http_info(authorization, id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_get_notification_definition_with_http_info(self, authorization, id, **kwargs):  # noqa: E501
+    def get_get_notification_definition_with_http_info(self, authorization, id, **kwargs):  # noqa: E501
         """Get a notification definition  # noqa: E501
 
         Queries the notification definition of the given ID.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_get_notification_definition_with_http_info(authorization, id, async_req=True)
+        >>> thread = api.get_get_notification_definition_with_http_info(authorization, id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -680,22 +680,22 @@ class NotificationsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_get_notification_definition" % key
+                    " to method get_get_notification_definition" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'authorization' is set
         if ('authorization' not in params or
                 params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `g_et_get_notification_definition`")  # noqa: E501
+            raise ValueError("Missing the required parameter `authorization` when calling `get_get_notification_definition`")  # noqa: E501
         # verify the required parameter 'id' is set
         if ('id' not in params or
                 params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `g_et_get_notification_definition`")  # noqa: E501
+            raise ValueError("Missing the required parameter `id` when calling `get_get_notification_definition`")  # noqa: E501
 
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `g_et_get_notification_definition`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `get_get_notification_definition`, length must be less than or equal to `64`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -743,13 +743,13 @@ class NotificationsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_query_email_templates(self, authorization, **kwargs):  # noqa: E501
+    def get_query_email_templates(self, authorization, **kwargs):  # noqa: E501
         """Query email templates  # noqa: E501
 
         Queries email templates.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_query_email_templates(authorization, async_req=True)
+        >>> thread = api.get_query_email_templates(authorization, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -766,18 +766,18 @@ class NotificationsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_query_email_templates_with_http_info(authorization, **kwargs)  # noqa: E501
+            return self.get_query_email_templates_with_http_info(authorization, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_query_email_templates_with_http_info(authorization, **kwargs)  # noqa: E501
+            (data) = self.get_query_email_templates_with_http_info(authorization, **kwargs)  # noqa: E501
             return data
 
-    def g_et_query_email_templates_with_http_info(self, authorization, **kwargs):  # noqa: E501
+    def get_query_email_templates_with_http_info(self, authorization, **kwargs):  # noqa: E501
         """Query email templates  # noqa: E501
 
         Queries email templates.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_query_email_templates_with_http_info(authorization, async_req=True)
+        >>> thread = api.get_query_email_templates_with_http_info(authorization, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -804,22 +804,22 @@ class NotificationsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_query_email_templates" % key
+                    " to method get_query_email_templates" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'authorization' is set
         if ('authorization' not in params or
                 params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `g_et_query_email_templates`")  # noqa: E501
+            raise ValueError("Missing the required parameter `authorization` when calling `get_query_email_templates`")  # noqa: E501
 
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `g_et_query_email_templates`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `get_query_email_templates`, length must be less than or equal to `64`")  # noqa: E501
         if 'limit' in params and params['limit'] > 100:  # noqa: E501
-            raise ValueError("Invalid value for parameter `limit` when calling `g_et_query_email_templates`, must be a value less than or equal to `100`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `limit` when calling `get_query_email_templates`, must be a value less than or equal to `100`")  # noqa: E501
         if 'limit' in params and params['limit'] < 1:  # noqa: E501
-            raise ValueError("Invalid value for parameter `limit` when calling `g_et_query_email_templates`, must be a value greater than or equal to `1`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `limit` when calling `get_query_email_templates`, must be a value greater than or equal to `1`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -873,13 +873,13 @@ class NotificationsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_query_notification_definitions(self, authorization, **kwargs):  # noqa: E501
+    def get_query_notification_definitions(self, authorization, **kwargs):  # noqa: E501
         """Query notification definitions  # noqa: E501
 
         Queries notification definitions with the specified filters.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_query_notification_definitions(authorization, async_req=True)
+        >>> thread = api.get_query_notification_definitions(authorization, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -897,18 +897,18 @@ class NotificationsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_query_notification_definitions_with_http_info(authorization, **kwargs)  # noqa: E501
+            return self.get_query_notification_definitions_with_http_info(authorization, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_query_notification_definitions_with_http_info(authorization, **kwargs)  # noqa: E501
+            (data) = self.get_query_notification_definitions_with_http_info(authorization, **kwargs)  # noqa: E501
             return data
 
-    def g_et_query_notification_definitions_with_http_info(self, authorization, **kwargs):  # noqa: E501
+    def get_query_notification_definitions_with_http_info(self, authorization, **kwargs):  # noqa: E501
         """Query notification definitions  # noqa: E501
 
         Queries notification definitions with the specified filters.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_query_notification_definitions_with_http_info(authorization, async_req=True)
+        >>> thread = api.get_query_notification_definitions_with_http_info(authorization, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -936,22 +936,22 @@ class NotificationsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_query_notification_definitions" % key
+                    " to method get_query_notification_definitions" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'authorization' is set
         if ('authorization' not in params or
                 params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `g_et_query_notification_definitions`")  # noqa: E501
+            raise ValueError("Missing the required parameter `authorization` when calling `get_query_notification_definitions`")  # noqa: E501
 
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `g_et_query_notification_definitions`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `get_query_notification_definitions`, length must be less than or equal to `64`")  # noqa: E501
         if 'limit' in params and params['limit'] > 100:  # noqa: E501
-            raise ValueError("Invalid value for parameter `limit` when calling `g_et_query_notification_definitions`, must be a value less than or equal to `100`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `limit` when calling `get_query_notification_definitions`, must be a value less than or equal to `100`")  # noqa: E501
         if 'limit' in params and params['limit'] < 1:  # noqa: E501
-            raise ValueError("Invalid value for parameter `limit` when calling `g_et_query_notification_definitions`, must be a value greater than or equal to `1`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `limit` when calling `get_query_notification_definitions`, must be a value greater than or equal to `1`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -1007,13 +1007,13 @@ class NotificationsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_create_email_template(self, authorization, post_public_email_template_request, **kwargs):  # noqa: E501
+    def post_create_email_template(self, authorization, post_public_email_template_request, **kwargs):  # noqa: E501
         """Create an email template  # noqa: E501
 
         Creates an email template.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_create_email_template(authorization, post_public_email_template_request, async_req=True)
+        >>> thread = api.post_create_email_template(authorization, post_public_email_template_request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1027,18 +1027,18 @@ class NotificationsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_create_email_template_with_http_info(authorization, post_public_email_template_request, **kwargs)  # noqa: E501
+            return self.post_create_email_template_with_http_info(authorization, post_public_email_template_request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_create_email_template_with_http_info(authorization, post_public_email_template_request, **kwargs)  # noqa: E501
+            (data) = self.post_create_email_template_with_http_info(authorization, post_public_email_template_request, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_create_email_template_with_http_info(self, authorization, post_public_email_template_request, **kwargs):  # noqa: E501
+    def post_create_email_template_with_http_info(self, authorization, post_public_email_template_request, **kwargs):  # noqa: E501
         """Create an email template  # noqa: E501
 
         Creates an email template.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_create_email_template_with_http_info(authorization, post_public_email_template_request, async_req=True)
+        >>> thread = api.post_create_email_template_with_http_info(authorization, post_public_email_template_request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1062,22 +1062,22 @@ class NotificationsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_create_email_template" % key
+                    " to method post_create_email_template" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'authorization' is set
         if ('authorization' not in params or
                 params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `p_ost_create_email_template`")  # noqa: E501
+            raise ValueError("Missing the required parameter `authorization` when calling `post_create_email_template`")  # noqa: E501
         # verify the required parameter 'post_public_email_template_request' is set
         if ('post_public_email_template_request' not in params or
                 params['post_public_email_template_request'] is None):
-            raise ValueError("Missing the required parameter `post_public_email_template_request` when calling `p_ost_create_email_template`")  # noqa: E501
+            raise ValueError("Missing the required parameter `post_public_email_template_request` when calling `post_create_email_template`")  # noqa: E501
 
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `p_ost_create_email_template`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `post_create_email_template`, length must be less than or equal to `64`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -1125,13 +1125,13 @@ class NotificationsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_create_notification_definition(self, authorization, entity, **kwargs):  # noqa: E501
+    def post_create_notification_definition(self, authorization, entity, **kwargs):  # noqa: E501
         """Create a notification definition  # noqa: E501
 
         Creates a notification definition. If a filter rule is specified, it will be evaluated to see if the notification definition is qualified to handle the incoming events  during runtime. If the notification is qualified, it will send the email and invoke the callout if it has an email template or a callout.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_create_notification_definition(authorization, entity, async_req=True)
+        >>> thread = api.post_create_notification_definition(authorization, entity, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1145,18 +1145,18 @@ class NotificationsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_create_notification_definition_with_http_info(authorization, entity, **kwargs)  # noqa: E501
+            return self.post_create_notification_definition_with_http_info(authorization, entity, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_create_notification_definition_with_http_info(authorization, entity, **kwargs)  # noqa: E501
+            (data) = self.post_create_notification_definition_with_http_info(authorization, entity, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_create_notification_definition_with_http_info(self, authorization, entity, **kwargs):  # noqa: E501
+    def post_create_notification_definition_with_http_info(self, authorization, entity, **kwargs):  # noqa: E501
         """Create a notification definition  # noqa: E501
 
         Creates a notification definition. If a filter rule is specified, it will be evaluated to see if the notification definition is qualified to handle the incoming events  during runtime. If the notification is qualified, it will send the email and invoke the callout if it has an email template or a callout.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_create_notification_definition_with_http_info(authorization, entity, async_req=True)
+        >>> thread = api.post_create_notification_definition_with_http_info(authorization, entity, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1180,22 +1180,22 @@ class NotificationsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_create_notification_definition" % key
+                    " to method post_create_notification_definition" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'authorization' is set
         if ('authorization' not in params or
                 params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `p_ost_create_notification_definition`")  # noqa: E501
+            raise ValueError("Missing the required parameter `authorization` when calling `post_create_notification_definition`")  # noqa: E501
         # verify the required parameter 'entity' is set
         if ('entity' not in params or
                 params['entity'] is None):
-            raise ValueError("Missing the required parameter `entity` when calling `p_ost_create_notification_definition`")  # noqa: E501
+            raise ValueError("Missing the required parameter `entity` when calling `post_create_notification_definition`")  # noqa: E501
 
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `p_ost_create_notification_definition`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `post_create_notification_definition`, length must be less than or equal to `64`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -1243,13 +1243,13 @@ class NotificationsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_update_email_template(self, authorization, id, put_public_email_template_request, **kwargs):  # noqa: E501
+    def put_update_email_template(self, authorization, id, put_public_email_template_request, **kwargs):  # noqa: E501
         """Update an email template  # noqa: E501
 
         Updates an email template.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_update_email_template(authorization, id, put_public_email_template_request, async_req=True)
+        >>> thread = api.put_update_email_template(authorization, id, put_public_email_template_request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1264,18 +1264,18 @@ class NotificationsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_update_email_template_with_http_info(authorization, id, put_public_email_template_request, **kwargs)  # noqa: E501
+            return self.put_update_email_template_with_http_info(authorization, id, put_public_email_template_request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_update_email_template_with_http_info(authorization, id, put_public_email_template_request, **kwargs)  # noqa: E501
+            (data) = self.put_update_email_template_with_http_info(authorization, id, put_public_email_template_request, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_update_email_template_with_http_info(self, authorization, id, put_public_email_template_request, **kwargs):  # noqa: E501
+    def put_update_email_template_with_http_info(self, authorization, id, put_public_email_template_request, **kwargs):  # noqa: E501
         """Update an email template  # noqa: E501
 
         Updates an email template.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_update_email_template_with_http_info(authorization, id, put_public_email_template_request, async_req=True)
+        >>> thread = api.put_update_email_template_with_http_info(authorization, id, put_public_email_template_request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1300,26 +1300,26 @@ class NotificationsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_update_email_template" % key
+                    " to method put_update_email_template" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'authorization' is set
         if ('authorization' not in params or
                 params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `p_ut_update_email_template`")  # noqa: E501
+            raise ValueError("Missing the required parameter `authorization` when calling `put_update_email_template`")  # noqa: E501
         # verify the required parameter 'id' is set
         if ('id' not in params or
                 params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `p_ut_update_email_template`")  # noqa: E501
+            raise ValueError("Missing the required parameter `id` when calling `put_update_email_template`")  # noqa: E501
         # verify the required parameter 'put_public_email_template_request' is set
         if ('put_public_email_template_request' not in params or
                 params['put_public_email_template_request'] is None):
-            raise ValueError("Missing the required parameter `put_public_email_template_request` when calling `p_ut_update_email_template`")  # noqa: E501
+            raise ValueError("Missing the required parameter `put_public_email_template_request` when calling `put_update_email_template`")  # noqa: E501
 
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `p_ut_update_email_template`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `put_update_email_template`, length must be less than or equal to `64`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -1369,13 +1369,13 @@ class NotificationsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_update_notification_definition(self, authorization, id, put_public_notification_definition_request, **kwargs):  # noqa: E501
+    def put_update_notification_definition(self, authorization, id, put_public_notification_definition_request, **kwargs):  # noqa: E501
         """Update a notification definition  # noqa: E501
 
         Updates a notification definition.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_update_notification_definition(authorization, id, put_public_notification_definition_request, async_req=True)
+        >>> thread = api.put_update_notification_definition(authorization, id, put_public_notification_definition_request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1390,18 +1390,18 @@ class NotificationsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_update_notification_definition_with_http_info(authorization, id, put_public_notification_definition_request, **kwargs)  # noqa: E501
+            return self.put_update_notification_definition_with_http_info(authorization, id, put_public_notification_definition_request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_update_notification_definition_with_http_info(authorization, id, put_public_notification_definition_request, **kwargs)  # noqa: E501
+            (data) = self.put_update_notification_definition_with_http_info(authorization, id, put_public_notification_definition_request, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_update_notification_definition_with_http_info(self, authorization, id, put_public_notification_definition_request, **kwargs):  # noqa: E501
+    def put_update_notification_definition_with_http_info(self, authorization, id, put_public_notification_definition_request, **kwargs):  # noqa: E501
         """Update a notification definition  # noqa: E501
 
         Updates a notification definition.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_update_notification_definition_with_http_info(authorization, id, put_public_notification_definition_request, async_req=True)
+        >>> thread = api.put_update_notification_definition_with_http_info(authorization, id, put_public_notification_definition_request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1426,26 +1426,26 @@ class NotificationsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_update_notification_definition" % key
+                    " to method put_update_notification_definition" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'authorization' is set
         if ('authorization' not in params or
                 params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `p_ut_update_notification_definition`")  # noqa: E501
+            raise ValueError("Missing the required parameter `authorization` when calling `put_update_notification_definition`")  # noqa: E501
         # verify the required parameter 'id' is set
         if ('id' not in params or
                 params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `p_ut_update_notification_definition`")  # noqa: E501
+            raise ValueError("Missing the required parameter `id` when calling `put_update_notification_definition`")  # noqa: E501
         # verify the required parameter 'put_public_notification_definition_request' is set
         if ('put_public_notification_definition_request' not in params or
                 params['put_public_notification_definition_request'] is None):
-            raise ValueError("Missing the required parameter `put_public_notification_definition_request` when calling `p_ut_update_notification_definition`")  # noqa: E501
+            raise ValueError("Missing the required parameter `put_public_notification_definition_request` when calling `put_update_notification_definition`")  # noqa: E501
 
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `p_ut_update_notification_definition`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `put_update_notification_definition`, length must be less than or equal to `64`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}

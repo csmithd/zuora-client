@@ -25,13 +25,13 @@ class BillingPreviewRunApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def g_et_billing_preview_run(self, billing_preview_run_id, **kwargs):  # noqa: E501
+    def get_billing_preview_run(self, billing_preview_run_id, **kwargs):  # noqa: E501
         """Get Billing Preview Run  # noqa: E501
 
         **Note:** This feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).    Retrieves a preview of future invoice items for multiple customer accounts through a billing preview run. If you have the Invoice Settlement feature enabled,  you can also retrieve a preview of future credit memo items. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   A billing preview run asynchronously generates a downloadable CSV file containing a preview of invoice item data and credit memo item data for a batch of customer accounts.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_billing_preview_run(billing_preview_run_id, async_req=True)
+        >>> thread = api.get_billing_preview_run(billing_preview_run_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -43,18 +43,18 @@ class BillingPreviewRunApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_billing_preview_run_with_http_info(billing_preview_run_id, **kwargs)  # noqa: E501
+            return self.get_billing_preview_run_with_http_info(billing_preview_run_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_billing_preview_run_with_http_info(billing_preview_run_id, **kwargs)  # noqa: E501
+            (data) = self.get_billing_preview_run_with_http_info(billing_preview_run_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_billing_preview_run_with_http_info(self, billing_preview_run_id, **kwargs):  # noqa: E501
+    def get_billing_preview_run_with_http_info(self, billing_preview_run_id, **kwargs):  # noqa: E501
         """Get Billing Preview Run  # noqa: E501
 
         **Note:** This feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).    Retrieves a preview of future invoice items for multiple customer accounts through a billing preview run. If you have the Invoice Settlement feature enabled,  you can also retrieve a preview of future credit memo items. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   A billing preview run asynchronously generates a downloadable CSV file containing a preview of invoice item data and credit memo item data for a batch of customer accounts.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_billing_preview_run_with_http_info(billing_preview_run_id, async_req=True)
+        >>> thread = api.get_billing_preview_run_with_http_info(billing_preview_run_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -76,14 +76,14 @@ class BillingPreviewRunApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_billing_preview_run" % key
+                    " to method get_billing_preview_run" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'billing_preview_run_id' is set
         if ('billing_preview_run_id' not in params or
                 params['billing_preview_run_id'] is None):
-            raise ValueError("Missing the required parameter `billing_preview_run_id` when calling `g_et_billing_preview_run`")  # noqa: E501
+            raise ValueError("Missing the required parameter `billing_preview_run_id` when calling `get_billing_preview_run`")  # noqa: E501
 
         collection_formats = {}
 
@@ -128,13 +128,13 @@ class BillingPreviewRunApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_billing_preview_run(self, request, **kwargs):  # noqa: E501
+    def post_billing_preview_run(self, request, **kwargs):  # noqa: E501
         """Create Billing Preview Run  # noqa: E501
 
         **Note:** This feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Creates billing preview runs for multiple customer accounts.  You can run up to 10 billing previews in batches concurrently. A single batch of customer accounts can only have one billing preview run at a time. So you can have up to 10 batches running at the same time. If you create a billing preview run for all customer batches, you cannot create another billing preview run until this preview run is completed.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_billing_preview_run(request, async_req=True)
+        >>> thread = api.post_billing_preview_run(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -146,18 +146,18 @@ class BillingPreviewRunApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_billing_preview_run_with_http_info(request, **kwargs)  # noqa: E501
+            return self.post_billing_preview_run_with_http_info(request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_billing_preview_run_with_http_info(request, **kwargs)  # noqa: E501
+            (data) = self.post_billing_preview_run_with_http_info(request, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_billing_preview_run_with_http_info(self, request, **kwargs):  # noqa: E501
+    def post_billing_preview_run_with_http_info(self, request, **kwargs):  # noqa: E501
         """Create Billing Preview Run  # noqa: E501
 
         **Note:** This feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Creates billing preview runs for multiple customer accounts.  You can run up to 10 billing previews in batches concurrently. A single batch of customer accounts can only have one billing preview run at a time. So you can have up to 10 batches running at the same time. If you create a billing preview run for all customer batches, you cannot create another billing preview run until this preview run is completed.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_billing_preview_run_with_http_info(request, async_req=True)
+        >>> thread = api.post_billing_preview_run_with_http_info(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -179,14 +179,14 @@ class BillingPreviewRunApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_billing_preview_run" % key
+                    " to method post_billing_preview_run" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ost_billing_preview_run`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `post_billing_preview_run`")  # noqa: E501
 
         collection_formats = {}
 

@@ -25,13 +25,13 @@ class UsageApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def g_et_usage(self, account_key, **kwargs):  # noqa: E501
+    def get_usage(self, account_key, **kwargs):  # noqa: E501
         """Get usage  # noqa: E501
 
         This REST API reference describes how to retrieve usage details for an account. Usage data is returned in reverse chronological order.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_usage(account_key, async_req=True)
+        >>> thread = api.get_usage(account_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -44,18 +44,18 @@ class UsageApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_usage_with_http_info(account_key, **kwargs)  # noqa: E501
+            return self.get_usage_with_http_info(account_key, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_usage_with_http_info(account_key, **kwargs)  # noqa: E501
+            (data) = self.get_usage_with_http_info(account_key, **kwargs)  # noqa: E501
             return data
 
-    def g_et_usage_with_http_info(self, account_key, **kwargs):  # noqa: E501
+    def get_usage_with_http_info(self, account_key, **kwargs):  # noqa: E501
         """Get usage  # noqa: E501
 
         This REST API reference describes how to retrieve usage details for an account. Usage data is returned in reverse chronological order.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_usage_with_http_info(account_key, async_req=True)
+        >>> thread = api.get_usage_with_http_info(account_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -78,17 +78,17 @@ class UsageApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_usage" % key
+                    " to method get_usage" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'account_key' is set
         if ('account_key' not in params or
                 params['account_key'] is None):
-            raise ValueError("Missing the required parameter `account_key` when calling `g_et_usage`")  # noqa: E501
+            raise ValueError("Missing the required parameter `account_key` when calling `get_usage`")  # noqa: E501
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_usage`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_usage`, must be a value less than or equal to `40`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -586,13 +586,13 @@ class UsageApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_usage(self, file, **kwargs):  # noqa: E501
+    def post_usage(self, file, **kwargs):  # noqa: E501
         """Post usage  # noqa: E501
 
          This REST API reference describes how to post or import usage data for one or more accounts in the CSV format. There are no path or query parameters. The data is uploaded using the HTTP multipart/form-data POST method and applied to the user's tenant.   ## How this REST API Call Works The content of the uploaded usage file must follow the format used by the UI import tool. It must be a comma-separated (CSV) file with a corresponding .csv extension. The length of the file name must not exceed 50 characters. The file size must not exceed 4MB. See [Downloading the Usage Template](https://knowledgecenter.zuora.com/CB_Billing/J_Billing_Operations/Usage/C_Import_Usage_Data#Downloading_the_Usage_Template) to learn about how to download the usage file template.  At the completion of the upload, before the file contents are actually being processed, the API returns a response containing the byte count of the received file and a URL for checking the status of the import process.  Of the five possible results displayed at that URL (Pending, Processing, Completed, Canceled, and Failed) only a Completed status indicates that the import was successful.  The operation is atomic; if any record fails, the file is rejected. In that case, the entire import is rolled back and all stored data is returned to its original state.  To view the actual import status, enter the resulting status URL from the checkImportStatus response using a tool such as POSTMAN. This additional step provides more information about why the import has failed.  To manage the information after a successful upload, use the web-based UI.  ## Usage File Format The usage file uses the following headings:   | Heading         | Description   | Required | |-----------------|--------|----------| | ACCOUNT_ID      | Enter the account number, e.g., the default account number, such as A00000001, or your custom account number. Although this field is labeled as Account_Id, it is not the actual Account ID nor Account Name.  | Yes      | | UOM             | Enter the unit of measure. This must match the UOM for the usage. | Yes      | | QTY             | Enter the quantity.  | Yes      | | STARTDATE       | Enter the start date of the usage. This date determines the invoice item service period the associated usage is billed to. Date format is based on locale of the current user. Default date format: `MM/DD/YYYY`. | Yes | | ENDDATE         | Enter the end date of the usage. This is not used in calculations for usage billing and is optional. Date format is based on locale of the current user. Default date format: `MM/DD/YYYY`. <p>**Note:** The value of this column is optional, but the column header is required.</p> | No | | SUBSCRIPTION_ID | Enter the subscription number or subscription name. If you created the subscription in the Zuora application, Zuora created a number automatically in a format similar to A-S00000001. If you do not provide a value for this field, the associated usage will be added to all subscriptions for the specified Account that use this Unit Of Measure. If your Accounts can have multiple subscriptions and you do not want double or triple counting of usage, you must specify the Subscription or Charge ID in each usage record.  <p>**Note:** The value of this column is optional, but the column header is required.</p>  | No   | | CHARGE_ID       | Enter the charge number (not the charge name). You can see the charge ID, e.g., C-00000001, when you add your rate plan to your subscription and view your individual charges. If your Accounts can have multiple subscriptions and you do not want double or triple counting of usage, you must specify the specific Subscription or Charge ID in each usage record. This field is related to the Charge Number on the subscription rate plan.  <p>**Note:** The value of this column is optional, but the column header is required.</p>  | No      | | DESCRIPTION     | Enter a description for the charge. | No       |   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_usage(file, async_req=True)
+        >>> thread = api.post_usage(file, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -604,18 +604,18 @@ class UsageApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_usage_with_http_info(file, **kwargs)  # noqa: E501
+            return self.post_usage_with_http_info(file, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_usage_with_http_info(file, **kwargs)  # noqa: E501
+            (data) = self.post_usage_with_http_info(file, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_usage_with_http_info(self, file, **kwargs):  # noqa: E501
+    def post_usage_with_http_info(self, file, **kwargs):  # noqa: E501
         """Post usage  # noqa: E501
 
          This REST API reference describes how to post or import usage data for one or more accounts in the CSV format. There are no path or query parameters. The data is uploaded using the HTTP multipart/form-data POST method and applied to the user's tenant.   ## How this REST API Call Works The content of the uploaded usage file must follow the format used by the UI import tool. It must be a comma-separated (CSV) file with a corresponding .csv extension. The length of the file name must not exceed 50 characters. The file size must not exceed 4MB. See [Downloading the Usage Template](https://knowledgecenter.zuora.com/CB_Billing/J_Billing_Operations/Usage/C_Import_Usage_Data#Downloading_the_Usage_Template) to learn about how to download the usage file template.  At the completion of the upload, before the file contents are actually being processed, the API returns a response containing the byte count of the received file and a URL for checking the status of the import process.  Of the five possible results displayed at that URL (Pending, Processing, Completed, Canceled, and Failed) only a Completed status indicates that the import was successful.  The operation is atomic; if any record fails, the file is rejected. In that case, the entire import is rolled back and all stored data is returned to its original state.  To view the actual import status, enter the resulting status URL from the checkImportStatus response using a tool such as POSTMAN. This additional step provides more information about why the import has failed.  To manage the information after a successful upload, use the web-based UI.  ## Usage File Format The usage file uses the following headings:   | Heading         | Description   | Required | |-----------------|--------|----------| | ACCOUNT_ID      | Enter the account number, e.g., the default account number, such as A00000001, or your custom account number. Although this field is labeled as Account_Id, it is not the actual Account ID nor Account Name.  | Yes      | | UOM             | Enter the unit of measure. This must match the UOM for the usage. | Yes      | | QTY             | Enter the quantity.  | Yes      | | STARTDATE       | Enter the start date of the usage. This date determines the invoice item service period the associated usage is billed to. Date format is based on locale of the current user. Default date format: `MM/DD/YYYY`. | Yes | | ENDDATE         | Enter the end date of the usage. This is not used in calculations for usage billing and is optional. Date format is based on locale of the current user. Default date format: `MM/DD/YYYY`. <p>**Note:** The value of this column is optional, but the column header is required.</p> | No | | SUBSCRIPTION_ID | Enter the subscription number or subscription name. If you created the subscription in the Zuora application, Zuora created a number automatically in a format similar to A-S00000001. If you do not provide a value for this field, the associated usage will be added to all subscriptions for the specified Account that use this Unit Of Measure. If your Accounts can have multiple subscriptions and you do not want double or triple counting of usage, you must specify the Subscription or Charge ID in each usage record.  <p>**Note:** The value of this column is optional, but the column header is required.</p>  | No   | | CHARGE_ID       | Enter the charge number (not the charge name). You can see the charge ID, e.g., C-00000001, when you add your rate plan to your subscription and view your individual charges. If your Accounts can have multiple subscriptions and you do not want double or triple counting of usage, you must specify the specific Subscription or Charge ID in each usage record. This field is related to the Charge Number on the subscription rate plan.  <p>**Note:** The value of this column is optional, but the column header is required.</p>  | No      | | DESCRIPTION     | Enter a description for the charge. | No       |   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_usage_with_http_info(file, async_req=True)
+        >>> thread = api.post_usage_with_http_info(file, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -637,14 +637,14 @@ class UsageApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_usage" % key
+                    " to method post_usage" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'file' is set
         if ('file' not in params or
                 params['file'] is None):
-            raise ValueError("Missing the required parameter `file` when calling `p_ost_usage`")  # noqa: E501
+            raise ValueError("Missing the required parameter `file` when calling `post_usage`")  # noqa: E501
 
         collection_formats = {}
 

@@ -29,22 +29,22 @@ class TestAccountsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_g_et_account(self):
-        """Test case for g_et_account
+    def test_get_account(self):
+        """Test case for get_account
 
         Get account  # noqa: E501
         """
         pass
 
-    def test_g_et_account_summary(self):
-        """Test case for g_et_account_summary
+    def test_get_account_summary(self):
+        """Test case for get_account_summary
 
         Get account summary  # noqa: E501
         """
         pass
 
-    def test_g_et_billing_document_files_deletion_job(self):
-        """Test case for g_et_billing_document_files_deletion_job
+    def test_get_billing_document_files_deletion_job(self):
+        """Test case for get_billing_document_files_deletion_job
 
         Get job of hard deleting billing document files  # noqa: E501
         """
@@ -78,29 +78,29 @@ class TestAccountsApi(unittest.TestCase):
         """
         pass
 
-    def test_p_ost_account(self):
-        """Test case for p_ost_account
+    def test_post_account(self):
+        """Test case for post_account
 
         Create account  # noqa: E501
         """
         pass
 
-    def test_p_ost_billing_document_files_deletion_job(self):
-        """Test case for p_ost_billing_document_files_deletion_job
+    def test_post_billing_document_files_deletion_job(self):
+        """Test case for post_billing_document_files_deletion_job
 
         Create job to hard delete billing document files  # noqa: E501
         """
         pass
 
-    def test_p_ost_generate_billing_documents(self):
-        """Test case for p_ost_generate_billing_documents
+    def test_post_generate_billing_documents(self):
+        """Test case for post_generate_billing_documents
 
         Generate billing documents by account  # noqa: E501
         """
         pass
 
-    def test_p_ut_account(self):
-        """Test case for p_ut_account
+    def test_put_account(self):
+        """Test case for put_account
 
         Update account  # noqa: E501
         """

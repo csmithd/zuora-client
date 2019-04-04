@@ -29,15 +29,15 @@ class TestOperationsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_p_ost_billing_preview(self):
-        """Test case for p_ost_billing_preview
+    def test_post_billing_preview(self):
+        """Test case for post_billing_preview
 
         Create billing preview  # noqa: E501
         """
         pass
 
-    def test_p_ost_transaction_invoice_payment(self):
-        """Test case for p_ost_transaction_invoice_payment
+    def test_post_transaction_invoice_payment(self):
+        """Test case for post_transaction_invoice_payment
 
         Invoice and collect  # noqa: E501
         """

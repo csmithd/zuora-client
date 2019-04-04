@@ -29,8 +29,8 @@ class TestPaymentGatewaysApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_g_et_paymentgateways(self):
-        """Test case for g_et_paymentgateways
+    def test_get_paymentgateways(self):
+        """Test case for get_paymentgateways
 
         Get payment gateways  # noqa: E501
         """

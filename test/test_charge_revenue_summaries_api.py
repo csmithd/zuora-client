@@ -29,15 +29,15 @@ class TestChargeRevenueSummariesApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_g_etcrs_by_charge_id(self):
-        """Test case for g_etcrs_by_charge_id
+    def test_getcrs_by_charge_id(self):
+        """Test case for getcrs_by_charge_id
 
         Get charge summary details by charge ID  # noqa: E501
         """
         pass
 
-    def test_g_etcrs_by_crs_number(self):
-        """Test case for g_etcrs_by_crs_number
+    def test_getcrs_by_crs_number(self):
+        """Test case for getcrs_by_crs_number
 
         Get charge summary details by CRS number  # noqa: E501
         """

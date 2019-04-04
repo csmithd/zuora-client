@@ -29,8 +29,8 @@ class TestHMACSignaturesApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_p_osthmac_signatures(self):
-        """Test case for p_osthmac_signatures
+    def test_posthmac_signatures(self):
+        """Test case for posthmac_signatures
 
         Return HMAC signatures  # noqa: E501
         """

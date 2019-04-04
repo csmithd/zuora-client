@@ -29,22 +29,22 @@ class TestPaymentMethodsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_d_elete_payment_methods(self):
-        """Test case for d_elete_payment_methods
+    def test_delete_payment_methods(self):
+        """Test case for delete_payment_methods
 
         Delete payment method  # noqa: E501
         """
         pass
 
-    def test_g_et_payment_methods_credit_card(self):
-        """Test case for g_et_payment_methods_credit_card
+    def test_get_payment_methods_credit_card(self):
+        """Test case for get_payment_methods_credit_card
 
         Get credit card payment methods for account  # noqa: E501
         """
         pass
 
-    def test_g_et_stored_credential_profiles(self):
-        """Test case for g_et_stored_credential_profiles
+    def test_get_stored_credential_profiles(self):
+        """Test case for get_stored_credential_profiles
 
         Get stored credential profiles  # noqa: E501
         """
@@ -78,78 +78,78 @@ class TestPaymentMethodsApi(unittest.TestCase):
         """
         pass
 
-    def test_p_ost_cancel_authorization(self):
-        """Test case for p_ost_cancel_authorization
+    def test_post_cancel_authorization(self):
+        """Test case for post_cancel_authorization
 
         Cancel authorization  # noqa: E501
         """
         pass
 
-    def test_p_ost_cancel_stored_credential_profile(self):
-        """Test case for p_ost_cancel_stored_credential_profile
+    def test_post_cancel_stored_credential_profile(self):
+        """Test case for post_cancel_stored_credential_profile
 
         Cancel stored credential profile  # noqa: E501
         """
         pass
 
-    def test_p_ost_create_authorization(self):
-        """Test case for p_ost_create_authorization
+    def test_post_create_authorization(self):
+        """Test case for post_create_authorization
 
         Create authorization  # noqa: E501
         """
         pass
 
-    def test_p_ost_create_stored_credential_profile(self):
-        """Test case for p_ost_create_stored_credential_profile
+    def test_post_create_stored_credential_profile(self):
+        """Test case for post_create_stored_credential_profile
 
         Create stored credential profile  # noqa: E501
         """
         pass
 
-    def test_p_ost_expire_stored_credential_profile(self):
-        """Test case for p_ost_expire_stored_credential_profile
+    def test_post_expire_stored_credential_profile(self):
+        """Test case for post_expire_stored_credential_profile
 
         Expire stored credential profile  # noqa: E501
         """
         pass
 
-    def test_p_ost_payment_methods(self):
-        """Test case for p_ost_payment_methods
+    def test_post_payment_methods(self):
+        """Test case for post_payment_methods
 
         Create payment method  # noqa: E501
         """
         pass
 
-    def test_p_ost_payment_methods_credit_card(self):
-        """Test case for p_ost_payment_methods_credit_card
+    def test_post_payment_methods_credit_card(self):
+        """Test case for post_payment_methods_credit_card
 
         Create credit card payment method  # noqa: E501
         """
         pass
 
-    def test_p_ost_payment_methods_decryption(self):
-        """Test case for p_ost_payment_methods_decryption
+    def test_post_payment_methods_decryption(self):
+        """Test case for post_payment_methods_decryption
 
         Create Apple Pay payment method  # noqa: E501
         """
         pass
 
-    def test_p_ut_payment_methods_credit_card(self):
-        """Test case for p_ut_payment_methods_credit_card
+    def test_put_payment_methods_credit_card(self):
+        """Test case for put_payment_methods_credit_card
 
         Update credit card payment method  # noqa: E501
         """
         pass
 
-    def test_p_ut_scrub_payment_methods(self):
-        """Test case for p_ut_scrub_payment_methods
+    def test_put_scrub_payment_methods(self):
+        """Test case for put_scrub_payment_methods
 
         Scrub payment method  # noqa: E501
         """
         pass
 
-    def test_p_ut_verify_payment_methods(self):
-        """Test case for p_ut_verify_payment_methods
+    def test_put_verify_payment_methods(self):
+        """Test case for put_verify_payment_methods
 
         Verify payment method  # noqa: E501
         """

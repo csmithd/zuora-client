@@ -29,43 +29,43 @@ class TestPaymentRunsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_d_elete_payment_run(self):
-        """Test case for d_elete_payment_run
+    def test_delete_payment_run(self):
+        """Test case for delete_payment_run
 
         Delete payment run  # noqa: E501
         """
         pass
 
-    def test_g_et_payment_run(self):
-        """Test case for g_et_payment_run
+    def test_get_payment_run(self):
+        """Test case for get_payment_run
 
         Get payment run  # noqa: E501
         """
         pass
 
-    def test_g_et_payment_run_summary(self):
-        """Test case for g_et_payment_run_summary
+    def test_get_payment_run_summary(self):
+        """Test case for get_payment_run_summary
 
         Get payment run summary  # noqa: E501
         """
         pass
 
-    def test_g_et_payment_runs(self):
-        """Test case for g_et_payment_runs
+    def test_get_payment_runs(self):
+        """Test case for get_payment_runs
 
         Get payment runs  # noqa: E501
         """
         pass
 
-    def test_p_ost_payment_run(self):
-        """Test case for p_ost_payment_run
+    def test_post_payment_run(self):
+        """Test case for post_payment_run
 
         Create payment run  # noqa: E501
         """
         pass
 
-    def test_p_ut_payment_run(self):
-        """Test case for p_ut_payment_run
+    def test_put_payment_run(self):
+        """Test case for put_payment_run
 
         Update payment run  # noqa: E501
         """

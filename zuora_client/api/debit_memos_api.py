@@ -25,13 +25,13 @@ class DebitMemosApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def d_elete_debit_memo(self, debit_memo_id, **kwargs):  # noqa: E501
+    def delete_debit_memo(self, debit_memo_id, **kwargs):  # noqa: E501
         """Delete debit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Deletes a debit memo. Only debit memos with the Cancelled status can be deleted.   You can delete a debit memo only if you have the user permission. See [Billing Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_debit_memo(debit_memo_id, async_req=True)
+        >>> thread = api.delete_debit_memo(debit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -43,18 +43,18 @@ class DebitMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.d_elete_debit_memo_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
+            return self.delete_debit_memo_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.d_elete_debit_memo_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
+            (data) = self.delete_debit_memo_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
             return data
 
-    def d_elete_debit_memo_with_http_info(self, debit_memo_id, **kwargs):  # noqa: E501
+    def delete_debit_memo_with_http_info(self, debit_memo_id, **kwargs):  # noqa: E501
         """Delete debit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Deletes a debit memo. Only debit memos with the Cancelled status can be deleted.   You can delete a debit memo only if you have the user permission. See [Billing Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_debit_memo_with_http_info(debit_memo_id, async_req=True)
+        >>> thread = api.delete_debit_memo_with_http_info(debit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -76,14 +76,14 @@ class DebitMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method d_elete_debit_memo" % key
+                    " to method delete_debit_memo" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'debit_memo_id' is set
         if ('debit_memo_id' not in params or
                 params['debit_memo_id'] is None):
-            raise ValueError("Missing the required parameter `debit_memo_id` when calling `d_elete_debit_memo`")  # noqa: E501
+            raise ValueError("Missing the required parameter `debit_memo_id` when calling `delete_debit_memo`")  # noqa: E501
 
         collection_formats = {}
 
@@ -128,13 +128,13 @@ class DebitMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_debit_memo(self, debit_memo_id, **kwargs):  # noqa: E501
+    def get_debit_memo(self, debit_memo_id, **kwargs):  # noqa: E501
         """Get debit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about a specific debit memo.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_debit_memo(debit_memo_id, async_req=True)
+        >>> thread = api.get_debit_memo(debit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -146,18 +146,18 @@ class DebitMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_debit_memo_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
+            return self.get_debit_memo_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_debit_memo_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
+            (data) = self.get_debit_memo_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_debit_memo_with_http_info(self, debit_memo_id, **kwargs):  # noqa: E501
+    def get_debit_memo_with_http_info(self, debit_memo_id, **kwargs):  # noqa: E501
         """Get debit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about a specific debit memo.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_debit_memo_with_http_info(debit_memo_id, async_req=True)
+        >>> thread = api.get_debit_memo_with_http_info(debit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -179,14 +179,14 @@ class DebitMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_debit_memo" % key
+                    " to method get_debit_memo" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'debit_memo_id' is set
         if ('debit_memo_id' not in params or
                 params['debit_memo_id'] is None):
-            raise ValueError("Missing the required parameter `debit_memo_id` when calling `g_et_debit_memo`")  # noqa: E501
+            raise ValueError("Missing the required parameter `debit_memo_id` when calling `get_debit_memo`")  # noqa: E501
 
         collection_formats = {}
 
@@ -231,13 +231,13 @@ class DebitMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_debit_memo_application_parts(self, debit_memo_id, **kwargs):  # noqa: E501
+    def get_debit_memo_application_parts(self, debit_memo_id, **kwargs):  # noqa: E501
         """Get debit memo application parts  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves information about the payments or credit memos that are applied to a specified debit memo.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_debit_memo_application_parts(debit_memo_id, async_req=True)
+        >>> thread = api.get_debit_memo_application_parts(debit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -249,18 +249,18 @@ class DebitMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_debit_memo_application_parts_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
+            return self.get_debit_memo_application_parts_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_debit_memo_application_parts_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
+            (data) = self.get_debit_memo_application_parts_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_debit_memo_application_parts_with_http_info(self, debit_memo_id, **kwargs):  # noqa: E501
+    def get_debit_memo_application_parts_with_http_info(self, debit_memo_id, **kwargs):  # noqa: E501
         """Get debit memo application parts  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves information about the payments or credit memos that are applied to a specified debit memo.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_debit_memo_application_parts_with_http_info(debit_memo_id, async_req=True)
+        >>> thread = api.get_debit_memo_application_parts_with_http_info(debit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -282,14 +282,14 @@ class DebitMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_debit_memo_application_parts" % key
+                    " to method get_debit_memo_application_parts" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'debit_memo_id' is set
         if ('debit_memo_id' not in params or
                 params['debit_memo_id'] is None):
-            raise ValueError("Missing the required parameter `debit_memo_id` when calling `g_et_debit_memo_application_parts`")  # noqa: E501
+            raise ValueError("Missing the required parameter `debit_memo_id` when calling `get_debit_memo_application_parts`")  # noqa: E501
 
         collection_formats = {}
 
@@ -334,13 +334,13 @@ class DebitMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_debit_memo_item(self, dmitemid, debit_memo_id, **kwargs):  # noqa: E501
+    def get_debit_memo_item(self, dmitemid, debit_memo_id, **kwargs):  # noqa: E501
         """Get debit memo item  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Retrieves information about a specific item of a debit memo. A debit memo item is a single line item in a debit memo.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_debit_memo_item(dmitemid, debit_memo_id, async_req=True)
+        >>> thread = api.get_debit_memo_item(dmitemid, debit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -354,18 +354,18 @@ class DebitMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_debit_memo_item_with_http_info(dmitemid, debit_memo_id, **kwargs)  # noqa: E501
+            return self.get_debit_memo_item_with_http_info(dmitemid, debit_memo_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_debit_memo_item_with_http_info(dmitemid, debit_memo_id, **kwargs)  # noqa: E501
+            (data) = self.get_debit_memo_item_with_http_info(dmitemid, debit_memo_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_debit_memo_item_with_http_info(self, dmitemid, debit_memo_id, **kwargs):  # noqa: E501
+    def get_debit_memo_item_with_http_info(self, dmitemid, debit_memo_id, **kwargs):  # noqa: E501
         """Get debit memo item  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Retrieves information about a specific item of a debit memo. A debit memo item is a single line item in a debit memo.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_debit_memo_item_with_http_info(dmitemid, debit_memo_id, async_req=True)
+        >>> thread = api.get_debit_memo_item_with_http_info(dmitemid, debit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -389,18 +389,18 @@ class DebitMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_debit_memo_item" % key
+                    " to method get_debit_memo_item" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'dmitemid' is set
         if ('dmitemid' not in params or
                 params['dmitemid'] is None):
-            raise ValueError("Missing the required parameter `dmitemid` when calling `g_et_debit_memo_item`")  # noqa: E501
+            raise ValueError("Missing the required parameter `dmitemid` when calling `get_debit_memo_item`")  # noqa: E501
         # verify the required parameter 'debit_memo_id' is set
         if ('debit_memo_id' not in params or
                 params['debit_memo_id'] is None):
-            raise ValueError("Missing the required parameter `debit_memo_id` when calling `g_et_debit_memo_item`")  # noqa: E501
+            raise ValueError("Missing the required parameter `debit_memo_id` when calling `get_debit_memo_item`")  # noqa: E501
 
         collection_formats = {}
 
@@ -449,13 +449,13 @@ class DebitMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_debit_memo_items(self, debit_memo_id, **kwargs):  # noqa: E501
+    def get_debit_memo_items(self, debit_memo_id, **kwargs):  # noqa: E501
         """Get debit memo items  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about all items of a debit memo. A debit memo item is a single line item in a debit memo.   ### Filtering  You can use query parameters to restrict the data returned in the response. Each query parameter corresponds to one field in the response body.  If the value of a filterable field is string, you can set the corresponding query parameter to `null` when filtering. Then, you can get the response data with this field value being `null`.   Examples:  - /v1/debitmemos/402890245c7ca371015c7cb40b28001f/items?amount=100  - /v1/debitmemos/402890245c7ca371015c7cb40b28001f/items?amount=100&sort=createdDate   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_debit_memo_items(debit_memo_id, async_req=True)
+        >>> thread = api.get_debit_memo_items(debit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -483,18 +483,18 @@ class DebitMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_debit_memo_items_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
+            return self.get_debit_memo_items_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_debit_memo_items_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
+            (data) = self.get_debit_memo_items_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_debit_memo_items_with_http_info(self, debit_memo_id, **kwargs):  # noqa: E501
+    def get_debit_memo_items_with_http_info(self, debit_memo_id, **kwargs):  # noqa: E501
         """Get debit memo items  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about all items of a debit memo. A debit memo item is a single line item in a debit memo.   ### Filtering  You can use query parameters to restrict the data returned in the response. Each query parameter corresponds to one field in the response body.  If the value of a filterable field is string, you can set the corresponding query parameter to `null` when filtering. Then, you can get the response data with this field value being `null`.   Examples:  - /v1/debitmemos/402890245c7ca371015c7cb40b28001f/items?amount=100  - /v1/debitmemos/402890245c7ca371015c7cb40b28001f/items?amount=100&sort=createdDate   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_debit_memo_items_with_http_info(debit_memo_id, async_req=True)
+        >>> thread = api.get_debit_memo_items_with_http_info(debit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -532,17 +532,17 @@ class DebitMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_debit_memo_items" % key
+                    " to method get_debit_memo_items" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'debit_memo_id' is set
         if ('debit_memo_id' not in params or
                 params['debit_memo_id'] is None):
-            raise ValueError("Missing the required parameter `debit_memo_id` when calling `g_et_debit_memo_items`")  # noqa: E501
+            raise ValueError("Missing the required parameter `debit_memo_id` when calling `get_debit_memo_items`")  # noqa: E501
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_debit_memo_items`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_debit_memo_items`, must be a value less than or equal to `40`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -618,13 +618,13 @@ class DebitMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_debit_memos(self, **kwargs):  # noqa: E501
+    def get_debit_memos(self, **kwargs):  # noqa: E501
         """Get debit memos  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Retrieves the information about all debit memos associated with all customer accounts.  ### Filtering  You can use query parameters to restrict the data returned in the response. Each query parameter corresponds to one field in the response body.  If the value of a filterable field is string, you can set the corresponding query parameter to `null` when filtering. Then, you can get the response data with this field value being `null`.   Examples:  - /v1/debitmemos?status=Processed  - /v1/debitmemos?referredInvoiceId=null&status=Draft  - /v1/debitmemos?status=Processed&type=External&sort=+number   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_debit_memos(async_req=True)
+        >>> thread = api.get_debit_memos(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -654,18 +654,18 @@ class DebitMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_debit_memos_with_http_info(**kwargs)  # noqa: E501
+            return self.get_debit_memos_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_debit_memos_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.get_debit_memos_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def g_et_debit_memos_with_http_info(self, **kwargs):  # noqa: E501
+    def get_debit_memos_with_http_info(self, **kwargs):  # noqa: E501
         """Get debit memos  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Retrieves the information about all debit memos associated with all customer accounts.  ### Filtering  You can use query parameters to restrict the data returned in the response. Each query parameter corresponds to one field in the response body.  If the value of a filterable field is string, you can set the corresponding query parameter to `null` when filtering. Then, you can get the response data with this field value being `null`.   Examples:  - /v1/debitmemos?status=Processed  - /v1/debitmemos?referredInvoiceId=null&status=Draft  - /v1/debitmemos?status=Processed&type=External&sort=+number   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_debit_memos_with_http_info(async_req=True)
+        >>> thread = api.get_debit_memos_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -705,13 +705,13 @@ class DebitMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_debit_memos" % key
+                    " to method get_debit_memos" % key
                 )
             params[key] = val
         del params['kwargs']
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_debit_memos`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_debit_memos`, must be a value less than or equal to `40`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -791,13 +791,13 @@ class DebitMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_taxation_items_of_debit_memo_item(self, dmitemid, debit_memo_id, **kwargs):  # noqa: E501
+    def get_taxation_items_of_debit_memo_item(self, dmitemid, debit_memo_id, **kwargs):  # noqa: E501
         """Get taxation items of debit memo item  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Retrieves information about the taxation items of a specific debit memo item.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_taxation_items_of_debit_memo_item(dmitemid, debit_memo_id, async_req=True)
+        >>> thread = api.get_taxation_items_of_debit_memo_item(dmitemid, debit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -812,18 +812,18 @@ class DebitMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_taxation_items_of_debit_memo_item_with_http_info(dmitemid, debit_memo_id, **kwargs)  # noqa: E501
+            return self.get_taxation_items_of_debit_memo_item_with_http_info(dmitemid, debit_memo_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_taxation_items_of_debit_memo_item_with_http_info(dmitemid, debit_memo_id, **kwargs)  # noqa: E501
+            (data) = self.get_taxation_items_of_debit_memo_item_with_http_info(dmitemid, debit_memo_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_taxation_items_of_debit_memo_item_with_http_info(self, dmitemid, debit_memo_id, **kwargs):  # noqa: E501
+    def get_taxation_items_of_debit_memo_item_with_http_info(self, dmitemid, debit_memo_id, **kwargs):  # noqa: E501
         """Get taxation items of debit memo item  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Retrieves information about the taxation items of a specific debit memo item.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_taxation_items_of_debit_memo_item_with_http_info(dmitemid, debit_memo_id, async_req=True)
+        >>> thread = api.get_taxation_items_of_debit_memo_item_with_http_info(dmitemid, debit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -848,23 +848,23 @@ class DebitMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_taxation_items_of_debit_memo_item" % key
+                    " to method get_taxation_items_of_debit_memo_item" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'dmitemid' is set
         if ('dmitemid' not in params or
                 params['dmitemid'] is None):
-            raise ValueError("Missing the required parameter `dmitemid` when calling `g_et_taxation_items_of_debit_memo_item`")  # noqa: E501
+            raise ValueError("Missing the required parameter `dmitemid` when calling `get_taxation_items_of_debit_memo_item`")  # noqa: E501
         # verify the required parameter 'debit_memo_id' is set
         if ('debit_memo_id' not in params or
                 params['debit_memo_id'] is None):
-            raise ValueError("Missing the required parameter `debit_memo_id` when calling `g_et_taxation_items_of_debit_memo_item`")  # noqa: E501
+            raise ValueError("Missing the required parameter `debit_memo_id` when calling `get_taxation_items_of_debit_memo_item`")  # noqa: E501
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_taxation_items_of_debit_memo_item`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_taxation_items_of_debit_memo_item`, must be a value less than or equal to `40`")  # noqa: E501
         if 'page' in params and params['page'] < 1:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page` when calling `g_et_taxation_items_of_debit_memo_item`, must be a value greater than or equal to `1`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page` when calling `get_taxation_items_of_debit_memo_item`, must be a value greater than or equal to `1`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -914,13 +914,13 @@ class DebitMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_debit_memo_from_prpc(self, body, **kwargs):  # noqa: E501
+    def post_debit_memo_from_prpc(self, body, **kwargs):  # noqa: E501
         """Create debit memo from charge  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Creates an ad-hoc debit memo from a product rate plan charge. Zuora supports the creation of debit memos from any type of product rate plan charge. The charges can also have any amount and any charge model, except for discout charge models.   You can create a debit memo only if you have the user permission. See [Billing Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_debit_memo_from_prpc(body, async_req=True)
+        >>> thread = api.post_debit_memo_from_prpc(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -933,18 +933,18 @@ class DebitMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_debit_memo_from_prpc_with_http_info(body, **kwargs)  # noqa: E501
+            return self.post_debit_memo_from_prpc_with_http_info(body, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_debit_memo_from_prpc_with_http_info(body, **kwargs)  # noqa: E501
+            (data) = self.post_debit_memo_from_prpc_with_http_info(body, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_debit_memo_from_prpc_with_http_info(self, body, **kwargs):  # noqa: E501
+    def post_debit_memo_from_prpc_with_http_info(self, body, **kwargs):  # noqa: E501
         """Create debit memo from charge  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Creates an ad-hoc debit memo from a product rate plan charge. Zuora supports the creation of debit memos from any type of product rate plan charge. The charges can also have any amount and any charge model, except for discout charge models.   You can create a debit memo only if you have the user permission. See [Billing Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_debit_memo_from_prpc_with_http_info(body, async_req=True)
+        >>> thread = api.post_debit_memo_from_prpc_with_http_info(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -967,14 +967,14 @@ class DebitMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_debit_memo_from_prpc" % key
+                    " to method post_debit_memo_from_prpc" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ost_debit_memo_from_prpc`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `post_debit_memo_from_prpc`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1021,13 +1021,13 @@ class DebitMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_debit_memo_pdf(self, debit_memo_id, **kwargs):  # noqa: E501
+    def post_debit_memo_pdf(self, debit_memo_id, **kwargs):  # noqa: E501
         """Create debit memo PDF  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Creates a PDF file for a specified debit memo. To access the generated PDF file, you can download it by clicking **View PDF** on the detailed debit memo page through the Zuora UI.  This REST API operation can be used only if you have the Billing user permission \"Regenerate PDF\" enabled.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_debit_memo_pdf(debit_memo_id, async_req=True)
+        >>> thread = api.post_debit_memo_pdf(debit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1039,18 +1039,18 @@ class DebitMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_debit_memo_pdf_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
+            return self.post_debit_memo_pdf_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_debit_memo_pdf_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
+            (data) = self.post_debit_memo_pdf_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_debit_memo_pdf_with_http_info(self, debit_memo_id, **kwargs):  # noqa: E501
+    def post_debit_memo_pdf_with_http_info(self, debit_memo_id, **kwargs):  # noqa: E501
         """Create debit memo PDF  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Creates a PDF file for a specified debit memo. To access the generated PDF file, you can download it by clicking **View PDF** on the detailed debit memo page through the Zuora UI.  This REST API operation can be used only if you have the Billing user permission \"Regenerate PDF\" enabled.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_debit_memo_pdf_with_http_info(debit_memo_id, async_req=True)
+        >>> thread = api.post_debit_memo_pdf_with_http_info(debit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1072,14 +1072,14 @@ class DebitMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_debit_memo_pdf" % key
+                    " to method post_debit_memo_pdf" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'debit_memo_id' is set
         if ('debit_memo_id' not in params or
                 params['debit_memo_id'] is None):
-            raise ValueError("Missing the required parameter `debit_memo_id` when calling `p_ost_debit_memo_pdf`")  # noqa: E501
+            raise ValueError("Missing the required parameter `debit_memo_id` when calling `post_debit_memo_pdf`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1124,13 +1124,13 @@ class DebitMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_email_debit_memo(self, request, debit_memo_id, **kwargs):  # noqa: E501
+    def post_email_debit_memo(self, request, debit_memo_id, **kwargs):  # noqa: E501
         """Email debit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Sends a posted debit memo to the specified email addresses manually.    ## Notes   - You must activate the **Email Debit Memo | Manually email Debit Memo** notification before emailing debit memos. To include the debit memo PDF in the email, select the **Include Debit Memo PDF** check box in the **Edit notification** dialog from the Zuora UI. See [Create and Edit Notifications](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/Notifications/C_Create_Notifications#section_2) for more information.     - Zuora sends the email messages based on the email template you set. You can set the email template to use in the **Delivery Options** panel of the **Edit notification** dialog from the Zuora UI. By default, the **Manual Email for Debit Memo Default Template** template is used. See [Create and Edit Email Templates](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/Notifications/Create_Email_Templates) for more information.     - The debit memos are sent only to the work email addresses or personal email addresses of the Bill To contact if the following conditions are all met:      * The `useEmailTemplateSetting` field is set to `false`.     * The email addresses are not specified in the `emailAddresses` field.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_email_debit_memo(request, debit_memo_id, async_req=True)
+        >>> thread = api.post_email_debit_memo(request, debit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1143,18 +1143,18 @@ class DebitMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_email_debit_memo_with_http_info(request, debit_memo_id, **kwargs)  # noqa: E501
+            return self.post_email_debit_memo_with_http_info(request, debit_memo_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_email_debit_memo_with_http_info(request, debit_memo_id, **kwargs)  # noqa: E501
+            (data) = self.post_email_debit_memo_with_http_info(request, debit_memo_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_email_debit_memo_with_http_info(self, request, debit_memo_id, **kwargs):  # noqa: E501
+    def post_email_debit_memo_with_http_info(self, request, debit_memo_id, **kwargs):  # noqa: E501
         """Email debit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Sends a posted debit memo to the specified email addresses manually.    ## Notes   - You must activate the **Email Debit Memo | Manually email Debit Memo** notification before emailing debit memos. To include the debit memo PDF in the email, select the **Include Debit Memo PDF** check box in the **Edit notification** dialog from the Zuora UI. See [Create and Edit Notifications](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/Notifications/C_Create_Notifications#section_2) for more information.     - Zuora sends the email messages based on the email template you set. You can set the email template to use in the **Delivery Options** panel of the **Edit notification** dialog from the Zuora UI. By default, the **Manual Email for Debit Memo Default Template** template is used. See [Create and Edit Email Templates](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/Notifications/Create_Email_Templates) for more information.     - The debit memos are sent only to the work email addresses or personal email addresses of the Bill To contact if the following conditions are all met:      * The `useEmailTemplateSetting` field is set to `false`.     * The email addresses are not specified in the `emailAddresses` field.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_email_debit_memo_with_http_info(request, debit_memo_id, async_req=True)
+        >>> thread = api.post_email_debit_memo_with_http_info(request, debit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1177,18 +1177,18 @@ class DebitMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_email_debit_memo" % key
+                    " to method post_email_debit_memo" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ost_email_debit_memo`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `post_email_debit_memo`")  # noqa: E501
         # verify the required parameter 'debit_memo_id' is set
         if ('debit_memo_id' not in params or
                 params['debit_memo_id'] is None):
-            raise ValueError("Missing the required parameter `debit_memo_id` when calling `p_ost_email_debit_memo`")  # noqa: E501
+            raise ValueError("Missing the required parameter `debit_memo_id` when calling `post_email_debit_memo`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1235,13 +1235,13 @@ class DebitMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ostdm_taxation_items(self, debit_memo_id, body, **kwargs):  # noqa: E501
+    def postdm_taxation_items(self, debit_memo_id, body, **kwargs):  # noqa: E501
         """Create taxation items for debit memo  # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Creates taxation items for a debit memo.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ostdm_taxation_items(debit_memo_id, body, async_req=True)
+        >>> thread = api.postdm_taxation_items(debit_memo_id, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1254,18 +1254,18 @@ class DebitMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ostdm_taxation_items_with_http_info(debit_memo_id, body, **kwargs)  # noqa: E501
+            return self.postdm_taxation_items_with_http_info(debit_memo_id, body, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ostdm_taxation_items_with_http_info(debit_memo_id, body, **kwargs)  # noqa: E501
+            (data) = self.postdm_taxation_items_with_http_info(debit_memo_id, body, **kwargs)  # noqa: E501
             return data
 
-    def p_ostdm_taxation_items_with_http_info(self, debit_memo_id, body, **kwargs):  # noqa: E501
+    def postdm_taxation_items_with_http_info(self, debit_memo_id, body, **kwargs):  # noqa: E501
         """Create taxation items for debit memo  # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Creates taxation items for a debit memo.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ostdm_taxation_items_with_http_info(debit_memo_id, body, async_req=True)
+        >>> thread = api.postdm_taxation_items_with_http_info(debit_memo_id, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1288,18 +1288,18 @@ class DebitMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ostdm_taxation_items" % key
+                    " to method postdm_taxation_items" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'debit_memo_id' is set
         if ('debit_memo_id' not in params or
                 params['debit_memo_id'] is None):
-            raise ValueError("Missing the required parameter `debit_memo_id` when calling `p_ostdm_taxation_items`")  # noqa: E501
+            raise ValueError("Missing the required parameter `debit_memo_id` when calling `postdm_taxation_items`")  # noqa: E501
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ostdm_taxation_items`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `postdm_taxation_items`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1346,13 +1346,13 @@ class DebitMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_batch_update_debit_memos(self, body, **kwargs):  # noqa: E501
+    def put_batch_update_debit_memos(self, body, **kwargs):  # noqa: E501
         """Update debit memos  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Updates the due date for multiple debit memos in batches with one call.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_batch_update_debit_memos(body, async_req=True)
+        >>> thread = api.put_batch_update_debit_memos(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1364,18 +1364,18 @@ class DebitMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_batch_update_debit_memos_with_http_info(body, **kwargs)  # noqa: E501
+            return self.put_batch_update_debit_memos_with_http_info(body, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_batch_update_debit_memos_with_http_info(body, **kwargs)  # noqa: E501
+            (data) = self.put_batch_update_debit_memos_with_http_info(body, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_batch_update_debit_memos_with_http_info(self, body, **kwargs):  # noqa: E501
+    def put_batch_update_debit_memos_with_http_info(self, body, **kwargs):  # noqa: E501
         """Update debit memos  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Updates the due date for multiple debit memos in batches with one call.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_batch_update_debit_memos_with_http_info(body, async_req=True)
+        >>> thread = api.put_batch_update_debit_memos_with_http_info(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1397,14 +1397,14 @@ class DebitMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_batch_update_debit_memos" % key
+                    " to method put_batch_update_debit_memos" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ut_batch_update_debit_memos`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `put_batch_update_debit_memos`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1449,13 +1449,13 @@ class DebitMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_cancel_debit_memo(self, debit_memo_id, **kwargs):  # noqa: E501
+    def put_cancel_debit_memo(self, debit_memo_id, **kwargs):  # noqa: E501
         """Cancel debit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Cancels a debit memo. Only debit memos with the Draft status can be cancelled.   You can cancel a debit memo only if you have the user permission. See [Billing Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_cancel_debit_memo(debit_memo_id, async_req=True)
+        >>> thread = api.put_cancel_debit_memo(debit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1467,18 +1467,18 @@ class DebitMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_cancel_debit_memo_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
+            return self.put_cancel_debit_memo_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_cancel_debit_memo_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
+            (data) = self.put_cancel_debit_memo_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_cancel_debit_memo_with_http_info(self, debit_memo_id, **kwargs):  # noqa: E501
+    def put_cancel_debit_memo_with_http_info(self, debit_memo_id, **kwargs):  # noqa: E501
         """Cancel debit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Cancels a debit memo. Only debit memos with the Draft status can be cancelled.   You can cancel a debit memo only if you have the user permission. See [Billing Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_cancel_debit_memo_with_http_info(debit_memo_id, async_req=True)
+        >>> thread = api.put_cancel_debit_memo_with_http_info(debit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1500,14 +1500,14 @@ class DebitMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_cancel_debit_memo" % key
+                    " to method put_cancel_debit_memo" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'debit_memo_id' is set
         if ('debit_memo_id' not in params or
                 params['debit_memo_id'] is None):
-            raise ValueError("Missing the required parameter `debit_memo_id` when calling `p_ut_cancel_debit_memo`")  # noqa: E501
+            raise ValueError("Missing the required parameter `debit_memo_id` when calling `put_cancel_debit_memo`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1552,13 +1552,13 @@ class DebitMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_debit_memo(self, body, debit_memo_id, **kwargs):  # noqa: E501
+    def put_debit_memo(self, body, debit_memo_id, **kwargs):  # noqa: E501
         """Update debit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Updates the basic and finance information about a debit memo. Currently, Zuora supports updating tax-exclusive memo items, but does not support updating tax-inclusive memo items.   If the amount of a memo item is updated, the tax will be recalculated in the following conditions:   - The memo is created from a product rate plan charge and you use Avalara to calculate the tax.   - The memo is created from an invoice and you use Avalara or Zuora Tax to calculate the tax.  You can update a debit memo only if you have the user permission. See [Billing Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_debit_memo(body, debit_memo_id, async_req=True)
+        >>> thread = api.put_debit_memo(body, debit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1571,18 +1571,18 @@ class DebitMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_debit_memo_with_http_info(body, debit_memo_id, **kwargs)  # noqa: E501
+            return self.put_debit_memo_with_http_info(body, debit_memo_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_debit_memo_with_http_info(body, debit_memo_id, **kwargs)  # noqa: E501
+            (data) = self.put_debit_memo_with_http_info(body, debit_memo_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_debit_memo_with_http_info(self, body, debit_memo_id, **kwargs):  # noqa: E501
+    def put_debit_memo_with_http_info(self, body, debit_memo_id, **kwargs):  # noqa: E501
         """Update debit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Updates the basic and finance information about a debit memo. Currently, Zuora supports updating tax-exclusive memo items, but does not support updating tax-inclusive memo items.   If the amount of a memo item is updated, the tax will be recalculated in the following conditions:   - The memo is created from a product rate plan charge and you use Avalara to calculate the tax.   - The memo is created from an invoice and you use Avalara or Zuora Tax to calculate the tax.  You can update a debit memo only if you have the user permission. See [Billing Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_debit_memo_with_http_info(body, debit_memo_id, async_req=True)
+        >>> thread = api.put_debit_memo_with_http_info(body, debit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1605,18 +1605,18 @@ class DebitMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_debit_memo" % key
+                    " to method put_debit_memo" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ut_debit_memo`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `put_debit_memo`")  # noqa: E501
         # verify the required parameter 'debit_memo_id' is set
         if ('debit_memo_id' not in params or
                 params['debit_memo_id'] is None):
-            raise ValueError("Missing the required parameter `debit_memo_id` when calling `p_ut_debit_memo`")  # noqa: E501
+            raise ValueError("Missing the required parameter `debit_memo_id` when calling `put_debit_memo`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1663,13 +1663,13 @@ class DebitMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_post_debit_memo(self, debit_memo_id, **kwargs):  # noqa: E501
+    def put_post_debit_memo(self, debit_memo_id, **kwargs):  # noqa: E501
         """Post debit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Posts a debit memo to activate it. You can post debit memos only if you have the [Billing permissions](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles#Billing_Permissions).   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_post_debit_memo(debit_memo_id, async_req=True)
+        >>> thread = api.put_post_debit_memo(debit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1681,18 +1681,18 @@ class DebitMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_post_debit_memo_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
+            return self.put_post_debit_memo_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_post_debit_memo_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
+            (data) = self.put_post_debit_memo_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_post_debit_memo_with_http_info(self, debit_memo_id, **kwargs):  # noqa: E501
+    def put_post_debit_memo_with_http_info(self, debit_memo_id, **kwargs):  # noqa: E501
         """Post debit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Posts a debit memo to activate it. You can post debit memos only if you have the [Billing permissions](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles#Billing_Permissions).   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_post_debit_memo_with_http_info(debit_memo_id, async_req=True)
+        >>> thread = api.put_post_debit_memo_with_http_info(debit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1714,14 +1714,14 @@ class DebitMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_post_debit_memo" % key
+                    " to method put_post_debit_memo" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'debit_memo_id' is set
         if ('debit_memo_id' not in params or
                 params['debit_memo_id'] is None):
-            raise ValueError("Missing the required parameter `debit_memo_id` when calling `p_ut_post_debit_memo`")  # noqa: E501
+            raise ValueError("Missing the required parameter `debit_memo_id` when calling `put_post_debit_memo`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1766,13 +1766,13 @@ class DebitMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_unpost_debit_memo(self, debit_memo_id, **kwargs):  # noqa: E501
+    def put_unpost_debit_memo(self, debit_memo_id, **kwargs):  # noqa: E501
         """Unpost debit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Unposts a debit memo that is in Posted status. If any credit memo or payment has been applied to a debit memo, you are not allowed to unpost the debit memo. After a debit memo is unposted, its status becomes Draft.  You can unpost debit memos only if you have the [Billing permissions](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles#Billing_Permissions).   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_unpost_debit_memo(debit_memo_id, async_req=True)
+        >>> thread = api.put_unpost_debit_memo(debit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1784,18 +1784,18 @@ class DebitMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_unpost_debit_memo_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
+            return self.put_unpost_debit_memo_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_unpost_debit_memo_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
+            (data) = self.put_unpost_debit_memo_with_http_info(debit_memo_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_unpost_debit_memo_with_http_info(self, debit_memo_id, **kwargs):  # noqa: E501
+    def put_unpost_debit_memo_with_http_info(self, debit_memo_id, **kwargs):  # noqa: E501
         """Unpost debit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Unposts a debit memo that is in Posted status. If any credit memo or payment has been applied to a debit memo, you are not allowed to unpost the debit memo. After a debit memo is unposted, its status becomes Draft.  You can unpost debit memos only if you have the [Billing permissions](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles#Billing_Permissions).   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_unpost_debit_memo_with_http_info(debit_memo_id, async_req=True)
+        >>> thread = api.put_unpost_debit_memo_with_http_info(debit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1817,14 +1817,14 @@ class DebitMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_unpost_debit_memo" % key
+                    " to method put_unpost_debit_memo" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'debit_memo_id' is set
         if ('debit_memo_id' not in params or
                 params['debit_memo_id'] is None):
-            raise ValueError("Missing the required parameter `debit_memo_id` when calling `p_ut_unpost_debit_memo`")  # noqa: E501
+            raise ValueError("Missing the required parameter `debit_memo_id` when calling `put_unpost_debit_memo`")  # noqa: E501
 
         collection_formats = {}
 

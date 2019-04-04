@@ -29,29 +29,29 @@ class TestDocumentPropertiesApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_d_elete_document_properties(self):
-        """Test case for d_elete_document_properties
+    def test_delete_document_properties(self):
+        """Test case for delete_document_properties
 
         Delete document properties  # noqa: E501
         """
         pass
 
-    def test_g_et_document_properies(self):
-        """Test case for g_et_document_properies
+    def test_get_document_properies(self):
+        """Test case for get_document_properies
 
         Get document properties  # noqa: E501
         """
         pass
 
-    def test_p_ost_document_properties(self):
-        """Test case for p_ost_document_properties
+    def test_post_document_properties(self):
+        """Test case for post_document_properties
 
         Create document properties  # noqa: E501
         """
         pass
 
-    def test_p_ut_document_properties(self):
-        """Test case for p_ut_document_properties
+    def test_put_document_properties(self):
+        """Test case for put_document_properties
 
         Update document properties  # noqa: E501
         """

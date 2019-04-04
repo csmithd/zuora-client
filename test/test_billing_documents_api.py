@@ -29,8 +29,8 @@ class TestBillingDocumentsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_g_et_billing_documents(self):
-        """Test case for g_et_billing_documents
+    def test_get_billing_documents(self):
+        """Test case for get_billing_documents
 
         Get billing documents  # noqa: E501
         """

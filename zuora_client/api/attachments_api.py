@@ -25,13 +25,13 @@ class AttachmentsApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def d_elete_attachments(self, attachment_id, **kwargs):  # noqa: E501
+    def delete_attachments(self, attachment_id, **kwargs):  # noqa: E501
         """Delete attachments  # noqa: E501
 
         Use the Delete Attachment REST request to delete an attachment from a Zuora object.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_attachments(attachment_id, async_req=True)
+        >>> thread = api.delete_attachments(attachment_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -43,18 +43,18 @@ class AttachmentsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.d_elete_attachments_with_http_info(attachment_id, **kwargs)  # noqa: E501
+            return self.delete_attachments_with_http_info(attachment_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.d_elete_attachments_with_http_info(attachment_id, **kwargs)  # noqa: E501
+            (data) = self.delete_attachments_with_http_info(attachment_id, **kwargs)  # noqa: E501
             return data
 
-    def d_elete_attachments_with_http_info(self, attachment_id, **kwargs):  # noqa: E501
+    def delete_attachments_with_http_info(self, attachment_id, **kwargs):  # noqa: E501
         """Delete attachments  # noqa: E501
 
         Use the Delete Attachment REST request to delete an attachment from a Zuora object.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_attachments_with_http_info(attachment_id, async_req=True)
+        >>> thread = api.delete_attachments_with_http_info(attachment_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -76,14 +76,14 @@ class AttachmentsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method d_elete_attachments" % key
+                    " to method delete_attachments" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'attachment_id' is set
         if ('attachment_id' not in params or
                 params['attachment_id'] is None):
-            raise ValueError("Missing the required parameter `attachment_id` when calling `d_elete_attachments`")  # noqa: E501
+            raise ValueError("Missing the required parameter `attachment_id` when calling `delete_attachments`")  # noqa: E501
 
         collection_formats = {}
 
@@ -128,13 +128,13 @@ class AttachmentsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_attachments(self, attachment_id, **kwargs):  # noqa: E501
+    def get_attachments(self, attachment_id, **kwargs):  # noqa: E501
         """View attachments  # noqa: E501
 
         Use the View Attachment REST request to retrieve information about an attachment document.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_attachments(attachment_id, async_req=True)
+        >>> thread = api.get_attachments(attachment_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -146,18 +146,18 @@ class AttachmentsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_attachments_with_http_info(attachment_id, **kwargs)  # noqa: E501
+            return self.get_attachments_with_http_info(attachment_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_attachments_with_http_info(attachment_id, **kwargs)  # noqa: E501
+            (data) = self.get_attachments_with_http_info(attachment_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_attachments_with_http_info(self, attachment_id, **kwargs):  # noqa: E501
+    def get_attachments_with_http_info(self, attachment_id, **kwargs):  # noqa: E501
         """View attachments  # noqa: E501
 
         Use the View Attachment REST request to retrieve information about an attachment document.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_attachments_with_http_info(attachment_id, async_req=True)
+        >>> thread = api.get_attachments_with_http_info(attachment_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -179,14 +179,14 @@ class AttachmentsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_attachments" % key
+                    " to method get_attachments" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'attachment_id' is set
         if ('attachment_id' not in params or
                 params['attachment_id'] is None):
-            raise ValueError("Missing the required parameter `attachment_id` when calling `g_et_attachments`")  # noqa: E501
+            raise ValueError("Missing the required parameter `attachment_id` when calling `get_attachments`")  # noqa: E501
 
         collection_formats = {}
 
@@ -231,13 +231,13 @@ class AttachmentsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_attachments_list(self, object_type, object_key, **kwargs):  # noqa: E501
+    def get_attachments_list(self, object_type, object_key, **kwargs):  # noqa: E501
         """View attachments list  # noqa: E501
 
         Use the View Attachment REST request to get a list of attachments on an account, an invoice, or a subscription.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_attachments_list(object_type, object_key, async_req=True)
+        >>> thread = api.get_attachments_list(object_type, object_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -251,18 +251,18 @@ class AttachmentsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_attachments_list_with_http_info(object_type, object_key, **kwargs)  # noqa: E501
+            return self.get_attachments_list_with_http_info(object_type, object_key, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_attachments_list_with_http_info(object_type, object_key, **kwargs)  # noqa: E501
+            (data) = self.get_attachments_list_with_http_info(object_type, object_key, **kwargs)  # noqa: E501
             return data
 
-    def g_et_attachments_list_with_http_info(self, object_type, object_key, **kwargs):  # noqa: E501
+    def get_attachments_list_with_http_info(self, object_type, object_key, **kwargs):  # noqa: E501
         """View attachments list  # noqa: E501
 
         Use the View Attachment REST request to get a list of attachments on an account, an invoice, or a subscription.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_attachments_list_with_http_info(object_type, object_key, async_req=True)
+        >>> thread = api.get_attachments_list_with_http_info(object_type, object_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -286,21 +286,21 @@ class AttachmentsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_attachments_list" % key
+                    " to method get_attachments_list" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'object_type' is set
         if ('object_type' not in params or
                 params['object_type'] is None):
-            raise ValueError("Missing the required parameter `object_type` when calling `g_et_attachments_list`")  # noqa: E501
+            raise ValueError("Missing the required parameter `object_type` when calling `get_attachments_list`")  # noqa: E501
         # verify the required parameter 'object_key' is set
         if ('object_key' not in params or
                 params['object_key'] is None):
-            raise ValueError("Missing the required parameter `object_key` when calling `g_et_attachments_list`")  # noqa: E501
+            raise ValueError("Missing the required parameter `object_key` when calling `get_attachments_list`")  # noqa: E501
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_attachments_list`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_attachments_list`, must be a value less than or equal to `40`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -348,13 +348,13 @@ class AttachmentsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_attachments(self, associated_object_type, associated_object_key, file, **kwargs):  # noqa: E501
+    def post_attachments(self, associated_object_type, associated_object_key, file, **kwargs):  # noqa: E501
         """Add attachments  # noqa: E501
 
         Use the Add Attachment REST request with a multipart/form-data to attach a document file to an Account, a Subscription, or an Invoice.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_attachments(associated_object_type, associated_object_key, file, async_req=True)
+        >>> thread = api.post_attachments(associated_object_type, associated_object_key, file, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -369,18 +369,18 @@ class AttachmentsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_attachments_with_http_info(associated_object_type, associated_object_key, file, **kwargs)  # noqa: E501
+            return self.post_attachments_with_http_info(associated_object_type, associated_object_key, file, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_attachments_with_http_info(associated_object_type, associated_object_key, file, **kwargs)  # noqa: E501
+            (data) = self.post_attachments_with_http_info(associated_object_type, associated_object_key, file, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_attachments_with_http_info(self, associated_object_type, associated_object_key, file, **kwargs):  # noqa: E501
+    def post_attachments_with_http_info(self, associated_object_type, associated_object_key, file, **kwargs):  # noqa: E501
         """Add attachments  # noqa: E501
 
         Use the Add Attachment REST request with a multipart/form-data to attach a document file to an Account, a Subscription, or an Invoice.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_attachments_with_http_info(associated_object_type, associated_object_key, file, async_req=True)
+        >>> thread = api.post_attachments_with_http_info(associated_object_type, associated_object_key, file, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -405,22 +405,22 @@ class AttachmentsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_attachments" % key
+                    " to method post_attachments" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'associated_object_type' is set
         if ('associated_object_type' not in params or
                 params['associated_object_type'] is None):
-            raise ValueError("Missing the required parameter `associated_object_type` when calling `p_ost_attachments`")  # noqa: E501
+            raise ValueError("Missing the required parameter `associated_object_type` when calling `post_attachments`")  # noqa: E501
         # verify the required parameter 'associated_object_key' is set
         if ('associated_object_key' not in params or
                 params['associated_object_key'] is None):
-            raise ValueError("Missing the required parameter `associated_object_key` when calling `p_ost_attachments`")  # noqa: E501
+            raise ValueError("Missing the required parameter `associated_object_key` when calling `post_attachments`")  # noqa: E501
         # verify the required parameter 'file' is set
         if ('file' not in params or
                 params['file'] is None):
-            raise ValueError("Missing the required parameter `file` when calling `p_ost_attachments`")  # noqa: E501
+            raise ValueError("Missing the required parameter `file` when calling `post_attachments`")  # noqa: E501
 
         collection_formats = {}
 
@@ -471,13 +471,13 @@ class AttachmentsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_attachments(self, attachment_id, **kwargs):  # noqa: E501
+    def put_attachments(self, attachment_id, **kwargs):  # noqa: E501
         """Edit attachments  # noqa: E501
 
         Use the Edit Attachment REST request to make changes to the descriptive fields of an attachment, such as the description and the file name. You cannot change the actual content of the attached file in Zuora. If you need to change the actual content, you need to delete the attachment and add the updated file as a new attachment.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_attachments(attachment_id, async_req=True)
+        >>> thread = api.put_attachments(attachment_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -490,18 +490,18 @@ class AttachmentsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_attachments_with_http_info(attachment_id, **kwargs)  # noqa: E501
+            return self.put_attachments_with_http_info(attachment_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_attachments_with_http_info(attachment_id, **kwargs)  # noqa: E501
+            (data) = self.put_attachments_with_http_info(attachment_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_attachments_with_http_info(self, attachment_id, **kwargs):  # noqa: E501
+    def put_attachments_with_http_info(self, attachment_id, **kwargs):  # noqa: E501
         """Edit attachments  # noqa: E501
 
         Use the Edit Attachment REST request to make changes to the descriptive fields of an attachment, such as the description and the file name. You cannot change the actual content of the attached file in Zuora. If you need to change the actual content, you need to delete the attachment and add the updated file as a new attachment.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_attachments_with_http_info(attachment_id, async_req=True)
+        >>> thread = api.put_attachments_with_http_info(attachment_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -524,14 +524,14 @@ class AttachmentsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_attachments" % key
+                    " to method put_attachments" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'attachment_id' is set
         if ('attachment_id' not in params or
                 params['attachment_id'] is None):
-            raise ValueError("Missing the required parameter `attachment_id` when calling `p_ut_attachments`")  # noqa: E501
+            raise ValueError("Missing the required parameter `attachment_id` when calling `put_attachments`")  # noqa: E501
 
         collection_formats = {}
 

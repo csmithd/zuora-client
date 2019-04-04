@@ -25,13 +25,13 @@ class RevenueRulesApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def g_et_revenue_rec_ruleby_product_rate_plan_charge(self, charge_key, **kwargs):  # noqa: E501
+    def get_revenue_rec_ruleby_product_rate_plan_charge(self, charge_key, **kwargs):  # noqa: E501
         """Get revenue recognition rule by product rate plan charge  # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the revenue recognition rule associated with a production rate plan charge by specifying the charge ID.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_revenue_rec_ruleby_product_rate_plan_charge(charge_key, async_req=True)
+        >>> thread = api.get_revenue_rec_ruleby_product_rate_plan_charge(charge_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -42,18 +42,18 @@ class RevenueRulesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_revenue_rec_ruleby_product_rate_plan_charge_with_http_info(charge_key, **kwargs)  # noqa: E501
+            return self.get_revenue_rec_ruleby_product_rate_plan_charge_with_http_info(charge_key, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_revenue_rec_ruleby_product_rate_plan_charge_with_http_info(charge_key, **kwargs)  # noqa: E501
+            (data) = self.get_revenue_rec_ruleby_product_rate_plan_charge_with_http_info(charge_key, **kwargs)  # noqa: E501
             return data
 
-    def g_et_revenue_rec_ruleby_product_rate_plan_charge_with_http_info(self, charge_key, **kwargs):  # noqa: E501
+    def get_revenue_rec_ruleby_product_rate_plan_charge_with_http_info(self, charge_key, **kwargs):  # noqa: E501
         """Get revenue recognition rule by product rate plan charge  # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the revenue recognition rule associated with a production rate plan charge by specifying the charge ID.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_revenue_rec_ruleby_product_rate_plan_charge_with_http_info(charge_key, async_req=True)
+        >>> thread = api.get_revenue_rec_ruleby_product_rate_plan_charge_with_http_info(charge_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -74,14 +74,14 @@ class RevenueRulesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_revenue_rec_ruleby_product_rate_plan_charge" % key
+                    " to method get_revenue_rec_ruleby_product_rate_plan_charge" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'charge_key' is set
         if ('charge_key' not in params or
                 params['charge_key'] is None):
-            raise ValueError("Missing the required parameter `charge_key` when calling `g_et_revenue_rec_ruleby_product_rate_plan_charge`")  # noqa: E501
+            raise ValueError("Missing the required parameter `charge_key` when calling `get_revenue_rec_ruleby_product_rate_plan_charge`")  # noqa: E501
 
         collection_formats = {}
 
@@ -124,13 +124,13 @@ class RevenueRulesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_revenue_rec_rules(self, charge_key, **kwargs):  # noqa: E501
+    def get_revenue_rec_rules(self, charge_key, **kwargs):  # noqa: E501
         """Get revenue recognition rule by subscription charge  # noqa: E501
 
         Retrieves the revenue recognition rule associated with a subscription charge by specifying the charge ID. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_revenue_rec_rules(charge_key, async_req=True)
+        >>> thread = api.get_revenue_rec_rules(charge_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -142,18 +142,18 @@ class RevenueRulesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_revenue_rec_rules_with_http_info(charge_key, **kwargs)  # noqa: E501
+            return self.get_revenue_rec_rules_with_http_info(charge_key, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_revenue_rec_rules_with_http_info(charge_key, **kwargs)  # noqa: E501
+            (data) = self.get_revenue_rec_rules_with_http_info(charge_key, **kwargs)  # noqa: E501
             return data
 
-    def g_et_revenue_rec_rules_with_http_info(self, charge_key, **kwargs):  # noqa: E501
+    def get_revenue_rec_rules_with_http_info(self, charge_key, **kwargs):  # noqa: E501
         """Get revenue recognition rule by subscription charge  # noqa: E501
 
         Retrieves the revenue recognition rule associated with a subscription charge by specifying the charge ID. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_revenue_rec_rules_with_http_info(charge_key, async_req=True)
+        >>> thread = api.get_revenue_rec_rules_with_http_info(charge_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -175,14 +175,14 @@ class RevenueRulesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_revenue_rec_rules" % key
+                    " to method get_revenue_rec_rules" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'charge_key' is set
         if ('charge_key' not in params or
                 params['charge_key'] is None):
-            raise ValueError("Missing the required parameter `charge_key` when calling `g_et_revenue_rec_rules`")  # noqa: E501
+            raise ValueError("Missing the required parameter `charge_key` when calling `get_revenue_rec_rules`")  # noqa: E501
 
         collection_formats = {}
 

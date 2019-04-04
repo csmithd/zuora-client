@@ -25,13 +25,13 @@ class SubscriptionsApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def g_et_subscriptions_by_account(self, account_key, **kwargs):  # noqa: E501
+    def get_subscriptions_by_account(self, account_key, **kwargs):  # noqa: E501
         """Get subscriptions by account  # noqa: E501
 
         Retrieves all subscriptions associated with the specified account. Zuora only returns the latest version of the subscriptions.  Subscription data is returned in reverse chronological order based on `updatedDate`.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_subscriptions_by_account(account_key, async_req=True)
+        >>> thread = api.get_subscriptions_by_account(account_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -45,18 +45,18 @@ class SubscriptionsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_subscriptions_by_account_with_http_info(account_key, **kwargs)  # noqa: E501
+            return self.get_subscriptions_by_account_with_http_info(account_key, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_subscriptions_by_account_with_http_info(account_key, **kwargs)  # noqa: E501
+            (data) = self.get_subscriptions_by_account_with_http_info(account_key, **kwargs)  # noqa: E501
             return data
 
-    def g_et_subscriptions_by_account_with_http_info(self, account_key, **kwargs):  # noqa: E501
+    def get_subscriptions_by_account_with_http_info(self, account_key, **kwargs):  # noqa: E501
         """Get subscriptions by account  # noqa: E501
 
         Retrieves all subscriptions associated with the specified account. Zuora only returns the latest version of the subscriptions.  Subscription data is returned in reverse chronological order based on `updatedDate`.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_subscriptions_by_account_with_http_info(account_key, async_req=True)
+        >>> thread = api.get_subscriptions_by_account_with_http_info(account_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -80,17 +80,17 @@ class SubscriptionsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_subscriptions_by_account" % key
+                    " to method get_subscriptions_by_account" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'account_key' is set
         if ('account_key' not in params or
                 params['account_key'] is None):
-            raise ValueError("Missing the required parameter `account_key` when calling `g_et_subscriptions_by_account`")  # noqa: E501
+            raise ValueError("Missing the required parameter `account_key` when calling `get_subscriptions_by_account`")  # noqa: E501
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_subscriptions_by_account`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_subscriptions_by_account`, must be a value less than or equal to `40`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -138,13 +138,13 @@ class SubscriptionsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_subscriptions_by_key(self, subscription_key, **kwargs):  # noqa: E501
+    def get_subscriptions_by_key(self, subscription_key, **kwargs):  # noqa: E501
         """Get subscriptions by key  # noqa: E501
 
         This REST API reference describes how to retrieve detailed information about a specified subscription in the latest version.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_subscriptions_by_key(subscription_key, async_req=True)
+        >>> thread = api.get_subscriptions_by_key(subscription_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -157,18 +157,18 @@ class SubscriptionsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_subscriptions_by_key_with_http_info(subscription_key, **kwargs)  # noqa: E501
+            return self.get_subscriptions_by_key_with_http_info(subscription_key, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_subscriptions_by_key_with_http_info(subscription_key, **kwargs)  # noqa: E501
+            (data) = self.get_subscriptions_by_key_with_http_info(subscription_key, **kwargs)  # noqa: E501
             return data
 
-    def g_et_subscriptions_by_key_with_http_info(self, subscription_key, **kwargs):  # noqa: E501
+    def get_subscriptions_by_key_with_http_info(self, subscription_key, **kwargs):  # noqa: E501
         """Get subscriptions by key  # noqa: E501
 
         This REST API reference describes how to retrieve detailed information about a specified subscription in the latest version.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_subscriptions_by_key_with_http_info(subscription_key, async_req=True)
+        >>> thread = api.get_subscriptions_by_key_with_http_info(subscription_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -191,14 +191,14 @@ class SubscriptionsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_subscriptions_by_key" % key
+                    " to method get_subscriptions_by_key" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'subscription_key' is set
         if ('subscription_key' not in params or
                 params['subscription_key'] is None):
-            raise ValueError("Missing the required parameter `subscription_key` when calling `g_et_subscriptions_by_key`")  # noqa: E501
+            raise ValueError("Missing the required parameter `subscription_key` when calling `get_subscriptions_by_key`")  # noqa: E501
 
         collection_formats = {}
 
@@ -245,13 +245,13 @@ class SubscriptionsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_subscriptions_by_key_and_version(self, subscription_key, version, **kwargs):  # noqa: E501
+    def get_subscriptions_by_key_and_version(self, subscription_key, version, **kwargs):  # noqa: E501
         """Get subscriptions by key and version  # noqa: E501
 
         This REST API reference describes how to retrieve detailed information about a specified subscription in a specified version. When you create a subscription amendment, you create a new version of the subscription. You can use this method to retrieve information about a subscription in any version.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_subscriptions_by_key_and_version(subscription_key, version, async_req=True)
+        >>> thread = api.get_subscriptions_by_key_and_version(subscription_key, version, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -265,18 +265,18 @@ class SubscriptionsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_subscriptions_by_key_and_version_with_http_info(subscription_key, version, **kwargs)  # noqa: E501
+            return self.get_subscriptions_by_key_and_version_with_http_info(subscription_key, version, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_subscriptions_by_key_and_version_with_http_info(subscription_key, version, **kwargs)  # noqa: E501
+            (data) = self.get_subscriptions_by_key_and_version_with_http_info(subscription_key, version, **kwargs)  # noqa: E501
             return data
 
-    def g_et_subscriptions_by_key_and_version_with_http_info(self, subscription_key, version, **kwargs):  # noqa: E501
+    def get_subscriptions_by_key_and_version_with_http_info(self, subscription_key, version, **kwargs):  # noqa: E501
         """Get subscriptions by key and version  # noqa: E501
 
         This REST API reference describes how to retrieve detailed information about a specified subscription in a specified version. When you create a subscription amendment, you create a new version of the subscription. You can use this method to retrieve information about a subscription in any version.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_subscriptions_by_key_and_version_with_http_info(subscription_key, version, async_req=True)
+        >>> thread = api.get_subscriptions_by_key_and_version_with_http_info(subscription_key, version, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -300,18 +300,18 @@ class SubscriptionsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_subscriptions_by_key_and_version" % key
+                    " to method get_subscriptions_by_key_and_version" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'subscription_key' is set
         if ('subscription_key' not in params or
                 params['subscription_key'] is None):
-            raise ValueError("Missing the required parameter `subscription_key` when calling `g_et_subscriptions_by_key_and_version`")  # noqa: E501
+            raise ValueError("Missing the required parameter `subscription_key` when calling `get_subscriptions_by_key_and_version`")  # noqa: E501
         # verify the required parameter 'version' is set
         if ('version' not in params or
                 params['version'] is None):
-            raise ValueError("Missing the required parameter `version` when calling `g_et_subscriptions_by_key_and_version`")  # noqa: E501
+            raise ValueError("Missing the required parameter `version` when calling `get_subscriptions_by_key_and_version`")  # noqa: E501
 
         collection_formats = {}
 
@@ -702,13 +702,13 @@ class SubscriptionsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_preview_subscription(self, request, **kwargs):  # noqa: E501
+    def post_preview_subscription(self, request, **kwargs):  # noqa: E501
         """Preview subscription  # noqa: E501
 
         The REST API reference describes how to create a new subscription in preview mode. This call does not require a valid customer account. It can be used to show potential new customers a preview of a subscription with complete details and charges before creating an account, or to let existing customers preview a subscription with all charges before committing.  ## Notes - This feature is unavailable if you have the Orders feature enabled. See [Orders Migration Guidance](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AB_Orders_Migration_Guidance) for more information. - The response of the Preview Subscription call is based on the REST API minor version you set in the request header. The response structure might be different if you use different minor version numbers.   - If you have the Invoice Settlement feature enabled, we recommend that you set the `zuora-version` parameter to `207.0` or later. Otherwise, an error is returned.   - Default values for **customerAcceptanceDate** and **serviceActivationDate** are set as follows.  |        | serviceActivationDate (SA) specified          | serviceActivationDate (SA) NOT specified  | | ------------- |:-------------:| -----:| | customerAcceptanceDate (CA) specified      | SA uses value in the request call; CA uses value in the request call| CA uses value in the request call;SA uses CE as default | | customerAcceptanceDate (CA) NOT specified      | SA uses value in the request call; CA uses SA as default |   SA and CA use CE as default |   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_preview_subscription(request, async_req=True)
+        >>> thread = api.post_preview_subscription(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -721,18 +721,18 @@ class SubscriptionsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_preview_subscription_with_http_info(request, **kwargs)  # noqa: E501
+            return self.post_preview_subscription_with_http_info(request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_preview_subscription_with_http_info(request, **kwargs)  # noqa: E501
+            (data) = self.post_preview_subscription_with_http_info(request, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_preview_subscription_with_http_info(self, request, **kwargs):  # noqa: E501
+    def post_preview_subscription_with_http_info(self, request, **kwargs):  # noqa: E501
         """Preview subscription  # noqa: E501
 
         The REST API reference describes how to create a new subscription in preview mode. This call does not require a valid customer account. It can be used to show potential new customers a preview of a subscription with complete details and charges before creating an account, or to let existing customers preview a subscription with all charges before committing.  ## Notes - This feature is unavailable if you have the Orders feature enabled. See [Orders Migration Guidance](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AB_Orders_Migration_Guidance) for more information. - The response of the Preview Subscription call is based on the REST API minor version you set in the request header. The response structure might be different if you use different minor version numbers.   - If you have the Invoice Settlement feature enabled, we recommend that you set the `zuora-version` parameter to `207.0` or later. Otherwise, an error is returned.   - Default values for **customerAcceptanceDate** and **serviceActivationDate** are set as follows.  |        | serviceActivationDate (SA) specified          | serviceActivationDate (SA) NOT specified  | | ------------- |:-------------:| -----:| | customerAcceptanceDate (CA) specified      | SA uses value in the request call; CA uses value in the request call| CA uses value in the request call;SA uses CE as default | | customerAcceptanceDate (CA) NOT specified      | SA uses value in the request call; CA uses SA as default |   SA and CA use CE as default |   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_preview_subscription_with_http_info(request, async_req=True)
+        >>> thread = api.post_preview_subscription_with_http_info(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -755,14 +755,14 @@ class SubscriptionsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_preview_subscription" % key
+                    " to method post_preview_subscription" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ost_preview_subscription`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `post_preview_subscription`")  # noqa: E501
 
         collection_formats = {}
 
@@ -809,13 +809,13 @@ class SubscriptionsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_subscription(self, request, **kwargs):  # noqa: E501
+    def post_subscription(self, request, **kwargs):  # noqa: E501
         """Create subscription  # noqa: E501
 
         This REST API reference describes how to create a new subscription for an existing customer account.  ## Notes This feature is unavailable if you have the Orders feature enabled. See [Orders Migration Guidance](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AB_Orders_Migration_Guidance) for more information.  If invoiceCollect is `true`, the call will not return success = `true` unless the subscription, invoice, and payment are all successful.  Default values for **customerAcceptanceDate** and **serviceActivationDate** are set as follows.  |        | serviceActivationDate(SA) specified          | serviceActivationDate (SA) NOT specified  | | ------------- |:-------------:| -----:| | customerAcceptanceDate (CA) specified| SA uses value in the request call; CA uses value in the request call| CA uses value in the request call;SA uses CE as default | | customerAcceptanceDate (CA) NOT specified      | SA uses value in the request call; CA uses SA as default |   SA and CA use CE as default |   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_subscription(request, async_req=True)
+        >>> thread = api.post_subscription(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -828,18 +828,18 @@ class SubscriptionsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_subscription_with_http_info(request, **kwargs)  # noqa: E501
+            return self.post_subscription_with_http_info(request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_subscription_with_http_info(request, **kwargs)  # noqa: E501
+            (data) = self.post_subscription_with_http_info(request, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_subscription_with_http_info(self, request, **kwargs):  # noqa: E501
+    def post_subscription_with_http_info(self, request, **kwargs):  # noqa: E501
         """Create subscription  # noqa: E501
 
         This REST API reference describes how to create a new subscription for an existing customer account.  ## Notes This feature is unavailable if you have the Orders feature enabled. See [Orders Migration Guidance](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AB_Orders_Migration_Guidance) for more information.  If invoiceCollect is `true`, the call will not return success = `true` unless the subscription, invoice, and payment are all successful.  Default values for **customerAcceptanceDate** and **serviceActivationDate** are set as follows.  |        | serviceActivationDate(SA) specified          | serviceActivationDate (SA) NOT specified  | | ------------- |:-------------:| -----:| | customerAcceptanceDate (CA) specified| SA uses value in the request call; CA uses value in the request call| CA uses value in the request call;SA uses CE as default | | customerAcceptanceDate (CA) NOT specified      | SA uses value in the request call; CA uses SA as default |   SA and CA use CE as default |   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_subscription_with_http_info(request, async_req=True)
+        >>> thread = api.post_subscription_with_http_info(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -862,14 +862,14 @@ class SubscriptionsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_subscription" % key
+                    " to method post_subscription" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ost_subscription`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `post_subscription`")  # noqa: E501
 
         collection_formats = {}
 
@@ -916,13 +916,13 @@ class SubscriptionsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_cancel_subscription(self, subscription_key, request, **kwargs):  # noqa: E501
+    def put_cancel_subscription(self, subscription_key, request, **kwargs):  # noqa: E501
         """Cancel subscription  # noqa: E501
 
         This REST API reference describes how to cancel an active subscription.  **Note:** This feature is unavailable if you have the Orders feature enabled. See [Orders Migration Guidance](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AB_Orders_Migration_Guidance) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_cancel_subscription(subscription_key, request, async_req=True)
+        >>> thread = api.put_cancel_subscription(subscription_key, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -936,18 +936,18 @@ class SubscriptionsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_cancel_subscription_with_http_info(subscription_key, request, **kwargs)  # noqa: E501
+            return self.put_cancel_subscription_with_http_info(subscription_key, request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_cancel_subscription_with_http_info(subscription_key, request, **kwargs)  # noqa: E501
+            (data) = self.put_cancel_subscription_with_http_info(subscription_key, request, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_cancel_subscription_with_http_info(self, subscription_key, request, **kwargs):  # noqa: E501
+    def put_cancel_subscription_with_http_info(self, subscription_key, request, **kwargs):  # noqa: E501
         """Cancel subscription  # noqa: E501
 
         This REST API reference describes how to cancel an active subscription.  **Note:** This feature is unavailable if you have the Orders feature enabled. See [Orders Migration Guidance](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AB_Orders_Migration_Guidance) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_cancel_subscription_with_http_info(subscription_key, request, async_req=True)
+        >>> thread = api.put_cancel_subscription_with_http_info(subscription_key, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -971,18 +971,18 @@ class SubscriptionsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_cancel_subscription" % key
+                    " to method put_cancel_subscription" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'subscription_key' is set
         if ('subscription_key' not in params or
                 params['subscription_key'] is None):
-            raise ValueError("Missing the required parameter `subscription_key` when calling `p_ut_cancel_subscription`")  # noqa: E501
+            raise ValueError("Missing the required parameter `subscription_key` when calling `put_cancel_subscription`")  # noqa: E501
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ut_cancel_subscription`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `put_cancel_subscription`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1031,13 +1031,13 @@ class SubscriptionsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_renew_subscription(self, subscription_key, request, **kwargs):  # noqa: E501
+    def put_renew_subscription(self, subscription_key, request, **kwargs):  # noqa: E501
         """Renew subscription  # noqa: E501
 
         Renews a termed subscription using existing renewal terms.   **Note:** This feature is unavailable if you have the Orders feature enabled. See [Orders Migration Guidance](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AB_Orders_Migration_Guidance) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_renew_subscription(subscription_key, request, async_req=True)
+        >>> thread = api.put_renew_subscription(subscription_key, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1051,18 +1051,18 @@ class SubscriptionsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_renew_subscription_with_http_info(subscription_key, request, **kwargs)  # noqa: E501
+            return self.put_renew_subscription_with_http_info(subscription_key, request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_renew_subscription_with_http_info(subscription_key, request, **kwargs)  # noqa: E501
+            (data) = self.put_renew_subscription_with_http_info(subscription_key, request, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_renew_subscription_with_http_info(self, subscription_key, request, **kwargs):  # noqa: E501
+    def put_renew_subscription_with_http_info(self, subscription_key, request, **kwargs):  # noqa: E501
         """Renew subscription  # noqa: E501
 
         Renews a termed subscription using existing renewal terms.   **Note:** This feature is unavailable if you have the Orders feature enabled. See [Orders Migration Guidance](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AB_Orders_Migration_Guidance) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_renew_subscription_with_http_info(subscription_key, request, async_req=True)
+        >>> thread = api.put_renew_subscription_with_http_info(subscription_key, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1086,18 +1086,18 @@ class SubscriptionsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_renew_subscription" % key
+                    " to method put_renew_subscription" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'subscription_key' is set
         if ('subscription_key' not in params or
                 params['subscription_key'] is None):
-            raise ValueError("Missing the required parameter `subscription_key` when calling `p_ut_renew_subscription`")  # noqa: E501
+            raise ValueError("Missing the required parameter `subscription_key` when calling `put_renew_subscription`")  # noqa: E501
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ut_renew_subscription`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `put_renew_subscription`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1146,13 +1146,13 @@ class SubscriptionsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_resume_subscription(self, subscription_key, request, **kwargs):  # noqa: E501
+    def put_resume_subscription(self, subscription_key, request, **kwargs):  # noqa: E501
         """Resume subscription  # noqa: E501
 
         This REST API reference describes how to resume a suspended subscription.   This feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://suport.zuora.com).   **Note:** This feature is unavailable if you have the Orders feature enabled. See [Orders API Migration Guidance](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AB_Orders_Migration_Guidance) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_resume_subscription(subscription_key, request, async_req=True)
+        >>> thread = api.put_resume_subscription(subscription_key, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1166,18 +1166,18 @@ class SubscriptionsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_resume_subscription_with_http_info(subscription_key, request, **kwargs)  # noqa: E501
+            return self.put_resume_subscription_with_http_info(subscription_key, request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_resume_subscription_with_http_info(subscription_key, request, **kwargs)  # noqa: E501
+            (data) = self.put_resume_subscription_with_http_info(subscription_key, request, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_resume_subscription_with_http_info(self, subscription_key, request, **kwargs):  # noqa: E501
+    def put_resume_subscription_with_http_info(self, subscription_key, request, **kwargs):  # noqa: E501
         """Resume subscription  # noqa: E501
 
         This REST API reference describes how to resume a suspended subscription.   This feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://suport.zuora.com).   **Note:** This feature is unavailable if you have the Orders feature enabled. See [Orders API Migration Guidance](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AB_Orders_Migration_Guidance) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_resume_subscription_with_http_info(subscription_key, request, async_req=True)
+        >>> thread = api.put_resume_subscription_with_http_info(subscription_key, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1201,18 +1201,18 @@ class SubscriptionsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_resume_subscription" % key
+                    " to method put_resume_subscription" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'subscription_key' is set
         if ('subscription_key' not in params or
                 params['subscription_key'] is None):
-            raise ValueError("Missing the required parameter `subscription_key` when calling `p_ut_resume_subscription`")  # noqa: E501
+            raise ValueError("Missing the required parameter `subscription_key` when calling `put_resume_subscription`")  # noqa: E501
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ut_resume_subscription`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `put_resume_subscription`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1261,13 +1261,13 @@ class SubscriptionsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_subscription(self, subscription_key, request, **kwargs):  # noqa: E501
+    def put_subscription(self, subscription_key, request, **kwargs):  # noqa: E501
         """Update subscription  # noqa: E501
 
         Use this call to make the following kinds of changes to a subscription:   * Add a note   * Change the renewal term or auto-renewal flag   * Change the term length or change between evergreen and termed   * Add a new product rate plan   * Remove an existing subscription rate plan   * Change the quantity or price of an existing subscription rate plan  ## Notes * This feature is unavailable if you have the Orders feature enabled. See [Orders Migration Guidance](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AB_Orders_Migration_Guidance) for more information. * The Update Subscription call creates a new subscription, which has the old subscription number but a new subscription ID.  The old subscription is canceled but remains in the system. * In one request, this call can make:   * Up to 9 combined add, update, and remove changes   * No more than 1 change to terms & conditions * Updates are performed in the following sequence:   1. First change the notes on the existing subscription, if requested.   2. Then change the terms and conditions, if requested.   3. Then perform the remaining amendments based upon the effective dates specified. If multiple amendments have the same contract-effective dates, then execute adds before updates, and updates before removes. * The update operation is atomic. If any of the updates fails, the entire operation is rolled back. * The response of the Update Subscription call is based on the REST API minor version you set in the request header. The response structure might be different if you use different minor version numbers.  * If you have the Invoice Settlement feature enabled, we recommend that you set the `zuora-version` parameter to `207.0` or later. Otherwise, an error is returned.  ## Override a Tiered Price There are two ways you override a tiered price:  * Override a specific tier number For example: `tiers[{tier:1,price:8},{tier:2,price:6}]`  * Override the entire tier structure For example:  `tiers[{tier:1,price:8,startingUnit:1,endingUnit:100,priceFormat:\"FlatFee\"}, {tier:2,price:6,startingUnit:101,priceFormat:\"FlatFee\"}]`  If you just override a specific tier, do not include the `startingUnit` field in the request.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_subscription(subscription_key, request, async_req=True)
+        >>> thread = api.put_subscription(subscription_key, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1281,18 +1281,18 @@ class SubscriptionsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_subscription_with_http_info(subscription_key, request, **kwargs)  # noqa: E501
+            return self.put_subscription_with_http_info(subscription_key, request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_subscription_with_http_info(subscription_key, request, **kwargs)  # noqa: E501
+            (data) = self.put_subscription_with_http_info(subscription_key, request, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_subscription_with_http_info(self, subscription_key, request, **kwargs):  # noqa: E501
+    def put_subscription_with_http_info(self, subscription_key, request, **kwargs):  # noqa: E501
         """Update subscription  # noqa: E501
 
         Use this call to make the following kinds of changes to a subscription:   * Add a note   * Change the renewal term or auto-renewal flag   * Change the term length or change between evergreen and termed   * Add a new product rate plan   * Remove an existing subscription rate plan   * Change the quantity or price of an existing subscription rate plan  ## Notes * This feature is unavailable if you have the Orders feature enabled. See [Orders Migration Guidance](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AB_Orders_Migration_Guidance) for more information. * The Update Subscription call creates a new subscription, which has the old subscription number but a new subscription ID.  The old subscription is canceled but remains in the system. * In one request, this call can make:   * Up to 9 combined add, update, and remove changes   * No more than 1 change to terms & conditions * Updates are performed in the following sequence:   1. First change the notes on the existing subscription, if requested.   2. Then change the terms and conditions, if requested.   3. Then perform the remaining amendments based upon the effective dates specified. If multiple amendments have the same contract-effective dates, then execute adds before updates, and updates before removes. * The update operation is atomic. If any of the updates fails, the entire operation is rolled back. * The response of the Update Subscription call is based on the REST API minor version you set in the request header. The response structure might be different if you use different minor version numbers.  * If you have the Invoice Settlement feature enabled, we recommend that you set the `zuora-version` parameter to `207.0` or later. Otherwise, an error is returned.  ## Override a Tiered Price There are two ways you override a tiered price:  * Override a specific tier number For example: `tiers[{tier:1,price:8},{tier:2,price:6}]`  * Override the entire tier structure For example:  `tiers[{tier:1,price:8,startingUnit:1,endingUnit:100,priceFormat:\"FlatFee\"}, {tier:2,price:6,startingUnit:101,priceFormat:\"FlatFee\"}]`  If you just override a specific tier, do not include the `startingUnit` field in the request.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_subscription_with_http_info(subscription_key, request, async_req=True)
+        >>> thread = api.put_subscription_with_http_info(subscription_key, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1316,18 +1316,18 @@ class SubscriptionsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_subscription" % key
+                    " to method put_subscription" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'subscription_key' is set
         if ('subscription_key' not in params or
                 params['subscription_key'] is None):
-            raise ValueError("Missing the required parameter `subscription_key` when calling `p_ut_subscription`")  # noqa: E501
+            raise ValueError("Missing the required parameter `subscription_key` when calling `put_subscription`")  # noqa: E501
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ut_subscription`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `put_subscription`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1376,13 +1376,13 @@ class SubscriptionsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_suspend_subscription(self, subscription_key, request, **kwargs):  # noqa: E501
+    def put_suspend_subscription(self, subscription_key, request, **kwargs):  # noqa: E501
         """Suspend subscription  # noqa: E501
 
         This REST API reference describes how to suspend an active subscription.   This feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://suport.zuora.com).  **Note:** This feature is unavailable if you have the Orders feature enabled. See [Orders API Migration Guidance](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AB_Orders_Migration_Guidance) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_suspend_subscription(subscription_key, request, async_req=True)
+        >>> thread = api.put_suspend_subscription(subscription_key, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1396,18 +1396,18 @@ class SubscriptionsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_suspend_subscription_with_http_info(subscription_key, request, **kwargs)  # noqa: E501
+            return self.put_suspend_subscription_with_http_info(subscription_key, request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_suspend_subscription_with_http_info(subscription_key, request, **kwargs)  # noqa: E501
+            (data) = self.put_suspend_subscription_with_http_info(subscription_key, request, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_suspend_subscription_with_http_info(self, subscription_key, request, **kwargs):  # noqa: E501
+    def put_suspend_subscription_with_http_info(self, subscription_key, request, **kwargs):  # noqa: E501
         """Suspend subscription  # noqa: E501
 
         This REST API reference describes how to suspend an active subscription.   This feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://suport.zuora.com).  **Note:** This feature is unavailable if you have the Orders feature enabled. See [Orders API Migration Guidance](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AB_Orders_Migration_Guidance) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_suspend_subscription_with_http_info(subscription_key, request, async_req=True)
+        >>> thread = api.put_suspend_subscription_with_http_info(subscription_key, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1431,18 +1431,18 @@ class SubscriptionsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_suspend_subscription" % key
+                    " to method put_suspend_subscription" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'subscription_key' is set
         if ('subscription_key' not in params or
                 params['subscription_key'] is None):
-            raise ValueError("Missing the required parameter `subscription_key` when calling `p_ut_suspend_subscription`")  # noqa: E501
+            raise ValueError("Missing the required parameter `subscription_key` when calling `put_suspend_subscription`")  # noqa: E501
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ut_suspend_subscription`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `put_suspend_subscription`")  # noqa: E501
 
         collection_formats = {}
 

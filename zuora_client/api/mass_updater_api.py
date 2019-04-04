@@ -25,13 +25,13 @@ class MassUpdaterApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def g_et_mass_updater(self, bulk_key, **kwargs):  # noqa: E501
+    def get_mass_updater(self, bulk_key, **kwargs):  # noqa: E501
         """Get mass action result  # noqa: E501
 
         This reference describes how to get information about the result of a mass action through the REST API.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_mass_updater(bulk_key, async_req=True)
+        >>> thread = api.get_mass_updater(bulk_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -43,18 +43,18 @@ class MassUpdaterApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_mass_updater_with_http_info(bulk_key, **kwargs)  # noqa: E501
+            return self.get_mass_updater_with_http_info(bulk_key, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_mass_updater_with_http_info(bulk_key, **kwargs)  # noqa: E501
+            (data) = self.get_mass_updater_with_http_info(bulk_key, **kwargs)  # noqa: E501
             return data
 
-    def g_et_mass_updater_with_http_info(self, bulk_key, **kwargs):  # noqa: E501
+    def get_mass_updater_with_http_info(self, bulk_key, **kwargs):  # noqa: E501
         """Get mass action result  # noqa: E501
 
         This reference describes how to get information about the result of a mass action through the REST API.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_mass_updater_with_http_info(bulk_key, async_req=True)
+        >>> thread = api.get_mass_updater_with_http_info(bulk_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -76,14 +76,14 @@ class MassUpdaterApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_mass_updater" % key
+                    " to method get_mass_updater" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'bulk_key' is set
         if ('bulk_key' not in params or
                 params['bulk_key'] is None):
-            raise ValueError("Missing the required parameter `bulk_key` when calling `g_et_mass_updater`")  # noqa: E501
+            raise ValueError("Missing the required parameter `bulk_key` when calling `get_mass_updater`")  # noqa: E501
 
         collection_formats = {}
 
@@ -128,13 +128,13 @@ class MassUpdaterApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_mass_updater(self, file, params, **kwargs):  # noqa: E501
+    def post_mass_updater(self, file, params, **kwargs):  # noqa: E501
         """Perform mass action  # noqa: E501
 
         This reference describes how to perform a mass action through the REST API.   Using this API method, you send a multipart/form-data request containing a `.csv` file with data about the mass action you want to perform. Zuora returns a key and then asynchronously processes the mass action. You can use the key to get details about the result of the mass action.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_mass_updater(file, params, async_req=True)
+        >>> thread = api.post_mass_updater(file, params, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -147,18 +147,18 @@ class MassUpdaterApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_mass_updater_with_http_info(file, params, **kwargs)  # noqa: E501
+            return self.post_mass_updater_with_http_info(file, params, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_mass_updater_with_http_info(file, params, **kwargs)  # noqa: E501
+            (data) = self.post_mass_updater_with_http_info(file, params, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_mass_updater_with_http_info(self, file, params, **kwargs):  # noqa: E501
+    def post_mass_updater_with_http_info(self, file, params, **kwargs):  # noqa: E501
         """Perform mass action  # noqa: E501
 
         This reference describes how to perform a mass action through the REST API.   Using this API method, you send a multipart/form-data request containing a `.csv` file with data about the mass action you want to perform. Zuora returns a key and then asynchronously processes the mass action. You can use the key to get details about the result of the mass action.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_mass_updater_with_http_info(file, params, async_req=True)
+        >>> thread = api.post_mass_updater_with_http_info(file, params, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -181,18 +181,18 @@ class MassUpdaterApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_mass_updater" % key
+                    " to method post_mass_updater" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'file' is set
         if ('file' not in params or
                 params['file'] is None):
-            raise ValueError("Missing the required parameter `file` when calling `p_ost_mass_updater`")  # noqa: E501
+            raise ValueError("Missing the required parameter `file` when calling `post_mass_updater`")  # noqa: E501
         # verify the required parameter 'params' is set
         if ('params' not in params or
                 params['params'] is None):
-            raise ValueError("Missing the required parameter `params` when calling `p_ost_mass_updater`")  # noqa: E501
+            raise ValueError("Missing the required parameter `params` when calling `post_mass_updater`")  # noqa: E501
 
         collection_formats = {}
 
@@ -239,13 +239,13 @@ class MassUpdaterApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_mass_updater(self, bulk_key, **kwargs):  # noqa: E501
+    def put_mass_updater(self, bulk_key, **kwargs):  # noqa: E501
         """Stop mass action  # noqa: E501
 
         This reference describes how to stop a mass action through the REST API. You can stop a mass action when its status is Pending or Processing. After you have stopped a mass action, you can get the mass action result to see details of the mass action.  - If you stop a mass action when its status is Pending, no response file is generated because no records have been processed.  - If you stop a mass action when its status is Processing, a response file is generated. You can check the response file to see which records have been processed and which have not. In the response file, the **Success** column has the value `Y` (successful) or `N` (failed) for processed records, and a blank value for unprocessed records.  Records that have already been processed when a mass action is stopped are not rolled back.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_mass_updater(bulk_key, async_req=True)
+        >>> thread = api.put_mass_updater(bulk_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -257,18 +257,18 @@ class MassUpdaterApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_mass_updater_with_http_info(bulk_key, **kwargs)  # noqa: E501
+            return self.put_mass_updater_with_http_info(bulk_key, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_mass_updater_with_http_info(bulk_key, **kwargs)  # noqa: E501
+            (data) = self.put_mass_updater_with_http_info(bulk_key, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_mass_updater_with_http_info(self, bulk_key, **kwargs):  # noqa: E501
+    def put_mass_updater_with_http_info(self, bulk_key, **kwargs):  # noqa: E501
         """Stop mass action  # noqa: E501
 
         This reference describes how to stop a mass action through the REST API. You can stop a mass action when its status is Pending or Processing. After you have stopped a mass action, you can get the mass action result to see details of the mass action.  - If you stop a mass action when its status is Pending, no response file is generated because no records have been processed.  - If you stop a mass action when its status is Processing, a response file is generated. You can check the response file to see which records have been processed and which have not. In the response file, the **Success** column has the value `Y` (successful) or `N` (failed) for processed records, and a blank value for unprocessed records.  Records that have already been processed when a mass action is stopped are not rolled back.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_mass_updater_with_http_info(bulk_key, async_req=True)
+        >>> thread = api.put_mass_updater_with_http_info(bulk_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -290,14 +290,14 @@ class MassUpdaterApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_mass_updater" % key
+                    " to method put_mass_updater" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'bulk_key' is set
         if ('bulk_key' not in params or
                 params['bulk_key'] is None):
-            raise ValueError("Missing the required parameter `bulk_key` when calling `p_ut_mass_updater`")  # noqa: E501
+            raise ValueError("Missing the required parameter `bulk_key` when calling `put_mass_updater`")  # noqa: E501
 
         collection_formats = {}
 

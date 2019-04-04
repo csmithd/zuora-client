@@ -25,13 +25,13 @@ class TransactionsApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def g_et_transaction_invoice(self, account_key, **kwargs):  # noqa: E501
+    def get_transaction_invoice(self, account_key, **kwargs):  # noqa: E501
         """Get invoices  # noqa: E501
 
         Retrieves invoices for a specified account.  Invoices are returned in reverse chronological order by **updatedDate**.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_transaction_invoice(account_key, async_req=True)
+        >>> thread = api.get_transaction_invoice(account_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -44,18 +44,18 @@ class TransactionsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_transaction_invoice_with_http_info(account_key, **kwargs)  # noqa: E501
+            return self.get_transaction_invoice_with_http_info(account_key, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_transaction_invoice_with_http_info(account_key, **kwargs)  # noqa: E501
+            (data) = self.get_transaction_invoice_with_http_info(account_key, **kwargs)  # noqa: E501
             return data
 
-    def g_et_transaction_invoice_with_http_info(self, account_key, **kwargs):  # noqa: E501
+    def get_transaction_invoice_with_http_info(self, account_key, **kwargs):  # noqa: E501
         """Get invoices  # noqa: E501
 
         Retrieves invoices for a specified account.  Invoices are returned in reverse chronological order by **updatedDate**.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_transaction_invoice_with_http_info(account_key, async_req=True)
+        >>> thread = api.get_transaction_invoice_with_http_info(account_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -78,17 +78,17 @@ class TransactionsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_transaction_invoice" % key
+                    " to method get_transaction_invoice" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'account_key' is set
         if ('account_key' not in params or
                 params['account_key'] is None):
-            raise ValueError("Missing the required parameter `account_key` when calling `g_et_transaction_invoice`")  # noqa: E501
+            raise ValueError("Missing the required parameter `account_key` when calling `get_transaction_invoice`")  # noqa: E501
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_transaction_invoice`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_transaction_invoice`, must be a value less than or equal to `40`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -134,13 +134,13 @@ class TransactionsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_transaction_payment(self, account_key, **kwargs):  # noqa: E501
+    def get_transaction_payment(self, account_key, **kwargs):  # noqa: E501
         """Get payments  # noqa: E501
 
         Retrieves payments for a specified account. Payments are returned in reverse chronological order by **updatedDate**.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_transaction_payment(account_key, async_req=True)
+        >>> thread = api.get_transaction_payment(account_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -153,18 +153,18 @@ class TransactionsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_transaction_payment_with_http_info(account_key, **kwargs)  # noqa: E501
+            return self.get_transaction_payment_with_http_info(account_key, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_transaction_payment_with_http_info(account_key, **kwargs)  # noqa: E501
+            (data) = self.get_transaction_payment_with_http_info(account_key, **kwargs)  # noqa: E501
             return data
 
-    def g_et_transaction_payment_with_http_info(self, account_key, **kwargs):  # noqa: E501
+    def get_transaction_payment_with_http_info(self, account_key, **kwargs):  # noqa: E501
         """Get payments  # noqa: E501
 
         Retrieves payments for a specified account. Payments are returned in reverse chronological order by **updatedDate**.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_transaction_payment_with_http_info(account_key, async_req=True)
+        >>> thread = api.get_transaction_payment_with_http_info(account_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -187,17 +187,17 @@ class TransactionsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_transaction_payment" % key
+                    " to method get_transaction_payment" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'account_key' is set
         if ('account_key' not in params or
                 params['account_key'] is None):
-            raise ValueError("Missing the required parameter `account_key` when calling `g_et_transaction_payment`")  # noqa: E501
+            raise ValueError("Missing the required parameter `account_key` when calling `get_transaction_payment`")  # noqa: E501
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_transaction_payment`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_transaction_payment`, must be a value less than or equal to `40`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}

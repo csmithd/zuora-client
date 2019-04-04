@@ -25,13 +25,13 @@ class HMACSignaturesApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def p_osthmac_signatures(self, request, **kwargs):  # noqa: E501
+    def posthmac_signatures(self, request, **kwargs):  # noqa: E501
         """Return HMAC signatures  # noqa: E501
 
         This REST API reference describes how to return unique signature and token values that used to process a CORS enabled API call.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_osthmac_signatures(request, async_req=True)
+        >>> thread = api.posthmac_signatures(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -43,18 +43,18 @@ class HMACSignaturesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_osthmac_signatures_with_http_info(request, **kwargs)  # noqa: E501
+            return self.posthmac_signatures_with_http_info(request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_osthmac_signatures_with_http_info(request, **kwargs)  # noqa: E501
+            (data) = self.posthmac_signatures_with_http_info(request, **kwargs)  # noqa: E501
             return data
 
-    def p_osthmac_signatures_with_http_info(self, request, **kwargs):  # noqa: E501
+    def posthmac_signatures_with_http_info(self, request, **kwargs):  # noqa: E501
         """Return HMAC signatures  # noqa: E501
 
         This REST API reference describes how to return unique signature and token values that used to process a CORS enabled API call.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_osthmac_signatures_with_http_info(request, async_req=True)
+        >>> thread = api.posthmac_signatures_with_http_info(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -76,14 +76,14 @@ class HMACSignaturesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_osthmac_signatures" % key
+                    " to method posthmac_signatures" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_osthmac_signatures`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `posthmac_signatures`")  # noqa: E501
 
         collection_formats = {}
 

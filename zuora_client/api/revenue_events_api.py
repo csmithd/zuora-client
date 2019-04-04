@@ -25,13 +25,13 @@ class RevenueEventsApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def g_et_revenue_event_details(self, event_number, **kwargs):  # noqa: E501
+    def get_revenue_event_details(self, event_number, **kwargs):  # noqa: E501
         """Get revenue event details  # noqa: E501
 
          This REST API reference describes how to get revenue event details by specifying the revenue event number. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_revenue_event_details(event_number, async_req=True)
+        >>> thread = api.get_revenue_event_details(event_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -43,18 +43,18 @@ class RevenueEventsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_revenue_event_details_with_http_info(event_number, **kwargs)  # noqa: E501
+            return self.get_revenue_event_details_with_http_info(event_number, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_revenue_event_details_with_http_info(event_number, **kwargs)  # noqa: E501
+            (data) = self.get_revenue_event_details_with_http_info(event_number, **kwargs)  # noqa: E501
             return data
 
-    def g_et_revenue_event_details_with_http_info(self, event_number, **kwargs):  # noqa: E501
+    def get_revenue_event_details_with_http_info(self, event_number, **kwargs):  # noqa: E501
         """Get revenue event details  # noqa: E501
 
          This REST API reference describes how to get revenue event details by specifying the revenue event number. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_revenue_event_details_with_http_info(event_number, async_req=True)
+        >>> thread = api.get_revenue_event_details_with_http_info(event_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -76,14 +76,14 @@ class RevenueEventsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_revenue_event_details" % key
+                    " to method get_revenue_event_details" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'event_number' is set
         if ('event_number' not in params or
                 params['event_number'] is None):
-            raise ValueError("Missing the required parameter `event_number` when calling `g_et_revenue_event_details`")  # noqa: E501
+            raise ValueError("Missing the required parameter `event_number` when calling `get_revenue_event_details`")  # noqa: E501
 
         collection_formats = {}
 
@@ -128,13 +128,13 @@ class RevenueEventsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_revenue_event_for_revenue_schedule(self, rs_number, **kwargs):  # noqa: E501
+    def get_revenue_event_for_revenue_schedule(self, rs_number, **kwargs):  # noqa: E501
         """Get revenue events for a revenue schedule  # noqa: E501
 
          This REST API reference describes how to get all revenue events in a revenue schedule by specifying the revenue schedule number. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_revenue_event_for_revenue_schedule(rs_number, async_req=True)
+        >>> thread = api.get_revenue_event_for_revenue_schedule(rs_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -147,18 +147,18 @@ class RevenueEventsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_revenue_event_for_revenue_schedule_with_http_info(rs_number, **kwargs)  # noqa: E501
+            return self.get_revenue_event_for_revenue_schedule_with_http_info(rs_number, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_revenue_event_for_revenue_schedule_with_http_info(rs_number, **kwargs)  # noqa: E501
+            (data) = self.get_revenue_event_for_revenue_schedule_with_http_info(rs_number, **kwargs)  # noqa: E501
             return data
 
-    def g_et_revenue_event_for_revenue_schedule_with_http_info(self, rs_number, **kwargs):  # noqa: E501
+    def get_revenue_event_for_revenue_schedule_with_http_info(self, rs_number, **kwargs):  # noqa: E501
         """Get revenue events for a revenue schedule  # noqa: E501
 
          This REST API reference describes how to get all revenue events in a revenue schedule by specifying the revenue schedule number. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_revenue_event_for_revenue_schedule_with_http_info(rs_number, async_req=True)
+        >>> thread = api.get_revenue_event_for_revenue_schedule_with_http_info(rs_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -181,17 +181,17 @@ class RevenueEventsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_revenue_event_for_revenue_schedule" % key
+                    " to method get_revenue_event_for_revenue_schedule" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'rs_number' is set
         if ('rs_number' not in params or
                 params['rs_number'] is None):
-            raise ValueError("Missing the required parameter `rs_number` when calling `g_et_revenue_event_for_revenue_schedule`")  # noqa: E501
+            raise ValueError("Missing the required parameter `rs_number` when calling `get_revenue_event_for_revenue_schedule`")  # noqa: E501
 
         if 'page_size' in params and params['page_size'] > 300:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_revenue_event_for_revenue_schedule`, must be a value less than or equal to `300`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_revenue_event_for_revenue_schedule`, must be a value less than or equal to `300`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}

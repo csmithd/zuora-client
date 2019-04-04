@@ -25,13 +25,13 @@ class InvoicesApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def g_et_invoice_application_parts(self, invoice_id, **kwargs):  # noqa: E501
+    def get_invoice_application_parts(self, invoice_id, **kwargs):  # noqa: E501
         """Get invoice application parts  # noqa: E501
 
         Note: The Invoice Settlement feature is in Limited Availability. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at Zuora Global Support.  Retrieves information about the payments or credit memos that are applied to a specified invoice.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_invoice_application_parts(invoice_id, async_req=True)
+        >>> thread = api.get_invoice_application_parts(invoice_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -43,18 +43,18 @@ class InvoicesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_invoice_application_parts_with_http_info(invoice_id, **kwargs)  # noqa: E501
+            return self.get_invoice_application_parts_with_http_info(invoice_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_invoice_application_parts_with_http_info(invoice_id, **kwargs)  # noqa: E501
+            (data) = self.get_invoice_application_parts_with_http_info(invoice_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_invoice_application_parts_with_http_info(self, invoice_id, **kwargs):  # noqa: E501
+    def get_invoice_application_parts_with_http_info(self, invoice_id, **kwargs):  # noqa: E501
         """Get invoice application parts  # noqa: E501
 
         Note: The Invoice Settlement feature is in Limited Availability. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at Zuora Global Support.  Retrieves information about the payments or credit memos that are applied to a specified invoice.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_invoice_application_parts_with_http_info(invoice_id, async_req=True)
+        >>> thread = api.get_invoice_application_parts_with_http_info(invoice_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -76,14 +76,14 @@ class InvoicesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_invoice_application_parts" % key
+                    " to method get_invoice_application_parts" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'invoice_id' is set
         if ('invoice_id' not in params or
                 params['invoice_id'] is None):
-            raise ValueError("Missing the required parameter `invoice_id` when calling `g_et_invoice_application_parts`")  # noqa: E501
+            raise ValueError("Missing the required parameter `invoice_id` when calling `get_invoice_application_parts`")  # noqa: E501
 
         collection_formats = {}
 
@@ -128,13 +128,13 @@ class InvoicesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_invoice_files(self, invoice_id, **kwargs):  # noqa: E501
+    def get_invoice_files(self, invoice_id, **kwargs):  # noqa: E501
         """Get invoice files  # noqa: E501
 
         Retrieves the information about all PDF files of a specified invoice.   Invoice PDF files are returned in reverse chronological order by the value of the `versionNumber` field.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_invoice_files(invoice_id, async_req=True)
+        >>> thread = api.get_invoice_files(invoice_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -147,18 +147,18 @@ class InvoicesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_invoice_files_with_http_info(invoice_id, **kwargs)  # noqa: E501
+            return self.get_invoice_files_with_http_info(invoice_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_invoice_files_with_http_info(invoice_id, **kwargs)  # noqa: E501
+            (data) = self.get_invoice_files_with_http_info(invoice_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_invoice_files_with_http_info(self, invoice_id, **kwargs):  # noqa: E501
+    def get_invoice_files_with_http_info(self, invoice_id, **kwargs):  # noqa: E501
         """Get invoice files  # noqa: E501
 
         Retrieves the information about all PDF files of a specified invoice.   Invoice PDF files are returned in reverse chronological order by the value of the `versionNumber` field.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_invoice_files_with_http_info(invoice_id, async_req=True)
+        >>> thread = api.get_invoice_files_with_http_info(invoice_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -181,17 +181,17 @@ class InvoicesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_invoice_files" % key
+                    " to method get_invoice_files" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'invoice_id' is set
         if ('invoice_id' not in params or
                 params['invoice_id'] is None):
-            raise ValueError("Missing the required parameter `invoice_id` when calling `g_et_invoice_files`")  # noqa: E501
+            raise ValueError("Missing the required parameter `invoice_id` when calling `get_invoice_files`")  # noqa: E501
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_invoice_files`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_invoice_files`, must be a value less than or equal to `40`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -237,13 +237,13 @@ class InvoicesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_invoice_items(self, invoice_id, **kwargs):  # noqa: E501
+    def get_invoice_items(self, invoice_id, **kwargs):  # noqa: E501
         """Get invoice items  # noqa: E501
 
         Retrieves the information about all items of a specified invoice.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_invoice_items(invoice_id, async_req=True)
+        >>> thread = api.get_invoice_items(invoice_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -256,18 +256,18 @@ class InvoicesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_invoice_items_with_http_info(invoice_id, **kwargs)  # noqa: E501
+            return self.get_invoice_items_with_http_info(invoice_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_invoice_items_with_http_info(invoice_id, **kwargs)  # noqa: E501
+            (data) = self.get_invoice_items_with_http_info(invoice_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_invoice_items_with_http_info(self, invoice_id, **kwargs):  # noqa: E501
+    def get_invoice_items_with_http_info(self, invoice_id, **kwargs):  # noqa: E501
         """Get invoice items  # noqa: E501
 
         Retrieves the information about all items of a specified invoice.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_invoice_items_with_http_info(invoice_id, async_req=True)
+        >>> thread = api.get_invoice_items_with_http_info(invoice_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -290,17 +290,17 @@ class InvoicesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_invoice_items" % key
+                    " to method get_invoice_items" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'invoice_id' is set
         if ('invoice_id' not in params or
                 params['invoice_id'] is None):
-            raise ValueError("Missing the required parameter `invoice_id` when calling `g_et_invoice_items`")  # noqa: E501
+            raise ValueError("Missing the required parameter `invoice_id` when calling `get_invoice_items`")  # noqa: E501
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_invoice_items`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_invoice_items`, must be a value less than or equal to `40`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -346,13 +346,13 @@ class InvoicesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_taxation_items_of_invoice_item(self, invoice_id, item_id, **kwargs):  # noqa: E501
+    def get_taxation_items_of_invoice_item(self, invoice_id, item_id, **kwargs):  # noqa: E501
         """Get taxation items of invoice item  # noqa: E501
 
         Retrieves information about the taxation items of a specific invoice item.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_taxation_items_of_invoice_item(invoice_id, item_id, async_req=True)
+        >>> thread = api.get_taxation_items_of_invoice_item(invoice_id, item_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -367,18 +367,18 @@ class InvoicesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_taxation_items_of_invoice_item_with_http_info(invoice_id, item_id, **kwargs)  # noqa: E501
+            return self.get_taxation_items_of_invoice_item_with_http_info(invoice_id, item_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_taxation_items_of_invoice_item_with_http_info(invoice_id, item_id, **kwargs)  # noqa: E501
+            (data) = self.get_taxation_items_of_invoice_item_with_http_info(invoice_id, item_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_taxation_items_of_invoice_item_with_http_info(self, invoice_id, item_id, **kwargs):  # noqa: E501
+    def get_taxation_items_of_invoice_item_with_http_info(self, invoice_id, item_id, **kwargs):  # noqa: E501
         """Get taxation items of invoice item  # noqa: E501
 
         Retrieves information about the taxation items of a specific invoice item.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_taxation_items_of_invoice_item_with_http_info(invoice_id, item_id, async_req=True)
+        >>> thread = api.get_taxation_items_of_invoice_item_with_http_info(invoice_id, item_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -403,23 +403,23 @@ class InvoicesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_taxation_items_of_invoice_item" % key
+                    " to method get_taxation_items_of_invoice_item" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'invoice_id' is set
         if ('invoice_id' not in params or
                 params['invoice_id'] is None):
-            raise ValueError("Missing the required parameter `invoice_id` when calling `g_et_taxation_items_of_invoice_item`")  # noqa: E501
+            raise ValueError("Missing the required parameter `invoice_id` when calling `get_taxation_items_of_invoice_item`")  # noqa: E501
         # verify the required parameter 'item_id' is set
         if ('item_id' not in params or
                 params['item_id'] is None):
-            raise ValueError("Missing the required parameter `item_id` when calling `g_et_taxation_items_of_invoice_item`")  # noqa: E501
+            raise ValueError("Missing the required parameter `item_id` when calling `get_taxation_items_of_invoice_item`")  # noqa: E501
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_taxation_items_of_invoice_item`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_taxation_items_of_invoice_item`, must be a value less than or equal to `40`")  # noqa: E501
         if 'page' in params and params['page'] < 1:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page` when calling `g_et_taxation_items_of_invoice_item`, must be a value greater than or equal to `1`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page` when calling `get_taxation_items_of_invoice_item`, must be a value greater than or equal to `1`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -811,13 +811,13 @@ class InvoicesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_credit_memo_from_invoice(self, body, invoice_id, **kwargs):  # noqa: E501
+    def post_credit_memo_from_invoice(self, body, invoice_id, **kwargs):  # noqa: E501
         """Create credit memo from invoice  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Creates an ad-hoc credit memo from an invoice.  You can create a credit memo from an invoice only if you have the user permission. See [Billing Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_credit_memo_from_invoice(body, invoice_id, async_req=True)
+        >>> thread = api.post_credit_memo_from_invoice(body, invoice_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -830,18 +830,18 @@ class InvoicesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_credit_memo_from_invoice_with_http_info(body, invoice_id, **kwargs)  # noqa: E501
+            return self.post_credit_memo_from_invoice_with_http_info(body, invoice_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_credit_memo_from_invoice_with_http_info(body, invoice_id, **kwargs)  # noqa: E501
+            (data) = self.post_credit_memo_from_invoice_with_http_info(body, invoice_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_credit_memo_from_invoice_with_http_info(self, body, invoice_id, **kwargs):  # noqa: E501
+    def post_credit_memo_from_invoice_with_http_info(self, body, invoice_id, **kwargs):  # noqa: E501
         """Create credit memo from invoice  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Creates an ad-hoc credit memo from an invoice.  You can create a credit memo from an invoice only if you have the user permission. See [Billing Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_credit_memo_from_invoice_with_http_info(body, invoice_id, async_req=True)
+        >>> thread = api.post_credit_memo_from_invoice_with_http_info(body, invoice_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -864,18 +864,18 @@ class InvoicesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_credit_memo_from_invoice" % key
+                    " to method post_credit_memo_from_invoice" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ost_credit_memo_from_invoice`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `post_credit_memo_from_invoice`")  # noqa: E501
         # verify the required parameter 'invoice_id' is set
         if ('invoice_id' not in params or
                 params['invoice_id'] is None):
-            raise ValueError("Missing the required parameter `invoice_id` when calling `p_ost_credit_memo_from_invoice`")  # noqa: E501
+            raise ValueError("Missing the required parameter `invoice_id` when calling `post_credit_memo_from_invoice`")  # noqa: E501
 
         collection_formats = {}
 
@@ -922,13 +922,13 @@ class InvoicesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_debit_memo_from_invoice(self, invoice_id, body, **kwargs):  # noqa: E501
+    def post_debit_memo_from_invoice(self, invoice_id, body, **kwargs):  # noqa: E501
         """Create debit memo from invoice  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Creates an ad-hoc debit memo from an invoice.  You can create a debit memo from an invoice only if you have the user permission. See [Billing Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_debit_memo_from_invoice(invoice_id, body, async_req=True)
+        >>> thread = api.post_debit_memo_from_invoice(invoice_id, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -941,18 +941,18 @@ class InvoicesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_debit_memo_from_invoice_with_http_info(invoice_id, body, **kwargs)  # noqa: E501
+            return self.post_debit_memo_from_invoice_with_http_info(invoice_id, body, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_debit_memo_from_invoice_with_http_info(invoice_id, body, **kwargs)  # noqa: E501
+            (data) = self.post_debit_memo_from_invoice_with_http_info(invoice_id, body, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_debit_memo_from_invoice_with_http_info(self, invoice_id, body, **kwargs):  # noqa: E501
+    def post_debit_memo_from_invoice_with_http_info(self, invoice_id, body, **kwargs):  # noqa: E501
         """Create debit memo from invoice  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Creates an ad-hoc debit memo from an invoice.  You can create a debit memo from an invoice only if you have the user permission. See [Billing Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_debit_memo_from_invoice_with_http_info(invoice_id, body, async_req=True)
+        >>> thread = api.post_debit_memo_from_invoice_with_http_info(invoice_id, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -975,18 +975,18 @@ class InvoicesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_debit_memo_from_invoice" % key
+                    " to method post_debit_memo_from_invoice" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'invoice_id' is set
         if ('invoice_id' not in params or
                 params['invoice_id'] is None):
-            raise ValueError("Missing the required parameter `invoice_id` when calling `p_ost_debit_memo_from_invoice`")  # noqa: E501
+            raise ValueError("Missing the required parameter `invoice_id` when calling `post_debit_memo_from_invoice`")  # noqa: E501
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ost_debit_memo_from_invoice`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `post_debit_memo_from_invoice`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1033,13 +1033,13 @@ class InvoicesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_email_invoice(self, request, invoice_id, **kwargs):  # noqa: E501
+    def post_email_invoice(self, request, invoice_id, **kwargs):  # noqa: E501
         """Email invoice  # noqa: E501
 
         Sends a posted invoice to the specified email addresses manually.    ## Notes   - You must activate the **Manual Email For Invoice | Manual Email For Invoice** notification before emailing invoices. To include the invoice PDF in the email, select the **Include Invoice PDF** check box in the **Edit notification** dialog from the Zuora UI. See [Create and Edit Notifications](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/Notifications/C_Create_Notifications#section_2) for more information.     - Zuora sends the email messages based on the email template you set. You can set the email template to use in the **Delivery Options** panel of the **Edit notification** dialog from the Zuora UI. By default, the **Invoice Posted Default Email Template** template is used. See [Create and Edit Email Templates](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/Notifications/Create_Email_Templates) for more information.     - The invoices are sent only to the work email addresses or personal email addresses of the Bill To contact if the following conditions are all met:      * The `useEmailTemplateSetting` field is set to `false`.     * The email addresses are not specified in the `emailAddresses` field.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_email_invoice(request, invoice_id, async_req=True)
+        >>> thread = api.post_email_invoice(request, invoice_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1052,18 +1052,18 @@ class InvoicesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_email_invoice_with_http_info(request, invoice_id, **kwargs)  # noqa: E501
+            return self.post_email_invoice_with_http_info(request, invoice_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_email_invoice_with_http_info(request, invoice_id, **kwargs)  # noqa: E501
+            (data) = self.post_email_invoice_with_http_info(request, invoice_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_email_invoice_with_http_info(self, request, invoice_id, **kwargs):  # noqa: E501
+    def post_email_invoice_with_http_info(self, request, invoice_id, **kwargs):  # noqa: E501
         """Email invoice  # noqa: E501
 
         Sends a posted invoice to the specified email addresses manually.    ## Notes   - You must activate the **Manual Email For Invoice | Manual Email For Invoice** notification before emailing invoices. To include the invoice PDF in the email, select the **Include Invoice PDF** check box in the **Edit notification** dialog from the Zuora UI. See [Create and Edit Notifications](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/Notifications/C_Create_Notifications#section_2) for more information.     - Zuora sends the email messages based on the email template you set. You can set the email template to use in the **Delivery Options** panel of the **Edit notification** dialog from the Zuora UI. By default, the **Invoice Posted Default Email Template** template is used. See [Create and Edit Email Templates](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/Notifications/Create_Email_Templates) for more information.     - The invoices are sent only to the work email addresses or personal email addresses of the Bill To contact if the following conditions are all met:      * The `useEmailTemplateSetting` field is set to `false`.     * The email addresses are not specified in the `emailAddresses` field.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_email_invoice_with_http_info(request, invoice_id, async_req=True)
+        >>> thread = api.post_email_invoice_with_http_info(request, invoice_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1086,18 +1086,18 @@ class InvoicesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_email_invoice" % key
+                    " to method post_email_invoice" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ost_email_invoice`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `post_email_invoice`")  # noqa: E501
         # verify the required parameter 'invoice_id' is set
         if ('invoice_id' not in params or
                 params['invoice_id'] is None):
-            raise ValueError("Missing the required parameter `invoice_id` when calling `p_ost_email_invoice`")  # noqa: E501
+            raise ValueError("Missing the required parameter `invoice_id` when calling `post_email_invoice`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1144,13 +1144,13 @@ class InvoicesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_batch_update_invoices(self, request, **kwargs):  # noqa: E501
+    def put_batch_update_invoices(self, request, **kwargs):  # noqa: E501
         """Update invoices  # noqa: E501
 
         Updates multiple invoices in batches with one call.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_batch_update_invoices(request, async_req=True)
+        >>> thread = api.put_batch_update_invoices(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1162,18 +1162,18 @@ class InvoicesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_batch_update_invoices_with_http_info(request, **kwargs)  # noqa: E501
+            return self.put_batch_update_invoices_with_http_info(request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_batch_update_invoices_with_http_info(request, **kwargs)  # noqa: E501
+            (data) = self.put_batch_update_invoices_with_http_info(request, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_batch_update_invoices_with_http_info(self, request, **kwargs):  # noqa: E501
+    def put_batch_update_invoices_with_http_info(self, request, **kwargs):  # noqa: E501
         """Update invoices  # noqa: E501
 
         Updates multiple invoices in batches with one call.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_batch_update_invoices_with_http_info(request, async_req=True)
+        >>> thread = api.put_batch_update_invoices_with_http_info(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1195,14 +1195,14 @@ class InvoicesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_batch_update_invoices" % key
+                    " to method put_batch_update_invoices" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ut_batch_update_invoices`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `put_batch_update_invoices`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1247,13 +1247,13 @@ class InvoicesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_reverse_invoice(self, invoice_id, request, **kwargs):  # noqa: E501
+    def put_reverse_invoice(self, invoice_id, request, **kwargs):  # noqa: E501
         """Reverse invoice  # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Reverses a posted invoice.   **Restrictions**  You are not allowed to reverse an invoice if one of the following restrictions is met:  * Payments and credit memos are applied to the invoice. * The invoice is split. * The invoice is not in Posted status. * The total amount of the invoice is less than 0 (a negative invoice). * Using Tax Connector for Extension Platform to calculate taxes.  See [Reverse Posted Invoices](https://knowledgecenter.zuora.com/CB_Billing/IA_Invoices/Reverse_Posted_Invoices) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_reverse_invoice(invoice_id, request, async_req=True)
+        >>> thread = api.put_reverse_invoice(invoice_id, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1266,18 +1266,18 @@ class InvoicesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_reverse_invoice_with_http_info(invoice_id, request, **kwargs)  # noqa: E501
+            return self.put_reverse_invoice_with_http_info(invoice_id, request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_reverse_invoice_with_http_info(invoice_id, request, **kwargs)  # noqa: E501
+            (data) = self.put_reverse_invoice_with_http_info(invoice_id, request, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_reverse_invoice_with_http_info(self, invoice_id, request, **kwargs):  # noqa: E501
+    def put_reverse_invoice_with_http_info(self, invoice_id, request, **kwargs):  # noqa: E501
         """Reverse invoice  # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Reverses a posted invoice.   **Restrictions**  You are not allowed to reverse an invoice if one of the following restrictions is met:  * Payments and credit memos are applied to the invoice. * The invoice is split. * The invoice is not in Posted status. * The total amount of the invoice is less than 0 (a negative invoice). * Using Tax Connector for Extension Platform to calculate taxes.  See [Reverse Posted Invoices](https://knowledgecenter.zuora.com/CB_Billing/IA_Invoices/Reverse_Posted_Invoices) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_reverse_invoice_with_http_info(invoice_id, request, async_req=True)
+        >>> thread = api.put_reverse_invoice_with_http_info(invoice_id, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1300,18 +1300,18 @@ class InvoicesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_reverse_invoice" % key
+                    " to method put_reverse_invoice" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'invoice_id' is set
         if ('invoice_id' not in params or
                 params['invoice_id'] is None):
-            raise ValueError("Missing the required parameter `invoice_id` when calling `p_ut_reverse_invoice`")  # noqa: E501
+            raise ValueError("Missing the required parameter `invoice_id` when calling `put_reverse_invoice`")  # noqa: E501
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ut_reverse_invoice`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `put_reverse_invoice`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1358,13 +1358,13 @@ class InvoicesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_update_invoice(self, invoice_id, request, **kwargs):  # noqa: E501
+    def put_update_invoice(self, invoice_id, request, **kwargs):  # noqa: E501
         """Update invoice  # noqa: E501
 
         Updates a specific invoice.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_update_invoice(invoice_id, request, async_req=True)
+        >>> thread = api.put_update_invoice(invoice_id, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1377,18 +1377,18 @@ class InvoicesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_update_invoice_with_http_info(invoice_id, request, **kwargs)  # noqa: E501
+            return self.put_update_invoice_with_http_info(invoice_id, request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_update_invoice_with_http_info(invoice_id, request, **kwargs)  # noqa: E501
+            (data) = self.put_update_invoice_with_http_info(invoice_id, request, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_update_invoice_with_http_info(self, invoice_id, request, **kwargs):  # noqa: E501
+    def put_update_invoice_with_http_info(self, invoice_id, request, **kwargs):  # noqa: E501
         """Update invoice  # noqa: E501
 
         Updates a specific invoice.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_update_invoice_with_http_info(invoice_id, request, async_req=True)
+        >>> thread = api.put_update_invoice_with_http_info(invoice_id, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1411,18 +1411,18 @@ class InvoicesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_update_invoice" % key
+                    " to method put_update_invoice" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'invoice_id' is set
         if ('invoice_id' not in params or
                 params['invoice_id'] is None):
-            raise ValueError("Missing the required parameter `invoice_id` when calling `p_ut_update_invoice`")  # noqa: E501
+            raise ValueError("Missing the required parameter `invoice_id` when calling `put_update_invoice`")  # noqa: E501
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ut_update_invoice`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `put_update_invoice`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1469,13 +1469,13 @@ class InvoicesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_write_off_invoice(self, invoice_id, request, **kwargs):  # noqa: E501
+    def put_write_off_invoice(self, invoice_id, request, **kwargs):  # noqa: E501
         """Write off invoice  # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Writes off a posted invoice.   By writing off an invoice, a credit memo is created and applied to the invoice. The generated credit memo items and credit memo taxation items are applied to invoice items and invoice taxation items based on the configured default application rule. If an invoice is written off, the balance of each invoice item and invoice taxation item must be zero.  An invoice cannot be written off in the following situations:   - Any transactions such as payments or credit memos are applied to an invoice.   - The balance of an invoice has been changed.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_write_off_invoice(invoice_id, request, async_req=True)
+        >>> thread = api.put_write_off_invoice(invoice_id, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1488,18 +1488,18 @@ class InvoicesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_write_off_invoice_with_http_info(invoice_id, request, **kwargs)  # noqa: E501
+            return self.put_write_off_invoice_with_http_info(invoice_id, request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_write_off_invoice_with_http_info(invoice_id, request, **kwargs)  # noqa: E501
+            (data) = self.put_write_off_invoice_with_http_info(invoice_id, request, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_write_off_invoice_with_http_info(self, invoice_id, request, **kwargs):  # noqa: E501
+    def put_write_off_invoice_with_http_info(self, invoice_id, request, **kwargs):  # noqa: E501
         """Write off invoice  # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Writes off a posted invoice.   By writing off an invoice, a credit memo is created and applied to the invoice. The generated credit memo items and credit memo taxation items are applied to invoice items and invoice taxation items based on the configured default application rule. If an invoice is written off, the balance of each invoice item and invoice taxation item must be zero.  An invoice cannot be written off in the following situations:   - Any transactions such as payments or credit memos are applied to an invoice.   - The balance of an invoice has been changed.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_write_off_invoice_with_http_info(invoice_id, request, async_req=True)
+        >>> thread = api.put_write_off_invoice_with_http_info(invoice_id, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1522,18 +1522,18 @@ class InvoicesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_write_off_invoice" % key
+                    " to method put_write_off_invoice" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'invoice_id' is set
         if ('invoice_id' not in params or
                 params['invoice_id'] is None):
-            raise ValueError("Missing the required parameter `invoice_id` when calling `p_ut_write_off_invoice`")  # noqa: E501
+            raise ValueError("Missing the required parameter `invoice_id` when calling `put_write_off_invoice`")  # noqa: E501
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ut_write_off_invoice`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `put_write_off_invoice`")  # noqa: E501
 
         collection_formats = {}
 

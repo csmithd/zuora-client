@@ -29,8 +29,8 @@ class TestProductRatePlansApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_g_et_product_rate_plans(self):
-        """Test case for g_et_product_rate_plans
+    def test_get_product_rate_plans(self):
+        """Test case for get_product_rate_plans
 
         Get product rate plans  # noqa: E501
         """

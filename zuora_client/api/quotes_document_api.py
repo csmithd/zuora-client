@@ -25,13 +25,13 @@ class QuotesDocumentApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def p_ost_quotes_document(self, request, **kwargs):  # noqa: E501
+    def post_quotes_document(self, request, **kwargs):  # noqa: E501
         """Generate quotes document  # noqa: E501
 
         The `document` call generates a quote document and returns the generated document URL. You can directly access the generated quote file through the returned URL.  The `document` call should be only used from Zuora Quotes.   ## File Size Limitation  The maximum export file size is 2047MB. If you have large data requests that go over this limit, you will get the following 403 HTTP response code from Zuora: `security:max-object-size>2047MB</security:max-object-size>`  Submit a request at [Zuora Global Support](http://support.zuora.com/) if you require additional assistance.  We can work with you to determine if large file optimization is an option for you.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_quotes_document(request, async_req=True)
+        >>> thread = api.post_quotes_document(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -43,18 +43,18 @@ class QuotesDocumentApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_quotes_document_with_http_info(request, **kwargs)  # noqa: E501
+            return self.post_quotes_document_with_http_info(request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_quotes_document_with_http_info(request, **kwargs)  # noqa: E501
+            (data) = self.post_quotes_document_with_http_info(request, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_quotes_document_with_http_info(self, request, **kwargs):  # noqa: E501
+    def post_quotes_document_with_http_info(self, request, **kwargs):  # noqa: E501
         """Generate quotes document  # noqa: E501
 
         The `document` call generates a quote document and returns the generated document URL. You can directly access the generated quote file through the returned URL.  The `document` call should be only used from Zuora Quotes.   ## File Size Limitation  The maximum export file size is 2047MB. If you have large data requests that go over this limit, you will get the following 403 HTTP response code from Zuora: `security:max-object-size>2047MB</security:max-object-size>`  Submit a request at [Zuora Global Support](http://support.zuora.com/) if you require additional assistance.  We can work with you to determine if large file optimization is an option for you.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_quotes_document_with_http_info(request, async_req=True)
+        >>> thread = api.post_quotes_document_with_http_info(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -76,14 +76,14 @@ class QuotesDocumentApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_quotes_document" % key
+                    " to method post_quotes_document" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ost_quotes_document`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `post_quotes_document`")  # noqa: E501
 
         collection_formats = {}
 

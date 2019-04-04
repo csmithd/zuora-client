@@ -25,13 +25,13 @@ class RefundsApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def d_elete_refund(self, refund_id, **kwargs):  # noqa: E501
+    def delete_refund(self, refund_id, **kwargs):  # noqa: E501
         """Delete refund  # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Deletes a refund. You can delete a refund with the Canceled or Error status.   If you have the Invoice Settlement feature enabled, refunds applied to credit balance cannot be deleted.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_refund(refund_id, async_req=True)
+        >>> thread = api.delete_refund(refund_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -43,18 +43,18 @@ class RefundsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.d_elete_refund_with_http_info(refund_id, **kwargs)  # noqa: E501
+            return self.delete_refund_with_http_info(refund_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.d_elete_refund_with_http_info(refund_id, **kwargs)  # noqa: E501
+            (data) = self.delete_refund_with_http_info(refund_id, **kwargs)  # noqa: E501
             return data
 
-    def d_elete_refund_with_http_info(self, refund_id, **kwargs):  # noqa: E501
+    def delete_refund_with_http_info(self, refund_id, **kwargs):  # noqa: E501
         """Delete refund  # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Deletes a refund. You can delete a refund with the Canceled or Error status.   If you have the Invoice Settlement feature enabled, refunds applied to credit balance cannot be deleted.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_refund_with_http_info(refund_id, async_req=True)
+        >>> thread = api.delete_refund_with_http_info(refund_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -76,14 +76,14 @@ class RefundsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method d_elete_refund" % key
+                    " to method delete_refund" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'refund_id' is set
         if ('refund_id' not in params or
                 params['refund_id'] is None):
-            raise ValueError("Missing the required parameter `refund_id` when calling `d_elete_refund`")  # noqa: E501
+            raise ValueError("Missing the required parameter `refund_id` when calling `delete_refund`")  # noqa: E501
 
         collection_formats = {}
 
@@ -128,13 +128,13 @@ class RefundsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_refund(self, refund_id, **kwargs):  # noqa: E501
+    def get_refund(self, refund_id, **kwargs):  # noqa: E501
         """Get refund  # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about a specific refund.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_refund(refund_id, async_req=True)
+        >>> thread = api.get_refund(refund_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -146,18 +146,18 @@ class RefundsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_refund_with_http_info(refund_id, **kwargs)  # noqa: E501
+            return self.get_refund_with_http_info(refund_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_refund_with_http_info(refund_id, **kwargs)  # noqa: E501
+            (data) = self.get_refund_with_http_info(refund_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_refund_with_http_info(self, refund_id, **kwargs):  # noqa: E501
+    def get_refund_with_http_info(self, refund_id, **kwargs):  # noqa: E501
         """Get refund  # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about a specific refund.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_refund_with_http_info(refund_id, async_req=True)
+        >>> thread = api.get_refund_with_http_info(refund_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -179,14 +179,14 @@ class RefundsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_refund" % key
+                    " to method get_refund" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'refund_id' is set
         if ('refund_id' not in params or
                 params['refund_id'] is None):
-            raise ValueError("Missing the required parameter `refund_id` when calling `g_et_refund`")  # noqa: E501
+            raise ValueError("Missing the required parameter `refund_id` when calling `get_refund`")  # noqa: E501
 
         collection_formats = {}
 
@@ -231,13 +231,13 @@ class RefundsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_refund_item_part(self, itempartid, refundpartid, refund_id, **kwargs):  # noqa: E501
+    def get_refund_item_part(self, itempartid, refundpartid, refund_id, **kwargs):  # noqa: E501
         """Get refund part item  # noqa: E501
 
         **Note:** The Invoice Item Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at  [Zuora Global Support](http://support.zuora.com/).    Retrieves the information about a specific refund part item. A refund part item is a single line item in a refund part. A refund part can consist of several different types of items.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_refund_item_part(itempartid, refundpartid, refund_id, async_req=True)
+        >>> thread = api.get_refund_item_part(itempartid, refundpartid, refund_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -251,18 +251,18 @@ class RefundsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_refund_item_part_with_http_info(itempartid, refundpartid, refund_id, **kwargs)  # noqa: E501
+            return self.get_refund_item_part_with_http_info(itempartid, refundpartid, refund_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_refund_item_part_with_http_info(itempartid, refundpartid, refund_id, **kwargs)  # noqa: E501
+            (data) = self.get_refund_item_part_with_http_info(itempartid, refundpartid, refund_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_refund_item_part_with_http_info(self, itempartid, refundpartid, refund_id, **kwargs):  # noqa: E501
+    def get_refund_item_part_with_http_info(self, itempartid, refundpartid, refund_id, **kwargs):  # noqa: E501
         """Get refund part item  # noqa: E501
 
         **Note:** The Invoice Item Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at  [Zuora Global Support](http://support.zuora.com/).    Retrieves the information about a specific refund part item. A refund part item is a single line item in a refund part. A refund part can consist of several different types of items.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_refund_item_part_with_http_info(itempartid, refundpartid, refund_id, async_req=True)
+        >>> thread = api.get_refund_item_part_with_http_info(itempartid, refundpartid, refund_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -286,22 +286,22 @@ class RefundsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_refund_item_part" % key
+                    " to method get_refund_item_part" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'itempartid' is set
         if ('itempartid' not in params or
                 params['itempartid'] is None):
-            raise ValueError("Missing the required parameter `itempartid` when calling `g_et_refund_item_part`")  # noqa: E501
+            raise ValueError("Missing the required parameter `itempartid` when calling `get_refund_item_part`")  # noqa: E501
         # verify the required parameter 'refundpartid' is set
         if ('refundpartid' not in params or
                 params['refundpartid'] is None):
-            raise ValueError("Missing the required parameter `refundpartid` when calling `g_et_refund_item_part`")  # noqa: E501
+            raise ValueError("Missing the required parameter `refundpartid` when calling `get_refund_item_part`")  # noqa: E501
         # verify the required parameter 'refund_id' is set
         if ('refund_id' not in params or
                 params['refund_id'] is None):
-            raise ValueError("Missing the required parameter `refund_id` when calling `g_et_refund_item_part`")  # noqa: E501
+            raise ValueError("Missing the required parameter `refund_id` when calling `get_refund_item_part`")  # noqa: E501
 
         collection_formats = {}
 
@@ -350,13 +350,13 @@ class RefundsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_refund_item_parts(self, refundpartid, refund_id, **kwargs):  # noqa: E501
+    def get_refund_item_parts(self, refundpartid, refund_id, **kwargs):  # noqa: E501
         """Get refund part items  # noqa: E501
 
         **Note:** The Invoice Item Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at  [Zuora Global Support](http://support.zuora.com/).  Retrieves the information about all items of a refund part. A refund part item is a single line item in a refund part. A refund part can consist of several different types of items.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_refund_item_parts(refundpartid, refund_id, async_req=True)
+        >>> thread = api.get_refund_item_parts(refundpartid, refund_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -370,18 +370,18 @@ class RefundsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_refund_item_parts_with_http_info(refundpartid, refund_id, **kwargs)  # noqa: E501
+            return self.get_refund_item_parts_with_http_info(refundpartid, refund_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_refund_item_parts_with_http_info(refundpartid, refund_id, **kwargs)  # noqa: E501
+            (data) = self.get_refund_item_parts_with_http_info(refundpartid, refund_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_refund_item_parts_with_http_info(self, refundpartid, refund_id, **kwargs):  # noqa: E501
+    def get_refund_item_parts_with_http_info(self, refundpartid, refund_id, **kwargs):  # noqa: E501
         """Get refund part items  # noqa: E501
 
         **Note:** The Invoice Item Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at  [Zuora Global Support](http://support.zuora.com/).  Retrieves the information about all items of a refund part. A refund part item is a single line item in a refund part. A refund part can consist of several different types of items.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_refund_item_parts_with_http_info(refundpartid, refund_id, async_req=True)
+        >>> thread = api.get_refund_item_parts_with_http_info(refundpartid, refund_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -405,21 +405,21 @@ class RefundsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_refund_item_parts" % key
+                    " to method get_refund_item_parts" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'refundpartid' is set
         if ('refundpartid' not in params or
                 params['refundpartid'] is None):
-            raise ValueError("Missing the required parameter `refundpartid` when calling `g_et_refund_item_parts`")  # noqa: E501
+            raise ValueError("Missing the required parameter `refundpartid` when calling `get_refund_item_parts`")  # noqa: E501
         # verify the required parameter 'refund_id' is set
         if ('refund_id' not in params or
                 params['refund_id'] is None):
-            raise ValueError("Missing the required parameter `refund_id` when calling `g_et_refund_item_parts`")  # noqa: E501
+            raise ValueError("Missing the required parameter `refund_id` when calling `get_refund_item_parts`")  # noqa: E501
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_refund_item_parts`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_refund_item_parts`, must be a value less than or equal to `40`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -467,13 +467,13 @@ class RefundsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_refund_part(self, refundpartid, refund_id, **kwargs):  # noqa: E501
+    def get_refund_part(self, refundpartid, refund_id, **kwargs):  # noqa: E501
         """Get refund part  # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about a specific refund part.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_refund_part(refundpartid, refund_id, async_req=True)
+        >>> thread = api.get_refund_part(refundpartid, refund_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -486,18 +486,18 @@ class RefundsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_refund_part_with_http_info(refundpartid, refund_id, **kwargs)  # noqa: E501
+            return self.get_refund_part_with_http_info(refundpartid, refund_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_refund_part_with_http_info(refundpartid, refund_id, **kwargs)  # noqa: E501
+            (data) = self.get_refund_part_with_http_info(refundpartid, refund_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_refund_part_with_http_info(self, refundpartid, refund_id, **kwargs):  # noqa: E501
+    def get_refund_part_with_http_info(self, refundpartid, refund_id, **kwargs):  # noqa: E501
         """Get refund part  # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about a specific refund part.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_refund_part_with_http_info(refundpartid, refund_id, async_req=True)
+        >>> thread = api.get_refund_part_with_http_info(refundpartid, refund_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -520,18 +520,18 @@ class RefundsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_refund_part" % key
+                    " to method get_refund_part" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'refundpartid' is set
         if ('refundpartid' not in params or
                 params['refundpartid'] is None):
-            raise ValueError("Missing the required parameter `refundpartid` when calling `g_et_refund_part`")  # noqa: E501
+            raise ValueError("Missing the required parameter `refundpartid` when calling `get_refund_part`")  # noqa: E501
         # verify the required parameter 'refund_id' is set
         if ('refund_id' not in params or
                 params['refund_id'] is None):
-            raise ValueError("Missing the required parameter `refund_id` when calling `g_et_refund_part`")  # noqa: E501
+            raise ValueError("Missing the required parameter `refund_id` when calling `get_refund_part`")  # noqa: E501
 
         collection_formats = {}
 
@@ -578,13 +578,13 @@ class RefundsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_refund_parts(self, refund_id, **kwargs):  # noqa: E501
+    def get_refund_parts(self, refund_id, **kwargs):  # noqa: E501
         """Get refund parts  # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about all parts of a refund.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_refund_parts(refund_id, async_req=True)
+        >>> thread = api.get_refund_parts(refund_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -596,18 +596,18 @@ class RefundsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_refund_parts_with_http_info(refund_id, **kwargs)  # noqa: E501
+            return self.get_refund_parts_with_http_info(refund_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_refund_parts_with_http_info(refund_id, **kwargs)  # noqa: E501
+            (data) = self.get_refund_parts_with_http_info(refund_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_refund_parts_with_http_info(self, refund_id, **kwargs):  # noqa: E501
+    def get_refund_parts_with_http_info(self, refund_id, **kwargs):  # noqa: E501
         """Get refund parts  # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about all parts of a refund.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_refund_parts_with_http_info(refund_id, async_req=True)
+        >>> thread = api.get_refund_parts_with_http_info(refund_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -629,14 +629,14 @@ class RefundsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_refund_parts" % key
+                    " to method get_refund_parts" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'refund_id' is set
         if ('refund_id' not in params or
                 params['refund_id'] is None):
-            raise ValueError("Missing the required parameter `refund_id` when calling `g_et_refund_parts`")  # noqa: E501
+            raise ValueError("Missing the required parameter `refund_id` when calling `get_refund_parts`")  # noqa: E501
 
         collection_formats = {}
 
@@ -681,13 +681,13 @@ class RefundsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_refunds(self, **kwargs):  # noqa: E501
+    def get_refunds(self, **kwargs):  # noqa: E501
         """Get all refunds  # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about all refunds. Two types of refunds are available, electronic refunds and external refunds.  ### Filtering  You can use query parameters to restrict the data returned in the response. Each query parameter corresponds to one field in the response body.  If the value of a filterable field is string, you can set the corresponding query parameter to `null` when filtering. Then, you can get the response data with this field value being `null`.  Examples:  - /v1/refunds?status=Processed  - /v1/refunds?amount=4&status=Processed  - /v1/refunds?status=Processed&type=External&sort=+number   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_refunds(async_req=True)
+        >>> thread = api.get_refunds(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -712,18 +712,18 @@ class RefundsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_refunds_with_http_info(**kwargs)  # noqa: E501
+            return self.get_refunds_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_refunds_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.get_refunds_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def g_et_refunds_with_http_info(self, **kwargs):  # noqa: E501
+    def get_refunds_with_http_info(self, **kwargs):  # noqa: E501
         """Get all refunds  # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about all refunds. Two types of refunds are available, electronic refunds and external refunds.  ### Filtering  You can use query parameters to restrict the data returned in the response. Each query parameter corresponds to one field in the response body.  If the value of a filterable field is string, you can set the corresponding query parameter to `null` when filtering. Then, you can get the response data with this field value being `null`.  Examples:  - /v1/refunds?status=Processed  - /v1/refunds?amount=4&status=Processed  - /v1/refunds?status=Processed&type=External&sort=+number   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_refunds_with_http_info(async_req=True)
+        >>> thread = api.get_refunds_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -758,13 +758,13 @@ class RefundsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_refunds" % key
+                    " to method get_refunds" % key
                 )
             params[key] = val
         del params['kwargs']
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_refunds`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_refunds`, must be a value less than or equal to `40`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -1286,13 +1286,13 @@ class RefundsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_cancel_refund(self, refund_id, **kwargs):  # noqa: E501
+    def put_cancel_refund(self, refund_id, **kwargs):  # noqa: E501
         """Cancel refund  # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Cancels a refund.  If you have the Invoice Settlement feature enabled, refunds applied to credit balance cannot be cancelled.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_cancel_refund(refund_id, async_req=True)
+        >>> thread = api.put_cancel_refund(refund_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1304,18 +1304,18 @@ class RefundsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_cancel_refund_with_http_info(refund_id, **kwargs)  # noqa: E501
+            return self.put_cancel_refund_with_http_info(refund_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_cancel_refund_with_http_info(refund_id, **kwargs)  # noqa: E501
+            (data) = self.put_cancel_refund_with_http_info(refund_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_cancel_refund_with_http_info(self, refund_id, **kwargs):  # noqa: E501
+    def put_cancel_refund_with_http_info(self, refund_id, **kwargs):  # noqa: E501
         """Cancel refund  # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Cancels a refund.  If you have the Invoice Settlement feature enabled, refunds applied to credit balance cannot be cancelled.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_cancel_refund_with_http_info(refund_id, async_req=True)
+        >>> thread = api.put_cancel_refund_with_http_info(refund_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1337,14 +1337,14 @@ class RefundsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_cancel_refund" % key
+                    " to method put_cancel_refund" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'refund_id' is set
         if ('refund_id' not in params or
                 params['refund_id'] is None):
-            raise ValueError("Missing the required parameter `refund_id` when calling `p_ut_cancel_refund`")  # noqa: E501
+            raise ValueError("Missing the required parameter `refund_id` when calling `put_cancel_refund`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1389,13 +1389,13 @@ class RefundsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_update_refund(self, body, refund_id, **kwargs):  # noqa: E501
+    def put_update_refund(self, body, refund_id, **kwargs):  # noqa: E501
         """Update refund  # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Updates the basic and finance information about a refund.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_update_refund(body, refund_id, async_req=True)
+        >>> thread = api.put_update_refund(body, refund_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1408,18 +1408,18 @@ class RefundsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_update_refund_with_http_info(body, refund_id, **kwargs)  # noqa: E501
+            return self.put_update_refund_with_http_info(body, refund_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_update_refund_with_http_info(body, refund_id, **kwargs)  # noqa: E501
+            (data) = self.put_update_refund_with_http_info(body, refund_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_update_refund_with_http_info(self, body, refund_id, **kwargs):  # noqa: E501
+    def put_update_refund_with_http_info(self, body, refund_id, **kwargs):  # noqa: E501
         """Update refund  # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Updates the basic and finance information about a refund.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_update_refund_with_http_info(body, refund_id, async_req=True)
+        >>> thread = api.put_update_refund_with_http_info(body, refund_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1442,18 +1442,18 @@ class RefundsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_update_refund" % key
+                    " to method put_update_refund" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ut_update_refund`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `put_update_refund`")  # noqa: E501
         # verify the required parameter 'refund_id' is set
         if ('refund_id' not in params or
                 params['refund_id'] is None):
-            raise ValueError("Missing the required parameter `refund_id` when calling `p_ut_update_refund`")  # noqa: E501
+            raise ValueError("Missing the required parameter `refund_id` when calling `put_update_refund`")  # noqa: E501
 
         collection_formats = {}
 

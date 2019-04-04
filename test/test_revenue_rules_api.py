@@ -29,15 +29,15 @@ class TestRevenueRulesApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_g_et_revenue_rec_ruleby_product_rate_plan_charge(self):
-        """Test case for g_et_revenue_rec_ruleby_product_rate_plan_charge
+    def test_get_revenue_rec_ruleby_product_rate_plan_charge(self):
+        """Test case for get_revenue_rec_ruleby_product_rate_plan_charge
 
         Get revenue recognition rule by product rate plan charge  # noqa: E501
         """
         pass
 
-    def test_g_et_revenue_rec_rules(self):
-        """Test case for g_et_revenue_rec_rules
+    def test_get_revenue_rec_rules(self):
+        """Test case for get_revenue_rec_rules
 
         Get revenue recognition rule by subscription charge  # noqa: E501
         """

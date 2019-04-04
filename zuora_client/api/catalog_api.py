@@ -25,13 +25,13 @@ class CatalogApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def g_et_catalog(self, **kwargs):  # noqa: E501
+    def get_catalog(self, **kwargs):  # noqa: E501
         """Get product catalog  # noqa: E501
 
         Retrieves the entire product catalog, including all products, features, and their corresponding rate plans, charges. Products are returned in reverse chronological order on the UpdatedDate field.   With rate plans and rate plan charges, the REST API has a maximum array size.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_catalog(async_req=True)
+        >>> thread = api.get_catalog(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -44,18 +44,18 @@ class CatalogApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_catalog_with_http_info(**kwargs)  # noqa: E501
+            return self.get_catalog_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_catalog_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.get_catalog_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def g_et_catalog_with_http_info(self, **kwargs):  # noqa: E501
+    def get_catalog_with_http_info(self, **kwargs):  # noqa: E501
         """Get product catalog  # noqa: E501
 
         Retrieves the entire product catalog, including all products, features, and their corresponding rate plans, charges. Products are returned in reverse chronological order on the UpdatedDate field.   With rate plans and rate plan charges, the REST API has a maximum array size.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_catalog_with_http_info(async_req=True)
+        >>> thread = api.get_catalog_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -78,13 +78,13 @@ class CatalogApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_catalog" % key
+                    " to method get_catalog" % key
                 )
             params[key] = val
         del params['kwargs']
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_catalog`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_catalog`, must be a value less than or equal to `40`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -130,13 +130,13 @@ class CatalogApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_product(self, product_id, **kwargs):  # noqa: E501
+    def get_product(self, product_id, **kwargs):  # noqa: E501
         """Get product  # noqa: E501
 
         Retrieves detailed information about a specific product, including information about its product rate plans and charges.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_product(product_id, async_req=True)
+        >>> thread = api.get_product(product_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -149,18 +149,18 @@ class CatalogApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_product_with_http_info(product_id, **kwargs)  # noqa: E501
+            return self.get_product_with_http_info(product_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_product_with_http_info(product_id, **kwargs)  # noqa: E501
+            (data) = self.get_product_with_http_info(product_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_product_with_http_info(self, product_id, **kwargs):  # noqa: E501
+    def get_product_with_http_info(self, product_id, **kwargs):  # noqa: E501
         """Get product  # noqa: E501
 
         Retrieves detailed information about a specific product, including information about its product rate plans and charges.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_product_with_http_info(product_id, async_req=True)
+        >>> thread = api.get_product_with_http_info(product_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -183,14 +183,14 @@ class CatalogApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_product" % key
+                    " to method get_product" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'product_id' is set
         if ('product_id' not in params or
                 params['product_id'] is None):
-            raise ValueError("Missing the required parameter `product_id` when calling `g_et_product`")  # noqa: E501
+            raise ValueError("Missing the required parameter `product_id` when calling `get_product`")  # noqa: E501
 
         collection_formats = {}
 
@@ -237,13 +237,13 @@ class CatalogApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_catalog(self, product_id, request, **kwargs):  # noqa: E501
+    def post_catalog(self, product_id, request, **kwargs):  # noqa: E501
         """Multi-entity: Share a product with an Entity  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Shares a product with a target entity. Zuora synchronizes the shared products to the target entity after sharing. For more information about product sharing, see [Products Sharing Across Entities](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity/C_Business_Objects_Sharing_Across_Entities/B_Products_Sharing_Across_Entities).  Note that:  - You must finish all the [prerequisites](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity/C_Business_Objects_Sharing_Across_Entities/B_Products_Sharing_Across_Entities/Share_Products) before sharing products with other entities.   - Only source entity administrators have permission to share products with other entities. You must make the call as a source entity administrator.  - Currently, you can only share a product with one entity at a time. An error occurs if you try to share a product to more than one entity.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_catalog(product_id, request, async_req=True)
+        >>> thread = api.post_catalog(product_id, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -256,18 +256,18 @@ class CatalogApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_catalog_with_http_info(product_id, request, **kwargs)  # noqa: E501
+            return self.post_catalog_with_http_info(product_id, request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_catalog_with_http_info(product_id, request, **kwargs)  # noqa: E501
+            (data) = self.post_catalog_with_http_info(product_id, request, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_catalog_with_http_info(self, product_id, request, **kwargs):  # noqa: E501
+    def post_catalog_with_http_info(self, product_id, request, **kwargs):  # noqa: E501
         """Multi-entity: Share a product with an Entity  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Shares a product with a target entity. Zuora synchronizes the shared products to the target entity after sharing. For more information about product sharing, see [Products Sharing Across Entities](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity/C_Business_Objects_Sharing_Across_Entities/B_Products_Sharing_Across_Entities).  Note that:  - You must finish all the [prerequisites](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/Multi-entity/C_Business_Objects_Sharing_Across_Entities/B_Products_Sharing_Across_Entities/Share_Products) before sharing products with other entities.   - Only source entity administrators have permission to share products with other entities. You must make the call as a source entity administrator.  - Currently, you can only share a product with one entity at a time. An error occurs if you try to share a product to more than one entity.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_catalog_with_http_info(product_id, request, async_req=True)
+        >>> thread = api.post_catalog_with_http_info(product_id, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -290,18 +290,18 @@ class CatalogApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_catalog" % key
+                    " to method post_catalog" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'product_id' is set
         if ('product_id' not in params or
                 params['product_id'] is None):
-            raise ValueError("Missing the required parameter `product_id` when calling `p_ost_catalog`")  # noqa: E501
+            raise ValueError("Missing the required parameter `product_id` when calling `post_catalog`")  # noqa: E501
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ost_catalog`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `post_catalog`")  # noqa: E501
 
         collection_formats = {}
 

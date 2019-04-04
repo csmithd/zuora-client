@@ -25,13 +25,13 @@ class RevenueSchedulesApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def d_eleters(self, rs_number, **kwargs):  # noqa: E501
+    def deleters(self, rs_number, **kwargs):  # noqa: E501
         """Delete revenue schedule  # noqa: E501
 
         Deletes a revenue schedule by specifying its revenue schedule number ## Prerequisites You must have the Delete Custom Revenue Schedule permissions in Zuora Finance.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_eleters(rs_number, async_req=True)
+        >>> thread = api.deleters(rs_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -43,18 +43,18 @@ class RevenueSchedulesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.d_eleters_with_http_info(rs_number, **kwargs)  # noqa: E501
+            return self.deleters_with_http_info(rs_number, **kwargs)  # noqa: E501
         else:
-            (data) = self.d_eleters_with_http_info(rs_number, **kwargs)  # noqa: E501
+            (data) = self.deleters_with_http_info(rs_number, **kwargs)  # noqa: E501
             return data
 
-    def d_eleters_with_http_info(self, rs_number, **kwargs):  # noqa: E501
+    def deleters_with_http_info(self, rs_number, **kwargs):  # noqa: E501
         """Delete revenue schedule  # noqa: E501
 
         Deletes a revenue schedule by specifying its revenue schedule number ## Prerequisites You must have the Delete Custom Revenue Schedule permissions in Zuora Finance.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_eleters_with_http_info(rs_number, async_req=True)
+        >>> thread = api.deleters_with_http_info(rs_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -76,14 +76,14 @@ class RevenueSchedulesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method d_eleters" % key
+                    " to method deleters" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'rs_number' is set
         if ('rs_number' not in params or
                 params['rs_number'] is None):
-            raise ValueError("Missing the required parameter `rs_number` when calling `d_eleters`")  # noqa: E501
+            raise ValueError("Missing the required parameter `rs_number` when calling `deleters`")  # noqa: E501
 
         collection_formats = {}
 
@@ -128,13 +128,13 @@ class RevenueSchedulesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_etr_sby_credit_memo_item(self, cmi_id, **kwargs):  # noqa: E501
+    def getr_sby_credit_memo_item(self, cmi_id, **kwargs):  # noqa: E501
         """Get revenue schedule by credit memo item ID   # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Retrieves the details about a revenue schedule by specifying a valid credit memo item ID.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_etr_sby_credit_memo_item(cmi_id, async_req=True)
+        >>> thread = api.getr_sby_credit_memo_item(cmi_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -145,18 +145,18 @@ class RevenueSchedulesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_etr_sby_credit_memo_item_with_http_info(cmi_id, **kwargs)  # noqa: E501
+            return self.getr_sby_credit_memo_item_with_http_info(cmi_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_etr_sby_credit_memo_item_with_http_info(cmi_id, **kwargs)  # noqa: E501
+            (data) = self.getr_sby_credit_memo_item_with_http_info(cmi_id, **kwargs)  # noqa: E501
             return data
 
-    def g_etr_sby_credit_memo_item_with_http_info(self, cmi_id, **kwargs):  # noqa: E501
+    def getr_sby_credit_memo_item_with_http_info(self, cmi_id, **kwargs):  # noqa: E501
         """Get revenue schedule by credit memo item ID   # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Retrieves the details about a revenue schedule by specifying a valid credit memo item ID.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_etr_sby_credit_memo_item_with_http_info(cmi_id, async_req=True)
+        >>> thread = api.getr_sby_credit_memo_item_with_http_info(cmi_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -177,14 +177,14 @@ class RevenueSchedulesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_etr_sby_credit_memo_item" % key
+                    " to method getr_sby_credit_memo_item" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'cmi_id' is set
         if ('cmi_id' not in params or
                 params['cmi_id'] is None):
-            raise ValueError("Missing the required parameter `cmi_id` when calling `g_etr_sby_credit_memo_item`")  # noqa: E501
+            raise ValueError("Missing the required parameter `cmi_id` when calling `getr_sby_credit_memo_item`")  # noqa: E501
 
         collection_formats = {}
 
@@ -227,13 +227,13 @@ class RevenueSchedulesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_etr_sby_debit_memo_item(self, dmi_id, **kwargs):  # noqa: E501
+    def getr_sby_debit_memo_item(self, dmi_id, **kwargs):  # noqa: E501
         """Get revenue schedule by debit memo item ID   # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Retrieves the details about a revenue schedule by specifying a valid debit memo item ID.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_etr_sby_debit_memo_item(dmi_id, async_req=True)
+        >>> thread = api.getr_sby_debit_memo_item(dmi_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -244,18 +244,18 @@ class RevenueSchedulesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_etr_sby_debit_memo_item_with_http_info(dmi_id, **kwargs)  # noqa: E501
+            return self.getr_sby_debit_memo_item_with_http_info(dmi_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_etr_sby_debit_memo_item_with_http_info(dmi_id, **kwargs)  # noqa: E501
+            (data) = self.getr_sby_debit_memo_item_with_http_info(dmi_id, **kwargs)  # noqa: E501
             return data
 
-    def g_etr_sby_debit_memo_item_with_http_info(self, dmi_id, **kwargs):  # noqa: E501
+    def getr_sby_debit_memo_item_with_http_info(self, dmi_id, **kwargs):  # noqa: E501
         """Get revenue schedule by debit memo item ID   # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Retrieves the details about a revenue schedule by specifying a valid debit memo item ID.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_etr_sby_debit_memo_item_with_http_info(dmi_id, async_req=True)
+        >>> thread = api.getr_sby_debit_memo_item_with_http_info(dmi_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -276,14 +276,14 @@ class RevenueSchedulesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_etr_sby_debit_memo_item" % key
+                    " to method getr_sby_debit_memo_item" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'dmi_id' is set
         if ('dmi_id' not in params or
                 params['dmi_id'] is None):
-            raise ValueError("Missing the required parameter `dmi_id` when calling `g_etr_sby_debit_memo_item`")  # noqa: E501
+            raise ValueError("Missing the required parameter `dmi_id` when calling `getr_sby_debit_memo_item`")  # noqa: E501
 
         collection_formats = {}
 
@@ -326,13 +326,13 @@ class RevenueSchedulesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_etr_sby_invoice_item(self, invoice_item_id, **kwargs):  # noqa: E501
+    def getr_sby_invoice_item(self, invoice_item_id, **kwargs):  # noqa: E501
         """Get revenue schedule by invoice item ID  # noqa: E501
 
         Retrieves the details of a revenue schedule by specifying the invoice item ID.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_etr_sby_invoice_item(invoice_item_id, async_req=True)
+        >>> thread = api.getr_sby_invoice_item(invoice_item_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -344,18 +344,18 @@ class RevenueSchedulesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_etr_sby_invoice_item_with_http_info(invoice_item_id, **kwargs)  # noqa: E501
+            return self.getr_sby_invoice_item_with_http_info(invoice_item_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_etr_sby_invoice_item_with_http_info(invoice_item_id, **kwargs)  # noqa: E501
+            (data) = self.getr_sby_invoice_item_with_http_info(invoice_item_id, **kwargs)  # noqa: E501
             return data
 
-    def g_etr_sby_invoice_item_with_http_info(self, invoice_item_id, **kwargs):  # noqa: E501
+    def getr_sby_invoice_item_with_http_info(self, invoice_item_id, **kwargs):  # noqa: E501
         """Get revenue schedule by invoice item ID  # noqa: E501
 
         Retrieves the details of a revenue schedule by specifying the invoice item ID.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_etr_sby_invoice_item_with_http_info(invoice_item_id, async_req=True)
+        >>> thread = api.getr_sby_invoice_item_with_http_info(invoice_item_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -377,14 +377,14 @@ class RevenueSchedulesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_etr_sby_invoice_item" % key
+                    " to method getr_sby_invoice_item" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'invoice_item_id' is set
         if ('invoice_item_id' not in params or
                 params['invoice_item_id'] is None):
-            raise ValueError("Missing the required parameter `invoice_item_id` when calling `g_etr_sby_invoice_item`")  # noqa: E501
+            raise ValueError("Missing the required parameter `invoice_item_id` when calling `getr_sby_invoice_item`")  # noqa: E501
 
         collection_formats = {}
 
@@ -429,13 +429,13 @@ class RevenueSchedulesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_etr_sby_invoice_item_adjustment(self, invoice_item_adj_key, **kwargs):  # noqa: E501
+    def getr_sby_invoice_item_adjustment(self, invoice_item_adj_key, **kwargs):  # noqa: E501
         """Get revenue schedule by invoice item adjustment  # noqa: E501
 
         Retrieves the details of a revenue schedule by specifying a valid invoice item adjustment identifier. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_etr_sby_invoice_item_adjustment(invoice_item_adj_key, async_req=True)
+        >>> thread = api.getr_sby_invoice_item_adjustment(invoice_item_adj_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -447,18 +447,18 @@ class RevenueSchedulesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_etr_sby_invoice_item_adjustment_with_http_info(invoice_item_adj_key, **kwargs)  # noqa: E501
+            return self.getr_sby_invoice_item_adjustment_with_http_info(invoice_item_adj_key, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_etr_sby_invoice_item_adjustment_with_http_info(invoice_item_adj_key, **kwargs)  # noqa: E501
+            (data) = self.getr_sby_invoice_item_adjustment_with_http_info(invoice_item_adj_key, **kwargs)  # noqa: E501
             return data
 
-    def g_etr_sby_invoice_item_adjustment_with_http_info(self, invoice_item_adj_key, **kwargs):  # noqa: E501
+    def getr_sby_invoice_item_adjustment_with_http_info(self, invoice_item_adj_key, **kwargs):  # noqa: E501
         """Get revenue schedule by invoice item adjustment  # noqa: E501
 
         Retrieves the details of a revenue schedule by specifying a valid invoice item adjustment identifier. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_etr_sby_invoice_item_adjustment_with_http_info(invoice_item_adj_key, async_req=True)
+        >>> thread = api.getr_sby_invoice_item_adjustment_with_http_info(invoice_item_adj_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -480,14 +480,14 @@ class RevenueSchedulesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_etr_sby_invoice_item_adjustment" % key
+                    " to method getr_sby_invoice_item_adjustment" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'invoice_item_adj_key' is set
         if ('invoice_item_adj_key' not in params or
                 params['invoice_item_adj_key'] is None):
-            raise ValueError("Missing the required parameter `invoice_item_adj_key` when calling `g_etr_sby_invoice_item_adjustment`")  # noqa: E501
+            raise ValueError("Missing the required parameter `invoice_item_adj_key` when calling `getr_sby_invoice_item_adjustment`")  # noqa: E501
 
         collection_formats = {}
 
@@ -532,13 +532,13 @@ class RevenueSchedulesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_etr_sby_product_charge_and_billing_account(self, account_key, charge_key, **kwargs):  # noqa: E501
+    def getr_sby_product_charge_and_billing_account(self, account_key, charge_key, **kwargs):  # noqa: E501
         """Get all revenue schedules of product charge by charge ID and billing account ID   # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Retrieves the details about all revenue schedules of a product rate plan charge by specifying the charge ID and billing account ID.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_etr_sby_product_charge_and_billing_account(account_key, charge_key, async_req=True)
+        >>> thread = api.getr_sby_product_charge_and_billing_account(account_key, charge_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -551,18 +551,18 @@ class RevenueSchedulesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_etr_sby_product_charge_and_billing_account_with_http_info(account_key, charge_key, **kwargs)  # noqa: E501
+            return self.getr_sby_product_charge_and_billing_account_with_http_info(account_key, charge_key, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_etr_sby_product_charge_and_billing_account_with_http_info(account_key, charge_key, **kwargs)  # noqa: E501
+            (data) = self.getr_sby_product_charge_and_billing_account_with_http_info(account_key, charge_key, **kwargs)  # noqa: E501
             return data
 
-    def g_etr_sby_product_charge_and_billing_account_with_http_info(self, account_key, charge_key, **kwargs):  # noqa: E501
+    def getr_sby_product_charge_and_billing_account_with_http_info(self, account_key, charge_key, **kwargs):  # noqa: E501
         """Get all revenue schedules of product charge by charge ID and billing account ID   # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Retrieves the details about all revenue schedules of a product rate plan charge by specifying the charge ID and billing account ID.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_etr_sby_product_charge_and_billing_account_with_http_info(account_key, charge_key, async_req=True)
+        >>> thread = api.getr_sby_product_charge_and_billing_account_with_http_info(account_key, charge_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -585,21 +585,21 @@ class RevenueSchedulesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_etr_sby_product_charge_and_billing_account" % key
+                    " to method getr_sby_product_charge_and_billing_account" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'account_key' is set
         if ('account_key' not in params or
                 params['account_key'] is None):
-            raise ValueError("Missing the required parameter `account_key` when calling `g_etr_sby_product_charge_and_billing_account`")  # noqa: E501
+            raise ValueError("Missing the required parameter `account_key` when calling `getr_sby_product_charge_and_billing_account`")  # noqa: E501
         # verify the required parameter 'charge_key' is set
         if ('charge_key' not in params or
                 params['charge_key'] is None):
-            raise ValueError("Missing the required parameter `charge_key` when calling `g_etr_sby_product_charge_and_billing_account`")  # noqa: E501
+            raise ValueError("Missing the required parameter `charge_key` when calling `getr_sby_product_charge_and_billing_account`")  # noqa: E501
 
         if 'page_size' in params and params['page_size'] > 300:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_etr_sby_product_charge_and_billing_account`, must be a value less than or equal to `300`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `getr_sby_product_charge_and_billing_account`, must be a value less than or equal to `300`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -645,13 +645,13 @@ class RevenueSchedulesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_etr_sfor_subsc_charge(self, charge_key, **kwargs):  # noqa: E501
+    def getr_sfor_subsc_charge(self, charge_key, **kwargs):  # noqa: E501
         """Get revenue schedule by subscription charge  # noqa: E501
 
         Retrieves the revenue schedule details by specifying subscription charge ID. Request and response field descriptions and sample code are provided   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_etr_sfor_subsc_charge(charge_key, async_req=True)
+        >>> thread = api.getr_sfor_subsc_charge(charge_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -664,18 +664,18 @@ class RevenueSchedulesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_etr_sfor_subsc_charge_with_http_info(charge_key, **kwargs)  # noqa: E501
+            return self.getr_sfor_subsc_charge_with_http_info(charge_key, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_etr_sfor_subsc_charge_with_http_info(charge_key, **kwargs)  # noqa: E501
+            (data) = self.getr_sfor_subsc_charge_with_http_info(charge_key, **kwargs)  # noqa: E501
             return data
 
-    def g_etr_sfor_subsc_charge_with_http_info(self, charge_key, **kwargs):  # noqa: E501
+    def getr_sfor_subsc_charge_with_http_info(self, charge_key, **kwargs):  # noqa: E501
         """Get revenue schedule by subscription charge  # noqa: E501
 
         Retrieves the revenue schedule details by specifying subscription charge ID. Request and response field descriptions and sample code are provided   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_etr_sfor_subsc_charge_with_http_info(charge_key, async_req=True)
+        >>> thread = api.getr_sfor_subsc_charge_with_http_info(charge_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -698,17 +698,17 @@ class RevenueSchedulesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_etr_sfor_subsc_charge" % key
+                    " to method getr_sfor_subsc_charge" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'charge_key' is set
         if ('charge_key' not in params or
                 params['charge_key'] is None):
-            raise ValueError("Missing the required parameter `charge_key` when calling `g_etr_sfor_subsc_charge`")  # noqa: E501
+            raise ValueError("Missing the required parameter `charge_key` when calling `getr_sfor_subsc_charge`")  # noqa: E501
 
         if 'page_size' in params and params['page_size'] > 300:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_etr_sfor_subsc_charge`, must be a value less than or equal to `300`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `getr_sfor_subsc_charge`, must be a value less than or equal to `300`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -754,13 +754,13 @@ class RevenueSchedulesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_etrs(self, rs_number, **kwargs):  # noqa: E501
+    def getrs(self, rs_number, **kwargs):  # noqa: E501
         """Get revenue schedule details  # noqa: E501
 
         Retrieves the details of a revenue schedule by specifying the revenue schedule number. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_etrs(rs_number, async_req=True)
+        >>> thread = api.getrs(rs_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -772,18 +772,18 @@ class RevenueSchedulesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_etrs_with_http_info(rs_number, **kwargs)  # noqa: E501
+            return self.getrs_with_http_info(rs_number, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_etrs_with_http_info(rs_number, **kwargs)  # noqa: E501
+            (data) = self.getrs_with_http_info(rs_number, **kwargs)  # noqa: E501
             return data
 
-    def g_etrs_with_http_info(self, rs_number, **kwargs):  # noqa: E501
+    def getrs_with_http_info(self, rs_number, **kwargs):  # noqa: E501
         """Get revenue schedule details  # noqa: E501
 
         Retrieves the details of a revenue schedule by specifying the revenue schedule number. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_etrs_with_http_info(rs_number, async_req=True)
+        >>> thread = api.getrs_with_http_info(rs_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -805,14 +805,14 @@ class RevenueSchedulesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_etrs" % key
+                    " to method getrs" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'rs_number' is set
         if ('rs_number' not in params or
                 params['rs_number'] is None):
-            raise ValueError("Missing the required parameter `rs_number` when calling `g_etrs`")  # noqa: E501
+            raise ValueError("Missing the required parameter `rs_number` when calling `getrs`")  # noqa: E501
 
         collection_formats = {}
 
@@ -857,13 +857,13 @@ class RevenueSchedulesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ostr_sfor_credit_memo_item_distribute_by_date_range(self, cmi_id, body, **kwargs):  # noqa: E501
+    def postr_sfor_credit_memo_item_distribute_by_date_range(self, cmi_id, body, **kwargs):  # noqa: E501
         """Create revenue schedule for credit memo item (distribute by date range)   # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Creates a revenue schedule for a credit memo item, and automatically distribute the revenue by specifying the recognition start and end dates.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ostr_sfor_credit_memo_item_distribute_by_date_range(cmi_id, body, async_req=True)
+        >>> thread = api.postr_sfor_credit_memo_item_distribute_by_date_range(cmi_id, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -875,18 +875,18 @@ class RevenueSchedulesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ostr_sfor_credit_memo_item_distribute_by_date_range_with_http_info(cmi_id, body, **kwargs)  # noqa: E501
+            return self.postr_sfor_credit_memo_item_distribute_by_date_range_with_http_info(cmi_id, body, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ostr_sfor_credit_memo_item_distribute_by_date_range_with_http_info(cmi_id, body, **kwargs)  # noqa: E501
+            (data) = self.postr_sfor_credit_memo_item_distribute_by_date_range_with_http_info(cmi_id, body, **kwargs)  # noqa: E501
             return data
 
-    def p_ostr_sfor_credit_memo_item_distribute_by_date_range_with_http_info(self, cmi_id, body, **kwargs):  # noqa: E501
+    def postr_sfor_credit_memo_item_distribute_by_date_range_with_http_info(self, cmi_id, body, **kwargs):  # noqa: E501
         """Create revenue schedule for credit memo item (distribute by date range)   # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Creates a revenue schedule for a credit memo item, and automatically distribute the revenue by specifying the recognition start and end dates.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ostr_sfor_credit_memo_item_distribute_by_date_range_with_http_info(cmi_id, body, async_req=True)
+        >>> thread = api.postr_sfor_credit_memo_item_distribute_by_date_range_with_http_info(cmi_id, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -908,18 +908,18 @@ class RevenueSchedulesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ostr_sfor_credit_memo_item_distribute_by_date_range" % key
+                    " to method postr_sfor_credit_memo_item_distribute_by_date_range" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'cmi_id' is set
         if ('cmi_id' not in params or
                 params['cmi_id'] is None):
-            raise ValueError("Missing the required parameter `cmi_id` when calling `p_ostr_sfor_credit_memo_item_distribute_by_date_range`")  # noqa: E501
+            raise ValueError("Missing the required parameter `cmi_id` when calling `postr_sfor_credit_memo_item_distribute_by_date_range`")  # noqa: E501
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ostr_sfor_credit_memo_item_distribute_by_date_range`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `postr_sfor_credit_memo_item_distribute_by_date_range`")  # noqa: E501
 
         collection_formats = {}
 
@@ -964,13 +964,13 @@ class RevenueSchedulesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ostr_sfor_credit_memo_item_manual_distribution(self, cmi_id, body, **kwargs):  # noqa: E501
+    def postr_sfor_credit_memo_item_manual_distribution(self, cmi_id, body, **kwargs):  # noqa: E501
         """Create revenue schedule for credit memo item (manual distribution)   # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Creates a revenue schedule for a credit memo item, and manually distribute the revenue.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ostr_sfor_credit_memo_item_manual_distribution(cmi_id, body, async_req=True)
+        >>> thread = api.postr_sfor_credit_memo_item_manual_distribution(cmi_id, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -982,18 +982,18 @@ class RevenueSchedulesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ostr_sfor_credit_memo_item_manual_distribution_with_http_info(cmi_id, body, **kwargs)  # noqa: E501
+            return self.postr_sfor_credit_memo_item_manual_distribution_with_http_info(cmi_id, body, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ostr_sfor_credit_memo_item_manual_distribution_with_http_info(cmi_id, body, **kwargs)  # noqa: E501
+            (data) = self.postr_sfor_credit_memo_item_manual_distribution_with_http_info(cmi_id, body, **kwargs)  # noqa: E501
             return data
 
-    def p_ostr_sfor_credit_memo_item_manual_distribution_with_http_info(self, cmi_id, body, **kwargs):  # noqa: E501
+    def postr_sfor_credit_memo_item_manual_distribution_with_http_info(self, cmi_id, body, **kwargs):  # noqa: E501
         """Create revenue schedule for credit memo item (manual distribution)   # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Creates a revenue schedule for a credit memo item, and manually distribute the revenue.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ostr_sfor_credit_memo_item_manual_distribution_with_http_info(cmi_id, body, async_req=True)
+        >>> thread = api.postr_sfor_credit_memo_item_manual_distribution_with_http_info(cmi_id, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1015,18 +1015,18 @@ class RevenueSchedulesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ostr_sfor_credit_memo_item_manual_distribution" % key
+                    " to method postr_sfor_credit_memo_item_manual_distribution" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'cmi_id' is set
         if ('cmi_id' not in params or
                 params['cmi_id'] is None):
-            raise ValueError("Missing the required parameter `cmi_id` when calling `p_ostr_sfor_credit_memo_item_manual_distribution`")  # noqa: E501
+            raise ValueError("Missing the required parameter `cmi_id` when calling `postr_sfor_credit_memo_item_manual_distribution`")  # noqa: E501
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ostr_sfor_credit_memo_item_manual_distribution`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `postr_sfor_credit_memo_item_manual_distribution`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1071,13 +1071,13 @@ class RevenueSchedulesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ostr_sfor_debit_memo_item_distribute_by_date_range(self, dmi_id, body, **kwargs):  # noqa: E501
+    def postr_sfor_debit_memo_item_distribute_by_date_range(self, dmi_id, body, **kwargs):  # noqa: E501
         """Create revenue schedule for debit memo item (distribute by date range)   # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Creates a revenue schedule for a debit memo item, and automatically distribute the revenue by specifying the recognition start and end dates.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ostr_sfor_debit_memo_item_distribute_by_date_range(dmi_id, body, async_req=True)
+        >>> thread = api.postr_sfor_debit_memo_item_distribute_by_date_range(dmi_id, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1089,18 +1089,18 @@ class RevenueSchedulesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ostr_sfor_debit_memo_item_distribute_by_date_range_with_http_info(dmi_id, body, **kwargs)  # noqa: E501
+            return self.postr_sfor_debit_memo_item_distribute_by_date_range_with_http_info(dmi_id, body, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ostr_sfor_debit_memo_item_distribute_by_date_range_with_http_info(dmi_id, body, **kwargs)  # noqa: E501
+            (data) = self.postr_sfor_debit_memo_item_distribute_by_date_range_with_http_info(dmi_id, body, **kwargs)  # noqa: E501
             return data
 
-    def p_ostr_sfor_debit_memo_item_distribute_by_date_range_with_http_info(self, dmi_id, body, **kwargs):  # noqa: E501
+    def postr_sfor_debit_memo_item_distribute_by_date_range_with_http_info(self, dmi_id, body, **kwargs):  # noqa: E501
         """Create revenue schedule for debit memo item (distribute by date range)   # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Creates a revenue schedule for a debit memo item, and automatically distribute the revenue by specifying the recognition start and end dates.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ostr_sfor_debit_memo_item_distribute_by_date_range_with_http_info(dmi_id, body, async_req=True)
+        >>> thread = api.postr_sfor_debit_memo_item_distribute_by_date_range_with_http_info(dmi_id, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1122,18 +1122,18 @@ class RevenueSchedulesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ostr_sfor_debit_memo_item_distribute_by_date_range" % key
+                    " to method postr_sfor_debit_memo_item_distribute_by_date_range" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'dmi_id' is set
         if ('dmi_id' not in params or
                 params['dmi_id'] is None):
-            raise ValueError("Missing the required parameter `dmi_id` when calling `p_ostr_sfor_debit_memo_item_distribute_by_date_range`")  # noqa: E501
+            raise ValueError("Missing the required parameter `dmi_id` when calling `postr_sfor_debit_memo_item_distribute_by_date_range`")  # noqa: E501
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ostr_sfor_debit_memo_item_distribute_by_date_range`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `postr_sfor_debit_memo_item_distribute_by_date_range`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1178,13 +1178,13 @@ class RevenueSchedulesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ostr_sfor_debit_memo_item_manual_distribution(self, dmi_id, body, **kwargs):  # noqa: E501
+    def postr_sfor_debit_memo_item_manual_distribution(self, dmi_id, body, **kwargs):  # noqa: E501
         """Create revenue schedule for debit memo item (manual distribution)   # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Creates a revenue schedule for a debit memo item, and manually distribute the revenue.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ostr_sfor_debit_memo_item_manual_distribution(dmi_id, body, async_req=True)
+        >>> thread = api.postr_sfor_debit_memo_item_manual_distribution(dmi_id, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1196,18 +1196,18 @@ class RevenueSchedulesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ostr_sfor_debit_memo_item_manual_distribution_with_http_info(dmi_id, body, **kwargs)  # noqa: E501
+            return self.postr_sfor_debit_memo_item_manual_distribution_with_http_info(dmi_id, body, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ostr_sfor_debit_memo_item_manual_distribution_with_http_info(dmi_id, body, **kwargs)  # noqa: E501
+            (data) = self.postr_sfor_debit_memo_item_manual_distribution_with_http_info(dmi_id, body, **kwargs)  # noqa: E501
             return data
 
-    def p_ostr_sfor_debit_memo_item_manual_distribution_with_http_info(self, dmi_id, body, **kwargs):  # noqa: E501
+    def postr_sfor_debit_memo_item_manual_distribution_with_http_info(self, dmi_id, body, **kwargs):  # noqa: E501
         """Create revenue schedule for debit memo item (manual distribution)   # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Creates a revenue schedule for a debit memo item, and manually distribute the revenue.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ostr_sfor_debit_memo_item_manual_distribution_with_http_info(dmi_id, body, async_req=True)
+        >>> thread = api.postr_sfor_debit_memo_item_manual_distribution_with_http_info(dmi_id, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1229,18 +1229,18 @@ class RevenueSchedulesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ostr_sfor_debit_memo_item_manual_distribution" % key
+                    " to method postr_sfor_debit_memo_item_manual_distribution" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'dmi_id' is set
         if ('dmi_id' not in params or
                 params['dmi_id'] is None):
-            raise ValueError("Missing the required parameter `dmi_id` when calling `p_ostr_sfor_debit_memo_item_manual_distribution`")  # noqa: E501
+            raise ValueError("Missing the required parameter `dmi_id` when calling `postr_sfor_debit_memo_item_manual_distribution`")  # noqa: E501
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ostr_sfor_debit_memo_item_manual_distribution`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `postr_sfor_debit_memo_item_manual_distribution`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1285,13 +1285,13 @@ class RevenueSchedulesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ostr_sfor_invoice_item_adjustment_distribute_by_date_range(self, invoice_item_adj_key, request, **kwargs):  # noqa: E501
+    def postr_sfor_invoice_item_adjustment_distribute_by_date_range(self, invoice_item_adj_key, request, **kwargs):  # noqa: E501
         """Create revenue schedule for Invoice Item Adjustment (distribute by date range)  # noqa: E501
 
         Creates a revenue schedule for an Invoice Item Adjustment and distribute the revenue by specifying the recognition start and end dates.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ostr_sfor_invoice_item_adjustment_distribute_by_date_range(invoice_item_adj_key, request, async_req=True)
+        >>> thread = api.postr_sfor_invoice_item_adjustment_distribute_by_date_range(invoice_item_adj_key, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1304,18 +1304,18 @@ class RevenueSchedulesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ostr_sfor_invoice_item_adjustment_distribute_by_date_range_with_http_info(invoice_item_adj_key, request, **kwargs)  # noqa: E501
+            return self.postr_sfor_invoice_item_adjustment_distribute_by_date_range_with_http_info(invoice_item_adj_key, request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ostr_sfor_invoice_item_adjustment_distribute_by_date_range_with_http_info(invoice_item_adj_key, request, **kwargs)  # noqa: E501
+            (data) = self.postr_sfor_invoice_item_adjustment_distribute_by_date_range_with_http_info(invoice_item_adj_key, request, **kwargs)  # noqa: E501
             return data
 
-    def p_ostr_sfor_invoice_item_adjustment_distribute_by_date_range_with_http_info(self, invoice_item_adj_key, request, **kwargs):  # noqa: E501
+    def postr_sfor_invoice_item_adjustment_distribute_by_date_range_with_http_info(self, invoice_item_adj_key, request, **kwargs):  # noqa: E501
         """Create revenue schedule for Invoice Item Adjustment (distribute by date range)  # noqa: E501
 
         Creates a revenue schedule for an Invoice Item Adjustment and distribute the revenue by specifying the recognition start and end dates.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ostr_sfor_invoice_item_adjustment_distribute_by_date_range_with_http_info(invoice_item_adj_key, request, async_req=True)
+        >>> thread = api.postr_sfor_invoice_item_adjustment_distribute_by_date_range_with_http_info(invoice_item_adj_key, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1338,18 +1338,18 @@ class RevenueSchedulesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ostr_sfor_invoice_item_adjustment_distribute_by_date_range" % key
+                    " to method postr_sfor_invoice_item_adjustment_distribute_by_date_range" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'invoice_item_adj_key' is set
         if ('invoice_item_adj_key' not in params or
                 params['invoice_item_adj_key'] is None):
-            raise ValueError("Missing the required parameter `invoice_item_adj_key` when calling `p_ostr_sfor_invoice_item_adjustment_distribute_by_date_range`")  # noqa: E501
+            raise ValueError("Missing the required parameter `invoice_item_adj_key` when calling `postr_sfor_invoice_item_adjustment_distribute_by_date_range`")  # noqa: E501
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ostr_sfor_invoice_item_adjustment_distribute_by_date_range`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `postr_sfor_invoice_item_adjustment_distribute_by_date_range`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1396,13 +1396,13 @@ class RevenueSchedulesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ostr_sfor_invoice_item_adjustment_manual_distribution(self, invoice_item_adj_key, request, **kwargs):  # noqa: E501
+    def postr_sfor_invoice_item_adjustment_manual_distribution(self, invoice_item_adj_key, request, **kwargs):  # noqa: E501
         """Create revenue schedule for Invoice Item Adjustment (manual distribution)  # noqa: E501
 
         Creates a revenue schedule for an Invoice Item Adjustment and manually distribute the revenue.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ostr_sfor_invoice_item_adjustment_manual_distribution(invoice_item_adj_key, request, async_req=True)
+        >>> thread = api.postr_sfor_invoice_item_adjustment_manual_distribution(invoice_item_adj_key, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1415,18 +1415,18 @@ class RevenueSchedulesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ostr_sfor_invoice_item_adjustment_manual_distribution_with_http_info(invoice_item_adj_key, request, **kwargs)  # noqa: E501
+            return self.postr_sfor_invoice_item_adjustment_manual_distribution_with_http_info(invoice_item_adj_key, request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ostr_sfor_invoice_item_adjustment_manual_distribution_with_http_info(invoice_item_adj_key, request, **kwargs)  # noqa: E501
+            (data) = self.postr_sfor_invoice_item_adjustment_manual_distribution_with_http_info(invoice_item_adj_key, request, **kwargs)  # noqa: E501
             return data
 
-    def p_ostr_sfor_invoice_item_adjustment_manual_distribution_with_http_info(self, invoice_item_adj_key, request, **kwargs):  # noqa: E501
+    def postr_sfor_invoice_item_adjustment_manual_distribution_with_http_info(self, invoice_item_adj_key, request, **kwargs):  # noqa: E501
         """Create revenue schedule for Invoice Item Adjustment (manual distribution)  # noqa: E501
 
         Creates a revenue schedule for an Invoice Item Adjustment and manually distribute the revenue.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ostr_sfor_invoice_item_adjustment_manual_distribution_with_http_info(invoice_item_adj_key, request, async_req=True)
+        >>> thread = api.postr_sfor_invoice_item_adjustment_manual_distribution_with_http_info(invoice_item_adj_key, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1449,18 +1449,18 @@ class RevenueSchedulesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ostr_sfor_invoice_item_adjustment_manual_distribution" % key
+                    " to method postr_sfor_invoice_item_adjustment_manual_distribution" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'invoice_item_adj_key' is set
         if ('invoice_item_adj_key' not in params or
                 params['invoice_item_adj_key'] is None):
-            raise ValueError("Missing the required parameter `invoice_item_adj_key` when calling `p_ostr_sfor_invoice_item_adjustment_manual_distribution`")  # noqa: E501
+            raise ValueError("Missing the required parameter `invoice_item_adj_key` when calling `postr_sfor_invoice_item_adjustment_manual_distribution`")  # noqa: E501
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ostr_sfor_invoice_item_adjustment_manual_distribution`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `postr_sfor_invoice_item_adjustment_manual_distribution`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1507,13 +1507,13 @@ class RevenueSchedulesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ostr_sfor_invoice_item_distribute_by_date_range(self, invoice_item_id, request, **kwargs):  # noqa: E501
+    def postr_sfor_invoice_item_distribute_by_date_range(self, invoice_item_id, request, **kwargs):  # noqa: E501
         """Create revenue schedule for Invoice Item (distribute by date range)  # noqa: E501
 
         Creates a revenue schedule for an Invoice Item and distribute the revenue by specifying the recognition start and end dates.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ostr_sfor_invoice_item_distribute_by_date_range(invoice_item_id, request, async_req=True)
+        >>> thread = api.postr_sfor_invoice_item_distribute_by_date_range(invoice_item_id, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1526,18 +1526,18 @@ class RevenueSchedulesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ostr_sfor_invoice_item_distribute_by_date_range_with_http_info(invoice_item_id, request, **kwargs)  # noqa: E501
+            return self.postr_sfor_invoice_item_distribute_by_date_range_with_http_info(invoice_item_id, request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ostr_sfor_invoice_item_distribute_by_date_range_with_http_info(invoice_item_id, request, **kwargs)  # noqa: E501
+            (data) = self.postr_sfor_invoice_item_distribute_by_date_range_with_http_info(invoice_item_id, request, **kwargs)  # noqa: E501
             return data
 
-    def p_ostr_sfor_invoice_item_distribute_by_date_range_with_http_info(self, invoice_item_id, request, **kwargs):  # noqa: E501
+    def postr_sfor_invoice_item_distribute_by_date_range_with_http_info(self, invoice_item_id, request, **kwargs):  # noqa: E501
         """Create revenue schedule for Invoice Item (distribute by date range)  # noqa: E501
 
         Creates a revenue schedule for an Invoice Item and distribute the revenue by specifying the recognition start and end dates.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ostr_sfor_invoice_item_distribute_by_date_range_with_http_info(invoice_item_id, request, async_req=True)
+        >>> thread = api.postr_sfor_invoice_item_distribute_by_date_range_with_http_info(invoice_item_id, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1560,18 +1560,18 @@ class RevenueSchedulesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ostr_sfor_invoice_item_distribute_by_date_range" % key
+                    " to method postr_sfor_invoice_item_distribute_by_date_range" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'invoice_item_id' is set
         if ('invoice_item_id' not in params or
                 params['invoice_item_id'] is None):
-            raise ValueError("Missing the required parameter `invoice_item_id` when calling `p_ostr_sfor_invoice_item_distribute_by_date_range`")  # noqa: E501
+            raise ValueError("Missing the required parameter `invoice_item_id` when calling `postr_sfor_invoice_item_distribute_by_date_range`")  # noqa: E501
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ostr_sfor_invoice_item_distribute_by_date_range`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `postr_sfor_invoice_item_distribute_by_date_range`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1618,13 +1618,13 @@ class RevenueSchedulesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ostr_sfor_invoice_item_manual_distribution(self, invoice_item_id, request, **kwargs):  # noqa: E501
+    def postr_sfor_invoice_item_manual_distribution(self, invoice_item_id, request, **kwargs):  # noqa: E501
         """Create revenue schedule for Invoice Item (manual distribution)  # noqa: E501
 
         Creates a revenue schedule for an Invoice Item and manually distribute the revenue.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ostr_sfor_invoice_item_manual_distribution(invoice_item_id, request, async_req=True)
+        >>> thread = api.postr_sfor_invoice_item_manual_distribution(invoice_item_id, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1637,18 +1637,18 @@ class RevenueSchedulesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ostr_sfor_invoice_item_manual_distribution_with_http_info(invoice_item_id, request, **kwargs)  # noqa: E501
+            return self.postr_sfor_invoice_item_manual_distribution_with_http_info(invoice_item_id, request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ostr_sfor_invoice_item_manual_distribution_with_http_info(invoice_item_id, request, **kwargs)  # noqa: E501
+            (data) = self.postr_sfor_invoice_item_manual_distribution_with_http_info(invoice_item_id, request, **kwargs)  # noqa: E501
             return data
 
-    def p_ostr_sfor_invoice_item_manual_distribution_with_http_info(self, invoice_item_id, request, **kwargs):  # noqa: E501
+    def postr_sfor_invoice_item_manual_distribution_with_http_info(self, invoice_item_id, request, **kwargs):  # noqa: E501
         """Create revenue schedule for Invoice Item (manual distribution)  # noqa: E501
 
         Creates a revenue schedule for an Invoice Item and manually distribute the revenue.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ostr_sfor_invoice_item_manual_distribution_with_http_info(invoice_item_id, request, async_req=True)
+        >>> thread = api.postr_sfor_invoice_item_manual_distribution_with_http_info(invoice_item_id, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1671,18 +1671,18 @@ class RevenueSchedulesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ostr_sfor_invoice_item_manual_distribution" % key
+                    " to method postr_sfor_invoice_item_manual_distribution" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'invoice_item_id' is set
         if ('invoice_item_id' not in params or
                 params['invoice_item_id'] is None):
-            raise ValueError("Missing the required parameter `invoice_item_id` when calling `p_ostr_sfor_invoice_item_manual_distribution`")  # noqa: E501
+            raise ValueError("Missing the required parameter `invoice_item_id` when calling `postr_sfor_invoice_item_manual_distribution`")  # noqa: E501
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ostr_sfor_invoice_item_manual_distribution`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `postr_sfor_invoice_item_manual_distribution`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1729,13 +1729,13 @@ class RevenueSchedulesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ostr_sfor_subsc_charge(self, charge_key, request, **kwargs):  # noqa: E501
+    def postr_sfor_subsc_charge(self, charge_key, request, **kwargs):  # noqa: E501
         """Create revenue schedule on subscription charge  # noqa: E501
 
         Creates a revenue schedule by specifying the subscription charge. This method is for custom unlimited revenue recognition only.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ostr_sfor_subsc_charge(charge_key, request, async_req=True)
+        >>> thread = api.postr_sfor_subsc_charge(charge_key, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1748,18 +1748,18 @@ class RevenueSchedulesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ostr_sfor_subsc_charge_with_http_info(charge_key, request, **kwargs)  # noqa: E501
+            return self.postr_sfor_subsc_charge_with_http_info(charge_key, request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ostr_sfor_subsc_charge_with_http_info(charge_key, request, **kwargs)  # noqa: E501
+            (data) = self.postr_sfor_subsc_charge_with_http_info(charge_key, request, **kwargs)  # noqa: E501
             return data
 
-    def p_ostr_sfor_subsc_charge_with_http_info(self, charge_key, request, **kwargs):  # noqa: E501
+    def postr_sfor_subsc_charge_with_http_info(self, charge_key, request, **kwargs):  # noqa: E501
         """Create revenue schedule on subscription charge  # noqa: E501
 
         Creates a revenue schedule by specifying the subscription charge. This method is for custom unlimited revenue recognition only.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ostr_sfor_subsc_charge_with_http_info(charge_key, request, async_req=True)
+        >>> thread = api.postr_sfor_subsc_charge_with_http_info(charge_key, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1782,18 +1782,18 @@ class RevenueSchedulesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ostr_sfor_subsc_charge" % key
+                    " to method postr_sfor_subsc_charge" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'charge_key' is set
         if ('charge_key' not in params or
                 params['charge_key'] is None):
-            raise ValueError("Missing the required parameter `charge_key` when calling `p_ostr_sfor_subsc_charge`")  # noqa: E501
+            raise ValueError("Missing the required parameter `charge_key` when calling `postr_sfor_subsc_charge`")  # noqa: E501
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ostr_sfor_subsc_charge`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `postr_sfor_subsc_charge`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1840,13 +1840,13 @@ class RevenueSchedulesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_revenue_across_ap(self, rs_number, request, **kwargs):  # noqa: E501
+    def put_revenue_across_ap(self, rs_number, request, **kwargs):  # noqa: E501
         """Distribute revenue across accounting periods  # noqa: E501
 
         Distributes revenue by specifying the revenue schedule number. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_revenue_across_ap(rs_number, request, async_req=True)
+        >>> thread = api.put_revenue_across_ap(rs_number, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1859,18 +1859,18 @@ class RevenueSchedulesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_revenue_across_ap_with_http_info(rs_number, request, **kwargs)  # noqa: E501
+            return self.put_revenue_across_ap_with_http_info(rs_number, request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_revenue_across_ap_with_http_info(rs_number, request, **kwargs)  # noqa: E501
+            (data) = self.put_revenue_across_ap_with_http_info(rs_number, request, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_revenue_across_ap_with_http_info(self, rs_number, request, **kwargs):  # noqa: E501
+    def put_revenue_across_ap_with_http_info(self, rs_number, request, **kwargs):  # noqa: E501
         """Distribute revenue across accounting periods  # noqa: E501
 
         Distributes revenue by specifying the revenue schedule number. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_revenue_across_ap_with_http_info(rs_number, request, async_req=True)
+        >>> thread = api.put_revenue_across_ap_with_http_info(rs_number, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1893,18 +1893,18 @@ class RevenueSchedulesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_revenue_across_ap" % key
+                    " to method put_revenue_across_ap" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'rs_number' is set
         if ('rs_number' not in params or
                 params['rs_number'] is None):
-            raise ValueError("Missing the required parameter `rs_number` when calling `p_ut_revenue_across_ap`")  # noqa: E501
+            raise ValueError("Missing the required parameter `rs_number` when calling `put_revenue_across_ap`")  # noqa: E501
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ut_revenue_across_ap`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `put_revenue_across_ap`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1951,13 +1951,13 @@ class RevenueSchedulesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_revenue_by_recognition_startand_end_dates(self, rs_number, request, **kwargs):  # noqa: E501
+    def put_revenue_by_recognition_startand_end_dates(self, rs_number, request, **kwargs):  # noqa: E501
         """Distribute revenue by recognition start and end dates  # noqa: E501
 
         Distributes revenue by specifying the recognition start and end dates. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_revenue_by_recognition_startand_end_dates(rs_number, request, async_req=True)
+        >>> thread = api.put_revenue_by_recognition_startand_end_dates(rs_number, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1970,18 +1970,18 @@ class RevenueSchedulesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_revenue_by_recognition_startand_end_dates_with_http_info(rs_number, request, **kwargs)  # noqa: E501
+            return self.put_revenue_by_recognition_startand_end_dates_with_http_info(rs_number, request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_revenue_by_recognition_startand_end_dates_with_http_info(rs_number, request, **kwargs)  # noqa: E501
+            (data) = self.put_revenue_by_recognition_startand_end_dates_with_http_info(rs_number, request, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_revenue_by_recognition_startand_end_dates_with_http_info(self, rs_number, request, **kwargs):  # noqa: E501
+    def put_revenue_by_recognition_startand_end_dates_with_http_info(self, rs_number, request, **kwargs):  # noqa: E501
         """Distribute revenue by recognition start and end dates  # noqa: E501
 
         Distributes revenue by specifying the recognition start and end dates. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_revenue_by_recognition_startand_end_dates_with_http_info(rs_number, request, async_req=True)
+        >>> thread = api.put_revenue_by_recognition_startand_end_dates_with_http_info(rs_number, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2004,18 +2004,18 @@ class RevenueSchedulesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_revenue_by_recognition_startand_end_dates" % key
+                    " to method put_revenue_by_recognition_startand_end_dates" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'rs_number' is set
         if ('rs_number' not in params or
                 params['rs_number'] is None):
-            raise ValueError("Missing the required parameter `rs_number` when calling `p_ut_revenue_by_recognition_startand_end_dates`")  # noqa: E501
+            raise ValueError("Missing the required parameter `rs_number` when calling `put_revenue_by_recognition_startand_end_dates`")  # noqa: E501
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ut_revenue_by_recognition_startand_end_dates`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `put_revenue_by_recognition_startand_end_dates`")  # noqa: E501
 
         collection_formats = {}
 
@@ -2062,13 +2062,13 @@ class RevenueSchedulesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_revenue_specific_date(self, rs_number, request, **kwargs):  # noqa: E501
+    def put_revenue_specific_date(self, rs_number, request, **kwargs):  # noqa: E501
         """Distribute revenue on specific date  # noqa: E501
 
         Distributes revenue on a specific recognition date. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_revenue_specific_date(rs_number, request, async_req=True)
+        >>> thread = api.put_revenue_specific_date(rs_number, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2081,18 +2081,18 @@ class RevenueSchedulesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_revenue_specific_date_with_http_info(rs_number, request, **kwargs)  # noqa: E501
+            return self.put_revenue_specific_date_with_http_info(rs_number, request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_revenue_specific_date_with_http_info(rs_number, request, **kwargs)  # noqa: E501
+            (data) = self.put_revenue_specific_date_with_http_info(rs_number, request, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_revenue_specific_date_with_http_info(self, rs_number, request, **kwargs):  # noqa: E501
+    def put_revenue_specific_date_with_http_info(self, rs_number, request, **kwargs):  # noqa: E501
         """Distribute revenue on specific date  # noqa: E501
 
         Distributes revenue on a specific recognition date. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_revenue_specific_date_with_http_info(rs_number, request, async_req=True)
+        >>> thread = api.put_revenue_specific_date_with_http_info(rs_number, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2115,18 +2115,18 @@ class RevenueSchedulesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_revenue_specific_date" % key
+                    " to method put_revenue_specific_date" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'rs_number' is set
         if ('rs_number' not in params or
                 params['rs_number'] is None):
-            raise ValueError("Missing the required parameter `rs_number` when calling `p_ut_revenue_specific_date`")  # noqa: E501
+            raise ValueError("Missing the required parameter `rs_number` when calling `put_revenue_specific_date`")  # noqa: E501
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ut_revenue_specific_date`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `put_revenue_specific_date`")  # noqa: E501
 
         collection_formats = {}
 
@@ -2173,13 +2173,13 @@ class RevenueSchedulesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_utrs_basic_info(self, rs_number, request, **kwargs):  # noqa: E501
+    def putrs_basic_info(self, rs_number, request, **kwargs):  # noqa: E501
         """Update revenue schedule basic information  # noqa: E501
 
         Retrieves basic information of a revenue schedule by specifying the revenue schedule number. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_utrs_basic_info(rs_number, request, async_req=True)
+        >>> thread = api.putrs_basic_info(rs_number, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2192,18 +2192,18 @@ class RevenueSchedulesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_utrs_basic_info_with_http_info(rs_number, request, **kwargs)  # noqa: E501
+            return self.putrs_basic_info_with_http_info(rs_number, request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_utrs_basic_info_with_http_info(rs_number, request, **kwargs)  # noqa: E501
+            (data) = self.putrs_basic_info_with_http_info(rs_number, request, **kwargs)  # noqa: E501
             return data
 
-    def p_utrs_basic_info_with_http_info(self, rs_number, request, **kwargs):  # noqa: E501
+    def putrs_basic_info_with_http_info(self, rs_number, request, **kwargs):  # noqa: E501
         """Update revenue schedule basic information  # noqa: E501
 
         Retrieves basic information of a revenue schedule by specifying the revenue schedule number. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_utrs_basic_info_with_http_info(rs_number, request, async_req=True)
+        >>> thread = api.putrs_basic_info_with_http_info(rs_number, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2226,18 +2226,18 @@ class RevenueSchedulesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_utrs_basic_info" % key
+                    " to method putrs_basic_info" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'rs_number' is set
         if ('rs_number' not in params or
                 params['rs_number'] is None):
-            raise ValueError("Missing the required parameter `rs_number` when calling `p_utrs_basic_info`")  # noqa: E501
+            raise ValueError("Missing the required parameter `rs_number` when calling `putrs_basic_info`")  # noqa: E501
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_utrs_basic_info`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `putrs_basic_info`")  # noqa: E501
 
         collection_formats = {}
 

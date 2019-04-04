@@ -29,50 +29,50 @@ class TestPaymentsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_d_elete_payment(self):
-        """Test case for d_elete_payment
+    def test_delete_payment(self):
+        """Test case for delete_payment
 
         Delete payment  # noqa: E501
         """
         pass
 
-    def test_g_et_payment(self):
-        """Test case for g_et_payment
+    def test_get_payment(self):
+        """Test case for get_payment
 
         Get payment  # noqa: E501
         """
         pass
 
-    def test_g_et_payment_item_part(self):
-        """Test case for g_et_payment_item_part
+    def test_get_payment_item_part(self):
+        """Test case for get_payment_item_part
 
         Get payment part item  # noqa: E501
         """
         pass
 
-    def test_g_et_payment_item_parts(self):
-        """Test case for g_et_payment_item_parts
+    def test_get_payment_item_parts(self):
+        """Test case for get_payment_item_parts
 
         Get payment part items  # noqa: E501
         """
         pass
 
-    def test_g_et_payment_part(self):
-        """Test case for g_et_payment_part
+    def test_get_payment_part(self):
+        """Test case for get_payment_part
 
         Get payment part  # noqa: E501
         """
         pass
 
-    def test_g_et_payment_parts(self):
-        """Test case for g_et_payment_parts
+    def test_get_payment_parts(self):
+        """Test case for get_payment_parts
 
         Get payment parts  # noqa: E501
         """
         pass
 
-    def test_g_et_retrieve_all_payments(self):
-        """Test case for g_et_retrieve_all_payments
+    def test_get_retrieve_all_payments(self):
+        """Test case for get_retrieve_all_payments
 
         Get all payments  # noqa: E501
         """
@@ -106,50 +106,50 @@ class TestPaymentsApi(unittest.TestCase):
         """
         pass
 
-    def test_p_ost_create_payment(self):
-        """Test case for p_ost_create_payment
+    def test_post_create_payment(self):
+        """Test case for post_create_payment
 
         Create payment  # noqa: E501
         """
         pass
 
-    def test_p_ost_refund_payment(self):
-        """Test case for p_ost_refund_payment
+    def test_post_refund_payment(self):
+        """Test case for post_refund_payment
 
         Refund payment  # noqa: E501
         """
         pass
 
-    def test_p_ut_apply_payment(self):
-        """Test case for p_ut_apply_payment
+    def test_put_apply_payment(self):
+        """Test case for put_apply_payment
 
         Apply payment  # noqa: E501
         """
         pass
 
-    def test_p_ut_cancel_payment(self):
-        """Test case for p_ut_cancel_payment
+    def test_put_cancel_payment(self):
+        """Test case for put_cancel_payment
 
         Cancel payment  # noqa: E501
         """
         pass
 
-    def test_p_ut_transfer_payment(self):
-        """Test case for p_ut_transfer_payment
+    def test_put_transfer_payment(self):
+        """Test case for put_transfer_payment
 
         Transfer payment  # noqa: E501
         """
         pass
 
-    def test_p_ut_unapply_payment(self):
-        """Test case for p_ut_unapply_payment
+    def test_put_unapply_payment(self):
+        """Test case for put_unapply_payment
 
         Unapply payment  # noqa: E501
         """
         pass
 
-    def test_p_ut_update_payment(self):
-        """Test case for p_ut_update_payment
+    def test_put_update_payment(self):
+        """Test case for put_update_payment
 
         Update payment  # noqa: E501
         """

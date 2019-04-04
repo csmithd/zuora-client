@@ -29,36 +29,36 @@ class TestEntityConnectionsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_g_et_entity_connections(self):
-        """Test case for g_et_entity_connections
+    def test_get_entity_connections(self):
+        """Test case for get_entity_connections
 
         Multi-entity: Get connections  # noqa: E501
         """
         pass
 
-    def test_p_ost_entity_connections(self):
-        """Test case for p_ost_entity_connections
+    def test_post_entity_connections(self):
+        """Test case for post_entity_connections
 
         Multi-entity: Initiate connection  # noqa: E501
         """
         pass
 
-    def test_p_ut_entity_connections_accept(self):
-        """Test case for p_ut_entity_connections_accept
+    def test_put_entity_connections_accept(self):
+        """Test case for put_entity_connections_accept
 
         Multi-entity: Accept connection  # noqa: E501
         """
         pass
 
-    def test_p_ut_entity_connections_deny(self):
-        """Test case for p_ut_entity_connections_deny
+    def test_put_entity_connections_deny(self):
+        """Test case for put_entity_connections_deny
 
         Multi-entity: Deny connection  # noqa: E501
         """
         pass
 
-    def test_p_ut_entity_connections_disconnect(self):
-        """Test case for p_ut_entity_connections_disconnect
+    def test_put_entity_connections_disconnect(self):
+        """Test case for put_entity_connections_disconnect
 
         Multi-entity: Disconnect connection  # noqa: E501
         """

@@ -57,8 +57,8 @@ class TestBillRunApi(unittest.TestCase):
         """
         pass
 
-    def test_p_ost_email_billing_documentsfrom_bill_run(self):
-        """Test case for p_ost_email_billing_documentsfrom_bill_run
+    def test_post_email_billing_documentsfrom_bill_run(self):
+        """Test case for post_email_billing_documentsfrom_bill_run
 
         Email billing documents generated from bill run  # noqa: E501
         """

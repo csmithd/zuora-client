@@ -29,29 +29,29 @@ class TestLinkQueriesApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_d_elete_link_query_job(self):
-        """Test case for d_elete_link_query_job
+    def test_delete_link_query_job(self):
+        """Test case for delete_link_query_job
 
         Cancel Link query job  # noqa: E501
         """
         pass
 
-    def test_g_et_link_query_job(self):
-        """Test case for g_et_link_query_job
+    def test_get_link_query_job(self):
+        """Test case for get_link_query_job
 
         Get Link query job  # noqa: E501
         """
         pass
 
-    def test_g_et_link_query_jobs(self):
-        """Test case for g_et_link_query_jobs
+    def test_get_link_query_jobs(self):
+        """Test case for get_link_query_jobs
 
         Get Link query jobs  # noqa: E501
         """
         pass
 
-    def test_p_ost_link_query_job(self):
-        """Test case for p_ost_link_query_job
+    def test_post_link_query_job(self):
+        """Test case for post_link_query_job
 
         Submit Link query  # noqa: E501
         """

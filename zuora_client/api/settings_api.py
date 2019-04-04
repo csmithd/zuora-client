@@ -25,13 +25,13 @@ class SettingsApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def g_et_revenue_automation_start_date(self, **kwargs):  # noqa: E501
+    def get_revenue_automation_start_date(self, **kwargs):  # noqa: E501
         """Get the revenue automation start date  # noqa: E501
 
         This REST API reference describes how to get the revenue automation start date. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_revenue_automation_start_date(async_req=True)
+        >>> thread = api.get_revenue_automation_start_date(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -42,18 +42,18 @@ class SettingsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_revenue_automation_start_date_with_http_info(**kwargs)  # noqa: E501
+            return self.get_revenue_automation_start_date_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_revenue_automation_start_date_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.get_revenue_automation_start_date_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def g_et_revenue_automation_start_date_with_http_info(self, **kwargs):  # noqa: E501
+    def get_revenue_automation_start_date_with_http_info(self, **kwargs):  # noqa: E501
         """Get the revenue automation start date  # noqa: E501
 
         This REST API reference describes how to get the revenue automation start date. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_revenue_automation_start_date_with_http_info(async_req=True)
+        >>> thread = api.get_revenue_automation_start_date_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -74,7 +74,7 @@ class SettingsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_revenue_automation_start_date" % key
+                    " to method get_revenue_automation_start_date" % key
                 )
             params[key] = val
         del params['kwargs']

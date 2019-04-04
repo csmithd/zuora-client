@@ -25,13 +25,13 @@ class AmendmentsApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def g_et_amendments_by_key(self, amendment_key, **kwargs):  # noqa: E501
+    def get_amendments_by_key(self, amendment_key, **kwargs):  # noqa: E501
         """Get amendments by key  # noqa: E501
 
         Retrieves detailed information about the specified subscription amendment.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_amendments_by_key(amendment_key, async_req=True)
+        >>> thread = api.get_amendments_by_key(amendment_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -43,18 +43,18 @@ class AmendmentsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_amendments_by_key_with_http_info(amendment_key, **kwargs)  # noqa: E501
+            return self.get_amendments_by_key_with_http_info(amendment_key, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_amendments_by_key_with_http_info(amendment_key, **kwargs)  # noqa: E501
+            (data) = self.get_amendments_by_key_with_http_info(amendment_key, **kwargs)  # noqa: E501
             return data
 
-    def g_et_amendments_by_key_with_http_info(self, amendment_key, **kwargs):  # noqa: E501
+    def get_amendments_by_key_with_http_info(self, amendment_key, **kwargs):  # noqa: E501
         """Get amendments by key  # noqa: E501
 
         Retrieves detailed information about the specified subscription amendment.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_amendments_by_key_with_http_info(amendment_key, async_req=True)
+        >>> thread = api.get_amendments_by_key_with_http_info(amendment_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -76,14 +76,14 @@ class AmendmentsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_amendments_by_key" % key
+                    " to method get_amendments_by_key" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'amendment_key' is set
         if ('amendment_key' not in params or
                 params['amendment_key'] is None):
-            raise ValueError("Missing the required parameter `amendment_key` when calling `g_et_amendments_by_key`")  # noqa: E501
+            raise ValueError("Missing the required parameter `amendment_key` when calling `get_amendments_by_key`")  # noqa: E501
 
         collection_formats = {}
 
@@ -128,13 +128,13 @@ class AmendmentsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_amendments_by_subscription_id(self, subscription_id, **kwargs):  # noqa: E501
+    def get_amendments_by_subscription_id(self, subscription_id, **kwargs):  # noqa: E501
         """Get amendments by subscription ID  # noqa: E501
 
         Retrieves detailed information about the amendment with the specified subscription.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_amendments_by_subscription_id(subscription_id, async_req=True)
+        >>> thread = api.get_amendments_by_subscription_id(subscription_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -146,18 +146,18 @@ class AmendmentsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_amendments_by_subscription_id_with_http_info(subscription_id, **kwargs)  # noqa: E501
+            return self.get_amendments_by_subscription_id_with_http_info(subscription_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_amendments_by_subscription_id_with_http_info(subscription_id, **kwargs)  # noqa: E501
+            (data) = self.get_amendments_by_subscription_id_with_http_info(subscription_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_amendments_by_subscription_id_with_http_info(self, subscription_id, **kwargs):  # noqa: E501
+    def get_amendments_by_subscription_id_with_http_info(self, subscription_id, **kwargs):  # noqa: E501
         """Get amendments by subscription ID  # noqa: E501
 
         Retrieves detailed information about the amendment with the specified subscription.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_amendments_by_subscription_id_with_http_info(subscription_id, async_req=True)
+        >>> thread = api.get_amendments_by_subscription_id_with_http_info(subscription_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -179,14 +179,14 @@ class AmendmentsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_amendments_by_subscription_id" % key
+                    " to method get_amendments_by_subscription_id" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'subscription_id' is set
         if ('subscription_id' not in params or
                 params['subscription_id'] is None):
-            raise ValueError("Missing the required parameter `subscription_id` when calling `g_et_amendments_by_subscription_id`")  # noqa: E501
+            raise ValueError("Missing the required parameter `subscription_id` when calling `get_amendments_by_subscription_id`")  # noqa: E501
 
         collection_formats = {}
 

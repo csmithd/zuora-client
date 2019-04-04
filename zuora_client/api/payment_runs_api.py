@@ -25,13 +25,13 @@ class PaymentRunsApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def d_elete_payment_run(self, payment_run_id, **kwargs):  # noqa: E501
+    def delete_payment_run(self, payment_run_id, **kwargs):  # noqa: E501
         """Delete payment run  # noqa: E501
 
         Deletes a payment run. Only payment runs with the Canceled or Error status can be deleted.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_payment_run(payment_run_id, async_req=True)
+        >>> thread = api.delete_payment_run(payment_run_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -42,18 +42,18 @@ class PaymentRunsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.d_elete_payment_run_with_http_info(payment_run_id, **kwargs)  # noqa: E501
+            return self.delete_payment_run_with_http_info(payment_run_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.d_elete_payment_run_with_http_info(payment_run_id, **kwargs)  # noqa: E501
+            (data) = self.delete_payment_run_with_http_info(payment_run_id, **kwargs)  # noqa: E501
             return data
 
-    def d_elete_payment_run_with_http_info(self, payment_run_id, **kwargs):  # noqa: E501
+    def delete_payment_run_with_http_info(self, payment_run_id, **kwargs):  # noqa: E501
         """Delete payment run  # noqa: E501
 
         Deletes a payment run. Only payment runs with the Canceled or Error status can be deleted.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_payment_run_with_http_info(payment_run_id, async_req=True)
+        >>> thread = api.delete_payment_run_with_http_info(payment_run_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -74,14 +74,14 @@ class PaymentRunsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method d_elete_payment_run" % key
+                    " to method delete_payment_run" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'payment_run_id' is set
         if ('payment_run_id' not in params or
                 params['payment_run_id'] is None):
-            raise ValueError("Missing the required parameter `payment_run_id` when calling `d_elete_payment_run`")  # noqa: E501
+            raise ValueError("Missing the required parameter `payment_run_id` when calling `delete_payment_run`")  # noqa: E501
 
         collection_formats = {}
 
@@ -124,13 +124,13 @@ class PaymentRunsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_payment_run(self, payment_run_id, **kwargs):  # noqa: E501
+    def get_payment_run(self, payment_run_id, **kwargs):  # noqa: E501
         """Get payment run  # noqa: E501
 
         Retrives the information about a specific payment run.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_payment_run(payment_run_id, async_req=True)
+        >>> thread = api.get_payment_run(payment_run_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -142,18 +142,18 @@ class PaymentRunsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_payment_run_with_http_info(payment_run_id, **kwargs)  # noqa: E501
+            return self.get_payment_run_with_http_info(payment_run_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_payment_run_with_http_info(payment_run_id, **kwargs)  # noqa: E501
+            (data) = self.get_payment_run_with_http_info(payment_run_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_payment_run_with_http_info(self, payment_run_id, **kwargs):  # noqa: E501
+    def get_payment_run_with_http_info(self, payment_run_id, **kwargs):  # noqa: E501
         """Get payment run  # noqa: E501
 
         Retrives the information about a specific payment run.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_payment_run_with_http_info(payment_run_id, async_req=True)
+        >>> thread = api.get_payment_run_with_http_info(payment_run_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -175,14 +175,14 @@ class PaymentRunsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_payment_run" % key
+                    " to method get_payment_run" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'payment_run_id' is set
         if ('payment_run_id' not in params or
                 params['payment_run_id'] is None):
-            raise ValueError("Missing the required parameter `payment_run_id` when calling `g_et_payment_run`")  # noqa: E501
+            raise ValueError("Missing the required parameter `payment_run_id` when calling `get_payment_run`")  # noqa: E501
 
         collection_formats = {}
 
@@ -227,13 +227,13 @@ class PaymentRunsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_payment_run_summary(self, payment_run_id, **kwargs):  # noqa: E501
+    def get_payment_run_summary(self, payment_run_id, **kwargs):  # noqa: E501
         """Get payment run summary  # noqa: E501
 
         Retrives the summary of a payment run.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_payment_run_summary(payment_run_id, async_req=True)
+        >>> thread = api.get_payment_run_summary(payment_run_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -244,18 +244,18 @@ class PaymentRunsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_payment_run_summary_with_http_info(payment_run_id, **kwargs)  # noqa: E501
+            return self.get_payment_run_summary_with_http_info(payment_run_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_payment_run_summary_with_http_info(payment_run_id, **kwargs)  # noqa: E501
+            (data) = self.get_payment_run_summary_with_http_info(payment_run_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_payment_run_summary_with_http_info(self, payment_run_id, **kwargs):  # noqa: E501
+    def get_payment_run_summary_with_http_info(self, payment_run_id, **kwargs):  # noqa: E501
         """Get payment run summary  # noqa: E501
 
         Retrives the summary of a payment run.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_payment_run_summary_with_http_info(payment_run_id, async_req=True)
+        >>> thread = api.get_payment_run_summary_with_http_info(payment_run_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -276,14 +276,14 @@ class PaymentRunsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_payment_run_summary" % key
+                    " to method get_payment_run_summary" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'payment_run_id' is set
         if ('payment_run_id' not in params or
                 params['payment_run_id'] is None):
-            raise ValueError("Missing the required parameter `payment_run_id` when calling `g_et_payment_run_summary`")  # noqa: E501
+            raise ValueError("Missing the required parameter `payment_run_id` when calling `get_payment_run_summary`")  # noqa: E501
 
         collection_formats = {}
 
@@ -326,13 +326,13 @@ class PaymentRunsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_payment_runs(self, **kwargs):  # noqa: E501
+    def get_payment_runs(self, **kwargs):  # noqa: E501
         """Get payment runs  # noqa: E501
 
         Retrieves the information about all payment runs. You can define filterable fields to restrict the data returned in the response.  ### Filtering  You can use query parameters to restrict the data returned in the response. Each query parameter corresponds to one field in the response body.  If the value of a filterable field is string, you can set the corresponding query parameter to `null` when filtering. Then, you can get the response data with this field value being `null`.   Examples:  - /v1/payment-runs?status=Processed  - /v1/payment-runs?targetDate=2017-10-10&status=Pending  - /v1/payment-runs?status=Completed&sort=+updatedDate   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_payment_runs(async_req=True)
+        >>> thread = api.get_payment_runs(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -351,18 +351,18 @@ class PaymentRunsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_payment_runs_with_http_info(**kwargs)  # noqa: E501
+            return self.get_payment_runs_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_payment_runs_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.get_payment_runs_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def g_et_payment_runs_with_http_info(self, **kwargs):  # noqa: E501
+    def get_payment_runs_with_http_info(self, **kwargs):  # noqa: E501
         """Get payment runs  # noqa: E501
 
         Retrieves the information about all payment runs. You can define filterable fields to restrict the data returned in the response.  ### Filtering  You can use query parameters to restrict the data returned in the response. Each query parameter corresponds to one field in the response body.  If the value of a filterable field is string, you can set the corresponding query parameter to `null` when filtering. Then, you can get the response data with this field value being `null`.   Examples:  - /v1/payment-runs?status=Processed  - /v1/payment-runs?targetDate=2017-10-10&status=Pending  - /v1/payment-runs?status=Completed&sort=+updatedDate   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_payment_runs_with_http_info(async_req=True)
+        >>> thread = api.get_payment_runs_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -391,13 +391,13 @@ class PaymentRunsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_payment_runs" % key
+                    " to method get_payment_runs" % key
                 )
             params[key] = val
         del params['kwargs']
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_payment_runs`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_payment_runs`, must be a value less than or equal to `40`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -455,13 +455,13 @@ class PaymentRunsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_payment_run(self, body, **kwargs):  # noqa: E501
+    def post_payment_run(self, body, **kwargs):  # noqa: E501
         """Create payment run  # noqa: E501
 
         Creates a payment run. You can create a payment run to be executed immediately after it is created, or a scheduced payment run to be executed in future.  The `accountId`, `batch`, `billCycleDay`, `currency`, `paymentGatewayId`, and `billingRunId` fields are used to determine which receivables to be paid in the payment run. If none of these fields is specified in the request body, the corresponding payment run collects payments for all accounts.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_payment_run(body, async_req=True)
+        >>> thread = api.post_payment_run(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -473,18 +473,18 @@ class PaymentRunsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_payment_run_with_http_info(body, **kwargs)  # noqa: E501
+            return self.post_payment_run_with_http_info(body, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_payment_run_with_http_info(body, **kwargs)  # noqa: E501
+            (data) = self.post_payment_run_with_http_info(body, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_payment_run_with_http_info(self, body, **kwargs):  # noqa: E501
+    def post_payment_run_with_http_info(self, body, **kwargs):  # noqa: E501
         """Create payment run  # noqa: E501
 
         Creates a payment run. You can create a payment run to be executed immediately after it is created, or a scheduced payment run to be executed in future.  The `accountId`, `batch`, `billCycleDay`, `currency`, `paymentGatewayId`, and `billingRunId` fields are used to determine which receivables to be paid in the payment run. If none of these fields is specified in the request body, the corresponding payment run collects payments for all accounts.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_payment_run_with_http_info(body, async_req=True)
+        >>> thread = api.post_payment_run_with_http_info(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -506,14 +506,14 @@ class PaymentRunsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_payment_run" % key
+                    " to method post_payment_run" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ost_payment_run`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `post_payment_run`")  # noqa: E501
 
         collection_formats = {}
 
@@ -558,13 +558,13 @@ class PaymentRunsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_payment_run(self, payment_run_id, body, **kwargs):  # noqa: E501
+    def put_payment_run(self, payment_run_id, body, **kwargs):  # noqa: E501
         """Update payment run  # noqa: E501
 
         Updates the information about an unexecuted payment run. Only pending payment runs can be updated.  If none of the **accountId**, **batch**, **billCycleDay**, **currency**, **paymentGatewayId**, and **billingRunId** fields is specified in the request body, the corresponding payment run collects payments for all accounts.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_payment_run(payment_run_id, body, async_req=True)
+        >>> thread = api.put_payment_run(payment_run_id, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -577,18 +577,18 @@ class PaymentRunsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_payment_run_with_http_info(payment_run_id, body, **kwargs)  # noqa: E501
+            return self.put_payment_run_with_http_info(payment_run_id, body, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_payment_run_with_http_info(payment_run_id, body, **kwargs)  # noqa: E501
+            (data) = self.put_payment_run_with_http_info(payment_run_id, body, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_payment_run_with_http_info(self, payment_run_id, body, **kwargs):  # noqa: E501
+    def put_payment_run_with_http_info(self, payment_run_id, body, **kwargs):  # noqa: E501
         """Update payment run  # noqa: E501
 
         Updates the information about an unexecuted payment run. Only pending payment runs can be updated.  If none of the **accountId**, **batch**, **billCycleDay**, **currency**, **paymentGatewayId**, and **billingRunId** fields is specified in the request body, the corresponding payment run collects payments for all accounts.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_payment_run_with_http_info(payment_run_id, body, async_req=True)
+        >>> thread = api.put_payment_run_with_http_info(payment_run_id, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -611,18 +611,18 @@ class PaymentRunsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_payment_run" % key
+                    " to method put_payment_run" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'payment_run_id' is set
         if ('payment_run_id' not in params or
                 params['payment_run_id'] is None):
-            raise ValueError("Missing the required parameter `payment_run_id` when calling `p_ut_payment_run`")  # noqa: E501
+            raise ValueError("Missing the required parameter `payment_run_id` when calling `put_payment_run`")  # noqa: E501
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ut_payment_run`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `put_payment_run`")  # noqa: E501
 
         collection_formats = {}
 

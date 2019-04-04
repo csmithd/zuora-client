@@ -29,15 +29,15 @@ class TestBillingPreviewRunApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_g_et_billing_preview_run(self):
-        """Test case for g_et_billing_preview_run
+    def test_get_billing_preview_run(self):
+        """Test case for get_billing_preview_run
 
         Get Billing Preview Run  # noqa: E501
         """
         pass
 
-    def test_p_ost_billing_preview_run(self):
-        """Test case for p_ost_billing_preview_run
+    def test_post_billing_preview_run(self):
+        """Test case for post_billing_preview_run
 
         Create Billing Preview Run  # noqa: E501
         """

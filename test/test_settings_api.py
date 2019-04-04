@@ -29,8 +29,8 @@ class TestSettingsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_g_et_revenue_automation_start_date(self):
-        """Test case for g_et_revenue_automation_start_date
+    def test_get_revenue_automation_start_date(self):
+        """Test case for get_revenue_automation_start_date
 
         Get the revenue automation start date  # noqa: E501
         """

@@ -25,13 +25,13 @@ class GetFilesApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def g_et_files(self, file_id, **kwargs):  # noqa: E501
+    def get_files(self, file_id, **kwargs):  # noqa: E501
         """Get files  # noqa: E501
 
         Retrieve files such as export results, invoices, and accounting period reports.  **Note:** The maximum file size is 2047MB. If you have a data request that exceeds this limit, Zuora returns the following 403 response: `<security:max-object-size>2047MB</security:max-object-size>`. Submit a request at <a href=\"http://support.zuora.com/\" target=\"_blank\">Zuora Global Support</a> to determine if large file optimization is an option for you.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_files(file_id, async_req=True)
+        >>> thread = api.get_files(file_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -43,18 +43,18 @@ class GetFilesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_files_with_http_info(file_id, **kwargs)  # noqa: E501
+            return self.get_files_with_http_info(file_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_files_with_http_info(file_id, **kwargs)  # noqa: E501
+            (data) = self.get_files_with_http_info(file_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_files_with_http_info(self, file_id, **kwargs):  # noqa: E501
+    def get_files_with_http_info(self, file_id, **kwargs):  # noqa: E501
         """Get files  # noqa: E501
 
         Retrieve files such as export results, invoices, and accounting period reports.  **Note:** The maximum file size is 2047MB. If you have a data request that exceeds this limit, Zuora returns the following 403 response: `<security:max-object-size>2047MB</security:max-object-size>`. Submit a request at <a href=\"http://support.zuora.com/\" target=\"_blank\">Zuora Global Support</a> to determine if large file optimization is an option for you.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_files_with_http_info(file_id, async_req=True)
+        >>> thread = api.get_files_with_http_info(file_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -76,14 +76,14 @@ class GetFilesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_files" % key
+                    " to method get_files" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'file_id' is set
         if ('file_id' not in params or
                 params['file_id'] is None):
-            raise ValueError("Missing the required parameter `file_id` when calling `g_et_files`")  # noqa: E501
+            raise ValueError("Missing the required parameter `file_id` when calling `get_files`")  # noqa: E501
 
         collection_formats = {}
 

@@ -29,15 +29,15 @@ class TestRevenueEventsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_g_et_revenue_event_details(self):
-        """Test case for g_et_revenue_event_details
+    def test_get_revenue_event_details(self):
+        """Test case for get_revenue_event_details
 
         Get revenue event details  # noqa: E501
         """
         pass
 
-    def test_g_et_revenue_event_for_revenue_schedule(self):
-        """Test case for g_et_revenue_event_for_revenue_schedule
+    def test_get_revenue_event_for_revenue_schedule(self):
+        """Test case for get_revenue_event_for_revenue_schedule
 
         Get revenue events for a revenue schedule  # noqa: E501
         """

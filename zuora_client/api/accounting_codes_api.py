@@ -25,13 +25,13 @@ class AccountingCodesApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def d_elete_accounting_code(self, ac_id, **kwargs):  # noqa: E501
+    def delete_accounting_code(self, ac_id, **kwargs):  # noqa: E501
         """Delete accounting code  # noqa: E501
 
         This reference describes how to delete an accounting code through the REST API. ## Prerequisites If you have Zuora Finance enabled on your tenant, then you must have the Delete Unused Accounting Code permission. ## Limitations You can only delete accounting codes that have never been associated with any transactions. An accounting code must be deactivated before you can delete it.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_accounting_code(ac_id, async_req=True)
+        >>> thread = api.delete_accounting_code(ac_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -43,18 +43,18 @@ class AccountingCodesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.d_elete_accounting_code_with_http_info(ac_id, **kwargs)  # noqa: E501
+            return self.delete_accounting_code_with_http_info(ac_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.d_elete_accounting_code_with_http_info(ac_id, **kwargs)  # noqa: E501
+            (data) = self.delete_accounting_code_with_http_info(ac_id, **kwargs)  # noqa: E501
             return data
 
-    def d_elete_accounting_code_with_http_info(self, ac_id, **kwargs):  # noqa: E501
+    def delete_accounting_code_with_http_info(self, ac_id, **kwargs):  # noqa: E501
         """Delete accounting code  # noqa: E501
 
         This reference describes how to delete an accounting code through the REST API. ## Prerequisites If you have Zuora Finance enabled on your tenant, then you must have the Delete Unused Accounting Code permission. ## Limitations You can only delete accounting codes that have never been associated with any transactions. An accounting code must be deactivated before you can delete it.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_accounting_code_with_http_info(ac_id, async_req=True)
+        >>> thread = api.delete_accounting_code_with_http_info(ac_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -76,14 +76,14 @@ class AccountingCodesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method d_elete_accounting_code" % key
+                    " to method delete_accounting_code" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'ac_id' is set
         if ('ac_id' not in params or
                 params['ac_id'] is None):
-            raise ValueError("Missing the required parameter `ac_id` when calling `d_elete_accounting_code`")  # noqa: E501
+            raise ValueError("Missing the required parameter `ac_id` when calling `delete_accounting_code`")  # noqa: E501
 
         collection_formats = {}
 
@@ -128,13 +128,13 @@ class AccountingCodesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_accounting_code(self, ac_id, **kwargs):  # noqa: E501
+    def get_accounting_code(self, ac_id, **kwargs):  # noqa: E501
         """Query an accounting code  # noqa: E501
 
         This reference describes how to query an accounting code through the REST API.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_accounting_code(ac_id, async_req=True)
+        >>> thread = api.get_accounting_code(ac_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -146,18 +146,18 @@ class AccountingCodesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_accounting_code_with_http_info(ac_id, **kwargs)  # noqa: E501
+            return self.get_accounting_code_with_http_info(ac_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_accounting_code_with_http_info(ac_id, **kwargs)  # noqa: E501
+            (data) = self.get_accounting_code_with_http_info(ac_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_accounting_code_with_http_info(self, ac_id, **kwargs):  # noqa: E501
+    def get_accounting_code_with_http_info(self, ac_id, **kwargs):  # noqa: E501
         """Query an accounting code  # noqa: E501
 
         This reference describes how to query an accounting code through the REST API.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_accounting_code_with_http_info(ac_id, async_req=True)
+        >>> thread = api.get_accounting_code_with_http_info(ac_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -179,14 +179,14 @@ class AccountingCodesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_accounting_code" % key
+                    " to method get_accounting_code" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'ac_id' is set
         if ('ac_id' not in params or
                 params['ac_id'] is None):
-            raise ValueError("Missing the required parameter `ac_id` when calling `g_et_accounting_code`")  # noqa: E501
+            raise ValueError("Missing the required parameter `ac_id` when calling `get_accounting_code`")  # noqa: E501
 
         collection_formats = {}
 
@@ -231,13 +231,13 @@ class AccountingCodesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_all_accounting_codes(self, **kwargs):  # noqa: E501
+    def get_all_accounting_codes(self, **kwargs):  # noqa: E501
         """Get all accounting codes  # noqa: E501
 
         This reference describes how to query all accounting codes in your chart of accounts through the REST API.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_all_accounting_codes(async_req=True)
+        >>> thread = api.get_all_accounting_codes(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -249,18 +249,18 @@ class AccountingCodesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_all_accounting_codes_with_http_info(**kwargs)  # noqa: E501
+            return self.get_all_accounting_codes_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_all_accounting_codes_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.get_all_accounting_codes_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def g_et_all_accounting_codes_with_http_info(self, **kwargs):  # noqa: E501
+    def get_all_accounting_codes_with_http_info(self, **kwargs):  # noqa: E501
         """Get all accounting codes  # noqa: E501
 
         This reference describes how to query all accounting codes in your chart of accounts through the REST API.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_all_accounting_codes_with_http_info(async_req=True)
+        >>> thread = api.get_all_accounting_codes_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -282,13 +282,13 @@ class AccountingCodesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_all_accounting_codes" % key
+                    " to method get_all_accounting_codes" % key
                 )
             params[key] = val
         del params['kwargs']
 
         if 'page_size' in params and params['page_size'] > 300:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_all_accounting_codes`, must be a value less than or equal to `300`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_all_accounting_codes`, must be a value less than or equal to `300`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -332,13 +332,13 @@ class AccountingCodesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_accounting_code(self, request, **kwargs):  # noqa: E501
+    def post_accounting_code(self, request, **kwargs):  # noqa: E501
         """Create accounting code  # noqa: E501
 
         This reference describes how to create a new accounting code through the REST API.  The accounting code will be active as soon as it has been created.  ## Prerequisites   If you have Zuora Finance enabled on your tenant, you must have the  Configure Accounting Codes permission.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_accounting_code(request, async_req=True)
+        >>> thread = api.post_accounting_code(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -350,18 +350,18 @@ class AccountingCodesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_accounting_code_with_http_info(request, **kwargs)  # noqa: E501
+            return self.post_accounting_code_with_http_info(request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_accounting_code_with_http_info(request, **kwargs)  # noqa: E501
+            (data) = self.post_accounting_code_with_http_info(request, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_accounting_code_with_http_info(self, request, **kwargs):  # noqa: E501
+    def post_accounting_code_with_http_info(self, request, **kwargs):  # noqa: E501
         """Create accounting code  # noqa: E501
 
         This reference describes how to create a new accounting code through the REST API.  The accounting code will be active as soon as it has been created.  ## Prerequisites   If you have Zuora Finance enabled on your tenant, you must have the  Configure Accounting Codes permission.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_accounting_code_with_http_info(request, async_req=True)
+        >>> thread = api.post_accounting_code_with_http_info(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -383,14 +383,14 @@ class AccountingCodesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_accounting_code" % key
+                    " to method post_accounting_code" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ost_accounting_code`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `post_accounting_code`")  # noqa: E501
 
         collection_formats = {}
 
@@ -435,13 +435,13 @@ class AccountingCodesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_accounting_code(self, ac_id, request, **kwargs):  # noqa: E501
+    def put_accounting_code(self, ac_id, request, **kwargs):  # noqa: E501
         """Update an accounting code  # noqa: E501
 
         This reference describes how to update an existing accounting code through the REST API. ## Prerequisites   If you have Zuora Finance enabled on your tenant, you must have the  Manage Accounting Code permission.  ## Limitations You can only update accounting codes that are not already associated with any transactions.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_accounting_code(ac_id, request, async_req=True)
+        >>> thread = api.put_accounting_code(ac_id, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -454,18 +454,18 @@ class AccountingCodesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_accounting_code_with_http_info(ac_id, request, **kwargs)  # noqa: E501
+            return self.put_accounting_code_with_http_info(ac_id, request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_accounting_code_with_http_info(ac_id, request, **kwargs)  # noqa: E501
+            (data) = self.put_accounting_code_with_http_info(ac_id, request, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_accounting_code_with_http_info(self, ac_id, request, **kwargs):  # noqa: E501
+    def put_accounting_code_with_http_info(self, ac_id, request, **kwargs):  # noqa: E501
         """Update an accounting code  # noqa: E501
 
         This reference describes how to update an existing accounting code through the REST API. ## Prerequisites   If you have Zuora Finance enabled on your tenant, you must have the  Manage Accounting Code permission.  ## Limitations You can only update accounting codes that are not already associated with any transactions.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_accounting_code_with_http_info(ac_id, request, async_req=True)
+        >>> thread = api.put_accounting_code_with_http_info(ac_id, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -488,18 +488,18 @@ class AccountingCodesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_accounting_code" % key
+                    " to method put_accounting_code" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'ac_id' is set
         if ('ac_id' not in params or
                 params['ac_id'] is None):
-            raise ValueError("Missing the required parameter `ac_id` when calling `p_ut_accounting_code`")  # noqa: E501
+            raise ValueError("Missing the required parameter `ac_id` when calling `put_accounting_code`")  # noqa: E501
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ut_accounting_code`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `put_accounting_code`")  # noqa: E501
 
         collection_formats = {}
 
@@ -546,13 +546,13 @@ class AccountingCodesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_activate_accounting_code(self, ac_id, **kwargs):  # noqa: E501
+    def put_activate_accounting_code(self, ac_id, **kwargs):  # noqa: E501
         """Activate accounting code  # noqa: E501
 
         This reference describes how to activate an accounting code through the REST API.  Prerequisites ------------- If you have Zuora Finance enabled on your tenant, you must have the Manage Accounting Code permission.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_activate_accounting_code(ac_id, async_req=True)
+        >>> thread = api.put_activate_accounting_code(ac_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -564,18 +564,18 @@ class AccountingCodesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_activate_accounting_code_with_http_info(ac_id, **kwargs)  # noqa: E501
+            return self.put_activate_accounting_code_with_http_info(ac_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_activate_accounting_code_with_http_info(ac_id, **kwargs)  # noqa: E501
+            (data) = self.put_activate_accounting_code_with_http_info(ac_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_activate_accounting_code_with_http_info(self, ac_id, **kwargs):  # noqa: E501
+    def put_activate_accounting_code_with_http_info(self, ac_id, **kwargs):  # noqa: E501
         """Activate accounting code  # noqa: E501
 
         This reference describes how to activate an accounting code through the REST API.  Prerequisites ------------- If you have Zuora Finance enabled on your tenant, you must have the Manage Accounting Code permission.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_activate_accounting_code_with_http_info(ac_id, async_req=True)
+        >>> thread = api.put_activate_accounting_code_with_http_info(ac_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -597,14 +597,14 @@ class AccountingCodesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_activate_accounting_code" % key
+                    " to method put_activate_accounting_code" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'ac_id' is set
         if ('ac_id' not in params or
                 params['ac_id'] is None):
-            raise ValueError("Missing the required parameter `ac_id` when calling `p_ut_activate_accounting_code`")  # noqa: E501
+            raise ValueError("Missing the required parameter `ac_id` when calling `put_activate_accounting_code`")  # noqa: E501
 
         collection_formats = {}
 
@@ -649,13 +649,13 @@ class AccountingCodesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_deactivate_accounting_code(self, ac_id, **kwargs):  # noqa: E501
+    def put_deactivate_accounting_code(self, ac_id, **kwargs):  # noqa: E501
         """Deactivate accounting code  # noqa: E501
 
         This reference describes how to deactivate an accounting code through the REST API.  ## Prerequisites If you have Zuora Finance enabled on your tenant, you must have the Manage Accounting Code permission. ## Limitations You can only deactivate accounting codes that are not associated with any transactions.  You cannot disable accounting codes of type AccountsReceivable.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_deactivate_accounting_code(ac_id, async_req=True)
+        >>> thread = api.put_deactivate_accounting_code(ac_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -667,18 +667,18 @@ class AccountingCodesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_deactivate_accounting_code_with_http_info(ac_id, **kwargs)  # noqa: E501
+            return self.put_deactivate_accounting_code_with_http_info(ac_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_deactivate_accounting_code_with_http_info(ac_id, **kwargs)  # noqa: E501
+            (data) = self.put_deactivate_accounting_code_with_http_info(ac_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_deactivate_accounting_code_with_http_info(self, ac_id, **kwargs):  # noqa: E501
+    def put_deactivate_accounting_code_with_http_info(self, ac_id, **kwargs):  # noqa: E501
         """Deactivate accounting code  # noqa: E501
 
         This reference describes how to deactivate an accounting code through the REST API.  ## Prerequisites If you have Zuora Finance enabled on your tenant, you must have the Manage Accounting Code permission. ## Limitations You can only deactivate accounting codes that are not associated with any transactions.  You cannot disable accounting codes of type AccountsReceivable.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_deactivate_accounting_code_with_http_info(ac_id, async_req=True)
+        >>> thread = api.put_deactivate_accounting_code_with_http_info(ac_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -700,14 +700,14 @@ class AccountingCodesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_deactivate_accounting_code" % key
+                    " to method put_deactivate_accounting_code" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'ac_id' is set
         if ('ac_id' not in params or
                 params['ac_id'] is None):
-            raise ValueError("Missing the required parameter `ac_id` when calling `p_ut_deactivate_accounting_code`")  # noqa: E501
+            raise ValueError("Missing the required parameter `ac_id` when calling `put_deactivate_accounting_code`")  # noqa: E501
 
         collection_formats = {}
 

@@ -25,13 +25,13 @@ class EventTriggersApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def d_elete_event_trigger(self, authorization, id, **kwargs):  # noqa: E501
+    def delete_event_trigger(self, authorization, id, **kwargs):  # noqa: E501
         """Remove an event trigger  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_event_trigger(authorization, id, async_req=True)
+        >>> thread = api.delete_event_trigger(authorization, id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -45,18 +45,18 @@ class EventTriggersApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.d_elete_event_trigger_with_http_info(authorization, id, **kwargs)  # noqa: E501
+            return self.delete_event_trigger_with_http_info(authorization, id, **kwargs)  # noqa: E501
         else:
-            (data) = self.d_elete_event_trigger_with_http_info(authorization, id, **kwargs)  # noqa: E501
+            (data) = self.delete_event_trigger_with_http_info(authorization, id, **kwargs)  # noqa: E501
             return data
 
-    def d_elete_event_trigger_with_http_info(self, authorization, id, **kwargs):  # noqa: E501
+    def delete_event_trigger_with_http_info(self, authorization, id, **kwargs):  # noqa: E501
         """Remove an event trigger  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_event_trigger_with_http_info(authorization, id, async_req=True)
+        >>> thread = api.delete_event_trigger_with_http_info(authorization, id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -80,22 +80,22 @@ class EventTriggersApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method d_elete_event_trigger" % key
+                    " to method delete_event_trigger" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'authorization' is set
         if ('authorization' not in params or
                 params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `d_elete_event_trigger`")  # noqa: E501
+            raise ValueError("Missing the required parameter `authorization` when calling `delete_event_trigger`")  # noqa: E501
         # verify the required parameter 'id' is set
         if ('id' not in params or
                 params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `d_elete_event_trigger`")  # noqa: E501
+            raise ValueError("Missing the required parameter `id` when calling `delete_event_trigger`")  # noqa: E501
 
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `d_elete_event_trigger`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `delete_event_trigger`, length must be less than or equal to `64`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -143,12 +143,12 @@ class EventTriggersApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_event_trigger(self, authorization, id, **kwargs):  # noqa: E501
+    def get_event_trigger(self, authorization, id, **kwargs):  # noqa: E501
         """Get an event trigger by ID  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_event_trigger(authorization, id, async_req=True)
+        >>> thread = api.get_event_trigger(authorization, id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -162,17 +162,17 @@ class EventTriggersApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_event_trigger_with_http_info(authorization, id, **kwargs)  # noqa: E501
+            return self.get_event_trigger_with_http_info(authorization, id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_event_trigger_with_http_info(authorization, id, **kwargs)  # noqa: E501
+            (data) = self.get_event_trigger_with_http_info(authorization, id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_event_trigger_with_http_info(self, authorization, id, **kwargs):  # noqa: E501
+    def get_event_trigger_with_http_info(self, authorization, id, **kwargs):  # noqa: E501
         """Get an event trigger by ID  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_event_trigger_with_http_info(authorization, id, async_req=True)
+        >>> thread = api.get_event_trigger_with_http_info(authorization, id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -196,22 +196,22 @@ class EventTriggersApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_event_trigger" % key
+                    " to method get_event_trigger" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'authorization' is set
         if ('authorization' not in params or
                 params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `g_et_event_trigger`")  # noqa: E501
+            raise ValueError("Missing the required parameter `authorization` when calling `get_event_trigger`")  # noqa: E501
         # verify the required parameter 'id' is set
         if ('id' not in params or
                 params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `g_et_event_trigger`")  # noqa: E501
+            raise ValueError("Missing the required parameter `id` when calling `get_event_trigger`")  # noqa: E501
 
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `g_et_event_trigger`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `get_event_trigger`, length must be less than or equal to `64`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -259,12 +259,12 @@ class EventTriggersApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_event_triggers(self, authorization, **kwargs):  # noqa: E501
+    def get_event_triggers(self, authorization, **kwargs):  # noqa: E501
         """Query event triggers  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_event_triggers(authorization, async_req=True)
+        >>> thread = api.get_event_triggers(authorization, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -282,17 +282,17 @@ class EventTriggersApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_event_triggers_with_http_info(authorization, **kwargs)  # noqa: E501
+            return self.get_event_triggers_with_http_info(authorization, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_event_triggers_with_http_info(authorization, **kwargs)  # noqa: E501
+            (data) = self.get_event_triggers_with_http_info(authorization, **kwargs)  # noqa: E501
             return data
 
-    def g_et_event_triggers_with_http_info(self, authorization, **kwargs):  # noqa: E501
+    def get_event_triggers_with_http_info(self, authorization, **kwargs):  # noqa: E501
         """Query event triggers  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_event_triggers_with_http_info(authorization, async_req=True)
+        >>> thread = api.get_event_triggers_with_http_info(authorization, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -320,22 +320,22 @@ class EventTriggersApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_event_triggers" % key
+                    " to method get_event_triggers" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'authorization' is set
         if ('authorization' not in params or
                 params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `g_et_event_triggers`")  # noqa: E501
+            raise ValueError("Missing the required parameter `authorization` when calling `get_event_triggers`")  # noqa: E501
 
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `g_et_event_triggers`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `get_event_triggers`, length must be less than or equal to `64`")  # noqa: E501
         if 'start' in params and params['start'] < 0:  # noqa: E501
-            raise ValueError("Invalid value for parameter `start` when calling `g_et_event_triggers`, must be a value greater than or equal to `0`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `start` when calling `get_event_triggers`, must be a value greater than or equal to `0`")  # noqa: E501
         if 'limit' in params and params['limit'] < 1:  # noqa: E501
-            raise ValueError("Invalid value for parameter `limit` when calling `g_et_event_triggers`, must be a value greater than or equal to `1`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `limit` when calling `get_event_triggers`, must be a value greater than or equal to `1`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -391,13 +391,13 @@ class EventTriggersApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_event_trigger(self, authorization, post_event_trigger_request, **kwargs):  # noqa: E501
+    def post_event_trigger(self, authorization, post_event_trigger_request, **kwargs):  # noqa: E501
         """Create an event trigger  # noqa: E501
 
         You can define an event trigger on any of the following objects:    * Account   * AccountingCode   * AccountingPeriod   * Amendment   * BillingRun   * Contact   * CreditBalanceAdjustment   * CreditMemo   * CreditMemoApplication   * CreditMemoApplicationItem   * CreditMemoItem   * DebitMemo   * DebitMemoItem   * Feature   * Invoice   * InvoiceAdjustment   * InvoiceItem   * InvoiceItemAdjustment   * JournalEntry   * JournalEntryItem   * Order   * OrderAction   * Payment   * PaymentApplication   * PaymentMethod   * PaymentPart   * Product   * ProductFeature   * ProductRatePlan   * ProductRatePlanCharge   * RatePlan   * RatePlanCharge   * Refund   * RefundApplication   * RevenueEvent   * RevenueEventItem   * RevenueSchedule   * RevenueScheduleItem   * Subscription   * SubscriptionProductFeature   * TaxationItem   * Usage  The `baseObject` field specifies which object to define a trigger on. The `condition` field is a [JEXL](http://commons.apache.org/proper/commons-jexl/) expression that specifies when to trigger events. The expression can contain fields from the object that the trigger is defined on.  **Note:** The condition cannot contain fields from [data source](https://knowledgecenter.zuora.com/DC_Developers/M_Export_ZOQL) objects that are joined to the object that the trigger is defined on.  For example, the following condition causes an event to be triggered whenever an invoice is posted with an amount greater than 1000:  ```changeType == 'UPDATE' && Invoice.Status == 'Posted' && Invoice.Status_old != 'Posted' && Invoice.Amount > 1000```  Where:    * `changeType` is a keyword that specifies the type of change that occurred to the Invoice object. For all objects, the supported values of `changeType` are `INSERT`, `UPDATE`,  and `DELETE`.   * `Invoice.Status` is the value of the Invoice object's `Status` field after the change occurred.   * `Invoice.Status_old` is the value of the Invoice object's `Status` field before the change occurred.  In the above example, the value of `baseObject` would be `Invoice`.  **Note:** The number of the event triggers that you can create depends on the [edition of Zuora Central Platform](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/C_Zuora_Editions) you are using.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_event_trigger(authorization, post_event_trigger_request, async_req=True)
+        >>> thread = api.post_event_trigger(authorization, post_event_trigger_request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -411,18 +411,18 @@ class EventTriggersApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_event_trigger_with_http_info(authorization, post_event_trigger_request, **kwargs)  # noqa: E501
+            return self.post_event_trigger_with_http_info(authorization, post_event_trigger_request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_event_trigger_with_http_info(authorization, post_event_trigger_request, **kwargs)  # noqa: E501
+            (data) = self.post_event_trigger_with_http_info(authorization, post_event_trigger_request, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_event_trigger_with_http_info(self, authorization, post_event_trigger_request, **kwargs):  # noqa: E501
+    def post_event_trigger_with_http_info(self, authorization, post_event_trigger_request, **kwargs):  # noqa: E501
         """Create an event trigger  # noqa: E501
 
         You can define an event trigger on any of the following objects:    * Account   * AccountingCode   * AccountingPeriod   * Amendment   * BillingRun   * Contact   * CreditBalanceAdjustment   * CreditMemo   * CreditMemoApplication   * CreditMemoApplicationItem   * CreditMemoItem   * DebitMemo   * DebitMemoItem   * Feature   * Invoice   * InvoiceAdjustment   * InvoiceItem   * InvoiceItemAdjustment   * JournalEntry   * JournalEntryItem   * Order   * OrderAction   * Payment   * PaymentApplication   * PaymentMethod   * PaymentPart   * Product   * ProductFeature   * ProductRatePlan   * ProductRatePlanCharge   * RatePlan   * RatePlanCharge   * Refund   * RefundApplication   * RevenueEvent   * RevenueEventItem   * RevenueSchedule   * RevenueScheduleItem   * Subscription   * SubscriptionProductFeature   * TaxationItem   * Usage  The `baseObject` field specifies which object to define a trigger on. The `condition` field is a [JEXL](http://commons.apache.org/proper/commons-jexl/) expression that specifies when to trigger events. The expression can contain fields from the object that the trigger is defined on.  **Note:** The condition cannot contain fields from [data source](https://knowledgecenter.zuora.com/DC_Developers/M_Export_ZOQL) objects that are joined to the object that the trigger is defined on.  For example, the following condition causes an event to be triggered whenever an invoice is posted with an amount greater than 1000:  ```changeType == 'UPDATE' && Invoice.Status == 'Posted' && Invoice.Status_old != 'Posted' && Invoice.Amount > 1000```  Where:    * `changeType` is a keyword that specifies the type of change that occurred to the Invoice object. For all objects, the supported values of `changeType` are `INSERT`, `UPDATE`,  and `DELETE`.   * `Invoice.Status` is the value of the Invoice object's `Status` field after the change occurred.   * `Invoice.Status_old` is the value of the Invoice object's `Status` field before the change occurred.  In the above example, the value of `baseObject` would be `Invoice`.  **Note:** The number of the event triggers that you can create depends on the [edition of Zuora Central Platform](https://knowledgecenter.zuora.com/BB_Introducing_Z_Business/C_Zuora_Editions) you are using.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_event_trigger_with_http_info(authorization, post_event_trigger_request, async_req=True)
+        >>> thread = api.post_event_trigger_with_http_info(authorization, post_event_trigger_request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -446,22 +446,22 @@ class EventTriggersApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_event_trigger" % key
+                    " to method post_event_trigger" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'authorization' is set
         if ('authorization' not in params or
                 params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `p_ost_event_trigger`")  # noqa: E501
+            raise ValueError("Missing the required parameter `authorization` when calling `post_event_trigger`")  # noqa: E501
         # verify the required parameter 'post_event_trigger_request' is set
         if ('post_event_trigger_request' not in params or
                 params['post_event_trigger_request'] is None):
-            raise ValueError("Missing the required parameter `post_event_trigger_request` when calling `p_ost_event_trigger`")  # noqa: E501
+            raise ValueError("Missing the required parameter `post_event_trigger_request` when calling `post_event_trigger`")  # noqa: E501
 
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `p_ost_event_trigger`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `post_event_trigger`, length must be less than or equal to `64`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -509,13 +509,13 @@ class EventTriggersApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_event_trigger(self, authorization, id, put_event_trigger_request, **kwargs):  # noqa: E501
+    def put_event_trigger(self, authorization, id, put_event_trigger_request, **kwargs):  # noqa: E501
         """Update an event trigger  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_event_trigger(authorization, id, put_event_trigger_request, async_req=True)
+        >>> thread = api.put_event_trigger(authorization, id, put_event_trigger_request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -530,18 +530,18 @@ class EventTriggersApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_event_trigger_with_http_info(authorization, id, put_event_trigger_request, **kwargs)  # noqa: E501
+            return self.put_event_trigger_with_http_info(authorization, id, put_event_trigger_request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_event_trigger_with_http_info(authorization, id, put_event_trigger_request, **kwargs)  # noqa: E501
+            (data) = self.put_event_trigger_with_http_info(authorization, id, put_event_trigger_request, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_event_trigger_with_http_info(self, authorization, id, put_event_trigger_request, **kwargs):  # noqa: E501
+    def put_event_trigger_with_http_info(self, authorization, id, put_event_trigger_request, **kwargs):  # noqa: E501
         """Update an event trigger  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_event_trigger_with_http_info(authorization, id, put_event_trigger_request, async_req=True)
+        >>> thread = api.put_event_trigger_with_http_info(authorization, id, put_event_trigger_request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -566,26 +566,26 @@ class EventTriggersApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_event_trigger" % key
+                    " to method put_event_trigger" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'authorization' is set
         if ('authorization' not in params or
                 params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `p_ut_event_trigger`")  # noqa: E501
+            raise ValueError("Missing the required parameter `authorization` when calling `put_event_trigger`")  # noqa: E501
         # verify the required parameter 'id' is set
         if ('id' not in params or
                 params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `p_ut_event_trigger`")  # noqa: E501
+            raise ValueError("Missing the required parameter `id` when calling `put_event_trigger`")  # noqa: E501
         # verify the required parameter 'put_event_trigger_request' is set
         if ('put_event_trigger_request' not in params or
                 params['put_event_trigger_request'] is None):
-            raise ValueError("Missing the required parameter `put_event_trigger_request` when calling `p_ut_event_trigger`")  # noqa: E501
+            raise ValueError("Missing the required parameter `put_event_trigger_request` when calling `put_event_trigger`")  # noqa: E501
 
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `p_ut_event_trigger`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `put_event_trigger`, length must be less than or equal to `64`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}

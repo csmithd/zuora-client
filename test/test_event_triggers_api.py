@@ -29,36 +29,36 @@ class TestEventTriggersApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_d_elete_event_trigger(self):
-        """Test case for d_elete_event_trigger
+    def test_delete_event_trigger(self):
+        """Test case for delete_event_trigger
 
         Remove an event trigger  # noqa: E501
         """
         pass
 
-    def test_g_et_event_trigger(self):
-        """Test case for g_et_event_trigger
+    def test_get_event_trigger(self):
+        """Test case for get_event_trigger
 
         Get an event trigger by ID  # noqa: E501
         """
         pass
 
-    def test_g_et_event_triggers(self):
-        """Test case for g_et_event_triggers
+    def test_get_event_triggers(self):
+        """Test case for get_event_triggers
 
         Query event triggers  # noqa: E501
         """
         pass
 
-    def test_p_ost_event_trigger(self):
-        """Test case for p_ost_event_trigger
+    def test_post_event_trigger(self):
+        """Test case for post_event_trigger
 
         Create an event trigger  # noqa: E501
         """
         pass
 
-    def test_p_ut_event_trigger(self):
-        """Test case for p_ut_event_trigger
+    def test_put_event_trigger(self):
+        """Test case for put_event_trigger
 
         Update an event trigger  # noqa: E501
         """

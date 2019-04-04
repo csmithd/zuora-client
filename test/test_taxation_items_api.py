@@ -29,15 +29,15 @@ class TestTaxationItemsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_d_elete_taxation_item(self):
-        """Test case for d_elete_taxation_item
+    def test_delete_taxation_item(self):
+        """Test case for delete_taxation_item
 
         Delete taxation item  # noqa: E501
         """
         pass
 
-    def test_g_et_taxation_item(self):
-        """Test case for g_et_taxation_item
+    def test_get_taxation_item(self):
+        """Test case for get_taxation_item
 
         Get taxation item   # noqa: E501
         """
@@ -71,8 +71,8 @@ class TestTaxationItemsApi(unittest.TestCase):
         """
         pass
 
-    def test_p_ut_taxation_item(self):
-        """Test case for p_ut_taxation_item
+    def test_put_taxation_item(self):
+        """Test case for put_taxation_item
 
         Update taxation item  # noqa: E501
         """

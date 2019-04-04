@@ -29,15 +29,15 @@ class TestTransactionsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_g_et_transaction_invoice(self):
-        """Test case for g_et_transaction_invoice
+    def test_get_transaction_invoice(self):
+        """Test case for get_transaction_invoice
 
         Get invoices  # noqa: E501
         """
         pass
 
-    def test_g_et_transaction_payment(self):
-        """Test case for g_et_transaction_payment
+    def test_get_transaction_payment(self):
+        """Test case for get_transaction_payment
 
         Get payments  # noqa: E501
         """

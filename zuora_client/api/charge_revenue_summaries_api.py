@@ -25,13 +25,13 @@ class ChargeRevenueSummariesApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def g_etcrs_by_charge_id(self, charge_key, **kwargs):  # noqa: E501
+    def getcrs_by_charge_id(self, charge_key, **kwargs):  # noqa: E501
         """Get charge summary details by charge ID  # noqa: E501
 
         This REST API reference describes how to retrieve the details of a charge revenue summary by specifying the subscription charge ID. This response retrieves all revenue items associated with a charge revenue summary.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_etcrs_by_charge_id(charge_key, async_req=True)
+        >>> thread = api.getcrs_by_charge_id(charge_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -43,18 +43,18 @@ class ChargeRevenueSummariesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_etcrs_by_charge_id_with_http_info(charge_key, **kwargs)  # noqa: E501
+            return self.getcrs_by_charge_id_with_http_info(charge_key, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_etcrs_by_charge_id_with_http_info(charge_key, **kwargs)  # noqa: E501
+            (data) = self.getcrs_by_charge_id_with_http_info(charge_key, **kwargs)  # noqa: E501
             return data
 
-    def g_etcrs_by_charge_id_with_http_info(self, charge_key, **kwargs):  # noqa: E501
+    def getcrs_by_charge_id_with_http_info(self, charge_key, **kwargs):  # noqa: E501
         """Get charge summary details by charge ID  # noqa: E501
 
         This REST API reference describes how to retrieve the details of a charge revenue summary by specifying the subscription charge ID. This response retrieves all revenue items associated with a charge revenue summary.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_etcrs_by_charge_id_with_http_info(charge_key, async_req=True)
+        >>> thread = api.getcrs_by_charge_id_with_http_info(charge_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -76,14 +76,14 @@ class ChargeRevenueSummariesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_etcrs_by_charge_id" % key
+                    " to method getcrs_by_charge_id" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'charge_key' is set
         if ('charge_key' not in params or
                 params['charge_key'] is None):
-            raise ValueError("Missing the required parameter `charge_key` when calling `g_etcrs_by_charge_id`")  # noqa: E501
+            raise ValueError("Missing the required parameter `charge_key` when calling `getcrs_by_charge_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -128,13 +128,13 @@ class ChargeRevenueSummariesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_etcrs_by_crs_number(self, crs_number, **kwargs):  # noqa: E501
+    def getcrs_by_crs_number(self, crs_number, **kwargs):  # noqa: E501
         """Get charge summary details by CRS number  # noqa: E501
 
         This REST API reference describes how to retrieve the details of a charge revenue summary by specifying the charge revenue summary number. The response includes all revenue items associated with the charge revenue summary.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_etcrs_by_crs_number(crs_number, async_req=True)
+        >>> thread = api.getcrs_by_crs_number(crs_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -146,18 +146,18 @@ class ChargeRevenueSummariesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_etcrs_by_crs_number_with_http_info(crs_number, **kwargs)  # noqa: E501
+            return self.getcrs_by_crs_number_with_http_info(crs_number, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_etcrs_by_crs_number_with_http_info(crs_number, **kwargs)  # noqa: E501
+            (data) = self.getcrs_by_crs_number_with_http_info(crs_number, **kwargs)  # noqa: E501
             return data
 
-    def g_etcrs_by_crs_number_with_http_info(self, crs_number, **kwargs):  # noqa: E501
+    def getcrs_by_crs_number_with_http_info(self, crs_number, **kwargs):  # noqa: E501
         """Get charge summary details by CRS number  # noqa: E501
 
         This REST API reference describes how to retrieve the details of a charge revenue summary by specifying the charge revenue summary number. The response includes all revenue items associated with the charge revenue summary.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_etcrs_by_crs_number_with_http_info(crs_number, async_req=True)
+        >>> thread = api.getcrs_by_crs_number_with_http_info(crs_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -179,14 +179,14 @@ class ChargeRevenueSummariesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_etcrs_by_crs_number" % key
+                    " to method getcrs_by_crs_number" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'crs_number' is set
         if ('crs_number' not in params or
                 params['crs_number'] is None):
-            raise ValueError("Missing the required parameter `crs_number` when calling `g_etcrs_by_crs_number`")  # noqa: E501
+            raise ValueError("Missing the required parameter `crs_number` when calling `getcrs_by_crs_number`")  # noqa: E501
 
         collection_formats = {}
 

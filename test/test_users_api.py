@@ -29,29 +29,29 @@ class TestUsersApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_g_et_entities_user_accessible(self):
-        """Test case for g_et_entities_user_accessible
+    def test_get_entities_user_accessible(self):
+        """Test case for get_entities_user_accessible
 
         Multi-entity: Get entities that a user can access  # noqa: E501
         """
         pass
 
-    def test_p_ut_accept_user_access(self):
-        """Test case for p_ut_accept_user_access
+    def test_put_accept_user_access(self):
+        """Test case for put_accept_user_access
 
         Multi-entity: Accept user access  # noqa: E501
         """
         pass
 
-    def test_p_ut_deny_user_access(self):
-        """Test case for p_ut_deny_user_access
+    def test_put_deny_user_access(self):
+        """Test case for put_deny_user_access
 
         Multi-entity: Deny user access  # noqa: E501
         """
         pass
 
-    def test_p_ut_send_user_access_requests(self):
-        """Test case for p_ut_send_user_access_requests
+    def test_put_send_user_access_requests(self):
+        """Test case for put_send_user_access_requests
 
         Multi-entity: Send user access requests  # noqa: E501
         """

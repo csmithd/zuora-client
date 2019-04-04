@@ -29,8 +29,8 @@ class TestConnectionsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_p_ost_connections(self):
-        """Test case for p_ost_connections
+    def test_post_connections(self):
+        """Test case for post_connections
 
         Establish connection to Zuora REST API service  # noqa: E501
         """

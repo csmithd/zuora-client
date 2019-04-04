@@ -25,13 +25,13 @@ class PaymentMethodsApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def d_elete_payment_methods(self, payment_method_id, **kwargs):  # noqa: E501
+    def delete_payment_methods(self, payment_method_id, **kwargs):  # noqa: E501
         """Delete payment method  # noqa: E501
 
         Deletes a credit card payment method from the specified customer account.  If the specified payment method is the account's default payment method, the request will fail.  In that case, you must first designate a different payment method for that customer to be the default.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_payment_methods(payment_method_id, async_req=True)
+        >>> thread = api.delete_payment_methods(payment_method_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -43,18 +43,18 @@ class PaymentMethodsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.d_elete_payment_methods_with_http_info(payment_method_id, **kwargs)  # noqa: E501
+            return self.delete_payment_methods_with_http_info(payment_method_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.d_elete_payment_methods_with_http_info(payment_method_id, **kwargs)  # noqa: E501
+            (data) = self.delete_payment_methods_with_http_info(payment_method_id, **kwargs)  # noqa: E501
             return data
 
-    def d_elete_payment_methods_with_http_info(self, payment_method_id, **kwargs):  # noqa: E501
+    def delete_payment_methods_with_http_info(self, payment_method_id, **kwargs):  # noqa: E501
         """Delete payment method  # noqa: E501
 
         Deletes a credit card payment method from the specified customer account.  If the specified payment method is the account's default payment method, the request will fail.  In that case, you must first designate a different payment method for that customer to be the default.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_payment_methods_with_http_info(payment_method_id, async_req=True)
+        >>> thread = api.delete_payment_methods_with_http_info(payment_method_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -76,14 +76,14 @@ class PaymentMethodsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method d_elete_payment_methods" % key
+                    " to method delete_payment_methods" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'payment_method_id' is set
         if ('payment_method_id' not in params or
                 params['payment_method_id'] is None):
-            raise ValueError("Missing the required parameter `payment_method_id` when calling `d_elete_payment_methods`")  # noqa: E501
+            raise ValueError("Missing the required parameter `payment_method_id` when calling `delete_payment_methods`")  # noqa: E501
 
         collection_formats = {}
 
@@ -128,13 +128,13 @@ class PaymentMethodsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_payment_methods_credit_card(self, account_key, **kwargs):  # noqa: E501
+    def get_payment_methods_credit_card(self, account_key, **kwargs):  # noqa: E501
         """Get credit card payment methods for account  # noqa: E501
 
         This REST API reference describes how to retrieve all credit card information for the specified customer account.   ## Notes The response includes details credit or debit cards for the specified customer account. Card numbers are masked, e.g., \"************1234\". Cards are returned in reverse chronological order of last update.  You can send requests for bank transfer payment methods types. The response will not include bank transfer details.  The response only includes payment details on payment methods that are credit or debit cards.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_payment_methods_credit_card(account_key, async_req=True)
+        >>> thread = api.get_payment_methods_credit_card(account_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -147,18 +147,18 @@ class PaymentMethodsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_payment_methods_credit_card_with_http_info(account_key, **kwargs)  # noqa: E501
+            return self.get_payment_methods_credit_card_with_http_info(account_key, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_payment_methods_credit_card_with_http_info(account_key, **kwargs)  # noqa: E501
+            (data) = self.get_payment_methods_credit_card_with_http_info(account_key, **kwargs)  # noqa: E501
             return data
 
-    def g_et_payment_methods_credit_card_with_http_info(self, account_key, **kwargs):  # noqa: E501
+    def get_payment_methods_credit_card_with_http_info(self, account_key, **kwargs):  # noqa: E501
         """Get credit card payment methods for account  # noqa: E501
 
         This REST API reference describes how to retrieve all credit card information for the specified customer account.   ## Notes The response includes details credit or debit cards for the specified customer account. Card numbers are masked, e.g., \"************1234\". Cards are returned in reverse chronological order of last update.  You can send requests for bank transfer payment methods types. The response will not include bank transfer details.  The response only includes payment details on payment methods that are credit or debit cards.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_payment_methods_credit_card_with_http_info(account_key, async_req=True)
+        >>> thread = api.get_payment_methods_credit_card_with_http_info(account_key, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -181,17 +181,17 @@ class PaymentMethodsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_payment_methods_credit_card" % key
+                    " to method get_payment_methods_credit_card" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'account_key' is set
         if ('account_key' not in params or
                 params['account_key'] is None):
-            raise ValueError("Missing the required parameter `account_key` when calling `g_et_payment_methods_credit_card`")  # noqa: E501
+            raise ValueError("Missing the required parameter `account_key` when calling `get_payment_methods_credit_card`")  # noqa: E501
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_payment_methods_credit_card`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_payment_methods_credit_card`, must be a value less than or equal to `40`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -237,13 +237,13 @@ class PaymentMethodsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_stored_credential_profiles(self, payment_method_id, **kwargs):  # noqa: E501
+    def get_stored_credential_profiles(self, payment_method_id, **kwargs):  # noqa: E501
         """Get stored credential profiles  # noqa: E501
 
         Retrieves the stored credential profiles within a payment method.  **Note:** This feature is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_stored_credential_profiles(payment_method_id, async_req=True)
+        >>> thread = api.get_stored_credential_profiles(payment_method_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -256,18 +256,18 @@ class PaymentMethodsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_stored_credential_profiles_with_http_info(payment_method_id, **kwargs)  # noqa: E501
+            return self.get_stored_credential_profiles_with_http_info(payment_method_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_stored_credential_profiles_with_http_info(payment_method_id, **kwargs)  # noqa: E501
+            (data) = self.get_stored_credential_profiles_with_http_info(payment_method_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_stored_credential_profiles_with_http_info(self, payment_method_id, **kwargs):  # noqa: E501
+    def get_stored_credential_profiles_with_http_info(self, payment_method_id, **kwargs):  # noqa: E501
         """Get stored credential profiles  # noqa: E501
 
         Retrieves the stored credential profiles within a payment method.  **Note:** This feature is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_stored_credential_profiles_with_http_info(payment_method_id, async_req=True)
+        >>> thread = api.get_stored_credential_profiles_with_http_info(payment_method_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -290,14 +290,14 @@ class PaymentMethodsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_stored_credential_profiles" % key
+                    " to method get_stored_credential_profiles" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'payment_method_id' is set
         if ('payment_method_id' not in params or
                 params['payment_method_id'] is None):
-            raise ValueError("Missing the required parameter `payment_method_id` when calling `g_et_stored_credential_profiles`")  # noqa: E501
+            raise ValueError("Missing the required parameter `payment_method_id` when calling `get_stored_credential_profiles`")  # noqa: E501
 
         collection_formats = {}
 
@@ -796,13 +796,13 @@ class PaymentMethodsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_cancel_authorization(self, payment_method_id, request, **kwargs):  # noqa: E501
+    def post_cancel_authorization(self, payment_method_id, request, **kwargs):  # noqa: E501
         """Cancel authorization  # noqa: E501
 
         **Note:** If you wish to enable this feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Allows you to cancel an authorization. The payment gateways that support this operation include Verifi, CyberSource 1.28, and CyberSource 1.97.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_cancel_authorization(payment_method_id, request, async_req=True)
+        >>> thread = api.post_cancel_authorization(payment_method_id, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -815,18 +815,18 @@ class PaymentMethodsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_cancel_authorization_with_http_info(payment_method_id, request, **kwargs)  # noqa: E501
+            return self.post_cancel_authorization_with_http_info(payment_method_id, request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_cancel_authorization_with_http_info(payment_method_id, request, **kwargs)  # noqa: E501
+            (data) = self.post_cancel_authorization_with_http_info(payment_method_id, request, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_cancel_authorization_with_http_info(self, payment_method_id, request, **kwargs):  # noqa: E501
+    def post_cancel_authorization_with_http_info(self, payment_method_id, request, **kwargs):  # noqa: E501
         """Cancel authorization  # noqa: E501
 
         **Note:** If you wish to enable this feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Allows you to cancel an authorization. The payment gateways that support this operation include Verifi, CyberSource 1.28, and CyberSource 1.97.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_cancel_authorization_with_http_info(payment_method_id, request, async_req=True)
+        >>> thread = api.post_cancel_authorization_with_http_info(payment_method_id, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -849,18 +849,18 @@ class PaymentMethodsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_cancel_authorization" % key
+                    " to method post_cancel_authorization" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'payment_method_id' is set
         if ('payment_method_id' not in params or
                 params['payment_method_id'] is None):
-            raise ValueError("Missing the required parameter `payment_method_id` when calling `p_ost_cancel_authorization`")  # noqa: E501
+            raise ValueError("Missing the required parameter `payment_method_id` when calling `post_cancel_authorization`")  # noqa: E501
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ost_cancel_authorization`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `post_cancel_authorization`")  # noqa: E501
 
         collection_formats = {}
 
@@ -907,13 +907,13 @@ class PaymentMethodsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_cancel_stored_credential_profile(self, payment_method_id, profile_number, **kwargs):  # noqa: E501
+    def post_cancel_stored_credential_profile(self, payment_method_id, profile_number, **kwargs):  # noqa: E501
         """Cancel stored credential profile  # noqa: E501
 
         Cancels a stored credential profile within a pyament method.  Cancelling the stored credential profile indicates that the stored credentials are no longer valid, per a customer request. You cannot reactivate the stored credential profile after you have cancelled it.  **Note:** This feature is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_cancel_stored_credential_profile(payment_method_id, profile_number, async_req=True)
+        >>> thread = api.post_cancel_stored_credential_profile(payment_method_id, profile_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -926,18 +926,18 @@ class PaymentMethodsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_cancel_stored_credential_profile_with_http_info(payment_method_id, profile_number, **kwargs)  # noqa: E501
+            return self.post_cancel_stored_credential_profile_with_http_info(payment_method_id, profile_number, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_cancel_stored_credential_profile_with_http_info(payment_method_id, profile_number, **kwargs)  # noqa: E501
+            (data) = self.post_cancel_stored_credential_profile_with_http_info(payment_method_id, profile_number, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_cancel_stored_credential_profile_with_http_info(self, payment_method_id, profile_number, **kwargs):  # noqa: E501
+    def post_cancel_stored_credential_profile_with_http_info(self, payment_method_id, profile_number, **kwargs):  # noqa: E501
         """Cancel stored credential profile  # noqa: E501
 
         Cancels a stored credential profile within a pyament method.  Cancelling the stored credential profile indicates that the stored credentials are no longer valid, per a customer request. You cannot reactivate the stored credential profile after you have cancelled it.  **Note:** This feature is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_cancel_stored_credential_profile_with_http_info(payment_method_id, profile_number, async_req=True)
+        >>> thread = api.post_cancel_stored_credential_profile_with_http_info(payment_method_id, profile_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -960,18 +960,18 @@ class PaymentMethodsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_cancel_stored_credential_profile" % key
+                    " to method post_cancel_stored_credential_profile" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'payment_method_id' is set
         if ('payment_method_id' not in params or
                 params['payment_method_id'] is None):
-            raise ValueError("Missing the required parameter `payment_method_id` when calling `p_ost_cancel_stored_credential_profile`")  # noqa: E501
+            raise ValueError("Missing the required parameter `payment_method_id` when calling `post_cancel_stored_credential_profile`")  # noqa: E501
         # verify the required parameter 'profile_number' is set
         if ('profile_number' not in params or
                 params['profile_number'] is None):
-            raise ValueError("Missing the required parameter `profile_number` when calling `p_ost_cancel_stored_credential_profile`")  # noqa: E501
+            raise ValueError("Missing the required parameter `profile_number` when calling `post_cancel_stored_credential_profile`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1014,13 +1014,13 @@ class PaymentMethodsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_create_authorization(self, payment_method_id, request, **kwargs):  # noqa: E501
+    def post_create_authorization(self, payment_method_id, request, **kwargs):  # noqa: E501
         """Create authorization  # noqa: E501
 
         **Note:** If you wish to enable this feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Enables you to authorize the availability of funds for a transaction but delay the capture of funds until a later time. The payment gateways that support this operation include Verifi, CyberSource 1.28, and CyberSource 1.97.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_create_authorization(payment_method_id, request, async_req=True)
+        >>> thread = api.post_create_authorization(payment_method_id, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1033,18 +1033,18 @@ class PaymentMethodsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_create_authorization_with_http_info(payment_method_id, request, **kwargs)  # noqa: E501
+            return self.post_create_authorization_with_http_info(payment_method_id, request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_create_authorization_with_http_info(payment_method_id, request, **kwargs)  # noqa: E501
+            (data) = self.post_create_authorization_with_http_info(payment_method_id, request, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_create_authorization_with_http_info(self, payment_method_id, request, **kwargs):  # noqa: E501
+    def post_create_authorization_with_http_info(self, payment_method_id, request, **kwargs):  # noqa: E501
         """Create authorization  # noqa: E501
 
         **Note:** If you wish to enable this feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Enables you to authorize the availability of funds for a transaction but delay the capture of funds until a later time. The payment gateways that support this operation include Verifi, CyberSource 1.28, and CyberSource 1.97.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_create_authorization_with_http_info(payment_method_id, request, async_req=True)
+        >>> thread = api.post_create_authorization_with_http_info(payment_method_id, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1067,18 +1067,18 @@ class PaymentMethodsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_create_authorization" % key
+                    " to method post_create_authorization" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'payment_method_id' is set
         if ('payment_method_id' not in params or
                 params['payment_method_id'] is None):
-            raise ValueError("Missing the required parameter `payment_method_id` when calling `p_ost_create_authorization`")  # noqa: E501
+            raise ValueError("Missing the required parameter `payment_method_id` when calling `post_create_authorization`")  # noqa: E501
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ost_create_authorization`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `post_create_authorization`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1125,13 +1125,13 @@ class PaymentMethodsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_create_stored_credential_profile(self, payment_method_id, request, **kwargs):  # noqa: E501
+    def post_create_stored_credential_profile(self, payment_method_id, request, **kwargs):  # noqa: E501
         """Create stored credential profile  # noqa: E501
 
         Creates a stored credential profile within a pyament method.  The stored credential profile represents a consent agreement that you have established with a customer. When you use the payment method in a transaction, Zuora may include information from the stored credential profile to inform the payment processor that the transaction is related to your pre-existing consent agreement with the customer.  **Note:** This feature is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_create_stored_credential_profile(payment_method_id, request, async_req=True)
+        >>> thread = api.post_create_stored_credential_profile(payment_method_id, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1144,18 +1144,18 @@ class PaymentMethodsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_create_stored_credential_profile_with_http_info(payment_method_id, request, **kwargs)  # noqa: E501
+            return self.post_create_stored_credential_profile_with_http_info(payment_method_id, request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_create_stored_credential_profile_with_http_info(payment_method_id, request, **kwargs)  # noqa: E501
+            (data) = self.post_create_stored_credential_profile_with_http_info(payment_method_id, request, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_create_stored_credential_profile_with_http_info(self, payment_method_id, request, **kwargs):  # noqa: E501
+    def post_create_stored_credential_profile_with_http_info(self, payment_method_id, request, **kwargs):  # noqa: E501
         """Create stored credential profile  # noqa: E501
 
         Creates a stored credential profile within a pyament method.  The stored credential profile represents a consent agreement that you have established with a customer. When you use the payment method in a transaction, Zuora may include information from the stored credential profile to inform the payment processor that the transaction is related to your pre-existing consent agreement with the customer.  **Note:** This feature is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_create_stored_credential_profile_with_http_info(payment_method_id, request, async_req=True)
+        >>> thread = api.post_create_stored_credential_profile_with_http_info(payment_method_id, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1178,18 +1178,18 @@ class PaymentMethodsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_create_stored_credential_profile" % key
+                    " to method post_create_stored_credential_profile" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'payment_method_id' is set
         if ('payment_method_id' not in params or
                 params['payment_method_id'] is None):
-            raise ValueError("Missing the required parameter `payment_method_id` when calling `p_ost_create_stored_credential_profile`")  # noqa: E501
+            raise ValueError("Missing the required parameter `payment_method_id` when calling `post_create_stored_credential_profile`")  # noqa: E501
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ost_create_stored_credential_profile`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `post_create_stored_credential_profile`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1236,13 +1236,13 @@ class PaymentMethodsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_expire_stored_credential_profile(self, payment_method_id, profile_number, **kwargs):  # noqa: E501
+    def post_expire_stored_credential_profile(self, payment_method_id, profile_number, **kwargs):  # noqa: E501
         """Expire stored credential profile  # noqa: E501
 
         Expires a stored credential profile within a pyament method.  Expiring the stored credential profile indicates that the stored credentials are no longer valid, per an expiration policy in the stored credential transaction framework. You cannot reactivate the stored credential profile after you have expired it.  **Note:** This feature is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_expire_stored_credential_profile(payment_method_id, profile_number, async_req=True)
+        >>> thread = api.post_expire_stored_credential_profile(payment_method_id, profile_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1255,18 +1255,18 @@ class PaymentMethodsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_expire_stored_credential_profile_with_http_info(payment_method_id, profile_number, **kwargs)  # noqa: E501
+            return self.post_expire_stored_credential_profile_with_http_info(payment_method_id, profile_number, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_expire_stored_credential_profile_with_http_info(payment_method_id, profile_number, **kwargs)  # noqa: E501
+            (data) = self.post_expire_stored_credential_profile_with_http_info(payment_method_id, profile_number, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_expire_stored_credential_profile_with_http_info(self, payment_method_id, profile_number, **kwargs):  # noqa: E501
+    def post_expire_stored_credential_profile_with_http_info(self, payment_method_id, profile_number, **kwargs):  # noqa: E501
         """Expire stored credential profile  # noqa: E501
 
         Expires a stored credential profile within a pyament method.  Expiring the stored credential profile indicates that the stored credentials are no longer valid, per an expiration policy in the stored credential transaction framework. You cannot reactivate the stored credential profile after you have expired it.  **Note:** This feature is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_expire_stored_credential_profile_with_http_info(payment_method_id, profile_number, async_req=True)
+        >>> thread = api.post_expire_stored_credential_profile_with_http_info(payment_method_id, profile_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1289,18 +1289,18 @@ class PaymentMethodsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_expire_stored_credential_profile" % key
+                    " to method post_expire_stored_credential_profile" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'payment_method_id' is set
         if ('payment_method_id' not in params or
                 params['payment_method_id'] is None):
-            raise ValueError("Missing the required parameter `payment_method_id` when calling `p_ost_expire_stored_credential_profile`")  # noqa: E501
+            raise ValueError("Missing the required parameter `payment_method_id` when calling `post_expire_stored_credential_profile`")  # noqa: E501
         # verify the required parameter 'profile_number' is set
         if ('profile_number' not in params or
                 params['profile_number'] is None):
-            raise ValueError("Missing the required parameter `profile_number` when calling `p_ost_expire_stored_credential_profile`")  # noqa: E501
+            raise ValueError("Missing the required parameter `profile_number` when calling `post_expire_stored_credential_profile`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1343,13 +1343,13 @@ class PaymentMethodsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_payment_methods(self, request, **kwargs):  # noqa: E501
+    def post_payment_methods(self, request, **kwargs):  # noqa: E501
         """Create payment method  # noqa: E501
 
         You can use this operation to create a payment method for a customer account. This operation supports the payment methods listed below.  ### PayPal Express Checkout The following request body fields are specific to this payment method: * `BAID` (required) * `email` (required)  ### PayPal Native Express Checkout The following request body fields are specific to this payment method: * `BAID` (required) * `email` (optional)  ### PayPal Adaptive The following request body fields are specific to this payment method: * `preapprovalKey` (required) * `email` (required)  ### Credit Card **Note:** This feature is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available.  The following request body fields are specific to this payment method: * `cardHolderInfo` * `cardNumber` (required) * `cardType` (required) * `expirationMonth` (required) * `expirationYear` (required) * `mitConsentAgreementRef` * `mitConsentAgreementSrc` * `mitNetworkTransactionId` * `mitProfileAction` * `mitProfileType` * `securityCode`   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_payment_methods(request, async_req=True)
+        >>> thread = api.post_payment_methods(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1361,18 +1361,18 @@ class PaymentMethodsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_payment_methods_with_http_info(request, **kwargs)  # noqa: E501
+            return self.post_payment_methods_with_http_info(request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_payment_methods_with_http_info(request, **kwargs)  # noqa: E501
+            (data) = self.post_payment_methods_with_http_info(request, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_payment_methods_with_http_info(self, request, **kwargs):  # noqa: E501
+    def post_payment_methods_with_http_info(self, request, **kwargs):  # noqa: E501
         """Create payment method  # noqa: E501
 
         You can use this operation to create a payment method for a customer account. This operation supports the payment methods listed below.  ### PayPal Express Checkout The following request body fields are specific to this payment method: * `BAID` (required) * `email` (required)  ### PayPal Native Express Checkout The following request body fields are specific to this payment method: * `BAID` (required) * `email` (optional)  ### PayPal Adaptive The following request body fields are specific to this payment method: * `preapprovalKey` (required) * `email` (required)  ### Credit Card **Note:** This feature is in **Limited Availability**. We are actively soliciting feedback from a small set of early adopters before releasing as generally available.  The following request body fields are specific to this payment method: * `cardHolderInfo` * `cardNumber` (required) * `cardType` (required) * `expirationMonth` (required) * `expirationYear` (required) * `mitConsentAgreementRef` * `mitConsentAgreementSrc` * `mitNetworkTransactionId` * `mitProfileAction` * `mitProfileType` * `securityCode`   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_payment_methods_with_http_info(request, async_req=True)
+        >>> thread = api.post_payment_methods_with_http_info(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1394,14 +1394,14 @@ class PaymentMethodsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_payment_methods" % key
+                    " to method post_payment_methods" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ost_payment_methods`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `post_payment_methods`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1446,13 +1446,13 @@ class PaymentMethodsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_payment_methods_credit_card(self, request, **kwargs):  # noqa: E501
+    def post_payment_methods_credit_card(self, request, **kwargs):  # noqa: E501
         """Create credit card payment method  # noqa: E501
 
         This REST API reference describes how to create a new credit card payment method for a customer account.  This API call is CORS Enabled. Use client-side JavaScript to invoke the call.   **Note**: If you use this operation to create credit card payment methods instead of using the [iFrame of Hosted Payment Pages](https://knowledgecenter.zuora.com/CB_Billing/LA_Hosted_Payment_Pages/C_Hosted_Payment_Pages/B_Implementing_Hosted_Payment_Pages_on_Your_Website/C_Embed_and_Submit_the_iFrame), you are subject to PCI-compliance audit requirements.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_payment_methods_credit_card(request, async_req=True)
+        >>> thread = api.post_payment_methods_credit_card(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1464,18 +1464,18 @@ class PaymentMethodsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_payment_methods_credit_card_with_http_info(request, **kwargs)  # noqa: E501
+            return self.post_payment_methods_credit_card_with_http_info(request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_payment_methods_credit_card_with_http_info(request, **kwargs)  # noqa: E501
+            (data) = self.post_payment_methods_credit_card_with_http_info(request, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_payment_methods_credit_card_with_http_info(self, request, **kwargs):  # noqa: E501
+    def post_payment_methods_credit_card_with_http_info(self, request, **kwargs):  # noqa: E501
         """Create credit card payment method  # noqa: E501
 
         This REST API reference describes how to create a new credit card payment method for a customer account.  This API call is CORS Enabled. Use client-side JavaScript to invoke the call.   **Note**: If you use this operation to create credit card payment methods instead of using the [iFrame of Hosted Payment Pages](https://knowledgecenter.zuora.com/CB_Billing/LA_Hosted_Payment_Pages/C_Hosted_Payment_Pages/B_Implementing_Hosted_Payment_Pages_on_Your_Website/C_Embed_and_Submit_the_iFrame), you are subject to PCI-compliance audit requirements.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_payment_methods_credit_card_with_http_info(request, async_req=True)
+        >>> thread = api.post_payment_methods_credit_card_with_http_info(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1497,14 +1497,14 @@ class PaymentMethodsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_payment_methods_credit_card" % key
+                    " to method post_payment_methods_credit_card" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ost_payment_methods_credit_card`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `post_payment_methods_credit_card`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1549,13 +1549,13 @@ class PaymentMethodsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_payment_methods_decryption(self, request, **kwargs):  # noqa: E501
+    def post_payment_methods_decryption(self, request, **kwargs):  # noqa: E501
         """Create Apple Pay payment method  # noqa: E501
 
         The decryption API endpoint can conditionally perform 3 tasks in one atomic call:   * Decrypt Apple Pay Payment token   * Create Credit Card Payment Method in Zuora with decrypted Apple Pay information   * Process Payment on a specified Invoice (optional)   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_payment_methods_decryption(request, async_req=True)
+        >>> thread = api.post_payment_methods_decryption(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1567,18 +1567,18 @@ class PaymentMethodsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_payment_methods_decryption_with_http_info(request, **kwargs)  # noqa: E501
+            return self.post_payment_methods_decryption_with_http_info(request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_payment_methods_decryption_with_http_info(request, **kwargs)  # noqa: E501
+            (data) = self.post_payment_methods_decryption_with_http_info(request, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_payment_methods_decryption_with_http_info(self, request, **kwargs):  # noqa: E501
+    def post_payment_methods_decryption_with_http_info(self, request, **kwargs):  # noqa: E501
         """Create Apple Pay payment method  # noqa: E501
 
         The decryption API endpoint can conditionally perform 3 tasks in one atomic call:   * Decrypt Apple Pay Payment token   * Create Credit Card Payment Method in Zuora with decrypted Apple Pay information   * Process Payment on a specified Invoice (optional)   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_payment_methods_decryption_with_http_info(request, async_req=True)
+        >>> thread = api.post_payment_methods_decryption_with_http_info(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1600,14 +1600,14 @@ class PaymentMethodsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_payment_methods_decryption" % key
+                    " to method post_payment_methods_decryption" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ost_payment_methods_decryption`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `post_payment_methods_decryption`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1652,13 +1652,13 @@ class PaymentMethodsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_payment_methods_credit_card(self, payment_method_id, request, **kwargs):  # noqa: E501
+    def put_payment_methods_credit_card(self, payment_method_id, request, **kwargs):  # noqa: E501
         """Update credit card payment method  # noqa: E501
 
         Updates an existing credit card payment method for the specified customer account.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_payment_methods_credit_card(payment_method_id, request, async_req=True)
+        >>> thread = api.put_payment_methods_credit_card(payment_method_id, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1671,18 +1671,18 @@ class PaymentMethodsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_payment_methods_credit_card_with_http_info(payment_method_id, request, **kwargs)  # noqa: E501
+            return self.put_payment_methods_credit_card_with_http_info(payment_method_id, request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_payment_methods_credit_card_with_http_info(payment_method_id, request, **kwargs)  # noqa: E501
+            (data) = self.put_payment_methods_credit_card_with_http_info(payment_method_id, request, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_payment_methods_credit_card_with_http_info(self, payment_method_id, request, **kwargs):  # noqa: E501
+    def put_payment_methods_credit_card_with_http_info(self, payment_method_id, request, **kwargs):  # noqa: E501
         """Update credit card payment method  # noqa: E501
 
         Updates an existing credit card payment method for the specified customer account.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_payment_methods_credit_card_with_http_info(payment_method_id, request, async_req=True)
+        >>> thread = api.put_payment_methods_credit_card_with_http_info(payment_method_id, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1705,18 +1705,18 @@ class PaymentMethodsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_payment_methods_credit_card" % key
+                    " to method put_payment_methods_credit_card" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'payment_method_id' is set
         if ('payment_method_id' not in params or
                 params['payment_method_id'] is None):
-            raise ValueError("Missing the required parameter `payment_method_id` when calling `p_ut_payment_methods_credit_card`")  # noqa: E501
+            raise ValueError("Missing the required parameter `payment_method_id` when calling `put_payment_methods_credit_card`")  # noqa: E501
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ut_payment_methods_credit_card`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `put_payment_methods_credit_card`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1763,13 +1763,13 @@ class PaymentMethodsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_scrub_payment_methods(self, payment_method_id, **kwargs):  # noqa: E501
+    def put_scrub_payment_methods(self, payment_method_id, **kwargs):  # noqa: E501
         """Scrub payment method  # noqa: E501
 
          This operation enables you to replace all sensitive data in a payment method, related payment method snapshot table, and four related log tables with dummy values that will be stored in Zuora databases.   This operation will scrub the sensitive data and soft-delete the specified payment method at the same time.   **Note:** In order to use this operation, you must ensure that the **Scrub Sensitive Data of Specific Payment Method payments** permission is enabled in your user role. Contact your tenant administrator if you want to enable this permission. See [Scrub Payment Methods](https://knowledgecenter.zuora.com/CB_Billing/L_Payment_Methods/Scrub_Payment_Methods) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_scrub_payment_methods(payment_method_id, async_req=True)
+        >>> thread = api.put_scrub_payment_methods(payment_method_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1781,18 +1781,18 @@ class PaymentMethodsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_scrub_payment_methods_with_http_info(payment_method_id, **kwargs)  # noqa: E501
+            return self.put_scrub_payment_methods_with_http_info(payment_method_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_scrub_payment_methods_with_http_info(payment_method_id, **kwargs)  # noqa: E501
+            (data) = self.put_scrub_payment_methods_with_http_info(payment_method_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_scrub_payment_methods_with_http_info(self, payment_method_id, **kwargs):  # noqa: E501
+    def put_scrub_payment_methods_with_http_info(self, payment_method_id, **kwargs):  # noqa: E501
         """Scrub payment method  # noqa: E501
 
          This operation enables you to replace all sensitive data in a payment method, related payment method snapshot table, and four related log tables with dummy values that will be stored in Zuora databases.   This operation will scrub the sensitive data and soft-delete the specified payment method at the same time.   **Note:** In order to use this operation, you must ensure that the **Scrub Sensitive Data of Specific Payment Method payments** permission is enabled in your user role. Contact your tenant administrator if you want to enable this permission. See [Scrub Payment Methods](https://knowledgecenter.zuora.com/CB_Billing/L_Payment_Methods/Scrub_Payment_Methods) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_scrub_payment_methods_with_http_info(payment_method_id, async_req=True)
+        >>> thread = api.put_scrub_payment_methods_with_http_info(payment_method_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1814,14 +1814,14 @@ class PaymentMethodsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_scrub_payment_methods" % key
+                    " to method put_scrub_payment_methods" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'payment_method_id' is set
         if ('payment_method_id' not in params or
                 params['payment_method_id'] is None):
-            raise ValueError("Missing the required parameter `payment_method_id` when calling `p_ut_scrub_payment_methods`")  # noqa: E501
+            raise ValueError("Missing the required parameter `payment_method_id` when calling `put_scrub_payment_methods`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1866,13 +1866,13 @@ class PaymentMethodsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_verify_payment_methods(self, payment_method_id, body, **kwargs):  # noqa: E501
+    def put_verify_payment_methods(self, payment_method_id, body, **kwargs):  # noqa: E501
         """Verify payment method  # noqa: E501
 
         Sends an authorization request to the corresponding payment gateway to verify the payment method, even though no changes are made for the payment method. Supported payment methods are Credit Cards and Paypal.  Zuora now supports performing a standalone zero dollar verification or one dollar authorization for credit cards. It also supports a billing agreement status check on PayPal payment methods.  If a payment method is created by Hosted Payment Pages and is not assigned to any billing account, the payment method cannot be verified through this operation.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_verify_payment_methods(payment_method_id, body, async_req=True)
+        >>> thread = api.put_verify_payment_methods(payment_method_id, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1884,18 +1884,18 @@ class PaymentMethodsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_verify_payment_methods_with_http_info(payment_method_id, body, **kwargs)  # noqa: E501
+            return self.put_verify_payment_methods_with_http_info(payment_method_id, body, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_verify_payment_methods_with_http_info(payment_method_id, body, **kwargs)  # noqa: E501
+            (data) = self.put_verify_payment_methods_with_http_info(payment_method_id, body, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_verify_payment_methods_with_http_info(self, payment_method_id, body, **kwargs):  # noqa: E501
+    def put_verify_payment_methods_with_http_info(self, payment_method_id, body, **kwargs):  # noqa: E501
         """Verify payment method  # noqa: E501
 
         Sends an authorization request to the corresponding payment gateway to verify the payment method, even though no changes are made for the payment method. Supported payment methods are Credit Cards and Paypal.  Zuora now supports performing a standalone zero dollar verification or one dollar authorization for credit cards. It also supports a billing agreement status check on PayPal payment methods.  If a payment method is created by Hosted Payment Pages and is not assigned to any billing account, the payment method cannot be verified through this operation.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_verify_payment_methods_with_http_info(payment_method_id, body, async_req=True)
+        >>> thread = api.put_verify_payment_methods_with_http_info(payment_method_id, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1917,18 +1917,18 @@ class PaymentMethodsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_verify_payment_methods" % key
+                    " to method put_verify_payment_methods" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'payment_method_id' is set
         if ('payment_method_id' not in params or
                 params['payment_method_id'] is None):
-            raise ValueError("Missing the required parameter `payment_method_id` when calling `p_ut_verify_payment_methods`")  # noqa: E501
+            raise ValueError("Missing the required parameter `payment_method_id` when calling `put_verify_payment_methods`")  # noqa: E501
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ut_verify_payment_methods`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `put_verify_payment_methods`")  # noqa: E501
 
         collection_formats = {}
 

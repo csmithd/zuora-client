@@ -29,113 +29,113 @@ class TestDebitMemosApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_d_elete_debit_memo(self):
-        """Test case for d_elete_debit_memo
+    def test_delete_debit_memo(self):
+        """Test case for delete_debit_memo
 
         Delete debit memo  # noqa: E501
         """
         pass
 
-    def test_g_et_debit_memo(self):
-        """Test case for g_et_debit_memo
+    def test_get_debit_memo(self):
+        """Test case for get_debit_memo
 
         Get debit memo  # noqa: E501
         """
         pass
 
-    def test_g_et_debit_memo_application_parts(self):
-        """Test case for g_et_debit_memo_application_parts
+    def test_get_debit_memo_application_parts(self):
+        """Test case for get_debit_memo_application_parts
 
         Get debit memo application parts  # noqa: E501
         """
         pass
 
-    def test_g_et_debit_memo_item(self):
-        """Test case for g_et_debit_memo_item
+    def test_get_debit_memo_item(self):
+        """Test case for get_debit_memo_item
 
         Get debit memo item  # noqa: E501
         """
         pass
 
-    def test_g_et_debit_memo_items(self):
-        """Test case for g_et_debit_memo_items
+    def test_get_debit_memo_items(self):
+        """Test case for get_debit_memo_items
 
         Get debit memo items  # noqa: E501
         """
         pass
 
-    def test_g_et_debit_memos(self):
-        """Test case for g_et_debit_memos
+    def test_get_debit_memos(self):
+        """Test case for get_debit_memos
 
         Get debit memos  # noqa: E501
         """
         pass
 
-    def test_g_et_taxation_items_of_debit_memo_item(self):
-        """Test case for g_et_taxation_items_of_debit_memo_item
+    def test_get_taxation_items_of_debit_memo_item(self):
+        """Test case for get_taxation_items_of_debit_memo_item
 
         Get taxation items of debit memo item  # noqa: E501
         """
         pass
 
-    def test_p_ost_debit_memo_from_prpc(self):
-        """Test case for p_ost_debit_memo_from_prpc
+    def test_post_debit_memo_from_prpc(self):
+        """Test case for post_debit_memo_from_prpc
 
         Create debit memo from charge  # noqa: E501
         """
         pass
 
-    def test_p_ost_debit_memo_pdf(self):
-        """Test case for p_ost_debit_memo_pdf
+    def test_post_debit_memo_pdf(self):
+        """Test case for post_debit_memo_pdf
 
         Create debit memo PDF  # noqa: E501
         """
         pass
 
-    def test_p_ost_email_debit_memo(self):
-        """Test case for p_ost_email_debit_memo
+    def test_post_email_debit_memo(self):
+        """Test case for post_email_debit_memo
 
         Email debit memo  # noqa: E501
         """
         pass
 
-    def test_p_ostdm_taxation_items(self):
-        """Test case for p_ostdm_taxation_items
+    def test_postdm_taxation_items(self):
+        """Test case for postdm_taxation_items
 
         Create taxation items for debit memo  # noqa: E501
         """
         pass
 
-    def test_p_ut_batch_update_debit_memos(self):
-        """Test case for p_ut_batch_update_debit_memos
+    def test_put_batch_update_debit_memos(self):
+        """Test case for put_batch_update_debit_memos
 
         Update debit memos  # noqa: E501
         """
         pass
 
-    def test_p_ut_cancel_debit_memo(self):
-        """Test case for p_ut_cancel_debit_memo
+    def test_put_cancel_debit_memo(self):
+        """Test case for put_cancel_debit_memo
 
         Cancel debit memo  # noqa: E501
         """
         pass
 
-    def test_p_ut_debit_memo(self):
-        """Test case for p_ut_debit_memo
+    def test_put_debit_memo(self):
+        """Test case for put_debit_memo
 
         Update debit memo  # noqa: E501
         """
         pass
 
-    def test_p_ut_post_debit_memo(self):
-        """Test case for p_ut_post_debit_memo
+    def test_put_post_debit_memo(self):
+        """Test case for put_post_debit_memo
 
         Post debit memo  # noqa: E501
         """
         pass
 
-    def test_p_ut_unpost_debit_memo(self):
-        """Test case for p_ut_unpost_debit_memo
+    def test_put_unpost_debit_memo(self):
+        """Test case for put_unpost_debit_memo
 
         Unpost debit memo  # noqa: E501
         """

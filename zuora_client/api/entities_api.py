@@ -25,13 +25,13 @@ class EntitiesApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def d_elete_entities(self, id, **kwargs):  # noqa: E501
+    def delete_entities(self, id, **kwargs):  # noqa: E501
         """Multi-entity: Delete entity  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Removes an entity and its sub-entities from a multi-entity hierarchy. You can only remove unprovisioned entities. An error occurred when you remove a provisioned entity.  ## User Access Permission You must make the call as a global entity administrator.      # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_entities(id, async_req=True)
+        >>> thread = api.delete_entities(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -43,18 +43,18 @@ class EntitiesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.d_elete_entities_with_http_info(id, **kwargs)  # noqa: E501
+            return self.delete_entities_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.d_elete_entities_with_http_info(id, **kwargs)  # noqa: E501
+            (data) = self.delete_entities_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def d_elete_entities_with_http_info(self, id, **kwargs):  # noqa: E501
+    def delete_entities_with_http_info(self, id, **kwargs):  # noqa: E501
         """Multi-entity: Delete entity  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Removes an entity and its sub-entities from a multi-entity hierarchy. You can only remove unprovisioned entities. An error occurred when you remove a provisioned entity.  ## User Access Permission You must make the call as a global entity administrator.      # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_entities_with_http_info(id, async_req=True)
+        >>> thread = api.delete_entities_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -76,14 +76,14 @@ class EntitiesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method d_elete_entities" % key
+                    " to method delete_entities" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in params or
                 params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `d_elete_entities`")  # noqa: E501
+            raise ValueError("Missing the required parameter `id` when calling `delete_entities`")  # noqa: E501
 
         collection_formats = {}
 
@@ -128,13 +128,13 @@ class EntitiesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_entities(self, **kwargs):  # noqa: E501
+    def get_entities(self, **kwargs):  # noqa: E501
         """Multi-entity: Get entities  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).    Retrieves detailed information of certain entities in a multi-entity hierarchy.   You can retrieve:   - Provisioned entities     - Unprovisioned entities     - Both provisioned and unprovisioned entities  ## User Access Permission  You can make the call as any entity user.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_entities(async_req=True)
+        >>> thread = api.get_entities(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -146,18 +146,18 @@ class EntitiesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_entities_with_http_info(**kwargs)  # noqa: E501
+            return self.get_entities_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_entities_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.get_entities_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def g_et_entities_with_http_info(self, **kwargs):  # noqa: E501
+    def get_entities_with_http_info(self, **kwargs):  # noqa: E501
         """Multi-entity: Get entities  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).    Retrieves detailed information of certain entities in a multi-entity hierarchy.   You can retrieve:   - Provisioned entities     - Unprovisioned entities     - Both provisioned and unprovisioned entities  ## User Access Permission  You can make the call as any entity user.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_entities_with_http_info(async_req=True)
+        >>> thread = api.get_entities_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -179,7 +179,7 @@ class EntitiesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_entities" % key
+                    " to method get_entities" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -227,13 +227,13 @@ class EntitiesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_entity_by_id(self, id, **kwargs):  # noqa: E501
+    def get_entity_by_id(self, id, **kwargs):  # noqa: E501
         """Multi-entity: Get entity by Id  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves detailed information about a specified entity.  ## User Access Permission You can make the call as any entity user.        # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_entity_by_id(id, async_req=True)
+        >>> thread = api.get_entity_by_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -245,18 +245,18 @@ class EntitiesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_entity_by_id_with_http_info(id, **kwargs)  # noqa: E501
+            return self.get_entity_by_id_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_entity_by_id_with_http_info(id, **kwargs)  # noqa: E501
+            (data) = self.get_entity_by_id_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_entity_by_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def get_entity_by_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Multi-entity: Get entity by Id  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves detailed information about a specified entity.  ## User Access Permission You can make the call as any entity user.        # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_entity_by_id_with_http_info(id, async_req=True)
+        >>> thread = api.get_entity_by_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -278,14 +278,14 @@ class EntitiesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_entity_by_id" % key
+                    " to method get_entity_by_id" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in params or
                 params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `g_et_entity_by_id`")  # noqa: E501
+            raise ValueError("Missing the required parameter `id` when calling `get_entity_by_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -330,13 +330,13 @@ class EntitiesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_entities(self, request, **kwargs):  # noqa: E501
+    def post_entities(self, request, **kwargs):  # noqa: E501
         """Multi-entity: Create entity  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Creates an entity in a multi-entity hierarchy.  ## User Access Permission You must make the call as a global entity administrator.  ## Notes * We recommend that you assign only one administrator to manage the entity hierarchy, because an administrator of the global entity by default can only access to the entities that are created by themselves.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_entities(request, async_req=True)
+        >>> thread = api.post_entities(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -348,18 +348,18 @@ class EntitiesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_entities_with_http_info(request, **kwargs)  # noqa: E501
+            return self.post_entities_with_http_info(request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_entities_with_http_info(request, **kwargs)  # noqa: E501
+            (data) = self.post_entities_with_http_info(request, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_entities_with_http_info(self, request, **kwargs):  # noqa: E501
+    def post_entities_with_http_info(self, request, **kwargs):  # noqa: E501
         """Multi-entity: Create entity  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Creates an entity in a multi-entity hierarchy.  ## User Access Permission You must make the call as a global entity administrator.  ## Notes * We recommend that you assign only one administrator to manage the entity hierarchy, because an administrator of the global entity by default can only access to the entities that are created by themselves.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_entities_with_http_info(request, async_req=True)
+        >>> thread = api.post_entities_with_http_info(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -381,14 +381,14 @@ class EntitiesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_entities" % key
+                    " to method post_entities" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ost_entities`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `post_entities`")  # noqa: E501
 
         collection_formats = {}
 
@@ -433,13 +433,13 @@ class EntitiesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_entities(self, id, request, **kwargs):  # noqa: E501
+    def put_entities(self, id, request, **kwargs):  # noqa: E501
         """Multi-entity: Update entity  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Edits the following information about an unprovisioned entity:   - Name    - Display name    - Locale    - Timezone  ## User Access Permission You must make the call as a global entity administrator.  ## Notes * You are not allowed to edit the locale and time zone of the provisioned entities through the REST API. * You are not allowed to edit the display name of the global entity.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_entities(id, request, async_req=True)
+        >>> thread = api.put_entities(id, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -452,18 +452,18 @@ class EntitiesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_entities_with_http_info(id, request, **kwargs)  # noqa: E501
+            return self.put_entities_with_http_info(id, request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_entities_with_http_info(id, request, **kwargs)  # noqa: E501
+            (data) = self.put_entities_with_http_info(id, request, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_entities_with_http_info(self, id, request, **kwargs):  # noqa: E501
+    def put_entities_with_http_info(self, id, request, **kwargs):  # noqa: E501
         """Multi-entity: Update entity  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Edits the following information about an unprovisioned entity:   - Name    - Display name    - Locale    - Timezone  ## User Access Permission You must make the call as a global entity administrator.  ## Notes * You are not allowed to edit the locale and time zone of the provisioned entities through the REST API. * You are not allowed to edit the display name of the global entity.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_entities_with_http_info(id, request, async_req=True)
+        >>> thread = api.put_entities_with_http_info(id, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -486,18 +486,18 @@ class EntitiesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_entities" % key
+                    " to method put_entities" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in params or
                 params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `p_ut_entities`")  # noqa: E501
+            raise ValueError("Missing the required parameter `id` when calling `put_entities`")  # noqa: E501
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ut_entities`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `put_entities`")  # noqa: E501
 
         collection_formats = {}
 
@@ -544,13 +544,13 @@ class EntitiesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_provision_entity(self, id, **kwargs):  # noqa: E501
+    def put_provision_entity(self, id, **kwargs):  # noqa: E501
         """Multi-entity: Provision entity  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Provisions an entity. You can only provision an entity if its parent entity is provisioned.  ## User Access Permission You must make the call as a global entity administrator.   ## Notes * Zuora does not allow you to remove a provisioned entity from the multi-entity hierarchy. So before you provision an entity, make sure that you put the entity in the correct place in the multi-entity hierarchy.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_provision_entity(id, async_req=True)
+        >>> thread = api.put_provision_entity(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -562,18 +562,18 @@ class EntitiesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_provision_entity_with_http_info(id, **kwargs)  # noqa: E501
+            return self.put_provision_entity_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_provision_entity_with_http_info(id, **kwargs)  # noqa: E501
+            (data) = self.put_provision_entity_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_provision_entity_with_http_info(self, id, **kwargs):  # noqa: E501
+    def put_provision_entity_with_http_info(self, id, **kwargs):  # noqa: E501
         """Multi-entity: Provision entity  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Provisions an entity. You can only provision an entity if its parent entity is provisioned.  ## User Access Permission You must make the call as a global entity administrator.   ## Notes * Zuora does not allow you to remove a provisioned entity from the multi-entity hierarchy. So before you provision an entity, make sure that you put the entity in the correct place in the multi-entity hierarchy.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_provision_entity_with_http_info(id, async_req=True)
+        >>> thread = api.put_provision_entity_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -595,14 +595,14 @@ class EntitiesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_provision_entity" % key
+                    " to method put_provision_entity" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in params or
                 params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `p_ut_provision_entity`")  # noqa: E501
+            raise ValueError("Missing the required parameter `id` when calling `put_provision_entity`")  # noqa: E501
 
         collection_formats = {}
 

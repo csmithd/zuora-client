@@ -29,50 +29,50 @@ class TestAccountingCodesApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_d_elete_accounting_code(self):
-        """Test case for d_elete_accounting_code
+    def test_delete_accounting_code(self):
+        """Test case for delete_accounting_code
 
         Delete accounting code  # noqa: E501
         """
         pass
 
-    def test_g_et_accounting_code(self):
-        """Test case for g_et_accounting_code
+    def test_get_accounting_code(self):
+        """Test case for get_accounting_code
 
         Query an accounting code  # noqa: E501
         """
         pass
 
-    def test_g_et_all_accounting_codes(self):
-        """Test case for g_et_all_accounting_codes
+    def test_get_all_accounting_codes(self):
+        """Test case for get_all_accounting_codes
 
         Get all accounting codes  # noqa: E501
         """
         pass
 
-    def test_p_ost_accounting_code(self):
-        """Test case for p_ost_accounting_code
+    def test_post_accounting_code(self):
+        """Test case for post_accounting_code
 
         Create accounting code  # noqa: E501
         """
         pass
 
-    def test_p_ut_accounting_code(self):
-        """Test case for p_ut_accounting_code
+    def test_put_accounting_code(self):
+        """Test case for put_accounting_code
 
         Update an accounting code  # noqa: E501
         """
         pass
 
-    def test_p_ut_activate_accounting_code(self):
-        """Test case for p_ut_activate_accounting_code
+    def test_put_activate_accounting_code(self):
+        """Test case for put_activate_accounting_code
 
         Activate accounting code  # noqa: E501
         """
         pass
 
-    def test_p_ut_deactivate_accounting_code(self):
-        """Test case for p_ut_deactivate_accounting_code
+    def test_put_deactivate_accounting_code(self):
+        """Test case for put_deactivate_accounting_code
 
         Deactivate accounting code  # noqa: E501
         """

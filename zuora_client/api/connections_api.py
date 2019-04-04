@@ -25,13 +25,13 @@ class ConnectionsApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def p_ost_connections(self, api_access_key_id, api_secret_access_key, content_type, **kwargs):  # noqa: E501
+    def post_connections(self, api_access_key_id, api_secret_access_key, content_type, **kwargs):  # noqa: E501
         """Establish connection to Zuora REST API service  # noqa: E501
 
         Establishes a connection to the Zuora REST API service based on a valid user credentials.   **Note:**This is a legacy REST API. Zuora recommends you to use [OAuth](https://www.zuora.com/developer/api-reference/#section/Authentication/OAuth-v2.0) for authentication instead.   This call authenticates the user and returns an API session cookie that's used to authorize subsequent calls to the REST API. The credentials must belong to a user account that has permission to access the API service.  As noted elsewhere, it's strongly recommended that an account used for Zuora API activity is never used to log into the Zuora UI.  Once an account is used to log into the UI, it may be subject to periodic forced password changes, which may eventually lead to authentication failures when using the API.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_connections(api_access_key_id, api_secret_access_key, content_type, async_req=True)
+        >>> thread = api.post_connections(api_access_key_id, api_secret_access_key, content_type, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -45,18 +45,18 @@ class ConnectionsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_connections_with_http_info(api_access_key_id, api_secret_access_key, content_type, **kwargs)  # noqa: E501
+            return self.post_connections_with_http_info(api_access_key_id, api_secret_access_key, content_type, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_connections_with_http_info(api_access_key_id, api_secret_access_key, content_type, **kwargs)  # noqa: E501
+            (data) = self.post_connections_with_http_info(api_access_key_id, api_secret_access_key, content_type, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_connections_with_http_info(self, api_access_key_id, api_secret_access_key, content_type, **kwargs):  # noqa: E501
+    def post_connections_with_http_info(self, api_access_key_id, api_secret_access_key, content_type, **kwargs):  # noqa: E501
         """Establish connection to Zuora REST API service  # noqa: E501
 
         Establishes a connection to the Zuora REST API service based on a valid user credentials.   **Note:**This is a legacy REST API. Zuora recommends you to use [OAuth](https://www.zuora.com/developer/api-reference/#section/Authentication/OAuth-v2.0) for authentication instead.   This call authenticates the user and returns an API session cookie that's used to authorize subsequent calls to the REST API. The credentials must belong to a user account that has permission to access the API service.  As noted elsewhere, it's strongly recommended that an account used for Zuora API activity is never used to log into the Zuora UI.  Once an account is used to log into the UI, it may be subject to periodic forced password changes, which may eventually lead to authentication failures when using the API.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_connections_with_http_info(api_access_key_id, api_secret_access_key, content_type, async_req=True)
+        >>> thread = api.post_connections_with_http_info(api_access_key_id, api_secret_access_key, content_type, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -80,22 +80,22 @@ class ConnectionsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_connections" % key
+                    " to method post_connections" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'api_access_key_id' is set
         if ('api_access_key_id' not in params or
                 params['api_access_key_id'] is None):
-            raise ValueError("Missing the required parameter `api_access_key_id` when calling `p_ost_connections`")  # noqa: E501
+            raise ValueError("Missing the required parameter `api_access_key_id` when calling `post_connections`")  # noqa: E501
         # verify the required parameter 'api_secret_access_key' is set
         if ('api_secret_access_key' not in params or
                 params['api_secret_access_key'] is None):
-            raise ValueError("Missing the required parameter `api_secret_access_key` when calling `p_ost_connections`")  # noqa: E501
+            raise ValueError("Missing the required parameter `api_secret_access_key` when calling `post_connections`")  # noqa: E501
         # verify the required parameter 'content_type' is set
         if ('content_type' not in params or
                 params['content_type'] is None):
-            raise ValueError("Missing the required parameter `content_type` when calling `p_ost_connections`")  # noqa: E501
+            raise ValueError("Missing the required parameter `content_type` when calling `post_connections`")  # noqa: E501
 
         collection_formats = {}
 

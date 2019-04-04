@@ -477,13 +477,13 @@ class BillRunApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_email_billing_documentsfrom_bill_run(self, bill_run_id, request, **kwargs):  # noqa: E501
+    def post_email_billing_documentsfrom_bill_run(self, bill_run_id, request, **kwargs):  # noqa: E501
         """Email billing documents generated from bill run  # noqa: E501
 
         Manually emails all the billing documents that are generated from a specified bill run to your customers.    Bill runs can generate invoices and credit memos based on your [invoice and credit memo generation rule](https://knowledgecenter.zuora.com/CB_Billing/Invoice_Settlement/Credit_and_Debit_Memos/Rules_for_Generating_Invoices_and_Credit_Memos). Credit memos are only available if you have the Invoice Settlement feature enabled.   Using this API operation, the billing documents are sent to the email addresses specified in the **To Email** field of the email templates. The email template used for each billing document is set in the **Delivery Options** panel of the **Edit notification** dialog from the Zuora UI. See [Edit Email Templates](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/Notifications/Create_Email_Templates) for more information about how to edit the **To Email** field in the email template.      ## Notes   - Even though no field is required in the Request body, you still need to specify `{}` in the request. Otherwise, an error will be returned.     - You can only email posted billing documents.         - You must activate the following notifications before emailing invoices and credit memos:     - **Manual Email For Invoice | Manual Email For Invoice**      - **Email Credit Memo | Manually email Credit Memo**        - To include the invoice PDF in the email, select the **Include Invoice PDF** check box in the **Edit notification** dialog from the Zuora UI. To include the credit memo PDF in the email, select the **Include Credit Memo PDF** check box in the **Edit notification** dialog from the Zuora UI. See [Create and Edit Notifications](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/Notifications/C_Create_Notifications#section_2) for more information.      - Zuora sends the email messages based on the email template you set. You can set the email template to use in the **Delivery Options** panel of the **Edit notification** dialog from the Zuora UI. By default, the following templates are used for billing documents:     - Invoices: **Invoice Posted Default Email Template**     - Credit memos: **Manual Email for Credit Memo Default Template**        See [Create and Edit Email Templates](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/Notifications/Create_Email_Templates) for more information.         # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_email_billing_documentsfrom_bill_run(bill_run_id, request, async_req=True)
+        >>> thread = api.post_email_billing_documentsfrom_bill_run(bill_run_id, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -496,18 +496,18 @@ class BillRunApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_email_billing_documentsfrom_bill_run_with_http_info(bill_run_id, request, **kwargs)  # noqa: E501
+            return self.post_email_billing_documentsfrom_bill_run_with_http_info(bill_run_id, request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_email_billing_documentsfrom_bill_run_with_http_info(bill_run_id, request, **kwargs)  # noqa: E501
+            (data) = self.post_email_billing_documentsfrom_bill_run_with_http_info(bill_run_id, request, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_email_billing_documentsfrom_bill_run_with_http_info(self, bill_run_id, request, **kwargs):  # noqa: E501
+    def post_email_billing_documentsfrom_bill_run_with_http_info(self, bill_run_id, request, **kwargs):  # noqa: E501
         """Email billing documents generated from bill run  # noqa: E501
 
         Manually emails all the billing documents that are generated from a specified bill run to your customers.    Bill runs can generate invoices and credit memos based on your [invoice and credit memo generation rule](https://knowledgecenter.zuora.com/CB_Billing/Invoice_Settlement/Credit_and_Debit_Memos/Rules_for_Generating_Invoices_and_Credit_Memos). Credit memos are only available if you have the Invoice Settlement feature enabled.   Using this API operation, the billing documents are sent to the email addresses specified in the **To Email** field of the email templates. The email template used for each billing document is set in the **Delivery Options** panel of the **Edit notification** dialog from the Zuora UI. See [Edit Email Templates](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/Notifications/Create_Email_Templates) for more information about how to edit the **To Email** field in the email template.      ## Notes   - Even though no field is required in the Request body, you still need to specify `{}` in the request. Otherwise, an error will be returned.     - You can only email posted billing documents.         - You must activate the following notifications before emailing invoices and credit memos:     - **Manual Email For Invoice | Manual Email For Invoice**      - **Email Credit Memo | Manually email Credit Memo**        - To include the invoice PDF in the email, select the **Include Invoice PDF** check box in the **Edit notification** dialog from the Zuora UI. To include the credit memo PDF in the email, select the **Include Credit Memo PDF** check box in the **Edit notification** dialog from the Zuora UI. See [Create and Edit Notifications](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/Notifications/C_Create_Notifications#section_2) for more information.      - Zuora sends the email messages based on the email template you set. You can set the email template to use in the **Delivery Options** panel of the **Edit notification** dialog from the Zuora UI. By default, the following templates are used for billing documents:     - Invoices: **Invoice Posted Default Email Template**     - Credit memos: **Manual Email for Credit Memo Default Template**        See [Create and Edit Email Templates](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/Notifications/Create_Email_Templates) for more information.         # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_email_billing_documentsfrom_bill_run_with_http_info(bill_run_id, request, async_req=True)
+        >>> thread = api.post_email_billing_documentsfrom_bill_run_with_http_info(bill_run_id, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -530,18 +530,18 @@ class BillRunApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_email_billing_documentsfrom_bill_run" % key
+                    " to method post_email_billing_documentsfrom_bill_run" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'bill_run_id' is set
         if ('bill_run_id' not in params or
                 params['bill_run_id'] is None):
-            raise ValueError("Missing the required parameter `bill_run_id` when calling `p_ost_email_billing_documentsfrom_bill_run`")  # noqa: E501
+            raise ValueError("Missing the required parameter `bill_run_id` when calling `post_email_billing_documentsfrom_bill_run`")  # noqa: E501
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ost_email_billing_documentsfrom_bill_run`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `post_email_billing_documentsfrom_bill_run`")  # noqa: E501
 
         collection_formats = {}
 

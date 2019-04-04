@@ -25,13 +25,13 @@ class ProductRatePlansApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def g_et_product_rate_plans(self, product_id, **kwargs):  # noqa: E501
+    def get_product_rate_plans(self, product_id, **kwargs):  # noqa: E501
         """Get product rate plans  # noqa: E501
 
         Retrieves information about all product rate plans of a specific product.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_product_rate_plans(product_id, async_req=True)
+        >>> thread = api.get_product_rate_plans(product_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -44,18 +44,18 @@ class ProductRatePlansApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_product_rate_plans_with_http_info(product_id, **kwargs)  # noqa: E501
+            return self.get_product_rate_plans_with_http_info(product_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_product_rate_plans_with_http_info(product_id, **kwargs)  # noqa: E501
+            (data) = self.get_product_rate_plans_with_http_info(product_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_product_rate_plans_with_http_info(self, product_id, **kwargs):  # noqa: E501
+    def get_product_rate_plans_with_http_info(self, product_id, **kwargs):  # noqa: E501
         """Get product rate plans  # noqa: E501
 
         Retrieves information about all product rate plans of a specific product.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_product_rate_plans_with_http_info(product_id, async_req=True)
+        >>> thread = api.get_product_rate_plans_with_http_info(product_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -78,17 +78,17 @@ class ProductRatePlansApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_product_rate_plans" % key
+                    " to method get_product_rate_plans" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'product_id' is set
         if ('product_id' not in params or
                 params['product_id'] is None):
-            raise ValueError("Missing the required parameter `product_id` when calling `g_et_product_rate_plans`")  # noqa: E501
+            raise ValueError("Missing the required parameter `product_id` when calling `get_product_rate_plans`")  # noqa: E501
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_product_rate_plans`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_product_rate_plans`, must be a value less than or equal to `40`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}

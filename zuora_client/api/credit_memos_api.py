@@ -25,13 +25,13 @@ class CreditMemosApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def d_elete_credit_memo(self, credit_memo_id, **kwargs):  # noqa: E501
+    def delete_credit_memo(self, credit_memo_id, **kwargs):  # noqa: E501
         """Delete credit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Deletes a credit memo. Only credit memos with the Cancelled status can be deleted.   You can delete a credit memo only if you have the user permission. See [Billing Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_credit_memo(credit_memo_id, async_req=True)
+        >>> thread = api.delete_credit_memo(credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -43,18 +43,18 @@ class CreditMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.d_elete_credit_memo_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
+            return self.delete_credit_memo_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.d_elete_credit_memo_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
+            (data) = self.delete_credit_memo_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
             return data
 
-    def d_elete_credit_memo_with_http_info(self, credit_memo_id, **kwargs):  # noqa: E501
+    def delete_credit_memo_with_http_info(self, credit_memo_id, **kwargs):  # noqa: E501
         """Delete credit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Deletes a credit memo. Only credit memos with the Cancelled status can be deleted.   You can delete a credit memo only if you have the user permission. See [Billing Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_credit_memo_with_http_info(credit_memo_id, async_req=True)
+        >>> thread = api.delete_credit_memo_with_http_info(credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -76,14 +76,14 @@ class CreditMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method d_elete_credit_memo" % key
+                    " to method delete_credit_memo" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'credit_memo_id' is set
         if ('credit_memo_id' not in params or
                 params['credit_memo_id'] is None):
-            raise ValueError("Missing the required parameter `credit_memo_id` when calling `d_elete_credit_memo`")  # noqa: E501
+            raise ValueError("Missing the required parameter `credit_memo_id` when calling `delete_credit_memo`")  # noqa: E501
 
         collection_formats = {}
 
@@ -128,13 +128,13 @@ class CreditMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_breakdown_credit_memo_by_order(self, credit_memo_number, **kwargs):  # noqa: E501
+    def get_breakdown_credit_memo_by_order(self, credit_memo_number, **kwargs):  # noqa: E501
         """Get breakdown of credit memo by order  # noqa: E501
 
         **Note:** This operation is only available if you have the [Invoice Settlement](https://knowledgecenter.zuora.com/CB_Billing/Invoice_Settlement) and [Order Metrics](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Order_Metrics) features enabled. If you wish to have access to the features, submit a request at [Zuora Global Support](http://support.zuora.com/). If you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders) feature enabled, you already have the Order Metrics feature enabled.   Retrieves a specified credit memo that is broken down by orders. One credit memo item might be broken down into a list of order related items.  You can only use this operation to retrieve breakdowns of credit memos whose source value is `BillRun` or `API`.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_breakdown_credit_memo_by_order(credit_memo_number, async_req=True)
+        >>> thread = api.get_breakdown_credit_memo_by_order(credit_memo_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -146,18 +146,18 @@ class CreditMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_breakdown_credit_memo_by_order_with_http_info(credit_memo_number, **kwargs)  # noqa: E501
+            return self.get_breakdown_credit_memo_by_order_with_http_info(credit_memo_number, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_breakdown_credit_memo_by_order_with_http_info(credit_memo_number, **kwargs)  # noqa: E501
+            (data) = self.get_breakdown_credit_memo_by_order_with_http_info(credit_memo_number, **kwargs)  # noqa: E501
             return data
 
-    def g_et_breakdown_credit_memo_by_order_with_http_info(self, credit_memo_number, **kwargs):  # noqa: E501
+    def get_breakdown_credit_memo_by_order_with_http_info(self, credit_memo_number, **kwargs):  # noqa: E501
         """Get breakdown of credit memo by order  # noqa: E501
 
         **Note:** This operation is only available if you have the [Invoice Settlement](https://knowledgecenter.zuora.com/CB_Billing/Invoice_Settlement) and [Order Metrics](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Order_Metrics) features enabled. If you wish to have access to the features, submit a request at [Zuora Global Support](http://support.zuora.com/). If you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders) feature enabled, you already have the Order Metrics feature enabled.   Retrieves a specified credit memo that is broken down by orders. One credit memo item might be broken down into a list of order related items.  You can only use this operation to retrieve breakdowns of credit memos whose source value is `BillRun` or `API`.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_breakdown_credit_memo_by_order_with_http_info(credit_memo_number, async_req=True)
+        >>> thread = api.get_breakdown_credit_memo_by_order_with_http_info(credit_memo_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -179,14 +179,14 @@ class CreditMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_breakdown_credit_memo_by_order" % key
+                    " to method get_breakdown_credit_memo_by_order" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'credit_memo_number' is set
         if ('credit_memo_number' not in params or
                 params['credit_memo_number'] is None):
-            raise ValueError("Missing the required parameter `credit_memo_number` when calling `g_et_breakdown_credit_memo_by_order`")  # noqa: E501
+            raise ValueError("Missing the required parameter `credit_memo_number` when calling `get_breakdown_credit_memo_by_order`")  # noqa: E501
 
         collection_formats = {}
 
@@ -231,13 +231,13 @@ class CreditMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_credit_memo(self, credit_memo_id, **kwargs):  # noqa: E501
+    def get_credit_memo(self, credit_memo_id, **kwargs):  # noqa: E501
         """Get credit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about a specific credit memo.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_credit_memo(credit_memo_id, async_req=True)
+        >>> thread = api.get_credit_memo(credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -249,18 +249,18 @@ class CreditMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_credit_memo_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
+            return self.get_credit_memo_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_credit_memo_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
+            (data) = self.get_credit_memo_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_credit_memo_with_http_info(self, credit_memo_id, **kwargs):  # noqa: E501
+    def get_credit_memo_with_http_info(self, credit_memo_id, **kwargs):  # noqa: E501
         """Get credit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about a specific credit memo.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_credit_memo_with_http_info(credit_memo_id, async_req=True)
+        >>> thread = api.get_credit_memo_with_http_info(credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -282,14 +282,14 @@ class CreditMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_credit_memo" % key
+                    " to method get_credit_memo" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'credit_memo_id' is set
         if ('credit_memo_id' not in params or
                 params['credit_memo_id'] is None):
-            raise ValueError("Missing the required parameter `credit_memo_id` when calling `g_et_credit_memo`")  # noqa: E501
+            raise ValueError("Missing the required parameter `credit_memo_id` when calling `get_credit_memo`")  # noqa: E501
 
         collection_formats = {}
 
@@ -334,13 +334,13 @@ class CreditMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_credit_memo_item(self, cmitemid, credit_memo_id, **kwargs):  # noqa: E501
+    def get_credit_memo_item(self, cmitemid, credit_memo_id, **kwargs):  # noqa: E501
         """Get credit memo item  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Retrieves the information about a specific item of a credit memo. A credit memo item is a single line item in a credit memo.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_credit_memo_item(cmitemid, credit_memo_id, async_req=True)
+        >>> thread = api.get_credit_memo_item(cmitemid, credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -354,18 +354,18 @@ class CreditMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_credit_memo_item_with_http_info(cmitemid, credit_memo_id, **kwargs)  # noqa: E501
+            return self.get_credit_memo_item_with_http_info(cmitemid, credit_memo_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_credit_memo_item_with_http_info(cmitemid, credit_memo_id, **kwargs)  # noqa: E501
+            (data) = self.get_credit_memo_item_with_http_info(cmitemid, credit_memo_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_credit_memo_item_with_http_info(self, cmitemid, credit_memo_id, **kwargs):  # noqa: E501
+    def get_credit_memo_item_with_http_info(self, cmitemid, credit_memo_id, **kwargs):  # noqa: E501
         """Get credit memo item  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Retrieves the information about a specific item of a credit memo. A credit memo item is a single line item in a credit memo.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_credit_memo_item_with_http_info(cmitemid, credit_memo_id, async_req=True)
+        >>> thread = api.get_credit_memo_item_with_http_info(cmitemid, credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -389,18 +389,18 @@ class CreditMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_credit_memo_item" % key
+                    " to method get_credit_memo_item" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'cmitemid' is set
         if ('cmitemid' not in params or
                 params['cmitemid'] is None):
-            raise ValueError("Missing the required parameter `cmitemid` when calling `g_et_credit_memo_item`")  # noqa: E501
+            raise ValueError("Missing the required parameter `cmitemid` when calling `get_credit_memo_item`")  # noqa: E501
         # verify the required parameter 'credit_memo_id' is set
         if ('credit_memo_id' not in params or
                 params['credit_memo_id'] is None):
-            raise ValueError("Missing the required parameter `credit_memo_id` when calling `g_et_credit_memo_item`")  # noqa: E501
+            raise ValueError("Missing the required parameter `credit_memo_id` when calling `get_credit_memo_item`")  # noqa: E501
 
         collection_formats = {}
 
@@ -449,13 +449,13 @@ class CreditMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_credit_memo_item_part(self, partid, itempartid, credit_memo_id, **kwargs):  # noqa: E501
+    def get_credit_memo_item_part(self, partid, itempartid, credit_memo_id, **kwargs):  # noqa: E501
         """Get credit memo part item  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Retrieves the information about a specific credit memo part item.  A credit memo part item is a single line item in a credit memo part. A credit memo part can consist of several different types of items.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_credit_memo_item_part(partid, itempartid, credit_memo_id, async_req=True)
+        >>> thread = api.get_credit_memo_item_part(partid, itempartid, credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -469,18 +469,18 @@ class CreditMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_credit_memo_item_part_with_http_info(partid, itempartid, credit_memo_id, **kwargs)  # noqa: E501
+            return self.get_credit_memo_item_part_with_http_info(partid, itempartid, credit_memo_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_credit_memo_item_part_with_http_info(partid, itempartid, credit_memo_id, **kwargs)  # noqa: E501
+            (data) = self.get_credit_memo_item_part_with_http_info(partid, itempartid, credit_memo_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_credit_memo_item_part_with_http_info(self, partid, itempartid, credit_memo_id, **kwargs):  # noqa: E501
+    def get_credit_memo_item_part_with_http_info(self, partid, itempartid, credit_memo_id, **kwargs):  # noqa: E501
         """Get credit memo part item  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Retrieves the information about a specific credit memo part item.  A credit memo part item is a single line item in a credit memo part. A credit memo part can consist of several different types of items.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_credit_memo_item_part_with_http_info(partid, itempartid, credit_memo_id, async_req=True)
+        >>> thread = api.get_credit_memo_item_part_with_http_info(partid, itempartid, credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -504,22 +504,22 @@ class CreditMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_credit_memo_item_part" % key
+                    " to method get_credit_memo_item_part" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'partid' is set
         if ('partid' not in params or
                 params['partid'] is None):
-            raise ValueError("Missing the required parameter `partid` when calling `g_et_credit_memo_item_part`")  # noqa: E501
+            raise ValueError("Missing the required parameter `partid` when calling `get_credit_memo_item_part`")  # noqa: E501
         # verify the required parameter 'itempartid' is set
         if ('itempartid' not in params or
                 params['itempartid'] is None):
-            raise ValueError("Missing the required parameter `itempartid` when calling `g_et_credit_memo_item_part`")  # noqa: E501
+            raise ValueError("Missing the required parameter `itempartid` when calling `get_credit_memo_item_part`")  # noqa: E501
         # verify the required parameter 'credit_memo_id' is set
         if ('credit_memo_id' not in params or
                 params['credit_memo_id'] is None):
-            raise ValueError("Missing the required parameter `credit_memo_id` when calling `g_et_credit_memo_item_part`")  # noqa: E501
+            raise ValueError("Missing the required parameter `credit_memo_id` when calling `get_credit_memo_item_part`")  # noqa: E501
 
         collection_formats = {}
 
@@ -568,13 +568,13 @@ class CreditMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_credit_memo_item_parts(self, partid, credit_memo_id, **kwargs):  # noqa: E501
+    def get_credit_memo_item_parts(self, partid, credit_memo_id, **kwargs):  # noqa: E501
         """Get credit memo part items  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about all items of a credit memo part. A credit memo part item is a single line item in a credit memo part. A credit memo part can consist of several different types of items.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_credit_memo_item_parts(partid, credit_memo_id, async_req=True)
+        >>> thread = api.get_credit_memo_item_parts(partid, credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -588,18 +588,18 @@ class CreditMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_credit_memo_item_parts_with_http_info(partid, credit_memo_id, **kwargs)  # noqa: E501
+            return self.get_credit_memo_item_parts_with_http_info(partid, credit_memo_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_credit_memo_item_parts_with_http_info(partid, credit_memo_id, **kwargs)  # noqa: E501
+            (data) = self.get_credit_memo_item_parts_with_http_info(partid, credit_memo_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_credit_memo_item_parts_with_http_info(self, partid, credit_memo_id, **kwargs):  # noqa: E501
+    def get_credit_memo_item_parts_with_http_info(self, partid, credit_memo_id, **kwargs):  # noqa: E501
         """Get credit memo part items  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about all items of a credit memo part. A credit memo part item is a single line item in a credit memo part. A credit memo part can consist of several different types of items.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_credit_memo_item_parts_with_http_info(partid, credit_memo_id, async_req=True)
+        >>> thread = api.get_credit_memo_item_parts_with_http_info(partid, credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -623,21 +623,21 @@ class CreditMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_credit_memo_item_parts" % key
+                    " to method get_credit_memo_item_parts" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'partid' is set
         if ('partid' not in params or
                 params['partid'] is None):
-            raise ValueError("Missing the required parameter `partid` when calling `g_et_credit_memo_item_parts`")  # noqa: E501
+            raise ValueError("Missing the required parameter `partid` when calling `get_credit_memo_item_parts`")  # noqa: E501
         # verify the required parameter 'credit_memo_id' is set
         if ('credit_memo_id' not in params or
                 params['credit_memo_id'] is None):
-            raise ValueError("Missing the required parameter `credit_memo_id` when calling `g_et_credit_memo_item_parts`")  # noqa: E501
+            raise ValueError("Missing the required parameter `credit_memo_id` when calling `get_credit_memo_item_parts`")  # noqa: E501
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_credit_memo_item_parts`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_credit_memo_item_parts`, must be a value less than or equal to `40`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -685,13 +685,13 @@ class CreditMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_credit_memo_items(self, credit_memo_id, **kwargs):  # noqa: E501
+    def get_credit_memo_items(self, credit_memo_id, **kwargs):  # noqa: E501
         """Get credit memo items  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about all items of a credit memo. A credit memo item is a single line item in a credit memo.   ### Filtering  You can use query parameters to restrict the data returned in the response. Each query parameter corresponds to one field in the response body.  If the value of a filterable field is string, you can set the corresponding query parameter to `null` when filtering. Then, you can get the response data with this field value being `null`.   Examples:        - /v1/creditmemos/402890245c7ca371015c7cb40ac30015/items?amount=100      - /v1/creditmemos/402890245c7ca371015c7cb40ac30015/items?amount=100&sort=createdDate        # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_credit_memo_items(credit_memo_id, async_req=True)
+        >>> thread = api.get_credit_memo_items(credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -720,18 +720,18 @@ class CreditMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_credit_memo_items_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
+            return self.get_credit_memo_items_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_credit_memo_items_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
+            (data) = self.get_credit_memo_items_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_credit_memo_items_with_http_info(self, credit_memo_id, **kwargs):  # noqa: E501
+    def get_credit_memo_items_with_http_info(self, credit_memo_id, **kwargs):  # noqa: E501
         """Get credit memo items  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about all items of a credit memo. A credit memo item is a single line item in a credit memo.   ### Filtering  You can use query parameters to restrict the data returned in the response. Each query parameter corresponds to one field in the response body.  If the value of a filterable field is string, you can set the corresponding query parameter to `null` when filtering. Then, you can get the response data with this field value being `null`.   Examples:        - /v1/creditmemos/402890245c7ca371015c7cb40ac30015/items?amount=100      - /v1/creditmemos/402890245c7ca371015c7cb40ac30015/items?amount=100&sort=createdDate        # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_credit_memo_items_with_http_info(credit_memo_id, async_req=True)
+        >>> thread = api.get_credit_memo_items_with_http_info(credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -770,17 +770,17 @@ class CreditMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_credit_memo_items" % key
+                    " to method get_credit_memo_items" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'credit_memo_id' is set
         if ('credit_memo_id' not in params or
                 params['credit_memo_id'] is None):
-            raise ValueError("Missing the required parameter `credit_memo_id` when calling `g_et_credit_memo_items`")  # noqa: E501
+            raise ValueError("Missing the required parameter `credit_memo_id` when calling `get_credit_memo_items`")  # noqa: E501
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_credit_memo_items`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_credit_memo_items`, must be a value less than or equal to `40`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -858,13 +858,13 @@ class CreditMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_credit_memo_part(self, partid, credit_memo_id, **kwargs):  # noqa: E501
+    def get_credit_memo_part(self, partid, credit_memo_id, **kwargs):  # noqa: E501
         """Get credit memo part  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about a specific credit memo part. A credit memo can consist of an unapplied part, and several parts applied to invoices and debit memos.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_credit_memo_part(partid, credit_memo_id, async_req=True)
+        >>> thread = api.get_credit_memo_part(partid, credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -877,18 +877,18 @@ class CreditMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_credit_memo_part_with_http_info(partid, credit_memo_id, **kwargs)  # noqa: E501
+            return self.get_credit_memo_part_with_http_info(partid, credit_memo_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_credit_memo_part_with_http_info(partid, credit_memo_id, **kwargs)  # noqa: E501
+            (data) = self.get_credit_memo_part_with_http_info(partid, credit_memo_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_credit_memo_part_with_http_info(self, partid, credit_memo_id, **kwargs):  # noqa: E501
+    def get_credit_memo_part_with_http_info(self, partid, credit_memo_id, **kwargs):  # noqa: E501
         """Get credit memo part  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about a specific credit memo part. A credit memo can consist of an unapplied part, and several parts applied to invoices and debit memos.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_credit_memo_part_with_http_info(partid, credit_memo_id, async_req=True)
+        >>> thread = api.get_credit_memo_part_with_http_info(partid, credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -911,18 +911,18 @@ class CreditMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_credit_memo_part" % key
+                    " to method get_credit_memo_part" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'partid' is set
         if ('partid' not in params or
                 params['partid'] is None):
-            raise ValueError("Missing the required parameter `partid` when calling `g_et_credit_memo_part`")  # noqa: E501
+            raise ValueError("Missing the required parameter `partid` when calling `get_credit_memo_part`")  # noqa: E501
         # verify the required parameter 'credit_memo_id' is set
         if ('credit_memo_id' not in params or
                 params['credit_memo_id'] is None):
-            raise ValueError("Missing the required parameter `credit_memo_id` when calling `g_et_credit_memo_part`")  # noqa: E501
+            raise ValueError("Missing the required parameter `credit_memo_id` when calling `get_credit_memo_part`")  # noqa: E501
 
         collection_formats = {}
 
@@ -969,13 +969,13 @@ class CreditMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_credit_memo_parts(self, credit_memo_id, **kwargs):  # noqa: E501
+    def get_credit_memo_parts(self, credit_memo_id, **kwargs):  # noqa: E501
         """Get credit memo parts  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about all parts of a credit memo. A credit memo can consist of an unapplied part, and several parts applied to invoices and debit memos. You can use this operation to get all the applied and unapplied portions of a credit memo.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_credit_memo_parts(credit_memo_id, async_req=True)
+        >>> thread = api.get_credit_memo_parts(credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -988,18 +988,18 @@ class CreditMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_credit_memo_parts_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
+            return self.get_credit_memo_parts_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_credit_memo_parts_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
+            (data) = self.get_credit_memo_parts_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_credit_memo_parts_with_http_info(self, credit_memo_id, **kwargs):  # noqa: E501
+    def get_credit_memo_parts_with_http_info(self, credit_memo_id, **kwargs):  # noqa: E501
         """Get credit memo parts  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about all parts of a credit memo. A credit memo can consist of an unapplied part, and several parts applied to invoices and debit memos. You can use this operation to get all the applied and unapplied portions of a credit memo.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_credit_memo_parts_with_http_info(credit_memo_id, async_req=True)
+        >>> thread = api.get_credit_memo_parts_with_http_info(credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1022,17 +1022,17 @@ class CreditMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_credit_memo_parts" % key
+                    " to method get_credit_memo_parts" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'credit_memo_id' is set
         if ('credit_memo_id' not in params or
                 params['credit_memo_id'] is None):
-            raise ValueError("Missing the required parameter `credit_memo_id` when calling `g_et_credit_memo_parts`")  # noqa: E501
+            raise ValueError("Missing the required parameter `credit_memo_id` when calling `get_credit_memo_parts`")  # noqa: E501
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_credit_memo_parts`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_credit_memo_parts`, must be a value less than or equal to `40`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -1078,13 +1078,13 @@ class CreditMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_credit_memos(self, **kwargs):  # noqa: E501
+    def get_credit_memos(self, **kwargs):  # noqa: E501
         """Get credit memos  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about all credit memos.  ### Filtering  You can use query parameters to restrict the data returned in the response. Each query parameter corresponds to one field in the response body.  If the value of a filterable field is string, you can set the corresponding query parameter to `null` when filtering. Then, you can get the response data with this field value being `null`.     Examples:  - /v1/creditmemos?status=Processed  - /v1/creditmemos?referredInvoiceId=null&status=Draft  - /v1/creditmemos?status=Processed&type=External&sort=+number   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_credit_memos(async_req=True)
+        >>> thread = api.get_credit_memos(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1117,18 +1117,18 @@ class CreditMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_credit_memos_with_http_info(**kwargs)  # noqa: E501
+            return self.get_credit_memos_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_credit_memos_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.get_credit_memos_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def g_et_credit_memos_with_http_info(self, **kwargs):  # noqa: E501
+    def get_credit_memos_with_http_info(self, **kwargs):  # noqa: E501
         """Get credit memos  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about all credit memos.  ### Filtering  You can use query parameters to restrict the data returned in the response. Each query parameter corresponds to one field in the response body.  If the value of a filterable field is string, you can set the corresponding query parameter to `null` when filtering. Then, you can get the response data with this field value being `null`.     Examples:  - /v1/creditmemos?status=Processed  - /v1/creditmemos?referredInvoiceId=null&status=Draft  - /v1/creditmemos?status=Processed&type=External&sort=+number   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_credit_memos_with_http_info(async_req=True)
+        >>> thread = api.get_credit_memos_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1171,13 +1171,13 @@ class CreditMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_credit_memos" % key
+                    " to method get_credit_memos" % key
                 )
             params[key] = val
         del params['kwargs']
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_credit_memos`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_credit_memos`, must be a value less than or equal to `40`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -1263,13 +1263,13 @@ class CreditMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_taxation_items_of_credit_memo_item(self, cmitemid, credit_memo_id, **kwargs):  # noqa: E501
+    def get_taxation_items_of_credit_memo_item(self, cmitemid, credit_memo_id, **kwargs):  # noqa: E501
         """Get taxation items of credit memo item  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Retrieves information about the taxation items of a specific credit memo item.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_taxation_items_of_credit_memo_item(cmitemid, credit_memo_id, async_req=True)
+        >>> thread = api.get_taxation_items_of_credit_memo_item(cmitemid, credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1284,18 +1284,18 @@ class CreditMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_taxation_items_of_credit_memo_item_with_http_info(cmitemid, credit_memo_id, **kwargs)  # noqa: E501
+            return self.get_taxation_items_of_credit_memo_item_with_http_info(cmitemid, credit_memo_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_taxation_items_of_credit_memo_item_with_http_info(cmitemid, credit_memo_id, **kwargs)  # noqa: E501
+            (data) = self.get_taxation_items_of_credit_memo_item_with_http_info(cmitemid, credit_memo_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_taxation_items_of_credit_memo_item_with_http_info(self, cmitemid, credit_memo_id, **kwargs):  # noqa: E501
+    def get_taxation_items_of_credit_memo_item_with_http_info(self, cmitemid, credit_memo_id, **kwargs):  # noqa: E501
         """Get taxation items of credit memo item  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Retrieves information about the taxation items of a specific credit memo item.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_taxation_items_of_credit_memo_item_with_http_info(cmitemid, credit_memo_id, async_req=True)
+        >>> thread = api.get_taxation_items_of_credit_memo_item_with_http_info(cmitemid, credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1320,23 +1320,23 @@ class CreditMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_taxation_items_of_credit_memo_item" % key
+                    " to method get_taxation_items_of_credit_memo_item" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'cmitemid' is set
         if ('cmitemid' not in params or
                 params['cmitemid'] is None):
-            raise ValueError("Missing the required parameter `cmitemid` when calling `g_et_taxation_items_of_credit_memo_item`")  # noqa: E501
+            raise ValueError("Missing the required parameter `cmitemid` when calling `get_taxation_items_of_credit_memo_item`")  # noqa: E501
         # verify the required parameter 'credit_memo_id' is set
         if ('credit_memo_id' not in params or
                 params['credit_memo_id'] is None):
-            raise ValueError("Missing the required parameter `credit_memo_id` when calling `g_et_taxation_items_of_credit_memo_item`")  # noqa: E501
+            raise ValueError("Missing the required parameter `credit_memo_id` when calling `get_taxation_items_of_credit_memo_item`")  # noqa: E501
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_taxation_items_of_credit_memo_item`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_taxation_items_of_credit_memo_item`, must be a value less than or equal to `40`")  # noqa: E501
         if 'page' in params and params['page'] < 1:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page` when calling `g_et_taxation_items_of_credit_memo_item`, must be a value greater than or equal to `1`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page` when calling `get_taxation_items_of_credit_memo_item`, must be a value greater than or equal to `1`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -1386,13 +1386,13 @@ class CreditMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_credit_memo_from_prpc(self, body, **kwargs):  # noqa: E501
+    def post_credit_memo_from_prpc(self, body, **kwargs):  # noqa: E501
         """Create credit memo from charge  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Creates an ad-hoc credit memo from a product rate plan charge. Zuora supports the creation of credit memos from any type of product rate plan charge. The charges can also have any amount and any charge model, except for discout charge models.   You can create a credit memo only if you have the user permission. See [Billing Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_credit_memo_from_prpc(body, async_req=True)
+        >>> thread = api.post_credit_memo_from_prpc(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1405,18 +1405,18 @@ class CreditMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_credit_memo_from_prpc_with_http_info(body, **kwargs)  # noqa: E501
+            return self.post_credit_memo_from_prpc_with_http_info(body, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_credit_memo_from_prpc_with_http_info(body, **kwargs)  # noqa: E501
+            (data) = self.post_credit_memo_from_prpc_with_http_info(body, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_credit_memo_from_prpc_with_http_info(self, body, **kwargs):  # noqa: E501
+    def post_credit_memo_from_prpc_with_http_info(self, body, **kwargs):  # noqa: E501
         """Create credit memo from charge  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Creates an ad-hoc credit memo from a product rate plan charge. Zuora supports the creation of credit memos from any type of product rate plan charge. The charges can also have any amount and any charge model, except for discout charge models.   You can create a credit memo only if you have the user permission. See [Billing Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_credit_memo_from_prpc_with_http_info(body, async_req=True)
+        >>> thread = api.post_credit_memo_from_prpc_with_http_info(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1439,14 +1439,14 @@ class CreditMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_credit_memo_from_prpc" % key
+                    " to method post_credit_memo_from_prpc" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ost_credit_memo_from_prpc`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `post_credit_memo_from_prpc`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1493,13 +1493,13 @@ class CreditMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_credit_memo_pdf(self, credit_memo_id, **kwargs):  # noqa: E501
+    def post_credit_memo_pdf(self, credit_memo_id, **kwargs):  # noqa: E501
         """Create credit memo PDF  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Creates a PDF file for a specified credit memo. To access the generated PDF file, you can download it by clicking **View PDF** on the detailed credit memo page through the Zuora UI.  This REST API operation can be used only if you have the Billing user permission \"Regenerate PDF\" enabled.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_credit_memo_pdf(credit_memo_id, async_req=True)
+        >>> thread = api.post_credit_memo_pdf(credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1511,18 +1511,18 @@ class CreditMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_credit_memo_pdf_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
+            return self.post_credit_memo_pdf_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_credit_memo_pdf_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
+            (data) = self.post_credit_memo_pdf_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_credit_memo_pdf_with_http_info(self, credit_memo_id, **kwargs):  # noqa: E501
+    def post_credit_memo_pdf_with_http_info(self, credit_memo_id, **kwargs):  # noqa: E501
         """Create credit memo PDF  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Creates a PDF file for a specified credit memo. To access the generated PDF file, you can download it by clicking **View PDF** on the detailed credit memo page through the Zuora UI.  This REST API operation can be used only if you have the Billing user permission \"Regenerate PDF\" enabled.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_credit_memo_pdf_with_http_info(credit_memo_id, async_req=True)
+        >>> thread = api.post_credit_memo_pdf_with_http_info(credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1544,14 +1544,14 @@ class CreditMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_credit_memo_pdf" % key
+                    " to method post_credit_memo_pdf" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'credit_memo_id' is set
         if ('credit_memo_id' not in params or
                 params['credit_memo_id'] is None):
-            raise ValueError("Missing the required parameter `credit_memo_id` when calling `p_ost_credit_memo_pdf`")  # noqa: E501
+            raise ValueError("Missing the required parameter `credit_memo_id` when calling `post_credit_memo_pdf`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1596,13 +1596,13 @@ class CreditMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_email_credit_memo(self, request, credit_memo_id, **kwargs):  # noqa: E501
+    def post_email_credit_memo(self, request, credit_memo_id, **kwargs):  # noqa: E501
         """Email credit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Sends a posted credit memo to the specified email addresses manually.    ## Notes   - You must activate the **Email Credit Memo | Manually email Credit Memo** notification before emailing credit memos. To include the credit memo PDF in the email, select the **Include Credit Memo PDF** check box in the **Edit notification** dialog from the Zuora UI. See [Create and Edit Notifications](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/Notifications/C_Create_Notifications#section_2) for more information.     - Zuora sends the email messages based on the email template you set. You can set the email template to use in the **Delivery Options** panel of the **Edit notification** dialog from the Zuora UI. By default, the **Manual Email for Credit Memo Default Template** template is used. See [Create and Edit Email Templates](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/Notifications/Create_Email_Templates) for more information.     - The credit memos are sent only to the work email addresses or personal email addresses of the Bill To contact if the following conditions are all met:      * The `useEmailTemplateSetting` field is set to `false`.     * The email addresses are not specified in the `emailAddresses` field.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_email_credit_memo(request, credit_memo_id, async_req=True)
+        >>> thread = api.post_email_credit_memo(request, credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1615,18 +1615,18 @@ class CreditMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_email_credit_memo_with_http_info(request, credit_memo_id, **kwargs)  # noqa: E501
+            return self.post_email_credit_memo_with_http_info(request, credit_memo_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_email_credit_memo_with_http_info(request, credit_memo_id, **kwargs)  # noqa: E501
+            (data) = self.post_email_credit_memo_with_http_info(request, credit_memo_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_email_credit_memo_with_http_info(self, request, credit_memo_id, **kwargs):  # noqa: E501
+    def post_email_credit_memo_with_http_info(self, request, credit_memo_id, **kwargs):  # noqa: E501
         """Email credit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Sends a posted credit memo to the specified email addresses manually.    ## Notes   - You must activate the **Email Credit Memo | Manually email Credit Memo** notification before emailing credit memos. To include the credit memo PDF in the email, select the **Include Credit Memo PDF** check box in the **Edit notification** dialog from the Zuora UI. See [Create and Edit Notifications](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/Notifications/C_Create_Notifications#section_2) for more information.     - Zuora sends the email messages based on the email template you set. You can set the email template to use in the **Delivery Options** panel of the **Edit notification** dialog from the Zuora UI. By default, the **Manual Email for Credit Memo Default Template** template is used. See [Create and Edit Email Templates](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/Notifications/Create_Email_Templates) for more information.     - The credit memos are sent only to the work email addresses or personal email addresses of the Bill To contact if the following conditions are all met:      * The `useEmailTemplateSetting` field is set to `false`.     * The email addresses are not specified in the `emailAddresses` field.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_email_credit_memo_with_http_info(request, credit_memo_id, async_req=True)
+        >>> thread = api.post_email_credit_memo_with_http_info(request, credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1649,18 +1649,18 @@ class CreditMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_email_credit_memo" % key
+                    " to method post_email_credit_memo" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ost_email_credit_memo`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `post_email_credit_memo`")  # noqa: E501
         # verify the required parameter 'credit_memo_id' is set
         if ('credit_memo_id' not in params or
                 params['credit_memo_id'] is None):
-            raise ValueError("Missing the required parameter `credit_memo_id` when calling `p_ost_email_credit_memo`")  # noqa: E501
+            raise ValueError("Missing the required parameter `credit_memo_id` when calling `post_email_credit_memo`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1707,13 +1707,13 @@ class CreditMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_refund_credit_memo(self, body, creditmemo_id, **kwargs):  # noqa: E501
+    def post_refund_credit_memo(self, body, creditmemo_id, **kwargs):  # noqa: E501
         """Refund credit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Refunds a full or partial posted credit memo to your customers. Only the amount of unapplied part could be refunded.   You can refund a credit memo only if you have the user permission. See [Billing Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_refund_credit_memo(body, creditmemo_id, async_req=True)
+        >>> thread = api.post_refund_credit_memo(body, creditmemo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1726,18 +1726,18 @@ class CreditMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_refund_credit_memo_with_http_info(body, creditmemo_id, **kwargs)  # noqa: E501
+            return self.post_refund_credit_memo_with_http_info(body, creditmemo_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_refund_credit_memo_with_http_info(body, creditmemo_id, **kwargs)  # noqa: E501
+            (data) = self.post_refund_credit_memo_with_http_info(body, creditmemo_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_refund_credit_memo_with_http_info(self, body, creditmemo_id, **kwargs):  # noqa: E501
+    def post_refund_credit_memo_with_http_info(self, body, creditmemo_id, **kwargs):  # noqa: E501
         """Refund credit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Refunds a full or partial posted credit memo to your customers. Only the amount of unapplied part could be refunded.   You can refund a credit memo only if you have the user permission. See [Billing Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_refund_credit_memo_with_http_info(body, creditmemo_id, async_req=True)
+        >>> thread = api.post_refund_credit_memo_with_http_info(body, creditmemo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1760,18 +1760,18 @@ class CreditMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_refund_credit_memo" % key
+                    " to method post_refund_credit_memo" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ost_refund_credit_memo`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `post_refund_credit_memo`")  # noqa: E501
         # verify the required parameter 'creditmemo_id' is set
         if ('creditmemo_id' not in params or
                 params['creditmemo_id'] is None):
-            raise ValueError("Missing the required parameter `creditmemo_id` when calling `p_ost_refund_credit_memo`")  # noqa: E501
+            raise ValueError("Missing the required parameter `creditmemo_id` when calling `post_refund_credit_memo`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1818,13 +1818,13 @@ class CreditMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_request_breakdown_credit_memo_items_by_order(self, body, **kwargs):  # noqa: E501
+    def post_request_breakdown_credit_memo_items_by_order(self, body, **kwargs):  # noqa: E501
         """Request breakdown of credit memo items by order  # noqa: E501
 
         **Note:** This operation is only available if you have the [Invoice Settlement](https://knowledgecenter.zuora.com/CB_Billing/Invoice_Settlement) and [Order Metrics](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Order_Metrics) features enabled. If you wish to have access to the features, submit a request at [Zuora Global Support](http://support.zuora.com/). If you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders) feature enabled, you already have the Order Metrics feature enabled.   Retrieve specified credit memo items which are broken down by orders. One credit memo item might be broken down into a list of order related items.  You can only use this operation to retrieve breakdowns of credit memos whose source value is `BillRun` or `API`.  The maximum number of credit memo items to retrieve is 1000.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_request_breakdown_credit_memo_items_by_order(body, async_req=True)
+        >>> thread = api.post_request_breakdown_credit_memo_items_by_order(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1836,18 +1836,18 @@ class CreditMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_request_breakdown_credit_memo_items_by_order_with_http_info(body, **kwargs)  # noqa: E501
+            return self.post_request_breakdown_credit_memo_items_by_order_with_http_info(body, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_request_breakdown_credit_memo_items_by_order_with_http_info(body, **kwargs)  # noqa: E501
+            (data) = self.post_request_breakdown_credit_memo_items_by_order_with_http_info(body, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_request_breakdown_credit_memo_items_by_order_with_http_info(self, body, **kwargs):  # noqa: E501
+    def post_request_breakdown_credit_memo_items_by_order_with_http_info(self, body, **kwargs):  # noqa: E501
         """Request breakdown of credit memo items by order  # noqa: E501
 
         **Note:** This operation is only available if you have the [Invoice Settlement](https://knowledgecenter.zuora.com/CB_Billing/Invoice_Settlement) and [Order Metrics](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AA_Overview_of_Orders#Order_Metrics) features enabled. If you wish to have access to the features, submit a request at [Zuora Global Support](http://support.zuora.com/). If you have the [Orders](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders) feature enabled, you already have the Order Metrics feature enabled.   Retrieve specified credit memo items which are broken down by orders. One credit memo item might be broken down into a list of order related items.  You can only use this operation to retrieve breakdowns of credit memos whose source value is `BillRun` or `API`.  The maximum number of credit memo items to retrieve is 1000.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_request_breakdown_credit_memo_items_by_order_with_http_info(body, async_req=True)
+        >>> thread = api.post_request_breakdown_credit_memo_items_by_order_with_http_info(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1869,14 +1869,14 @@ class CreditMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_request_breakdown_credit_memo_items_by_order" % key
+                    " to method post_request_breakdown_credit_memo_items_by_order" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ost_request_breakdown_credit_memo_items_by_order`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `post_request_breakdown_credit_memo_items_by_order`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1921,13 +1921,13 @@ class CreditMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ostcm_taxation_items(self, credit_memo_id, body, **kwargs):  # noqa: E501
+    def postcm_taxation_items(self, credit_memo_id, body, **kwargs):  # noqa: E501
         """Create taxation items for credit memo  # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Creates taxation items for a credit memo.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ostcm_taxation_items(credit_memo_id, body, async_req=True)
+        >>> thread = api.postcm_taxation_items(credit_memo_id, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1940,18 +1940,18 @@ class CreditMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ostcm_taxation_items_with_http_info(credit_memo_id, body, **kwargs)  # noqa: E501
+            return self.postcm_taxation_items_with_http_info(credit_memo_id, body, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ostcm_taxation_items_with_http_info(credit_memo_id, body, **kwargs)  # noqa: E501
+            (data) = self.postcm_taxation_items_with_http_info(credit_memo_id, body, **kwargs)  # noqa: E501
             return data
 
-    def p_ostcm_taxation_items_with_http_info(self, credit_memo_id, body, **kwargs):  # noqa: E501
+    def postcm_taxation_items_with_http_info(self, credit_memo_id, body, **kwargs):  # noqa: E501
         """Create taxation items for credit memo  # noqa: E501
 
         **Note:** This feature is only available if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Creates taxation items for a credit memo.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ostcm_taxation_items_with_http_info(credit_memo_id, body, async_req=True)
+        >>> thread = api.postcm_taxation_items_with_http_info(credit_memo_id, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1974,18 +1974,18 @@ class CreditMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ostcm_taxation_items" % key
+                    " to method postcm_taxation_items" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'credit_memo_id' is set
         if ('credit_memo_id' not in params or
                 params['credit_memo_id'] is None):
-            raise ValueError("Missing the required parameter `credit_memo_id` when calling `p_ostcm_taxation_items`")  # noqa: E501
+            raise ValueError("Missing the required parameter `credit_memo_id` when calling `postcm_taxation_items`")  # noqa: E501
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ostcm_taxation_items`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `postcm_taxation_items`")  # noqa: E501
 
         collection_formats = {}
 
@@ -2032,13 +2032,13 @@ class CreditMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_apply_credit_memo(self, body, credit_memo_id, **kwargs):  # noqa: E501
+    def put_apply_credit_memo(self, body, credit_memo_id, **kwargs):  # noqa: E501
         """Apply credit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Applies a posted credit memo to one or more invoices and debit memos.   You can apply a credit memo to an invoice or a debit memo only if you have the user permission. See [Billing Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles) for more information.  When applying a credit memo, the total number of invoices and debit memos that the credit memo will apply to must be less than or equal to 1,000.  If the Proration application rule is used, when applying credit memos, the following quantity must be less than or equal to 10,000:   (number of invoice items + number of debit memo items) * number of credit memo items  Otherwise, the First In First Out rule will be used instead of the Proration rule.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_apply_credit_memo(body, credit_memo_id, async_req=True)
+        >>> thread = api.put_apply_credit_memo(body, credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2051,18 +2051,18 @@ class CreditMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_apply_credit_memo_with_http_info(body, credit_memo_id, **kwargs)  # noqa: E501
+            return self.put_apply_credit_memo_with_http_info(body, credit_memo_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_apply_credit_memo_with_http_info(body, credit_memo_id, **kwargs)  # noqa: E501
+            (data) = self.put_apply_credit_memo_with_http_info(body, credit_memo_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_apply_credit_memo_with_http_info(self, body, credit_memo_id, **kwargs):  # noqa: E501
+    def put_apply_credit_memo_with_http_info(self, body, credit_memo_id, **kwargs):  # noqa: E501
         """Apply credit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Applies a posted credit memo to one or more invoices and debit memos.   You can apply a credit memo to an invoice or a debit memo only if you have the user permission. See [Billing Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles) for more information.  When applying a credit memo, the total number of invoices and debit memos that the credit memo will apply to must be less than or equal to 1,000.  If the Proration application rule is used, when applying credit memos, the following quantity must be less than or equal to 10,000:   (number of invoice items + number of debit memo items) * number of credit memo items  Otherwise, the First In First Out rule will be used instead of the Proration rule.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_apply_credit_memo_with_http_info(body, credit_memo_id, async_req=True)
+        >>> thread = api.put_apply_credit_memo_with_http_info(body, credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2085,18 +2085,18 @@ class CreditMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_apply_credit_memo" % key
+                    " to method put_apply_credit_memo" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ut_apply_credit_memo`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `put_apply_credit_memo`")  # noqa: E501
         # verify the required parameter 'credit_memo_id' is set
         if ('credit_memo_id' not in params or
                 params['credit_memo_id'] is None):
-            raise ValueError("Missing the required parameter `credit_memo_id` when calling `p_ut_apply_credit_memo`")  # noqa: E501
+            raise ValueError("Missing the required parameter `credit_memo_id` when calling `put_apply_credit_memo`")  # noqa: E501
 
         collection_formats = {}
 
@@ -2143,13 +2143,13 @@ class CreditMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_cancel_credit_memo(self, credit_memo_id, **kwargs):  # noqa: E501
+    def put_cancel_credit_memo(self, credit_memo_id, **kwargs):  # noqa: E501
         """Cancel credit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Cancels a credit memo. Only credit memos with the Draft status can be cancelled.   You can cancel a credit memo only if you have the user permission. See [Billing Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_cancel_credit_memo(credit_memo_id, async_req=True)
+        >>> thread = api.put_cancel_credit_memo(credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2161,18 +2161,18 @@ class CreditMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_cancel_credit_memo_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
+            return self.put_cancel_credit_memo_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_cancel_credit_memo_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
+            (data) = self.put_cancel_credit_memo_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_cancel_credit_memo_with_http_info(self, credit_memo_id, **kwargs):  # noqa: E501
+    def put_cancel_credit_memo_with_http_info(self, credit_memo_id, **kwargs):  # noqa: E501
         """Cancel credit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Cancels a credit memo. Only credit memos with the Draft status can be cancelled.   You can cancel a credit memo only if you have the user permission. See [Billing Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_cancel_credit_memo_with_http_info(credit_memo_id, async_req=True)
+        >>> thread = api.put_cancel_credit_memo_with_http_info(credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2194,14 +2194,14 @@ class CreditMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_cancel_credit_memo" % key
+                    " to method put_cancel_credit_memo" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'credit_memo_id' is set
         if ('credit_memo_id' not in params or
                 params['credit_memo_id'] is None):
-            raise ValueError("Missing the required parameter `credit_memo_id` when calling `p_ut_cancel_credit_memo`")  # noqa: E501
+            raise ValueError("Missing the required parameter `credit_memo_id` when calling `put_cancel_credit_memo`")  # noqa: E501
 
         collection_formats = {}
 
@@ -2246,13 +2246,13 @@ class CreditMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_post_credit_memo(self, credit_memo_id, **kwargs):  # noqa: E501
+    def put_post_credit_memo(self, credit_memo_id, **kwargs):  # noqa: E501
         """Post credit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Posts a credit memo to activate it. You can post credit memos only if you have the [Billing permissions](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles#Billing_Permissions).   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_post_credit_memo(credit_memo_id, async_req=True)
+        >>> thread = api.put_post_credit_memo(credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2264,18 +2264,18 @@ class CreditMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_post_credit_memo_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
+            return self.put_post_credit_memo_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_post_credit_memo_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
+            (data) = self.put_post_credit_memo_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_post_credit_memo_with_http_info(self, credit_memo_id, **kwargs):  # noqa: E501
+    def put_post_credit_memo_with_http_info(self, credit_memo_id, **kwargs):  # noqa: E501
         """Post credit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Posts a credit memo to activate it. You can post credit memos only if you have the [Billing permissions](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles#Billing_Permissions).   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_post_credit_memo_with_http_info(credit_memo_id, async_req=True)
+        >>> thread = api.put_post_credit_memo_with_http_info(credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2297,14 +2297,14 @@ class CreditMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_post_credit_memo" % key
+                    " to method put_post_credit_memo" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'credit_memo_id' is set
         if ('credit_memo_id' not in params or
                 params['credit_memo_id'] is None):
-            raise ValueError("Missing the required parameter `credit_memo_id` when calling `p_ut_post_credit_memo`")  # noqa: E501
+            raise ValueError("Missing the required parameter `credit_memo_id` when calling `put_post_credit_memo`")  # noqa: E501
 
         collection_formats = {}
 
@@ -2349,13 +2349,13 @@ class CreditMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_unapply_credit_memo(self, body, credit_memo_id, **kwargs):  # noqa: E501
+    def put_unapply_credit_memo(self, body, credit_memo_id, **kwargs):  # noqa: E501
         """Unapply credit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Unapplies an applied credit memo from one or more invoices and debit memos. The full applied amount from invoices and debit memos is transferred into the unapplied amount of the credit memo.   You can unapply a credit memo from an invoice or a debit memo only if you have the user permission. See [Billing Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles) for more information.  When unapplying a credit memo, the total number of invoices and debit memos that the credit memo will be unapplied from must be less than or equal to 1,000.  If the Proration application rule is used, when unapplying credit memos, the following quantity must be less than or equal to 10,000:   (number of invoice items + number of debit memo items) * number of credit memo items  Otherwise, the First In First Out rule will be used instead of the Proration rule.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_unapply_credit_memo(body, credit_memo_id, async_req=True)
+        >>> thread = api.put_unapply_credit_memo(body, credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2368,18 +2368,18 @@ class CreditMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_unapply_credit_memo_with_http_info(body, credit_memo_id, **kwargs)  # noqa: E501
+            return self.put_unapply_credit_memo_with_http_info(body, credit_memo_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_unapply_credit_memo_with_http_info(body, credit_memo_id, **kwargs)  # noqa: E501
+            (data) = self.put_unapply_credit_memo_with_http_info(body, credit_memo_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_unapply_credit_memo_with_http_info(self, body, credit_memo_id, **kwargs):  # noqa: E501
+    def put_unapply_credit_memo_with_http_info(self, body, credit_memo_id, **kwargs):  # noqa: E501
         """Unapply credit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Unapplies an applied credit memo from one or more invoices and debit memos. The full applied amount from invoices and debit memos is transferred into the unapplied amount of the credit memo.   You can unapply a credit memo from an invoice or a debit memo only if you have the user permission. See [Billing Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles) for more information.  When unapplying a credit memo, the total number of invoices and debit memos that the credit memo will be unapplied from must be less than or equal to 1,000.  If the Proration application rule is used, when unapplying credit memos, the following quantity must be less than or equal to 10,000:   (number of invoice items + number of debit memo items) * number of credit memo items  Otherwise, the First In First Out rule will be used instead of the Proration rule.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_unapply_credit_memo_with_http_info(body, credit_memo_id, async_req=True)
+        >>> thread = api.put_unapply_credit_memo_with_http_info(body, credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2402,18 +2402,18 @@ class CreditMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_unapply_credit_memo" % key
+                    " to method put_unapply_credit_memo" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ut_unapply_credit_memo`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `put_unapply_credit_memo`")  # noqa: E501
         # verify the required parameter 'credit_memo_id' is set
         if ('credit_memo_id' not in params or
                 params['credit_memo_id'] is None):
-            raise ValueError("Missing the required parameter `credit_memo_id` when calling `p_ut_unapply_credit_memo`")  # noqa: E501
+            raise ValueError("Missing the required parameter `credit_memo_id` when calling `put_unapply_credit_memo`")  # noqa: E501
 
         collection_formats = {}
 
@@ -2460,13 +2460,13 @@ class CreditMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_unpost_credit_memo(self, credit_memo_id, **kwargs):  # noqa: E501
+    def put_unpost_credit_memo(self, credit_memo_id, **kwargs):  # noqa: E501
         """Unpost credit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Unposts a credit memo that is in Posted status. If a credit memo has been applied or refunded, you are not allowed to unpost it. After a credit memo is unposted, its status becomes Draft.   You can unpost credit memos only if you have the [Billing permissions](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles#Billing_Permissions).   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_unpost_credit_memo(credit_memo_id, async_req=True)
+        >>> thread = api.put_unpost_credit_memo(credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2478,18 +2478,18 @@ class CreditMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_unpost_credit_memo_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
+            return self.put_unpost_credit_memo_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_unpost_credit_memo_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
+            (data) = self.put_unpost_credit_memo_with_http_info(credit_memo_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_unpost_credit_memo_with_http_info(self, credit_memo_id, **kwargs):  # noqa: E501
+    def put_unpost_credit_memo_with_http_info(self, credit_memo_id, **kwargs):  # noqa: E501
         """Unpost credit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Unposts a credit memo that is in Posted status. If a credit memo has been applied or refunded, you are not allowed to unpost it. After a credit memo is unposted, its status becomes Draft.   You can unpost credit memos only if you have the [Billing permissions](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles#Billing_Permissions).   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_unpost_credit_memo_with_http_info(credit_memo_id, async_req=True)
+        >>> thread = api.put_unpost_credit_memo_with_http_info(credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2511,14 +2511,14 @@ class CreditMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_unpost_credit_memo" % key
+                    " to method put_unpost_credit_memo" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'credit_memo_id' is set
         if ('credit_memo_id' not in params or
                 params['credit_memo_id'] is None):
-            raise ValueError("Missing the required parameter `credit_memo_id` when calling `p_ut_unpost_credit_memo`")  # noqa: E501
+            raise ValueError("Missing the required parameter `credit_memo_id` when calling `put_unpost_credit_memo`")  # noqa: E501
 
         collection_formats = {}
 
@@ -2563,13 +2563,13 @@ class CreditMemosApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_update_credit_memo(self, body, credit_memo_id, **kwargs):  # noqa: E501
+    def put_update_credit_memo(self, body, credit_memo_id, **kwargs):  # noqa: E501
         """Update credit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Updates the basic and finance information about a credit memo. Currently, Zuora supports updating tax-exclusive memo items, but does not support updating tax-inclusive memo items.   If the amount of a memo item is updated, the tax will be recalculated in the following conditions:   - The memo is created from a product rate plan charge and you use Avalara to calculate the tax.   - The memo is created from an invoice and you use Avalara or Zuora Tax to calculate the tax.  You can update a credit memo only if you have the user permission. See [Billing Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_update_credit_memo(body, credit_memo_id, async_req=True)
+        >>> thread = api.put_update_credit_memo(body, credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2582,18 +2582,18 @@ class CreditMemosApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_update_credit_memo_with_http_info(body, credit_memo_id, **kwargs)  # noqa: E501
+            return self.put_update_credit_memo_with_http_info(body, credit_memo_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_update_credit_memo_with_http_info(body, credit_memo_id, **kwargs)  # noqa: E501
+            (data) = self.put_update_credit_memo_with_http_info(body, credit_memo_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_update_credit_memo_with_http_info(self, body, credit_memo_id, **kwargs):  # noqa: E501
+    def put_update_credit_memo_with_http_info(self, body, credit_memo_id, **kwargs):  # noqa: E501
         """Update credit memo  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Updates the basic and finance information about a credit memo. Currently, Zuora supports updating tax-exclusive memo items, but does not support updating tax-inclusive memo items.   If the amount of a memo item is updated, the tax will be recalculated in the following conditions:   - The memo is created from a product rate plan charge and you use Avalara to calculate the tax.   - The memo is created from an invoice and you use Avalara or Zuora Tax to calculate the tax.  You can update a credit memo only if you have the user permission. See [Billing Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/d_Billing_Roles) for more information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_update_credit_memo_with_http_info(body, credit_memo_id, async_req=True)
+        >>> thread = api.put_update_credit_memo_with_http_info(body, credit_memo_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2616,18 +2616,18 @@ class CreditMemosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_update_credit_memo" % key
+                    " to method put_update_credit_memo" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ut_update_credit_memo`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `put_update_credit_memo`")  # noqa: E501
         # verify the required parameter 'credit_memo_id' is set
         if ('credit_memo_id' not in params or
                 params['credit_memo_id'] is None):
-            raise ValueError("Missing the required parameter `credit_memo_id` when calling `p_ut_update_credit_memo`")  # noqa: E501
+            raise ValueError("Missing the required parameter `credit_memo_id` when calling `put_update_credit_memo`")  # noqa: E501
 
         collection_formats = {}
 

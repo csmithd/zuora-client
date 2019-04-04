@@ -29,141 +29,141 @@ class TestOrdersApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_d_elete_order(self):
-        """Test case for d_elete_order
+    def test_delete_order(self):
+        """Test case for delete_order
 
         Delete order  # noqa: E501
         """
         pass
 
-    def test_g_et_all_orders(self):
-        """Test case for g_et_all_orders
+    def test_get_all_orders(self):
+        """Test case for get_all_orders
 
         Get all orders  # noqa: E501
         """
         pass
 
-    def test_g_et_breakdown_invoice_by_order(self):
-        """Test case for g_et_breakdown_invoice_by_order
+    def test_get_breakdown_invoice_by_order(self):
+        """Test case for get_breakdown_invoice_by_order
 
         Get breakdown of invoice by order  # noqa: E501
         """
         pass
 
-    def test_g_et_job_status_and_response(self):
-        """Test case for g_et_job_status_and_response
+    def test_get_job_status_and_response(self):
+        """Test case for get_job_status_and_response
 
         Get job status and response  # noqa: E501
         """
         pass
 
-    def test_g_et_order(self):
-        """Test case for g_et_order
+    def test_get_order(self):
+        """Test case for get_order
 
         Get an order  # noqa: E501
         """
         pass
 
-    def test_g_et_order_billing_info(self):
-        """Test case for g_et_order_billing_info
+    def test_get_order_billing_info(self):
+        """Test case for get_order_billing_info
 
         Get billing information for order  # noqa: E501
         """
         pass
 
-    def test_g_et_order_metricsfor_evergreen_subscription(self):
-        """Test case for g_et_order_metricsfor_evergreen_subscription
+    def test_get_order_metricsfor_evergreen_subscription(self):
+        """Test case for get_order_metricsfor_evergreen_subscription
 
         Get order metrics for evergreen subscription  # noqa: E501
         """
         pass
 
-    def test_g_et_order_rated_result(self):
-        """Test case for g_et_order_rated_result
+    def test_get_order_rated_result(self):
+        """Test case for get_order_rated_result
 
         Get rated result for order  # noqa: E501
         """
         pass
 
-    def test_g_et_orders_by_invoice_owner(self):
-        """Test case for g_et_orders_by_invoice_owner
+    def test_get_orders_by_invoice_owner(self):
+        """Test case for get_orders_by_invoice_owner
 
         Get orders by invoice owner  # noqa: E501
         """
         pass
 
-    def test_g_et_orders_by_subscription_number(self):
-        """Test case for g_et_orders_by_subscription_number
+    def test_get_orders_by_subscription_number(self):
+        """Test case for get_orders_by_subscription_number
 
         Get orders by subscription number  # noqa: E501
         """
         pass
 
-    def test_g_et_orders_by_subscription_owner(self):
-        """Test case for g_et_orders_by_subscription_owner
+    def test_get_orders_by_subscription_owner(self):
+        """Test case for get_orders_by_subscription_owner
 
         Get orders by subscription owner  # noqa: E501
         """
         pass
 
-    def test_g_et_subscription_term_info(self):
-        """Test case for g_et_subscription_term_info
+    def test_get_subscription_term_info(self):
+        """Test case for get_subscription_term_info
 
         Get term information for subscription  # noqa: E501
         """
         pass
 
-    def test_p_ost_create_order_asynchronously(self):
-        """Test case for p_ost_create_order_asynchronously
+    def test_post_create_order_asynchronously(self):
+        """Test case for post_create_order_asynchronously
 
         Create order asynchronously  # noqa: E501
         """
         pass
 
-    def test_p_ost_order(self):
-        """Test case for p_ost_order
+    def test_post_order(self):
+        """Test case for post_order
 
         Create order  # noqa: E501
         """
         pass
 
-    def test_p_ost_preview_order(self):
-        """Test case for p_ost_preview_order
+    def test_post_preview_order(self):
+        """Test case for post_preview_order
 
         Preview order  # noqa: E501
         """
         pass
 
-    def test_p_ost_preview_order_asynchronously(self):
-        """Test case for p_ost_preview_order_asynchronously
+    def test_post_preview_order_asynchronously(self):
+        """Test case for post_preview_order_asynchronously
 
         Preview order asynchronously  # noqa: E501
         """
         pass
 
-    def test_p_ost_request_breakdown_invoice_items_by_order(self):
-        """Test case for p_ost_request_breakdown_invoice_items_by_order
+    def test_post_request_breakdown_invoice_items_by_order(self):
+        """Test case for post_request_breakdown_invoice_items_by_order
 
         Request breakdown of invoice items by order  # noqa: E501
         """
         pass
 
-    def test_p_ut_order_trigger_dates(self):
-        """Test case for p_ut_order_trigger_dates
+    def test_put_order_trigger_dates(self):
+        """Test case for put_order_trigger_dates
 
         Update order action trigger dates  # noqa: E501
         """
         pass
 
-    def test_p_ut_update_order_custom_fields(self):
-        """Test case for p_ut_update_order_custom_fields
+    def test_put_update_order_custom_fields(self):
+        """Test case for put_update_order_custom_fields
 
         Update order custom fields  # noqa: E501
         """
         pass
 
-    def test_p_ut_update_subscription_custom_fields(self):
-        """Test case for p_ut_update_subscription_custom_fields
+    def test_put_update_subscription_custom_fields(self):
+        """Test case for put_update_subscription_custom_fields
 
         Update subscription custom fields  # noqa: E501
         """

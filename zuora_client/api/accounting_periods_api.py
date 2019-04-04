@@ -25,13 +25,13 @@ class AccountingPeriodsApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def d_elete_accounting_period(self, ap_id, **kwargs):  # noqa: E501
+    def delete_accounting_period(self, ap_id, **kwargs):  # noqa: E501
         """Delete accounting period  # noqa: E501
 
          Deletes an accounting period.  Prerequisites -------------   * You must have Zuora Finance enabled on your tenant.   * You must have the Delete Accounting Period user permission. See [Finance Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/f_Finance_Roles).   Limitations -----------  The accounting period to be deleted:  * Must be the most recent accounting period  * Must be an open accounting period  * Must have no revenue distributed into it  * Must not have any active journal entries  * Must not be the open-ended accounting period  * Must not be in the process of running a trial balance   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_accounting_period(ap_id, async_req=True)
+        >>> thread = api.delete_accounting_period(ap_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -43,18 +43,18 @@ class AccountingPeriodsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.d_elete_accounting_period_with_http_info(ap_id, **kwargs)  # noqa: E501
+            return self.delete_accounting_period_with_http_info(ap_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.d_elete_accounting_period_with_http_info(ap_id, **kwargs)  # noqa: E501
+            (data) = self.delete_accounting_period_with_http_info(ap_id, **kwargs)  # noqa: E501
             return data
 
-    def d_elete_accounting_period_with_http_info(self, ap_id, **kwargs):  # noqa: E501
+    def delete_accounting_period_with_http_info(self, ap_id, **kwargs):  # noqa: E501
         """Delete accounting period  # noqa: E501
 
          Deletes an accounting period.  Prerequisites -------------   * You must have Zuora Finance enabled on your tenant.   * You must have the Delete Accounting Period user permission. See [Finance Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/f_Finance_Roles).   Limitations -----------  The accounting period to be deleted:  * Must be the most recent accounting period  * Must be an open accounting period  * Must have no revenue distributed into it  * Must not have any active journal entries  * Must not be the open-ended accounting period  * Must not be in the process of running a trial balance   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_accounting_period_with_http_info(ap_id, async_req=True)
+        >>> thread = api.delete_accounting_period_with_http_info(ap_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -76,14 +76,14 @@ class AccountingPeriodsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method d_elete_accounting_period" % key
+                    " to method delete_accounting_period" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'ap_id' is set
         if ('ap_id' not in params or
                 params['ap_id'] is None):
-            raise ValueError("Missing the required parameter `ap_id` when calling `d_elete_accounting_period`")  # noqa: E501
+            raise ValueError("Missing the required parameter `ap_id` when calling `delete_accounting_period`")  # noqa: E501
 
         collection_formats = {}
 
@@ -128,13 +128,13 @@ class AccountingPeriodsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_accounting_period(self, ap_id, **kwargs):  # noqa: E501
+    def get_accounting_period(self, ap_id, **kwargs):  # noqa: E501
         """Get accounting period  # noqa: E501
 
         Retrieves an accounting period. Prerequisites -------------  You must have Zuora Finance enabled on your tenant.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_accounting_period(ap_id, async_req=True)
+        >>> thread = api.get_accounting_period(ap_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -146,18 +146,18 @@ class AccountingPeriodsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_accounting_period_with_http_info(ap_id, **kwargs)  # noqa: E501
+            return self.get_accounting_period_with_http_info(ap_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_accounting_period_with_http_info(ap_id, **kwargs)  # noqa: E501
+            (data) = self.get_accounting_period_with_http_info(ap_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_accounting_period_with_http_info(self, ap_id, **kwargs):  # noqa: E501
+    def get_accounting_period_with_http_info(self, ap_id, **kwargs):  # noqa: E501
         """Get accounting period  # noqa: E501
 
         Retrieves an accounting period. Prerequisites -------------  You must have Zuora Finance enabled on your tenant.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_accounting_period_with_http_info(ap_id, async_req=True)
+        >>> thread = api.get_accounting_period_with_http_info(ap_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -179,14 +179,14 @@ class AccountingPeriodsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_accounting_period" % key
+                    " to method get_accounting_period" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'ap_id' is set
         if ('ap_id' not in params or
                 params['ap_id'] is None):
-            raise ValueError("Missing the required parameter `ap_id` when calling `g_et_accounting_period`")  # noqa: E501
+            raise ValueError("Missing the required parameter `ap_id` when calling `get_accounting_period`")  # noqa: E501
 
         collection_formats = {}
 
@@ -231,13 +231,13 @@ class AccountingPeriodsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_all_accounting_periods(self, **kwargs):  # noqa: E501
+    def get_all_accounting_periods(self, **kwargs):  # noqa: E501
         """Get all accounting periods  # noqa: E501
 
         Retrieves all accounting periods on your tenant.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_all_accounting_periods(async_req=True)
+        >>> thread = api.get_all_accounting_periods(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -249,18 +249,18 @@ class AccountingPeriodsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_all_accounting_periods_with_http_info(**kwargs)  # noqa: E501
+            return self.get_all_accounting_periods_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_all_accounting_periods_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.get_all_accounting_periods_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def g_et_all_accounting_periods_with_http_info(self, **kwargs):  # noqa: E501
+    def get_all_accounting_periods_with_http_info(self, **kwargs):  # noqa: E501
         """Get all accounting periods  # noqa: E501
 
         Retrieves all accounting periods on your tenant.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_all_accounting_periods_with_http_info(async_req=True)
+        >>> thread = api.get_all_accounting_periods_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -282,13 +282,13 @@ class AccountingPeriodsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_all_accounting_periods" % key
+                    " to method get_all_accounting_periods" % key
                 )
             params[key] = val
         del params['kwargs']
 
         if 'page_size' in params and params['page_size'] > 300:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_all_accounting_periods`, must be a value less than or equal to `300`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_all_accounting_periods`, must be a value less than or equal to `300`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -332,13 +332,13 @@ class AccountingPeriodsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_accounting_period(self, request, **kwargs):  # noqa: E501
+    def post_accounting_period(self, request, **kwargs):  # noqa: E501
         """Create accounting period  # noqa: E501
 
         Creates an accounting period. Prerequisites ------------- * You must have Zuora Finance enabled on your tenant. * You must have the Create Accounting Period user permission.  Limitations ----------- * When creating the first accounting period on your tenant, the start date must be equal to or earlier than the date of the earliest transaction on the tenant. * Start and end dates of accounting periods must be contiguous. For example, if one accounting period ends on January 31, the next period must start on February 1. * If you have the Revenue Recognition Package and have enabled the \"Monthly recognition over time\" revenue recognition model, the accounting period start date and end date must be on the first day and last day of the month, respectively. Note that the start and end dates do not necessarily have to be in the same month.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_accounting_period(request, async_req=True)
+        >>> thread = api.post_accounting_period(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -350,18 +350,18 @@ class AccountingPeriodsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_accounting_period_with_http_info(request, **kwargs)  # noqa: E501
+            return self.post_accounting_period_with_http_info(request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_accounting_period_with_http_info(request, **kwargs)  # noqa: E501
+            (data) = self.post_accounting_period_with_http_info(request, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_accounting_period_with_http_info(self, request, **kwargs):  # noqa: E501
+    def post_accounting_period_with_http_info(self, request, **kwargs):  # noqa: E501
         """Create accounting period  # noqa: E501
 
         Creates an accounting period. Prerequisites ------------- * You must have Zuora Finance enabled on your tenant. * You must have the Create Accounting Period user permission.  Limitations ----------- * When creating the first accounting period on your tenant, the start date must be equal to or earlier than the date of the earliest transaction on the tenant. * Start and end dates of accounting periods must be contiguous. For example, if one accounting period ends on January 31, the next period must start on February 1. * If you have the Revenue Recognition Package and have enabled the \"Monthly recognition over time\" revenue recognition model, the accounting period start date and end date must be on the first day and last day of the month, respectively. Note that the start and end dates do not necessarily have to be in the same month.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_accounting_period_with_http_info(request, async_req=True)
+        >>> thread = api.post_accounting_period_with_http_info(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -383,14 +383,14 @@ class AccountingPeriodsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_accounting_period" % key
+                    " to method post_accounting_period" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ost_accounting_period`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `post_accounting_period`")  # noqa: E501
 
         collection_formats = {}
 
@@ -435,13 +435,13 @@ class AccountingPeriodsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_close_accounting_period(self, ap_id, **kwargs):  # noqa: E501
+    def put_close_accounting_period(self, ap_id, **kwargs):  # noqa: E501
         """Close accounting period  # noqa: E501
 
         Close an accounting period by accounting period ID.  Prerequisites ------------- You must have Zuora Finance enabled on your tenant. You must have the Manage Close Process and Run Trial Balance user permissions.  Limitations ----------- * The accounting period cannot already be closed. * The accounting period cannot be in the process of running a trial balance. * All earlier accounting periods must be closed. * There must be no required action items for the accounting period. See Reconcile Transactions Before Closing an Accounting Period for more information.  Notes ----- When you close an accounting period in Zuora, a trial balance is automatically run for that period. A successful response means only that the accounting period is now closed, but does not mean that the trial balance has successfully completed.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_close_accounting_period(ap_id, async_req=True)
+        >>> thread = api.put_close_accounting_period(ap_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -453,18 +453,18 @@ class AccountingPeriodsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_close_accounting_period_with_http_info(ap_id, **kwargs)  # noqa: E501
+            return self.put_close_accounting_period_with_http_info(ap_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_close_accounting_period_with_http_info(ap_id, **kwargs)  # noqa: E501
+            (data) = self.put_close_accounting_period_with_http_info(ap_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_close_accounting_period_with_http_info(self, ap_id, **kwargs):  # noqa: E501
+    def put_close_accounting_period_with_http_info(self, ap_id, **kwargs):  # noqa: E501
         """Close accounting period  # noqa: E501
 
         Close an accounting period by accounting period ID.  Prerequisites ------------- You must have Zuora Finance enabled on your tenant. You must have the Manage Close Process and Run Trial Balance user permissions.  Limitations ----------- * The accounting period cannot already be closed. * The accounting period cannot be in the process of running a trial balance. * All earlier accounting periods must be closed. * There must be no required action items for the accounting period. See Reconcile Transactions Before Closing an Accounting Period for more information.  Notes ----- When you close an accounting period in Zuora, a trial balance is automatically run for that period. A successful response means only that the accounting period is now closed, but does not mean that the trial balance has successfully completed.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_close_accounting_period_with_http_info(ap_id, async_req=True)
+        >>> thread = api.put_close_accounting_period_with_http_info(ap_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -486,14 +486,14 @@ class AccountingPeriodsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_close_accounting_period" % key
+                    " to method put_close_accounting_period" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'ap_id' is set
         if ('ap_id' not in params or
                 params['ap_id'] is None):
-            raise ValueError("Missing the required parameter `ap_id` when calling `p_ut_close_accounting_period`")  # noqa: E501
+            raise ValueError("Missing the required parameter `ap_id` when calling `put_close_accounting_period`")  # noqa: E501
 
         collection_formats = {}
 
@@ -538,13 +538,13 @@ class AccountingPeriodsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_pending_close_accounting_period(self, ap_id, **kwargs):  # noqa: E501
+    def put_pending_close_accounting_period(self, ap_id, **kwargs):  # noqa: E501
         """Set accounting period to pending close  # noqa: E501
 
         Sets an accounting period to pending close.   Prerequisites -------------  * You must have Zuora Finance enabled on your tenant. * You must have the Manage Close Process and Run Trial Balance user permissions.               Limitations   -----------    * The accounting period cannot be closed or pending close.    * The accounting period cannot be in the process of running a trial balance.    * All earlier accounting periods must be closed.     Notes ----- When you set an accounting period to pending close in Zuora, a trial balance is automatically run for that period. A response of `{ \"success\": true }`  means only that the accounting period status is now pending close, but does not mean that the trial balance has successfully completed. You can use the Get Accounting Period REST API call to view details about the outcome of the trial balance.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_pending_close_accounting_period(ap_id, async_req=True)
+        >>> thread = api.put_pending_close_accounting_period(ap_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -556,18 +556,18 @@ class AccountingPeriodsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_pending_close_accounting_period_with_http_info(ap_id, **kwargs)  # noqa: E501
+            return self.put_pending_close_accounting_period_with_http_info(ap_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_pending_close_accounting_period_with_http_info(ap_id, **kwargs)  # noqa: E501
+            (data) = self.put_pending_close_accounting_period_with_http_info(ap_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_pending_close_accounting_period_with_http_info(self, ap_id, **kwargs):  # noqa: E501
+    def put_pending_close_accounting_period_with_http_info(self, ap_id, **kwargs):  # noqa: E501
         """Set accounting period to pending close  # noqa: E501
 
         Sets an accounting period to pending close.   Prerequisites -------------  * You must have Zuora Finance enabled on your tenant. * You must have the Manage Close Process and Run Trial Balance user permissions.               Limitations   -----------    * The accounting period cannot be closed or pending close.    * The accounting period cannot be in the process of running a trial balance.    * All earlier accounting periods must be closed.     Notes ----- When you set an accounting period to pending close in Zuora, a trial balance is automatically run for that period. A response of `{ \"success\": true }`  means only that the accounting period status is now pending close, but does not mean that the trial balance has successfully completed. You can use the Get Accounting Period REST API call to view details about the outcome of the trial balance.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_pending_close_accounting_period_with_http_info(ap_id, async_req=True)
+        >>> thread = api.put_pending_close_accounting_period_with_http_info(ap_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -589,14 +589,14 @@ class AccountingPeriodsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_pending_close_accounting_period" % key
+                    " to method put_pending_close_accounting_period" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'ap_id' is set
         if ('ap_id' not in params or
                 params['ap_id'] is None):
-            raise ValueError("Missing the required parameter `ap_id` when calling `p_ut_pending_close_accounting_period`")  # noqa: E501
+            raise ValueError("Missing the required parameter `ap_id` when calling `put_pending_close_accounting_period`")  # noqa: E501
 
         collection_formats = {}
 
@@ -641,13 +641,13 @@ class AccountingPeriodsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_reopen_accounting_period(self, ap_id, **kwargs):  # noqa: E501
+    def put_reopen_accounting_period(self, ap_id, **kwargs):  # noqa: E501
         """Re-open accounting period  # noqa: E501
 
         Re-opens an accounting period. Prerequisites ------------- * You must have Zuora Finance enabled on your tenant. * You must have the Manage Close Process and Run Trial Balance user permissions.  Limitations ----------- * The accounting period must be closed or pending close. * You can only re-open an accounting period that is immediately previous to an open period.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_reopen_accounting_period(ap_id, async_req=True)
+        >>> thread = api.put_reopen_accounting_period(ap_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -659,18 +659,18 @@ class AccountingPeriodsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_reopen_accounting_period_with_http_info(ap_id, **kwargs)  # noqa: E501
+            return self.put_reopen_accounting_period_with_http_info(ap_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_reopen_accounting_period_with_http_info(ap_id, **kwargs)  # noqa: E501
+            (data) = self.put_reopen_accounting_period_with_http_info(ap_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_reopen_accounting_period_with_http_info(self, ap_id, **kwargs):  # noqa: E501
+    def put_reopen_accounting_period_with_http_info(self, ap_id, **kwargs):  # noqa: E501
         """Re-open accounting period  # noqa: E501
 
         Re-opens an accounting period. Prerequisites ------------- * You must have Zuora Finance enabled on your tenant. * You must have the Manage Close Process and Run Trial Balance user permissions.  Limitations ----------- * The accounting period must be closed or pending close. * You can only re-open an accounting period that is immediately previous to an open period.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_reopen_accounting_period_with_http_info(ap_id, async_req=True)
+        >>> thread = api.put_reopen_accounting_period_with_http_info(ap_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -692,14 +692,14 @@ class AccountingPeriodsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_reopen_accounting_period" % key
+                    " to method put_reopen_accounting_period" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'ap_id' is set
         if ('ap_id' not in params or
                 params['ap_id'] is None):
-            raise ValueError("Missing the required parameter `ap_id` when calling `p_ut_reopen_accounting_period`")  # noqa: E501
+            raise ValueError("Missing the required parameter `ap_id` when calling `put_reopen_accounting_period`")  # noqa: E501
 
         collection_formats = {}
 
@@ -744,13 +744,13 @@ class AccountingPeriodsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_run_trial_balance(self, ap_id, **kwargs):  # noqa: E501
+    def put_run_trial_balance(self, ap_id, **kwargs):  # noqa: E501
         """Run trial balance  # noqa: E501
 
         Runs the trial balance for an accounting period.   Prerequisites -------------  * You must have Zuora Finance enabled on your tenant.  * You must have the Manage Close Process and Run Trial Balance user permissions. See [Finance Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/f_Finance_Roles).             Limitations  -----------    * The accounting period must be open.    * The accounting period cannot already be in the process of running a trial balance.   Notes ----- The trial balance is run asynchronously. A response of `{ \"success\": true }` means only that the trial balance has started processing, but does not mean that the trial balance has successfully completed. You can use the [Get Accounting Period](https://www.zuora.com/developer/api-reference/#operation/GET_AccountingPeriod) REST API call to view details about the outcome of the trial balance.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_run_trial_balance(ap_id, async_req=True)
+        >>> thread = api.put_run_trial_balance(ap_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -762,18 +762,18 @@ class AccountingPeriodsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_run_trial_balance_with_http_info(ap_id, **kwargs)  # noqa: E501
+            return self.put_run_trial_balance_with_http_info(ap_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_run_trial_balance_with_http_info(ap_id, **kwargs)  # noqa: E501
+            (data) = self.put_run_trial_balance_with_http_info(ap_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_run_trial_balance_with_http_info(self, ap_id, **kwargs):  # noqa: E501
+    def put_run_trial_balance_with_http_info(self, ap_id, **kwargs):  # noqa: E501
         """Run trial balance  # noqa: E501
 
         Runs the trial balance for an accounting period.   Prerequisites -------------  * You must have Zuora Finance enabled on your tenant.  * You must have the Manage Close Process and Run Trial Balance user permissions. See [Finance Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/f_Finance_Roles).             Limitations  -----------    * The accounting period must be open.    * The accounting period cannot already be in the process of running a trial balance.   Notes ----- The trial balance is run asynchronously. A response of `{ \"success\": true }` means only that the trial balance has started processing, but does not mean that the trial balance has successfully completed. You can use the [Get Accounting Period](https://www.zuora.com/developer/api-reference/#operation/GET_AccountingPeriod) REST API call to view details about the outcome of the trial balance.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_run_trial_balance_with_http_info(ap_id, async_req=True)
+        >>> thread = api.put_run_trial_balance_with_http_info(ap_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -795,14 +795,14 @@ class AccountingPeriodsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_run_trial_balance" % key
+                    " to method put_run_trial_balance" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'ap_id' is set
         if ('ap_id' not in params or
                 params['ap_id'] is None):
-            raise ValueError("Missing the required parameter `ap_id` when calling `p_ut_run_trial_balance`")  # noqa: E501
+            raise ValueError("Missing the required parameter `ap_id` when calling `put_run_trial_balance`")  # noqa: E501
 
         collection_formats = {}
 
@@ -847,13 +847,13 @@ class AccountingPeriodsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_update_accounting_period(self, ap_id, request, **kwargs):  # noqa: E501
+    def put_update_accounting_period(self, ap_id, request, **kwargs):  # noqa: E501
         """Update accounting period  # noqa: E501
 
          Updates an accounting period.  Prerequisites -------------  * You must have Zuora Finance enabled on your tenant.  * You must have the Create Accounting Period user permission. See [Finance Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/f_Finance_Roles).  Limitations -----------  * You can update the start date of only the earliest accounting period on your tenant. You cannot update the start date of later periods.  * If you update the earliest accounting period, the start date must be equal to or earlier than the date of the earliest transaction on the tenant.  * Start and end dates of accounting periods must be contiguous. For example, if one accounting period ends on January 31, the next period must start on February 1.  * If you have the Revenue Recognition Package and have enabled the \"Monthly recognition over time\" revenue recognition model, the accounting period start date and end date must be on the first day and last day of the month, respectively. Note that the start and end dates do not necessarily have to be in the same month.  * You cannot update the start date or end date of an accounting period if:   * Any revenue has been distributed into the period.   * The period has any active journal entries.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_update_accounting_period(ap_id, request, async_req=True)
+        >>> thread = api.put_update_accounting_period(ap_id, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -866,18 +866,18 @@ class AccountingPeriodsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_update_accounting_period_with_http_info(ap_id, request, **kwargs)  # noqa: E501
+            return self.put_update_accounting_period_with_http_info(ap_id, request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_update_accounting_period_with_http_info(ap_id, request, **kwargs)  # noqa: E501
+            (data) = self.put_update_accounting_period_with_http_info(ap_id, request, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_update_accounting_period_with_http_info(self, ap_id, request, **kwargs):  # noqa: E501
+    def put_update_accounting_period_with_http_info(self, ap_id, request, **kwargs):  # noqa: E501
         """Update accounting period  # noqa: E501
 
          Updates an accounting period.  Prerequisites -------------  * You must have Zuora Finance enabled on your tenant.  * You must have the Create Accounting Period user permission. See [Finance Roles](https://knowledgecenter.zuora.com/CF_Users_and_Administrators/A_Administrator_Settings/User_Roles/f_Finance_Roles).  Limitations -----------  * You can update the start date of only the earliest accounting period on your tenant. You cannot update the start date of later periods.  * If you update the earliest accounting period, the start date must be equal to or earlier than the date of the earliest transaction on the tenant.  * Start and end dates of accounting periods must be contiguous. For example, if one accounting period ends on January 31, the next period must start on February 1.  * If you have the Revenue Recognition Package and have enabled the \"Monthly recognition over time\" revenue recognition model, the accounting period start date and end date must be on the first day and last day of the month, respectively. Note that the start and end dates do not necessarily have to be in the same month.  * You cannot update the start date or end date of an accounting period if:   * Any revenue has been distributed into the period.   * The period has any active journal entries.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_update_accounting_period_with_http_info(ap_id, request, async_req=True)
+        >>> thread = api.put_update_accounting_period_with_http_info(ap_id, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -900,18 +900,18 @@ class AccountingPeriodsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_update_accounting_period" % key
+                    " to method put_update_accounting_period" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'ap_id' is set
         if ('ap_id' not in params or
                 params['ap_id'] is None):
-            raise ValueError("Missing the required parameter `ap_id` when calling `p_ut_update_accounting_period`")  # noqa: E501
+            raise ValueError("Missing the required parameter `ap_id` when calling `put_update_accounting_period`")  # noqa: E501
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ut_update_accounting_period`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `put_update_accounting_period`")  # noqa: E501
 
         collection_formats = {}
 

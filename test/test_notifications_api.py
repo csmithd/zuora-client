@@ -29,85 +29,85 @@ class TestNotificationsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_d_elete_delete_email_template(self):
-        """Test case for d_elete_delete_email_template
+    def test_delete_delete_email_template(self):
+        """Test case for delete_delete_email_template
 
         Delete an email template  # noqa: E501
         """
         pass
 
-    def test_d_elete_delete_notification_definition(self):
-        """Test case for d_elete_delete_notification_definition
+    def test_delete_delete_notification_definition(self):
+        """Test case for delete_delete_notification_definition
 
         Delete a notification definition  # noqa: E501
         """
         pass
 
-    def test_g_et_callout_history(self):
-        """Test case for g_et_callout_history
+    def test_get_callout_history(self):
+        """Test case for get_callout_history
 
         Get callout notification histories  # noqa: E501
         """
         pass
 
-    def test_g_et_email_history(self):
-        """Test case for g_et_email_history
+    def test_get_email_history(self):
+        """Test case for get_email_history
 
         Get email notification histories  # noqa: E501
         """
         pass
 
-    def test_g_et_get_email_template(self):
-        """Test case for g_et_get_email_template
+    def test_get_get_email_template(self):
+        """Test case for get_get_email_template
 
         Get an email template  # noqa: E501
         """
         pass
 
-    def test_g_et_get_notification_definition(self):
-        """Test case for g_et_get_notification_definition
+    def test_get_get_notification_definition(self):
+        """Test case for get_get_notification_definition
 
         Get a notification definition  # noqa: E501
         """
         pass
 
-    def test_g_et_query_email_templates(self):
-        """Test case for g_et_query_email_templates
+    def test_get_query_email_templates(self):
+        """Test case for get_query_email_templates
 
         Query email templates  # noqa: E501
         """
         pass
 
-    def test_g_et_query_notification_definitions(self):
-        """Test case for g_et_query_notification_definitions
+    def test_get_query_notification_definitions(self):
+        """Test case for get_query_notification_definitions
 
         Query notification definitions  # noqa: E501
         """
         pass
 
-    def test_p_ost_create_email_template(self):
-        """Test case for p_ost_create_email_template
+    def test_post_create_email_template(self):
+        """Test case for post_create_email_template
 
         Create an email template  # noqa: E501
         """
         pass
 
-    def test_p_ost_create_notification_definition(self):
-        """Test case for p_ost_create_notification_definition
+    def test_post_create_notification_definition(self):
+        """Test case for post_create_notification_definition
 
         Create a notification definition  # noqa: E501
         """
         pass
 
-    def test_p_ut_update_email_template(self):
-        """Test case for p_ut_update_email_template
+    def test_put_update_email_template(self):
+        """Test case for put_update_email_template
 
         Update an email template  # noqa: E501
         """
         pass
 
-    def test_p_ut_update_notification_definition(self):
-        """Test case for p_ut_update_notification_definition
+    def test_put_update_notification_definition(self):
+        """Test case for put_update_notification_definition
 
         Update a notification definition  # noqa: E501
         """

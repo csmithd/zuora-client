@@ -25,13 +25,13 @@ class SummaryJournalEntriesApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def d_elete_summary_journal_entry(self, je_number, **kwargs):  # noqa: E501
+    def delete_summary_journal_entry(self, je_number, **kwargs):  # noqa: E501
         """Delete summary journal entry  # noqa: E501
 
         This reference describes how to delete a summary journal entry using the REST API.  You must have the \"Delete Cancelled Journal Entry\" user permission enabled to delete summary journal entries.  A summary journal entry must be canceled before it can be deleted.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_summary_journal_entry(je_number, async_req=True)
+        >>> thread = api.delete_summary_journal_entry(je_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -43,18 +43,18 @@ class SummaryJournalEntriesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.d_elete_summary_journal_entry_with_http_info(je_number, **kwargs)  # noqa: E501
+            return self.delete_summary_journal_entry_with_http_info(je_number, **kwargs)  # noqa: E501
         else:
-            (data) = self.d_elete_summary_journal_entry_with_http_info(je_number, **kwargs)  # noqa: E501
+            (data) = self.delete_summary_journal_entry_with_http_info(je_number, **kwargs)  # noqa: E501
             return data
 
-    def d_elete_summary_journal_entry_with_http_info(self, je_number, **kwargs):  # noqa: E501
+    def delete_summary_journal_entry_with_http_info(self, je_number, **kwargs):  # noqa: E501
         """Delete summary journal entry  # noqa: E501
 
         This reference describes how to delete a summary journal entry using the REST API.  You must have the \"Delete Cancelled Journal Entry\" user permission enabled to delete summary journal entries.  A summary journal entry must be canceled before it can be deleted.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_summary_journal_entry_with_http_info(je_number, async_req=True)
+        >>> thread = api.delete_summary_journal_entry_with_http_info(je_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -76,14 +76,14 @@ class SummaryJournalEntriesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method d_elete_summary_journal_entry" % key
+                    " to method delete_summary_journal_entry" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'je_number' is set
         if ('je_number' not in params or
                 params['je_number'] is None):
-            raise ValueError("Missing the required parameter `je_number` when calling `d_elete_summary_journal_entry`")  # noqa: E501
+            raise ValueError("Missing the required parameter `je_number` when calling `delete_summary_journal_entry`")  # noqa: E501
 
         collection_formats = {}
 
@@ -128,13 +128,13 @@ class SummaryJournalEntriesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_all_summary_journal_entries(self, jr_number, **kwargs):  # noqa: E501
+    def get_all_summary_journal_entries(self, jr_number, **kwargs):  # noqa: E501
         """Get all summary journal entries in a journal run  # noqa: E501
 
          This REST API reference describes how to retrieve information about all summary journal entries in a journal run.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_all_summary_journal_entries(jr_number, async_req=True)
+        >>> thread = api.get_all_summary_journal_entries(jr_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -147,18 +147,18 @@ class SummaryJournalEntriesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_all_summary_journal_entries_with_http_info(jr_number, **kwargs)  # noqa: E501
+            return self.get_all_summary_journal_entries_with_http_info(jr_number, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_all_summary_journal_entries_with_http_info(jr_number, **kwargs)  # noqa: E501
+            (data) = self.get_all_summary_journal_entries_with_http_info(jr_number, **kwargs)  # noqa: E501
             return data
 
-    def g_et_all_summary_journal_entries_with_http_info(self, jr_number, **kwargs):  # noqa: E501
+    def get_all_summary_journal_entries_with_http_info(self, jr_number, **kwargs):  # noqa: E501
         """Get all summary journal entries in a journal run  # noqa: E501
 
          This REST API reference describes how to retrieve information about all summary journal entries in a journal run.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_all_summary_journal_entries_with_http_info(jr_number, async_req=True)
+        >>> thread = api.get_all_summary_journal_entries_with_http_info(jr_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -181,17 +181,17 @@ class SummaryJournalEntriesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_all_summary_journal_entries" % key
+                    " to method get_all_summary_journal_entries" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'jr_number' is set
         if ('jr_number' not in params or
                 params['jr_number'] is None):
-            raise ValueError("Missing the required parameter `jr_number` when calling `g_et_all_summary_journal_entries`")  # noqa: E501
+            raise ValueError("Missing the required parameter `jr_number` when calling `get_all_summary_journal_entries`")  # noqa: E501
 
         if 'page_size' in params and params['page_size'] > 300:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_all_summary_journal_entries`, must be a value less than or equal to `300`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_all_summary_journal_entries`, must be a value less than or equal to `300`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -237,13 +237,13 @@ class SummaryJournalEntriesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_summary_journal_entry(self, je_number, **kwargs):  # noqa: E501
+    def get_summary_journal_entry(self, je_number, **kwargs):  # noqa: E501
         """Get summary journal entry  # noqa: E501
 
         This REST API reference describes how to get information about a summary journal entry by its journal entry number.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_summary_journal_entry(je_number, async_req=True)
+        >>> thread = api.get_summary_journal_entry(je_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -255,18 +255,18 @@ class SummaryJournalEntriesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_summary_journal_entry_with_http_info(je_number, **kwargs)  # noqa: E501
+            return self.get_summary_journal_entry_with_http_info(je_number, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_summary_journal_entry_with_http_info(je_number, **kwargs)  # noqa: E501
+            (data) = self.get_summary_journal_entry_with_http_info(je_number, **kwargs)  # noqa: E501
             return data
 
-    def g_et_summary_journal_entry_with_http_info(self, je_number, **kwargs):  # noqa: E501
+    def get_summary_journal_entry_with_http_info(self, je_number, **kwargs):  # noqa: E501
         """Get summary journal entry  # noqa: E501
 
         This REST API reference describes how to get information about a summary journal entry by its journal entry number.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_summary_journal_entry_with_http_info(je_number, async_req=True)
+        >>> thread = api.get_summary_journal_entry_with_http_info(je_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -288,14 +288,14 @@ class SummaryJournalEntriesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_summary_journal_entry" % key
+                    " to method get_summary_journal_entry" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'je_number' is set
         if ('je_number' not in params or
                 params['je_number'] is None):
-            raise ValueError("Missing the required parameter `je_number` when calling `g_et_summary_journal_entry`")  # noqa: E501
+            raise ValueError("Missing the required parameter `je_number` when calling `get_summary_journal_entry`")  # noqa: E501
 
         collection_formats = {}
 
@@ -340,13 +340,13 @@ class SummaryJournalEntriesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_summary_journal_entry(self, request, **kwargs):  # noqa: E501
+    def post_summary_journal_entry(self, request, **kwargs):  # noqa: E501
         """Create summary journal entry  # noqa: E501
 
         This REST API reference describes how to manually create a summary journal entry. Request and response field descriptions and sample code are provided. ## Requirements 1.The sum of debits must equal the sum of credits in the summary journal entry.  2.The following applies only if you use foreign currency conversion:   * If you have configured Aggregate transactions with different currencies during a Journal Run to \"Yes\", the value of the **currency** field must be the same as your tenant's home currency. That is, you must create journal entries using your home currency.   * All journal entries in an accounting period must either all be aggregated or all be unaggregated. You cannot have a mix of aggregated and unaggregated journal entries in the same accounting period.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_summary_journal_entry(request, async_req=True)
+        >>> thread = api.post_summary_journal_entry(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -358,18 +358,18 @@ class SummaryJournalEntriesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_summary_journal_entry_with_http_info(request, **kwargs)  # noqa: E501
+            return self.post_summary_journal_entry_with_http_info(request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_summary_journal_entry_with_http_info(request, **kwargs)  # noqa: E501
+            (data) = self.post_summary_journal_entry_with_http_info(request, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_summary_journal_entry_with_http_info(self, request, **kwargs):  # noqa: E501
+    def post_summary_journal_entry_with_http_info(self, request, **kwargs):  # noqa: E501
         """Create summary journal entry  # noqa: E501
 
         This REST API reference describes how to manually create a summary journal entry. Request and response field descriptions and sample code are provided. ## Requirements 1.The sum of debits must equal the sum of credits in the summary journal entry.  2.The following applies only if you use foreign currency conversion:   * If you have configured Aggregate transactions with different currencies during a Journal Run to \"Yes\", the value of the **currency** field must be the same as your tenant's home currency. That is, you must create journal entries using your home currency.   * All journal entries in an accounting period must either all be aggregated or all be unaggregated. You cannot have a mix of aggregated and unaggregated journal entries in the same accounting period.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_summary_journal_entry_with_http_info(request, async_req=True)
+        >>> thread = api.post_summary_journal_entry_with_http_info(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -391,14 +391,14 @@ class SummaryJournalEntriesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_summary_journal_entry" % key
+                    " to method post_summary_journal_entry" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ost_summary_journal_entry`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `post_summary_journal_entry`")  # noqa: E501
 
         collection_formats = {}
 
@@ -443,13 +443,13 @@ class SummaryJournalEntriesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_basic_summary_journal_entry(self, je_number, request, **kwargs):  # noqa: E501
+    def put_basic_summary_journal_entry(self, je_number, request, **kwargs):  # noqa: E501
         """Update basic information of a summary journal entry  # noqa: E501
 
          This REST API reference describes how to update the basic information of a summary journal entry. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_basic_summary_journal_entry(je_number, request, async_req=True)
+        >>> thread = api.put_basic_summary_journal_entry(je_number, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -462,18 +462,18 @@ class SummaryJournalEntriesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_basic_summary_journal_entry_with_http_info(je_number, request, **kwargs)  # noqa: E501
+            return self.put_basic_summary_journal_entry_with_http_info(je_number, request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_basic_summary_journal_entry_with_http_info(je_number, request, **kwargs)  # noqa: E501
+            (data) = self.put_basic_summary_journal_entry_with_http_info(je_number, request, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_basic_summary_journal_entry_with_http_info(self, je_number, request, **kwargs):  # noqa: E501
+    def put_basic_summary_journal_entry_with_http_info(self, je_number, request, **kwargs):  # noqa: E501
         """Update basic information of a summary journal entry  # noqa: E501
 
          This REST API reference describes how to update the basic information of a summary journal entry. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_basic_summary_journal_entry_with_http_info(je_number, request, async_req=True)
+        >>> thread = api.put_basic_summary_journal_entry_with_http_info(je_number, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -496,18 +496,18 @@ class SummaryJournalEntriesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_basic_summary_journal_entry" % key
+                    " to method put_basic_summary_journal_entry" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'je_number' is set
         if ('je_number' not in params or
                 params['je_number'] is None):
-            raise ValueError("Missing the required parameter `je_number` when calling `p_ut_basic_summary_journal_entry`")  # noqa: E501
+            raise ValueError("Missing the required parameter `je_number` when calling `put_basic_summary_journal_entry`")  # noqa: E501
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ut_basic_summary_journal_entry`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `put_basic_summary_journal_entry`")  # noqa: E501
 
         collection_formats = {}
 
@@ -554,13 +554,13 @@ class SummaryJournalEntriesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_summary_journal_entry(self, je_number, **kwargs):  # noqa: E501
+    def put_summary_journal_entry(self, je_number, **kwargs):  # noqa: E501
         """Cancel summary journal entry  # noqa: E501
 
          This reference describes how to cancel a summary journal entry using the REST API.  You must have the \"Cancel Journal Entry\" user permission enabled to cancel summary journal entries.  A summary journal entry cannot be canceled if its Transferred to Accounting status is \"Yes\" or \"Processing\".   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_summary_journal_entry(je_number, async_req=True)
+        >>> thread = api.put_summary_journal_entry(je_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -572,18 +572,18 @@ class SummaryJournalEntriesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_summary_journal_entry_with_http_info(je_number, **kwargs)  # noqa: E501
+            return self.put_summary_journal_entry_with_http_info(je_number, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_summary_journal_entry_with_http_info(je_number, **kwargs)  # noqa: E501
+            (data) = self.put_summary_journal_entry_with_http_info(je_number, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_summary_journal_entry_with_http_info(self, je_number, **kwargs):  # noqa: E501
+    def put_summary_journal_entry_with_http_info(self, je_number, **kwargs):  # noqa: E501
         """Cancel summary journal entry  # noqa: E501
 
          This reference describes how to cancel a summary journal entry using the REST API.  You must have the \"Cancel Journal Entry\" user permission enabled to cancel summary journal entries.  A summary journal entry cannot be canceled if its Transferred to Accounting status is \"Yes\" or \"Processing\".   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_summary_journal_entry_with_http_info(je_number, async_req=True)
+        >>> thread = api.put_summary_journal_entry_with_http_info(je_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -605,14 +605,14 @@ class SummaryJournalEntriesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_summary_journal_entry" % key
+                    " to method put_summary_journal_entry" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'je_number' is set
         if ('je_number' not in params or
                 params['je_number'] is None):
-            raise ValueError("Missing the required parameter `je_number` when calling `p_ut_summary_journal_entry`")  # noqa: E501
+            raise ValueError("Missing the required parameter `je_number` when calling `put_summary_journal_entry`")  # noqa: E501
 
         collection_formats = {}
 

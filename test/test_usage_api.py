@@ -29,8 +29,8 @@ class TestUsageApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_g_et_usage(self):
-        """Test case for g_et_usage
+    def test_get_usage(self):
+        """Test case for get_usage
 
         Get usage  # noqa: E501
         """
@@ -64,8 +64,8 @@ class TestUsageApi(unittest.TestCase):
         """
         pass
 
-    def test_p_ost_usage(self):
-        """Test case for p_ost_usage
+    def test_post_usage(self):
+        """Test case for post_usage
 
         Post usage  # noqa: E501
         """

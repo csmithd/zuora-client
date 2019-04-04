@@ -29,29 +29,29 @@ class TestInvoicesApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_g_et_invoice_application_parts(self):
-        """Test case for g_et_invoice_application_parts
+    def test_get_invoice_application_parts(self):
+        """Test case for get_invoice_application_parts
 
         Get invoice application parts  # noqa: E501
         """
         pass
 
-    def test_g_et_invoice_files(self):
-        """Test case for g_et_invoice_files
+    def test_get_invoice_files(self):
+        """Test case for get_invoice_files
 
         Get invoice files  # noqa: E501
         """
         pass
 
-    def test_g_et_invoice_items(self):
-        """Test case for g_et_invoice_items
+    def test_get_invoice_items(self):
+        """Test case for get_invoice_items
 
         Get invoice items  # noqa: E501
         """
         pass
 
-    def test_g_et_taxation_items_of_invoice_item(self):
-        """Test case for g_et_taxation_items_of_invoice_item
+    def test_get_taxation_items_of_invoice_item(self):
+        """Test case for get_taxation_items_of_invoice_item
 
         Get taxation items of invoice item  # noqa: E501
         """
@@ -78,50 +78,50 @@ class TestInvoicesApi(unittest.TestCase):
         """
         pass
 
-    def test_p_ost_credit_memo_from_invoice(self):
-        """Test case for p_ost_credit_memo_from_invoice
+    def test_post_credit_memo_from_invoice(self):
+        """Test case for post_credit_memo_from_invoice
 
         Create credit memo from invoice  # noqa: E501
         """
         pass
 
-    def test_p_ost_debit_memo_from_invoice(self):
-        """Test case for p_ost_debit_memo_from_invoice
+    def test_post_debit_memo_from_invoice(self):
+        """Test case for post_debit_memo_from_invoice
 
         Create debit memo from invoice  # noqa: E501
         """
         pass
 
-    def test_p_ost_email_invoice(self):
-        """Test case for p_ost_email_invoice
+    def test_post_email_invoice(self):
+        """Test case for post_email_invoice
 
         Email invoice  # noqa: E501
         """
         pass
 
-    def test_p_ut_batch_update_invoices(self):
-        """Test case for p_ut_batch_update_invoices
+    def test_put_batch_update_invoices(self):
+        """Test case for put_batch_update_invoices
 
         Update invoices  # noqa: E501
         """
         pass
 
-    def test_p_ut_reverse_invoice(self):
-        """Test case for p_ut_reverse_invoice
+    def test_put_reverse_invoice(self):
+        """Test case for put_reverse_invoice
 
         Reverse invoice  # noqa: E501
         """
         pass
 
-    def test_p_ut_update_invoice(self):
-        """Test case for p_ut_update_invoice
+    def test_put_update_invoice(self):
+        """Test case for put_update_invoice
 
         Update invoice  # noqa: E501
         """
         pass
 
-    def test_p_ut_write_off_invoice(self):
-        """Test case for p_ut_write_off_invoice
+    def test_put_write_off_invoice(self):
+        """Test case for put_write_off_invoice
 
         Write off invoice  # noqa: E501
         """

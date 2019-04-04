@@ -25,13 +25,13 @@ class UsersApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def g_et_entities_user_accessible(self, username, **kwargs):  # noqa: E501
+    def get_entities_user_accessible(self, username, **kwargs):  # noqa: E501
         """Multi-entity: Get entities that a user can access  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves detailed information about all the entities that a user has permission to access.  ## User Access Permission You can make the call as any entity user.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_entities_user_accessible(username, async_req=True)
+        >>> thread = api.get_entities_user_accessible(username, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -43,18 +43,18 @@ class UsersApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_entities_user_accessible_with_http_info(username, **kwargs)  # noqa: E501
+            return self.get_entities_user_accessible_with_http_info(username, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_entities_user_accessible_with_http_info(username, **kwargs)  # noqa: E501
+            (data) = self.get_entities_user_accessible_with_http_info(username, **kwargs)  # noqa: E501
             return data
 
-    def g_et_entities_user_accessible_with_http_info(self, username, **kwargs):  # noqa: E501
+    def get_entities_user_accessible_with_http_info(self, username, **kwargs):  # noqa: E501
         """Multi-entity: Get entities that a user can access  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves detailed information about all the entities that a user has permission to access.  ## User Access Permission You can make the call as any entity user.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_entities_user_accessible_with_http_info(username, async_req=True)
+        >>> thread = api.get_entities_user_accessible_with_http_info(username, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -76,14 +76,14 @@ class UsersApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_entities_user_accessible" % key
+                    " to method get_entities_user_accessible" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'username' is set
         if ('username' not in params or
                 params['username'] is None):
-            raise ValueError("Missing the required parameter `username` when calling `g_et_entities_user_accessible`")  # noqa: E501
+            raise ValueError("Missing the required parameter `username` when calling `get_entities_user_accessible`")  # noqa: E501
 
         collection_formats = {}
 
@@ -128,13 +128,13 @@ class UsersApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_accept_user_access(self, username, **kwargs):  # noqa: E501
+    def put_accept_user_access(self, username, **kwargs):  # noqa: E501
         """Multi-entity: Accept user access  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Accepts user access to an entity.  ## User Access Permission You must make the calls as an administrator of the entity that you want to accept the user access to.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_accept_user_access(username, async_req=True)
+        >>> thread = api.put_accept_user_access(username, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -146,18 +146,18 @@ class UsersApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_accept_user_access_with_http_info(username, **kwargs)  # noqa: E501
+            return self.put_accept_user_access_with_http_info(username, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_accept_user_access_with_http_info(username, **kwargs)  # noqa: E501
+            (data) = self.put_accept_user_access_with_http_info(username, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_accept_user_access_with_http_info(self, username, **kwargs):  # noqa: E501
+    def put_accept_user_access_with_http_info(self, username, **kwargs):  # noqa: E501
         """Multi-entity: Accept user access  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Accepts user access to an entity.  ## User Access Permission You must make the calls as an administrator of the entity that you want to accept the user access to.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_accept_user_access_with_http_info(username, async_req=True)
+        >>> thread = api.put_accept_user_access_with_http_info(username, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -179,14 +179,14 @@ class UsersApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_accept_user_access" % key
+                    " to method put_accept_user_access" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'username' is set
         if ('username' not in params or
                 params['username'] is None):
-            raise ValueError("Missing the required parameter `username` when calling `p_ut_accept_user_access`")  # noqa: E501
+            raise ValueError("Missing the required parameter `username` when calling `put_accept_user_access`")  # noqa: E501
 
         collection_formats = {}
 
@@ -231,13 +231,13 @@ class UsersApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_deny_user_access(self, username, **kwargs):  # noqa: E501
+    def put_deny_user_access(self, username, **kwargs):  # noqa: E501
         """Multi-entity: Deny user access  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Denies a user access to an entity.   ## User Access Permission You must make the calls as an administrator of the entity that you want to deny the user access to.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_deny_user_access(username, async_req=True)
+        >>> thread = api.put_deny_user_access(username, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -249,18 +249,18 @@ class UsersApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_deny_user_access_with_http_info(username, **kwargs)  # noqa: E501
+            return self.put_deny_user_access_with_http_info(username, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_deny_user_access_with_http_info(username, **kwargs)  # noqa: E501
+            (data) = self.put_deny_user_access_with_http_info(username, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_deny_user_access_with_http_info(self, username, **kwargs):  # noqa: E501
+    def put_deny_user_access_with_http_info(self, username, **kwargs):  # noqa: E501
         """Multi-entity: Deny user access  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Denies a user access to an entity.   ## User Access Permission You must make the calls as an administrator of the entity that you want to deny the user access to.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_deny_user_access_with_http_info(username, async_req=True)
+        >>> thread = api.put_deny_user_access_with_http_info(username, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -282,14 +282,14 @@ class UsersApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_deny_user_access" % key
+                    " to method put_deny_user_access" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'username' is set
         if ('username' not in params or
                 params['username'] is None):
-            raise ValueError("Missing the required parameter `username` when calling `p_ut_deny_user_access`")  # noqa: E501
+            raise ValueError("Missing the required parameter `username` when calling `put_deny_user_access`")  # noqa: E501
 
         collection_formats = {}
 
@@ -334,13 +334,13 @@ class UsersApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_send_user_access_requests(self, username, request, **kwargs):  # noqa: E501
+    def put_send_user_access_requests(self, username, request, **kwargs):  # noqa: E501
         """Multi-entity: Send user access requests  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Sends access requests to the entities that a user wants to access.  ## User Access Permission You must make the call as an administrator of the entity, in which the request user is created. Also, this administrator must have the permission to access the entities that the request user wants to access.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_send_user_access_requests(username, request, async_req=True)
+        >>> thread = api.put_send_user_access_requests(username, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -353,18 +353,18 @@ class UsersApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_send_user_access_requests_with_http_info(username, request, **kwargs)  # noqa: E501
+            return self.put_send_user_access_requests_with_http_info(username, request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_send_user_access_requests_with_http_info(username, request, **kwargs)  # noqa: E501
+            (data) = self.put_send_user_access_requests_with_http_info(username, request, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_send_user_access_requests_with_http_info(self, username, request, **kwargs):  # noqa: E501
+    def put_send_user_access_requests_with_http_info(self, username, request, **kwargs):  # noqa: E501
         """Multi-entity: Send user access requests  # noqa: E501
 
         **Note:** The Multi-entity feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Sends access requests to the entities that a user wants to access.  ## User Access Permission You must make the call as an administrator of the entity, in which the request user is created. Also, this administrator must have the permission to access the entities that the request user wants to access.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_send_user_access_requests_with_http_info(username, request, async_req=True)
+        >>> thread = api.put_send_user_access_requests_with_http_info(username, request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -387,18 +387,18 @@ class UsersApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_send_user_access_requests" % key
+                    " to method put_send_user_access_requests" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'username' is set
         if ('username' not in params or
                 params['username'] is None):
-            raise ValueError("Missing the required parameter `username` when calling `p_ut_send_user_access_requests`")  # noqa: E501
+            raise ValueError("Missing the required parameter `username` when calling `put_send_user_access_requests`")  # noqa: E501
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ut_send_user_access_requests`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `put_send_user_access_requests`")  # noqa: E501
 
         collection_formats = {}
 

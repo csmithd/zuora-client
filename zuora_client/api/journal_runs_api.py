@@ -25,13 +25,13 @@ class JournalRunsApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def d_elete_journal_run(self, jr_number, **kwargs):  # noqa: E501
+    def delete_journal_run(self, jr_number, **kwargs):  # noqa: E501
         """Delete journal run  # noqa: E501
 
         This reference describes how to delete a journal run using the REST API.                         You can only delete journal runs that have already been canceled.                         You must have the \"Delete Cancelled Journal Run\" Zuora Finance user permission enabled to delete journal runs.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_journal_run(jr_number, async_req=True)
+        >>> thread = api.delete_journal_run(jr_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -43,18 +43,18 @@ class JournalRunsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.d_elete_journal_run_with_http_info(jr_number, **kwargs)  # noqa: E501
+            return self.delete_journal_run_with_http_info(jr_number, **kwargs)  # noqa: E501
         else:
-            (data) = self.d_elete_journal_run_with_http_info(jr_number, **kwargs)  # noqa: E501
+            (data) = self.delete_journal_run_with_http_info(jr_number, **kwargs)  # noqa: E501
             return data
 
-    def d_elete_journal_run_with_http_info(self, jr_number, **kwargs):  # noqa: E501
+    def delete_journal_run_with_http_info(self, jr_number, **kwargs):  # noqa: E501
         """Delete journal run  # noqa: E501
 
         This reference describes how to delete a journal run using the REST API.                         You can only delete journal runs that have already been canceled.                         You must have the \"Delete Cancelled Journal Run\" Zuora Finance user permission enabled to delete journal runs.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_journal_run_with_http_info(jr_number, async_req=True)
+        >>> thread = api.delete_journal_run_with_http_info(jr_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -76,14 +76,14 @@ class JournalRunsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method d_elete_journal_run" % key
+                    " to method delete_journal_run" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'jr_number' is set
         if ('jr_number' not in params or
                 params['jr_number'] is None):
-            raise ValueError("Missing the required parameter `jr_number` when calling `d_elete_journal_run`")  # noqa: E501
+            raise ValueError("Missing the required parameter `jr_number` when calling `delete_journal_run`")  # noqa: E501
 
         collection_formats = {}
 
@@ -128,13 +128,13 @@ class JournalRunsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_journal_run(self, jr_number, **kwargs):  # noqa: E501
+    def get_journal_run(self, jr_number, **kwargs):  # noqa: E501
         """Get journal run  # noqa: E501
 
         This REST API reference describes how to get information about a journal run. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_journal_run(jr_number, async_req=True)
+        >>> thread = api.get_journal_run(jr_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -146,18 +146,18 @@ class JournalRunsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_journal_run_with_http_info(jr_number, **kwargs)  # noqa: E501
+            return self.get_journal_run_with_http_info(jr_number, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_journal_run_with_http_info(jr_number, **kwargs)  # noqa: E501
+            (data) = self.get_journal_run_with_http_info(jr_number, **kwargs)  # noqa: E501
             return data
 
-    def g_et_journal_run_with_http_info(self, jr_number, **kwargs):  # noqa: E501
+    def get_journal_run_with_http_info(self, jr_number, **kwargs):  # noqa: E501
         """Get journal run  # noqa: E501
 
         This REST API reference describes how to get information about a journal run. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_journal_run_with_http_info(jr_number, async_req=True)
+        >>> thread = api.get_journal_run_with_http_info(jr_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -179,14 +179,14 @@ class JournalRunsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_journal_run" % key
+                    " to method get_journal_run" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'jr_number' is set
         if ('jr_number' not in params or
                 params['jr_number'] is None):
-            raise ValueError("Missing the required parameter `jr_number` when calling `g_et_journal_run`")  # noqa: E501
+            raise ValueError("Missing the required parameter `jr_number` when calling `get_journal_run`")  # noqa: E501
 
         collection_formats = {}
 
@@ -231,13 +231,13 @@ class JournalRunsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_journal_run(self, request, **kwargs):  # noqa: E501
+    def post_journal_run(self, request, **kwargs):  # noqa: E501
         """Create journal run  # noqa: E501
 
         This REST API reference describes how to create a journal run. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_journal_run(request, async_req=True)
+        >>> thread = api.post_journal_run(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -249,18 +249,18 @@ class JournalRunsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_journal_run_with_http_info(request, **kwargs)  # noqa: E501
+            return self.post_journal_run_with_http_info(request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_journal_run_with_http_info(request, **kwargs)  # noqa: E501
+            (data) = self.post_journal_run_with_http_info(request, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_journal_run_with_http_info(self, request, **kwargs):  # noqa: E501
+    def post_journal_run_with_http_info(self, request, **kwargs):  # noqa: E501
         """Create journal run  # noqa: E501
 
         This REST API reference describes how to create a journal run. Request and response field descriptions and sample code are provided.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_journal_run_with_http_info(request, async_req=True)
+        >>> thread = api.post_journal_run_with_http_info(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -282,14 +282,14 @@ class JournalRunsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_journal_run" % key
+                    " to method post_journal_run" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ost_journal_run`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `post_journal_run`")  # noqa: E501
 
         collection_formats = {}
 
@@ -334,13 +334,13 @@ class JournalRunsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_journal_run(self, jr_number, **kwargs):  # noqa: E501
+    def put_journal_run(self, jr_number, **kwargs):  # noqa: E501
         """Cancel journal run  # noqa: E501
 
         This reference describes how to cancel a journal run using the REST API.            The summary journal entries in the journal run are canceled asynchronously. See the \"Example\" section below for details.            You must have the \"Cancel Journal Run\" Zuora Finance user permission enabled to cancel journal runs.  ## Notes When you cancel a journal run, the summary journal entries associated with that journal run are canceled asynchronously. A response of `{ \"success\": true }` means only that the specified journal run has a status of \"Pending\", \"Error\", or \"Completed\" and therefore can be canceled, but does not mean that the whole journal run was successfully canceled.  For example, let's say you want to cancel journal run JR-00000075. The journal run status is \"Completed\" and it contains ten journal entries. One of the journal entries has its Transferred to Accounting status set to \"Yes\", meaning that the entry cannot be canceled. The workflow might go as follows: 1. You make an API call to cancel the journal run. 2. The journal run status is \"Completed\", so you receive a response of `{ \"success\": true }`. 3. Zuora begins asynchronously canceling journal entries associated with the journal run. The journal entry whose Transferred to Accounting status is \"Yes\" fails to be canceled. The cancelation process continues, and the other journal entries are successfully canceled. 4. The journal run status remains as \"Completed\". The status does not change to \"Canceled\" because the journal run still contains a journey entry that is not canceled.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_journal_run(jr_number, async_req=True)
+        >>> thread = api.put_journal_run(jr_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -352,18 +352,18 @@ class JournalRunsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_journal_run_with_http_info(jr_number, **kwargs)  # noqa: E501
+            return self.put_journal_run_with_http_info(jr_number, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_journal_run_with_http_info(jr_number, **kwargs)  # noqa: E501
+            (data) = self.put_journal_run_with_http_info(jr_number, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_journal_run_with_http_info(self, jr_number, **kwargs):  # noqa: E501
+    def put_journal_run_with_http_info(self, jr_number, **kwargs):  # noqa: E501
         """Cancel journal run  # noqa: E501
 
         This reference describes how to cancel a journal run using the REST API.            The summary journal entries in the journal run are canceled asynchronously. See the \"Example\" section below for details.            You must have the \"Cancel Journal Run\" Zuora Finance user permission enabled to cancel journal runs.  ## Notes When you cancel a journal run, the summary journal entries associated with that journal run are canceled asynchronously. A response of `{ \"success\": true }` means only that the specified journal run has a status of \"Pending\", \"Error\", or \"Completed\" and therefore can be canceled, but does not mean that the whole journal run was successfully canceled.  For example, let's say you want to cancel journal run JR-00000075. The journal run status is \"Completed\" and it contains ten journal entries. One of the journal entries has its Transferred to Accounting status set to \"Yes\", meaning that the entry cannot be canceled. The workflow might go as follows: 1. You make an API call to cancel the journal run. 2. The journal run status is \"Completed\", so you receive a response of `{ \"success\": true }`. 3. Zuora begins asynchronously canceling journal entries associated with the journal run. The journal entry whose Transferred to Accounting status is \"Yes\" fails to be canceled. The cancelation process continues, and the other journal entries are successfully canceled. 4. The journal run status remains as \"Completed\". The status does not change to \"Canceled\" because the journal run still contains a journey entry that is not canceled.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_journal_run_with_http_info(jr_number, async_req=True)
+        >>> thread = api.put_journal_run_with_http_info(jr_number, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -385,14 +385,14 @@ class JournalRunsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_journal_run" % key
+                    " to method put_journal_run" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'jr_number' is set
         if ('jr_number' not in params or
                 params['jr_number'] is None):
-            raise ValueError("Missing the required parameter `jr_number` when calling `p_ut_journal_run`")  # noqa: E501
+            raise ValueError("Missing the required parameter `jr_number` when calling `put_journal_run`")  # noqa: E501
 
         collection_formats = {}
 

@@ -29,36 +29,36 @@ class TestAttachmentsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_d_elete_attachments(self):
-        """Test case for d_elete_attachments
+    def test_delete_attachments(self):
+        """Test case for delete_attachments
 
         Delete attachments  # noqa: E501
         """
         pass
 
-    def test_g_et_attachments(self):
-        """Test case for g_et_attachments
+    def test_get_attachments(self):
+        """Test case for get_attachments
 
         View attachments  # noqa: E501
         """
         pass
 
-    def test_g_et_attachments_list(self):
-        """Test case for g_et_attachments_list
+    def test_get_attachments_list(self):
+        """Test case for get_attachments_list
 
         View attachments list  # noqa: E501
         """
         pass
 
-    def test_p_ost_attachments(self):
-        """Test case for p_ost_attachments
+    def test_post_attachments(self):
+        """Test case for post_attachments
 
         Add attachments  # noqa: E501
         """
         pass
 
-    def test_p_ut_attachments(self):
-        """Test case for p_ut_attachments
+    def test_put_attachments(self):
+        """Test case for put_attachments
 
         Edit attachments  # noqa: E501
         """

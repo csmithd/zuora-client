@@ -29,43 +29,43 @@ class TestSummaryJournalEntriesApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_d_elete_summary_journal_entry(self):
-        """Test case for d_elete_summary_journal_entry
+    def test_delete_summary_journal_entry(self):
+        """Test case for delete_summary_journal_entry
 
         Delete summary journal entry  # noqa: E501
         """
         pass
 
-    def test_g_et_all_summary_journal_entries(self):
-        """Test case for g_et_all_summary_journal_entries
+    def test_get_all_summary_journal_entries(self):
+        """Test case for get_all_summary_journal_entries
 
         Get all summary journal entries in a journal run  # noqa: E501
         """
         pass
 
-    def test_g_et_summary_journal_entry(self):
-        """Test case for g_et_summary_journal_entry
+    def test_get_summary_journal_entry(self):
+        """Test case for get_summary_journal_entry
 
         Get summary journal entry  # noqa: E501
         """
         pass
 
-    def test_p_ost_summary_journal_entry(self):
-        """Test case for p_ost_summary_journal_entry
+    def test_post_summary_journal_entry(self):
+        """Test case for post_summary_journal_entry
 
         Create summary journal entry  # noqa: E501
         """
         pass
 
-    def test_p_ut_basic_summary_journal_entry(self):
-        """Test case for p_ut_basic_summary_journal_entry
+    def test_put_basic_summary_journal_entry(self):
+        """Test case for put_basic_summary_journal_entry
 
         Update basic information of a summary journal entry  # noqa: E501
         """
         pass
 
-    def test_p_ut_summary_journal_entry(self):
-        """Test case for p_ut_summary_journal_entry
+    def test_put_summary_journal_entry(self):
+        """Test case for put_summary_journal_entry
 
         Cancel summary journal entry  # noqa: E501
         """

@@ -25,13 +25,13 @@ class OperationsApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def p_ost_billing_preview(self, request, **kwargs):  # noqa: E501
+    def post_billing_preview(self, request, **kwargs):  # noqa: E501
         """Create billing preview  # noqa: E501
 
         **Note:** The Billing Preview feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).    Generates a preview of future invoice items for one customer account. Use the BillingPreview call to calculate how much a single customer will be invoiced from the most recent invoice to a specific end of term date in the future.  Additionally, you can use the BillingPreview service to access real-time data on an individual customer's usage consumption.   The BillingPreview call does not calculate taxes for charges in the subscription.  If you have the Invoice Settlement feature enabled, you can also generate a preview of future credit memo items for one customer account. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_billing_preview(request, async_req=True)
+        >>> thread = api.post_billing_preview(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -43,18 +43,18 @@ class OperationsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_billing_preview_with_http_info(request, **kwargs)  # noqa: E501
+            return self.post_billing_preview_with_http_info(request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_billing_preview_with_http_info(request, **kwargs)  # noqa: E501
+            (data) = self.post_billing_preview_with_http_info(request, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_billing_preview_with_http_info(self, request, **kwargs):  # noqa: E501
+    def post_billing_preview_with_http_info(self, request, **kwargs):  # noqa: E501
         """Create billing preview  # noqa: E501
 
         **Note:** The Billing Preview feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).    Generates a preview of future invoice items for one customer account. Use the BillingPreview call to calculate how much a single customer will be invoiced from the most recent invoice to a specific end of term date in the future.  Additionally, you can use the BillingPreview service to access real-time data on an individual customer's usage consumption.   The BillingPreview call does not calculate taxes for charges in the subscription.  If you have the Invoice Settlement feature enabled, you can also generate a preview of future credit memo items for one customer account. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_billing_preview_with_http_info(request, async_req=True)
+        >>> thread = api.post_billing_preview_with_http_info(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -76,14 +76,14 @@ class OperationsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_billing_preview" % key
+                    " to method post_billing_preview" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ost_billing_preview`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `post_billing_preview`")  # noqa: E501
 
         collection_formats = {}
 
@@ -128,13 +128,13 @@ class OperationsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_transaction_invoice_payment(self, request, **kwargs):  # noqa: E501
+    def post_transaction_invoice_payment(self, request, **kwargs):  # noqa: E501
         """Invoice and collect  # noqa: E501
 
         Generates and posts invoices and credit memos and collects payments for posted invoices. Credit memos are only available if you have the Invoice Settlement feature enabled and negative charges exist. Credit memos will not be applied to invoices. If draft invoices and credit memos exist when you run this operation, this operation will post the invoices and credit memos. Note that draft credit memos created from an invoice or a product rate plan charge will not be posted.  You can use this operation to generate invoices and collect payments on the posted invoices,  or else simply collect payment on a specified existing invoice. The customer's default payment method is used, and the full amount due is collected. The operation depends on the parameters you specify.  - To generate one or more new invoices for that customer and collect payment on the generated and other unpaid invoice(s), leave the **invoiceId** field empty.   - To collect payment on an existing invoice, specify the invoice ID.    The operation is atomic; if any part is unsuccessful, the entire operation is rolled back.  When an error occurs, gateway reason codes and error messages are returned the error response of this operation. The following items are some gateway response code examples.  - Orbital: `05 Do Not Honor`; `14 Invalid Credit Card Number` - Vantiv: `301 Invalid Account Number`; `304 Lost/Stolen Card`   - CyberSource2: `202 Expired card`; `231 Invalid account number`  For more reason code information, see the corresponding payment gateway documentation.    ## Notes  Timeouts may occur when using this method on an account that has an extremely high number of subscriptions.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_transaction_invoice_payment(request, async_req=True)
+        >>> thread = api.post_transaction_invoice_payment(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -147,18 +147,18 @@ class OperationsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_transaction_invoice_payment_with_http_info(request, **kwargs)  # noqa: E501
+            return self.post_transaction_invoice_payment_with_http_info(request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_transaction_invoice_payment_with_http_info(request, **kwargs)  # noqa: E501
+            (data) = self.post_transaction_invoice_payment_with_http_info(request, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_transaction_invoice_payment_with_http_info(self, request, **kwargs):  # noqa: E501
+    def post_transaction_invoice_payment_with_http_info(self, request, **kwargs):  # noqa: E501
         """Invoice and collect  # noqa: E501
 
         Generates and posts invoices and credit memos and collects payments for posted invoices. Credit memos are only available if you have the Invoice Settlement feature enabled and negative charges exist. Credit memos will not be applied to invoices. If draft invoices and credit memos exist when you run this operation, this operation will post the invoices and credit memos. Note that draft credit memos created from an invoice or a product rate plan charge will not be posted.  You can use this operation to generate invoices and collect payments on the posted invoices,  or else simply collect payment on a specified existing invoice. The customer's default payment method is used, and the full amount due is collected. The operation depends on the parameters you specify.  - To generate one or more new invoices for that customer and collect payment on the generated and other unpaid invoice(s), leave the **invoiceId** field empty.   - To collect payment on an existing invoice, specify the invoice ID.    The operation is atomic; if any part is unsuccessful, the entire operation is rolled back.  When an error occurs, gateway reason codes and error messages are returned the error response of this operation. The following items are some gateway response code examples.  - Orbital: `05 Do Not Honor`; `14 Invalid Credit Card Number` - Vantiv: `301 Invalid Account Number`; `304 Lost/Stolen Card`   - CyberSource2: `202 Expired card`; `231 Invalid account number`  For more reason code information, see the corresponding payment gateway documentation.    ## Notes  Timeouts may occur when using this method on an account that has an extremely high number of subscriptions.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_transaction_invoice_payment_with_http_info(request, async_req=True)
+        >>> thread = api.post_transaction_invoice_payment_with_http_info(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -181,14 +181,14 @@ class OperationsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_transaction_invoice_payment" % key
+                    " to method post_transaction_invoice_payment" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ost_transaction_invoice_payment`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `post_transaction_invoice_payment`")  # noqa: E501
 
         collection_formats = {}
 

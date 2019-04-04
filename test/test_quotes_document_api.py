@@ -29,8 +29,8 @@ class TestQuotesDocumentApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_p_ost_quotes_document(self):
-        """Test case for p_ost_quotes_document
+    def test_post_quotes_document(self):
+        """Test case for post_quotes_document
 
         Generate quotes document  # noqa: E501
         """

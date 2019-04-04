@@ -29,22 +29,22 @@ class TestCatalogApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_g_et_catalog(self):
-        """Test case for g_et_catalog
+    def test_get_catalog(self):
+        """Test case for get_catalog
 
         Get product catalog  # noqa: E501
         """
         pass
 
-    def test_g_et_product(self):
-        """Test case for g_et_product
+    def test_get_product(self):
+        """Test case for get_product
 
         Get product  # noqa: E501
         """
         pass
 
-    def test_p_ost_catalog(self):
-        """Test case for p_ost_catalog
+    def test_post_catalog(self):
+        """Test case for post_catalog
 
         Multi-entity: Share a product with an Entity  # noqa: E501
         """

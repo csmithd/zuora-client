@@ -29,8 +29,8 @@ class TestGetFilesApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_g_et_files(self):
-        """Test case for g_et_files
+    def test_get_files(self):
+        """Test case for get_files
 
         Get files  # noqa: E501
         """

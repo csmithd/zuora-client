@@ -29,22 +29,22 @@ class TestMassUpdaterApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_g_et_mass_updater(self):
-        """Test case for g_et_mass_updater
+    def test_get_mass_updater(self):
+        """Test case for get_mass_updater
 
         Get mass action result  # noqa: E501
         """
         pass
 
-    def test_p_ost_mass_updater(self):
-        """Test case for p_ost_mass_updater
+    def test_post_mass_updater(self):
+        """Test case for post_mass_updater
 
         Perform mass action  # noqa: E501
         """
         pass
 
-    def test_p_ut_mass_updater(self):
-        """Test case for p_ut_mass_updater
+    def test_put_mass_updater(self):
+        """Test case for put_mass_updater
 
         Stop mass action  # noqa: E501
         """

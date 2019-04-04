@@ -25,13 +25,13 @@ class PaymentsApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def d_elete_payment(self, payment_id, **kwargs):  # noqa: E501
+    def delete_payment(self, payment_id, **kwargs):  # noqa: E501
         """Delete payment  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Deletes a payment. Only payments with the Cancelled status can be deleted.   If you have the Invoice Settlement feature enabled, overpayments applied to credit balance cannot be deleted.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_payment(payment_id, async_req=True)
+        >>> thread = api.delete_payment(payment_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -43,18 +43,18 @@ class PaymentsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.d_elete_payment_with_http_info(payment_id, **kwargs)  # noqa: E501
+            return self.delete_payment_with_http_info(payment_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.d_elete_payment_with_http_info(payment_id, **kwargs)  # noqa: E501
+            (data) = self.delete_payment_with_http_info(payment_id, **kwargs)  # noqa: E501
             return data
 
-    def d_elete_payment_with_http_info(self, payment_id, **kwargs):  # noqa: E501
+    def delete_payment_with_http_info(self, payment_id, **kwargs):  # noqa: E501
         """Delete payment  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Deletes a payment. Only payments with the Cancelled status can be deleted.   If you have the Invoice Settlement feature enabled, overpayments applied to credit balance cannot be deleted.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_payment_with_http_info(payment_id, async_req=True)
+        >>> thread = api.delete_payment_with_http_info(payment_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -76,14 +76,14 @@ class PaymentsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method d_elete_payment" % key
+                    " to method delete_payment" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'payment_id' is set
         if ('payment_id' not in params or
                 params['payment_id'] is None):
-            raise ValueError("Missing the required parameter `payment_id` when calling `d_elete_payment`")  # noqa: E501
+            raise ValueError("Missing the required parameter `payment_id` when calling `delete_payment`")  # noqa: E501
 
         collection_formats = {}
 
@@ -128,13 +128,13 @@ class PaymentsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_payment(self, payment_id, **kwargs):  # noqa: E501
+    def get_payment(self, payment_id, **kwargs):  # noqa: E501
         """Get payment  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about one specific payment.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_payment(payment_id, async_req=True)
+        >>> thread = api.get_payment(payment_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -146,18 +146,18 @@ class PaymentsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_payment_with_http_info(payment_id, **kwargs)  # noqa: E501
+            return self.get_payment_with_http_info(payment_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_payment_with_http_info(payment_id, **kwargs)  # noqa: E501
+            (data) = self.get_payment_with_http_info(payment_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_payment_with_http_info(self, payment_id, **kwargs):  # noqa: E501
+    def get_payment_with_http_info(self, payment_id, **kwargs):  # noqa: E501
         """Get payment  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about one specific payment.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_payment_with_http_info(payment_id, async_req=True)
+        >>> thread = api.get_payment_with_http_info(payment_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -179,14 +179,14 @@ class PaymentsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_payment" % key
+                    " to method get_payment" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'payment_id' is set
         if ('payment_id' not in params or
                 params['payment_id'] is None):
-            raise ValueError("Missing the required parameter `payment_id` when calling `g_et_payment`")  # noqa: E501
+            raise ValueError("Missing the required parameter `payment_id` when calling `get_payment`")  # noqa: E501
 
         collection_formats = {}
 
@@ -231,13 +231,13 @@ class PaymentsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_payment_item_part(self, partid, itempartid, payment_id, **kwargs):  # noqa: E501
+    def get_payment_item_part(self, partid, itempartid, payment_id, **kwargs):  # noqa: E501
         """Get payment part item  # noqa: E501
 
         **Note:** The Invoice Item Settlement feature is in **Limited Availability**, and it must be used together with other Invoice Settlement features (Unapplied Payments, and Credit and Debit memos). If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Retrieves the information about a specific payment part item. A payment part item is a single line item in a payment part. A payment part can consist of several different types of items.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_payment_item_part(partid, itempartid, payment_id, async_req=True)
+        >>> thread = api.get_payment_item_part(partid, itempartid, payment_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -251,18 +251,18 @@ class PaymentsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_payment_item_part_with_http_info(partid, itempartid, payment_id, **kwargs)  # noqa: E501
+            return self.get_payment_item_part_with_http_info(partid, itempartid, payment_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_payment_item_part_with_http_info(partid, itempartid, payment_id, **kwargs)  # noqa: E501
+            (data) = self.get_payment_item_part_with_http_info(partid, itempartid, payment_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_payment_item_part_with_http_info(self, partid, itempartid, payment_id, **kwargs):  # noqa: E501
+    def get_payment_item_part_with_http_info(self, partid, itempartid, payment_id, **kwargs):  # noqa: E501
         """Get payment part item  # noqa: E501
 
         **Note:** The Invoice Item Settlement feature is in **Limited Availability**, and it must be used together with other Invoice Settlement features (Unapplied Payments, and Credit and Debit memos). If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Retrieves the information about a specific payment part item. A payment part item is a single line item in a payment part. A payment part can consist of several different types of items.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_payment_item_part_with_http_info(partid, itempartid, payment_id, async_req=True)
+        >>> thread = api.get_payment_item_part_with_http_info(partid, itempartid, payment_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -286,22 +286,22 @@ class PaymentsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_payment_item_part" % key
+                    " to method get_payment_item_part" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'partid' is set
         if ('partid' not in params or
                 params['partid'] is None):
-            raise ValueError("Missing the required parameter `partid` when calling `g_et_payment_item_part`")  # noqa: E501
+            raise ValueError("Missing the required parameter `partid` when calling `get_payment_item_part`")  # noqa: E501
         # verify the required parameter 'itempartid' is set
         if ('itempartid' not in params or
                 params['itempartid'] is None):
-            raise ValueError("Missing the required parameter `itempartid` when calling `g_et_payment_item_part`")  # noqa: E501
+            raise ValueError("Missing the required parameter `itempartid` when calling `get_payment_item_part`")  # noqa: E501
         # verify the required parameter 'payment_id' is set
         if ('payment_id' not in params or
                 params['payment_id'] is None):
-            raise ValueError("Missing the required parameter `payment_id` when calling `g_et_payment_item_part`")  # noqa: E501
+            raise ValueError("Missing the required parameter `payment_id` when calling `get_payment_item_part`")  # noqa: E501
 
         collection_formats = {}
 
@@ -350,13 +350,13 @@ class PaymentsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_payment_item_parts(self, partid, payment_id, **kwargs):  # noqa: E501
+    def get_payment_item_parts(self, partid, payment_id, **kwargs):  # noqa: E501
         """Get payment part items  # noqa: E501
 
         **Note:** The Invoice Item Settlement feature is in **Limited Availability**, and it must be used together with other Invoice Settlement features (Unapplied Payments, and Credit and Debit memos). If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about all items of a payment part. A payment part item is a single line item in a payment part. A payment part can consist of several different types of items.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_payment_item_parts(partid, payment_id, async_req=True)
+        >>> thread = api.get_payment_item_parts(partid, payment_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -370,18 +370,18 @@ class PaymentsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_payment_item_parts_with_http_info(partid, payment_id, **kwargs)  # noqa: E501
+            return self.get_payment_item_parts_with_http_info(partid, payment_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_payment_item_parts_with_http_info(partid, payment_id, **kwargs)  # noqa: E501
+            (data) = self.get_payment_item_parts_with_http_info(partid, payment_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_payment_item_parts_with_http_info(self, partid, payment_id, **kwargs):  # noqa: E501
+    def get_payment_item_parts_with_http_info(self, partid, payment_id, **kwargs):  # noqa: E501
         """Get payment part items  # noqa: E501
 
         **Note:** The Invoice Item Settlement feature is in **Limited Availability**, and it must be used together with other Invoice Settlement features (Unapplied Payments, and Credit and Debit memos). If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about all items of a payment part. A payment part item is a single line item in a payment part. A payment part can consist of several different types of items.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_payment_item_parts_with_http_info(partid, payment_id, async_req=True)
+        >>> thread = api.get_payment_item_parts_with_http_info(partid, payment_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -405,21 +405,21 @@ class PaymentsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_payment_item_parts" % key
+                    " to method get_payment_item_parts" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'partid' is set
         if ('partid' not in params or
                 params['partid'] is None):
-            raise ValueError("Missing the required parameter `partid` when calling `g_et_payment_item_parts`")  # noqa: E501
+            raise ValueError("Missing the required parameter `partid` when calling `get_payment_item_parts`")  # noqa: E501
         # verify the required parameter 'payment_id' is set
         if ('payment_id' not in params or
                 params['payment_id'] is None):
-            raise ValueError("Missing the required parameter `payment_id` when calling `g_et_payment_item_parts`")  # noqa: E501
+            raise ValueError("Missing the required parameter `payment_id` when calling `get_payment_item_parts`")  # noqa: E501
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_payment_item_parts`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_payment_item_parts`, must be a value less than or equal to `40`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -467,13 +467,13 @@ class PaymentsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_payment_part(self, partid, payment_id, **kwargs):  # noqa: E501
+    def get_payment_part(self, partid, payment_id, **kwargs):  # noqa: E501
         """Get payment part  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about a specific payment part. A payment can consist of an unapplied part, and several parts applied to invoices and debit memos.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_payment_part(partid, payment_id, async_req=True)
+        >>> thread = api.get_payment_part(partid, payment_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -486,18 +486,18 @@ class PaymentsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_payment_part_with_http_info(partid, payment_id, **kwargs)  # noqa: E501
+            return self.get_payment_part_with_http_info(partid, payment_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_payment_part_with_http_info(partid, payment_id, **kwargs)  # noqa: E501
+            (data) = self.get_payment_part_with_http_info(partid, payment_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_payment_part_with_http_info(self, partid, payment_id, **kwargs):  # noqa: E501
+    def get_payment_part_with_http_info(self, partid, payment_id, **kwargs):  # noqa: E501
         """Get payment part  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about a specific payment part. A payment can consist of an unapplied part, and several parts applied to invoices and debit memos.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_payment_part_with_http_info(partid, payment_id, async_req=True)
+        >>> thread = api.get_payment_part_with_http_info(partid, payment_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -520,18 +520,18 @@ class PaymentsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_payment_part" % key
+                    " to method get_payment_part" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'partid' is set
         if ('partid' not in params or
                 params['partid'] is None):
-            raise ValueError("Missing the required parameter `partid` when calling `g_et_payment_part`")  # noqa: E501
+            raise ValueError("Missing the required parameter `partid` when calling `get_payment_part`")  # noqa: E501
         # verify the required parameter 'payment_id' is set
         if ('payment_id' not in params or
                 params['payment_id'] is None):
-            raise ValueError("Missing the required parameter `payment_id` when calling `g_et_payment_part`")  # noqa: E501
+            raise ValueError("Missing the required parameter `payment_id` when calling `get_payment_part`")  # noqa: E501
 
         collection_formats = {}
 
@@ -578,13 +578,13 @@ class PaymentsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_payment_parts(self, payment_id, **kwargs):  # noqa: E501
+    def get_payment_parts(self, payment_id, **kwargs):  # noqa: E501
         """Get payment parts  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about all parts of a payment. A payment can consist of an unapplied part, and several parts applied to invoices and debit memos. You can use this operation to get all the applied and unapplied portions of a payment.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_payment_parts(payment_id, async_req=True)
+        >>> thread = api.get_payment_parts(payment_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -597,18 +597,18 @@ class PaymentsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_payment_parts_with_http_info(payment_id, **kwargs)  # noqa: E501
+            return self.get_payment_parts_with_http_info(payment_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_payment_parts_with_http_info(payment_id, **kwargs)  # noqa: E501
+            (data) = self.get_payment_parts_with_http_info(payment_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_payment_parts_with_http_info(self, payment_id, **kwargs):  # noqa: E501
+    def get_payment_parts_with_http_info(self, payment_id, **kwargs):  # noqa: E501
         """Get payment parts  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about all parts of a payment. A payment can consist of an unapplied part, and several parts applied to invoices and debit memos. You can use this operation to get all the applied and unapplied portions of a payment.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_payment_parts_with_http_info(payment_id, async_req=True)
+        >>> thread = api.get_payment_parts_with_http_info(payment_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -631,17 +631,17 @@ class PaymentsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_payment_parts" % key
+                    " to method get_payment_parts" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'payment_id' is set
         if ('payment_id' not in params or
                 params['payment_id'] is None):
-            raise ValueError("Missing the required parameter `payment_id` when calling `g_et_payment_parts`")  # noqa: E501
+            raise ValueError("Missing the required parameter `payment_id` when calling `get_payment_parts`")  # noqa: E501
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_payment_parts`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_payment_parts`, must be a value less than or equal to `40`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -687,13 +687,13 @@ class PaymentsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_retrieve_all_payments(self, **kwargs):  # noqa: E501
+    def get_retrieve_all_payments(self, **kwargs):  # noqa: E501
         """Get all payments  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about all payments from all your customer accounts.  ### Filtering  You can use query parameters to restrict the data returned in the response. Each query parameter corresponds to one field in the response body.  If the value of a filterable field is string, you can set the corresponding query parameter to `null` when filtering. Then, you can get the response data with this field value being `null`.  Examples:  - /v1/payments?status=Processed  - /v1/payments?currency=USD&status=Processed  - /v1/payments?status=Processed&type=External&sort=+number   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_retrieve_all_payments(async_req=True)
+        >>> thread = api.get_retrieve_all_payments(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -721,18 +721,18 @@ class PaymentsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_retrieve_all_payments_with_http_info(**kwargs)  # noqa: E501
+            return self.get_retrieve_all_payments_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_retrieve_all_payments_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.get_retrieve_all_payments_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def g_et_retrieve_all_payments_with_http_info(self, **kwargs):  # noqa: E501
+    def get_retrieve_all_payments_with_http_info(self, **kwargs):  # noqa: E501
         """Get all payments  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieves the information about all payments from all your customer accounts.  ### Filtering  You can use query parameters to restrict the data returned in the response. Each query parameter corresponds to one field in the response body.  If the value of a filterable field is string, you can set the corresponding query parameter to `null` when filtering. Then, you can get the response data with this field value being `null`.  Examples:  - /v1/payments?status=Processed  - /v1/payments?currency=USD&status=Processed  - /v1/payments?status=Processed&type=External&sort=+number   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_retrieve_all_payments_with_http_info(async_req=True)
+        >>> thread = api.get_retrieve_all_payments_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -770,13 +770,13 @@ class PaymentsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_retrieve_all_payments" % key
+                    " to method get_retrieve_all_payments" % key
                 )
             params[key] = val
         del params['kwargs']
 
         if 'page_size' in params and params['page_size'] > 40:  # noqa: E501
-            raise ValueError("Invalid value for parameter `page_size` when calling `g_et_retrieve_all_payments`, must be a value less than or equal to `40`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `page_size` when calling `get_retrieve_all_payments`, must be a value less than or equal to `40`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -1300,13 +1300,13 @@ class PaymentsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_create_payment(self, body, **kwargs):  # noqa: E501
+    def post_create_payment(self, body, **kwargs):  # noqa: E501
         """Create payment  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Creates a payment for the following scenarios:  - A full payment on an invoice or debit memo - A partial payment - A payment for several invoices and debit memos - An unapplied payment   If you do not know to which customer account the payment belongs, you can create a payment without specifying a customer account.  When creating a payment, the total number of invoices and debit memos that the payment will apply to should be less than or equal to 1,000.  If the Proration application rule is used, when creating a payment, the following quantity must be less than or equal to 10,000:   (number of invoice items + number of debit memo items) * number of payment items  Otherwise, the First In First Out rule will be used instead of the Proration rule.  For more information, see [Create Payments](https://knowledgecenter.zuora.com/CB_Billing/Invoice_Settlement/A_Unapplied_Payments/Management_of_Unapplied_Payments/AA_Create_Payments) and [Create Payments Without Specifying Customer Accounts](https://knowledgecenter.zuora.com/CB_Billing/Invoice_Settlement/A_Unapplied_Payments/Management_of_Unapplied_Payments/AA_Create_Payments_Without_Specifying_Customer_Accounts).        # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_create_payment(body, async_req=True)
+        >>> thread = api.post_create_payment(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1318,18 +1318,18 @@ class PaymentsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_create_payment_with_http_info(body, **kwargs)  # noqa: E501
+            return self.post_create_payment_with_http_info(body, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_create_payment_with_http_info(body, **kwargs)  # noqa: E501
+            (data) = self.post_create_payment_with_http_info(body, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_create_payment_with_http_info(self, body, **kwargs):  # noqa: E501
+    def post_create_payment_with_http_info(self, body, **kwargs):  # noqa: E501
         """Create payment  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Creates a payment for the following scenarios:  - A full payment on an invoice or debit memo - A partial payment - A payment for several invoices and debit memos - An unapplied payment   If you do not know to which customer account the payment belongs, you can create a payment without specifying a customer account.  When creating a payment, the total number of invoices and debit memos that the payment will apply to should be less than or equal to 1,000.  If the Proration application rule is used, when creating a payment, the following quantity must be less than or equal to 10,000:   (number of invoice items + number of debit memo items) * number of payment items  Otherwise, the First In First Out rule will be used instead of the Proration rule.  For more information, see [Create Payments](https://knowledgecenter.zuora.com/CB_Billing/Invoice_Settlement/A_Unapplied_Payments/Management_of_Unapplied_Payments/AA_Create_Payments) and [Create Payments Without Specifying Customer Accounts](https://knowledgecenter.zuora.com/CB_Billing/Invoice_Settlement/A_Unapplied_Payments/Management_of_Unapplied_Payments/AA_Create_Payments_Without_Specifying_Customer_Accounts).        # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_create_payment_with_http_info(body, async_req=True)
+        >>> thread = api.post_create_payment_with_http_info(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1351,14 +1351,14 @@ class PaymentsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_create_payment" % key
+                    " to method post_create_payment" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ost_create_payment`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `post_create_payment`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1403,13 +1403,13 @@ class PaymentsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_refund_payment(self, body, payment_id, **kwargs):  # noqa: E501
+    def post_refund_payment(self, body, payment_id, **kwargs):  # noqa: E501
         """Refund payment  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Refunds a full or partial unapplied payment to your customers. To refund applied payments, you must unapply the applied payments from the invoices or debit memos, and then refund the unapplied payments to customers.  For more information, see [Refund Payments](https://knowledgecenter.zuora.com/CB_Billing/Invoice_Settlement/A_Unapplied_Payments/Management_of_Unapplied_Payments/Z_Refund_Payments).   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_refund_payment(body, payment_id, async_req=True)
+        >>> thread = api.post_refund_payment(body, payment_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1422,18 +1422,18 @@ class PaymentsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_refund_payment_with_http_info(body, payment_id, **kwargs)  # noqa: E501
+            return self.post_refund_payment_with_http_info(body, payment_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_refund_payment_with_http_info(body, payment_id, **kwargs)  # noqa: E501
+            (data) = self.post_refund_payment_with_http_info(body, payment_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_refund_payment_with_http_info(self, body, payment_id, **kwargs):  # noqa: E501
+    def post_refund_payment_with_http_info(self, body, payment_id, **kwargs):  # noqa: E501
         """Refund payment  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Refunds a full or partial unapplied payment to your customers. To refund applied payments, you must unapply the applied payments from the invoices or debit memos, and then refund the unapplied payments to customers.  For more information, see [Refund Payments](https://knowledgecenter.zuora.com/CB_Billing/Invoice_Settlement/A_Unapplied_Payments/Management_of_Unapplied_Payments/Z_Refund_Payments).   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_refund_payment_with_http_info(body, payment_id, async_req=True)
+        >>> thread = api.post_refund_payment_with_http_info(body, payment_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1456,18 +1456,18 @@ class PaymentsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_refund_payment" % key
+                    " to method post_refund_payment" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ost_refund_payment`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `post_refund_payment`")  # noqa: E501
         # verify the required parameter 'payment_id' is set
         if ('payment_id' not in params or
                 params['payment_id'] is None):
-            raise ValueError("Missing the required parameter `payment_id` when calling `p_ost_refund_payment`")  # noqa: E501
+            raise ValueError("Missing the required parameter `payment_id` when calling `post_refund_payment`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1514,13 +1514,13 @@ class PaymentsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_apply_payment(self, body, payment_id, **kwargs):  # noqa: E501
+    def put_apply_payment(self, body, payment_id, **kwargs):  # noqa: E501
         """Apply payment  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Applies an unapplied payment to invoices and debit memos.  When applying a payment, the total number of invoices and debit memos that the payment will apply to must be less than or equal to 1,000.  If the Proration application rule is used, when applying a payment, the following quantity must be less than or equal to 10,000:   (number of invoice items + number of debit memo items) * number of payment items  Otherwise, the First In First Out rule will be used instead of the Proration rule.   For more information, see [Apply Unapplied Payments to Invoices and Debit Memos](https://knowledgecenter.zuora.com/CB_Billing/Invoice_Settlement/A_Unapplied_Payments/Management_of_Unapplied_Payments/Apply_Unapplied_Payments_to_Invoices_and_Debit_Memos).   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_apply_payment(body, payment_id, async_req=True)
+        >>> thread = api.put_apply_payment(body, payment_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1533,18 +1533,18 @@ class PaymentsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_apply_payment_with_http_info(body, payment_id, **kwargs)  # noqa: E501
+            return self.put_apply_payment_with_http_info(body, payment_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_apply_payment_with_http_info(body, payment_id, **kwargs)  # noqa: E501
+            (data) = self.put_apply_payment_with_http_info(body, payment_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_apply_payment_with_http_info(self, body, payment_id, **kwargs):  # noqa: E501
+    def put_apply_payment_with_http_info(self, body, payment_id, **kwargs):  # noqa: E501
         """Apply payment  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Applies an unapplied payment to invoices and debit memos.  When applying a payment, the total number of invoices and debit memos that the payment will apply to must be less than or equal to 1,000.  If the Proration application rule is used, when applying a payment, the following quantity must be less than or equal to 10,000:   (number of invoice items + number of debit memo items) * number of payment items  Otherwise, the First In First Out rule will be used instead of the Proration rule.   For more information, see [Apply Unapplied Payments to Invoices and Debit Memos](https://knowledgecenter.zuora.com/CB_Billing/Invoice_Settlement/A_Unapplied_Payments/Management_of_Unapplied_Payments/Apply_Unapplied_Payments_to_Invoices_and_Debit_Memos).   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_apply_payment_with_http_info(body, payment_id, async_req=True)
+        >>> thread = api.put_apply_payment_with_http_info(body, payment_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1567,18 +1567,18 @@ class PaymentsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_apply_payment" % key
+                    " to method put_apply_payment" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ut_apply_payment`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `put_apply_payment`")  # noqa: E501
         # verify the required parameter 'payment_id' is set
         if ('payment_id' not in params or
                 params['payment_id'] is None):
-            raise ValueError("Missing the required parameter `payment_id` when calling `p_ut_apply_payment`")  # noqa: E501
+            raise ValueError("Missing the required parameter `payment_id` when calling `put_apply_payment`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1625,13 +1625,13 @@ class PaymentsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_cancel_payment(self, payment_id, **kwargs):  # noqa: E501
+    def put_cancel_payment(self, payment_id, **kwargs):  # noqa: E501
         """Cancel payment  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Cancels a payment.   If you have the Invoice Settlement feature enabled, overpayments applied to credit balance cannot be cancelled.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_cancel_payment(payment_id, async_req=True)
+        >>> thread = api.put_cancel_payment(payment_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1643,18 +1643,18 @@ class PaymentsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_cancel_payment_with_http_info(payment_id, **kwargs)  # noqa: E501
+            return self.put_cancel_payment_with_http_info(payment_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_cancel_payment_with_http_info(payment_id, **kwargs)  # noqa: E501
+            (data) = self.put_cancel_payment_with_http_info(payment_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_cancel_payment_with_http_info(self, payment_id, **kwargs):  # noqa: E501
+    def put_cancel_payment_with_http_info(self, payment_id, **kwargs):  # noqa: E501
         """Cancel payment  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Cancels a payment.   If you have the Invoice Settlement feature enabled, overpayments applied to credit balance cannot be cancelled.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_cancel_payment_with_http_info(payment_id, async_req=True)
+        >>> thread = api.put_cancel_payment_with_http_info(payment_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1676,14 +1676,14 @@ class PaymentsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_cancel_payment" % key
+                    " to method put_cancel_payment" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'payment_id' is set
         if ('payment_id' not in params or
                 params['payment_id'] is None):
-            raise ValueError("Missing the required parameter `payment_id` when calling `p_ut_cancel_payment`")  # noqa: E501
+            raise ValueError("Missing the required parameter `payment_id` when calling `put_cancel_payment`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1728,13 +1728,13 @@ class PaymentsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_transfer_payment(self, body, payment_id, **kwargs):  # noqa: E501
+    def put_transfer_payment(self, body, payment_id, **kwargs):  # noqa: E501
         """Transfer payment  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Transfers an unapplied payment.  For more information, see [Transfer Unapplied Payments](https://knowledgecenter.zuora.com/CB_Billing/Invoice_Settlement/A_Unapplied_Payments/Management_of_Unapplied_Payments/Transfer_Unapplied_Payments).   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_transfer_payment(body, payment_id, async_req=True)
+        >>> thread = api.put_transfer_payment(body, payment_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1747,18 +1747,18 @@ class PaymentsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_transfer_payment_with_http_info(body, payment_id, **kwargs)  # noqa: E501
+            return self.put_transfer_payment_with_http_info(body, payment_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_transfer_payment_with_http_info(body, payment_id, **kwargs)  # noqa: E501
+            (data) = self.put_transfer_payment_with_http_info(body, payment_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_transfer_payment_with_http_info(self, body, payment_id, **kwargs):  # noqa: E501
+    def put_transfer_payment_with_http_info(self, body, payment_id, **kwargs):  # noqa: E501
         """Transfer payment  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Transfers an unapplied payment.  For more information, see [Transfer Unapplied Payments](https://knowledgecenter.zuora.com/CB_Billing/Invoice_Settlement/A_Unapplied_Payments/Management_of_Unapplied_Payments/Transfer_Unapplied_Payments).   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_transfer_payment_with_http_info(body, payment_id, async_req=True)
+        >>> thread = api.put_transfer_payment_with_http_info(body, payment_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1781,18 +1781,18 @@ class PaymentsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_transfer_payment" % key
+                    " to method put_transfer_payment" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ut_transfer_payment`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `put_transfer_payment`")  # noqa: E501
         # verify the required parameter 'payment_id' is set
         if ('payment_id' not in params or
                 params['payment_id'] is None):
-            raise ValueError("Missing the required parameter `payment_id` when calling `p_ut_transfer_payment`")  # noqa: E501
+            raise ValueError("Missing the required parameter `payment_id` when calling `put_transfer_payment`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1839,13 +1839,13 @@ class PaymentsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_unapply_payment(self, body, payment_id, **kwargs):  # noqa: E501
+    def put_unapply_payment(self, body, payment_id, **kwargs):  # noqa: E501
         """Unapply payment  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Unapplies an applied payment from invoices and debit memos.  For more information, see [Unapply Payments from Invoices and Debit Memos](https://knowledgecenter.zuora.com/CB_Billing/Invoice_Settlement/A_Unapplied_Payments/Management_of_Unapplied_Payments/Unapply_Payments_from_Invoices_and_Debit_Memos).   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_unapply_payment(body, payment_id, async_req=True)
+        >>> thread = api.put_unapply_payment(body, payment_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1858,18 +1858,18 @@ class PaymentsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_unapply_payment_with_http_info(body, payment_id, **kwargs)  # noqa: E501
+            return self.put_unapply_payment_with_http_info(body, payment_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_unapply_payment_with_http_info(body, payment_id, **kwargs)  # noqa: E501
+            (data) = self.put_unapply_payment_with_http_info(body, payment_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_unapply_payment_with_http_info(self, body, payment_id, **kwargs):  # noqa: E501
+    def put_unapply_payment_with_http_info(self, body, payment_id, **kwargs):  # noqa: E501
         """Unapply payment  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Unapplies an applied payment from invoices and debit memos.  For more information, see [Unapply Payments from Invoices and Debit Memos](https://knowledgecenter.zuora.com/CB_Billing/Invoice_Settlement/A_Unapplied_Payments/Management_of_Unapplied_Payments/Unapply_Payments_from_Invoices_and_Debit_Memos).   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_unapply_payment_with_http_info(body, payment_id, async_req=True)
+        >>> thread = api.put_unapply_payment_with_http_info(body, payment_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1892,18 +1892,18 @@ class PaymentsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_unapply_payment" % key
+                    " to method put_unapply_payment" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ut_unapply_payment`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `put_unapply_payment`")  # noqa: E501
         # verify the required parameter 'payment_id' is set
         if ('payment_id' not in params or
                 params['payment_id'] is None):
-            raise ValueError("Missing the required parameter `payment_id` when calling `p_ut_unapply_payment`")  # noqa: E501
+            raise ValueError("Missing the required parameter `payment_id` when calling `put_unapply_payment`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1950,13 +1950,13 @@ class PaymentsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_update_payment(self, body, payment_id, **kwargs):  # noqa: E501
+    def put_update_payment(self, body, payment_id, **kwargs):  # noqa: E501
         """Update payment  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Updates a payment.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_update_payment(body, payment_id, async_req=True)
+        >>> thread = api.put_update_payment(body, payment_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1969,18 +1969,18 @@ class PaymentsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_update_payment_with_http_info(body, payment_id, **kwargs)  # noqa: E501
+            return self.put_update_payment_with_http_info(body, payment_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_update_payment_with_http_info(body, payment_id, **kwargs)  # noqa: E501
+            (data) = self.put_update_payment_with_http_info(body, payment_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_update_payment_with_http_info(self, body, payment_id, **kwargs):  # noqa: E501
+    def put_update_payment_with_http_info(self, body, payment_id, **kwargs):  # noqa: E501
         """Update payment  # noqa: E501
 
         **Note:** The Invoice Settlement feature is in **Limited Availability**. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Updates a payment.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_update_payment_with_http_info(body, payment_id, async_req=True)
+        >>> thread = api.put_update_payment_with_http_info(body, payment_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -2003,18 +2003,18 @@ class PaymentsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_update_payment" % key
+                    " to method put_update_payment" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ut_update_payment`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `put_update_payment`")  # noqa: E501
         # verify the required parameter 'payment_id' is set
         if ('payment_id' not in params or
                 params['payment_id'] is None):
-            raise ValueError("Missing the required parameter `payment_id` when calling `p_ut_update_payment`")  # noqa: E501
+            raise ValueError("Missing the required parameter `payment_id` when calling `put_update_payment`")  # noqa: E501
 
         collection_formats = {}
 

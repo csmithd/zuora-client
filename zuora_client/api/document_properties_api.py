@@ -25,13 +25,13 @@ class DocumentPropertiesApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def d_elete_document_properties(self, document_properties_id, **kwargs):  # noqa: E501
+    def delete_document_properties(self, document_properties_id, **kwargs):  # noqa: E501
         """Delete document properties  # noqa: E501
 
         **Note:** This feature is available only if you have the Billing Document Properties Setup feature enabled. The Billing Document Properties Setup feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Deletes document properties with a specific ID for a billing document. Billing documents include invoices, credit memos, and debit memos.  **Note:** You can delete document properties for credit and debit memos only if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_document_properties(document_properties_id, async_req=True)
+        >>> thread = api.delete_document_properties(document_properties_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -44,18 +44,18 @@ class DocumentPropertiesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.d_elete_document_properties_with_http_info(document_properties_id, **kwargs)  # noqa: E501
+            return self.delete_document_properties_with_http_info(document_properties_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.d_elete_document_properties_with_http_info(document_properties_id, **kwargs)  # noqa: E501
+            (data) = self.delete_document_properties_with_http_info(document_properties_id, **kwargs)  # noqa: E501
             return data
 
-    def d_elete_document_properties_with_http_info(self, document_properties_id, **kwargs):  # noqa: E501
+    def delete_document_properties_with_http_info(self, document_properties_id, **kwargs):  # noqa: E501
         """Delete document properties  # noqa: E501
 
         **Note:** This feature is available only if you have the Billing Document Properties Setup feature enabled. The Billing Document Properties Setup feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Deletes document properties with a specific ID for a billing document. Billing documents include invoices, credit memos, and debit memos.  **Note:** You can delete document properties for credit and debit memos only if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_document_properties_with_http_info(document_properties_id, async_req=True)
+        >>> thread = api.delete_document_properties_with_http_info(document_properties_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -78,18 +78,18 @@ class DocumentPropertiesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method d_elete_document_properties" % key
+                    " to method delete_document_properties" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'document_properties_id' is set
         if ('document_properties_id' not in params or
                 params['document_properties_id'] is None):
-            raise ValueError("Missing the required parameter `document_properties_id` when calling `d_elete_document_properties`")  # noqa: E501
+            raise ValueError("Missing the required parameter `document_properties_id` when calling `delete_document_properties`")  # noqa: E501
 
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `d_elete_document_properties`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `delete_document_properties`, length must be less than or equal to `64`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -135,13 +135,13 @@ class DocumentPropertiesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_document_properies(self, document_type, document_id, **kwargs):  # noqa: E501
+    def get_document_properies(self, document_type, document_id, **kwargs):  # noqa: E501
         """Get document properties  # noqa: E501
 
         **Note:** This feature is available only if you have the Billing Document Properties Setup feature enabled. The Billing Document Properties Setup feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieve information about document properties of a billing document. Billing documents include invoices, credit memos, and debit memos.    **Note:** You can retrieve information about document properties of credit and debit memos only if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_document_properies(document_type, document_id, async_req=True)
+        >>> thread = api.get_document_properies(document_type, document_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -155,18 +155,18 @@ class DocumentPropertiesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_document_properies_with_http_info(document_type, document_id, **kwargs)  # noqa: E501
+            return self.get_document_properies_with_http_info(document_type, document_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_document_properies_with_http_info(document_type, document_id, **kwargs)  # noqa: E501
+            (data) = self.get_document_properies_with_http_info(document_type, document_id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_document_properies_with_http_info(self, document_type, document_id, **kwargs):  # noqa: E501
+    def get_document_properies_with_http_info(self, document_type, document_id, **kwargs):  # noqa: E501
         """Get document properties  # noqa: E501
 
         **Note:** This feature is available only if you have the Billing Document Properties Setup feature enabled. The Billing Document Properties Setup feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   Retrieve information about document properties of a billing document. Billing documents include invoices, credit memos, and debit memos.    **Note:** You can retrieve information about document properties of credit and debit memos only if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_document_properies_with_http_info(document_type, document_id, async_req=True)
+        >>> thread = api.get_document_properies_with_http_info(document_type, document_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -190,22 +190,22 @@ class DocumentPropertiesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_document_properies" % key
+                    " to method get_document_properies" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'document_type' is set
         if ('document_type' not in params or
                 params['document_type'] is None):
-            raise ValueError("Missing the required parameter `document_type` when calling `g_et_document_properies`")  # noqa: E501
+            raise ValueError("Missing the required parameter `document_type` when calling `get_document_properies`")  # noqa: E501
         # verify the required parameter 'document_id' is set
         if ('document_id' not in params or
                 params['document_id'] is None):
-            raise ValueError("Missing the required parameter `document_id` when calling `g_et_document_properies`")  # noqa: E501
+            raise ValueError("Missing the required parameter `document_id` when calling `get_document_properies`")  # noqa: E501
 
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `g_et_document_properies`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `get_document_properies`, length must be less than or equal to `64`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -253,13 +253,13 @@ class DocumentPropertiesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ost_document_properties(self, request, **kwargs):  # noqa: E501
+    def post_document_properties(self, request, **kwargs):  # noqa: E501
         """Create document properties  # noqa: E501
 
         **Note:** This feature is available only if you have the Billing Document Properties Setup feature enabled. The Billing Document Properties Setup feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Creates custom document properties for a billing document. For example, a document property can be a custom name used for files generated for billing documents. Billing documents include invoices, credit memos, and debit memos.  If you want to configure custom file names for billing documents created through API operations, you have to call this operation before posting the billing documents.   **Note:** You can create document properties for credit and debit memos only if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_document_properties(request, async_req=True)
+        >>> thread = api.post_document_properties(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -272,18 +272,18 @@ class DocumentPropertiesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ost_document_properties_with_http_info(request, **kwargs)  # noqa: E501
+            return self.post_document_properties_with_http_info(request, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ost_document_properties_with_http_info(request, **kwargs)  # noqa: E501
+            (data) = self.post_document_properties_with_http_info(request, **kwargs)  # noqa: E501
             return data
 
-    def p_ost_document_properties_with_http_info(self, request, **kwargs):  # noqa: E501
+    def post_document_properties_with_http_info(self, request, **kwargs):  # noqa: E501
         """Create document properties  # noqa: E501
 
         **Note:** This feature is available only if you have the Billing Document Properties Setup feature enabled. The Billing Document Properties Setup feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Creates custom document properties for a billing document. For example, a document property can be a custom name used for files generated for billing documents. Billing documents include invoices, credit memos, and debit memos.  If you want to configure custom file names for billing documents created through API operations, you have to call this operation before posting the billing documents.   **Note:** You can create document properties for credit and debit memos only if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ost_document_properties_with_http_info(request, async_req=True)
+        >>> thread = api.post_document_properties_with_http_info(request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -306,18 +306,18 @@ class DocumentPropertiesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ost_document_properties" % key
+                    " to method post_document_properties" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ost_document_properties`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `post_document_properties`")  # noqa: E501
 
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `p_ost_document_properties`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `post_document_properties`, length must be less than or equal to `64`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -363,13 +363,13 @@ class DocumentPropertiesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_document_properties(self, request, document_properties_id, **kwargs):  # noqa: E501
+    def put_document_properties(self, request, document_properties_id, **kwargs):  # noqa: E501
         """Update document properties  # noqa: E501
 
         **Note:** This feature is available only if you have the Billing Document Properties Setup feature enabled. The Billing Document Properties Setup feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Updates document properties with a specific ID for a billing document. Billing documents include invoices, credit memos, and debit memos.  **Note:** You can update document properties for credit and debit memos only if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_document_properties(request, document_properties_id, async_req=True)
+        >>> thread = api.put_document_properties(request, document_properties_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -383,18 +383,18 @@ class DocumentPropertiesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_document_properties_with_http_info(request, document_properties_id, **kwargs)  # noqa: E501
+            return self.put_document_properties_with_http_info(request, document_properties_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_document_properties_with_http_info(request, document_properties_id, **kwargs)  # noqa: E501
+            (data) = self.put_document_properties_with_http_info(request, document_properties_id, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_document_properties_with_http_info(self, request, document_properties_id, **kwargs):  # noqa: E501
+    def put_document_properties_with_http_info(self, request, document_properties_id, **kwargs):  # noqa: E501
         """Update document properties  # noqa: E501
 
         **Note:** This feature is available only if you have the Billing Document Properties Setup feature enabled. The Billing Document Properties Setup feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).  Updates document properties with a specific ID for a billing document. Billing documents include invoices, credit memos, and debit memos.  **Note:** You can update document properties for credit and debit memos only if you have the Invoice Settlement feature enabled. The Invoice Settlement feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com/).   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_document_properties_with_http_info(request, document_properties_id, async_req=True)
+        >>> thread = api.put_document_properties_with_http_info(request, document_properties_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -418,22 +418,22 @@ class DocumentPropertiesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_document_properties" % key
+                    " to method put_document_properties" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'request' is set
         if ('request' not in params or
                 params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `p_ut_document_properties`")  # noqa: E501
+            raise ValueError("Missing the required parameter `request` when calling `put_document_properties`")  # noqa: E501
         # verify the required parameter 'document_properties_id' is set
         if ('document_properties_id' not in params or
                 params['document_properties_id'] is None):
-            raise ValueError("Missing the required parameter `document_properties_id` when calling `p_ut_document_properties`")  # noqa: E501
+            raise ValueError("Missing the required parameter `document_properties_id` when calling `put_document_properties`")  # noqa: E501
 
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `p_ut_document_properties`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `put_document_properties`, length must be less than or equal to `64`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}

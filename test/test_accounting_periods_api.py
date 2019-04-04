@@ -29,64 +29,64 @@ class TestAccountingPeriodsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_d_elete_accounting_period(self):
-        """Test case for d_elete_accounting_period
+    def test_delete_accounting_period(self):
+        """Test case for delete_accounting_period
 
         Delete accounting period  # noqa: E501
         """
         pass
 
-    def test_g_et_accounting_period(self):
-        """Test case for g_et_accounting_period
+    def test_get_accounting_period(self):
+        """Test case for get_accounting_period
 
         Get accounting period  # noqa: E501
         """
         pass
 
-    def test_g_et_all_accounting_periods(self):
-        """Test case for g_et_all_accounting_periods
+    def test_get_all_accounting_periods(self):
+        """Test case for get_all_accounting_periods
 
         Get all accounting periods  # noqa: E501
         """
         pass
 
-    def test_p_ost_accounting_period(self):
-        """Test case for p_ost_accounting_period
+    def test_post_accounting_period(self):
+        """Test case for post_accounting_period
 
         Create accounting period  # noqa: E501
         """
         pass
 
-    def test_p_ut_close_accounting_period(self):
-        """Test case for p_ut_close_accounting_period
+    def test_put_close_accounting_period(self):
+        """Test case for put_close_accounting_period
 
         Close accounting period  # noqa: E501
         """
         pass
 
-    def test_p_ut_pending_close_accounting_period(self):
-        """Test case for p_ut_pending_close_accounting_period
+    def test_put_pending_close_accounting_period(self):
+        """Test case for put_pending_close_accounting_period
 
         Set accounting period to pending close  # noqa: E501
         """
         pass
 
-    def test_p_ut_reopen_accounting_period(self):
-        """Test case for p_ut_reopen_accounting_period
+    def test_put_reopen_accounting_period(self):
+        """Test case for put_reopen_accounting_period
 
         Re-open accounting period  # noqa: E501
         """
         pass
 
-    def test_p_ut_run_trial_balance(self):
-        """Test case for p_ut_run_trial_balance
+    def test_put_run_trial_balance(self):
+        """Test case for put_run_trial_balance
 
         Run trial balance  # noqa: E501
         """
         pass
 
-    def test_p_ut_update_accounting_period(self):
-        """Test case for p_ut_update_accounting_period
+    def test_put_update_accounting_period(self):
+        """Test case for put_update_accounting_period
 
         Update accounting period  # noqa: E501
         """

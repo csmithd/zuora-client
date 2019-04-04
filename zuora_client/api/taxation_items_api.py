@@ -25,13 +25,13 @@ class TaxationItemsApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def d_elete_taxation_item(self, id, **kwargs):  # noqa: E501
+    def delete_taxation_item(self, id, **kwargs):  # noqa: E501
         """Delete taxation item  # noqa: E501
 
         Deletes a specific taxation item by ID.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_taxation_item(id, async_req=True)
+        >>> thread = api.delete_taxation_item(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -43,18 +43,18 @@ class TaxationItemsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.d_elete_taxation_item_with_http_info(id, **kwargs)  # noqa: E501
+            return self.delete_taxation_item_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.d_elete_taxation_item_with_http_info(id, **kwargs)  # noqa: E501
+            (data) = self.delete_taxation_item_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def d_elete_taxation_item_with_http_info(self, id, **kwargs):  # noqa: E501
+    def delete_taxation_item_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete taxation item  # noqa: E501
 
         Deletes a specific taxation item by ID.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.d_elete_taxation_item_with_http_info(id, async_req=True)
+        >>> thread = api.delete_taxation_item_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -76,14 +76,14 @@ class TaxationItemsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method d_elete_taxation_item" % key
+                    " to method delete_taxation_item" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in params or
                 params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `d_elete_taxation_item`")  # noqa: E501
+            raise ValueError("Missing the required parameter `id` when calling `delete_taxation_item`")  # noqa: E501
 
         collection_formats = {}
 
@@ -128,13 +128,13 @@ class TaxationItemsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def g_et_taxation_item(self, id, **kwargs):  # noqa: E501
+    def get_taxation_item(self, id, **kwargs):  # noqa: E501
         """Get taxation item   # noqa: E501
 
         Retrieves the information about a specific taxation item by ID.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_taxation_item(id, async_req=True)
+        >>> thread = api.get_taxation_item(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -146,18 +146,18 @@ class TaxationItemsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.g_et_taxation_item_with_http_info(id, **kwargs)  # noqa: E501
+            return self.get_taxation_item_with_http_info(id, **kwargs)  # noqa: E501
         else:
-            (data) = self.g_et_taxation_item_with_http_info(id, **kwargs)  # noqa: E501
+            (data) = self.get_taxation_item_with_http_info(id, **kwargs)  # noqa: E501
             return data
 
-    def g_et_taxation_item_with_http_info(self, id, **kwargs):  # noqa: E501
+    def get_taxation_item_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get taxation item   # noqa: E501
 
         Retrieves the information about a specific taxation item by ID.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.g_et_taxation_item_with_http_info(id, async_req=True)
+        >>> thread = api.get_taxation_item_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -179,14 +179,14 @@ class TaxationItemsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method g_et_taxation_item" % key
+                    " to method get_taxation_item" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in params or
                 params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `g_et_taxation_item`")  # noqa: E501
+            raise ValueError("Missing the required parameter `id` when calling `get_taxation_item`")  # noqa: E501
 
         collection_formats = {}
 
@@ -683,13 +683,13 @@ class TaxationItemsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def p_ut_taxation_item(self, body, id, **kwargs):  # noqa: E501
+    def put_taxation_item(self, body, id, **kwargs):  # noqa: E501
         """Update taxation item  # noqa: E501
 
         Updates a specific taxation item by ID.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_taxation_item(body, id, async_req=True)
+        >>> thread = api.put_taxation_item(body, id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -702,18 +702,18 @@ class TaxationItemsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.p_ut_taxation_item_with_http_info(body, id, **kwargs)  # noqa: E501
+            return self.put_taxation_item_with_http_info(body, id, **kwargs)  # noqa: E501
         else:
-            (data) = self.p_ut_taxation_item_with_http_info(body, id, **kwargs)  # noqa: E501
+            (data) = self.put_taxation_item_with_http_info(body, id, **kwargs)  # noqa: E501
             return data
 
-    def p_ut_taxation_item_with_http_info(self, body, id, **kwargs):  # noqa: E501
+    def put_taxation_item_with_http_info(self, body, id, **kwargs):  # noqa: E501
         """Update taxation item  # noqa: E501
 
         Updates a specific taxation item by ID.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.p_ut_taxation_item_with_http_info(body, id, async_req=True)
+        >>> thread = api.put_taxation_item_with_http_info(body, id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -736,18 +736,18 @@ class TaxationItemsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method p_ut_taxation_item" % key
+                    " to method put_taxation_item" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `p_ut_taxation_item`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `put_taxation_item`")  # noqa: E501
         # verify the required parameter 'id' is set
         if ('id' not in params or
                 params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `p_ut_taxation_item`")  # noqa: E501
+            raise ValueError("Missing the required parameter `id` when calling `put_taxation_item`")  # noqa: E501
 
         collection_formats = {}
 

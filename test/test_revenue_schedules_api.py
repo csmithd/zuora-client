@@ -29,148 +29,148 @@ class TestRevenueSchedulesApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_d_eleters(self):
-        """Test case for d_eleters
+    def test_deleters(self):
+        """Test case for deleters
 
         Delete revenue schedule  # noqa: E501
         """
         pass
 
-    def test_g_etr_sby_credit_memo_item(self):
-        """Test case for g_etr_sby_credit_memo_item
+    def test_getr_sby_credit_memo_item(self):
+        """Test case for getr_sby_credit_memo_item
 
         Get revenue schedule by credit memo item ID   # noqa: E501
         """
         pass
 
-    def test_g_etr_sby_debit_memo_item(self):
-        """Test case for g_etr_sby_debit_memo_item
+    def test_getr_sby_debit_memo_item(self):
+        """Test case for getr_sby_debit_memo_item
 
         Get revenue schedule by debit memo item ID   # noqa: E501
         """
         pass
 
-    def test_g_etr_sby_invoice_item(self):
-        """Test case for g_etr_sby_invoice_item
+    def test_getr_sby_invoice_item(self):
+        """Test case for getr_sby_invoice_item
 
         Get revenue schedule by invoice item ID  # noqa: E501
         """
         pass
 
-    def test_g_etr_sby_invoice_item_adjustment(self):
-        """Test case for g_etr_sby_invoice_item_adjustment
+    def test_getr_sby_invoice_item_adjustment(self):
+        """Test case for getr_sby_invoice_item_adjustment
 
         Get revenue schedule by invoice item adjustment  # noqa: E501
         """
         pass
 
-    def test_g_etr_sby_product_charge_and_billing_account(self):
-        """Test case for g_etr_sby_product_charge_and_billing_account
+    def test_getr_sby_product_charge_and_billing_account(self):
+        """Test case for getr_sby_product_charge_and_billing_account
 
         Get all revenue schedules of product charge by charge ID and billing account ID   # noqa: E501
         """
         pass
 
-    def test_g_etr_sfor_subsc_charge(self):
-        """Test case for g_etr_sfor_subsc_charge
+    def test_getr_sfor_subsc_charge(self):
+        """Test case for getr_sfor_subsc_charge
 
         Get revenue schedule by subscription charge  # noqa: E501
         """
         pass
 
-    def test_g_etrs(self):
-        """Test case for g_etrs
+    def test_getrs(self):
+        """Test case for getrs
 
         Get revenue schedule details  # noqa: E501
         """
         pass
 
-    def test_p_ostr_sfor_credit_memo_item_distribute_by_date_range(self):
-        """Test case for p_ostr_sfor_credit_memo_item_distribute_by_date_range
+    def test_postr_sfor_credit_memo_item_distribute_by_date_range(self):
+        """Test case for postr_sfor_credit_memo_item_distribute_by_date_range
 
         Create revenue schedule for credit memo item (distribute by date range)   # noqa: E501
         """
         pass
 
-    def test_p_ostr_sfor_credit_memo_item_manual_distribution(self):
-        """Test case for p_ostr_sfor_credit_memo_item_manual_distribution
+    def test_postr_sfor_credit_memo_item_manual_distribution(self):
+        """Test case for postr_sfor_credit_memo_item_manual_distribution
 
         Create revenue schedule for credit memo item (manual distribution)   # noqa: E501
         """
         pass
 
-    def test_p_ostr_sfor_debit_memo_item_distribute_by_date_range(self):
-        """Test case for p_ostr_sfor_debit_memo_item_distribute_by_date_range
+    def test_postr_sfor_debit_memo_item_distribute_by_date_range(self):
+        """Test case for postr_sfor_debit_memo_item_distribute_by_date_range
 
         Create revenue schedule for debit memo item (distribute by date range)   # noqa: E501
         """
         pass
 
-    def test_p_ostr_sfor_debit_memo_item_manual_distribution(self):
-        """Test case for p_ostr_sfor_debit_memo_item_manual_distribution
+    def test_postr_sfor_debit_memo_item_manual_distribution(self):
+        """Test case for postr_sfor_debit_memo_item_manual_distribution
 
         Create revenue schedule for debit memo item (manual distribution)   # noqa: E501
         """
         pass
 
-    def test_p_ostr_sfor_invoice_item_adjustment_distribute_by_date_range(self):
-        """Test case for p_ostr_sfor_invoice_item_adjustment_distribute_by_date_range
+    def test_postr_sfor_invoice_item_adjustment_distribute_by_date_range(self):
+        """Test case for postr_sfor_invoice_item_adjustment_distribute_by_date_range
 
         Create revenue schedule for Invoice Item Adjustment (distribute by date range)  # noqa: E501
         """
         pass
 
-    def test_p_ostr_sfor_invoice_item_adjustment_manual_distribution(self):
-        """Test case for p_ostr_sfor_invoice_item_adjustment_manual_distribution
+    def test_postr_sfor_invoice_item_adjustment_manual_distribution(self):
+        """Test case for postr_sfor_invoice_item_adjustment_manual_distribution
 
         Create revenue schedule for Invoice Item Adjustment (manual distribution)  # noqa: E501
         """
         pass
 
-    def test_p_ostr_sfor_invoice_item_distribute_by_date_range(self):
-        """Test case for p_ostr_sfor_invoice_item_distribute_by_date_range
+    def test_postr_sfor_invoice_item_distribute_by_date_range(self):
+        """Test case for postr_sfor_invoice_item_distribute_by_date_range
 
         Create revenue schedule for Invoice Item (distribute by date range)  # noqa: E501
         """
         pass
 
-    def test_p_ostr_sfor_invoice_item_manual_distribution(self):
-        """Test case for p_ostr_sfor_invoice_item_manual_distribution
+    def test_postr_sfor_invoice_item_manual_distribution(self):
+        """Test case for postr_sfor_invoice_item_manual_distribution
 
         Create revenue schedule for Invoice Item (manual distribution)  # noqa: E501
         """
         pass
 
-    def test_p_ostr_sfor_subsc_charge(self):
-        """Test case for p_ostr_sfor_subsc_charge
+    def test_postr_sfor_subsc_charge(self):
+        """Test case for postr_sfor_subsc_charge
 
         Create revenue schedule on subscription charge  # noqa: E501
         """
         pass
 
-    def test_p_ut_revenue_across_ap(self):
-        """Test case for p_ut_revenue_across_ap
+    def test_put_revenue_across_ap(self):
+        """Test case for put_revenue_across_ap
 
         Distribute revenue across accounting periods  # noqa: E501
         """
         pass
 
-    def test_p_ut_revenue_by_recognition_startand_end_dates(self):
-        """Test case for p_ut_revenue_by_recognition_startand_end_dates
+    def test_put_revenue_by_recognition_startand_end_dates(self):
+        """Test case for put_revenue_by_recognition_startand_end_dates
 
         Distribute revenue by recognition start and end dates  # noqa: E501
         """
         pass
 
-    def test_p_ut_revenue_specific_date(self):
-        """Test case for p_ut_revenue_specific_date
+    def test_put_revenue_specific_date(self):
+        """Test case for put_revenue_specific_date
 
         Distribute revenue on specific date  # noqa: E501
         """
         pass
 
-    def test_p_utrs_basic_info(self):
-        """Test case for p_utrs_basic_info
+    def test_putrs_basic_info(self):
+        """Test case for putrs_basic_info
 
         Update revenue schedule basic information  # noqa: E501
         """

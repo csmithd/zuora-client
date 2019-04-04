@@ -29,8 +29,8 @@ class TestCustomExchangeRatesApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_g_et_custom_exchange_rates(self):
-        """Test case for g_et_custom_exchange_rates
+    def test_get_custom_exchange_rates(self):
+        """Test case for get_custom_exchange_rates
 
         Get custom foreign currency exchange rates  # noqa: E501
         """
