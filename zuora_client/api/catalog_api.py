@@ -67,7 +67,7 @@ class CatalogApi(object):
                  returns the request thread.
         """
 
-        all_params = ['zuora_entity_ids', 'page_size', 'zuora_version']  # noqa: E501
+        all_params = ['zuora_entity_ids', 'page_size', 'zuora_version', 'page']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -92,6 +92,8 @@ class CatalogApi(object):
         query_params = []
         if 'page_size' in params:
             query_params.append(('pageSize', params['page_size']))  # noqa: E501
+        if 'page' in params:
+            query_params.append(('page', params['page']))  # noqa: E501
 
         header_params = {}
         if 'zuora_entity_ids' in params:

@@ -38,7 +38,7 @@ class GETProductType(object):
         'id': 'str',
         'name': 'str',
         'product_features': 'list[GetProductFeatureType]',
-        'product_rate_plans': 'str',
+        'product_rate_plans': 'list[GETProductRatePlanType]',
         'sku': 'str',
         'tags': 'str'
     }
