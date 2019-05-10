@@ -205,7 +205,7 @@ class ApiClient(object):
             # model definition for request.
             obj_dict = {obj.attribute_map[attr]: getattr(obj, attr)
                         for attr, _ in six.iteritems(obj.swagger_types)
-                        if getattr(obj, attr) is not None}
+                        if hasattr(obj, attr) and getattr(obj, attr) is not None}
 
         return {key: self.sanitize_for_serialization(val)
                 for key, val in six.iteritems(obj_dict)}

@@ -26,17 +26,17 @@ class POSTAccountResponseType(object):
         'account_id': 'str',
         'account_number': 'str',
         'bill_to_contact_id': 'str',
-        'contracted_mrr': 'str',
+        'contracted_mrr': 'float',
         'credit_memo_id': 'str',
         'invoice_id': 'str',
-        'paid_amount': 'str',
+        'paid_amount': 'float',
         'payment_id': 'str',
         'payment_method_id': 'str',
         'sold_to_contact_id': 'str',
         'subscription_id': 'str',
         'subscription_number': 'str',
         'success': 'bool',
-        'total_contracted_value': 'str'
+        'total_contracted_value': 'float'
     }
 
     attribute_map = {

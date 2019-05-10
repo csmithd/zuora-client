@@ -33,6 +33,9 @@ class POSTAccountType(object):
     swagger_types = {
         'class__ns': 'str',
         'customer_type__ns': 'str',
+        'ADDITIONAL_INFO_OPTIONAL__c': 'str',
+        'PlatformID__c': 'str',
+        'CustomerType__c': 'str',
         'department__ns': 'str',
         'integration_id__ns': 'str',
         'integration_status__ns': 'str',
@@ -80,6 +83,9 @@ class POSTAccountType(object):
     attribute_map = {
         'class__ns': 'Class__NS',
         'customer_type__ns': 'CustomerType__NS',
+        'ADDITIONAL_INFO_OPTIONAL__c': 'ADDITIONAL_INFO_OPTIONAL__c',
+        'PlatformID__c': 'PlatformID__c',
+        'CustomerType__c': 'CustomerType__c',
         'department__ns': 'Department__NS',
         'integration_id__ns': 'IntegrationId__NS',
         'integration_status__ns': 'IntegrationStatus__NS',
@@ -124,9 +130,12 @@ class POSTAccountType(object):
         'tax_info': 'taxInfo'
     }
 
-    def __init__(self, class__ns=None, customer_type__ns=None, department__ns=None, integration_id__ns=None, integration_status__ns=None, location__ns=None, subsidiary__ns=None, sync_date__ns=None, syncto_net_suite__ns=None, account_number=None, additional_email_addresses=None, apply_credit_balance=None, auto_pay=None, batch=None, bill_cycle_day=None, bill_to_contact=None, collect=None, communication_profile_id=None, credit_card=None, credit_memo_template_id=None, crm_id=None, currency=None, debit_memo_template_id=None, document_date=None, hpm_credit_card_payment_method_id=None, invoice=None, invoice_collect=None, invoice_delivery_prefs_email=None, invoice_delivery_prefs_print=None, invoice_target_date=None, invoice_template_id=None, name=None, notes=None, parent_id=None, payment_gateway=None, payment_term=None, run_billing=True, sales_rep=None, sold_to_contact=None, sold_to_same_as_bill_to=None, subscription=None, tagging=None, target_date=None, tax_info=None):  # noqa: E501
+    def __init__(self, CustomerType__c=None, PlatformID__c=None, ADDITIONAL_INFO_OPTIONAL__c=None, class__ns=None, customer_type__ns=None, department__ns=None, integration_id__ns=None, integration_status__ns=None, location__ns=None, subsidiary__ns=None, sync_date__ns=None, syncto_net_suite__ns=None, account_number=None, additional_email_addresses=None, apply_credit_balance=None, auto_pay=None, batch=None, bill_cycle_day=None, bill_to_contact=None, collect=None, communication_profile_id=None, credit_card=None, credit_memo_template_id=None, crm_id=None, currency=None, debit_memo_template_id=None, document_date=None, hpm_credit_card_payment_method_id=None, invoice=None, invoice_collect=None, invoice_delivery_prefs_email=None, invoice_delivery_prefs_print=None, invoice_target_date=None, invoice_template_id=None, name=None, notes=None, parent_id=None, payment_gateway=None, payment_term=None, run_billing=True, sales_rep=None, sold_to_contact=None, sold_to_same_as_bill_to=None, subscription=None, tagging=None, target_date=None, tax_info=None):  # noqa: E501
         """POSTAccountType - a model defined in Swagger"""  # noqa: E501
 
+        self._CustomerType__c = None
+        self._PlatformID__c = None
+        self._ADDITIONAL_INFO_OPTIONAL__c = None
         self._class__ns = None
         self._customer_type__ns = None
         self._department__ns = None
@@ -173,6 +182,12 @@ class POSTAccountType(object):
         self._tax_info = None
         self.discriminator = None
 
+        if CustomerType__c is not None:
+            self.CustomerType__c = CustomerType__c
+        if PlatformID__c is not None:
+            self.PlatformID__c = PlatformID__c
+        if ADDITIONAL_INFO_OPTIONAL__c is not None:
+            self.ADDITIONAL_INFO_OPTIONAL__c = ADDITIONAL_INFO_OPTIONAL__c
         if class__ns is not None:
             self.class__ns = class__ns
         if customer_type__ns is not None:
@@ -258,6 +273,30 @@ class POSTAccountType(object):
             self.target_date = target_date
         if tax_info is not None:
             self.tax_info = tax_info
+
+    @property
+    def ADDITIONAL_INFO_OPTIONAL__c(self):
+        return self._ADDITIONAL_INFO_OPTIONAL__c
+
+    @ADDITIONAL_INFO_OPTIONAL__c.setter
+    def ADDITIONAL_INFO_OPTIONAL__c(self, ADDITIONAL_INFO_OPTIONAL__c):
+        self._ADDITIONAL_INFO_OPTIONAL__c = ADDITIONAL_INFO_OPTIONAL__c
+
+    @property
+    def PlatformID__c(self):
+        return self._PlatformID__c
+
+    @PlatformID__c.setter
+    def PlatformID__c(self, PlatformID__c):
+        self._PlatformID__c = PlatformID__c
+
+    @property
+    def CustomerType__c(self):
+        return self._CustomerType__c
+
+    @CustomerType__c.setter
+    def CustomerType__c(self, CustomerType__c):
+        self._CustomerType__c = CustomerType__c
 
     @property
     def class__ns(self):
@@ -676,6 +715,10 @@ class POSTAccountType(object):
 
         self._collect = collect
 
+    @collect.deleter
+    def collect(self):
+        del self._collect
+
     @property
     def communication_profile_id(self):
         """Gets the communication_profile_id of this POSTAccountType.  # noqa: E501
@@ -882,6 +925,10 @@ class POSTAccountType(object):
         """
 
         self._invoice = invoice
+
+    @invoice.deleter
+    def invoice(self):
+        del self._invoice
 
     @property
     def invoice_collect(self):
@@ -1138,6 +1185,10 @@ class POSTAccountType(object):
 
         self._run_billing = run_billing
 
+    @run_billing.deleter
+    def run_billing(self):
+        del self._run_billing
+
     @property
     def sales_rep(self):
         """Gets the sales_rep of this POSTAccountType.  # noqa: E501
@@ -1298,7 +1349,10 @@ class POSTAccountType(object):
         result = {}
 
         for attr, _ in six.iteritems(self.swagger_types):
-            value = getattr(self, attr)
+            try:
+                value = getattr(self, attr)
+            except AttributeError:
+                continue
             if isinstance(value, list):
                 result[attr] = list(map(
                     lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
