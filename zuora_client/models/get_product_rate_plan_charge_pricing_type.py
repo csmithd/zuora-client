@@ -26,11 +26,11 @@ class GETProductRatePlanChargePricingType(object):
     """
     swagger_types = {
         'currency': 'str',
-        'discount_amount': 'str',
+        'discount_amount': 'float',
         'discount_percentage': 'str',
         'included_units': 'str',
         'overage_price': 'str',
-        'price': 'str',
+        'price': 'float',
         'tiers': 'list[GETProductRatePlanChargePricingTierType]'
     }
 
