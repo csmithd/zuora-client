@@ -174,6 +174,10 @@ class PUTSubscriptionSuspendType(object):
 
         self._collect = collect
 
+    @collect.deleter
+    def collect(self):
+        del self._collect
+
     @property
     def contract_effective_date(self):
         """Gets the contract_effective_date of this PUTSubscriptionSuspendType.  # noqa: E501
@@ -265,6 +269,10 @@ class PUTSubscriptionSuspendType(object):
         """
 
         self._invoice = invoice
+
+    @invoice.deleter
+    def invoice(self):
+        del self._invoice
 
     @property
     def invoice_collect(self):
@@ -449,6 +457,10 @@ class PUTSubscriptionSuspendType(object):
         """
 
         self._run_billing = run_billing
+
+    @run_billing.deleter
+    def run_billing(self):
+        del self._run_billing
 
     @property
     def suspend_periods(self):

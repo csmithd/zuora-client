@@ -1,6 +1,13 @@
 zuora_client CHANGELOG
 ======================
 
+2.0.2-orm
+---------
+
+- Add deleter for run_billing, invoice, and collect in PUTSubscriptionSuspendType
+- Add deleter for run_billing, invoice, and collect in PUTSubscriptionResumeType
+- Change price and discount_amount from str to float in GETSubscriptionRatePlanChargesType
+
 2.0.1-orm
 ---------
 
