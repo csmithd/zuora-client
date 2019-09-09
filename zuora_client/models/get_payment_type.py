@@ -35,7 +35,7 @@ class GETPaymentType(object):
         'account_id': 'str',
         'account_name': 'str',
         'account_number': 'str',
-        'amount': 'str',
+        'amount': 'float',
         'effective_date': 'date',
         'gateway_transaction_number': 'str',
         'id': 'str',

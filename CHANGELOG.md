@@ -1,6 +1,16 @@
 zuora_client CHANGELOG
 ======================
 
+2.0.3-orm
+---------
+
+- Change amount and balance from str to float in GETInvoiceType
+- Changed invoice_files from str to list[InvoiceFile] in GETInvoiceType
+- Changed invoice_items from str to list[InvoiceItem] in GETInvoiceType
+- Changed balance, charge_amount, quantity, and tax_amount from str to float in InvoiceItem
+- Changed applied_payment_amount from str to float in GETPaidInvoicesType
+- Changed amount from str to float in GETPaymentType
+
 2.0.2-orm
 ---------
 
