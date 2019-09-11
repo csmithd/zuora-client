@@ -23,10 +23,10 @@ class GETAccountTypeMetrics(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'balance': 'str',
-        'contracted_mrr': 'str',
-        'credit_balance': 'str',
-        'total_invoice_balance': 'str'
+        'balance': 'float',
+        'contracted_mrr': 'float',
+        'credit_balance': 'float',
+        'total_invoice_balance': 'float'
     }
 
     attribute_map = {

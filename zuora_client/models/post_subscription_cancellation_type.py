@@ -176,6 +176,10 @@ class POSTSubscriptionCancellationType(object):
 
         self._collect = collect
 
+    @collect.deleter
+    def collect(self):
+        del self._collect
+
     @property
     def document_date(self):
         """Gets the document_date of this POSTSubscriptionCancellationType.  # noqa: E501
@@ -222,6 +226,10 @@ class POSTSubscriptionCancellationType(object):
 
         self._invoice = invoice
 
+    @invoice.deleter
+    def invoice(self):
+        del self._invoice
+
     @property
     def invoice_collect(self):
         """Gets the invoice_collect of this POSTSubscriptionCancellationType.  # noqa: E501
@@ -246,6 +254,10 @@ class POSTSubscriptionCancellationType(object):
             raise ValueError("Invalid value for `invoice_collect`, must not be `None`")  # noqa: E501
 
         self._invoice_collect = invoice_collect
+
+    @invoice_collect.deleter
+    def invoice_collect(self):
+        del self.invoice_collect
 
     @property
     def invoice_target_date(self):
@@ -293,6 +305,10 @@ class POSTSubscriptionCancellationType(object):
 
         self._run_billing = run_billing
 
+    @run_billing.deleter
+    def run_billing(self):
+        del self._run_billing
+
     @property
     def target_date(self):
         """Gets the target_date of this POSTSubscriptionCancellationType.  # noqa: E501
@@ -321,7 +337,10 @@ class POSTSubscriptionCancellationType(object):
         result = {}
 
         for attr, _ in six.iteritems(self.swagger_types):
-            value = getattr(self, attr)
+            try:
+                value = getattr(self, attr)
+            except AttributeError:
+                continue
             if isinstance(value, list):
                 result[attr] = list(map(
                     lambda x: x.to_dict() if hasattr(x, "to_dict") else x,

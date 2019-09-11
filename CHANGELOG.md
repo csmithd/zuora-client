@@ -1,6 +1,12 @@
 zuora_client CHANGELOG
 ======================
 
+2.0.4-orm
+---------
+
+- Add deleter for run_billing, invoice, invoice_collect, and collect in POSTSubscriptionCancellationType
+- Change balance, contracted_mrr, credit_balance, and total_invoice_balance from str to float in GETAccountTypeMetrics
+
 2.0.3-orm
 ---------
 
