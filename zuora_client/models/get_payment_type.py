@@ -35,7 +35,7 @@ class GETPaymentType(object):
         'account_id': 'str',
         'account_name': 'str',
         'account_number': 'str',
-        'amount': 'str',
+        'amount': 'float',
         'effective_date': 'date',
         'gateway_transaction_number': 'str',
         'id': 'str',
@@ -529,7 +529,10 @@ class GETPaymentType(object):
         result = {}
 
         for attr, _ in six.iteritems(self.swagger_types):
-            value = getattr(self, attr)
+            try:
+                value = getattr(self, attr)
+            except AttributeError:
+                continue
             if isinstance(value, list):
                 result[attr] = list(map(
                     lambda x: x.to_dict() if hasattr(x, "to_dict") else x,

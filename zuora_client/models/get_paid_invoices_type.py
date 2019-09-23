@@ -23,7 +23,7 @@ class GETPaidInvoicesType(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'applied_payment_amount': 'str',
+        'applied_payment_amount': 'float',
         'invoice_id': 'str',
         'invoice_number': 'str'
     }
