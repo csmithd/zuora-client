@@ -4,7 +4,8 @@ zuora_client CHANGELOG
 2.0.5-orm
 ---------
 
-- Add ADDITIONAL_INFO_OPTIONAL__c, PlatformID__c, and CustomerType__c to SubscribeRequestAccount
+- Add `ADDITIONAL_INFO_OPTIONAL__c`, `PlatformID__c`, and `CustomerType__c` to `SubscribeRequestAccount`
+- Correct mangling of `action_pos_t` to `action_post_` in `ActionsApi`
 
 2.0.4-orm
 ---------
