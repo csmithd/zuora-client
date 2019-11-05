@@ -25,13 +25,13 @@ class ActionsApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def action_pos_tamend(self, amend_request, **kwargs):  # noqa: E501
+    def action_post_amend(self, amend_request, **kwargs):  # noqa: E501
         """Amend  # noqa: E501
 
         Modifies a subscription by creating Amendment objects.  The availability of this operation depends on whether you have the Orders feature enabled:  * If you have the Orders feature enabled, this operation is not available. See [Orders Migration Guidance](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AB_Orders_Migration_Guidance) for more information.  * If you do not have the Orders feature enabled, this operation is available. However, Zuora recommends that you use [Update subscription](https://www.zuora.com/developer/api-reference/#operation/PUT_Subscription) instead of this operation.  You can use this operation to create up to 10 Amendment objects. You must specify the following fields for each Amendment object:  * `ContractEffectiveDate` * `Name` * `SubscriptionId` * `Type`  Additionally, the value of `SubscriptionId` must be the same for each Amendment object. You cannot use this operation to update multiple subscriptions.  **Note:** When you call this operation, Zuora modifies the subscription in the order that you specify Amendment objects in the request body.  If Zuora is unable to create an Amendment object when you call this operation, the entire call fails.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.action_pos_tamend(amend_request, async_req=True)
+        >>> thread = api.action_post_amend(amend_request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -44,18 +44,18 @@ class ActionsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.action_pos_tamend_with_http_info(amend_request, **kwargs)  # noqa: E501
+            return self.action_post_amend_with_http_info(amend_request, **kwargs)  # noqa: E501
         else:
-            (data) = self.action_pos_tamend_with_http_info(amend_request, **kwargs)  # noqa: E501
+            (data) = self.action_post_amend_with_http_info(amend_request, **kwargs)  # noqa: E501
             return data
 
-    def action_pos_tamend_with_http_info(self, amend_request, **kwargs):  # noqa: E501
+    def action_post_amend_with_http_info(self, amend_request, **kwargs):  # noqa: E501
         """Amend  # noqa: E501
 
         Modifies a subscription by creating Amendment objects.  The availability of this operation depends on whether you have the Orders feature enabled:  * If you have the Orders feature enabled, this operation is not available. See [Orders Migration Guidance](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AB_Orders_Migration_Guidance) for more information.  * If you do not have the Orders feature enabled, this operation is available. However, Zuora recommends that you use [Update subscription](https://www.zuora.com/developer/api-reference/#operation/PUT_Subscription) instead of this operation.  You can use this operation to create up to 10 Amendment objects. You must specify the following fields for each Amendment object:  * `ContractEffectiveDate` * `Name` * `SubscriptionId` * `Type`  Additionally, the value of `SubscriptionId` must be the same for each Amendment object. You cannot use this operation to update multiple subscriptions.  **Note:** When you call this operation, Zuora modifies the subscription in the order that you specify Amendment objects in the request body.  If Zuora is unable to create an Amendment object when you call this operation, the entire call fails.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.action_pos_tamend_with_http_info(amend_request, async_req=True)
+        >>> thread = api.action_post_amend_with_http_info(amend_request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -78,18 +78,18 @@ class ActionsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method action_pos_tamend" % key
+                    " to method action_post_amend" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'amend_request' is set
         if ('amend_request' not in params or
                 params['amend_request'] is None):
-            raise ValueError("Missing the required parameter `amend_request` when calling `action_pos_tamend`")  # noqa: E501
+            raise ValueError("Missing the required parameter `amend_request` when calling `action_post_amend`")  # noqa: E501
 
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `action_pos_tamend`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `action_post_amend`, length must be less than or equal to `64`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -135,13 +135,13 @@ class ActionsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def action_pos_tcreate(self, create_request, **kwargs):  # noqa: E501
+    def action_post_create(self, create_request, **kwargs):  # noqa: E501
         """Create  # noqa: E501
 
         Use the create call to create one or more objects of a specific type. You can specify different types in different create calls, but each create call must apply to only one type of object.  ## Limits  ### Objects per Call  50 objects are supported in a single call.    ## How to Use this Call  You can call create on an array of one or more zObjects. It returns an array of SaveResults, indicating the success or failure of creating each object. The following information applies to this call:  * You cannot pass in null zObjects. * You can pass in a maximum of 50 zObjects at a time. * All objects must be of the same type.  ### Using Create and Subscribe Calls  Both the create and subscribe calls will create a new account. However, there are differences between the calls.  Use the create call to create an account independent of a subscription.  Use the subscribe call to create the account with the subscription and the initial payment information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.action_pos_tcreate(create_request, async_req=True)
+        >>> thread = api.action_post_create(create_request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -154,18 +154,18 @@ class ActionsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.action_pos_tcreate_with_http_info(create_request, **kwargs)  # noqa: E501
+            return self.action_post_create_with_http_info(create_request, **kwargs)  # noqa: E501
         else:
-            (data) = self.action_pos_tcreate_with_http_info(create_request, **kwargs)  # noqa: E501
+            (data) = self.action_post_create_with_http_info(create_request, **kwargs)  # noqa: E501
             return data
 
-    def action_pos_tcreate_with_http_info(self, create_request, **kwargs):  # noqa: E501
+    def action_post_create_with_http_info(self, create_request, **kwargs):  # noqa: E501
         """Create  # noqa: E501
 
         Use the create call to create one or more objects of a specific type. You can specify different types in different create calls, but each create call must apply to only one type of object.  ## Limits  ### Objects per Call  50 objects are supported in a single call.    ## How to Use this Call  You can call create on an array of one or more zObjects. It returns an array of SaveResults, indicating the success or failure of creating each object. The following information applies to this call:  * You cannot pass in null zObjects. * You can pass in a maximum of 50 zObjects at a time. * All objects must be of the same type.  ### Using Create and Subscribe Calls  Both the create and subscribe calls will create a new account. However, there are differences between the calls.  Use the create call to create an account independent of a subscription.  Use the subscribe call to create the account with the subscription and the initial payment information.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.action_pos_tcreate_with_http_info(create_request, async_req=True)
+        >>> thread = api.action_post_create_with_http_info(create_request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -188,18 +188,18 @@ class ActionsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method action_pos_tcreate" % key
+                    " to method action_post_create" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'create_request' is set
         if ('create_request' not in params or
                 params['create_request'] is None):
-            raise ValueError("Missing the required parameter `create_request` when calling `action_pos_tcreate`")  # noqa: E501
+            raise ValueError("Missing the required parameter `create_request` when calling `action_post_create`")  # noqa: E501
 
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `action_pos_tcreate`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `action_post_create`, length must be less than or equal to `64`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -245,13 +245,13 @@ class ActionsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def action_pos_tdelete(self, delete_request, **kwargs):  # noqa: E501
+    def action_post_delete(self, delete_request, **kwargs):  # noqa: E501
         """Delete  # noqa: E501
 
         Deletes one or more objects of the same type. You can specify different types in different delete calls, but each delete call must apply only to one type of object.  The following information applies to this call:  * You will need to first determine the IDs for the objects you wish to delete. * You cannot pass in any null IDs. * All objects in a specific delete call must be of the same type.   ### Objects per Call 50 objects are supported in a single call.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.action_pos_tdelete(delete_request, async_req=True)
+        >>> thread = api.action_post_delete(delete_request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -264,18 +264,18 @@ class ActionsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.action_pos_tdelete_with_http_info(delete_request, **kwargs)  # noqa: E501
+            return self.action_post_delete_with_http_info(delete_request, **kwargs)  # noqa: E501
         else:
-            (data) = self.action_pos_tdelete_with_http_info(delete_request, **kwargs)  # noqa: E501
+            (data) = self.action_post_delete_with_http_info(delete_request, **kwargs)  # noqa: E501
             return data
 
-    def action_pos_tdelete_with_http_info(self, delete_request, **kwargs):  # noqa: E501
+    def action_post_delete_with_http_info(self, delete_request, **kwargs):  # noqa: E501
         """Delete  # noqa: E501
 
         Deletes one or more objects of the same type. You can specify different types in different delete calls, but each delete call must apply only to one type of object.  The following information applies to this call:  * You will need to first determine the IDs for the objects you wish to delete. * You cannot pass in any null IDs. * All objects in a specific delete call must be of the same type.   ### Objects per Call 50 objects are supported in a single call.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.action_pos_tdelete_with_http_info(delete_request, async_req=True)
+        >>> thread = api.action_post_delete_with_http_info(delete_request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -298,18 +298,18 @@ class ActionsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method action_pos_tdelete" % key
+                    " to method action_post_delete" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'delete_request' is set
         if ('delete_request' not in params or
                 params['delete_request'] is None):
-            raise ValueError("Missing the required parameter `delete_request` when calling `action_pos_tdelete`")  # noqa: E501
+            raise ValueError("Missing the required parameter `delete_request` when calling `action_post_delete`")  # noqa: E501
 
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `action_pos_tdelete`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `action_post_delete`, length must be less than or equal to `64`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -355,13 +355,13 @@ class ActionsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def action_pos_texecute(self, execute_request, **kwargs):  # noqa: E501
+    def action_post_execute(self, execute_request, **kwargs):  # noqa: E501
         """Execute  # noqa: E501
 
         Use the execute call to execute a process to split an invoice into multiple invoices. The original invoice must be in draft status. The resulting invoices are called split invoices.  **Note:** This feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com).   To split a draft invoice into multiple split invoices:  1. Use the create call to create a separate InvoiceSplitItem object for each split invoice that you want to create from the original draft invoice. 2. Use the create call to create a single InvoiceSplit object to collect all of the InvoiceSplitItem objects. 3. Use the execute call to split the draft invoice into multiple split invoices.  You need to create InvoiceSplitItem objects and an InvoiceSplit object before you can use the execute call.   * Supported objects: InvoiceSplit * Asynchronous process: yes   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.action_pos_texecute(execute_request, async_req=True)
+        >>> thread = api.action_post_execute(execute_request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -374,18 +374,18 @@ class ActionsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.action_pos_texecute_with_http_info(execute_request, **kwargs)  # noqa: E501
+            return self.action_post_execute_with_http_info(execute_request, **kwargs)  # noqa: E501
         else:
-            (data) = self.action_pos_texecute_with_http_info(execute_request, **kwargs)  # noqa: E501
+            (data) = self.action_post_execute_with_http_info(execute_request, **kwargs)  # noqa: E501
             return data
 
-    def action_pos_texecute_with_http_info(self, execute_request, **kwargs):  # noqa: E501
+    def action_post_execute_with_http_info(self, execute_request, **kwargs):  # noqa: E501
         """Execute  # noqa: E501
 
         Use the execute call to execute a process to split an invoice into multiple invoices. The original invoice must be in draft status. The resulting invoices are called split invoices.  **Note:** This feature is in **Limited Availability**. If you wish to have access to the feature, submit a request at [Zuora Global Support](http://support.zuora.com).   To split a draft invoice into multiple split invoices:  1. Use the create call to create a separate InvoiceSplitItem object for each split invoice that you want to create from the original draft invoice. 2. Use the create call to create a single InvoiceSplit object to collect all of the InvoiceSplitItem objects. 3. Use the execute call to split the draft invoice into multiple split invoices.  You need to create InvoiceSplitItem objects and an InvoiceSplit object before you can use the execute call.   * Supported objects: InvoiceSplit * Asynchronous process: yes   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.action_pos_texecute_with_http_info(execute_request, async_req=True)
+        >>> thread = api.action_post_execute_with_http_info(execute_request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -408,18 +408,18 @@ class ActionsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method action_pos_texecute" % key
+                    " to method action_post_execute" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'execute_request' is set
         if ('execute_request' not in params or
                 params['execute_request'] is None):
-            raise ValueError("Missing the required parameter `execute_request` when calling `action_pos_texecute`")  # noqa: E501
+            raise ValueError("Missing the required parameter `execute_request` when calling `action_post_execute`")  # noqa: E501
 
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `action_pos_texecute`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `action_post_execute`, length must be less than or equal to `64`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -465,13 +465,13 @@ class ActionsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def action_pos_tgenerate(self, generate_request, **kwargs):  # noqa: E501
+    def action_post_generate(self, generate_request, **kwargs):  # noqa: E501
         """Generate  # noqa: E501
 
         Generates an on-demand invoice for a specific customer. This is similar to creating an ad-hoc bill run for a specific customer account in the Zuora UI.  * Supported objects: Invoice * Asynchronous process: yes  The ID of the generated invoice is returned in the response. If multiple invoices are generated, only the id of the first invoice generated is returned. This occurs when an account has multiple subscriptions with the [invoice subscription separately](https://knowledgecenter.zuora.com/BC_Subscription_Management/Subscriptions/B_Creating_Subscriptions/Invoicing_Subscriptions_Separately) option enabled.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.action_pos_tgenerate(generate_request, async_req=True)
+        >>> thread = api.action_post_generate(generate_request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -484,18 +484,18 @@ class ActionsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.action_pos_tgenerate_with_http_info(generate_request, **kwargs)  # noqa: E501
+            return self.action_post_generate_with_http_info(generate_request, **kwargs)  # noqa: E501
         else:
-            (data) = self.action_pos_tgenerate_with_http_info(generate_request, **kwargs)  # noqa: E501
+            (data) = self.action_post_generate_with_http_info(generate_request, **kwargs)  # noqa: E501
             return data
 
-    def action_pos_tgenerate_with_http_info(self, generate_request, **kwargs):  # noqa: E501
+    def action_post_generate_with_http_info(self, generate_request, **kwargs):  # noqa: E501
         """Generate  # noqa: E501
 
         Generates an on-demand invoice for a specific customer. This is similar to creating an ad-hoc bill run for a specific customer account in the Zuora UI.  * Supported objects: Invoice * Asynchronous process: yes  The ID of the generated invoice is returned in the response. If multiple invoices are generated, only the id of the first invoice generated is returned. This occurs when an account has multiple subscriptions with the [invoice subscription separately](https://knowledgecenter.zuora.com/BC_Subscription_Management/Subscriptions/B_Creating_Subscriptions/Invoicing_Subscriptions_Separately) option enabled.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.action_pos_tgenerate_with_http_info(generate_request, async_req=True)
+        >>> thread = api.action_post_generate_with_http_info(generate_request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -518,18 +518,18 @@ class ActionsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method action_pos_tgenerate" % key
+                    " to method action_post_generate" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'generate_request' is set
         if ('generate_request' not in params or
                 params['generate_request'] is None):
-            raise ValueError("Missing the required parameter `generate_request` when calling `action_pos_tgenerate`")  # noqa: E501
+            raise ValueError("Missing the required parameter `generate_request` when calling `action_post_generate`")  # noqa: E501
 
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `action_pos_tgenerate`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `action_post_generate`, length must be less than or equal to `64`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -575,13 +575,13 @@ class ActionsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def action_pos_tquery(self, query_request, **kwargs):  # noqa: E501
+    def action_post_query(self, query_request, **kwargs):  # noqa: E501
         """Query  # noqa: E501
 
         The query call sends a query expression by specifying the object to query, the fields to retrieve from that object, and any filters to determine whether a given object should be queried.   You can use [Zuora Object Query Language](https://knowledgecenter.zuora.com/DC_Developers/K_Zuora_Object_Query_Language) (ZOQL) to construct those queries, passing them through the `queryString`.   Once the call is made, the API executes the query against the specified object and returns a query response object to your application. Your application can then iterate through rows in the query response to retrieve information.  ## Limitations   This call has the following limitations:  * All ZOQL keywords must be in lower case. * The number of records returned is limited to 2000 records * The Invoice Settlement feature is not supported. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. The Orders feature is also not supported.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.action_pos_tquery(query_request, async_req=True)
+        >>> thread = api.action_post_query(query_request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -594,18 +594,18 @@ class ActionsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.action_pos_tquery_with_http_info(query_request, **kwargs)  # noqa: E501
+            return self.action_post_query_with_http_info(query_request, **kwargs)  # noqa: E501
         else:
-            (data) = self.action_pos_tquery_with_http_info(query_request, **kwargs)  # noqa: E501
+            (data) = self.action_post_query_with_http_info(query_request, **kwargs)  # noqa: E501
             return data
 
-    def action_pos_tquery_with_http_info(self, query_request, **kwargs):  # noqa: E501
+    def action_post_query_with_http_info(self, query_request, **kwargs):  # noqa: E501
         """Query  # noqa: E501
 
         The query call sends a query expression by specifying the object to query, the fields to retrieve from that object, and any filters to determine whether a given object should be queried.   You can use [Zuora Object Query Language](https://knowledgecenter.zuora.com/DC_Developers/K_Zuora_Object_Query_Language) (ZOQL) to construct those queries, passing them through the `queryString`.   Once the call is made, the API executes the query against the specified object and returns a query response object to your application. Your application can then iterate through rows in the query response to retrieve information.  ## Limitations   This call has the following limitations:  * All ZOQL keywords must be in lower case. * The number of records returned is limited to 2000 records * The Invoice Settlement feature is not supported. This feature includes Unapplied Payments, Credit and Debit Memo, and Invoice Item Settlement. The Orders feature is also not supported.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.action_pos_tquery_with_http_info(query_request, async_req=True)
+        >>> thread = api.action_post_query_with_http_info(query_request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -628,18 +628,18 @@ class ActionsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method action_pos_tquery" % key
+                    " to method action_post_query" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'query_request' is set
         if ('query_request' not in params or
                 params['query_request'] is None):
-            raise ValueError("Missing the required parameter `query_request` when calling `action_pos_tquery`")  # noqa: E501
+            raise ValueError("Missing the required parameter `query_request` when calling `action_post_query`")  # noqa: E501
 
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `action_pos_tquery`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `action_post_query`, length must be less than or equal to `64`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -685,13 +685,13 @@ class ActionsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def action_pos_tquery_more(self, query_more_request, **kwargs):  # noqa: E501
+    def action_post_query_more(self, query_more_request, **kwargs):  # noqa: E501
         """QueryMore  # noqa: E501
 
         Use queryMore to request additional results from a previous query call. If your initial query call returns more than 2000 results, you can use queryMore to query for the additional results.   Any `queryLocator` results greater than 2,000, will only be stored by Zuora for 5 days before it is deleted.    This call sends a request for additional results from an initial query call. If the initial query call returns more than 2000 results, you can use the `queryLocator` returned from query to request the next set of results.   **Note:** Zuora expires queryMore cursors after 15 minutes of activity.   To use queryMore, you first construct a query call. By default, the query call will return up to 2000 results. If there are more than 2000 results, query will return a boolean `done`, which will be marked as `false`, and a `queryLocator`, which is a marker you will pass to queryMore to get the next set of results.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.action_pos_tquery_more(query_more_request, async_req=True)
+        >>> thread = api.action_post_query_more(query_more_request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -704,18 +704,18 @@ class ActionsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.action_pos_tquery_more_with_http_info(query_more_request, **kwargs)  # noqa: E501
+            return self.action_post_query_more_with_http_info(query_more_request, **kwargs)  # noqa: E501
         else:
-            (data) = self.action_pos_tquery_more_with_http_info(query_more_request, **kwargs)  # noqa: E501
+            (data) = self.action_post_query_more_with_http_info(query_more_request, **kwargs)  # noqa: E501
             return data
 
-    def action_pos_tquery_more_with_http_info(self, query_more_request, **kwargs):  # noqa: E501
+    def action_post_query_more_with_http_info(self, query_more_request, **kwargs):  # noqa: E501
         """QueryMore  # noqa: E501
 
         Use queryMore to request additional results from a previous query call. If your initial query call returns more than 2000 results, you can use queryMore to query for the additional results.   Any `queryLocator` results greater than 2,000, will only be stored by Zuora for 5 days before it is deleted.    This call sends a request for additional results from an initial query call. If the initial query call returns more than 2000 results, you can use the `queryLocator` returned from query to request the next set of results.   **Note:** Zuora expires queryMore cursors after 15 minutes of activity.   To use queryMore, you first construct a query call. By default, the query call will return up to 2000 results. If there are more than 2000 results, query will return a boolean `done`, which will be marked as `false`, and a `queryLocator`, which is a marker you will pass to queryMore to get the next set of results.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.action_pos_tquery_more_with_http_info(query_more_request, async_req=True)
+        >>> thread = api.action_post_query_more_with_http_info(query_more_request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -738,18 +738,18 @@ class ActionsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method action_pos_tquery_more" % key
+                    " to method action_post_query_more" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'query_more_request' is set
         if ('query_more_request' not in params or
                 params['query_more_request'] is None):
-            raise ValueError("Missing the required parameter `query_more_request` when calling `action_pos_tquery_more`")  # noqa: E501
+            raise ValueError("Missing the required parameter `query_more_request` when calling `action_post_query_more`")  # noqa: E501
 
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `action_pos_tquery_more`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `action_post_query_more`, length must be less than or equal to `64`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -795,13 +795,13 @@ class ActionsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def action_pos_tsubscribe(self, subscribe_request, **kwargs):  # noqa: E501
+    def action_post_subscribe(self, subscribe_request, **kwargs):  # noqa: E501
         """Subscribe  # noqa: E501
 
          This call performs many actions.  Use the subscribe call to bundle information required to create at least one new subscription.  **Note:** This feature is unavailable if you have the Orders feature enabled. See [Orders Migration Guidance](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AB_Orders_Migration_Guidance) for more information.  The call takes in an array of SubscribeRequests. Because it takes an array, you can submit a batch of subscription requests at once. You can create up to 50 different subscriptions in a single subscribe call.  This is a combined call that you can use to perform all of the following tasks in a single call:  * Create accounts * Create contacts * Create payment methods, including external payment options * Create an invoice for the subscription * Apply the first payment to a subscription  ## Object Limits  50 objects are supported in a single call.    ## Effective Date If the effective date is in the future, the invoices will not be generated, and there will be no invoice number.  ## Subscription Name, Number, and ID  ### Subscription Name and Number  The subscription name is a unique identifier for the subscription. If you do not specify a value for the name, Zuora will create one automatically. The automatically generated value is known as the subscription number, such as `A-S00000080`. You cannot change the subscription name or number after creating the subscription.   * **Subscription name**: The name that you set for the subscription. * **Subscription number**: The value generated by Zuora automatically if you do not specify a subscription name.   Both the subscription name and number must be unique. If they are not, an error will occur.  ### Subscription ID  The subscription ID is a 32-digit ID in the format 4028xxxx. This is also the unique identifier for a subscription. This value is automatically generated by the system and cannot be edited or updated, but it can be queried. One subscription can have only one subscription name or number, but it can have multiple IDs: Each version of a subscription has a different ID.  The Subscription object contains the fields `OriginalId` and `PreviousSubscriptionId`. `OriginalId` is the ID for the first version of a subscription. `PreviousSubscriptionId` is the ID of the version created immediately prior to the current version.  ## Subscription Preview  You can preview invoices that would be generated by the subscribe call.   ## Invoice Subscriptions Separately If you have enabled the invoice subscriptions separately feature, a subscribe call will generate an invoice for each subscription for every subscription where the field `IsInvoiceSeparate` is set to `true`.  If the invoice subscriptions separately feature is disabled, a subscribe call will generate a single invoice for all subscriptions.  See [Invoicing Subscriptions Separately](https://knowledgecenter.zuora.com/BC_Subscription_Management/Subscriptions/B_Creating_Subscriptions/Invoicing_Subscriptions_Separately) for more information.  ## Subscriptions and Draft Invoices  If a draft invoice that includes charges exists in a customer account, using the subscribe call to create a new subscription and generate an invoice will cause the new subscription to be added to the existing draft invoice. Zuora will then post the invoice.   ## When to Use Subscribe and Create Calls  You can use either the subscribe call or the create call to create the objects associated with a subscription (accounts, contacts, and so on). There are differences between these calls, however, and some situations are better for one or the other.  ### Use the Subscribe Call  The subscribe call bundles up all the information you need for a subscription. Use the subscribe call to create new subscriptions when you have all the information you need.  Subscribe calls cannot update BillTo, SoldTo, and Account objects. Payment information objects cannot be updated if there is an existing account ID in the call. These objects are not supported in a subscribe call.  ### Use the Create Call  The create call is more useful when you want to develop in stages. For example, if you want to first create an account, then a contact, and so on. If you do not have all information available, use the create call. To create a subscription, you must activate the account from Draft status to Active by calling the subscribe call.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.action_pos_tsubscribe(subscribe_request, async_req=True)
+        >>> thread = api.action_post_subscribe(subscribe_request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -814,18 +814,18 @@ class ActionsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.action_pos_tsubscribe_with_http_info(subscribe_request, **kwargs)  # noqa: E501
+            return self.action_post_subscribe_with_http_info(subscribe_request, **kwargs)  # noqa: E501
         else:
-            (data) = self.action_pos_tsubscribe_with_http_info(subscribe_request, **kwargs)  # noqa: E501
+            (data) = self.action_post_subscribe_with_http_info(subscribe_request, **kwargs)  # noqa: E501
             return data
 
-    def action_pos_tsubscribe_with_http_info(self, subscribe_request, **kwargs):  # noqa: E501
+    def action_post_subscribe_with_http_info(self, subscribe_request, **kwargs):  # noqa: E501
         """Subscribe  # noqa: E501
 
          This call performs many actions.  Use the subscribe call to bundle information required to create at least one new subscription.  **Note:** This feature is unavailable if you have the Orders feature enabled. See [Orders Migration Guidance](https://knowledgecenter.zuora.com/BC_Subscription_Management/Orders/AB_Orders_Migration_Guidance) for more information.  The call takes in an array of SubscribeRequests. Because it takes an array, you can submit a batch of subscription requests at once. You can create up to 50 different subscriptions in a single subscribe call.  This is a combined call that you can use to perform all of the following tasks in a single call:  * Create accounts * Create contacts * Create payment methods, including external payment options * Create an invoice for the subscription * Apply the first payment to a subscription  ## Object Limits  50 objects are supported in a single call.    ## Effective Date If the effective date is in the future, the invoices will not be generated, and there will be no invoice number.  ## Subscription Name, Number, and ID  ### Subscription Name and Number  The subscription name is a unique identifier for the subscription. If you do not specify a value for the name, Zuora will create one automatically. The automatically generated value is known as the subscription number, such as `A-S00000080`. You cannot change the subscription name or number after creating the subscription.   * **Subscription name**: The name that you set for the subscription. * **Subscription number**: The value generated by Zuora automatically if you do not specify a subscription name.   Both the subscription name and number must be unique. If they are not, an error will occur.  ### Subscription ID  The subscription ID is a 32-digit ID in the format 4028xxxx. This is also the unique identifier for a subscription. This value is automatically generated by the system and cannot be edited or updated, but it can be queried. One subscription can have only one subscription name or number, but it can have multiple IDs: Each version of a subscription has a different ID.  The Subscription object contains the fields `OriginalId` and `PreviousSubscriptionId`. `OriginalId` is the ID for the first version of a subscription. `PreviousSubscriptionId` is the ID of the version created immediately prior to the current version.  ## Subscription Preview  You can preview invoices that would be generated by the subscribe call.   ## Invoice Subscriptions Separately If you have enabled the invoice subscriptions separately feature, a subscribe call will generate an invoice for each subscription for every subscription where the field `IsInvoiceSeparate` is set to `true`.  If the invoice subscriptions separately feature is disabled, a subscribe call will generate a single invoice for all subscriptions.  See [Invoicing Subscriptions Separately](https://knowledgecenter.zuora.com/BC_Subscription_Management/Subscriptions/B_Creating_Subscriptions/Invoicing_Subscriptions_Separately) for more information.  ## Subscriptions and Draft Invoices  If a draft invoice that includes charges exists in a customer account, using the subscribe call to create a new subscription and generate an invoice will cause the new subscription to be added to the existing draft invoice. Zuora will then post the invoice.   ## When to Use Subscribe and Create Calls  You can use either the subscribe call or the create call to create the objects associated with a subscription (accounts, contacts, and so on). There are differences between these calls, however, and some situations are better for one or the other.  ### Use the Subscribe Call  The subscribe call bundles up all the information you need for a subscription. Use the subscribe call to create new subscriptions when you have all the information you need.  Subscribe calls cannot update BillTo, SoldTo, and Account objects. Payment information objects cannot be updated if there is an existing account ID in the call. These objects are not supported in a subscribe call.  ### Use the Create Call  The create call is more useful when you want to develop in stages. For example, if you want to first create an account, then a contact, and so on. If you do not have all information available, use the create call. To create a subscription, you must activate the account from Draft status to Active by calling the subscribe call.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.action_pos_tsubscribe_with_http_info(subscribe_request, async_req=True)
+        >>> thread = api.action_post_subscribe_with_http_info(subscribe_request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -848,18 +848,18 @@ class ActionsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method action_pos_tsubscribe" % key
+                    " to method action_post_subscribe" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'subscribe_request' is set
         if ('subscribe_request' not in params or
                 params['subscribe_request'] is None):
-            raise ValueError("Missing the required parameter `subscribe_request` when calling `action_pos_tsubscribe`")  # noqa: E501
+            raise ValueError("Missing the required parameter `subscribe_request` when calling `action_post_subscribe`")  # noqa: E501
 
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `action_pos_tsubscribe`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `action_post_subscribe`, length must be less than or equal to `64`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -905,13 +905,13 @@ class ActionsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def action_pos_tupdate(self, update_request, **kwargs):  # noqa: E501
+    def action_post_update(self, update_request, **kwargs):  # noqa: E501
         """Update  # noqa: E501
 
          Updates the information in one or more objects of the same type. You can specify different types of objects in different update calls, but each specific update call must apply to only one type of object.  You can update an array of one or more zObjects. It returns an array of SaveResults, indicating the success or failure of updating each object. The following information applies to this call:  * You cannot pass in null zObjects. * You can pass in a maximum of 50 zObjects at a time. * All objects must be of the same type. * For each field in each object, you must determine that object's ID. Then populate the fields that you want update with the new information. * Zuora ignores unrecognized fields in update calls. For example, if an optional field is spelled incorrectly or a field that does not exist is specified, Zuora ignores the field and continues to process the call. No error message is returned for unrecognized fields.  ## Object Limits  50 objects are supported in a single call.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.action_pos_tupdate(update_request, async_req=True)
+        >>> thread = api.action_post_update(update_request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -924,18 +924,18 @@ class ActionsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.action_pos_tupdate_with_http_info(update_request, **kwargs)  # noqa: E501
+            return self.action_post_update_with_http_info(update_request, **kwargs)  # noqa: E501
         else:
-            (data) = self.action_pos_tupdate_with_http_info(update_request, **kwargs)  # noqa: E501
+            (data) = self.action_post_update_with_http_info(update_request, **kwargs)  # noqa: E501
             return data
 
-    def action_pos_tupdate_with_http_info(self, update_request, **kwargs):  # noqa: E501
+    def action_post_update_with_http_info(self, update_request, **kwargs):  # noqa: E501
         """Update  # noqa: E501
 
          Updates the information in one or more objects of the same type. You can specify different types of objects in different update calls, but each specific update call must apply to only one type of object.  You can update an array of one or more zObjects. It returns an array of SaveResults, indicating the success or failure of updating each object. The following information applies to this call:  * You cannot pass in null zObjects. * You can pass in a maximum of 50 zObjects at a time. * All objects must be of the same type. * For each field in each object, you must determine that object's ID. Then populate the fields that you want update with the new information. * Zuora ignores unrecognized fields in update calls. For example, if an optional field is spelled incorrectly or a field that does not exist is specified, Zuora ignores the field and continues to process the call. No error message is returned for unrecognized fields.  ## Object Limits  50 objects are supported in a single call.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.action_pos_tupdate_with_http_info(update_request, async_req=True)
+        >>> thread = api.action_post_update_with_http_info(update_request, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -958,18 +958,18 @@ class ActionsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method action_pos_tupdate" % key
+                    " to method action_post_update" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'update_request' is set
         if ('update_request' not in params or
                 params['update_request'] is None):
-            raise ValueError("Missing the required parameter `update_request` when calling `action_pos_tupdate`")  # noqa: E501
+            raise ValueError("Missing the required parameter `update_request` when calling `action_post_update`")  # noqa: E501
 
         if ('zuora_track_id' in params and
                 len(params['zuora_track_id']) > 64):
-            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `action_pos_tupdate`, length must be less than or equal to `64`")  # noqa: E501
+            raise ValueError("Invalid value for parameter `zuora_track_id` when calling `action_post_update`, length must be less than or equal to `64`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}

@@ -28,6 +28,9 @@ class SubscribeRequestAccount(object):
     swagger_types = {
         'class__ns': 'str',
         'customer_type__ns': 'str',
+        'ADDITIONAL_INFO_OPTIONAL__c': 'str',
+        'PlatformID__c': 'str',
+        'CustomerType__c': 'str',
         'department__ns': 'str',
         'integration_id__ns': 'str',
         'integration_status__ns': 'str',
@@ -74,6 +77,9 @@ class SubscribeRequestAccount(object):
     attribute_map = {
         'class__ns': 'Class__NS',
         'customer_type__ns': 'CustomerType__NS',
+        'ADDITIONAL_INFO_OPTIONAL__c': 'ADDITIONAL_INFO_OPTIONAL__c',
+        'PlatformID__c': 'PlatformID__c',
+        'CustomerType__c': 'CustomerType__c',
         'department__ns': 'Department__NS',
         'integration_id__ns': 'IntegrationId__NS',
         'integration_status__ns': 'IntegrationStatus__NS',
@@ -117,9 +123,12 @@ class SubscribeRequestAccount(object):
         'vat_id': 'VATId'
     }
 
-    def __init__(self, class__ns=None, customer_type__ns=None, department__ns=None, integration_id__ns=None, integration_status__ns=None, location__ns=None, subsidiary__ns=None, sync_date__ns=None, syncto_net_suite__ns=None, account_id=None, account_number=None, additional_email_addresses=None, allow_invoice_edit=None, auto_pay=None, batch=None, bcd_setting_option=None, bill_cycle_day=None, communication_profile_id=None, crm_id=None, currency=None, customer_service_rep_name=None, default_payment_method_id=None, invoice_delivery_prefs_email=None, invoice_delivery_prefs_print=None, invoice_template_id=None, last_invoice_date=None, name=None, notes=None, parent_id=None, payment_gateway=None, payment_term=None, purchase_order_number=None, sales_rep_name=None, tax_company_code=None, tax_exempt_certificate_id=None, tax_exempt_certificate_type=None, tax_exempt_description=None, tax_exempt_effective_date=None, tax_exempt_expiration_date=None, tax_exempt_issuing_jurisdiction=None, tax_exempt_status=None, total_invoice_balance=None, vat_id=None):  # noqa: E501
+    def __init__(self, CustomerType__c=None, PlatformID__c=None, ADDITIONAL_INFO_OPTIONAL__c=None, class__ns=None, customer_type__ns=None, department__ns=None, integration_id__ns=None, integration_status__ns=None, location__ns=None, subsidiary__ns=None, sync_date__ns=None, syncto_net_suite__ns=None, account_id=None, account_number=None, additional_email_addresses=None, allow_invoice_edit=None, auto_pay=None, batch=None, bcd_setting_option=None, bill_cycle_day=None, communication_profile_id=None, crm_id=None, currency=None, customer_service_rep_name=None, default_payment_method_id=None, invoice_delivery_prefs_email=None, invoice_delivery_prefs_print=None, invoice_template_id=None, last_invoice_date=None, name=None, notes=None, parent_id=None, payment_gateway=None, payment_term=None, purchase_order_number=None, sales_rep_name=None, tax_company_code=None, tax_exempt_certificate_id=None, tax_exempt_certificate_type=None, tax_exempt_description=None, tax_exempt_effective_date=None, tax_exempt_expiration_date=None, tax_exempt_issuing_jurisdiction=None, tax_exempt_status=None, total_invoice_balance=None, vat_id=None):  # noqa: E501
         """SubscribeRequestAccount - a model defined in Swagger"""  # noqa: E501
 
+        self._CustomerType__c = None
+        self._PlatformID__c = None
+        self._ADDITIONAL_INFO_OPTIONAL__c = None
         self._class__ns = None
         self._customer_type__ns = None
         self._department__ns = None
@@ -165,6 +174,12 @@ class SubscribeRequestAccount(object):
         self._vat_id = None
         self.discriminator = None
 
+        if CustomerType__c is not None:
+            self.CustomerType__c = CustomerType__c
+        if PlatformID__c is not None:
+            self.PlatformID__c = PlatformID__c
+        if ADDITIONAL_INFO_OPTIONAL__c is not None:
+            self.ADDITIONAL_INFO_OPTIONAL__c = ADDITIONAL_INFO_OPTIONAL__c
         if class__ns is not None:
             self.class__ns = class__ns
         if customer_type__ns is not None:
@@ -247,6 +262,30 @@ class SubscribeRequestAccount(object):
             self.total_invoice_balance = total_invoice_balance
         if vat_id is not None:
             self.vat_id = vat_id
+
+    @property
+    def ADDITIONAL_INFO_OPTIONAL__c(self):
+        return self._ADDITIONAL_INFO_OPTIONAL__c
+
+    @ADDITIONAL_INFO_OPTIONAL__c.setter
+    def ADDITIONAL_INFO_OPTIONAL__c(self, ADDITIONAL_INFO_OPTIONAL__c):
+        self._ADDITIONAL_INFO_OPTIONAL__c = ADDITIONAL_INFO_OPTIONAL__c
+
+    @property
+    def PlatformID__c(self):
+        return self._PlatformID__c
+
+    @PlatformID__c.setter
+    def PlatformID__c(self, PlatformID__c):
+        self._PlatformID__c = PlatformID__c
+
+    @property
+    def CustomerType__c(self):
+        return self._CustomerType__c
+
+    @CustomerType__c.setter
+    def CustomerType__c(self, CustomerType__c):
+        self._CustomerType__c = CustomerType__c
 
     @property
     def class__ns(self):
