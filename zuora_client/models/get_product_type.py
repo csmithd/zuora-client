@@ -40,7 +40,8 @@ class GETProductType(object):
         'product_features': 'list[GetProductFeatureType]',
         'product_rate_plans': 'list[GETProductRatePlanType]',
         'sku': 'str',
-        'tags': 'str'
+        'tags': 'str',
+        'ProductType__c': 'str',
     }
 
     attribute_map = {
@@ -57,10 +58,11 @@ class GETProductType(object):
         'product_features': 'productFeatures',
         'product_rate_plans': 'productRatePlans',
         'sku': 'sku',
-        'tags': 'tags'
+        'tags': 'tags',
+        'ProductType__c': 'ProductType__c',
     }
 
-    def __init__(self, integration_id__ns=None, integration_status__ns=None, item_type__ns=None, sync_date__ns=None, category=None, description=None, effective_end_date=None, effective_start_date=None, id=None, name=None, product_features=None, product_rate_plans=None, sku=None, tags=None):  # noqa: E501
+    def __init__(self, integration_id__ns=None, integration_status__ns=None, item_type__ns=None, sync_date__ns=None, category=None, description=None, effective_end_date=None, effective_start_date=None, id=None, name=None, product_features=None, product_rate_plans=None, sku=None, tags=None, ProductType__c=None):  # noqa: E501
         """GETProductType - a model defined in Swagger"""  # noqa: E501
 
         self._integration_id__ns = None
@@ -78,6 +80,7 @@ class GETProductType(object):
         self._sku = None
         self._tags = None
         self.discriminator = None
+        self._ProductType__c = None
 
         if integration_id__ns is not None:
             self.integration_id__ns = integration_id__ns
@@ -107,6 +110,16 @@ class GETProductType(object):
             self.sku = sku
         if tags is not None:
             self.tags = tags
+        if ProductType__c is not None:
+            self.ProductType__c = ProductType__c
+
+    @property
+    def ProductType__c(self):
+        return self._ProductType__c
+
+    @ProductType__c.setter
+    def ProductType__c(self, ProductType__c):
+        self._ProductType__c = ProductType__c
 
     @property
     def integration_id__ns(self):
