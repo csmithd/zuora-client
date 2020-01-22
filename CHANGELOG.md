@@ -1,6 +1,11 @@
 zuora_client CHANGELOG
 ======================
 
+2.0.6-orm
+---------
+
+- Add `ProductType__c` to `GETProductType` for `get_catalog` call
+
 2.0.5-orm
 ---------
 
