@@ -1,6 +1,12 @@
 zuora_client CHANGELOG
 ======================
 
+2.0.7-orm
+---------
+
+- Add deleter for `collect`, `invoice`, and `run_billing` to `POSTSubscriptionType`
+- Allow `renewal_term` in `POSTSubscriptionType` to be set to `None`
+
 2.0.6-orm
 ---------
 
