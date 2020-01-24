@@ -11,7 +11,7 @@
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "zuora-client"
-VERSION = "2.0.6-orm"
+VERSION = "2.0.7-orm"
 # To install the library, run the following
 #
 # python setup.py install

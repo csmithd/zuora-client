@@ -198,7 +198,8 @@ class POSTSubscriptionType(object):
             self.notes = notes
         if renewal_setting is not None:
             self.renewal_setting = renewal_setting
-        self.renewal_term = renewal_term
+        if renewal_term is not None:
+            self.renewal_term = renewal_term
         if renewal_term_period_type is not None:
             self.renewal_term_period_type = renewal_term_period_type
         if run_billing is not None:
@@ -581,6 +582,10 @@ class POSTSubscriptionType(object):
 
         self._collect = collect
 
+    @collect.deleter
+    def collect(self):
+        del self._collect
+
     @property
     def contract_effective_date(self):
         """Gets the contract_effective_date of this POSTSubscriptionType.  # noqa: E501
@@ -720,6 +725,10 @@ class POSTSubscriptionType(object):
         """
 
         self._invoice = invoice
+
+    @invoice.deleter
+    def invoice(self):
+        del self._invoice
 
     @property
     def invoice_collect(self):
@@ -930,6 +939,10 @@ class POSTSubscriptionType(object):
 
         self._run_billing = run_billing
 
+    @run_billing.deleter
+    def run_billing(self):
+        del self._run_billing
+
     @property
     def service_activation_date(self):
         """Gets the service_activation_date of this POSTSubscriptionType.  # noqa: E501
@@ -1077,7 +1090,10 @@ class POSTSubscriptionType(object):
         result = {}
 
         for attr, _ in six.iteritems(self.swagger_types):
-            value = getattr(self, attr)
+            try:
+                value = getattr(self, attr)
+            except AttributeError:
+                continue
             if isinstance(value, list):
                 result[attr] = list(map(
                     lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
